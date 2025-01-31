@@ -1,0 +1,1089 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: alanscottmilnes@gmail.com
+Received: by 10.70.109.229 with SMTP id hv5csp1021638pdb;
+        Sat, 27 Sep 2014 08:59:59 -0700 (PDT)
+X-Received: by 10.152.3.35 with SMTP id 3mr28127012laz.5.1411833598603;
+        Sat, 27 Sep 2014 08:59:58 -0700 (PDT)
+Return-Path: <alan@gameplan.org.uk>
+Received: from mout.kundenserver.de (mout.kundenserver.de. [212.227.17.24])
+        by mx.google.com with ESMTPS id k1si11493965lam.96.2014.09.27.08.59.57
+        for <alanscottmilnes@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 27 Sep 2014 08:59:58 -0700 (PDT)
+Received-SPF: none (google.com: alan@gameplan.org.uk does not designate permitted sender hosts) client-ip=212.227.17.24;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: alan@gameplan.org.uk does not designate permitted sender hosts) smtp.mail=alan@gameplan.org.uk
+Message-Id: <5426defe.412d980a.7d48.108bSMTPIN_ADDED_MISSING@mx.google.com>
+Received: from [212.227.17.175] ([212.227.17.175]) by mx.kundenserver.de
+ (mxeue103) with ESMTP (Nemesis) id 0LeyWl-1Y3OfD1vG3-00qmEy for
+ <alanscottmilnes@gmail.com>; Sat, 27 Sep 2014 17:59:56 +0200
+Received: from [212.227.17.175] ([212.227.17.175]) by mx.kundenserver.de
+ (mxeue103) with ESMTP (Nemesis) id 0Lg4SJ-1Y4V7v1v3b-00pfmO for
+ <alan@gameplan.org.uk>; Sat, 27 Sep 2014 17:59:56 +0200
+Received: from know-smtprelay-omc-1.server.virginmedia.net ([80.0.253.65]) by
+ mx.kundenserver.de (mxeue103) with ESMTP (Nemesis) id
+ 0LsdUv-1YICUn0zvd-012Ggg for <mlb@gameplan.org.uk>; Sat, 27 Sep 2014 17:59:56
+ +0200
+Received: from Danny-PC ([62.252.214.74])
+	by know-smtprelay-1-imp with bizsmtp
+	id wFyV1o0301csyh201Fzvbm; Sat, 27 Sep 2014 16:59:55 +0100
+X-Originating-IP: [62.252.214.74]
+X-Spam: 0
+X-Authority: v=2.1 cv=RcseCjdv c=1 sm=1 tr=0 a=5N0bNrfUYWHoiq3f/DLiuQ==:117
+ a=5N0bNrfUYWHoiq3f/DLiuQ==:17 a=AnmFHKzuSg4A:10 a=UhfA_SvEAAAA:8
+ a=FHEM_hz9AAAA:8 a=0y6RWqGiAAAA:8 a=ycU_fH4hY-CGe23KqroA:9
+ a=HE5dIZ9Nvw-qgRlP:21 a=kfl4uOucUp-mb2uQ:21 a=nZcyjQAIvwYPtK1w:21
+ a=tfGsoaTpPh0A:10 a=v4QsWJBxQs0A:10 a=R3cNOcjXviUA:10
+From: "Danny McConnell" <danny@pbmsports.com>
+Subject: MLB6-AB, Turn 5
+To: MLB@GAMEPLAN.ORG.UK
+Content-Type: text/plain
+Date: Sat, 27 Sep 2014 17:00:03 +0100
+X-UI-Out-Filterresults: notjunk:1;
+
+MLB@GAMEPLAN.ORG.UK
+0
+MLB6-AB, Turn 5
+<STARTREP>
+<BK.Team Report><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Team Report  Season 23   Week 5   27/9/14<ST.28.88.105.110><L.48.1>
+Atlanta Braves (Alan/Gordon Milnes)    <L.48.1>
+<C>Turn Credits =  19.4  (receipts 20.0, deducted 1.2, includes full reports)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Acc Con Qui Sta<T>Sqd<T>MxB MxH MxE FIn MnB<C><L.42.1>
+11  Jason Arnold<T>Pit R   9 ACC   12   2   9   0   4  17   0   80 LP   8 LP<T> Ex  Go  Go  Go <T>Act<T><T> 27   4   6   1   1<L.33.1>
+ 1  Tony Armas<T>Pit R   9 QUI   12   2   9   0   4   9   0   58 LP   5 LP<T> Go  Go  Ex  Go <T>Act<T><T> 27   4   6   1  15<L.33.1>
+28  Shane Youman<T>Pit R   9 STA    8   4   9   1  -5  -3   0   45 LP   4 LP<T> Go  Ex  Av  Ex <T>Act<T><T> 30   4   9   1  15<L.33.1>
+ 5  Huston Street<T>Pit L   9 CON   11   6  10   2   2  -2   0   48 LP   4 LP<T> Go  Ex  Av  Go <T>Act<T><T> 27   4   6   1  24<L.33.1>
+20  Todd Lee<T>Pit R   9 STA    9   3   9   5  -2   6<Z>  11<C>   47 LP   4 LP<T> Go  Go  Go  Ex <T>Act<T><T> 30   4   9   1  15<L.33.1>
+<L.6.1>
+67  Jose Ortegano<T>Pit R   7 CON    5  11   9   0  -4  -2   0   35 LP   3 LP<T> Av  Go  Av  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+21  Kev Gilfillan<T>Pit L   7 QUI    4   7   8   0   1   5   0   24 LP   2 LP<T> Av  Go  Go  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+26  Edgar Ortiz<T>Pit R   7 QUI    3   8   8   0  -4  -2   0   36 LP   3 LP<T> Go  Av  Go  Fa <T>Act<T><T>  9   3   6   1  14<L.33.1>
+13  Jonny Venters<T>Pit R   6 ACC    7   9   7   0  -1   0   0   23 LP   2 LP<T> Av  Av  Av  Av <T>Act<T><T>  9   3   6   1   1<L.33.1>
+14  Matt Hamilton<T>Pit L   5 CON    7   6   6   0  -3   0   0   20 LP   2 LP<T> Fa  Go  Fa  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+ 8  Dave Green<T>Pit L   6 CON    2  14   8   0  -3  -3   0   19 LP   1 LP<T> Av  Av  Av  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+ 4  Eric Martinez<T>Pit L   6 CON    1  14   8   0   0  -1   0   14 LP   1 LP<T> Av  Av  Av  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+10  Raul Garcia<T>Pit R   5 CON    1  12   7   0   0   0   0   10 LP   1 LP<T> Fa  Fa  Fa  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+<Z>Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Hit Pow Spd Fld<T>Sqd<T>Pos vRH Plt Pin<L.42.1>
+<C>53  Melky Cabrera<T>Bat L   9 POW    5   9  10   1   4  12   0   48 LP   4 LP<T> Ex  Ex  Go  Av <T>Act<T> RF  RF        <L.33.1>
+ 7  Randy Miller<T>Bat S   8 HIT    2  15  11   0  -2   3   0   32 LP   3 LP<T> Go  Av  Av  Go <T>Act<T> SS  2B      CF<L.33.1>
+19  Kurt Suzuki<T>Cat L   8 POW    9   6   9   0   5  13   0   47 LP   4 LP<T> Go  Go  Go  Av <T>Act<T>  C   C        <L.33.1>
+27  Kelly Johnson<T>Bat R  10 HIT   11   2  10   0   2   7   0  112 LP  11 LP<T> Ex  Ex  Ex  Av <T>Act<T> LF  LF        <L.33.1>
+ 3  Raul Pena<T>Bat S   7 POW    4  13   9   0   5+ 13   0   37 LP   3 LP<T> Go  Go  Fa  Go <T>Act<T> 1B  DH        <L.33.1>
+ 9  Jose Bautista<T>Bat L   7 HIT    6   5   8   1  -3  -5   0   27 LP   2 LP<T> Go  Av  Av  Av <T>Act<T> 3B  3B        <L.33.1>
+71  Jason Heyward<T>Bat L   9 POW    5   7  10   1   3   8   0   48 LP   4 LP<T> Go  Ex  Av  Go <T>Act<T> 1B  1B        <L.33.1>
+12  Martin Prado<T>Bat R   9 HIT    6   8  10   2   6  17   0   54 LP   5 LP<T> Go  Go  Go  Go <T>Act<T> SS  SS        <L.33.1>
+17  Nate Mclouth<T>Bat L   7 FLD    7   6   8   0   2   9   0   30 LP   3 LP<T> Av  Av  Fa  Go <T>Act<T> CF  CF        <L.33.1>
+<L.6.1>
+18  Ryan Langerhans<T>Bat R  11 FLD   11   2  11   0   0  14<Z>   5<C>  135 LP  13 LP<T> Ex  Ex  Ex  WC <T>Act<T> 2B   -        <L.33.1>
+23  Chris Johnson<T>Bat S   7 SPD    1  16  10   0   1   0   0   20 LP   2 LP<T> Av  Av  Go  Av <T>Act<T> RF   -        <L.33.1>
+16  Pete Mitchell<T>Bat L   6 POW    2  13   8   0   0  -1   0   18 LP   1 LP<T> Fa  Av  Av  Fa <T>Act<T> CF   -      DH<L.33.1>
+<L.6.1>
+ 6  Tyler Flowers<T>Cat R   8 POW    5  12  10   0  -1  -8   0   45 LP   4 LP<T> Go  Ex  Av  Go <T>Res<T>  C   -   C   C<L.33.1>
+81  Bob Milnes<T>Bat R   8 HIT    4   7   9   0  -1  -3   0   42 LP   4 LP<T> Ex  Go  Av  Av <T>Res<T> 3B   -        <L.33.1>
+24  Evan Gattis<T>Cat L   6 FLD    1  19   9   0   3  10   0   17 LP   1 LP<T> Av  Fa  Fa  Av <T>Res<T>  C   -        <L.33.1>
+88  Joe Terdoslavich<T>Bat L   7 POW    2  20  11   0   2   8   0   19 LP   1 LP<T> Av  Av  Av  Av <T>Res<T> RF   -     COF<L.33.1>
+<L.6.1>
+15  Jason Jordan<T>Bat S   6 HIT    R  17   9   0   3   9   0   18 LP   1 LP<T> Av  Av  Av  Av <T>Drf<T> SS   -        <L.33.1>
+<L.6.1>
+Key to Ratings: Po = Poor, Fa = Fair, Av = Average, Go = Good, Ex = Excellent, WC = World Class. Pos is Primary Field Position.<ST.20.64.86.98.120><L.48.1>
+<Z>Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  11   1  28   5<Z>  20<C><L.36.1>
+<Z>Shirt Number:<C><T>  19  71   7   9  12  27  17  53   3<T><Z>Bullpen Depth Chart:<C><T>  67  21  26  13  14   8<L.36.1>
+<Z>Batting Order:<C><T>   3   7   2   6   8   4   9   1   5<T><Z>Setup Pitcher:<C><T>  none<T><Z>Closing Pitcher:<C><T>  none<ST.20.32.64.86.98.120><L.36.1>
+<Z>Platoon Hitter 1:<C><T>   6   C<T><Z>Platoon Hitter 2:<C>  none<T><Z>Opposite Hand: <C><T>  NO<T><Z>Starter Innings:<C><T>   5<T><L.36.1>
+<Z>Platoon Hitter 3:<C><T>  none<T><Z>Platoon Hitter 4:<C>  none<T><Z>Minimum Lead:<C><T>   0<T><Z>Maximum Lead:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 1:  <C><T>   7  CF<T><Z>Pinch Hitter 2:  <C>   6   C<T><Z>Long Relief Pitcher: <T><C>  none<T><Z>Long Innings:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 3:  <C><T>  16  DH<T><Z>Pinch Hitter 4:  <C>  88 COF<T><Z>Blowout Innings:<C><T>   7<T><Z>Blowout Margin:<C><T>   8<T><L.36.1>
+<Z>Pinch Innings: <C><T>   7<Z><T>Pinch Deficit: <C>     5<ST.32.64.86.98.120><L.45.1>
+<Z>Stadium Size:        <C>Small<T><Z>Stadium Surface:  <C>Grass<T><Z>Stadium Building:       <C>Open<ST.22.32.42.52.64.88.98.108.118><L.36.1>
+<Z>Batting Training:<C><T>HIT  3<T>POW 12<T>SPD  0<T>FLD  0<Z><T>Pitching Training:<C><T>ACC  0<T>CON  0<T>QUI  0<T>STA  0<ST.20.32.49.64.86.98.120><L.45.1>
+<Z>Losing Points:<C><T>  81<T><Z>Base Income:<C><T>  70<T><Z>Fans Income:<C><T>  23<T><Z>Stadium Income:<C><T>   9<T><L.36.1>
+<Z>Merchandise Income:<C><T>  10<T><Z>Trade Income:<C><T>   0<T><Z>Trade Costs:<C><T>   0<T><Z>Overall Costs:<C><T>   3<T><L.36.1>
+<Z>Wages Paid:<C><T> 106<T><Z>Total Fans:<C><T>  23,744<T><Z>Stadium Level:<C><T>   9<T><Z>Merchandising:<C><T> 185<T><L.36.1>
+<Z>Current Wages:<C><T> 106<T><Z>Trainer Level:<C><T>   5<T><Z>Minor League System:<C><T>   7<T><Z>Full Reports:<C><T> Yes<L.36.1>
+<Z>Postal Reports:<C><T>  No<T><Z>Email Reports:<C><T>  Text<T><Z>Email Address: <C>MLB@GAMEPLAN.ORG.UK<ST.22><L.45.1>
+<Z>Special Actions:<C><T>ADDFORM 3 for 3 weeks: OK, cost 3 LP<L.39.1>
+<T>ACTIVATE 7 for 81: OK, 7 activated to replace 81<L.39.1>
+<T>SETFULL : OK, Full Listings set to YES<L.39.1>
+<T>ACTIVATE 3 for 6: OK, 3 activated to replace 6<L.39.1>
+<T>SCOUT 126: OK, ex-CU, Pit R 7. Pt 10, Ex 3, Fm 0, TF 4, Val 31 LP. ACC Av CON Go QUI Go STA Av<L.39.1>
+<L.3.1>
+<Z>Free Agent Bid:<C><T>none<L.42.1>
+<Z>Injuries/Holdouts:<C><T>20 Todd Lee - Bruised Hip, 11 games. 18 Ryan Langerhans - Sprained Wrist, 5 games. <L.42.1>
+<ST.22.58.95><L.1.1>
+<Z>Forthcoming Series:<C><T>at Phillies. Out 3 31 <T>at Giants. Out 23 <T>vs Pirates. Out none <L.42.1>
+<L.1.1>
+<D><E><P>
+<BK.Team Stats><ST.30.90.97.104><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL   MLB6  Regular Season 23 Totals   Week 5   27/9/14<L.48.1>
+Atlanta Braves  (Alan/Gordon Milnes)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.25.90.98.103.111.118.124><L.48.1>
+Individual Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+11 Jason Arnold<T>  8    8    3    3   53        45   17   12    2   16   37    3<T>  5-1<T>  0<T>  7-1<T> 11.55<T> .220<T>  2.04<L.36.1>
+21 Kev Gilfillan<T> 17    0    0    8   24 1/3    26    9    9    1    9   17    5<T>  0-0<T>  1<T>  0-0<T>  2.22<T> .262<T>  3.33<L.36.1>
+ 1 Tony Armas<T> 10   10    2    2   67 1/3    59   31   27    6   20   61    3<T>  6-2<T>  0<T>  7-3<T>  6.42<T> .226<T>  3.61<L.36.1>
+20 Todd Lee<T> 10   10    2    2   67 2/3    71   31   28   11   22   40    8<T>  5-2<T>  0<T>  5-5<T>  6.12<T> .259<T>  3.72<L.36.1>
+26 Edgar Ortiz<T> 14    0    0    6   20 2/3    15    9    9    3   13   15    2<T>  0-1<T>  2<T>  0-0<T>  3.48<T> .194<T>  3.92<L.36.1>
+ 5 Huston Street<T> 11   11    1    1   68 2/3    72   37   36    7   26   51    8<T>  3-4<T>  0<T>  4-7<T>  5.77<T> .258<T>  4.72<L.36.1>
+28 Shane Youman<T>  6    6    1    1   45 2/3    44   29   27    5   15   34    4<T>  1-3<T>  0<T>  2-4<T>  5.91<T> .243<T>  5.32<L.36.1>
+ 4 Eric Martinez<T>  2    0    0    1    3 1/3     4    6    2    1    3    1    3<T>  0-0<T>  0<T>  0-0<T>  5.40<T> .285<T>  5.40<L.36.1>
+67 Jose Ortegano<T> 20    0    0    7   25 2/3    27   18   18    3   15   18    2<T>  3-4<T>  1<T>  0-0<T>  7.01<T> .259<T>  6.31<L.36.1>
+14 Matt Hamilton<T>  7    0    0    4    7        14    8    7    3    3    4    1<T>  0-0<T>  0<T>  0-0<T>  0.00<T> .400<T>  9.00<L.36.1>
+13 Jonny Venters<T> 10    0    0    5   14        26   17   16    6    6    8    2<T>  2-2<T>  0<T>  0-0<T>  7.71<T> .382<T> 10.29<L.36.1>
+ 8 Dave Green<T>  5    0    0    5    5         8    6    6    2    2    3    1<T>  0-1<T>  0<T>  0-0<T>  7.20<T> .347<T> 10.80<L.36.1>
+10 Raul Garcia<T>  0    0    0    0    0         0    0    0    0    0    0    0<T>  0-0<T>  0<T>  0-0<T>  -  <T> .000<T>  0.00<L.36.1>
+<L.9.1>
+<Z>Team Pitching<T> 45   45    9   45  402 1/3   411  218  197   50  150  289   42<T> 25-20<T>  4<T> 25-20<T>  6.44<T> .254<T>  4.41<C><L.18.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>Individual Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+53 Melky Cabrera rf<T> 44  198   41   76  134   23   1  11   31   16   0  12   32   4   0   0   75    2<T>1.000<T> .383<T> .429<T> .676<L.36.1>
+27 Kelly Johnson lf<T> 35  150   31   55  111   16   5  10   33   17   1   7   24   5   1   1   46    1<T> .979<T> .366<T> .428<T> .740<L.36.1>
+ 7 Randy Miller ss<T>  9   42    8   15   18    1   1   0    4    1   1   0    9   0   3   5   14   31<T> .937<T> .357<T> .363<T> .428<L.36.1>
+19 Kurt Suzuki c<T> 41  172   35   61  109   22   1   8   33   16   2   5   27   8   4   3  126   24<T> .974<T> .354<T> .405<T> .633<L.36.1>
+18 Ryan Langerhans 2b<T> 26  116   25   40   92   14   1  12   32    8   5  11   17  16   0  25   45  104<T>1.000<T> .344<T> .372<T> .793<L.36.1>
+71 Jason Heyward 1b<T> 45  184   26   62  105   13   0  10   36   17   2   0   27   2   6  38  364   14<T> .984<T> .336<T> .389<T> .570<L.36.1>
+ 3 Raul Pena 1b<T>  9   42    6   14   24    7   0   1   11    2   0   0    8   0   0   0    0    0<T> .000<T> .333<T> .363<T> .571<L.36.1>
+12 Martin Prado ss<T> 45  172   33   54  116   20   0  14   37   21   3   6   31  23   5  29   59  131<T> .974<T> .313<T> .382<T> .674<L.36.1>
+16 Pete Mitchell cf<T>  9   26    6    7    8    1   0   0    1    5   0   0    4   0   0   0   12    0<T>1.000<T> .269<T> .387<T> .307<L.36.1>
+17 Nate Mclouth cf<T> 38  142   21   37   65   11   1   5   23   13   1   0   25  12   0   0   94    5<T>1.000<T> .260<T> .320<T> .457<L.36.1>
+ 9 Jose Bautista 3b<T> 36  142   17   31   38    4   0   1   11   17   2   0   29   3   5   3   14   61<T> .937<T> .218<T> .298<T> .267<L.36.1>
+23 Chris Johnson rf<T> 20   82    8   17   25    5   0   1    5    2   2   0    9   2   0   0   13    0<T>1.000<T> .207<T> .220<T> .304<L.36.1>
+81 Bob Milnes 3b<T> 19   73   13   15   29    5   0   3   14   11   2   0   15   3   4   8   19   61<T> .952<T> .205<T> .302<T> .397<L.36.1>
+ 6 Tyler Flowers c<T> 22   88   12   16   26    4   0   2    7    9   0   0   22   0   1   0   12    2<T> .933<T> .181<T> .257<T> .295<L.36.1>
+24 Evan Gattis c<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+88 Joe Terdoslavich rf<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+15 Jason Jordan ss<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+<L.9.1>
+<Z>Team Batting<T> 45 1669  288  511  914  146  10  79  282  158  21  41  285  79  29  40  918  438<T> .979<T> .306<T> .362<T> .547<ST.24.78.100><L.48.1>
+Selection Orders This Turn<L.48.1>
+Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>   1  28   5  20  11<L.39.1>
+<Z>Shirt Number:<C><T>  19  71   7   9  12  27  17  53   3<T><Z>Bullpen Depth Chart:<C><T>  67  21  26  13  14   8<L.39.1>
+<Z>Batting Order:<C><T>   3   7   2   6   8   4   9   1   5<T><Z>Setup Pitcher:<C><T>   0<L.39.1>
+<T><T><Z>Closing Pitcher:<C><T>   0<L.39.1>
+<Z>Lineup Changes:<C><T>  none ordered<L.39.1>
+<Z>Pitching Changes:<C><T>  none ordered<L.39.1>
+<Z>Training & Practice:<C><T>  Series 1: Train Skill - POW     Bonus Skill - HIT     Bonus Player -  3     Key Player - 91<L.39.1>
+<T>  Series 2: Train Skill - POW     Bonus Skill - POW     Bonus Player -  3     Key Player - 91<L.39.1>
+<T>  Series 3: Train Skill - POW     Bonus Skill - HIT     Bonus Player -  3     Key Player - 91<L.39.1>
+<ST.24.78><L.9.1>
+<Z>Enforced Selection Changes This Turn<L.48.1>
+Key Player 1: <C><T>  91 replaced by 16: No such player<L.39.1>
+<Z>Key Player 2: <C><T>  91 replaced by 17: No such player<L.39.1>
+<Z>Key Player 3: <C><T>  91 replaced by 6: No such player<L.39.1>
+<L.1.1>
+<D><E><DU>
+<BK.Series 1><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 1: Atlanta Braves (21-15) at Boston Red Sox (12-24)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Lester<UC> on mound. Cabrera homered to RF, <Z>AB 1-0<C>. Miller singled to LF. Miller forced out at 2B (3B, field save), Suzuki <L.30.1>
+         ground into double play at 1B (2B, field save). Johnson ground out to 1B (SS).<L.33.1>
+<Z>BR  1st  <C><U>Armas<UC> on mound. Ellsbury flied out to LF. Miller flied out to SS. Iglesias flied out to C.<L.33.1>
+<Z>AB  2nd  <C>Pena flied out to LF. Bautista struck out. Heyward ground out to 1B (SS).<L.33.1>
+<Z>BR  2nd  <C>Lowrie walked. Sierra struck out. Scutaro doubled to RF, Lowrie scored, <Z>1-1<C>. Bautista flied out to C. Castillo <L.30.1>
+         singled, error by SS, Scutaro scored, <Z>BR 2-1<C>. Martinez ground out to 1B (C).<L.33.1>
+<Z>AB  3rd  <C>Prado walked. Mclouth flied out to C. Cabrera doubled to CF, Prado scored, <Z>2-2<C>. Miller flied out to 3B. Suzuki struck <L.30.1>
+         out.<L.33.1>
+<Z>BR  3rd  <C>Ellsbury singled to RF. Miller struck out. Iglesias walked, Ellsbury to 2nd. Lowrie reached 1st, Ellsbury forced out at <L.30.1>
+         3B (C), Iglesias to 2nd. Sierra ground out to 1B (2B).<L.33.1>
+<Z>AB  4th  <C>Johnson ground out to 1B (SS, field save). Pena struck out. Bautista flied out to 3B.<L.33.1>
+<Z>BR  4th  <C>Scutaro singled to CF. Bautista struck out. Castillo flied out to CF. Martinez ground out to 1B (3B).<L.33.1>
+<Z>AB  5th  <C>Heyward struck out. Prado singled to CF. Mclouth reached 1st, Prado forced out at 2B (3B). Cabrera ground out to 1B (2B).<L.33.1>
+<Z>BR  5th  <C>Ellsbury flied out to SS, field save. Miller struck out. Iglesias singled to LF. Lowrie struck out.<L.33.1>
+<Z>AB  6th  <C>Miller doubled to LF. Suzuki doubled to CF, Miller scored, <Z>AB 3-2<C>. Johnson ground out to 1B (SS). Pena flied out to RF, <L.30.1>
+         Suzuki to 3rd. Bautista ground out to 1B (2B).<L.33.1>
+<Z>BR  6th  <C>Sierra singled, error by 2B. Scutaro flied out to C. Bautista flied out to CF, Sierra to 2nd. Castillo flied out to LF, <L.30.1>
+         field save.<L.33.1>
+<Z>AB  7th  <C>Heyward struck out. Prado flied out to C. <U>Miller<UC> took over on mound. Mclouth singled to RF. Cabrera flied out to C.<L.33.1>
+<Z>BR  7th  <C>Martinez struck out. <U>Ortegano<UC> took over on mound. Ellsbury ground out to 1B (3B). <U>Morgan<UC> pinch hitting at 1B. Morgan <L.30.1>
+         ground out to 1B (2B).<L.33.1>
+<Z>AB  8th  <C>Miller struck out. Suzuki singled, error by SS. Johnson walked, Suzuki to 2nd. Pena singled to LF, Suzuki to 3rd, <L.30.1>
+         Johnson to 2nd. Bautista walked, Suzuki scored, Johnson to 3rd, Pena to 2nd, <Z>AB 4-2<C>. Heyward reached 1st, Johnson <L.30.1>
+         forced out at home (3B), Pena to 3rd, Bautista to 2nd. Prado singled to CF, Pena scored, Bautista scored, Heyward to 2nd, <L.30.1>
+         <Z>AB 6-2<C>. <U>Thornton<UC> took over on mound. Mclouth struck out.<L.33.1>
+<Z>BR  8th  <C>Iglesias doubled to CF. Lowrie doubled to LF, Iglesias scored, <Z>AB 6-3<C>. Sierra walked. <U>Gilfillan<UC> took over on mound. <L.30.1>
+         Scutaro flied out to CF. <U>Thomas<UC> pinch hitting at LF. Lowrie stole 3rd. Thomas doubled to LF, Lowrie scored, Sierra to <L.30.1>
+         3rd, <Z>AB 6-4<C>. Castillo ground out to 1B (SS). Martinez doubled to RF, Sierra scored, Thomas scored, <Z>6-6<C>. Martinez <L.30.1>
+         stole 3rd. Ellsbury struck out.<L.33.1>
+<Z>AB  9th  <C>Cabrera flied out to C. Miller flied out to CF, field save. Suzuki ground out to 1B (2B).<L.33.1>
+<Z>BR  9th  <C>Morgan ground out to 1B (SS). Iglesias flied out to C. Lowrie flied out to CF.<L.33.1>
+<Z>AB 10th  <C>Johnson struck out. Pena flied out to SS. Bautista flied out to C.<L.33.1>
+<Z>BR 10th  <C>Sierra flied out to C. <U>Ortiz<UC> took over on mound. Scutaro homered to RF, <Z>BR 7-6<C>.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 1 <C>(2,0d)<Z> 0 <C>(0,0) <Z> 1 <C>(1,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 3 <C>(2,2) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  6<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(0,0) <Z> 2 <C>(1,1) <Z> 0 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 4 <C>(4,1) <Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <T><Z>  7<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 5  1  2  1  0  1  2  0  0  0  0  0  0<T>46 Jacoby Ellsbury rf<T> 5  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 7 Randy Miller 2b<T> 5  1  2  1  0  0  0  0  0  0  1  0  1<T> 5 Eric Miller 1b<T> 3  0  0  0  0  0  0  0  0  0  2  1  0<L.30.1>
+19 Kurt Suzuki c <T> 5  1  1  1  0  0  1  0  0  0  1  0  0<T>70 Jose Iglesias ss<T> 4  1  2  1  0  0  0  1  0  0  0  0  1<L.30.1>
+27 Kelly Johnson lf<T> 4  0  0  0  0  0  0  1  0  0  1  0  0<T>43 Jed Lowrie 2b<T> 4  2  1  1  0  0  1  1  0  1  1  1  0<L.30.1>
+ 3 Raul Pena dh<T> 5  1  1  0  0  0  0  0  0  0  1  0  0<T>20 Moises Sierra dh<T> 4  1  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+ 9 Jose Bautista 3b<T> 4  1  0  0  0  0  1  1  0  0  1  0  0<T>16 Marco Scutaro cf<T> 5  2  3  1  0  1  2  0  0  0  0  0  0<L.30.1>
+71 Jason Heyward 1b<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T> 1 Jose Bautista lf<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+12 Martin Prado ss<T> 3  1  2  0  0  0  2  1  0  0  0  0  1<T> 4 Adrian Castillo 3b<T> 4  0  0  0  0  0  0  0  0  0  0  1  0<L.30.1>
+17 Nate Mclouth cf<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>41 Victor Martinez c <T> 4  0  1  1  0  0  2  0  0  1  1  0  0<L.30.1>
+<T><T> 9 Nyjer Morgan 1b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<T><T> 3 Joe Thomas lf<T> 1  1  1  1  0  0  1  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>39  6  9  3  0  1  6  3  0  0  8  0  2<T>Totals<T>39  7  9  5  0  1  6  3  0  2  7  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+31 Jon Lester<T> 6 2/3    6  3  3  1  1  5  2B    0<T> 1 Tony Armas<T> 6 1/3    4  2  1  0  2  6  3B    0<L.30.1>
+ 2 Scott Miller<T> 1        3  3  0  0  2  1  1H    2<T>67 Jose Ortegano<T>   2/3    2  3  3  0  1  0  1H    2<L.30.1>
+ 6 Matt Thornton (w)<T> 2 1/3    0  0  0  0  0  2  0     0<T>21 Kev Gilfillan<T> 2 1/3    2  1  1  0  0  1  2B    0<L.30.1>
+<T><T>26 Edgar Ortiz (l)<T> 0        1  1  1  1  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 2: Atlanta Braves (21-16) at Boston Red Sox (13-24)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Jordan<UC> on mound. Cabrera doubled to CF. Miller singled to RF, Cabrera scored, <Z>AB 1-0<C>. Suzuki flied out to CF. Johnson <L.30.1>
+         doubled to RF, Miller to 3rd. Pena doubled to CF, Miller scored, Johnson scored, <Z>AB 3-0<C>. Bautista ground out to 1B <L.30.1>
+         (SS). Heyward singled to LF, Pena to 3rd. Prado walked, Heyward to 2nd. Mclouth ground out to 1B (3B).<L.33.1>
+<Z>BR  1st  <C><U>Youman<UC> on mound. Ellsbury ground out to 1B (SS). Miller ground out to 1B (3B). Iglesias flied out to RF.<L.33.1>
+<Z>AB  2nd  <C>Cabrera ground out to 1B (SS). Miller flied out to SS. Suzuki doubled to LF. Johnson singled to CF, Suzuki scored, <L.30.1>
+         <Z>AB 4-0<C>. Pena flied out to SS.<L.33.1>
+<Z>BR  2nd  <C>Lowrie ground out to 1B (SS). Sierra walked. Scutaro walked, Sierra to 2nd. Bautista sacrificed to RF, Sierra to 3rd, <L.30.1>
+         Scutaro to 2nd. Castillo ground out to 1B (2B).<L.33.1>
+<Z>AB  3rd  <C>Bautista struck out. Heyward doubled to CF. Prado singled to LF, Heyward to 3rd. Mclouth struck out. Cabrera singled to <L.30.1>
+         RF, Heyward scored, Prado to 2nd, <Z>AB 5-0<C>. Miller walked, Prado to 3rd, Cabrera to 2nd. Suzuki ground out to 1B (SS, <L.30.1>
+         field save).<L.33.1>
+<Z>BR  3rd  <C>Martinez singled to P. Ellsbury struck out. Miller flied out to CF. Iglesias walked, Martinez to 2nd. Lowrie walked, <L.30.1>
+         Martinez to 3rd, Iglesias to 2nd. Sierra singled to LF, Martinez scored, Iglesias scored, Lowrie to 2nd, <Z>AB 5-2<C>. <L.30.1>
+         Scutaro struck out.<L.33.1>
+<Z>AB  4th  <C><U>Wakefield<UC> took over on mound. Johnson singled to CF. Pena flied out to CF. Bautista struck out. Heyward singled to CF, <L.30.1>
+         Johnson to 2nd. Prado flied out to CF.<L.33.1>
+<Z>BR  4th  <C>Bautista flied out to RF. Castillo flied out to CF. Martinez ground out to 1B (2B).<L.33.1>
+<Z>AB  5th  <C>Mclouth ground out to 1B (SS). Cabrera struck out. Miller singled to RF. Suzuki ground out to 1B (SS).<L.33.1>
+<Z>BR  5th  <C>Ellsbury doubled to CF. Miller flied out to C. Iglesias walked. Lowrie sacrificed to CF, Ellsbury to 3rd, Iglesias to <L.30.1>
+         2nd. Sierra doubled to RF, Ellsbury scored, Iglesias scored, <Z>AB 5-4<C>. Scutaro flied out to LF.<L.33.1>
+<Z>AB  6th  <C>Johnson flied out to LF. Pena singled to RF. Bautista flied out to C. Heyward singled to LF, Pena to 3rd. Prado ground <L.30.1>
+         out to 1B (2B).<L.33.1>
+<Z>BR  6th  <C>Bautista singled to CF. Castillo reached 1st, Bautista forced out at 2B (1B). Martinez flied out to CF, Castillo to 2nd. <L.30.1>
+         Ellsbury doubled to RF, Castillo scored, <Z>5-5<C>. Miller struck out.<L.33.1>
+<Z>AB  7th  <C>Mclouth flied out to C. Cabrera struck out. Miller struck out.<L.33.1>
+<Z>BR  7th  <C>Iglesias ground out to 1B (2B). Lowrie flied out to LF. Sierra ground out to 1B (3B).<L.33.1>
+<Z>AB  8th  <C>Suzuki struck out. Johnson walked. Pena singled to 1B, Johnson to 2nd. Bautista singled to CF, Johnson to 3rd, Pena to <L.30.1>
+         2nd. Heyward reached 1st, Johnson forced out at home (SS), Pena to 3rd, Bautista to 2nd. Prado walked, Pena scored, <L.30.1>
+         Bautista to 3rd, Heyward to 2nd, <Z>AB 6-5<C>. <U>Thornton<UC> took over on mound. Mclouth struck out.<L.33.1>
+<Z>BR  8th  <C><U>Thomas<UC> pinch hitting at CF. Thomas struck out. Bautista singled to CF. <U>Morgan<UC> pinch hitting at 3B. Morgan sacrificed to <L.30.1>
+         CF, Bautista to 2nd. Martinez flied out to SS.<L.33.1>
+<Z>AB  9th  <C>Cabrera flied out to SS. Miller flied out to SS. Suzuki flied out to SS.<L.33.1>
+<Z>BR  9th  <C>Ellsbury singled, error by 2B. <U>Venters<UC> took over on mound. Miller struck out. Ellsbury stole 2nd. Iglesias flied out to <L.30.1>
+         C. Lowrie singled to CF, Ellsbury scored, <Z>6-6<C>. Sierra doubled to CF, Lowrie to 3rd. Thomas ground out to 1B (2B).<L.33.1>
+<Z>AB 10th  <C>Johnson doubled to LF. Pena singled to LF, Johnson scored, <Z>AB 7-6<C>. Bautista walked, Pena to 2nd. Heyward homered to LF, <L.30.1>
+         Pena scored, Bautista scored, <Z>AB 10-6<C>. Prado singled to LF. Mclouth walked, Prado to 2nd. Cabrera singled to RF, Prado <L.30.1>
+         to 3rd, Mclouth to 2nd. <U>Guillen<UC> took over on mound. Miller singled to CF, Prado scored, Mclouth scored, Cabrera to 2nd, <L.30.1>
+         <Z>AB 12-6<C>. Suzuki walked, Cabrera to 3rd, Miller to 2nd. Johnson singled to RF, Cabrera scored, Miller to 3rd, Suzuki to <L.30.1>
+         2nd, <Z>AB 13-6<C>. Pena reached 1st, Miller forced out at home (3B), Suzuki to 3rd, Johnson to 2nd. Bautista struck out. <L.30.1>
+         Heyward ground out to 1B (2B).<L.33.1>
+<Z>BR 10th  <C>Bautista flied out to 1B, field save. Morgan flied out to RF. Martinez walked. Ellsbury homered to CF, Martinez scored, <L.30.1>
+         <Z>AB 13-8<C>. <U>Hamilton<UC> took over on mound. Miller homered to CF, <Z>AB 13-9<C>. Iglesias walked. Iglesias stole 2nd. Lowrie <L.30.1>
+         singled, error by LF, Iglesias scored, <Z>AB 13-10<C>. Sierra struck out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 3 <C>(5,1) <Z> 1 <C>(2,0) <Z> 1 <C>(3,1) <Z> 0 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,2) <Z> 0 <C>(0,0) <Z> 7 <C>(7,3) <T><Z> 13<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,2) <Z> 2 <C>(2,2) <Z> 0 <C>(0,0) <Z> 2 <C>(2,1) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 4 <C>(2,2) <T><Z> 10<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 7  2  3  1  0  0  1  0  0  0  2  0  0<T>46 Jacoby Ellsbury rf<T> 6  3  3  2  0  1  3  0  0  1  1  0  0<L.30.1>
+ 7 Randy Miller 2b<T> 6  1  3  0  0  0  3  1  0  0  1  0  1<T> 5 Eric Miller 1b<T> 6  1  1  0  0  1  1  0  0  0  2  0  0<L.30.1>
+19 Kurt Suzuki c <T> 6  1  1  1  0  0  0  1  0  0  1  0  0<T>70 Jose Iglesias ss<T> 3  3  0  0  0  0  0  3  0  1  0  0  0<L.30.1>
+27 Kelly Johnson lf<T> 6  2  5  2  0  0  2  1  0  0  0  0  1<T>43 Jed Lowrie 2b<T> 4  0  1  0  0  0  1  1  1  0  0  0  0<L.30.1>
+ 3 Raul Pena dh<T> 7  2  4  1  0  0  3  0  0  0  0  0  0<T>20 Moises Sierra dh<T> 5  0  3  2  0  0  4  1  0  0  1  0  0<L.30.1>
+ 9 Jose Bautista 3b<T> 6  1  1  0  0  0  0  1  0  0  3  0  0<T>16 Marco Scutaro cf<T> 2  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+71 Jason Heyward 1b<T> 7  2  5  1  0  1  3  0  0  0  0  0  0<T> 1 Jose Bautista lf<T> 4  0  2  0  0  0  0  0  1  0  0  0  0<L.30.1>
+12 Martin Prado ss<T> 4  1  2  0  0  0  1  2  0  0  0  0  0<T> 4 Adrian Castillo 3b<T> 3  1  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+17 Nate Mclouth cf<T> 5  1  0  0  0  0  0  1  0  0  2  0  0<T>41 Victor Martinez c <T> 4  2  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+<T><T> 3 Joe Thomas cf<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+<T><T> 9 Nyjer Morgan 3b<T> 1  0  0  0  0  0  0  0  1  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>54 13 24  6  0  1 13  7  0  0  9  0  2<T>Totals<T>40 10 11  4  0  2  9  7  3  2  6  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+17 Mark Jordan<T> 3       10  5  5  0  2  2  2B    0<T>28 Shane Youman<T> 8        7  6  5  0  5  4  4B    1<L.30.1>
+49 Tim Wakefield<T> 4 2/3    7  1  1  0  2  5  4H    3<T>13 Jonny Venters (w)<T> 1 2/3    3  2  2  1  1  1  1B    0<L.30.1>
+ 6 Matt Thornton (l)<T> 1 1/3    5  7  7  1  2  1  1H    3<T>14 Matt Hamilton<T>   1/3    1  2  1  1  1  1  1     0<L.30.1>
+14 Julio Guillen<T> 1        2  0  0  0  1  1  0     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 3: Atlanta Braves (22-16) at Boston Red Sox (13-25)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Palmeiro<UC> on mound. Cabrera doubled to RF. Miller struck out. Suzuki ground out to 1B (3B). Johnson doubled to RF, <L.30.1>
+         Cabrera scored, <Z>AB 1-0<C>. Pena struck out.<L.33.1>
+<Z>BR  1st  <C><U>Street<UC> on mound. Ellsbury singled to CF. Miller walked, Ellsbury to 2nd. Iglesias struck out. Lowrie flied out to RF, <L.30.1>
+         field save. Sierra flied out to C.<L.33.1>
+<Z>AB  2nd  <C>Bautista flied out to C. Heyward flied out to C. Prado ground out to 1B (2B).<L.33.1>
+<Z>BR  2nd  <C>Scutaro struck out. Bautista ground out to 1B (3B). Castillo struck out.<L.33.1>
+<Z>AB  3rd  <C>Mclouth flied out to RF, field save. Cabrera walked. Miller struck out. Suzuki struck out.<L.33.1>
+<Z>BR  3rd  <C>Martinez flied out to SS. Ellsbury homered to CF, <Z>1-1<C>. Miller singled to LF. Iglesias flied out to LF. Lowrie struck <L.30.1>
+         out.<L.33.1>
+<Z>AB  4th  <C>Johnson struck out. Pena flied out to SS. Bautista flied out to 3B.<L.33.1>
+<Z>BR  4th  <C>Sierra struck out. Scutaro struck out. Bautista flied out to 2B.<L.33.1>
+<Z>AB  5th  <C>Heyward singled to LF. Prado walked, Heyward to 2nd. Mclouth flied out to C. Cabrera walked, Heyward to 3rd, Prado to <L.30.1>
+         2nd. Miller singled to RF, Heyward scored, Prado to 3rd, Cabrera to 2nd, <Z>AB 2-1<C>. Suzuki struck out. Johnson ground out <L.30.1>
+         to 1B (SS).<L.33.1>
+<Z>BR  5th  <C>Castillo ground out to 1B (C). Martinez doubled to RF. Ellsbury struck out. Miller flied out to SS.<L.33.1>
+<Z>AB  6th  <C>Pena flied out to C. <U>Miller<UC> took over on mound. Bautista singled to CF. Heyward flied out to CF, field save. Prado flied <L.30.1>
+         out to SS.<L.33.1>
+<Z>BR  6th  <C>Iglesias ground out to 1B (2B). Lowrie flied out to RF. Sierra ground out to 1B (2B).<L.33.1>
+<Z>AB  7th  <C>Mclouth walked. Cabrera singled to CF, Mclouth to 2nd. Miller struck out. Suzuki struck out. Johnson ground out to 1B <L.30.1>
+         (2B).<L.33.1>
+<Z>BR  7th  <C><U>Thomas<UC> pinch hitting at CF. Thomas struck out. Bautista flied out to C. <U>Morgan<UC> pinch hitting at 3B. Morgan flied out to <L.30.1>
+         C.<L.33.1>
+<Z>AB  8th  <C>Pena walked. Bautista walked, Pena to 2nd. Heyward reached 1st, Pena forced out at 3B (2B), Bautista to 2nd. Prado <L.30.1>
+         walked, Bautista to 3rd, Heyward to 2nd. Mclouth singled to CF, Bautista scored, Heyward to 3rd, Prado to 2nd, <Z>AB 3-1<C>. <L>
+         <U>Guillen<UC> took over on mound. Cabrera reached 1st, Heyward forced out at home (SS), Prado to 3rd, Mclouth to 2nd. Miller <L.30.1>
+         ground out to 1B (2B).<L.33.1>
+<Z>BR  8th  <C>Martinez struck out. Ellsbury flied out to 2B. Miller struck out.<L.33.1>
+<Z>AB  9th  <C>Suzuki flied out to SS. Johnson flied out to C. Pena walked. Bautista walked, Pena to 2nd. Heyward flied out to C.<L.33.1>
+<Z>BR  9th  <C>Iglesias struck out. Lowrie walked. Sierra sacrificed to LF, Lowrie to 2nd. Thomas struck out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 1 <C>(2,2) <Z> 0 <C>(1,0) <Z> 0 <C>(1,1) <Z> 1 <C>(1,3) <Z> 0 <C>(0,2) <T><Z>  3<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <T><Z>  1<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 3  1  2  1  0  0  0  2  0  0  0  0  0<T>46 Jacoby Ellsbury rf<T> 4  1  2  0  0  1  1  0  0  0  1  0  0<L.30.1>
+ 7 Randy Miller 2b<T> 5  0  1  0  0  0  1  0  0  0  3  0  0<T> 5 Eric Miller 1b<T> 3  0  1  0  0  0  0  1  0  0  1  0  0<L.30.1>
+19 Kurt Suzuki c <T> 5  0  0  0  0  0  0  0  0  0  3  0  0<T>70 Jose Iglesias ss<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+27 Kelly Johnson lf<T> 5  0  1  1  0  0  1  0  0  0  1  0  0<T>43 Jed Lowrie 2b<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+ 3 Raul Pena dh<T> 3  0  0  0  0  0  0  2  0  0  1  0  0<T>20 Moises Sierra dh<T> 3  0  0  0  0  0  0  0  1  0  1  0  0<L.30.1>
+ 9 Jose Bautista 3b<T> 3  1  1  0  0  0  0  2  0  0  0  0  0<T>16 Marco Scutaro cf<T> 2  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+71 Jason Heyward 1b<T> 5  1  1  0  0  0  0  0  0  0  0  0  0<T> 1 Jose Bautista lf<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+12 Martin Prado ss<T> 2  0  0  0  0  0  0  2  0  0  0  0  0<T> 4 Adrian Castillo 3b<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+17 Nate Mclouth cf<T> 3  0  1  0  0  0  1  1  0  0  0  0  0<T>41 Victor Martinez c <T> 3  0  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+<T><T> 3 Joe Thomas cf<T> 2  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+<T><T> 9 Nyjer Morgan 3b<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>34  3  7  2  0  0  3  9  0  0  8  0  0<T>Totals<T>30  1  4  1  0  1  1  2  1  0 12  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 8 Ramon Palmeiro (l)<T> 5 1/3    4  2  2  0  3  6  3B    0<T> 5 Huston Street (w)<T> 9        4  1  1  1  2 12  4     0<L.30.1>
+ 2 Scott Miller<T> 2        3  1  1  0  4  2  2H    3<T><T><L.30.1>
+14 Julio Guillen<T> 1 2/3    0  0  0  0  2  0  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<BK.Series 2><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 1: Oakland Athletics (21-18) at Atlanta Braves (23-16)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+OA  1st  <C><U>Lee<UC> on mound. Cust flied out to CF. Blum doubled to CF. Ordonez flied out to CF, field save. Crosby ground out to 1B <L.30.1>
+         (2B).<L.33.1>
+<Z>AB  1st  <C><U>Gonzalez<UC> on mound. Cabrera walked. Cabrera stole 2nd. Miller sacrificed to CF, Cabrera to 3rd. Suzuki struck out. <L.30.1>
+         Johnson ground out to 1B (SS).<L.33.1>
+<Z>OA  2nd  <C>Swisher walked. Kouzmanoff flied out to LF. Petit flied out to RF, Swisher to 2nd. Cabrera struck out.<L.33.1>
+<Z>AB  2nd  <C>Pena flied out to SS. Bautista walked. Heyward flied out to 2B, field save. Prado doubled to CF, Bautista to 3rd. <L.30.1>
+         Mclouth singled to CF, Bautista scored, Prado to 3rd, <Z>AB 1-0<C>. Cabrera ground out to 1B (2B).<L.33.1>
+<Z>OA  3rd  <C>Kelly flied out to C. Cust doubled to CF. Blum flied out to CF, Cust to 3rd. Ordonez singled, error by 3B, Cust scored, <L.30.1>
+         <Z>1-1<C>. Crosby struck out.<L.33.1>
+<Z>AB  3rd  <C>Miller singled to RF. Suzuki tripled to CF, Miller scored, <Z>AB 2-1<C>. Johnson singled to CF, Suzuki scored, <Z>AB 3-1<C>. <L.30.1>
+         Pena struck out. Bautista walked, Johnson to 2nd. Heyward flied out to CF. Prado ground out to 1B (SS).<L.33.1>
+<Z>OA  4th  <C>Swisher singled to 1B. Kouzmanoff struck out. Swisher forced out at 2B (SS), Petit ground into double play at 1B (2B).<L.33.1>
+<Z>AB  4th  <C>Mclouth homered to RF, <Z>AB 4-1<C>. Cabrera singled to CF. Miller struck out. Cabrera stole 2nd. Suzuki flied out to RF. <L.30.1>
+         Johnson singled to RF, Cabrera to 3rd. Pena struck out.<L.33.1>
+<Z>OA  5th  <C>Cabrera ground out to 1B (SS). Kelly struck out. Cust singled to CF. Blum singled, error by SS, Cust to 3rd. Ordonez <L.30.1>
+         ground out to 1B (SS).<L.33.1>
+<Z>AB  5th  <C>Bautista flied out to LF. <U>Spiner<UC> took over on mound. Heyward struck out. Prado homered to CF, <Z>AB 5-1<C>. Mclouth struck <L.30.1>
+         out.<L.33.1>
+<Z>OA  6th  <C>Crosby doubled to CF. Swisher homered to CF, Crosby scored, <Z>AB 5-3<C>. Kouzmanoff ground out to 1B (SS). Petit flied out <L.30.1>
+         to LF. Cabrera flied out to 3B.<L.33.1>
+<Z>AB  6th  <C>Cabrera flied out to LF. Miller ground out to 1B (SS). Suzuki doubled to LF. Johnson struck out.<L.33.1>
+<Z>OA  7th  <C><U>Barton<UC> pinch hitting at SS. Barton flied out to C. Cust flied out to LF. Blum singled to RF. Ordonez homered to RF, Blum <L.30.1>
+         scored, <Z>5-5<C>. Crosby singled to RF. Swisher singled to SS, Crosby to 2nd. <U>Ortegano<UC> took over on mound. Kouzmanoff flied <L.30.1>
+         out to RF.<L.33.1>
+<Z>AB  7th  <C>Pena ground out to 1B (SS). Bautista ground out to 1B (SS). Heyward flied out to CF, field save.<L.33.1>
+<Z>OA  8th  <C>Petit walked. Cabrera singled to CF, Petit to 2nd. Barton sacrificed to LF, Petit to 3rd, Cabrera to 2nd. Cust singled <L.30.1>
+         to RF, Petit scored, Cabrera to 3rd, <Z>OA 6-5<C>. <U>Gilfillan<UC> took over on mound. Cust stole 2nd. Blum ground out to 1B (SS, <L.30.1>
+         field save). Ordonez ground out to 1B (2B).<L.33.1>
+<Z>AB  8th  <C>Prado doubled to CF. Mclouth struck out. Cabrera struck out. Miller flied out to CF.<L.33.1>
+<Z>OA  9th  <C>Crosby flied out to SS. Swisher ground out to 1B (2B). Kouzmanoff singled to LF. Petit struck out.<L.33.1>
+<Z>AB  9th  <C><U>Outman<UC> took over on mound. Suzuki flied out to RF. Johnson singled to RF. Johnson forced out at 2B (SS), Pena ground <L.30.1>
+         into double play at 1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 1 <C>(1,0) <Z> 0 <C>(1,0d)<Z> 0 <C>(1,0) <Z> 2 <C>(2,0) <Z> 2 <C>(4,0) <Z> 1 <C>(2,1) <Z> 0 <C>(1,0) <T><Z>  6<C><L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,1) <Z> 1 <C>(2,1) <Z> 2 <C>(3,1) <Z> 1 <C>(3,0) <Z> 1 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0d)<T><Z>  5<C><ST.24.66.90><L.42.1>
+<Z>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 4 Jack Cust cf<T> 5  1  3  1  0  0  1  0  0  1  0  0  0<T>53 Melky Cabrera rf<T> 4  0  1  0  0  0  0  1  0  2  1  0  0<L.30.1>
+14 Geoff Blum c <T> 5  1  2  1  0  0  0  0  0  0  0  0  0<T> 7 Randy Miller 2b<T> 4  1  1  0  0  0  0  0  1  0  1  1  0<L.30.1>
+15 Luis Ordonez lf<T> 5  1  1  0  0  1  2  0  0  0  0  0  0<T>19 Kurt Suzuki c <T> 5  1  2  1  1  0  1  0  0  0  1  0  0<L.30.1>
+17 Bobby Crosby 2b<T> 5  1  2  1  0  0  0  0  0  0  1  1  0<T>27 Kelly Johnson lf<T> 5  0  3  0  0  0  1  0  0  0  1  0  0<L.30.1>
+35 Nick Swisher 1b<T> 4  1  3  0  0  1  2  1  0  0  0  1  0<T> 3 Raul Pena dh<T> 5  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+27 Kevin Kouzmanoff 3b<T> 5  0  1  0  0  0  0  0  0  0  1  0  0<T> 9 Jose Bautista 3b<T> 2  1  0  0  0  0  0  2  0  0  0  0  1<L.30.1>
+45 Gregorio Petit rf<T> 4  1  0  0  0  0  0  1  0  0  1  0  0<T>71 Jason Heyward 1b<T> 4  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+ 9 Edgar Cabrera dh<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>12 Martin Prado ss<T> 4  1  3  2  0  1  1  0  0  0  0  1  1<L.30.1>
+ 2 Eric Kelly ss<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<T>17 Nate Mclouth cf<T> 4  1  2  0  0  1  2  0  0  0  2  0  0<L.30.1>
+10 Daric Barton ss<T> 1  0  0  0  0  0  0  0  1  0  0  1  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>40  6 13  3  0  2  5  2  1  1  5  3  0<T>Totals<T>37  5 12  3  1  2  5  3  1  2  9  3  2<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+20 Todd Lee<T> 6 2/3   10  5  4  2  1  4  3H    2<T>13 R.Gonzalez<T> 4 1/3    8  4  4  1  3  4  3B    0<L.30.1>
+67 Jose Ortegano (l)<T>   2/3    2  1  1  0  1  0  0H    2<T> 6 Brent Spiner (w)<T> 3 2/3    3  1  1  1  0  5  2C    0<L.30.1>
+21 Kev Gilfillan<T> 1 2/3    1  0  0  0  0  1  1     0<T>32 Josh Outman (s)<T> 1        1  0  0  0  0  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 2: Oakland Athletics (22-18) at Atlanta Braves (23-17)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+OA  1st  <C><U>Arnold<UC> on mound. Cust struck out. Blum singled to RF. Ordonez flied out to CF, field save. Crosby singled to LF, Blum to <L.30.1>
+         2nd. Swisher struck out.<L.33.1>
+<Z>AB  1st  <C><U>Bedard<UC> on mound. Cabrera ground out to 1B (2B). Miller ground out to 1B (3B). Suzuki flied out to LF.<L.33.1>
+<Z>OA  2nd  <C>Kouzmanoff struck out. Petit ground out to 1B (SS). Cabrera struck out.<L.33.1>
+<Z>AB  2nd  <C>Johnson homered to RF, <Z>AB 1-0<C>. Pena doubled to CF. Bautista walked. Heyward flied out to LF, field save. Prado struck <L.30.1>
+         out. Mclouth flied out to LF, field save.<L.33.1>
+<Z>OA  3rd  <C>Kelly flied out to CF. Cust flied out to C. Blum doubled to LF. Ordonez walked. Crosby flied out to C.<L.33.1>
+<Z>AB  3rd  <C>Cabrera flied out to 1B, field save. Miller flied out to C. Suzuki doubled to LF. Johnson singled to CF, Suzuki to 3rd. <L.30.1>
+         Pena singled, error by 2B, Suzuki scored, Johnson to 3rd, <Z>AB 2-0<C>. Bautista ground out to 1B (SS, field save).<L.33.1>
+<Z>OA  4th  <C>Swisher doubled to LF. Kouzmanoff flied out to CF. Petit flied out to CF, field save. Cabrera flied out to CF.<L.33.1>
+<Z>AB  4th  <C>Heyward ground out to 1B (C). Prado singled to RF. Mclouth flied out to CF. Cabrera homered to RF, Prado scored, <L.30.1>
+         <Z>AB 4-0<C>. Miller ground out to 1B (2B).<L.33.1>
+<Z>OA  5th  <C>Kelly struck out. Cust struck out. Blum flied out to CF.<L.33.1>
+<Z>AB  5th  <C>Suzuki singled to CF. <U>Brown<UC> took over on mound. Johnson singled to RF, Suzuki to 2nd. Pena singled to CF, Suzuki to 3rd, <L.30.1>
+         Johnson to 2nd. Bautista struck out. Heyward homered to LF, Suzuki scored, Johnson scored, Pena scored, <Z>AB 8-0<C>. Prado <L.30.1>
+         doubled to CF. Mclouth ground out to 1B (3B). Cabrera flied out to CF.<L.33.1>
+<Z>OA  6th  <C>Ordonez doubled to RF. Crosby doubled to CF, Ordonez scored, <Z>AB 8-1<C>. Swisher doubled to CF, Crosby scored, <Z>AB 8-2<C>. <L.30.1>
+         Kouzmanoff ground out to 1B (SS). Petit ground out to 1B (3B). Cabrera singled to 2B, Swisher to 3rd. <U>Ortegano<UC> took over <L.30.1>
+         on mound. Kelly ground out to 1B (C).<L.33.1>
+<Z>AB  6th  <C><U>Robinson<UC> took over on mound. Miller singled to RF. Suzuki walked, Miller to 2nd. Johnson reached 1st, Miller forced out <L.30.1>
+         at 3B (SS), Suzuki to 2nd. Pena doubled to CF, Suzuki scored, Johnson to 3rd, <Z>AB 9-2<C>. Bautista ground out to 1B (SS). <L.30.1>
+         Heyward singled to CF, Johnson scored, Pena scored, <Z>AB 11-2<C>. Prado ground out to 1B (3B).<L.33.1>
+<Z>OA  7th  <C>Cust ground out to 1B (3B, field save). Blum struck out. Ordonez struck out.<L.33.1>
+<Z>AB  7th  <C>Mclouth flied out to C. Cabrera struck out. Miller flied out to SS.<L.33.1>
+<Z>OA  8th  <C>Crosby flied out to C, field save. Swisher ground out to 1B (2B). <U>Barton<UC> pinch hitting at 3B. Barton walked. Petit flied <L.30.1>
+         out to C.<L.33.1>
+<Z>AB  8th  <C>Suzuki flied out to 1B. Johnson struck out. Pena struck out.<L.33.1>
+<Z>OA  9th  <C>Cabrera walked. <U>Green<UC> took over on mound. Kelly flied out to LF. Cabrera stole 2nd. Cust flied out to CF, Cabrera to 3rd. <L.30.1>
+         Blum ground out to 1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 2 <C>(4,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,1) <T><Z>  2<C><L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(2,1) <Z> 1 <C>(2,0) <Z> 2 <C>(2,0) <Z> 4 <C>(5,0) <Z> 3 <C>(3,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> x       <T> 11<C><ST.24.66.90><L.42.1>
+<Z>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 4 Jack Cust cf<T> 5  0  0  0  0  0  0  0  0  0  2  0  0<T>53 Melky Cabrera rf<T> 5  1  1  0  0  1  2  0  0  0  1  0  0<L.30.1>
+14 Geoff Blum c <T> 5  0  2  1  0  0  0  0  0  0  1  0  0<T> 7 Randy Miller 2b<T> 5  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+15 Luis Ordonez lf<T> 3  1  1  1  0  0  0  1  0  0  1  0  0<T>19 Kurt Suzuki c <T> 4  3  2  1  0  0  0  1  0  0  0  0  0<L.30.1>
+17 Bobby Crosby 2b<T> 4  1  2  1  0  0  1  0  0  0  0  0  1<T>27 Kelly Johnson lf<T> 5  3  3  0  0  1  1  0  0  0  1  0  0<L.30.1>
+35 Nick Swisher 1b<T> 4  0  2  2  0  0  1  0  0  0  1  0  0<T> 3 Raul Pena dh<T> 5  2  3  2  0  0  1  0  0  0  1  0  0<L.30.1>
+27 Kevin Kouzmanoff 3b<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<T> 9 Jose Bautista 3b<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+45 Gregorio Petit rf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>71 Jason Heyward 1b<T> 4  1  2  0  0  1  6  0  0  0  0  0  0<L.30.1>
+ 9 Edgar Cabrera dh<T> 3  0  1  0  0  0  0  1  0  1  1  0  0<T>12 Martin Prado ss<T> 4  1  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+ 2 Eric Kelly ss<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>17 Nate Mclouth cf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+10 Daric Barton 3b<T> 0  0  0  0  0  0  0  1  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>35  2  8  5  0  0  2  3  0  1  8  0  1<T>Totals<T>39 11 14  4  0  3 10  2  0  0  5  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+11 Jason Arnold (w)<T> 5 2/3    8  2  2  0  1  6  2H    2<T>22 Erik Bedard (l)<T> 4        7  5  4  2  1  1  1B    1<L.30.1>
+67 Jose Ortegano<T> 2 1/3    0  0  0  0  2  2  1B    1<T> 3 Tom Brown<T> 1        4  3  3  1  0  1  1H    0<L.30.1>
+ 8 Dave Green<T> 1        0  0  0  0  0  0  0     0<T>12 Dave Robinson<T> 3        3  3  3  0  1  3  2     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 3: Oakland Athletics (22-19) at Atlanta Braves (24-17)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+OA  1st  <C><U>Armas<UC> on mound. Cust flied out to SS. Blum singled to CF. Ordonez singled to CF, Blum to 2nd. Crosby tripled to LF, Blum <L.30.1>
+         scored, Ordonez scored, <Z>OA 2-0<C>. Swisher sacrificed to LF, Crosby scored, <Z>OA 3-0<C>. Kouzmanoff struck out.<L.33.1>
+<Z>AB  1st  <C><U>Thomas<UC> on mound. Cabrera singled to LF. Cabrera stole 2nd. Miller flied out to C. Suzuki flied out to C. Johnson singled <L.30.1>
+         to LF, Cabrera to 3rd. Pena ground out to 1B (2B).<L.33.1>
+<Z>OA  2nd  <C>Petit singled to 2B. Cabrera sacrificed to SS, Petit to 2nd. Kelly struck out. Cust homered to CF, Petit scored, <L.30.1>
+         <Z>OA 5-0<C>. Blum flied out to 2B.<L.33.1>
+<Z>AB  2nd  <C>Bautista struck out. Heyward homered to CF, <Z>OA 5-1<C>. Prado ground out to 1B (2B). Mclouth ground out to 1B (2B).<L.33.1>
+<Z>OA  3rd  <C>Ordonez flied out to C. Crosby struck out. Swisher ground out to 1B (SS).<L.33.1>
+<Z>AB  3rd  <C>Cabrera flied out to CF. Miller singled to CF. Suzuki doubled to CF, Miller scored, <Z>OA 5-2<C>. Johnson singled to RF, <L.30.1>
+         Suzuki to 3rd. Pena homered to RF, Suzuki scored, Johnson scored, <Z>5-5<C>. Bautista flied out to C. Heyward ground out to <L.30.1>
+         1B (2B).<L.33.1>
+<Z>OA  4th  <C>Kouzmanoff flied out to CF, field save. Petit ground out to 1B (SS, field save). Cabrera struck out.<L.33.1>
+<Z>AB  4th  <C>Prado homered to LF, <Z>AB 6-5<C>. Mclouth ground out to 1B (2B). Cabrera ground out to 1B (2B, field save). Miller singled <L.30.1>
+         to RF. Suzuki walked, Miller to 2nd. Johnson walked, Miller to 3rd, Suzuki to 2nd. Pena doubled to CF, Miller scored, <L.30.1>
+         Suzuki scored, Johnson to 3rd, <Z>AB 8-5<C>. Bautista ground out to 1B (2B).<L.33.1>
+<Z>OA  5th  <C>Kelly struck out. Cust doubled to RF. Blum singled to CF, Cust scored, <Z>AB 8-6<C>. Ordonez sacrificed to RF, Blum to 2nd. <L.30.1>
+         Crosby singled to 1B, Blum to 3rd. Swisher walked, Crosby to 2nd. Kouzmanoff ground out to 1B (SS).<L.33.1>
+<Z>AB  5th  <C><U>Cahill<UC> took over on mound. Heyward struck out. Prado flied out to SS. Mclouth singled to RF. Cabrera singled to CF, <L.30.1>
+         Mclouth to 2nd. Miller singled to 3B, Mclouth to 3rd, Cabrera to 2nd. Suzuki struck out.<L.33.1>
+<Z>OA  6th  <C><U>Gilfillan<UC> took over on mound. Petit walked. Cabrera flied out to LF, Petit to 2nd. Kelly flied out to SS. Cust ground <L.30.1>
+         out to 1B (2B).<L.33.1>
+<Z>AB  6th  <C>Johnson struck out. Pena flied out to LF. Bautista ground out to 1B (2B).<L.33.1>
+<Z>OA  7th  <C>Blum walked. Ordonez flied out to C. Crosby flied out to SS. <U>Barton<UC> pinch hitting at 1B. Barton ground out to 1B (SS).<L.33.1>
+<Z>AB  7th  <C>Heyward struck out. Prado flied out to 1B. Mclouth struck out.<L.33.1>
+<Z>OA  8th  <C>Kouzmanoff ground out to 1B (3B). <U>Ortiz<UC> took over on mound. Petit singled to 3B. Cabrera walked, Petit to 2nd. Kelly <L.30.1>
+         singled to LF, Petit to 3rd, Cabrera to 2nd. Cust sacrificed to RF, Petit scored, Cabrera to 3rd, Kelly to 2nd, <Z>AB 8-7<C>. <L.30.1>
+         Blum ground out to 1B (3B).<L.33.1>
+<Z>AB  8th  <C>Cabrera singled to RF. Miller flied out to SS. Suzuki walked, Cabrera to 2nd. Johnson flied out to CF, Cabrera to 3rd, <L.30.1>
+         Suzuki to 2nd. Pena ground out to 1B (2B).<L.33.1>
+<Z>OA  9th  <C>Ordonez flied out to LF. Crosby flied out to RF. Barton flied out to CF.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Athletics<C><T><Z> 3 <C>(3,0) <Z> 2 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,1) <Z> 0 <C>(0,1) <Z> 0 <C>(0,1) <Z> 1 <C>(2,1) <Z> 0 <C>(0,0) <T><Z>  7<C><L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(2,0) <Z> 1 <C>(1,0) <Z> 4 <C>(4,0) <Z> 3 <C>(3,2) <Z> 0 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> x       <T>  8<C><ST.24.66.90><L.42.1>
+<Z>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 4 Jack Cust cf<T> 4  2  2  1  0  1  3  0  1  0  0  0  0<T>53 Melky Cabrera rf<T> 5  0  3  0  0  0  0  0  0  1  0  0  0<L.30.1>
+14 Geoff Blum c <T> 4  1  2  0  0  0  1  1  0  0  0  0  0<T> 7 Randy Miller 2b<T> 5  2  3  0  0  0  0  0  0  0  0  0  0<L.30.1>
+15 Luis Ordonez lf<T> 4  1  1  0  0  0  0  0  1  0  0  0  0<T>19 Kurt Suzuki c <T> 3  2  1  1  0  0  1  2  0  0  1  0  0<L.30.1>
+17 Bobby Crosby 2b<T> 5  1  2  0  1  0  2  0  0  0  1  0  0<T>27 Kelly Johnson lf<T> 4  1  2  0  0  0  0  1  0  0  1  0  0<L.30.1>
+35 Nick Swisher 1b<T> 1  0  0  0  0  0  1  1  1  0  0  0  0<T> 3 Raul Pena dh<T> 5  1  2  1  0  1  5  0  0  0  0  0  0<L.30.1>
+27 Kevin Kouzmanoff 3b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T> 9 Jose Bautista 3b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+45 Gregorio Petit rf<T> 3  2  2  0  0  0  0  1  0  0  0  0  0<T>71 Jason Heyward 1b<T> 4  1  1  0  0  1  1  0  0  0  2  0  0<L.30.1>
+ 9 Edgar Cabrera dh<T> 2  0  0  0  0  0  0  1  1  0  1  0  0<T>12 Martin Prado ss<T> 4  1  1  0  0  1  1  0  0  0  0  0  0<L.30.1>
+ 2 Eric Kelly ss<T> 4  0  1  0  0  0  0  0  0  0  2  0  0<T>17 Nate Mclouth cf<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+10 Daric Barton 1b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>33  7 10  1  1  1  7  4  4  0  5  0  0<T>Totals<T>38  8 14  2  0  3  8  3  0  1  6  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 1 Tony Armas (w)<T> 5        8  6  6  1  1  5  2H    0<T>16 Joe Thomas (l)<T> 4       10  8  8  3  2  1  4H    0<L.30.1>
+21 Kev Gilfillan<T> 2 1/3    0  0  0  0  2  0  2B    0<T>71 Trevor Cahill<T> 4        4  0  0  0  1  5  3 *   0<L.30.1>
+26 Edgar Ortiz (s)<T> 1 2/3    2  1  1  0  1  0  2     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Series 3><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 1: Atlanta Braves (25-17) at Chicago White Sox (26-16)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Sanchez<UC> on mound. Cabrera struck out. Miller flied out to 1B, field save. Suzuki ground out to 1B (3B).<L.33.1>
+<Z>CW  1st  <C><U>Youman<UC> on mound. Nelson singled to CF. Escobar flied out to C. Werth struck out. Nelson stole 2nd. Guzman doubled to CF, <L.30.1>
+         Nelson scored, <Z>CW 1-0<C>. Nady singled to CF, Guzman scored, <Z>CW 2-0<C>. Morel struck out.<L.33.1>
+<Z>AB  2nd  <C>Johnson flied out to SS, field save. Pena struck out. Bautista ground out to 1B (SS).<L.33.1>
+<Z>CW  2nd  <C>Morel flied out to CF. De Aza singled to RF. Olmedo singled to CF, De Aza to 3rd. Olmedo forced out at 2B (SS), Nelson <L.30.1>
+         ground into double play at 1B (2B).<L.33.1>
+<Z>AB  3rd  <C>Heyward flied out to LF, field save. Prado flied out to C. Mclouth ground out to 1B (SS).<L.33.1>
+<Z>CW  3rd  <C>Escobar struck out. Werth flied out to C. Guzman flied out to RF.<L.33.1>
+<Z>AB  4th  <C>Cabrera singled to LF. Miller singled to RF, Cabrera to 2nd. Suzuki homered to RF, Cabrera scored, Miller scored, <L.30.1>
+         <Z>AB 3-2<C>. Johnson struck out. Pena ground out to 1B (2B). Bautista walked. <U>Martin<UC> took over on mound. Heyward struck out.<L.33.1>
+<Z>CW  4th  <C>Nady ground out to 1B (SS, field save). Morel struck out. Morel ground out to 1B (3B).<L.33.1>
+<Z>AB  5th  <C>Prado flied out to CF, field save. Mclouth flied out to C. Cabrera struck out.<L.33.1>
+<Z>CW  5th  <C>De Aza singled to LF. Olmedo singled to RF, De Aza to 3rd. Nelson homered to CF, De Aza scored, Olmedo scored, <Z>CW 5-3<C>. <L.30.1>
+         Escobar ground out to 1B (SS, field save). Werth ground out to 1B (2B). Guzman flied out to 1B.<L.33.1>
+<Z>AB  6th  <C>Miller singled to CF. Suzuki homered to LF, Miller scored, <Z>5-5<C>. Johnson ground out to 1B (2B). Pena flied out to C. <L.30.1>
+         Bautista flied out to CF.<L.33.1>
+<Z>CW  6th  <C>Nady struck out. Morel struck out. Morel flied out to C.<L.33.1>
+<Z>AB  7th  <C>Heyward struck out. Prado doubled to LF. Mclouth singled to CF, Prado scored, <Z>AB 6-5<C>. Mclouth forced out at 2B (3B, <L.30.1>
+         field save), Cabrera ground into double play at 1B (2B, field save).<L.33.1>
+<Z>CW  7th  <C>De Aza ground out to 1B (SS). Olmedo tripled to RF. Nelson ground out to 1B (2B). Escobar singled to RF, Olmedo scored, <L.30.1>
+         <Z>6-6<C>. Werth walked, Escobar to 2nd. Guzman singled to CF, Escobar to 3rd, Werth to 2nd. <U>Ortegano<UC> took over on mound. <L.30.1>
+         Nady doubled to CF, Escobar scored, Werth scored, Guzman scored, <Z>CW 9-6<C>. Morel flied out to SS.<L.33.1>
+<Z>AB  8th  <C>Miller tripled to CF. Suzuki sacrificed to P, Miller scored, <Z>CW 9-7<C>. Johnson struck out. Pena ground out to 1B (2B).<L.33.1>
+<Z>CW  8th  <C>Morel ground out to 1B (2B). De Aza singled to CF. Olmedo walked, De Aza to 2nd. Nelson struck out. Escobar flied out to <L.30.1>
+         3B.<L.33.1>
+<Z>AB  9th  <C>Bautista flied out to CF. Heyward walked. Prado struck out. Mclouth ground out to 1B (SS).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 3 <C>(3,1) <Z> 0 <C>(0,0) <Z> 2 <C>(2,0) <Z> 1 <C>(2,0d)<Z> 1 <C>(1,0) <Z> 0 <C>(0,1) <T><Z>  7<C><L.33.1>
+<Z>White Sox<C><T><Z> 2 <C>(3,0) <Z> 0 <C>(2,0d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 3 <C>(3,0) <Z> 0 <C>(0,0) <Z> 4 <C>(4,1) <Z> 0 <C>(1,1) <Z> x       <T>  9<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 4  1  1  0  0  0  0  0  0  0  2  0  0<T>12 Tony Nelson cf<T> 5  2  2  0  0  1  3  0  0  1  1  0  0<L.30.1>
+ 7 Randy Miller 2b<T> 4  3  3  0  1  0  0  0  0  0  0  1  0<T>44 Alex Escobar ss<T> 5  1  1  0  0  0  1  0  0  0  1  0  0<L.30.1>
+19 Kurt Suzuki c <T> 3  2  2  0  0  2  6  0  1  0  0  0  0<T>26 Jayson Werth lf<T> 3  1  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+27 Kelly Johnson lf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>17 Ivan Guzman 3b<T> 4  2  2  1  0  0  1  0  0  0  0  1  0<L.30.1>
+ 3 Raul Pena dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>28 Xavier Nady 2b<T> 4  0  2  1  0  0  4  0  0  0  1  1  0<L.30.1>
+ 9 Jose Bautista 3b<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>42 Brent Morel c <T> 4  0  0  0  0  0  0  0  0  0  3  0  0<L.30.1>
+71 Jason Heyward 1b<T> 3  0  0  0  0  0  0  1  0  0  2  1  0<T> 6 Brent Morel 1b<T> 4  0  0  0  0  0  0  0  0  0  0  1  0<L.30.1>
+12 Martin Prado ss<T> 4  1  1  1  0  0  0  0  0  0  1  1  0<T>30 Alejandro De Aza dh<T> 4  1  3  0  0  0  0  0  0  0  0  0  0<L.30.1>
+17 Nate Mclouth cf<T> 4  0  1  0  0  0  1  0  0  0  0  0  0<T>66 Ray Olmedo rf<T> 3  2  3  0  1  0  0  1  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>33  7  8  1  1  2  7  2  1  0  8  3  0<T>Totals<T>36  9 13  2  1  1  9  2  0  1  7  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 7 Ramon Sanchez<T> 3 2/3    3  3  3  1  1  3  1H    1<T>28 Shane Youman (l)<T> 6 2/3   11  9  9  1  1  6  3H    3<L.30.1>
+20 Tom Martin (w)<T> 5 1/3    5  4  4  1  1  5  1     0<T>67 Jose Ortegano<T> 1 1/3    2  0  0  0  1  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 2: Atlanta Braves (25-18) at Chicago White Sox (27-16)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Crespo<UC> on mound. Cabrera struck out. Miller ground out to 1B (3B, field save). Suzuki flied out to SS.<L.33.1>
+<Z>CW  1st  <C><U>Street<UC> on mound. Nelson doubled to CF. Escobar struck out. Werth doubled to CF, Nelson scored, <Z>CW 1-0<C>. Guzman singled <L.30.1>
+         to RF, Werth to 3rd. Guzman stole 2nd. Nady ground out to 1B (2B). Morel struck out.<L.33.1>
+<Z>AB  2nd  <C>Johnson struck out. Pena doubled to RF. Bautista flied out to LF. Heyward flied out to LF.<L.33.1>
+<Z>CW  2nd  <C>Morel walked. Morel forced out at 2B (SS), De Aza ground into double play at 1B (2B). Olmedo walked. Nelson struck out.<L.33.1>
+<Z>AB  3rd  <C>Prado struck out. Mclouth flied out to SS. Cabrera struck out.<L.33.1>
+<Z>CW  3rd  <C>Escobar homered to RF, <Z>CW 2-0<C>. Werth tripled to RF. Guzman ground out to 1B (3B). Nady ground out to 1B (2B). Morel <L.30.1>
+         struck out.<L.33.1>
+<Z>AB  4th  <C>Miller struck out. Suzuki walked. Johnson flied out to C. Pena ground out to 1B (2B, field save).<L.33.1>
+<Z>CW  4th  <C>Morel flied out to LF. De Aza ground out to 1B (3B). Olmedo struck out.<L.33.1>
+<Z>AB  5th  <C>Bautista ground out to 1B (2B). Heyward walked. Heyward forced out at 2B (SS), Prado ground into double play at 1B (2B).<L.33.1>
+<Z>CW  5th  <C>Nelson flied out to CF, field save. Escobar struck out. Werth flied out to LF, field save.<L.33.1>
+<Z>AB  6th  <C>Mclouth flied out to LF. Cabrera flied out to RF. Miller singled to CF. Suzuki flied out to 1B.<L.33.1>
+<Z>CW  6th  <C>Guzman struck out. Nady flied out to RF, field save. Morel singled to CF. Morel singled to LF, Morel to 2nd. De Aza <L.30.1>
+         flied out to 2B.<L.33.1>
+<Z>AB  7th  <C>Johnson doubled to LF. Pena singled to RF, Johnson scored, <Z>CW 2-1<C>. Bautista singled to RF, Pena to 2nd. <U>Wells<UC> took <L.30.1>
+         over on mound. Heyward singled to RF, Pena to 3rd, Bautista to 2nd. Prado reached 1st, Pena forced out at home (1B, <L.30.1>
+         field save), Bautista to 3rd, Heyward to 2nd. Mclouth reached 1st, Bautista forced out at home (2B), Heyward to 3rd, <L.30.1>
+         Prado to 2nd. Cabrera ground out to 1B (2B).<L.33.1>
+<Z>CW  7th  <C>Olmedo singled to RF. <U>Venters<UC> took over on mound. Nelson singled to CF, Olmedo to 2nd. Escobar singled to CF, Olmedo <L.30.1>
+         scored, Nelson to 2nd, <Z>CW 3-1<C>. Werth flied out to CF. Guzman homered to CF, Nelson scored, Escobar scored, <Z>CW 6-1<C>. <L>
+         <U>Hamilton<UC> took over on mound. Nady singled to RF. Nady forced out at 2B (SS), Morel ground into double play at 1B (2B).<L.33.1>
+<Z>AB  8th  <C>Miller struck out. Suzuki ground out to 1B (C). Johnson tripled to LF. Pena ground out to 1B (SS, field save).<L.33.1>
+<Z>CW  8th  <C>Morel walked. De Aza reached 1st, Morel forced out at 2B (3B). Olmedo flied out to SS. Nelson doubled to LF, De Aza <L.30.1>
+         scored, <Z>CW 7-1<C>. Escobar homered to LF, Nelson scored, <Z>CW 9-1<C>. <U>Green<UC> took over on mound. Werth walked. Guzman homered <L.30.1>
+         to CF, Werth scored, <Z>CW 11-1<C>. Nady walked. Morel ground out to 1B (2B).<L.33.1>
+<Z>AB  9th  <C>Bautista struck out. Heyward doubled to CF. Prado flied out to C. Mclouth ground out to 1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,1d)<Z> 0 <C>(1,0) <Z> 1 <C>(4,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <T><Z>  1<C><L.33.1>
+<Z>White Sox<C><T><Z> 1 <C>(3,0) <Z> 0 <C>(0,2d)<Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 4 <C>(5,0d)<Z> 5 <C>(3,3) <Z> x       <T> 11<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>12 Tony Nelson cf<T> 5  3  3  2  0  0  1  0  0  0  1  0  0<L.30.1>
+ 7 Randy Miller 2b<T> 4  0  1  0  0  0  0  0  0  0  2  2  0<T>44 Alex Escobar ss<T> 5  3  3  0  0  2  4  0  0  0  2  1  0<L.30.1>
+19 Kurt Suzuki c <T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>26 Jayson Werth lf<T> 4  1  2  1  1  0  1  1  0  0  0  0  0<L.30.1>
+27 Kelly Johnson lf<T> 4  1  2  1  1  0  0  0  0  0  1  0  0<T>17 Ivan Guzman 3b<T> 5  2  3  0  0  2  5  0  0  1  1  0  0<L.30.1>
+ 3 Raul Pena dh<T> 4  0  2  1  0  0  1  0  0  0  0  0  0<T>28 Xavier Nady 2b<T> 4  0  1  0  0  0  0  1  0  0  0  1  0<L.30.1>
+ 9 Jose Bautista 3b<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>42 Brent Morel c <T> 5  0  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+71 Jason Heyward 1b<T> 3  0  2  1  0  0  0  1  0  0  0  2  0<T> 6 Brent Morel 1b<T> 2  0  1  0  0  0  0  2  0  0  0  1  0<L.30.1>
+12 Martin Prado ss<T> 4  0  0  0  0  0  0  0  0  0  1  2  0<T>30 Alejandro De Aza dh<T> 4  1  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+17 Nate Mclouth cf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>66 Ray Olmedo rf<T> 3  1  1  0  0  0  0  1  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>34  1  8  3  1  0  1  2  0  0  7  6  0<T>Totals<T>37 11 15  3  1  4 11  5  0  1  7  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+23 Ivan Crespo (w)<T> 6        5  1  1  0  2  5  2H    2<T> 5 Huston Street (l)<T> 6        8  3  3  1  2  7  3B    1<L.30.1>
+13 David Wells (s)<T> 3        3  0  0  0  0  2  2     0<T>13 Jonny Venters<T>   1/3    3  3  3  1  0  0  1H    0<L.30.1>
+<T><T>14 Matt Hamilton<T> 1 1/3    3  3  3  1  1  0  1H    0<L.30.1>
+<T><T> 8 Dave Green<T>   1/3    1  2  2  1  2  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 23   Week 5 of 18   27/9/14<L.54.1>
+Game 3: Atlanta Braves (25-19) at Chicago White Sox (28-16)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Cordero<UC> on mound. Cabrera ground out to 1B (2B). Miller ground out to 1B (SS). Suzuki flied out to 2B, field save.<L.33.1>
+<Z>CW  1st  <C><U>Lee<UC> on mound. Nelson singled to LF. Nelson stole 2nd. Escobar ground out to 1B (3B). Werth doubled to CF, Nelson scored, <L.30.1>
+         <Z>CW 1-0<C>. Guzman flied out to C. Nady ground out to 1B (2B).<L.33.1>
+<Z>AB  2nd  <C>Johnson walked. Johnson stole 2nd. Pena doubled to CF, Johnson scored, <Z>1-1<C>. Bautista sacrificed to RF, Pena to 3rd. <L.30.1>
+         Heyward walked. Prado reached 1st, Heyward forced out at 2B (3B). Prado stole 2nd. Mclouth struck out.<L.33.1>
+<Z>CW  2nd  <C>Morel ground out to 1B (2B). Morel ground out to 1B (2B). De Aza walked. Olmedo walked, De Aza to 2nd. Nelson ground out <L.30.1>
+         to 1B (2B).<L.33.1>
+<Z>AB  3rd  <C>Cabrera flied out to RF. Miller struck out. Suzuki singled to RF. Johnson flied out to SS, field save.<L.33.1>
+<Z>CW  3rd  <C>Escobar flied out to RF. Werth flied out to RF. Guzman flied out to C.<L.33.1>
+<Z>AB  4th  <C>Pena struck out. Bautista ground out to 1B (2B). Heyward flied out to SS.<L.33.1>
+<Z>CW  4th  <C>Nady struck out. Morel flied out to LF. Morel flied out to C.<L.33.1>
+<Z>AB  5th  <C>Prado doubled to RF. Mclouth flied out to SS. Cabrera walked. Miller reached 1st, Prado forced out at 3B (1B, field <L.30.1>
+         save), Cabrera to 2nd. Suzuki singled to CF, Cabrera to 3rd, Miller to 2nd. <U>Martin<UC> took over on mound. Johnson ground <L.30.1>
+         out to 1B (2B).<L.33.1>
+<Z>CW  5th  <C>De Aza singled to RF. Olmedo singled, error by 2B, De Aza to 2nd. Nelson flied out to RF. Escobar doubled to CF, De Aza <L.30.1>
+         scored, Olmedo scored, <Z>CW 3-1<C>. Werth ground out to 1B (3B). Guzman flied out to C.<L.33.1>
+<Z>AB  6th  <C>Pena struck out. Bautista walked. Heyward singled to 3B, Bautista to 2nd. Bautista forced out at 3B (2B), Prado ground <L.30.1>
+         into double play at 1B (3B).<L.33.1>
+<Z>CW  6th  <C>Nady walked. Morel flied out to 1B. Morel reached 1st, Nady forced out at 2B (3B). De Aza flied out to CF.<L.33.1>
+<Z>AB  7th  <C>Mclouth flied out to 2B. Cabrera struck out. Miller ground out to 1B (SS).<L.33.1>
+<Z>CW  7th  <C>Olmedo ground out to 1B (2B). Nelson struck out. Escobar walked. Werth struck out.<L.33.1>
+<Z>AB  8th  <C>Suzuki flied out to CF. Johnson flied out to SS. Pena doubled to RF. Bautista flied out to RF.<L.33.1>
+<Z>CW  8th  <C>Guzman homered to CF, <Z>CW 4-1<C>. Nady singled to CF. Morel doubled to LF, Nady to 3rd. Morel singled to RF, Nady scored, <L.30.1>
+         Morel scored, <Z>CW 6-1<C>. <U>Ortegano<UC> took over on mound. De Aza singled to RF, Morel to 2nd. Olmedo walked, Morel to 3rd, <L.30.1>
+         De Aza to 2nd. Nelson doubled to CF, Morel scored, De Aza scored, Olmedo to 3rd, <Z>CW 8-1<C>. <U>Gilfillan<UC> took over on mound. <L.30.1>
+         Escobar doubled to RF, Olmedo scored, Nelson scored, <Z>CW 10-1<C>. Werth singled to CF, Escobar scored, <Z>CW 11-1<C>. Guzman <L.30.1>
+         flied out to CF. Nady singled to 1B, Werth to 2nd. <U>Ortiz<UC> took over on mound. Nady forced out at 2B (SS), Morel ground <L.30.1>
+         into double play at 1B (2B).<L.33.1>
+<Z>AB  9th  <C>Heyward flied out to C, field save. Prado struck out. Mclouth struck out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(1,2) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,1) <Z> 0 <C>(1,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <T><Z>  1<C><L.33.1>
+<Z>White Sox<C><T><Z> 1 <C>(2,0) <Z> 0 <C>(0,2) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 2 <C>(2,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,1) <Z> 8 <C>(9,1d)<Z> x       <T> 11<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<T>12 Tony Nelson cf<T> 5  2  2  1  0  0  2  0  0  1  1  0  0<L.30.1>
+ 7 Randy Miller 2b<T> 4  0  0  0  0  0  0  0  0  0  1  1  1<T>44 Alex Escobar ss<T> 4  1  2  2  0  0  4  1  0  0  0  0  0<L.30.1>
+19 Kurt Suzuki c <T> 4  0  2  0  0  0  0  0  0  0  0  0  0<T>26 Jayson Werth lf<T> 5  0  2  1  0  0  2  0  0  0  1  0  0<L.30.1>
+27 Kelly Johnson lf<T> 3  1  0  0  0  0  0  1  0  1  0  0  0<T>17 Ivan Guzman 3b<T> 5  1  1  0  0  1  1  0  0  0  0  1  0<L.30.1>
+ 3 Raul Pena dh<T> 4  0  2  2  0  0  1  0  0  0  2  0  0<T>28 Xavier Nady 2b<T> 4  1  2  0  0  0  0  1  0  0  1  1  0<L.30.1>
+ 9 Jose Bautista 3b<T> 2  0  0  0  0  0  0  1  1  0  0  0  0<T>42 Brent Morel c <T> 5  1  1  1  0  0  0  0  0  0  0  0  0<L.30.1>
+71 Jason Heyward 1b<T> 3  0  1  0  0  0  0  1  0  0  0  1  0<T> 6 Brent Morel 1b<T> 4  1  1  0  0  0  2  0  0  0  0  1  0<L.30.1>
+12 Martin Prado ss<T> 4  0  1  1  0  0  0  0  0  1  1  1  0<T>30 Alejandro De Aza dh<T> 3  2  2  0  0  0  0  1  0  0  0  0  0<L.30.1>
+17 Nate Mclouth cf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>66 Ray Olmedo rf<T> 2  2  0  0  0  0  0  2  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>31  1  6  3  0  0  1  4  1  2  7  3  1<T>Totals<T>37 11 13  5  0  1 11  5  0  1  3  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 5 Luis Cordero<T> 4 2/3    4  1  1  0  3  3  2H    3<T>20 Todd Lee (l)<T> 7        8  7  6  1  4  3  5H    1<L.30.1>
+20 Tom Martin (w)<T> 4 1/3    2  0  0  0  1  4  1     0<T>67 Jose Ortegano<T> 0        2  3  3  0  1  0  0H    2<L.30.1>
+<T><T>21 Kev Gilfillan<T>   1/3    3  1  1  0  0  0  0H    2<L.30.1>
+<T><T>26 Edgar Ortiz<T>   2/3    0  0  0  0  0  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Results Summary><P.70><B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB6  Season 23  Week 5 Results   27/9/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<ST.27.63.90.126><L.1.1>
+<U>Interleague Games<UC><L.48.1>
+<C><Z>Braves 6<C> (9h, 3bb)<T>31 Lester (6 2/3, 3r 6h 1bb)<T><Z>RED SOX 7<C> (9h, 3bb)<T> 1 Armas (6 1/3, 2r 4h 2bb)<T>10 inn<L.36.1>
+<Z>BRAVES 13<C> (24h, 7bb)<T>17 Jordan (3, 5r 10h 2bb)<T><Z>Red Sox 10<C> (11h, 7bb)<T>28 Youman (8, 6r 7h 5bb)<T>10 inn<L.36.1>
+<Z>BRAVES 3<C> (7h, 9bb)<T> 8 Palmeiro (5 1/3, 2r 4h 3bb)<T><Z>Red Sox 1<C> (4h, 2bb)<T> 5 Street (9, 1r 4h 2bb)<L.36.1>
+<L.9.1>
+<Z>METS 2<C> (6h, 0bb)<T>11 Williams (6 1/3, 1r 3h 0bb)<T><Z>Blue Jays 1<C> (5h, 2bb)<T>25 Sanchez (6 1/3, 1r 4h 0bb)<L.36.1>
+<Z>METS 9<C> (18h, 3bb)<T>32 Litsch (3 2/3, 2r 8h 1bb)<T><Z>Blue Jays 2<C> (8h, 2bb)<T>30 Davis (4, 2r 6h 2bb)<L.36.1>
+<Z>Mets 3<C> (5h, 3bb)<T>27 Cecil (6, 0r 3h 1bb)<T><Z>BLUE JAYS 5<C> (7h, 5bb)<T>11 Hernandez (5, 3r 3h 3bb)<L.36.1>
+<L.9.1>
+<Z>Cubs 2<C> (4h, 2bb)<T>28 Bolivar (5 1/3, 2r 4h 2bb)<T><Z>INDIANS 7<C> (11h, 3bb)<T>17 Washington (3 1/3, 3r 6h 1bb)<L.36.1>
+<Z>Cubs 5<C> (9h, 4bb)<T>41 Kobayashi (3, 5r 7h 2bb)<T><Z>INDIANS 6<C> (12h, 1bb)<T>15 Alou (3 1/3, 6r 8h 1bb)<L.36.1>
+<Z>Cubs 6<C> (11h, 2bb)<T>25 Lewis (5 1/3, 4r 8h 2bb)<T><Z>INDIANS 8<C> (12h, 1bb)<T>26 Guerrero (4, 2r 4h 0bb)<L.36.1>
+<L.9.1>
+<Z>REDS 1<C> (4h, 2bb)<T> 4 Ramirez (3 2/3, 0r 0h 1bb)<T><Z>Twins 0<C> (5h, 5bb)<T> 2 Thomas (6 1/3, 0r 4h 4bb)<L.36.1>
+<Z>REDS 7<C> (8h, 7bb)<T>16 Green (4 2/3, 4r 6h 3bb)<T><Z>Twins 3<C> (7h, 2bb)<T>10 Hamilton (4 2/3, 2r 4h 1bb)<L.36.1>
+<Z>Reds 4<C> (10h, 3bb)<T>22 Diaz (6, 1r 3h 2bb)<T><Z>TWINS 7<C> (14h, 0bb)<T> 1 Guillen (3, 2r 7h 0bb)<L.36.1>
+<L.9.1>
+<Z>Giants 3<C> (10h, 5bb)<T>16 Thomas (5, 1r 4h 3bb)<T><Z>ATHLETICS 6<C> (11h, 3bb)<T> 2 Hamilton (5, 5r 8h 2bb)<L.36.1>
+<Z>Giants 6<C> (7h, 4bb)<T>20 Baldwin (6 1/3, 0r 2h 2bb)<T><Z>ATHLETICS 8<C> (9h, 8bb)<T>19 Anderson (5 1/3, 4r 4h 5bb)<L.36.1>
+<Z>GIANTS 5<C> (7h, 8bb)<T> 5 Miller (5 1/3, 2r 3h 3bb)<T><Z>Athletics 4<C> (9h, 2bb)<T> 4 Jackson (4 2/3, 4r 6h 1bb)<L.36.1>
+<L.9.1>
+<Z>DODGERS 8<C> (15h, 2bb)<T>98 Tully (3 2/3, 7r 7h 1bb)<T><Z>Angels 4<C> (7h, 3bb)<T>77 Arredondo (7 2/3, 4r 6h 3bb)<L.36.1>
+<Z>Dodgers 1<C> (7h, 1bb)<T>43 Brazoban (8, 1r 7h 1bb)<T><Z>ANGELS 3<C> (9h, 1bb)<T>33 Billingsley (6, 3r 9h 1bb)<L.36.1>
+<Z>DODGERS 10<C> (19h, 2bb)<T>16 Thompson (3 1/3, 8r 14h 2bb)<T><Z>Angels 8<C> (12h, 3bb)<T>99 Tomko (5 2/3, 6r 9h 2bb)<L.36.1>
+<L.9.1>
+<Z>MARLINS 7<C> (11h, 5bb)<T>12 Pena (4 1/3, 7r 8h 3bb)<T><Z>Yankees 1<C> (8h, 1bb)<T> 7 Perez (9, 1r 8h 1bb)<L.36.1>
+<Z>MARLINS 5<C> (11h, 6bb)<T> 5 Vogelsong (4 1/3, 4r 10h 3bb)<T><Z>Yankees 2<C> (10h, 1bb)<T>57 Tankersley (7 2/3, 1r 8h 0bb)<L.36.1>
+<Z>MARLINS 4<C> (9h, 3bb)<T>52 Sabathia (4 2/3, 4r 8h 1bb)<T><Z>Yankees 3<C> (6h, 9bb)<T>47 German (4 2/3, 3r 5h 5bb)<L.36.1>
+<L.9.1>
+<Z>Phillies 1<C> (8h, 4bb)<T>20 Green (3, 1r 4h 2bb)<T><Z>RAYS 4<C> (5h, 2bb)<T>14 Devine (6, 4r 4h 1bb)<L.36.1>
+<Z>PHILLIES 5<C> (11h, 3bb)<T>23 Crespo (4 2/3, 2r 6h 3bb)<T><Z>Rays 0<C> (4h, 0bb)<T>45 Saito (6, 0r 4h 0bb)<L.36.1>
+<Z>Phillies 2<C> (6h, 4bb)<T>29 Thompson (6 1/3, 2r 4h 2bb)<T><Z>RAYS 4<C> (11h, 1bb)<T> 2 Sanders (3 2/3, 1r 3h 1bb)<L.36.1>
+<L.9.1>
+<Z>Pirates 1<C> (5h, 1bb)<T> 7 Sanchez (9, 1r 5h 1bb)<T><Z>WHITE SOX 5<C> (10h, 2bb)<T>32 Colon (3, 4r 8h 0bb)<L.36.1>
+<Z>PIRATES 3<C> (10h, 3bb)<T>23 Crespo (6 1/3, 2r 7h 2bb)<T><Z>White Sox 1<C> (6h, 4bb)<T>23 Karstens (7, 1r 5h 3bb)<L.36.1>
+<Z>Pirates 6<C> (9h, 2bb)<T> 5 Cordero (3, 6r 6h 2bb)<T><Z>WHITE SOX 7<C> (10h, 2bb)<T>75 Bootcheck (6, 4r 7h 1bb)<L.36.1>
+<L.9.1>
+<Z>CARDINALS 8<C> (12h, 2bb)<T>19 Sanchez (5 1/3, 4r 6h 1bb)<T><Z>Brewers 0<C> (5h, 1bb)<T>99 Kensing (9, 0r 5h 1bb)<L.36.1>
+<Z>CARDINALS 6<C> (8h, 5bb)<T> 1 Palmeiro (5 2/3, 3r 5h 3bb)<T><Z>Brewers 5<C> (12h, 2bb)<T>30 Robinson (5 2/3, 2r 8h 1bb)<L.36.1>
+<Z>Cardinals 0<C> (9h, 2bb)<T>37 Eveland (5 2/3, 0r 5h 2bb)<T><Z>BREWERS 4<C> (8h, 6bb)<T>45 Charlton (3 2/3, 2r 2h 4bb)<L.36.1>
+<L.9.1>
+<Z>Padres 4<C> (13h, 0bb)<T>60 Huber (5 2/3, 4r 10h 0bb)<T><Z>MARINERS 6<C> (10h, 2bb)<T>13 Murray (4 1/3, 6r 8h 0bb)<L.36.1>
+<Z>Padres 2<C> (10h, 4bb)<T>11 Kelly (5, 2r 9h 3bb)<T><Z>MARINERS 8<C> (9h, 3bb)<T>22 Scott (6, 3r 6h 1bb)<L.36.1>
+<Z>Padres 5<C> (9h, 3bb)<T>53 Rhodes (3, 5r 6h 2bb)<T><Z>MARINERS 17<C> (20h, 9bb)<T> 1 Harris (3, 7r 10h 4bb)<L.36.1>
+<L.9.1>
+<Z>Diamondbacks 4<C> (7h, 3bb)<T> 2 Brooks (5 2/3, 3r 5h 3bb)<T><Z>RANGERS 10<C> (9h, 7bb)<T> 9 Cruz (5, 7r 5h 6bb)<L.36.1>
+<Z>DIAMONDBACKS 7<C> (19h, 2bb)<T> 7 Davis (4, 4r 10h 1bb)<T><Z>Rangers 5<C> (10h, 3bb)<T>36 Miley (5 1/3, 0r 2h 1bb)<L.36.1>
+<Z>Diamondbacks 5<C> (11h, 4bb)<T>14 Sierra (5 1/3, 2r 4h 2bb)<T><Z>RANGERS 7<C> (11h, 3bb)<T> 7 Jordan (5, 6r 6h 2bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>CUBS 8<C> (12h, 2bb)<T>61 Buchholz (6 1/3, 3r 7h 1bb)<T><Z>Red Sox 2<C> (5h, 2bb)<T>11 Delgado (6, 1r 2h 1bb)<L.36.1>
+<Z>Cubs 0<C> (6h, 1bb)<T>23 Kelly (5 1/3, 0r 4h 1bb)<T><Z>RED SOX 2<C> (7h, 6bb)<T>10 Martinez (5, 2r 4h 5bb)<L.36.1>
+<Z>Cubs 3<C> (9h, 1bb)<T>31 Lester (5, 1r 4h 1bb)<T><Z>RED SOX 5<C> (13h, 3bb)<T>17 Washington (4 1/3, 2r 8h 1bb)<L.36.1>
+<L.9.1>
+<Z>Padres 6<C> (8h, 5bb)<T>65 Hughes (5 1/3, 6r 7h 3bb)<T><Z>YANKEES 8<C> (11h, 5bb)<T>21 Miller (5 2/3, 2r 6h 2bb)<L.36.1>
+<Z>PADRES 7<C> (10h, 4bb)<T>13 White (4 2/3, 3r 5h 2bb)<T><Z>Yankees 4<C> (10h, 3bb)<T>28 Melendez (5, 3r 8h 2bb)<L.36.1>
+<Z>PADRES 10<C> (15h, 4bb)<T>12 Pena (5, 5r 7h 3bb)<T><Z>Yankees 6<C> (9h, 5bb)<T>13 Murray (3, 6r 7h 4bb)<L.36.1>
+<L.9.1>
+<Z>Giants 0<C> (4h, 2bb)<T> 1 Sanders (6 1/3, 0r 4h 1bb)<T><Z>INDIANS 5<C> (12h, 2bb)<T>26 Graman (5 2/3, 2r 6h 1bb)<L.36.1>
+<Z>GIANTS 6<C> (13h, 5bb)<T>39 Cornell (4 2/3, 3r 5h 2bb)<T><Z>Indians 2<C> (4h, 2bb)<T>10 Guerrero (6 2/3, 1r 2h 0bb)<L.36.1>
+<Z>Giants 6<C> (9h, 5bb)<T>28 Bolivar (5 1/3, 3r 3h 3bb)<T><Z>INDIANS 11<C> (17h, 7bb)<T> 2 Hamilton (3, 3r 4h 3bb)<L.36.1>
+<L.9.1>
+<Z>Reds 0<C> (6h, 1bb)<T>48 Ryan (9, 0r 6h 1bb)<T><Z>BLUE JAYS 4<C> (9h, 3bb)<T>17 Guerrero (4 2/3, 4r 5h 3bb)<L.36.1>
+<Z>Reds 3<C> (10h, 3bb)<T>58 Frasor (4 2/3, 1r 4h 3bb)<T><Z>BLUE JAYS 6<C> (13h, 1bb)<T>23 Ibanez (4, 5r 8h 1bb)<L.36.1>
+<Z>REDS 6<C> (11h, 5bb)<T>11 Williams (4, 5r 7h 4bb)<T><Z>Blue Jays 3<C> (7h, 1bb)<T> 2 Thomas (6 1/3, 3r 7h 1bb)<L.36.1>
+<L.9.1>
+<Z>Diamondbacks 0<C> (4h, 0bb)<T>79 Flutie (6 1/3, 0r 4h 0bb)<T><Z>RAYS 6<C> (13h, 6bb)<T>11 Cruz (5, 3r 6h 5bb)<L.36.1>
+<Z>Diamondbacks 0<C> (8h, 2bb)<T>17 Brooks (4 1/3, 0r 6h 1bb)<T><Z>RAYS 3<C> (9h, 2bb)<T>22 Jones (5 1/3, 3r 7h 2bb)<L.36.1>
+<Z>Diamondbacks 2<C> (4h, 1bb)<T>20 Green (6 1/3, 2r 4h 1bb)<T><Z>RAYS 3<C> (7h, 4bb)<T> 9 Cruz (5, 1r 2h 3bb)<T>10 inn<L.36.1>
+<L.9.1>
+<Z>DODGERS 11<C> (14h, 2bb)<T>15 Cabrera (4 2/3, 5r 7h 0bb)<T><Z>Twins 4<C> (9h, 1bb)<T>50 Eovaldi (8 2/3, 4r 9h 1bb)<L.36.1>
+<Z>DODGERS 4<C> (7h, 4bb)<T>29 Thompson (5, 3r 4h 3bb)<T><Z>Twins 1<C> (10h, 1bb)<T>90 Lowe (7 2/3, 1r 10h 1bb)<L.36.1>
+<Z>Dodgers 3<C> (8h, 4bb)<T> 4 Ramirez (3, 2r 5h 0bb)<T><Z>TWINS 4<C> (7h, 6bb)<T>77 Arredondo (6 1/3, 3r 4h 6bb)<L.36.1>
+<L.9.1>
+<D><E><P>
+<B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB6  Season 23  Week 5 Results   27/9/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<U>Interleague Games<UC><L.48.1>
+<C><Z>White Sox 1<C> (4h, 2bb)<T>15 Rasmussen (9, 1r 4h 2bb)<T><Z>MARLINS 6<C> (8h, 3bb)<T> 4 Cruz (3, 5r 6h 1bb)<L.36.1>
+<Z>WHITE SOX 14<C> (19h, 7bb)<T>22 Del Orbe (5 1/3, 2r 6h 3bb)<T><Z>Marlins 3<C> (10h, 5bb)<T>19 Garcia (6, 1r 6h 3bb)<L.36.1>
+<Z>White Sox 1<C> (8h, 1bb)<T> 7 Perez (6 2/3, 1r 6h 1bb)<T><Z>MARLINS 5<C> (9h, 1bb)<T>53 Dolsi (5 2/3, 1r 6h 1bb)<L.36.1>
+<L.9.1>
+<Z>ATHLETICS 6<C> (13h, 2bb)<T>20 Lee (6 2/3, 5r 10h 1bb)<T><Z>Braves 5<C> (12h, 3bb)<T>13 Gonzalez (4 1/3, 4r 8h 3bb)<L.36.1>
+<Z>Athletics 2<C> (8h, 3bb)<T>11 Arnold (5 2/3, 2r 8h 1bb)<T><Z>BRAVES 11<C> (14h, 2bb)<T>22 Bedard (4, 5r 7h 1bb)<L.36.1>
+<Z>Athletics 7<C> (10h, 4bb)<T> 1 Armas (5, 6r 8h 1bb)<T><Z>BRAVES 8<C> (14h, 3bb)<T>16 Thomas (4, 8r 10h 2bb)<L.36.1>
+<L.9.1>
+<Z>MARINERS 13<C> (14h, 5bb)<T>48 Lopez (5, 7r 7h 4bb)<T><Z>Pirates 2<C> (6h, 0bb)<T> 4 Jordan (9, 2r 6h 0bb)<L.36.1>
+<Z>MARINERS 8<C> (12h, 3bb)<T>49 Ohlendorf (3, 7r 8h 3bb)<T><Z>Pirates 4<C> (6h, 4bb)<T>97 Beimel (3 2/3, 2r 4h 1bb)<L.36.1>
+<Z>MARINERS 7<C> (14h, 1bb)<T>32 Colon (5 2/3, 7r 10h 0bb)<T><Z>Pirates 5<C> (9h, 2bb)<T>60 Huber (3, 5r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>BREWERS 14<C> (24h, 5bb)<T>52 Ortiz (2, 6r 7h 1bb)<T><Z>Phillies 5<C> (12h, 2bb)<T>13 Vizcaino (5, 2r 5h 1bb)<L.36.1>
+<Z>BREWERS 3<C> (8h, 4bb)<T>44 Oswalt (5 2/3, 2r 5h 4bb)<T><Z>Phillies 1<C> (6h, 3bb)<T>70 Jones (6 1/3, 1r 4h 2bb)<L.36.1>
+<Z>Brewers 7<C> (12h, 5bb)<T>14 Devine (2 2/3, 4r 6h 3bb)<T><Z>PHILLIES 8<C> (12h, 5bb)<T>19 Sanchez (5, 5r 7h 2bb)<L.36.1>
+<L.9.1>
+<Z>ANGELS 6<C> (10h, 5bb)<T>14 Thompson (4, 0r 2h 4bb)<T><Z>Mets 2<C> (9h, 3bb)<T>68 Kazmir (5 2/3, 2r 7h 3bb)<L.36.1>
+<Z>ANGELS 7<C> (16h, 1bb)<T>13 Lee (5 1/3, 4r 11h 1bb)<T><Z>Mets 1<C> (4h, 2bb)<T> 3 Mitre (9, 1r 4h 2bb)<L.36.1>
+<Z>Angels 4<C> (8h, 1bb)<T>25 Sanchez (5 2/3, 2r 5h 1bb)<T><Z>METS 6<C> (9h, 2bb)<T>98 Tully (6 2/3, 6r 9h 2bb)<L.36.1>
+<L.9.1>
+<Z>Rangers 4<C> (12h, 3bb)<T>67 Hamilton (3 2/3, 2r 6h 1bb)<T><Z>CARDINALS 6<C> (10h, 3bb)<T>23 Ibanez (4 2/3, 6r 8h 1bb)<L.36.1>
+<Z>Rangers 1<C> (3h, 2bb)<T> 9 Mitchell (9, 1r 3h 2bb)<T><Z>CARDINALS 9<C> (12h, 8bb)<T>12 Abbott (4, 5r 4h 6bb)<L.36.1>
+<Z>Rangers 2<C> (6h, 0bb)<T>56 Guzman (9, 2r 6h 0bb)<T><Z>CARDINALS 11<C> (12h, 4bb)<T> 2 Brooks (5 2/3, 5r 6h 0bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>MARLINS 7<C> (13h, 1bb)<T>11 Kelly (5 1/3, 6r 9h 1bb)<T><Z>Mariners 4<C> (12h, 4bb)<T>57 Tankersley (5 2/3, 1r 7h 1bb)<L.36.1>
+<Z>MARLINS 9<C> (13h, 3bb)<T>53 Rhodes (6, 3r 7h 2bb)<T><Z>Mariners 5<C> (7h, 6bb)<T>47 German (5, 5r 7h 3bb)<L.36.1>
+<Z>MARLINS 7<C> (9h, 0bb)<T> 4 Jordan (6 2/3, 5r 6h 0bb)<T><Z>Mariners 2<C> (7h, 4bb)<T>15 Rasmussen (5 2/3, 0r 5h 3bb)<L.36.1>
+<L.9.1>
+<Z>Braves 7<C> (8h, 2bb)<T> 7 Sanchez (3 2/3, 3r 3h 1bb)<T><Z>WHITE SOX 9<C> (13h, 2bb)<T>28 Youman (6 2/3, 9r 11h 1bb)<L.36.1>
+<Z>Braves 1<C> (8h, 2bb)<T>23 Crespo (6, 1r 5h 2bb)<T><Z>WHITE SOX 11<C> (15h, 5bb)<T> 5 Street (6, 3r 8h 2bb)<L.36.1>
+<Z>Braves 1<C> (6h, 4bb)<T> 5 Cordero (4 2/3, 1r 4h 3bb)<T><Z>WHITE SOX 11<C> (13h, 5bb)<T>20 Lee (7, 7r 8h 4bb)<L.36.1>
+<L.9.1>
+<Z>Pirates 9<C> (13h, 3bb)<T>20 Baldwin (5 2/3, 7r 9h 1bb)<T><Z>ATHLETICS 11<C> (11h, 2bb)<T>23 Karstens (5, 11r 10h 1bb)<L.36.1>
+<Z>PIRATES 10<C> (15h, 2bb)<T> 5 Miller (4 2/3, 2r 6h 0bb)<T><Z>Athletics 5<C> (9h, 2bb)<T>75 Bootcheck (5 2/3, 5r 8h 1bb)<L.36.1>
+<Z>Pirates 6<C> (12h, 3bb)<T>13 Gonzalez (5 2/3, 3r 6h 0bb)<T><Z>ATHLETICS 12<C> (10h, 8bb)<T>48 Lopez (5 2/3, 4r 3h 5bb)<L.36.1>
+<L.9.1>
+<Z>PHILLIES 12<C> (15h, 7bb)<T> 7 Davis (4, 5r 7h 4bb)<T><Z>Rangers 9<C> (15h, 4bb)<T>45 Saito (4 1/3, 5r 5h 3bb)<L.36.1>
+<Z>PHILLIES 5<C> (9h, 2bb)<T>14 Sierra (4, 5r 7h 2bb)<T><Z>Rangers 0<C> (4h, 1bb)<T> 2 Sanders (4, 0r 2h 0bb)<L.36.1>
+<Z>PHILLIES 7<C> (13h, 5bb)<T>23 Ibanez (4 2/3, 3r 5h 2bb)<T><Z>Rangers 6<C> (10h, 5bb)<T>52 Ortiz (2, 2r 3h 2bb)<L.36.1>
+<L.9.1>
+<Z>Mets 0<C> (7h, 4bb)<T> 1 Palmeiro (6 1/3, 0r 6h 3bb)<T><Z>BREWERS 3<C> (7h, 3bb)<T>30 Davis (6, 3r 5h 1bb)<L.36.1>
+<Z>METS 5<C> (11h, 0bb)<T>37 Eveland (5, 4r 5h 0bb)<T><Z>Brewers 2<C> (6h, 4bb)<T>11 Hernandez (4 1/3, 2r 6h 2bb)<L.36.1>
+<Z>Mets 4<C> (8h, 2bb)<T>13 Vizcaino (5, 4r 5h 1bb)<T><Z>BREWERS 8<C> (10h, 2bb)<T>14 Thompson (4 1/3, 6r 5h 1bb)<L.36.1>
+<L.9.1>
+<Z>Cardinals 5<C> (6h, 4bb)<T>43 Brazoban (7, 4r 4h 3bb)<T><Z>ANGELS 6<C> (12h, 3bb)<T>99 Kensing (5 1/3, 6r 9h 2bb)<L.36.1>
+<Z>Cardinals 4<C> (8h, 0bb)<T>16 Thompson (8 1/3, 4r 8h 0bb)<T><Z>ANGELS 8<C> (15h, 2bb)<T>30 Robinson (5 2/3, 3r 7h 1bb)<L.36.1>
+<Z>Cardinals 0<C> (4h, 1bb)<T>68 Kazmir (9, 0r 4h 1bb)<T><Z>ANGELS 4<C> (9h, 1bb)<T>45 Charlton (6 1/3, 4r 9h 1bb)<L.36.1>
+<L.9.1>
+<Z>RED SOX 2<C> (5h, 3bb)<T>19 Anderson (6, 2r 4h 2bb)<T><Z>Giants 0<C> (7h, 4bb)<T>17 Jordan (5, 0r 4h 4bb)<L.36.1>
+<Z>Red Sox 0<C> (4h, 1bb)<T> 4 Jackson (6 2/3, 0r 2h 1bb)<T><Z>GIANTS 4<C> (10h, 2bb)<T> 8 Palmeiro (5 1/3, 2r 5h 2bb)<L.36.1>
+<Z>RED SOX 1<C> (8h, 3bb)<T>26 Graman (6, 1r 4h 2bb)<T><Z>Giants 0<C> (5h, 1bb)<T>61 Buchholz (9, 0r 5h 1bb)<L.36.1>
+<L.9.1>
+<Z>Yankees 6<C> (11h, 1bb)<T>15 Alou (4 2/3, 5r 7h 1bb)<T><Z>CUBS 11<C> (16h, 1bb)<T>16 Lantigua (5 1/3, 7r 9h 0bb)<L.36.1>
+<Z>YANKEES 7<C> (13h, 1bb)<T>26 Guerrero (4, 0r 5h 0bb)<T><Z>Cubs 4<C> (8h, 1bb)<T> 5 Vogelsong (6, 3r 5h 1bb)<L.36.1>
+<Z>Yankees 0<C> (5h, 1bb)<T>11 Delgado (5 1/3, 0r 4h 1bb)<T><Z>CUBS 2<C> (6h, 0bb)<T>52 Sabathia (6, 2r 6h 0bb)<L.36.1>
+<L.9.1>
+<Z>Indians 3<C> (8h, 0bb)<T>22 Scott (6, 3r 7h 0bb)<T><Z>PADRES 4<C> (8h, 1bb)<T>41 Kobayashi (7 1/3, 3r 6h 0bb)<L.36.1>
+<Z>Indians 2<C> (8h, 2bb)<T> 1 Harris (6 1/3, 0r 3h 1bb)<T><Z>PADRES 3<C> (10h, 1bb)<T>25 Lewis (6 1/3, 2r 8h 1bb)<L.36.1>
+<Z>INDIANS 10<C> (21h, 5bb)<T>21 Miller (5 2/3, 2r 6h 2bb)<T><Z>Padres 4<C> (15h, 4bb)<T> 1 Sanders (4 2/3, 3r 6h 3bb)<T>11 inn<L.36.1>
+<L.9.1>
+<Z>Blue Jays 1<C> (7h, 2bb)<T>33 Billingsley (8 1/3, 1r 7h 2bb)<T><Z>DODGERS 9<C> (13h, 3bb)<T>32 Litsch (5 1/3, 5r 9h 2bb)<L.36.1>
+<Z>Blue Jays 6<C> (16h, 4bb)<T>99 Tomko (5 1/3, 4r 10h 2bb)<T><Z>DODGERS 7<C> (13h, 6bb)<T>27 Cecil (3, 3r 7h 1bb)<L.36.1>
+<Z>BLUE JAYS 5<C> (8h, 2bb)<T>50 Eovaldi (5 1/3, 5r 8h 1bb)<T><Z>Dodgers 2<C> (7h, 1bb)<T>48 Ryan (8, 2r 7h 1bb)<L.36.1>
+<L.9.1>
+<Z>Rays 0<C> (5h, 3bb)<T>10 Hamilton (4 2/3, 0r 3h 2bb)<T><Z>REDS 2<C> (7h, 1bb)<T>23 Crespo (6, 0r 4h 1bb)<L.36.1>
+<Z>RAYS 3<C> (7h, 1bb)<T> 1 Guillen (5 1/3, 0r 3h 1bb)<T><Z>Reds 2<C> (6h, 3bb)<T>29 Thompson (7 1/3, 2r 5h 2bb)<L.36.1>
+<Z>Rays 1<C> (8h, 3bb)<T>17 Guerrero (5 1/3, 1r 4h 3bb)<T><Z>REDS 5<C> (8h, 2bb)<T>79 Flutie (5 1/3, 4r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>TWINS 7<C> (10h, 8bb)<T>36 Miley (5, 7r 9h 5bb)<T><Z>Diamondbacks 4<C> (12h, 3bb)<T>16 Green (5, 2r 6h 2bb)<L.36.1>
+<Z>TWINS 4<C> (9h, 5bb)<T> 7 Jordan (5, 4r 8h 3bb)<T><Z>Diamondbacks 0<C> (4h, 7bb)<T>22 Diaz (5 1/3, 0r 2h 5bb)<L.36.1>
+<Z>Twins 5<C> (11h, 5bb)<T>11 Cruz (5, 3r 6h 1bb)<T><Z>DIAMONDBACKS 6<C> (15h, 8bb)<T>15 Cabrera (4, 4r 6h 4bb)<T>13 inn<L.36.1>
+<L.9.1>
+<L.12.1>
+<L.1.1>
+<D><E><DU>
+<BK.Standings><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Season 23  Week 5 Standings   27/9/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.44.75.95.102.107><L.48.1>
+<C><Z>American League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Tampa Bay Rays (Rob Byrne)<T> 21  24  .466   -   6-3   L 1<T> 174   186   13-11<T> 8-13<T>  1<T>23,296   2  79   5  105<L.33.1>
+New York Yankees (Alex Quilliam)<T> 19  26  .422   2   2-7   L 1<T> 186   199   13-14<T> 6-12<T> 62<T>23,067   9  92   8  113<L.33.1>
+Boston Red Sox (Alan Clements)<T> 17  28  .377   4   5-4   W 1<T> 167   220   10-14<T> 7-14<T> 35<T>22,846   1 105   6   97<L.33.1>
+Toronto Blue Jays (Paul Beaumont)<T> 16  29  .355   5   4-5   W 1<T> 199   275    8-13<T> 8-16<T>167<T>22,732   9 194  12   97<L.33.1>
+<L.9.1>
+<Z>American League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Chicago White Sox (Robert Crowther)<T> 29  16  .644   -   6-3   W 3<T> 276   183   16-11<T>13-5<T> 47<T>29,781   9  96   8  110<L.33.1>
+Minnesota Twins (Mark J Hall)<T> 24  21  .533   5   4-5   L 1<T> 207   215   11-10<T>13-11<T>116<T>23,632   9 194  11  107<L.33.1>
+Cleveland Indians (Simon Richards)<T> 22  23  .488   7   6-3   W 1<T> 212   206   15-9<T> 7-14<T> 66<T>23,409   8 126  11  102<L.33.1>
+Milwaukee Brewers (Paul Denyer)<T> 19  26  .422  10   5-4   W 1<T> 186   236   12-12<T> 7-14<T> 39<T>23,069   3  97   4   98<L.33.1>
+<L.9.1>
+<Z>American League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Seattle Mariners (Gareth Jenkins)<T> 36   9  .800   -   6-3   L 3<T> 343   205   21-6<T>15-3<T> 26<T>25,039  13 191   6  116<L.33.1>
+Los Angeles Angels (Marc Rivoira)<T> 30  15  .666   6   6-3   W 3<T> 260   176   15-6<T>15-9<T> 32<T>29,195  14 191   7  103<L.33.1>
+Oakland Athletics (Dave Flesfader)<T> 24  21  .533  12   5-4   W 1<T> 222   242   16-8<T> 8-13<T> 34<T>23,637   8 120   9  107<L.33.1>
+Texas Rangers (Mike Sim)<T> 16  29  .355  20   2-7   L 6<T> 259   314   11-13<T> 5-16<T> 38<T>22,732   4  52   4  110<L.33.1>
+<L.9.1>
+<Z>National League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Miami Marlins (Patrick Lee)<T> 36   9  .800   -   8-1   W 4<T> 318   189   15-6<T>21-3<T>  3<T>30,047   9  85   4  112<L.33.1>
+Atlanta Braves (Alan/Gordon Milnes)<T> 25  20  .555  11   4-5   L 3<T> 288   218   15-9<T>10-11<T> 81<T>23,744   9 185   7  106<L.33.1>
+Philadelphia Phillies (Martin Halls)<T> 24  21  .533  12   5-4   W 4<T> 239   245   10-8<T>14-13<T>156<T>23,920  11 193  10   92<L.33.1>
+New York Mets (Kevin Gibson)<T> 17  28  .377  19   4-5   L 1<T> 188   263    7-14<T>10-14<T>299<T>22,844  12 194  11   91<L.33.1>
+<L.9.1>
+<Z>National League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>St Louis Cardinals (Troy Dilworth)<T> 31  14  .688   -   5-4   L 3<T> 233   135   15-3<T>16-11<T>107<T>29,373  15 193  13  104<L.33.1>
+Pittsburgh Pirates (Nigel Beck)<T> 23  22  .511   8   2-7   L 1<T> 248   226   10-11<T>13-11<T>177<T>23,520  11 191  10  105<L.33.1>
+Chicago Cubs (Graeme Odgers)<T> 19  26  .422  12   3-6   W 1<T> 180   204   10-14<T> 9-12<T> 30<T>23,069   4 108   8  105<L.33.1>
+Cincinnati Reds (Alistair Brearley)<T> 13  32  .288  18   5-4   W 1<T> 135   218    6-15<T> 7-17<T>119<T>22,403   3 174  10   92<L.33.1>
+<L.9.1>
+<Z>National League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Los Angeles Dodgers (Barry Andrews)<T> 28  17  .622   -   6-3   L 1<T> 254   184   14-7<T>14-10<T> 79<T>24,093  13 154   6  115<L.33.1>
+San Francisco Giants (Trevor Payling)<T> 21  24  .466   7   3-6   L 1<T> 171   237   13-11<T> 8-13<T>146<T>23,295   5 196  11   96<L.33.1>
+San Diego Padres (Neil Bassett)<T> 19  26  .422   9   4-5   L 1<T> 226   264    8-13<T>11-13<T>  0<T>23,067   0  13   0  105<L.33.1>
+Arizona Diamondbacks (Ashley Rossouw)<T> 11  34  .244  17   2-7   W 1<T> 119   250    4-14<T> 7-20<T>160<T>22,187   9 197  11   91<L.33.1>
+<L.9.1>
+<Z>GM: Danny McConnell    Version: 4.4 (2009 Rules)    Deadline: Saturday 11th October<L.39.1>
+Postal Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND.  Tel: 020 8325 2448.<L.39.1>
+Email Address: danny@pbmsports.com      Info Website: www.pbmsports.com      Active Website: www.softsim.co.uk<L.39.1>
+Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty. Cheques made payable to: Ab Initio Games<L.39.1>
+<U>Messages<UC><C><L.36.1>
+<L.6.1>
+<Z>This Week <C> We've been having some server issues for the last week or so with www.softsim.co.uk, and overnight Friday/<L.31.1>
+Saturday it packed up completely. Many thanks to Steve who worked until 3am fixing the issues, and hopefully it'll be smooth from<L.31.1>
+now onwards. As a consequence, I've run this weekend's turns somewhat later than usual, not least because you're on a short week<L.31.1>
+anyway. Apologies to those affected, and I hope everyone has managed to get their orders in.<L.31.1>
+<L.12.1>
+<Z>Deadlines <C> Please remember that deadlines are 9am Saturday, but turns may be run any time Saturday or Sunday, so if you<L.31.1>
+submit orders after 9am Saturday don't rely on them being used, but equally please don't chase me for "late" results until Monday<L.31.1>
+- I'm running the games in my spare time now, so it's nice to have some flexibility over the weekend with regard to running them.<L.31.1>
+<L.12.1>
+<Z>Late Email Results <C> If you think results are late, please make sure you wait until the following morning before chasing up<L.31.1>
+results. First step is to check out the Latest News at www.pbmsports.com - if I am running late I'll post a notice there (be aware<L.31.1>
+you may need to refresh the page, in case you get an old copy from Cache memory). Please don't chase me up because you know your<L.31.1>
+mate got his half an hour ago, because whilst most emails are "instant", often they do get delayed for a few hours and it does<L.31.1>
+take a while to send them all out (I spread them out to avoid triggering firewalls).<L.31.1>
+<L.12.1>
+<Z>PDF Reports <C> Emailed game reports are available for all games here. The standard format is a PDF file - Adobe Reader is free<L.31.1>
+to download (see www.pbmsports.com for a link) and you can open your reports with one click of the mouse and you can either view<L.31.1>
+them on screen, or print them as you wish. You don't need to worry about formatting or printer drivers. The text format for<L.31.1>
+reports is available but I only expect people will want to do so if they use the text file for other purposes (such as exporting<L.31.1>
+the listings into software produced yourself). If you've not tried email reports before, try them out - it really is very easy.<L.31.1>
+<L.1.1>
+<P>
+<L>
+<L.1.1>
+<BK.Actions><B>GAMEPLAN BASEBALL  MLB6   Week 5 Actions Report   27/9/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.33.66.99><L.48.1>
+Next Week: Regular Season Week 6<L.36.1>
+<C>Red Sox at Rays (2-1)<T>Yankees at Blue Jays (2-1)<T>Indians at Brewers (2-1)<T>White Sox at Twins (2-1)<T><L.33.1>
+Athletics at Rangers (2-1)<T>Mariners at Angels (3-0)<T>Marlins at Mets (3-0)<T>Braves at Phillies (2-1)<T><L.33.1>
+Pirates at Reds (2-1)<T>Cubs at Cardinals (0-3)<T>Padres at Dodgers (0-3)<T>Giants at Diamondbacks (2-1)<T><L.33.1>
+<L.6.1>
+Red Sox at Indians (1-2)<T>Yankees at Mariners (1-2)<T>White Sox at Athletics (1-2)<T>Blue Jays at Twins (0-3)<T><L.33.1>
+Rays at Rangers (2-1)<T>Brewers at Angels (1-2)<T>Marlins at Pirates (2-1)<T>Braves at Giants (3-0)<T><L.33.1>
+Cubs at Padres (1-2)<T>Phillies at Cardinals (3-0)<T>Mets at Dodgers (0-3)<T>Reds at Diamondbacks (1-2)<T><L.33.1>
+<L.6.1>
+Athletics at Red Sox (3-0)<T>Indians at Yankees (2-1)<T>Mariners at White Sox (2-1)<T>Angels at Blue Jays (3-0)<T><L.33.1>
+Twins at Rays (2-1)<T>Rangers at Brewers (3-0)<T>Padres at Marlins (1-2)<T>Pirates at Braves (2-1)<T><L.33.1>
+Giants at Cubs (1-2)<T>Diamondbacks at Phillies (1-2)<T>Cardinals at Mets (2-1)<T>Dodgers at Reds (3-0)<T><L.33.1>
+<L.6.1>
+<ST.33.66.99><L.3.1>
+<Z>Injuries and Holdouts<C><L.36.1>
+29 Tom Thompson (TB) 9 games<T>41 Victor Martinez (BR) 14 games<T>18 Mario Sierra (TO) 14 games<T>12 Francisco Pena (NY) 14 games<L.33.1>
+44 Alex Escobar (CW) 13 games<T>45 Brent Keys (MT) 6 games<T> 6 Denard Span (CL) 7 games<T> 8 Ryan Theriot (MB) 14 games<L.33.1>
+74 Robb Quinlan (LG) 11 games<T> 9 Edgar Cabrera (OA) 10 games<T>23 Mark Wilson (SM) 6 games<T>17 Carlos Lee (TR) 6 games<L.33.1>
+20 Todd Lee (AB) 11 games<T>31 Cesar Hernandez (PH) 26 games<T>36 J.Nickolino (MM) 6 games<T>20 Joe Jones (NM) 6 games<L.33.1>
+17 Todd Washington (CU) 9 games<T>25 Luis Garcia (CI) 11 games<T>11 Ty Taubenheim (SL) 6 games<T>16 Starling Marte (PI) 6 games<L.33.1>
+22 Travis Jones (AD) 14 games<T>77 Jose Arredondo (LA) 14 games<T>21 Jim Miller (SD) 25 games<T>42 Jack Wilson (SD) holdout<L.33.1>
+23 Gary Sprake (SF) 7 games<T><L.36.1>
+<ST.27.53.79.105><L.6.1>
+<ST.27.66.93><L.6.1>
+<Z>Trading List<C>    no players listed for trade this turn<L.36.1>
+<L.12.1>
+<Z>Free Agent Signings<C><L.36.1>
+Tampa Bay Rays sign FA 111 (3B), 4 Ramon Gonzalez (ex-CI) for 60 LP to replace 3 Ken Hamilton, net cost -5 LP<L.33.1>
+Toronto Blue Jays sign FA 102, 20 Robert Fish (ex-PI) for 24 LP to replace 48 B J Ryan, net cost -21 LP<L.33.1>
+Los Angeles Angels sign FA 114 (SS), 12 Shawn O'Malley for 14 LP to replace 4 Kyle Davis, net cost 0 LP<L.33.1>
+Texas Rangers sign FA 143 (LF), 15 Bill Roberts for 21 LP to replace 22 David Delluci, net cost -38 LP<L.33.1>
+Philadelphia Phillies sign FA 144 (1B), 6 Justin Morneau (ex-PI) for 26 LP to replace 49 Jesse Biddle, net cost 11 LP<L.33.1>
+Chicago Cubs sign FA 126 (RF), 30 Jim Abbott (ex-CW) for 30 LP to replace 29 Alex Rodriguez, net cost 15 LP<L.33.1>
+<L.6.1>
+<Z>Free Agent Pool<C>  (+ indicates player will be deleted after next turn's bids have been processed)<ST.30.66.96><L.36.1>
+<Z>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<T>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<C><L.36.1>
+101  <T>Bat R  6 HIT  1B   3 11  8  28 LP<T>102  B J Ryan (ex-TO)<T>Pit R 10 QUI      10  7 11  90 LP<L.33.1>
+103  Rafael Pena (ex-PH)<T>Pit R  8 CON       6  5  9  38 LP<T>104+ <T>Bat R  5 POW  SS   7  3  5  12 LP<L.33.1>
+105  F.Liriano (ex-PI)<T>Pit R  8 ACC       6  6  9  27 LP<T>106  Harry Herndon (ex-SD)<T>Pit L  8 ACC       3  0  8  31 LP<L.33.1>
+107  Nick Johnson (ex-MB)<T>Pit L 10 CON      14  1 10  97 LP<T>108  <T>Bat R  6 SPD  LF   3 11  8  23 LP<L.33.1>
+109  Matt Kemp (ex-LA)<T>Bat R  8 POW  SS   5  8  9  27 LP<T>110  D.Steckenrider (ex-MM)<T>Pit L  7 CON       2 13  9  21 LP<L.33.1>
+111  Ken Hamilton (ex-TB)<T>Pit L 10 CON      12  4 10 131 LP<T>112  Greg Lee (ex-AB)<T>Cat L  7 POW   C   R  4  7  17 LP<L.33.1>
+113  Greg Jordan (ex-OA)<T>Pit L  9 STA      11  4  9  55 LP<T>114  Kyle Davis (ex-LG)<T>Pit L  7 QUI      10  5  8  29 LP<L.33.1>
+115  Damaso Marte (ex-PI)<T>Pit R  8 CON       7  6  9  32 LP<T>116  Cesar Jimenez (ex-LG)<T>Pit R  9 QUI       9  7 10  41 LP<L.33.1>
+117  <T>Pit R  6 STA       3  9  7  19 LP<T>118  Paul Wells (ex-CL)<T>Pit R  8 ACC      11  3  8  41 LP<L.33.1>
+119  Austin Brice (ex-MM)<T>Pit R  8 QUI       4  9  9  30 LP<T>120  <T>Bat L  6 POW  LF   5  9  7  24 LP<L.33.1>
+121  Adrian Guerrero (ex-TO)<T>Pit R 10 STA      12  4 10  82 LP<T>122  <T>Bat R  6 FLD  2B   6  7  7  24 LP<L.33.1>
+123  Brad Ziegler (ex-AD)<T>Pit R  8 STA       7  3  8  30 LP<T>124  Freddy Garcia (ex-SM)<T>Pit R 10 ACC      13  4 10  72 LP<L.33.1>
+125  <T>Bat R  5 FLD  2B   R 13  7  10 LP<T>126  Alex Rodriguez (ex-CU)<T>Pit R  7 CON       3 10  9  31 LP<L.33.1>
+127  <T>Bat S  6 HIT  CF   6  9  7  30 LP<T>128  Chad Gaudin (ex-OA)<T>Pit R  9 QUI       8  6 10  63 LP<L.33.1>
+129  <T>Bat R  4 POW  SS   3  6  5  18 LP<T>130  <T>Bat R  6 HIT  SS   3 12  8  23 LP<L.33.1>
+131  Santiago Casilla (ex-OA)<T>Pit R  8 STA       7  7  9  36 LP<T>132+ Orlando Benitez (ex-MB)<T>Pit R  8 STA       6  2  8  26 LP<L.33.1>
+133  Rafael Rivera (ex-AB)<T>Bat L  6 FLD  1B   6  8  7  17 LP<T>134  John Hamilton (ex-AD)<T>Pit R  8 CON      11  5  9  46 LP<L.33.1>
+135  Pete Williams (ex-PH)<T>Bat R 11 POW  CF   9  5 12  83 LP<T>136  <T>Cat L  6 POW   C   2 13  8  25 LP<L.33.1>
+137  Jt Snow (ex-SF)<T>Bat R 10 POW  1B  13  1 10  90 LP<T>138  Roberto Martinez (ex-NM)<T>Bat R  7 HIT  1B  10  5  8  29 LP<L.33.1>
+139  <T>Pit L  5 CON       5 10  7  16 LP<T>140  Mike Napoli (ex-LG)<T>Cat R  9 FLD   C   9  6 10  60 LP<L.33.1>
+141  <T>Bat R  6 POW  OF   2 10  8  27 LP<T>142  Jonathan Broxton (ex-LA)<T>Pit R  9 STA       9  5 10  37 LP<L.33.1>
+143  David Delluci (ex-TR)<T>Bat R 10 SPD  LF  14  1 10 119 LP<T>144  Jesse Biddle (ex-PH)<T>Pit L  7 CON       3  9  8  31 LP<L.33.1>
+145+ <T>Pit L  7 ACC       2 13  9  26 LP<T>146  <T>Bat R  5 POW  3B   3  6  6  18 LP<L.33.1>
+147  Dana Eveland (ex-OA)<T>Pit L  8 ACC       7  9  9  47 LP<T>148  Orlando Rivera (ex-NM)<T>Bat S  8 FLD  RF   8  9  9  35 LP<L.33.1>
+<L.1.1>
+<D><E><DU>
+<BK.Turnsheet><P.70><L>
+<B>GAMEPLAN BASEBALL   MLB6   Turnsheet    27/9/14<X>      MLB6-AB<L.48.1>
+<B>Atlanta Braves (Alan/Gordon Milnes)   Week 6<C>      Deadline: Saturday 11th October<ST.24><L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<C><L.45.1>
+Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND. Web Orders: www.softsim.co.uk<L.45.1>
+<Z>[I] Fielding Lineup    <C>Basic fielding selection for this week and batting order. Batting order should be position in batting<L.33.1>
+<Z>                       <C>order (1-9) NOT shirt number. Please only fill in CHANGES to selections.<L.45.1>
+Fielding Position:<T>    C          1B          2B          3B          SS          LF          CF          RF          DH       <L.45.1>
+Shirt Number:<T>[  19  ]    [  71  ]    [   7  ]    [   9  ]    [  12  ]    [  27  ]    [  17  ]    [  53  ]    [   3  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.45.1>
+Batting Order (1-9):<T>[   3  ]    [   7  ]    [   2  ]    [   6  ]    [   8  ]    [   4  ]    [   9  ]    [   1  ]    [   5  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.54.1>
+<Z>[B] Lineup Changes    <C>Up to three changes in selection from basic order. Give shirt numbers of player to be picked, player<L.33.1>
+<Z>                       <C>to be replaced and game (2-9) from which change applies.<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+<L.9.1>
+<Z>[P] Pitching Changes    <C>Give shirt number of pitcher and changes to MAXBATS (MxB), MAXHITS (MxH), MAXEXTRA (MxE), FIRSTINN (FIn)<L.33.1>
+<Z>                        <C>and MINBATS (MnB). Please do not fill in parameters you are not changing.<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+<L.9.1>
+<Z>[S] Pitching Selections    <C>Pitching Selections for this week's games. A pitcher cannot be selected more than once. You must have<L.33.1>
+                           at least four pitchers in your starting rotation and four pitchers in your bullpen depth chart.<L.33.1>
+                           You do not have to select a setup and closing pitcher.<L.45.1>
+Starting Rotation: <T>[ 11 :      ]    [  1 :      ]    [ 28 :      ]    [  5 :      ]    [ <Z>20<C> :      ]    [  0 :      ]    <L.45.1>
+Bullpen Depth Chart:<T>[ 67 :      ]    [ 21 :      ]    [ 26 :      ]    [ 13 :      ]    [ 14 :      ]    [  8 :      ]    <L.45.1>
+Setup Pitcher: <T>[  0 :      ]    <L.45.1>
+Closer: <T>[  0 :      ]    <L.54.1>
+<Z>[T] Training    <C>Training & Bonus Skills (HIT, POW, SPD, FLD, ACC, CON, QUI or STA), Bonus & Key Players for each series. <L.45.1>
+Series 1 at PH    [  POW :            ]   [  HIT :            ]   [  Bonus  3 :         ]   [  Key <Z>16<C> :         ]<L.45.1>
+Series 2 at SF    [  POW :            ]   [  POW :            ]   [  Bonus  3 :         ]   [  Key <Z>17<C> :         ]<L.45.1>
+Series 3 vs PI    [  POW :            ]   [  HIT :            ]   [  Bonus  3 :         ]   [  Key <Z> 6<C> :         ]<L.45.1>
+<L.6.1>
+<Z>[X] Special Actions<L.48.1>
+<C>ACTION 1 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 2 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 3 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 4 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 5 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+<L.9.1>
+Codes are: ACCEPT, ACTIVATE, ADDFORM, ALBATTERS, ALLEADERS, ALPITCHERS, ALPLAYERS, BATTERS, BLOWINN, BLOWMARG, BUILDING, CANFULL,<L.33.1>
+CANOPP, COACH, FANS, LEADERS, LIST, LONGINN, LONGPIT, MAXLEAD, MERC, MINLEAD, MINORS, NEWPOS, NLBATTERS, NLLEADERS, NLPITCHERS, <L.33.1>
+NLPLAYERS, OFFER, PINCH1, PINCH2, PINCH3, PINCH4, PINCHDEF, PINCHINN, PITCHERS, PLATOON1, PLATOON2, PLATOON3, PLATOON4, PLAYERS, <L.33.1>
+PROMOTE, REHAB, RELEASE, RENAME, ROUNDUP, SCHEDULE, SCOUT, SETFULL, SETOPP, SIZE, STADIUM, STARTINN, STATS, SURFACE, SWAP, TRAINER<L.48.1>
+<Z>[Z] Free Agent Bid    <C>Give free agent number, shirt number of player to be replaced, amount bid for free agent and new shirt<L.33.1>
+<Z>                      <C>number and name for player signed. Bids are processed after special actions.<L.45.1>
+NUM [        ]   WAIVE [        ]   AMOUNT [        ]   SHIRT [        ]   NAME [                                          ]<L.54.1>
+<Z>[C] Payments<C>    Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty.  MLB6-AB tc= 19.4<L.48.1>
+<Z><C>AMOUNT ENCLOSED [ #      .      ]   Cheques made payable to: Ab Initio Games<L.45.1>
+Indicate any change of address in the space below.<D><E><DU>

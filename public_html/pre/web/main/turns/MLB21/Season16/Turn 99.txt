@@ -1,0 +1,680 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: alan.milnes@gmail.com
+Received: by 10.223.114.132 with SMTP id e4cs10431faq;
+        Thu, 7 Jan 2010 10:43:49 -0800 (PST)
+Received: by 10.150.87.2 with SMTP id k2mr4309721ybb.267.1262889828212;
+        Thu, 07 Jan 2010 10:43:48 -0800 (PST)
+Return-Path: <danny@pbmsports.com>
+Received: from fullspd.nexcess.net (fullspd.nexcess.net [208.86.253.130])
+        by mx.google.com with ESMTP id 10si35084905iwn.90.2010.01.07.10.43.46;
+        Thu, 07 Jan 2010 10:43:47 -0800 (PST)
+Received-SPF: neutral (google.com: 208.86.253.130 is neither permitted nor denied by best guess record for domain of danny@pbmsports.com) client-ip=208.86.253.130;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 208.86.253.130 is neither permitted nor denied by best guess record for domain of danny@pbmsports.com) smtp.mail=danny@pbmsports.com
+Received: (qmail 29619 invoked by uid 108); 7 Jan 2010 13:43:46 -0500
+Delivered-To: ALAN@GAMEPLAN.ORG.UK
+X-Spam-Checker-Version: SpamAssassin 3.2.5 (2008-06-10) on fullspd.nexcess.net
+X-Spam-Level: 
+X-Spam-Status: No, score=0.9 required=5.0 tests=AWL,RDNS_NONE autolearn=no
+	version=3.2.5
+Received: (qmail 29587 invoked by uid 108); 7 Jan 2010 13:43:43 -0500
+Received: from unknown (HELO mtaout02-winn.ispmail.ntl.com) (81.103.221.48)
+  by fullspd.nexcess.net with SMTP; 7 Jan 2010 13:43:43 -0500
+Received-SPF: none (fullspd.nexcess.net: domain at pbmsports.com does not designate permitted sender hosts)
+Received: from know-smtpout-4.server.virginmedia.net ([62.254.123.4])
+          by mtaout02-winn.ispmail.ntl.com
+          (InterMail vM.7.08.04.00 201-2186-134-20080326) with ESMTP
+          id <20100107184342.NMVW27507.mtaout02-winn.ispmail.ntl.com@know-smtpout-4.server.virginmedia.net>
+          for <ALAN@GAMEPLAN.ORG.UK>; Thu, 7 Jan 2010 18:43:42 +0000
+Received: from [82.15.140.227] (helo=Gromit)
+	by know-smtpout-4.server.virginmedia.net with esmtp (Exim 4.63)
+	(envelope-from <danny@pbmsports.com>)
+	id 1NSxKf-0003AK-H9
+	for ALAN@GAMEPLAN.ORG.UK; Thu, 07 Jan 2010 18:43:42 +0000
+From: "Danny McConnell" <danny@pbmsports.com>
+Subject: MLB21-PH, Turn 99
+To: ALAN@GAMEPLAN.ORG.UK
+Content-Type: text/plain
+Date: Thu, 7 Jan 2010 18:43:42 +0000
+Message-Id: <20100107184342.NMVW27507.mtaout02-winn.ispmail.ntl.com@know-smtpout-4.server.virginmedia.net>
+X-Cloudmark-Analysis: v=1.1 cv=1ggfb5FlKZQUfF3vzm9UBYZ2uTfLsbs/8dSljwg5+mE= c=1 sm=0 a=FHEM_hz9AAAA:8 a=PM0QL_S1AyC7sjg3dJcA:9 a=epb2-sKKj7kEnl1OhsQA:7 a=P9HBuZCAXc_-QJULCuIdm2ZGOZwA:4 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117
+
+ALAN@GAMEPLAN.ORG.UK
+0
+MLB21-PH, Turn 99
+<STARTREP>
+<BK.Schedule><P.70><L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL   MLB21   Season 16   American & National League Fixtures<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<C><ST.12.32.52.72.92.112><L.48.1>
+<Z>Week 1<C><T>BA at TO  __:__<T>BR at NY  __:__<T>CL at DT  __:__<T>CW at MB  __:__<T>TB at OA  __:__<T>LG at TR  __:__<L.33.1>
+<T>FM at NM  __:__<T>WN at PH  __:__<T>PI at HA  __:__<T>CU at CI  __:__<T>CO at LA  __:__<T>SF at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>MB at TO  __:__<T>OA at NY  __:__<T>TR at DT  __:__<T>CW at BA  __:__<T>TB at BR  __:__<T>LG at CL  __:__<L.33.1>
+<T>CI at NM  __:__<T>LA at PH  __:__<T>AD at HA  __:__<T>CU at FM  __:__<T>CO at WN  __:__<T>SF at PI  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at TR  __:__<T>NY at MB  __:__<T>DT at OA  __:__<T>BA at LG  __:__<T>BR at CW  __:__<T>CL at TB  __:__<L.33.1>
+<T>NM at AD  __:__<T>PH at CI  __:__<T>HA at LA  __:__<T>FM at SF  __:__<T>WN at CU  __:__<T>PI at CO  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 2<C><T>TO at BA  __:__<T>NY at BR  __:__<T>DT at CL  __:__<T>MB at CW  __:__<T>OA at TB  __:__<T>TR at LG  __:__<L.33.1>
+<T>NM at FM  __:__<T>PH at WN  __:__<T>HA at PI  __:__<T>CI at CU  __:__<T>LA at CO  __:__<T>AD at SF  __:__<L.33.1>
+<T><L.3.1>
+<T>DT at TO  __:__<T>TR at NY  __:__<T>OA at MB  __:__<T>CL at BA  __:__<T>LG at BR  __:__<T>TB at CW  __:__<L.33.1>
+<T>HA at NM  __:__<T>AD at PH  __:__<T>LA at CI  __:__<T>PI at FM  __:__<T>SF at WN  __:__<T>CO at CU  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at OA  __:__<T>NY at DT  __:__<T>MB at TR  __:__<T>BA at TB  __:__<T>BR at CL  __:__<T>CW at LG  __:__<L.33.1>
+<T>NM at LA  __:__<T>PH at HA  __:__<T>CI at AD  __:__<T>FM at CO  __:__<T>WN at PI  __:__<T>CU at SF  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 3<C><T>BR at TO  __:__<T>BA at NY  __:__<T>CW at DT  __:__<T>CL at MB  __:__<T>LG at OA  __:__<T>TB at TR  __:__<L.33.1>
+<T>WN at NM  __:__<T>FM at PH  __:__<T>CU at HA  __:__<T>PI at CI  __:__<T>SF at LA  __:__<T>CO at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>CW at TO  __:__<T>TB at NY  __:__<T>LG at DT  __:__<T>MB at BA  __:__<T>OA at BR  __:__<T>TR at CL  __:__<L.33.1>
+<T>CU at NM  __:__<T>CO at PH  __:__<T>SF at HA  __:__<T>CI at FM  __:__<T>LA at WN  __:__<T>AD at PI  __:__<L.33.1>
+<T><L.3.1>
+<T>BA at TR  __:__<T>BR at MB  __:__<T>CL at OA  __:__<T>TO at LG  __:__<T>NY at CW  __:__<T>DT at TB  __:__<L.33.1>
+<T>FM at AD  __:__<T>WN at CI  __:__<T>PI at LA  __:__<T>NM at SF  __:__<T>PH at CU  __:__<T>HA at CO  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 4<C><T>TO at NY  __:__<T>BA at BR  __:__<T>DT at MB  __:__<T>CL at CW  __:__<T>OA at TR  __:__<T>TB at LG  __:__<L.33.1>
+<T>NM at PH  __:__<T>FM at WN  __:__<T>HA at CI  __:__<T>PI at CU  __:__<T>LA at AD  __:__<T>CO at SF  __:__<L.33.1>
+<T><L.3.1>
+<T>CL at TO  __:__<T>LG at NY  __:__<T>TB at MB  __:__<T>DT at BA  __:__<T>TR at BR  __:__<T>OA at CW  __:__<L.33.1>
+<T>PI at NM  __:__<T>SF at PH  __:__<T>CO at CI  __:__<T>HA at FM  __:__<T>AD at WN  __:__<T>LA at CU  __:__<L.33.1>
+<T><L.3.1>
+<T>BA at OA  __:__<T>BR at DT  __:__<T>CW at TR  __:__<T>TO at TB  __:__<T>NY at CL  __:__<T>MB at LG  __:__<L.33.1>
+<T>FM at LA  __:__<T>WN at HA  __:__<T>CU at AD  __:__<T>NM at CO  __:__<T>PH at PI  __:__<T>CI at SF  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 5<C><T>PH at TO  __:__<T>WN at BA  __:__<T>CI at DT  __:__<T>CU at CL  __:__<T>AD at OA  __:__<T>SF at TB  __:__<L.33.1>
+<T>NM at NY  __:__<T>FM at BR  __:__<T>HA at MB  __:__<T>PI at CW  __:__<T>LA at TR  __:__<T>CO at LG  __:__<L.33.1>
+<T><L.3.1>
+<T>CI at TO  __:__<T>LA at NY  __:__<T>AD at DT  __:__<T>CU at BA  __:__<T>CO at BR  __:__<T>SF at CL  __:__<L.33.1>
+<T>MB at NM  __:__<T>OA at PH  __:__<T>TR at HA  __:__<T>CW at FM  __:__<T>TB at WN  __:__<T>LG at PI  __:__<L.33.1>
+<T><L.3.1>
+<T>NM at TR  __:__<T>PH at MB  __:__<T>HA at OA  __:__<T>FM at LG  __:__<T>WN at CW  __:__<T>PI at TB  __:__<L.33.1>
+<T>TO at AD  __:__<T>NY at CI  __:__<T>DT at LA  __:__<T>BA at SF  __:__<T>BR at CU  __:__<T>CL at CO  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 6<C><T>TO at BR  __:__<T>NY at BA  __:__<T>DT at CW  __:__<T>MB at CL  __:__<T>OA at LG  __:__<T>TR at TB  __:__<L.33.1>
+<T>NM at WN  __:__<T>PH at FM  __:__<T>HA at CU  __:__<T>CI at PI  __:__<T>LA at SF  __:__<T>AD at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at DT  __:__<T>NY at TR  __:__<T>MB at OA  __:__<T>BA at CL  __:__<T>BR at LG  __:__<T>CW at TB  __:__<L.33.1>
+<T>NM at HA  __:__<T>PH at AD  __:__<T>CI at LA  __:__<T>FM at PI  __:__<T>WN at SF  __:__<T>CU at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>OA at TO  __:__<T>DT at NY  __:__<T>TR at MB  __:__<T>TB at BA  __:__<T>CL at BR  __:__<T>LG at CW  __:__<L.33.1>
+<T>LA at NM  __:__<T>HA at PH  __:__<T>AD at CI  __:__<T>CO at FM  __:__<T>PI at WN  __:__<T>SF at CU  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 7<C><T>NY at TO  __:__<T>BR at BA  __:__<T>MB at DT  __:__<T>CW at CL  __:__<T>TR at OA  __:__<T>LG at TB  __:__<L.33.1>
+<T>PH at NM  __:__<T>WN at FM  __:__<T>CI at HA  __:__<T>CU at PI  __:__<T>AD at LA  __:__<T>SF at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at CW  __:__<T>NY at TB  __:__<T>DT at LG  __:__<T>BA at MB  __:__<T>BR at OA  __:__<T>CL at TR  __:__<L.33.1>
+<T>NM at CU  __:__<T>PH at CO  __:__<T>HA at SF  __:__<T>FM at CI  __:__<T>WN at LA  __:__<T>PI at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>TR at BA  __:__<T>MB at BR  __:__<T>OA at CL  __:__<T>LG at TO  __:__<T>CW at NY  __:__<T>TB at DT  __:__<L.33.1>
+<T>AD at FM  __:__<T>CI at WN  __:__<T>LA at PI  __:__<T>SF at NM  __:__<T>CU at PH  __:__<T>CO at HA  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 8<C><T>TO at BA  __:__<T>NY at BR  __:__<T>DT at CL  __:__<T>MB at CW  __:__<T>OA at TB  __:__<T>TR at LG  __:__<L.33.1>
+<T>NM at FM  __:__<T>PH at WN  __:__<T>HA at PI  __:__<T>CI at CU  __:__<T>LA at CO  __:__<T>AD at SF  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at CL  __:__<T>NY at LG  __:__<T>MB at TB  __:__<T>BA at DT  __:__<T>BR at TR  __:__<T>CW at OA  __:__<L.33.1>
+<T>NM at PI  __:__<T>PH at SF  __:__<T>CI at CO  __:__<T>FM at HA  __:__<T>WN at AD  __:__<T>CU at LA  __:__<L.33.1>
+<T><L.3.1>
+<T>OA at BA  __:__<T>DT at BR  __:__<T>TR at CW  __:__<T>TB at TO  __:__<T>CL at NY  __:__<T>LG at MB  __:__<L.33.1>
+<T>LA at FM  __:__<T>HA at WN  __:__<T>AD at CU  __:__<T>CO at NM  __:__<T>PI at PH  __:__<T>SF at CI  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 9<C><T>BR at TO  __:__<T>BA at NY  __:__<T>CW at DT  __:__<T>CL at MB  __:__<T>LG at OA  __:__<T>TB at TR  __:__<L.33.1>
+<T>WN at NM  __:__<T>FM at PH  __:__<T>CU at HA  __:__<T>PI at CI  __:__<T>SF at LA  __:__<T>CO at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>MB at TO  __:__<T>OA at NY  __:__<T>TR at DT  __:__<T>CW at BA  __:__<T>TB at BR  __:__<T>LG at CL  __:__<L.33.1>
+<T>CI at NM  __:__<T>LA at PH  __:__<T>AD at HA  __:__<T>CU at FM  __:__<T>CO at WN  __:__<T>SF at PI  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at TR  __:__<T>NY at MB  __:__<T>DT at OA  __:__<T>BA at LG  __:__<T>BR at CW  __:__<T>CL at TB  __:__<L.33.1>
+<T>NM at AD  __:__<T>PH at CI  __:__<T>HA at LA  __:__<T>FM at SF  __:__<T>WN at CU  __:__<T>PI at CO  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<ST.12.42.72.102><L.12.1>
+<Z>AL East<T><C>BA Baltimore Orioles<T>BR Boston Red Sox<T>TO Toronto Blue Jays<T>NY New York Yankees<T><L.36.1>
+<Z>AL Central<T><C>CW Chicago White Sox<T>DT Detroit Tigers<T>CL Cleveland Indians<T>MB Milwaukee Brewers<T><L.36.1>
+<Z>AL West<T><C>LG Los Angeles Angels<T>OA Oakland Athletics<T>TB Tampa Bay Rays<T>TR Texas Rangers<T><L.36.1>
+<Z>NL East<T><C>WN Washington Nationals<T>FM Florida Marlins<T>PH Philadelphia Phillies<T>NM New York Mets<T><L.36.1>
+<Z>NL Central<T><C>PI Pittsburgh Pirates<T>CU Chicago Cubs<T>HA Houston Astros<T>CI Cincinnati Reds<T><L.36.1>
+<Z>NL West<T><C>CO Colorado Rockies<T>LA Los Angeles Dodgers<T>AD Arizona Diamondbacks<T>SF San Francisco Giants<T><L.36.1>
+<L.9.1>
+Fixtures now include interleague play - six series vs two divisional opponents and four vs the other, four series vs each <L.30.1>
+non-divisional opponent and one series vs half inter-league opponents (two from each division).<L.1.1>
+<D><E><P>
+<L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL   MLB21   Season 16   American & National League Fixtures<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<C><ST.12.32.52.72.92.112><L.48.1>
+<Z>Week 10<C><T>TO at NM  __:__<T>BA at FM  __:__<T>NY at PH  __:__<T>BR at WN  __:__<T>OA at LA  __:__<T>TB at CO  __:__<L.33.1>
+<T>TR at AD  __:__<T>LG at SF  __:__<T>DT at HA  __:__<T>CL at PI  __:__<T>MB at CI  __:__<T>CW at CU  __:__<L.33.1>
+<T><L.3.1>
+<T>NM at DT  __:__<T>PH at TR  __:__<T>CI at OA  __:__<T>FM at CL  __:__<T>WN at LG  __:__<T>CU at TB  __:__<L.33.1>
+<T>TO at HA  __:__<T>NY at AD  __:__<T>MB at LA  __:__<T>BA at PI  __:__<T>BR at SF  __:__<T>CW at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>LA at TO  __:__<T>HA at NY  __:__<T>AD at MB  __:__<T>CO at BA  __:__<T>PI at BR  __:__<T>SF at CW  __:__<L.33.1>
+<T>OA at NM  __:__<T>DT at PH  __:__<T>TR at CI  __:__<T>TB at FM  __:__<T>CL at WN  __:__<T>LG at CU  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 11<C><T>BA at TO  __:__<T>BR at NY  __:__<T>CL at DT  __:__<T>CW at MB  __:__<T>TB at OA  __:__<T>LG at TR  __:__<L.33.1>
+<T>FM at NM  __:__<T>WN at PH  __:__<T>PI at HA  __:__<T>CU at CI  __:__<T>CO at LA  __:__<T>SF at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>CW at TO  __:__<T>TB at NY  __:__<T>LG at DT  __:__<T>MB at BA  __:__<T>OA at BR  __:__<T>TR at CL  __:__<L.33.1>
+<T>CU at NM  __:__<T>CO at PH  __:__<T>SF at HA  __:__<T>CI at FM  __:__<T>LA at WN  __:__<T>AD at PI  __:__<L.33.1>
+<T><L.3.1>
+<T>BA at TR  __:__<T>BR at MB  __:__<T>CL at OA  __:__<T>TO at LG  __:__<T>NY at CW  __:__<T>DT at TB  __:__<L.33.1>
+<T>FM at AD  __:__<T>WN at CI  __:__<T>PI at LA  __:__<T>NM at SF  __:__<T>PH at CU  __:__<T>HA at CO  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 12<C><T>TO at BR  __:__<T>NY at BA  __:__<T>DT at CW  __:__<T>MB at CL  __:__<T>OA at LG  __:__<T>TR at TB  __:__<L.33.1>
+<T>NM at WN  __:__<T>PH at FM  __:__<T>HA at CU  __:__<T>CI at PI  __:__<T>LA at SF  __:__<T>AD at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>CL at TO  __:__<T>LG at NY  __:__<T>TB at MB  __:__<T>DT at BA  __:__<T>TR at BR  __:__<T>OA at CW  __:__<L.33.1>
+<T>PI at NM  __:__<T>SF at PH  __:__<T>CO at CI  __:__<T>HA at FM  __:__<T>AD at WN  __:__<T>LA at CU  __:__<L.33.1>
+<T><L.3.1>
+<T>BA at OA  __:__<T>BR at DT  __:__<T>CW at TR  __:__<T>TO at TB  __:__<T>NY at CL  __:__<T>MB at LG  __:__<L.33.1>
+<T>FM at LA  __:__<T>WN at HA  __:__<T>CU at AD  __:__<T>NM at CO  __:__<T>PH at PI  __:__<T>CI at SF  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 13<C><T>NY at TO  __:__<T>BR at BA  __:__<T>MB at DT  __:__<T>CW at CL  __:__<T>TR at OA  __:__<T>LG at TB  __:__<L.33.1>
+<T>PH at NM  __:__<T>WN at FM  __:__<T>CI at HA  __:__<T>CU at PI  __:__<T>AD at LA  __:__<T>SF at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at MB  __:__<T>NY at OA  __:__<T>DT at TR  __:__<T>BA at CW  __:__<T>BR at TB  __:__<T>CL at LG  __:__<L.33.1>
+<T>NM at CI  __:__<T>PH at LA  __:__<T>HA at AD  __:__<T>FM at CU  __:__<T>WN at CO  __:__<T>PI at SF  __:__<L.33.1>
+<T><L.3.1>
+<T>TR at TO  __:__<T>MB at NY  __:__<T>OA at DT  __:__<T>LG at BA  __:__<T>CW at BR  __:__<T>TB at CL  __:__<L.33.1>
+<T>AD at NM  __:__<T>CI at PH  __:__<T>LA at HA  __:__<T>SF at FM  __:__<T>CU at WN  __:__<T>CO at PI  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 14<C><T>TO at BA  __:__<T>NY at BR  __:__<T>DT at CL  __:__<T>MB at CW  __:__<T>OA at TB  __:__<T>TR at LG  __:__<L.33.1>
+<T>NM at FM  __:__<T>PH at WN  __:__<T>HA at PI  __:__<T>CI at CU  __:__<T>LA at CO  __:__<T>AD at SF  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at DT  __:__<T>NY at TR  __:__<T>MB at OA  __:__<T>BA at CL  __:__<T>BR at LG  __:__<T>CW at TB  __:__<L.33.1>
+<T>NM at HA  __:__<T>PH at AD  __:__<T>CI at LA  __:__<T>FM at PI  __:__<T>WN at SF  __:__<T>CU at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>OA at TO  __:__<T>DT at NY  __:__<T>TR at MB  __:__<T>TB at BA  __:__<T>CL at BR  __:__<T>LG at CW  __:__<L.33.1>
+<T>LA at NM  __:__<T>HA at PH  __:__<T>AD at CI  __:__<T>CO at FM  __:__<T>PI at WN  __:__<T>SF at CU  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 15<C><T>BR at TO  __:__<T>BA at NY  __:__<T>CW at DT  __:__<T>CL at MB  __:__<T>LG at OA  __:__<T>TB at TR  __:__<L.33.1>
+<T>WN at NM  __:__<T>FM at PH  __:__<T>CU at HA  __:__<T>PI at CI  __:__<T>SF at LA  __:__<T>CO at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at CW  __:__<T>NY at TB  __:__<T>DT at LG  __:__<T>BA at MB  __:__<T>BR at OA  __:__<T>CL at TR  __:__<L.33.1>
+<T>NM at CU  __:__<T>PH at CO  __:__<T>HA at SF  __:__<T>FM at CI  __:__<T>WN at LA  __:__<T>PI at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>TR at BA  __:__<T>MB at BR  __:__<T>OA at CL  __:__<T>LG at TO  __:__<T>CW at NY  __:__<T>TB at DT  __:__<L.33.1>
+<T>AD at FM  __:__<T>CI at WN  __:__<T>LA at PI  __:__<T>SF at NM  __:__<T>CU at PH  __:__<T>CO at HA  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 16<C><T>TO at NY  __:__<T>BA at BR  __:__<T>DT at MB  __:__<T>CL at CW  __:__<T>OA at TR  __:__<T>TB at LG  __:__<L.33.1>
+<T>NM at PH  __:__<T>FM at WN  __:__<T>HA at CI  __:__<T>PI at CU  __:__<T>LA at AD  __:__<T>CO at SF  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at CL  __:__<T>NY at LG  __:__<T>MB at TB  __:__<T>BA at DT  __:__<T>BR at TR  __:__<T>CW at OA  __:__<L.33.1>
+<T>NM at PI  __:__<T>PH at SF  __:__<T>CI at CO  __:__<T>FM at HA  __:__<T>WN at AD  __:__<T>CU at LA  __:__<L.33.1>
+<T><L.3.1>
+<T>OA at BA  __:__<T>DT at BR  __:__<T>TR at CW  __:__<T>TB at TO  __:__<T>CL at NY  __:__<T>LG at MB  __:__<L.33.1>
+<T>LA at FM  __:__<T>HA at WN  __:__<T>AD at CU  __:__<T>CO at NM  __:__<T>PI at PH  __:__<T>SF at CI  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 17<C><T>BA at TO  __:__<T>BR at NY  __:__<T>CL at DT  __:__<T>CW at MB  __:__<T>TB at OA  __:__<T>LG at TR  __:__<L.33.1>
+<T>FM at NM  __:__<T>WN at PH  __:__<T>PI at HA  __:__<T>CU at CI  __:__<T>CO at LA  __:__<T>SF at AD  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at MB  __:__<T>NY at OA  __:__<T>DT at TR  __:__<T>BA at CW  __:__<T>BR at TB  __:__<T>CL at LG  __:__<L.33.1>
+<T>NM at CI  __:__<T>PH at LA  __:__<T>HA at AD  __:__<T>FM at CU  __:__<T>WN at CO  __:__<T>PI at SF  __:__<L.33.1>
+<T><L.3.1>
+<T>TR at TO  __:__<T>MB at NY  __:__<T>OA at DT  __:__<T>LG at BA  __:__<T>CW at BR  __:__<T>TB at CL  __:__<L.33.1>
+<T>AD at NM  __:__<T>CI at PH  __:__<T>LA at HA  __:__<T>SF at FM  __:__<T>CU at WN  __:__<T>CO at PI  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<Z>Week 18<C><T>TO at BR  __:__<T>NY at BA  __:__<T>DT at CW  __:__<T>MB at CL  __:__<T>OA at LG  __:__<T>TR at TB  __:__<L.33.1>
+<T>NM at WN  __:__<T>PH at FM  __:__<T>HA at CU  __:__<T>CI at PI  __:__<T>LA at SF  __:__<T>AD at CO  __:__<L.33.1>
+<T><L.3.1>
+<T>DT at TO  __:__<T>TR at NY  __:__<T>OA at MB  __:__<T>CL at BA  __:__<T>LG at BR  __:__<T>TB at CW  __:__<L.33.1>
+<T>HA at NM  __:__<T>AD at PH  __:__<T>LA at CI  __:__<T>PI at FM  __:__<T>SF at WN  __:__<T>CO at CU  __:__<L.33.1>
+<T><L.3.1>
+<T>TO at OA  __:__<T>NY at DT  __:__<T>MB at TR  __:__<T>BA at TB  __:__<T>BR at CL  __:__<T>CW at LG  __:__<L.33.1>
+<T>NM at LA  __:__<T>PH at HA  __:__<T>CI at AD  __:__<T>FM at CO  __:__<T>WN at PI  __:__<T>CU at SF  __:__<L.33.1>
+<T><L.3.1>
+<L.6.1>
+<ST.12.42.72.102><L.12.1>
+<Z>AL East<T><C>BA Baltimore Orioles<T>BR Boston Red Sox<T>TO Toronto Blue Jays<T>NY New York Yankees<T><L.36.1>
+<Z>AL Central<T><C>CW Chicago White Sox<T>DT Detroit Tigers<T>CL Cleveland Indians<T>MB Milwaukee Brewers<T><L.36.1>
+<Z>AL West<T><C>LG Los Angeles Angels<T>OA Oakland Athletics<T>TB Tampa Bay Rays<T>TR Texas Rangers<T><L.36.1>
+<Z>NL East<T><C>WN Washington Nationals<T>FM Florida Marlins<T>PH Philadelphia Phillies<T>NM New York Mets<T><L.36.1>
+<Z>NL Central<T><C>PI Pittsburgh Pirates<T>CU Chicago Cubs<T>HA Houston Astros<T>CI Cincinnati Reds<T><L.36.1>
+<Z>NL West<T><C>CO Colorado Rockies<T>LA Los Angeles Dodgers<T>AD Arizona Diamondbacks<T>SF San Francisco Giants<T><L.36.1>
+<L.9.1>
+Fixtures now include interleague play - six series vs two divisional opponents and four vs the other, four series vs each <L.30.1>
+non-divisional opponent and one series vs half inter-league opponents (two from each division).<L.1.1>
+<D><E><DU>
+<BK.Roundup><P.70><B><L>
+GAMEPLAN BASEBALL  MLB21  Season 16  Week 6 Roundup  AL East  31/12/09<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<C><ST.66><L>
+<Z><U>Baltimore Orioles<UC> (Todd Hill) BA<T><U>Boston Red Sox<UC> (Mark J Hall) BR<L.42.1>
+Stadium: Small, Grass, Open.<C><T><Z>Stadium: Small, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+15 Bob Green<T>Pit R  9 CON    9   1   9  93 LP<T> 7 Charlie Zink<T>Pit R  9 CON    5   4   9  58 LP<L.32.1>
+17 Simon Smith<T>Pit L  9 ACC    9   3   9  75 LP<T>12 Todd White<T>Pit R  9 CON    4   4   9  54 LP<L.32.1>
+ 2 David Washington<T>Pit L  9 STA    5   8  10  55 LP<T>23 Eric Ortiz<T>Pit L  9 ACC    5   5  10  50 LP<L.32.1>
+14 Tony Guerrero<T>Pit R  9 STA    3  16  12  47 LP<T> 4 Pedro Mendoza<T>Pit R  9 ACC    5   6  10  49 LP<L.32.1>
+20 Bob Thorpe<T>Pit L  8 QUI    9   3   8  50 LP<T> 2 Paul Russell<T>Pit R  8 STA    9   3   8  47 LP<L.32.1>
+19 Eddie Cabrera<T>Pit R  8 QUI    2  13  10  34 LP<T>20 Daisuke Matsuzaka<T>Pit R  8 ACC    3   8   9  44 LP<L.32.1>
+25 Alan Miller<T>Pit R  7 ACC    4  10   9  35 LP<T>18 Juan Gutierrez<T>Pit R  8 STA    4   8   9  42 LP<L.32.1>
+22 Ian Cryer<T>Pit L  7 CON    7  10   9  34 LP<T>10 Felipe Ordonez<T>Pit R  8 CON    6   3   8  39 LP<L.32.1>
+ 4 Neil Miller<T>Pit R  7 CON    7  10   9  34 LP<T>14 Edwar Ramirez<T>Pit R  8 ACC    3   6   9  39 LP<L.32.1>
+ 1 Todd Robinson<T>Pit L  7 STA    2   9   8  28 LP<T>11 Eude Brito<T>Pit L  8 CON    8   8   9  30 LP<L.32.1>
+11 Todd Thomas<T>Pit R  7 STA    2  12   9  21 LP<T> 1 Jeff Atherton<T>Pit R  7 ACC    8   7   8  43 LP<L.32.1>
+30 Ramon Pena<T>Pit R  7 ACC    2  15  10  18 LP<T>19 Matt Brown<T>Pit L  7 CON    7   8   8  32 LP<L.32.1>
+ 5 Todd Sanders (C)<T>Cat R  7 POW    1  14   9  28 LP<T>51 Dustin Pedroia (C)<T>Cat L  8 HIT    3   9   9  43 LP<L.32.1>
+24 Andy Nelson (C)<T>Cat R  6 HIT    5   9   7  30 LP<T>52 Jake Fox (C)<T>Cat R  7 SPD    2  15  10  30 LP<L.32.1>
+29 Chris Walker (C)<T>Cat R  5 SPD    R  15   8  14 LP<T>16 Jeff Reboulet (SS)<T>Bat R  9 HIT   15   0   9 101 LP<L.32.1>
+ 9 Alan Jenkins (3B)<T>Bat L 12 FLD    9   8  13 106 LP<T> 3 Juan Ortiz (RF)<T>Bat R  9 POW    5   7  10  46 LP<L.32.1>
+ 8 Matthew Miller (SS)<T>Bat L  9 FLD   11   1   9  62 LP<T> 6 Graeme Botham (3B)<T>Bat R  8 FLD    7   8   9  42 LP<L.32.1>
+ 7 Ramon Ortiz (CF)<T>Bat S  9 SPD    6  11  11  56 LP<T>32 Argenis Diaz (2B)<T>Bat R  8 POW    6   7   9  41 LP<L.32.1>
+88 Albert Belle (CF)<T>Bat S  8 HIT   12   2   8  63 LP<T>44 Brandon Moss (RF)<T>Bat L  8 SPD    3   3   8  36 LP<L.32.1>
+13 Kevin Harris (RF)<T>Bat S  7 HIT    8   5   8  47 LP<T>13 Carlos Guzman (LF)<T>Bat R  8 FLD    5  11  10  35 LP<L.32.1>
+ 6 Felipe Diaz (2B)<T>Bat R  7 HIT    5   5   8  35 LP<T>46 Jacoby Ellsbury (LF)<T>Bat R  8 POW    2  11  10  35 LP<L.32.1>
+21 Glen Russell (IF)<T>Bat R  7 FLD    7  10   9  34 LP<T>24 Alex Palmeiro (1B)<T>Bat S  8 FLD    5   3   8  32 LP<L.32.1>
+23 Steve White (SS)<T>Bat R  7 POW    5  12   9  33 LP<T>29 Luis Sanchez (2B)<T>Bat R  7 HIT    6   8   8  34 LP<L.32.1>
+16 Andy Jones (SS)<T>Bat L  7 FLD    3  10   9  29 LP<T>45 Rocco Baldelli (CF)<T>Bat R  7 SPD    2  15  10  28 LP<L.32.1>
+27 Jose Guillen (CF)<T>Bat L  7 SPD    3  11   9  29 LP<T>43 Alex Marino (CF)<T>Bat R  7 FLD    7   6   8  17 LP<L.32.1>
+28 Eddie Hernandez (3B)<T>Bat R  7 FLD    R  17  10  22 LP<T>22 Felix Escalona (3B)<T>Bat R  6 FLD    4  10   8  29 LP<L.32.1>
+26 Luis Rodriguez (LF)<T>Bat L  6 SPD    2  10   8  23 LP<T>28 Jed Lowrie (SS)<T>Bat L  6 POW    7   7   7  24 LP<L.32.1>
+ 3 Ramon Benitez (LF)<T>Bat L  6 HIT    1  11   8  12 LP<T>33 Orlando Diaz (1B)<T>Bat L  6 HIT    6   9   7  22 LP<L.32.1>
+<T><T>26 Chris Woodward (SS)<T>Bat L  6 HIT    R  20  10  15 LP<L.32.1>
+<T><T><T><T><T><T><ST.66><L>
+<Z><U>Toronto Blue Jays<UC> (Dave Biggs) TO<T><U>New York Yankees<UC> (Craig Sandry) NY<L.42.1>
+Stadium: Large, Astroturf, Dome.<C><T><Z>Stadium: Small, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+21 Mike Thompson<T>Pit L  9 ACC    7   5  10  76 LP<T>22 Adrian Hernandez<T>Pit R  9 ACC   11   8  10  57 LP<L.32.1>
+22 Casey Janssen<T>Pit R  9 ACC    8   5  10  63 LP<T>52 C.C Sabathia<T>Pit L  8 STA    6   6   9  40 LP<L.32.1>
+33 Jesse Carlson<T>Pit R  8 CON   13   0   8  84 LP<T>32 Brian Bruney<T>Pit R  8 QUI    4   9   9  39 LP<L.32.1>
+32 David Purcey<T>Pit R  8 ACC    9   8   9  54 LP<T>40 Chien-Ming Wang<T>Pit R  8 CON    5  14  10  38 LP<L.32.1>
+24 Kyle Farnsworth<T>Pit R  8 CON   10   9   9  48 LP<T>44 Damasco Marte<T>Pit L  8 CON    3  12  10  36 LP<L.32.1>
+31 Jason Frasor<T>Pit L  8 ACC    4   6   9  41 LP<T>34 A.J Burnett<T>Pit R  8 QUI    4  10  10  35 LP<L.32.1>
+20 Shaun Marcum<T>Pit R  8 CON    2  14  10  35 LP<T>62 Joba Chamberlain<T>Pit R  8 CON    2  15  11  32 LP<L.32.1>
+28 Brandon League<T>Pit R  8 ACC    3  10  10  34 LP<T>66 Chris Johnson<T>Pit R  8 CON    1  11  10  26 LP<L.32.1>
+26 Scott Downs<T>Pit R  7 CON    3  11   9  31 LP<T>37 Dan Giese<T>Pit R  7 STA    4  15  10  31 LP<L.32.1>
+23 Brian Wolfe<T>Pit R  7 ACC    2  12   9  25 LP<T>25 Kei Igawa<T>Pit L  7 QUI    3  12   9  29 LP<L.32.1>
+27 Roy Halladay<T>Pit L  7 QUI    R  17  10  19 LP<T>65 Phil Hughes<T>Pit R  7 QUI    2  11   9  27 LP<L.32.1>
+25 Andrew Liebel<T>Pit R  6 ACC    1  15   9  19 LP<T>39 Ross Ohlendorf<T>Pit R  7 QUI    2  14   9  27 LP<L.32.1>
+30 Brett Cecil<T>Pit R  6 ACC    R  16   9  15 LP<T>77 Humberto Sanchez<T>Pit R  7 ACC    1  18  10  22 LP<L.32.1>
+10 Greg Zaun (C)<T>Cat R  8 FLD   10   3   8  48 LP<T>16 Clay Buchholz<T>Pit R  7 ACC    2  12   9  17 LP<L.32.1>
+ 1 Rod Barajas (C)<T>Cat R  5 HIT    2  16   8  21 LP<T>20 Jorge Posada (C)<T>Cat S 10 SPD   13   4  10  96 LP<L.32.1>
+ 2 Vernon Wells (CF)<T>Bat S 10 HIT   12   3  10  95 LP<T>49 Francisco Cervelli (C)<T>Cat L  7 FLD    1  14   9  25 LP<L.32.1>
+ 8 Matt Stairs (LF)<T>Bat S 10 HIT    7   9  11  67 LP<T>13 Hideki Matsui (LF)<T>Bat L 12 HIT   10   8  13 148 LP<L.32.1>
+12 Reed Johnson (3B)<T>Bat L  9 HIT   13   2   9 100 LP<T> 3 Albert Pujols (1B)<T>Bat R 10 HIT   14   2  10  92 LP<L.32.1>
+ 4 Dave Biggs (2B)<T>Bat R  9 POW    6   7  10  54 LP<T>23 Robinson Cano (2B)<T>Bat L  9 HIT    6  12  11  51 LP<L.32.1>
+ 6 Jose Gonzalez (1B)<T>Bat R  9 POW    5   7  10  50 LP<T> 6 Eric Duncan (RF)<T>Bat R  9 HIT    5   7  10  45 LP<L.32.1>
+11 Tony Malcolm (2B)<T>Bat R  8 HIT    8   4   8  48 LP<T>18 Melky Cabrera (CF)<T>Bat R  9 SPD    4  13  11  35 LP<L.32.1>
+ 5 Frank Thomas (CF)<T>Bat L  8 HIT   11   7   9  47 LP<T>29 Cody Ransom (3B)<T>Bat R  8 FLD    5   9   9  53 LP<L.32.1>
+16 Alex Rios (SS)<T>Bat R  8 FLD    3  11  10  37 LP<T> 2 Aaron Hill (2B)<T>Bat R  8 POW    5   9   9  41 LP<L.32.1>
+ 7 Joe Inglett (RF)<T>Bat R  7 POW    9  10   9  33 LP<T>19 Alex Guillen (SS)<T>Bat S  8 FLD    5  11  10  39 LP<L.32.1>
+ 9 Troy Glaus (1B)<T>Bat L  7 POW    4  13   9  31 LP<T>12 Xavier Nady (CF)<T>Bat R  7 POW    4   9   8  27 LP<L.32.1>
+ 3 Kevin Ahrens (LF)<T>Bat R  7 HIT    1  14   9  24 LP<T>11 Brett Gardner (OF)<T>Bat L  7 SPD    7   6   8  23 LP<L.32.1>
+13 Steve Karsay (SS)<T>Bat R  7 POW    2  15  10  21 LP<T>69 Ramiro Pena (1B)<T>Bat R  7 POW    R  13   9  22 LP<L.32.1>
+14 John Mcdonald (LF)<T>Bat L  6 POW    1  16   9  14 LP<T> 5 Kevin Russo (SS)<T>Bat R  7 FLD    1  11   9  21 LP<L.32.1>
+<T><T>47 Freddy Guzman (CF)<T>Bat L  6 POW    R  14   8  13 LP<L.32.1>
+<T><T><T><T><T><T><L.1.1>
+<D><E><P>
+<L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL  MLB21  Season 16  Week 6 Roundup  AL Central  31/12/09<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<C><ST.66><L>
+<Z><U>Chicago White Sox<UC> (Tony Legg) CW<T><U>Detroit Tigers<UC> (James Ross) DT<L.42.1>
+Stadium: Large, Grass, Open.<C><T><Z>Stadium: Large, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+15 Danny Mitchell<T>Pit L  9 ACC    8   6  10  65 LP<T>28 Orlando Hernandez<T>Pit L  9 STA   13   2   9  62 LP<L.32.1>
+ 8 Jason Harris<T>Pit R  9 QUI    6  13  11  56 LP<T>23 Paul Elway<T>Pit R  9 ACC    7  11  11  50 LP<L.32.1>
+16 Ervin Santana<T>Pit R  8 QUI    8   6   9  51 LP<T> 4 Andy Botham<T>Pit R  8 ACC    7  10  10  45 LP<L.32.1>
+24 Steven Shell<T>Pit L  8 QUI    9   2   8  47 LP<T>13 Chris Williams<T>Pit R  8 STA    6  10  10  45 LP<L.32.1>
+ 3 Glen Sanders<T>Pit L  8 QUI    7  11  10  41 LP<T> 3 Bob Roberts<T>Pit L  8 QUI    3  11  10  38 LP<L.32.1>
+ 5 Nick Adenhart<T>Pit R  8 CON    6   9   9  41 LP<T>21 Esteban Loaiza<T>Pit R  7 STA   10   4   7  53 LP<L.32.1>
+26 Todd Wilson<T>Pit L  8 CON    6   9   9  40 LP<T> 5 Tony Ibanez<T>Pit R  7 QUI    7   6   8  35 LP<L.32.1>
+27 Nigel Garner<T>Pit R  8 STA    8   5   9  39 LP<T> 9 Ken Roberts<T>Pit R  7 ACC    4   9   8  34 LP<L.32.1>
+17 Jason Roberts<T>Pit R  8 QUI    2  11  10  34 LP<T>19 Jeff Lewis<T>Pit L  7 QUI    2   9   8  29 LP<L.32.1>
+11 Chase Wright<T>Pit L  7 STA    4   9   8  32 LP<T>15 Orlando Castillo<T>Pit R  7 ACC    R  19  10  23 LP<L.32.1>
+14 Danny Brooks<T>Pit L  7 ACC    8   6   8  27 LP<T>17 Julio Hernandez<T>Pit L  6 QUI    R  12   8  14 LP<L.32.1>
+30 Fernando Guerrero<T>Pit L  6 CON    R  12   8  14 LP<T>22 Fernando Castillo<T>Pit R  6 QUI    R  10   8  13 LP<L.32.1>
+18 Mark Johnson (C)<T>Cat L  4 HIT   11   0   4  41 LP<T> 2 Matt Thompson (C)<T>Cat S 10 POW   12   0  10 127 LP<L.32.1>
+ 1 Mike Piazza (C)<T>Cat R  3 FLD   18   0   3  76 LP<T>29 Fernando Garcia (C)<T>Cat S  5 HIT    1  12   7  15 LP<L.32.1>
+29 Arron Nowand (CF)<T>Bat L  9 HIT    9   5  10  73 LP<T>11 Jon Garden (3B)<T>Bat R 10 POW    8  10  12  71 LP<L.32.1>
+13 Carlos Lee (RF)<T>Bat L  9 POW   10   4   9  72 LP<T>12 Keith Russell (2B)<T>Bat L  8 FLD    8   4   8  54 LP<L.32.1>
+ 2 Jeff Liefer (RF)<T>Bat L  9 POW   13   1   9  67 LP<T>26 Ruben Delgado (OF)<T>Bat R  8 SPD    9   3   8  45 LP<L.32.1>
+21 Raul Rivera (RF)<T>Bat L  9 SPD    3  12  11  42 LP<T> 8 Jim Gough (SS)<T>Bat L  8 POW    7  10  10  40 LP<L.32.1>
+ 6 Johnny Damon (RF)<T>Bat R  8 POW    8   4   8  44 LP<T> 6 Mark Hamilton (1B)<T>Bat S  8 HIT    5   6   9  39 LP<L.32.1>
+23 Omar Infante (SS)<T>Bat R  8 FLD    8   9   9  39 LP<T>24 Jason Jordan (LF)<T>Bat L  8 SPD    5   7   9  37 LP<L.32.1>
+22 Francisco Garcia (LF)<T>Bat S  8 SPD    4  10  10  38 LP<T>16 Adrian Martinez (LF)<T>Bat R  8 HIT    5  10  10  36 LP<L.32.1>
+19 Orlando Garcia (RF)<T>Bat R  8 SPD    1  15  11  26 LP<T>20 Simon Sanders (SS)<T>Bat R  8 POW    9   5   9  29 LP<L.32.1>
+ 4 Eddie Martinez (2B)<T>Bat L  8 FLD    R  12  10  24 LP<T>10 Brian Roberts (SS)<T>Bat L  8 POW    1  11  10  28 LP<L.32.1>
+ 9 Miguel Martinez (3B)<T>Bat S  7 FLD    3  11   9  30 LP<T> 1 Craig Pendry (1B)<T>Bat R  7 FLD   12   4   7  46 LP<L.32.1>
+ 7 Rafael Diaz (RF)<T>Bat L  7 POW    4   9   8  30 LP<T>30 Andy Phillips (LF)<T>Bat L  7 SPD    6   6   8  35 LP<L.32.1>
+12 Rafael Perez (2B)<T>Bat R  7 POW    1  13   9  22 LP<T>18 Todd Brooks (1B)<T>Bat R  7 FLD    5  10   9  32 LP<L.32.1>
+28 Andre Ethier (LF)<T>Bat R  6 POW    2  11   8  22 LP<T>27 Ricardo Lopez (RF)<T>Bat R  7 POW    3   9   8  29 LP<L.32.1>
+20 Ivan Benitez (1B)<T>Bat R  6 FLD    R  12   8  17 LP<T>14 Brian Green (RF)<T>Bat S  6 SPD    R  15   9  16 LP<L.32.1>
+<T><T><T><T><T><T><T><T><ST.66><L>
+<Z><U>Cleveland Indians<UC> (Dave Pinder) CL<T><U>Milwaukee Brewers<UC> (Marc Rivoira) MB<L.42.1>
+Stadium: Large, Astroturf, Dome.<C><T><Z>Stadium: Small, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+16 Jim Bunning<T>Pit R  9 CON   14   2   9 102 LP<T> 1 Mike Marshall<T>Pit R 10 ACC   11   2  10 103 LP<L.32.1>
+ 5 Matt Miller<T>Pit R  9 ACC    1  16  12  37 LP<T>17 Joe Roberts<T>Pit R 10 ACC    5  10  12  65 LP<L.32.1>
+12 Robert Williams<T>Pit R  8 STA    8   4   8  60 LP<T> 5 Jason Roberts<T>Pit R 10 ACC    6  10  12  64 LP<L.32.1>
+23 Jack White<T>Pit R  8 QUI   11   6   9  55 LP<T>15 Mike Russell<T>Pit R  9 QUI   10   0   9  60 LP<L.32.1>
+20 Paul Lee<T>Pit R  8 ACC    6   8   9  39 LP<T>25 Jack Robinson<T>Pit L  9 ACC    6   8  10  57 LP<L.32.1>
+10 Miguel Gonzalez<T>Pit R  8 CON    6   7   9  39 LP<T>75 Fernando Gonzalez<T>Pit R  8 CON    4  11  10  37 LP<L.32.1>
+25 Yhency Brazoban<T>Pit R  8 ACC    3  12  10  33 LP<T>71 Ben Sheets<T>Pit L  8 CON    3  13  10  34 LP<L.32.1>
+13 Raul Guerrero<T>Pit R  8 STA    R  13  10  24 LP<T>78 Jose Guillen<T>Pit R  8 ACC    1  11  10  31 LP<L.32.1>
+ 3 Eddie Rincon<T>Pit L  7 ACC    4   8   8  31 LP<T>93 Jose Contreras<T>Pit R  8 STA   11   2   8  20 LP<L.32.1>
+ 7 Jon Dixon<T>Pit R  6 ACC   10   4   6  32 LP<T>51 Rich Garces<T>Pit R  7 ACC   13   0   7  28 LP<L.32.1>
+11 Felipe Guillen<T>Pit R  6 QUI    5   5   7  26 LP<T>94 Eric Robinson<T>Pit R  7 CON    6   7   8  13 LP<L.32.1>
+19 Danny Green<T>Pit L  6 ACC    1  13   8  19 LP<T>79 Yovani Gallardo<T>Pit R  6 ACC    R  16   9  18 LP<L.32.1>
+ 1 Mario Martinez<T>Pit R  6 QUI    R  15   9  18 LP<T>77 Carlos Villanueva<T>Pit R  6 ACC    1  17   9  15 LP<L.32.1>
+26 Javier Guzman<T>Pit R  6 ACC    R  13   8  14 LP<T> 9 Dave Jenkins (C)<T>Cat L  8 SPD    9   4   8  50 LP<L.32.1>
+41 Victor Martinez (C)<T>Cat L  7 POW    5  11   9  30 LP<T> 8 Boris Del Potro (C)<T>Cat L  4 HIT    R  17   7   9 LP<L.32.1>
+70 Rodders Barrichello (C)<T>Cat L  4 SPD   13   0   4  58 LP<T>13 Graeme Marino (CF)<T>Bat L  9 SPD   10   2   9  71 LP<L.32.1>
+ 4 Dave Lawrence (3B)<T>Bat R 10 FLD    9   1  10  80 LP<T> 7 Juan Rivera (RF)<T>Bat S  9 SPD    9   5  10  61 LP<L.32.1>
+22 Dave Abbott (CF)<T>Bat R  9 SPD    6   7  10  51 LP<T> 2 Larry Broadway (2B)<T>Bat R  9 FLD    6   7  10  57 LP<L.32.1>
+ 6 Joe Jones (LF)<T>Bat R  9 POW    5  10  11  45 LP<T>80 Prince Fielder (1B)<T>Bat R  9 POW    5   8  10  53 LP<L.32.1>
+15 Erick Almonte (2B)<T>Bat S  8 FLD    9   5   9  53 LP<T>24 Francisco Crespo (LF)<T>Bat L  9 SPD    4   8  10  52 LP<L.32.1>
+ 2 Jim Roberts (CF)<T>Bat R  8 POW    2   8   9  29 LP<T>82 James Hardy (SS)<T>Bat R  9 HIT    3  11  11  45 LP<L.32.1>
+38 Franklin Gutierrez (LF)<T>Bat S  7 FLD    7   7   8  38 LP<T> 3 Alex Cryer (LF)<T>Bat R  8 HIT    8   5   9  50 LP<L.32.1>
+17 Simon Newman (SS)<T>Bat L  7 FLD   11   3   7  37 LP<T>62 Francisco Sierra (2B)<T>Bat R  8 HIT    6   7   9  38 LP<L.32.1>
+48 Travis Hafner (3B)<T>Bat R  7 POW    4   9   8  32 LP<T>83 Bill Hall (3B)<T>Bat R  8 HIT    3  11  10  37 LP<L.32.1>
+ 9 Miguel Sanchez (1B)<T>Bat L  7 FLD    3   8   8  29 LP<T>84 Ryan Braun (CF)<T>Bat S  8 SPD    2  11  10  32 LP<L.32.1>
+14 Manny Ordonez (1B)<T>Bat S  7 POW    2   9   8  27 LP<T> 4 Edgar Ortiz (1B)<T>Bat S  8 HIT    7   7   9  29 LP<L.32.1>
+24 Paul Turner (RF)<T>Bat R  7 HIT    7  10   9  26 LP<T>47 Craig Counsell (RF)<T>Bat L  7 HIT    2  13   9  25 LP<L.32.1>
+18 Miguel Alou (1B)<T>Bat R  6 FLD    2   9   7  20 LP<T>31 Corey Hart (CF)<T>Bat R  7 SPD    1  14   9  24 LP<L.32.1>
+<T><T><T><T><T><T><T><T><L.1.1>
+<D><E><P>
+<L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL  MLB21  Season 16  Week 6 Roundup  AL West  31/12/09<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<C><ST.66><L>
+<Z><U>Los Angeles Angels<UC> (Patrick Lee) LG<T><U>Oakland Athletics<UC> (Rob Crowther) OA<L.42.1>
+Stadium: Large, Grass, Open.<C><T><Z>Stadium: Medium, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+23 Mark Robinson<T>Pit R 10 STA    8   6  11  71 LP<T>14 Manny Delgado<T>Pit L  9 ACC    5  10  11  45 LP<L.32.1>
+11 Kevin Russell<T>Pit R 10 CON    7   6  11  70 LP<T>24 Miguel Mendoza<T>Pit R  9 STA    3  16  12  42 LP<L.32.1>
+58 Jered Weaver<T>Pit R 10 ACC    4  10  12  63 LP<T>10 Felipe Crespo<T>Pit L  8 QUI    4  11  10  44 LP<L.32.1>
+48 Dustin Moseley<T>Pit R  9 CON    3  12  11  40 LP<T>30 Orlando Cabrera<T>Pit R  8 STA    4  10  10  42 LP<L.32.1>
+63 Kevin Gregg<T>Pit R  8 ACC    5   9   9  49 LP<T>32 Steve Jackson<T>Pit R  8 ACC    5  10  10  39 LP<L.32.1>
+ 4 Jason Hirsh<T>Pit R  8 ACC    4  12  10  38 LP<T>22 Alex Cruz<T>Pit R  8 STA    3  15  11  39 LP<L.32.1>
+17 Brok Butcher<T>Pit R  8 ACC    2  12  10  35 LP<T> 6 Todd Brown<T>Pit L  8 ACC    5  12  10  39 LP<L.32.1>
+10 Jordan Walden<T>Pit R  7 CON    1  16  10  25 LP<T> 5 Bob Walters<T>Pit L  8 ACC   10   1   8  39 LP<L.32.1>
+39 Greg Wilson<T>Pit R  7 CON    1  16  10  23 LP<T>20 Ivan Pena<T>Pit R  8 CON    9   4   8  38 LP<L.32.1>
+61 Jeff Brown<T>Pit L  7 ACC    1  13   9  11 LP<T>21 Justin Masterson<T>Pit L  7 STA    1  14   9  24 LP<L.32.1>
+21 Jeff Boshers<T>Pit R  5 ACC    1  13   7  13 LP<T>23 Richard Davis<T>Pit L  7 ACC    8   6   8  24 LP<L.32.1>
+15 Trevor Reckling<T>Pit R  5 CON    R  17   8  10 LP<T>16 Ricardo Ordonez<T>Pit L  7 ACC    1  15  10  23 LP<L.32.1>
+ 9 Pil Joon Jang<T>Pit R  5 ACC    R  15   8  10 LP<T>54 Vin Mazzaro<T>Pit R  7 CON    R  14   9  18 LP<L.32.1>
+18 Dave Blake (2B)<T>Cat R  9 FLD    9   1   9  85 LP<T>48 Michael Wuertz<T>Pit L  5 CON    R  16   8  12 LP<L.32.1>
+45 Hank Conger (C)<T>Cat R  9 FLD    5   9  10  56 LP<T>15 Nigel Lewis (C)<T>Cat S  8 POW   13   1   8  86 LP<L.32.1>
+44 Mike Napoli (C)<T>Cat R  8 HIT    3  15  11  40 LP<T>12 Carlos Martinez (C)<T>Cat L  6 HIT    4  10   8  18 LP<L.32.1>
+99 Derek Jeter (SS)<T>Bat R 11 POW   14   1  11 151 LP<T>57 Aaron Cunningham (C)<T>Cat L  4 POW    R  16   7  10 LP<L.32.1>
+42 Aaron Peel (LF)<T>Bat L 10 SPD    8   4  10  87 LP<T>18 Jorge Gonzalez (1B)<T>Bat R 10 FLD    4  11  12  50 LP<L.32.1>
+57 Howie Kendrick (1B)<T>Bat R 10 HIT    6  11  12  61 LP<T>19 Graeme Cryer (2B)<T>Bat L  9 FLD   10   2   9  80 LP<L.32.1>
+77 Reggie Willits (LF)<T>Bat L 10 POW    4  11  12  54 LP<T>13 Pete Webster (SS)<T>Bat R  9 FLD   12   2   9  74 LP<L.32.1>
+35 Casey Kotchman (3B)<T>Bat L  9 POW    7   6  10  55 LP<T> 8 Phil Blake (CF)<T>Bat L  9 HIT    8   6  10  62 LP<L.32.1>
+32 Kendry Morales (SS)<T>Bat R  9 POW    4  13  11  46 LP<T>28 Carlos Rincon (RF)<T>Bat R  9 FLD    5   7  10  46 LP<L.32.1>
+ 3 John Rodriguez (LF)<T>Bat L  8 HIT    6   9   9  45 LP<T> 2 Jorge Hernandez (RF)<T>Bat L  9 HIT    4   9  10  43 LP<L.32.1>
+19 Drew Toussaint (CF)<T>Bat L  8 SPD    4   9   9  41 LP<T> 3 Tino Martinez (2B)<T>Bat L  8 HIT   16   0   8 110 LP<L.32.1>
+ 2 Erick Aybar (2B)<T>Bat L  8 POW    3  11  10  37 LP<T> 4 Graeme Thompson (SS)<T>Bat S  8 POW    7   8   9  44 LP<L.32.1>
+20 Marcel Champagnie (CF)<T>Bat R  8 HIT    1  15  11  24 LP<T>11 Tom Anderson (CF)<T>Bat S  8 HIT    3  12  10  42 LP<L.32.1>
+ 1 Randal Grichuk (RF)<T>Bat L  6 POW    R  17   9  18 LP<T>25 Alex Guerrero (1B)<T>Bat R  8 POW    3  15  11  33 LP<L.32.1>
+ 7 Mark Trumbo (CF)<T>Bat L  6 SPD    R  16   9  16 LP<T>61 Richie Robnett (CF)<T>Bat R  8 HIT    2  13  10  33 LP<L.32.1>
+<T><T> 9 Jim Thompson (3B)<T>Bat L  8 FLD    2  12  10  31 LP<L.32.1>
+<T><T>17 Andy Washington (LF)<T>Bat R  7 SPD    1  11   9  23 LP<L.32.1>
+<T><T> 7 Steve Nelson (2B)<T>Bat L  7 FLD    2  15  10  21 LP<L.32.1>
+<T><T><ST.66><L>
+<Z><U>Tampa Bay Rays<UC> (Dan Ehlers) TB<T><U>Texas Rangers<UC> (Stefan Toth) TR<L.42.1>
+Stadium: Large, Astroturf, Dome.<C><T><Z>Stadium: Small, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+98 Gus Greenlees<T>Pit R  9 QUI    9   3   9  72 LP<T> 5 Alex Radford<T>Pit R 10 CON    9   0  10  93 LP<L.32.1>
+ 8 Juan Crespo<T>Pit R  9 CON    1  18  12  36 LP<T>15 Jonathan Albaladejo<T>Pit R 10 CON   12   1  10  82 LP<L.32.1>
+19 Greg Robinson<T>Pit L  8 ACC    6   8   9  45 LP<T>26 Randy Keisler<T>Pit L  9 ACC    9   7  10  62 LP<L.32.1>
+12 Mark Cryer<T>Pit R  8 STA    7   8   9  42 LP<T> 4 Rich Robertson<T>Pit R  9 QUI   13   0   9  59 LP<L.32.1>
+ 5 Ricardo Cabrera<T>Pit R  8 QUI    3  10  10  36 LP<T>12 Richard Flutie<T>Pit L  9 ACC    7  10  11  57 LP<L.32.1>
+ 9 Alan Green<T>Pit L  8 ACC    2  10  10  35 LP<T>14 Eric White<T>Pit R  9 QUI    3  12  11  51 LP<L.32.1>
+21 Richard Black<T>Pit L  7 CON    7   6   8  34 LP<T>21 Felipe Lopez<T>Pit R  8 ACC    6   8   9  49 LP<L.32.1>
+18 Fernando Rivera<T>Pit R  7 STA    4   8   8  32 LP<T>41 Phil Seibel<T>Pit L  8 CON    7   5   9  37 LP<L.32.1>
+23 Raul Pena<T>Pit L  7 STA    3   7   8  29 LP<T> 7 Jose Contreras<T>Pit R  8 STA   11   2   8  31 LP<L.32.1>
+ 1 Javier Rivera<T>Pit R  7 ACC    2  13   9  24 LP<T>42 Carl Green<T>Pit R  8 QUI   10   1   8  25 LP<L.32.1>
+15 Jack Thompson<T>Pit R  7 ACC    R  12   9  18 LP<T>80 Justin Gutsie<T>Pit R  7 STA    1  16  10  20 LP<L.32.1>
+27 Brian Harris<T>Pit R  6 QUI    R  10   8  16 LP<T>81 Geoff Geary<T>Pit L  7 QUI    7   3   7   8 LP<L.32.1>
+14 Tom Jones (C)<T>Cat S  8 FLD    4  12  10  39 LP<T>24 Adrian Ramirez<T>Pit R  5 STA    R  13   7  12 LP<L.32.1>
+ 6 Dan Wilson (C)<T>Cat L  2 HIT   18   0   2  83 LP<T>18 Matt Malcolm (1B)<T>Cat R  9 FLD   10   2   9  64 LP<L.32.1>
+ 2 David Bell (3B)<T>Bat R  9 HIT   12   2   9  80 LP<T>10 Ruben Rincon (C)<T>Cat R  9 FLD    6   6  10  56 LP<L.32.1>
+88 Hanley Frias (2B)<T>Bat S  9 POW   12   4   9  75 LP<T>11 Todd Miller (C)<T>Cat L  8 SPD    5   5   9  37 LP<L.32.1>
+ 7 Paul Robinson (2B)<T>Bat L  9 POW   10   4   9  69 LP<T> 2 Raul Mendoza (CF)<T>Bat R 10 POW    4   7  11  56 LP<L.32.1>
+10 John Johnson (2B)<T>Bat R  8 POW    6  10  10  47 LP<T>27 Adrian Cardenas (2B)<T>Bat S  9 FLD    6   0   9  47 LP<L.32.1>
+ 3 Chris Kelly (LF)<T>Bat S  8 SPD    R  15  11  27 LP<T>29 Fernando Alou (1B)<T>Bat R  9 HIT    3  13  11  41 LP<L.32.1>
+11 Neil Brooks (SS)<T>Bat R  7 POW   10   3   7  38 LP<T> 3 Steve Williams (SS)<T>Bat R  8 HIT   14   2   8  55 LP<L.32.1>
+20 Tom Wells (1B)<T>Bat R  7 HIT    4   8   8  27 LP<T>30 Joe Jones (LF)<T>Bat S  8 SPD    3  14  10  31 LP<L.32.1>
+13 Aaron Hill (CF)<T>Bat R  7 HIT    2  10   9  24 LP<T>19 Andy Wilson (3B)<T>Bat L  8 HIT    2  16  11  30 LP<L.32.1>
+16 Tom Jordan (3B)<T>Bat S  6 HIT    5   8   7  31 LP<T>90 Brian Pearce (RF)<T>Bat R  8 SPD    9   1   8  27 LP<L.32.1>
+ 4 Jack Robinson (2B)<T>Bat L  6 POW    4   8   7  24 LP<T> 1 Josh Hamilton (RF)<T>Bat R  8 SPD    1  13  10  26 LP<L.32.1>
+24 Paul Thomas (RF)<T>Bat S  6 POW    3   9   7  23 LP<T>13 Angel Guillen (LF)<T>Bat R  7 SPD    4   8   8  25 LP<L.32.1>
+22 Raul Guillen (RF)<T>Bat R  6 HIT    2   8   7  21 LP<T>23 Pete Johnson (2B)<T>Bat R  7 POW    2  14   9  24 LP<L.32.1>
+25 Ivan Alou (RF)<T>Bat L  6 HIT    1  12   8  19 LP<T> 8 Ian Kinsler (RF)<T>Bat S  7 HIT    R  16  10  19 LP<L.32.1>
+26 Tony Cruz (SS)<T>Bat R  6 FLD    1  12   8  17 LP<T>16 Elvis Andrus (1B)<T>Bat R  7 POW    R  17  10  19 LP<L.32.1>
+<T><T>20 Tom Walker (LF)<T>Bat R  5 SPD    R  17   8  13 LP<L.32.1>
+<T><T><T><T><T><T><L.1.1>
+<D><E><P>
+<L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL  MLB21  Season 16  Week 6 Roundup  NL East  31/12/09<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<C><ST.66><L>
+<Z><U>Washington Nationals<UC> (Troy Dilworth) WN<T><U>Florida Marlins<UC> (Darren Norman) FM<L.42.1>
+Stadium: Medium, Astroturf, Open.<C><T><Z>Stadium: Large, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+28 Oscar Lopez<T>Pit R 10 ACC    5   9  11  61 LP<T>12 Alex Mitchell<T>Pit R 10 QUI    9   0  10  78 LP<L.32.1>
+58 Joey Eischen<T>Pit L  9 ACC    4  12  11  53 LP<T>17 Mark Young<T>Pit R  9 CON    7   7  10  54 LP<L.32.1>
+38 Gary Majewski<T>Pit R  9 QUI    4  13  11  45 LP<T> 7 Bob Davis<T>Pit R  9 CON    3   9  10  43 LP<L.32.1>
+99 Randy Choate<T>Pit L  8 CON   10   3   8  56 LP<T> 8 Scott Baker<T>Pit L  8 ACC    9   4   8  68 LP<L.32.1>
+44 Jeff Hamilton<T>Pit L  8 QUI    7   7   9  50 LP<T> 3 Matt Anderson<T>Pit R  8 STA    5   8   9  43 LP<L.32.1>
+33 Mario Perez<T>Pit R  8 CON    8   7   9  47 LP<T>18 Julio Diaz<T>Pit R  8 QUI    6   9   9  38 LP<L.32.1>
+ 8 Carlos Castillo<T>Pit R  8 QUI    1  12  10  27 LP<T>11 Ivan Ordonez<T>Pit L  8 QUI    2  10  10  34 LP<L.32.1>
+15 Paul Lewis<T>Pit L  8 ACC   10   1   8  27 LP<T> 9 Bob Malcolm<T>Pit R  7 CON    8   6   8  43 LP<L.32.1>
+ 6 Danny Lewis<T>Pit L  7 QUI    5   7   8  35 LP<T> 6 Bob Newman<T>Pit R  7 ACC    7   5   8  42 LP<L.32.1>
+ 2 John White<T>Pit R  7 CON    6  13   9  33 LP<T>13 Jason Radford<T>Pit R  7 CON    8   5   8  33 LP<L.32.1>
+56 Luis Ayala<T>Pit L  7 CON    2  14   9  28 LP<T>10 Tom Walker<T>Pit L  7 ACC    5  11   9  33 LP<L.32.1>
+12 Fernando Cordero<T>Pit R  6 QUI    R  12   8  16 LP<T>27 Eric Garcia<T>Pit L  7 ACC    4  10   9  29 LP<L.32.1>
+64 Garret Anderson (C)<T>Cat R  8 POW   12   0   8  73 LP<T>23 Fernando Guerrero<T>Pit R  7 ACC    1  15  10  23 LP<L.32.1>
+43 Brian Schneider (C)<T>Cat S  8 HIT    3  14  10  39 LP<T> 1 Ricardo Garcia<T>Pit R  7 QUI    R  14   9  22 LP<L.32.1>
+24 Ian Brooks (SS)<T>Bat L 10 HIT    9   2  10 104 LP<T>19 Mark Shearer (C)<T>Cat R  9 POW   10   1   9  88 LP<L.32.1>
+18 Paul Foster (CF)<T>Bat R 10 POW    8   6  11  78 LP<T>22 Javier Sierra (C)<T>Cat L  8 FLD    6  11  10  43 LP<L.32.1>
+13 Julio Ortiz (1B)<T>Bat R  9 FLD    6   6  10  52 LP<T> 2 Juan Sanchez (2B)<T>Bat S 10 HIT    6   7  11  67 LP<L.32.1>
+ 1 Richard Sanders (LF)<T>Bat R  8 HIT    7   6   9  55 LP<T>16 Jason White (3B)<T>Bat R  9 FLD   11   1   9  80 LP<L.32.1>
+14 Phil Cryer (LF)<T>Bat R  8 POW    8   8   9  49 LP<T>63 Brian Ward (LF)<T>Bat R  8 POW   13   1   8  51 LP<L.32.1>
+22 Robert McRobertson (CF)<T>Bat S  8 HIT   11   2   8  44 LP<T>26 Tom Harris (CF)<T>Bat S  8 POW    5  13  10  45 LP<L.32.1>
+25 Austin Kearns (RF)<T>Bat R  8 HIT    3  12  10  35 LP<T>25 Eddie Sierra (LF)<T>Bat R  8 HIT    1  11  10  29 LP<L.32.1>
+ 3 Ricardo Hernandez (SS)<T>Bat R  7 POW    6   8   8  40 LP<T>14 Tony Green (RF)<T>Bat R  7 SPD    8   4   7  44 LP<L.32.1>
+11 Danny Cryer (1B)<T>Bat S  7 HIT    8   6   8  38 LP<T>15 Alan Nelson (IF)<T>Bat R  7 FLD    7   9   8  32 LP<L.32.1>
+ 9 Bobby Abreu (1B)<T>Bat L  7 FLD    4  12   9  34 LP<T> 5 Alex Rodriguez (3B)<T>Bat R  7 HIT   10   4   7  32 LP<L.32.1>
+ 7 Steve Lewis (SS)<T>Bat L  7 FLD    9   5   8  27 LP<T>24 Roberto Martinez (LF)<T>Bat R  7 HIT    4  10   9  32 LP<L.32.1>
+17 Matt Roberts (OF)<T>Bat L  7 POW    7   8   8  26 LP<T> 4 Greg Walker (RF)<T>Bat R  7 SPD    3  11   9  29 LP<L.32.1>
+10 Pete Green (OF)<T>Bat R  7 SPD    2  11   9  25 LP<T>28 Tom Anderson (SS)<T>Bat R  6 FLD    3  13   8  21 LP<L.32.1>
+ 4 Matt Brooks (RF)<T>Bat L  7 SPD    R  16  10  21 LP<T>20 Randy Thompson (SS)<T>Bat R  5 FLD    R  15   8  13 LP<L.32.1>
+<T><T><T><T><T><T><T><T><ST.66><L>
+<Z><U>Philadelphia Phillies<UC> (Alan Milnes) PH<T><U>New York Mets<UC> (Daniel Papantoniou) NM<L.42.1>
+Stadium: Small, Grass, Open.<C><T><Z>Stadium: Large, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+39 Brett Myers<T>Pit L  9 ACC    9   2   9  70 LP<T> 3 Mario Guzman<T>Pit R  9 ACC    3  14  11  40 LP<L.32.1>
+50 Jamie Moyer<T>Pit L  9 CON    9   2   9  63 LP<T>13 Mark Miller<T>Pit R  8 ACC    8   4   8  61 LP<L.32.1>
+38 Kyle Kendrick<T>Pit R  9 QUI    2   9  10  42 LP<T> 7 Jack Elway<T>Pit L  8 QUI    8   4   8  58 LP<L.32.1>
+80 Jeff Farnsworth<T>Pit R  8 CON    4   6   9  38 LP<T> 8 Jason Johnson<T>Pit R  8 STA   11   3   8  52 LP<L.32.1>
+ 9 Jon Lieber<T>Pit R  8 STA   13   2   8  32 LP<T>28 Dave Smith<T>Pit R  8 STA    7   9   9  46 LP<L.32.1>
+63 Ryan Madson<T>Pit R  8 STA    1  17  11  28 LP<T>21 Ricardo Gonzalez<T>Pit L  7 ACC    6   5   8  43 LP<L.32.1>
+12 Martin Jenkins<T>Pit L  8 QUI    8   5   9  24 LP<T>22 Keith Fraser<T>Pit R  7 QUI    9   4   7  29 LP<L.32.1>
+52 Fabio Castro<T>Pit L  7 STA    6   8   8  37 LP<T>27 Chad Cordero<T>Pit R  7 ACC    4   9   8  28 LP<L.32.1>
+47 Scott Mathieson<T>Pit R  7 STA    2  13   9  29 LP<T>23 Jose Guerrero<T>Pit R  7 STA    R  16  10  24 LP<L.32.1>
+ 1 Pete Jordan<T>Pit R  7 STA    8   5   8  26 LP<T> 9 Pedro Sanchez<T>Pit R  7 STA    6   9   8  20 LP<L.32.1>
+16 J.C. Romero<T>Pit R  7 CON    1  13   9  25 LP<T>26 Alex Ibanez<T>Pit L  7 CON    2  13   9  17 LP<L.32.1>
+ 8 Danny Davis<T>Pit R  7 ACC    5   9   8  24 LP<T> 5 Luis Ibanez<T>Pit L  6 QUI    R  13   8  13 LP<L.32.1>
+13 Jeremy Accardo<T>Pit R  7 STA    5  12   9  20 LP<T>55 Charles Johnson (C)<T>Cat L  7 HIT   16   0   7  50 LP<L.32.1>
+37 Mark Garner (C)<T>Cat R  7 POW    8   2   7  44 LP<T> 2 Matt Blake (C)<T>Cat S  7 POW   11   4   7  47 LP<L.32.1>
+22 Gordon Milnes (C)<T>Cat S  6 FLD    1  15   9  19 LP<T>10 Carl Johnson (C)<T>Cat L  6 POW    R  15   9  16 LP<L.32.1>
+18 Wes Helms (3B)<T>Bat S 10 HIT   12   2  10 127 LP<T>25 Jorge Garcia (CF)<T>Bat L 10 SPD    6   8  11  57 LP<L.32.1>
+11 Jimmy Rollins (SS)<T>Bat R 10 POW   13   3  10 111 LP<T>16 Jon Smith (SS)<T>Bat R  8 POW   10   0   8  66 LP<L.32.1>
+33 Aaron Rowand (CF)<T>Bat L 10 POW    8   5  11  64 LP<T> 6 Ian Atherton (1B)<T>Bat L  8 HIT   10   5   9  47 LP<L.32.1>
+26 Chase Utley (2B)<T>Bat R  9 HIT   11   3   9  80 LP<T>11 Dave Jordan (LF)<T>Bat R  8 SPD    4   8   9  38 LP<L.32.1>
+ 6 Ryan Howard (1B)<T>Bat L  9 HIT    8   8  10  63 LP<T> 1 Ramon Mendoza (CF)<T>Bat R  8 POW    5   9   9  35 LP<L.32.1>
+29 Chris Roberson (CF)<T>Bat R  9 POW    3  12  11  41 LP<T>19 Eddie Martinez (RF)<T>Bat R  8 SPD    4  12  10  34 LP<L.32.1>
+ 4 Danny Sandoval (SS)<T>Bat R  8 POW    8   5   9  44 LP<T>18 Miguel Guzman (2B)<T>Bat L  8 HIT    2   9   9  30 LP<L.32.1>
+ 3 Abraham Nunez (SS)<T>Bat R  8 HIT    5  10  10  40 LP<T>20 Ricardo Rincon (SS)<T>Bat R  8 FLD    1  16  11  26 LP<L.32.1>
+ 5 Pat Burrell (LF)<T>Bat R  8 HIT    4  12  10  38 LP<T>14 Alan Davis (3B)<T>Bat R  8 POW    9   2   8  23 LP<L.32.1>
+ 2 David Green (RF)<T>Bat L  8 SPD    2   9   9  30 LP<T>15 Danny Roberts (RF)<T>Bat R  7 SPD    4   6   8  29 LP<L.32.1>
+10 Karim Garcia (RF)<T>Bat R  7 POW    3  13   9  29 LP<T>17 Tony Kelly (1B)<T>Bat R  7 FLD    5   4   7  28 LP<L.32.1>
+40 John Maybury Jr. (LF)<T>Bat L  7 SPD    R  13   9  18 LP<T> 4 Julio Gonzalez (SS)<T>Bat R  7 POW   11   8   8  26 LP<L.32.1>
+ 7 Mario Garcia (3B)<T>Bat R  6 FLD    R  10   8  16 LP<T>24 Matt Brown (CF)<T>Bat S  7 SPD    1  15  10  22 LP<L.32.1>
+<T><T><T><T><T><T><T><T><L.1.1>
+<D><E><P>
+<L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL  MLB21  Season 16  Week 6 Roundup  NL Central  31/12/09<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<C><ST.66><L>
+<Z><U>Pittsburgh Pirates<UC> (Greg Salmon) PI<T><U>Chicago Cubs<UC> (David Trice) CU<L.42.1>
+Stadium: Large, Grass, Open.<C><T><Z>Stadium: Small, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+11 Jack Jones<T>Pit L  9 CON    6   6  10  56 LP<T>18 Mark Prior<T>Pit R 10 ACC    9   7  11  82 LP<L.32.1>
+19 Chris Jones<T>Pit R  9 ACC    7   6  10  53 LP<T> 2 Carlos Zambrano<T>Pit R  9 STA   11   0   9 100 LP<L.32.1>
+ 3 Richard Marino<T>Pit L  8 ACC    9   1   8  51 LP<T>12 Scott Williamson<T>Pit R  9 QUI   11   1   9  68 LP<L.32.1>
+ 1 Jorge Ramirez<T>Pit R  8 CON    7   5   9  46 LP<T>54 Juan Mateo<T>Pit L  8 QUI    4  11  10  42 LP<L.32.1>
+28 Mike Wilson<T>Pit R  8 ACC    5  12  10  41 LP<T> 9 Jeff Marino<T>Pit R  8 ACC   10   0   8  38 LP<L.32.1>
+23 Paul Byrd<T>Pit L  8 ACC    4  12  10  36 LP<T> 5 Jeff Samardzija<T>Pit R  8 ACC    3  14  10  37 LP<L.32.1>
+20 Carl Abbott<T>Pit L  8 QUI    5  11  10  35 LP<T>45 Sean Gallagher<T>Pit R  8 STA    4  11  10  35 LP<L.32.1>
+ 5 Francisco Hernandez<T>Pit L  8 QUI    1  11  10  27 LP<T>24 Wade Miller<T>Pit R  7 CON    8   5   8  33 LP<L.32.1>
+22 Ricardo Hernandez<T>Pit L  7 QUI    5  10   9  44 LP<T>52 Donald Veal<T>Pit L  7 ACC    3  17  10  28 LP<L.32.1>
+13 Jorge Palmeiro<T>Pit R  7 ACC    2   8   8  31 LP<T>58 Jose Ascanio<T>Pit R  7 CON    1  16  10  24 LP<L.32.1>
+21 Joe Harris<T>Pit R  7 STA    4   8   8  30 LP<T>16 Eric Jones<T>Pit L  7 STA    R  14   9  22 LP<L.32.1>
+15 Ramon Rincon<T>Pit R  7 STA    6  10   9  23 LP<T>17 Matt Mitchell<T>Pit R  5 CON    R  12   7  14 LP<L.32.1>
+25 Mike Benjamin (C)<T>Cat R 10 FLD   16   0  10  82 LP<T>71 Geovany Soto (C)<T>Cat R 10 POW    5  12  12  60 LP<L.32.1>
+ 8 Dave Harris (3B)<T>Cat R  8 SPD    8   6   9  56 LP<T>25 Yadier Molina (C)<T>Cat R  7 SPD   10   4   7  36 LP<L.32.1>
+12 Pete Kelly (C)<T>Cat R  6 POW    R  13   8  19 LP<T>29 Kosuke Fukudome (LF)<T>Bat S 10 SPD    4  12  12  59 LP<L.32.1>
+18 Jeff Robinson (LF)<T>Bat R  9 POW    6   6  10  47 LP<T> 1 Robert Kelly (2B)<T>Bat R  9 HIT    9   1   9  71 LP<L.32.1>
+26 Drew Henson (3B)<T>Bat R  8 FLD    8   9   9  45 LP<T>26 Alfonso Soriano (RF)<T>Bat L  8 SPD   13   1   8  51 LP<L.32.1>
+ 6 Aaron Boone (SS)<T>Bat R  8 HIT    9   4   8  44 LP<T> 7 Scott Davis (CF)<T>Bat R  7 POW    8   9   8  37 LP<L.32.1>
+27 Jeff Hamilton (RF)<T>Bat R  8 POW    R  13  10  25 LP<T>13 Bill Wilson (3B)<T>Bat L  7 FLD    8   4   7  37 LP<L.32.1>
+ 4 Keith Miller (CF)<T>Bat L  7 POW    7   7   8  29 LP<T>21 Felix Pie (RF)<T>Bat S  7 SPD    5  14   9  34 LP<L.32.1>
+16 Angel Martinez (3B)<T>Bat R  7 HIT    3   8   8  29 LP<T>15 Ivan Diaz (3B)<T>Bat S  7 FLD    5   6   8  33 LP<L.32.1>
+24 Javier Gonzalez (IF)<T>Bat R  7 POW    4  12   9  28 LP<T> 3 Phil Jackson (1B)<T>Bat L  7 POW    8   4   7  32 LP<L.32.1>
+31 Fernando Pena (SS)<T>Bat S  7 FLD    3  11   9  24 LP<T>10 Eric Washington (2B)<T>Bat L  7 HIT   11   1   7  29 LP<L.32.1>
+17 Danny Johnson (LF)<T>Bat R  6 POW    6   8   7  25 LP<T>72 Tyler Colvin (LF)<T>Bat L  7 HIT    2  12   9  26 LP<L.32.1>
+ 9 Rafael Mendoza (SS)<T>Bat R  6 HIT    2  11   8  23 LP<T> 6 Adrian Diaz (2B)<T>Bat R  7 HIT    1  12   9  22 LP<L.32.1>
+ 2 Jose Guerrero (1B)<T>Bat L  6 FLD    2  13   8  23 LP<T> 8 Micah Hoffpauir (2B)<T>Bat R  6 FLD    1  12   8  17 LP<L.32.1>
+29 Todd Jones (2B)<T>Bat L  6 POW    2   7   7  20 LP<T> 4 Carl Jones (CF)<T>Bat L  6 SPD    R  14   8  16 LP<L.32.1>
+30 Andy Brooks (2B)<T>Bat R  6 POW    R  11   8  15 LP<T>11 Raul Lopez (IF)<T>Bat L  5 HIT    4  14   7  19 LP<L.32.1>
+<T><T><T><T><T><T><T><T><ST.66><L>
+<Z><U>Houston Astros<UC> (Ian Gibson) HA<T><U>Cincinnati Reds<UC> (Keiron Peskett) CI<L.42.1>
+Stadium: Medium, Astroturf, Dome.<C><T><Z>Stadium: Large, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+14 Phil Walsh<T>Pit R 10 CON    8   3  10  77 LP<T> 3 Tom Brown<T>Pit R 10 STA    6   9  11  71 LP<L.32.1>
+ 6 Manny Cordero<T>Pit R 10 STA    5   8  11  65 LP<T> 8 Mark Radford<T>Pit R 10 QUI    7  11  12  67 LP<L.32.1>
+ 4 Phil Foster<T>Pit L  9 ACC    9   0   9  65 LP<T>65 Chad Hutchinson<T>Pit R  9 QUI   12   2   9  65 LP<L.32.1>
+ 3 David Thomas<T>Pit L  9 CON    6   7  10  59 LP<T>15 Jose Cruz<T>Pit R  9 STA    5  12  11  50 LP<L.32.1>
+16 Miguel Rodriguez<T>Pit L  9 QUI    5  11  11  51 LP<T>11 Adrian Diaz<T>Pit R  9 CON    4  11  11  46 LP<L.32.1>
+ 2 Jailen Peguero<T>Pit R  9 CON    4  11  11  50 LP<T>22 Jorge Cruz<T>Pit R  9 ACC    3  14  11  43 LP<L.32.1>
+37 Matt Albers<T>Pit L  9 CON    3  10  11  48 LP<T>25 Homer Bailey<T>Pit R  9 CON    2  15  12  39 LP<L.32.1>
+19 Jack Mitchell<T>Pit R  9 ACC    5  13  11  45 LP<T>43 Dave Veres<T>Pit R  8 ACC   10   2   8  59 LP<L.32.1>
+ 8 Chance Douglass<T>Pit R  8 CON    3  14  10  38 LP<T>21 Tony Nelson<T>Pit R  8 QUI    5  10  10  42 LP<L.32.1>
+ 1 Samuel Gervacio<T>Pit R  8 ACC    2  14  10  37 LP<T>13 Ken Foster<T>Pit R  8 ACC    7   9   9  40 LP<L.32.1>
+17 Chris Blazek<T>Pit R  8 CON    2  13  10  30 LP<T>18 Scott Proctor<T>Pit R  8 QUI    5   9   9  37 LP<L.32.1>
+47 Matt Chico<T>Pit R  7 CON    2  14   9  25 LP<T>17 Johnny Cueto<T>Pit R  7 QUI    1  15  10  21 LP<L.32.1>
+18 David Qualben<T>Pit L  7 ACC    2  12   9  25 LP<T>23 Julio Alou<T>Pit L  7 CON    1  13   9   9 LP<L.32.1>
+99 Danny Washington<T>Pit L  7 ACC    2  13   9  13 LP<T>19 Jack Abbott (C)<T>Cat L  9 FLD    4   8  10  48 LP<L.32.1>
+96 Mitch Atkins<T>Pit L  6 CON    1  13   8  14 LP<T>10 Wilkin Castillo (C)<T>Cat R  6 SPD    3  13   8  29 LP<L.32.1>
+21 Scott Mitchell (1B)<T>Cat L  9 POW    8   3   9  78 LP<T>14 Bob Walters (2B)<T>Bat R 10 POW    8   7  11  78 LP<L.32.1>
+23 Henry Blanco (C)<T>Cat S  8 FLD    6   4   8  49 LP<T> 1 Orlando Palmeiro (SS)<T>Bat R 10 HIT    3   9  11  50 LP<L.32.1>
+97 Koby Clemens (C)<T>Cat R  5 FLD    2  15   8  18 LP<T> 7 J.D. Drew (CF)<T>Bat R  9 HIT   12   2   9  67 LP<L.32.1>
+26 Orlando Rincon (2B)<T>Bat R 10 HIT    6   5  11  67 LP<T> 4 Tom Wells (LF)<T>Bat S  9 SPD    3   9  10  40 LP<L.32.1>
+ 7 Sean Murphy (SS)<T>Bat S  8 POW   13   0   8  76 LP<T>29 Jerry Hairston Jr. (3B)<T>Bat S  8 FLD    3  11  10  47 LP<L.32.1>
+29 Vladimir Guerrero (2B)<T>Bat L  8 SPD   11   0   8  64 LP<T> 5 Shane Spencer (LF)<T>Bat R  8 HIT   12   1   8  45 LP<L.32.1>
+28 Jayson Werth (RF)<T>Bat S  8 SPD   11   1   8  63 LP<T> 6 Tony Walters (SS)<T>Bat S  8 HIT    7   6   9  43 LP<L.32.1>
+48 Orlando Castillo (IF)<T>Bat S  8 HIT   10   1   8  55 LP<T>12 Ryan Freel (RF)<T>Bat R  8 HIT    5  11  10  39 LP<L.32.1>
+11 Tony Eusebio (3B)<T>Bat R  8 HIT    3  13  10  31 LP<T>26 Edwin Encarnacion (3B)<T>Bat L  8 FLD    2  10  10  32 LP<L.32.1>
+ 9 Satchel Paige (CF)<T>Bat S  7 HIT   12   1   7  60 LP<T>20 Yonder Alonso (1B)<T>Bat R  8 POW    1  10  10  26 LP<L.32.1>
+15 Angel Pagan (RF)<T>Bat S  7 HIT    7   4   7  29 LP<T>16 Chuck Knoblauch (2B)<T>Bat L  7 POW   15   3   7  39 LP<L.32.1>
+24 Yordany Ramirez (CF)<T>Bat S  6 POW    R  18   9  18 LP<T>27 Joey Votto (3B)<T>Bat R  7 FLD    2  14   9  23 LP<L.32.1>
+98 Collin Delome (RF)<T>Bat L  6 SPD    R  13   8  13 LP<T> 9 Danny Young (CF)<T>Bat L  7 SPD    R  13   9  20 LP<L.32.1>
+<T><T><T><T><T><T><T><T><L.1.1>
+<D><E><P>
+<L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL  MLB21  Season 16  Week 6 Roundup  NL West  31/12/09<L.12.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<C><ST.66><L>
+<Z><U>Colorado Rockies<UC> (Craig Fraser) CO<T><U>Los Angeles Dodgers<UC> (Bobby Dorman) LA<L.42.1>
+Stadium: Small, Grass, Open.<C><T><Z>Stadium: Large, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+ 5 Eddie Palmeiro<T>Pit R  9 STA    6   9  10  51 LP<T>39 Jason Schmidt<T>Pit L  9 QUI    8   7  10  57 LP<L.32.1>
+13 Jorge Benitez<T>Pit R  9 CON    2  15  12  36 LP<T>44 Takashi Saito<T>Pit R  9 CON    7   8  10  52 LP<L.32.1>
+ 3 Orlando Guillen<T>Pit R  8 CON    6  10  10  40 LP<T> 7 Eric Williams<T>Pit L  8 STA    3  10  10  37 LP<L.32.1>
+25 Eric Thompson<T>Pit R  8 QUI    3  11  10  39 LP<T>43 Randy Wolf<T>Pit L  8 QUI    4  12  10  36 LP<L.32.1>
+26 Adrian Ibanez<T>Pit R  8 CON    4   9   9  37 LP<T>31 Brad Penny<T>Pit R  8 ACC    2  12  10  32 LP<L.32.1>
+24 John Studd<T>Pit L  8 QUI   10   5   9  37 LP<T>12 Mark Miller<T>Pit R  7 CON    6   6   8  37 LP<L.32.1>
+ 8 Francisco Delgado<T>Pit R  7 CON    5   8   8  34 LP<T> 2 Manny Garcia<T>Pit R  7 CON   10   1   7  36 LP<L.32.1>
+ 4 Robert Baker<T>Pit R  7 CON    7   8   8  32 LP<T>17 Ken Williams<T>Pit R  7 STA   12   4   7  34 LP<L.32.1>
+16 Tony Guillen<T>Pit L  7 ACC    3   6   8  30 LP<T> 6 Mario Diaz<T>Pit R  7 ACC    2  10   9  27 LP<L.32.1>
+28 Tony Jackson<T>Pit R  7 STA    3  10   9  26 LP<T>11 Rafael Sanchez<T>Pit L  7 ACC    R  16  10  22 LP<L.32.1>
+ 6 Francisco Hernandez<T>Pit L  7 ACC    R  16  10  24 LP<T>10 Mike Abbott<T>Pit L  6 ACC    6  10   8  30 LP<L.32.1>
+22 Eric Guerrero<T>Pit R  6 ACC    1  12   8  16 LP<T>21 Orlando Alou<T>Pit L  5 STA    R  13   7  14 LP<L.32.1>
+ 9 Ricardo Lopez<T>Pit R  6 CON    R  15   9  16 LP<T> 5 Jack Lewis (C)<T>Cat R  7 HIT   11   1   7  38 LP<L.32.1>
+12 Francisco Ramirez (C)<T>Cat R  6 HIT    R  11   8  14 LP<T> 9 Will Nieves (C)<T>Cat L  7 SPD    6   6   8  35 LP<L.32.1>
+47 Geoff Chandler (C)<T>Cat R  1 HIT   19   0   1  55 LP<T> 8 Juan Pierre (CF)<T>Bat L 10 POW    6   8  11  61 LP<L.32.1>
+ 7 Dave Winfield (C)<T>Cat S  0 SPD   18   0   0  53 LP<T> 4 Phil Harris (RF)<T>Bat R  9 POW   10   2   9  65 LP<L.32.1>
+21 Brian Wilson (1B)<T>Bat R  9 HIT    1   8  10  32 LP<T>15 Rafael Furcal (SS)<T>Bat R  9 POW    4  10  11  47 LP<L.32.1>
+19 Luis Alou (SS)<T>Bat R  8 POW   13   1   8  54 LP<T>24 Wilson Betemit (3B)<T>Bat R  8 HIT    8   8   9  54 LP<L.32.1>
+23 Todd Helton (RF)<T>Bat L  8 POW    8   4   8  45 LP<T> 3 Andruw Jones (RF)<T>Bat R  8 POW    9   1   8  39 LP<L.32.1>
+14 Alex Fraser (CF)<T>Bat S  8 HIT    7   3   8  41 LP<T>72 Jeff Kent (2B)<T>Bat R  8 HIT    3  12  10  33 LP<L.32.1>
+17 Matt Walker (SS)<T>Bat R  8 POW    6   8   9  37 LP<T>22 Felipe Lopez (CF)<T>Bat R  7 POW   12   6   8  38 LP<L.32.1>
+15 Rafael Gonzalez (SS)<T>Bat R  7 FLD    5  14   9  31 LP<T>28 Tony Alou (1B)<T>Bat R  7 FLD    5  11   9  32 LP<L.32.1>
+ 2 Adrian Cruz (1B)<T>Bat R  7 HIT    2  11   9  27 LP<T>16 Andy Nelson (SS)<T>Bat R  7 POW    1  11   9  21 LP<L.32.1>
+10 Andy Phillips (1B)<T>Bat R  7 FLD    4  14   9  24 LP<T>14 Javier Sierra (RF)<T>Bat L  7 HIT    3  10   9  21 LP<L.32.1>
+11 Jose Ordonez (3B)<T>Bat R  7 POW    1  12   9  22 LP<T>23 Jeff Johnson (LF)<T>Bat R  7 SPD    1  10   9  10 LP<L.32.1>
+18 Miguel Guerrero (SS)<T>Bat S  6 HIT    8   8   7  28 LP<T>13 Jordan Czarniecki (LF)<T>Bat R  6 SPD    7   6   7  21 LP<L.32.1>
+27 Raul Mendoza (3B)<T>Bat S  6 HIT    4   8   7  25 LP<T>20 Fernando Gonzalez (LF)<T>Bat S  6 HIT    R  14   8  16 LP<L.32.1>
+29 Andy Walker (3B)<T>Bat R  6 FLD    2  11   8  20 LP<T>19 Tom Johnson (LF)<T>Bat R  6 HIT    1  15   9  15 LP<L.32.1>
+<T><T><T><T><T><T><T><T><ST.66><L>
+<Z><U>Arizona Diamondbacks<UC> (Ashley Rossouw) AD<T><U>San Francisco Giants<UC> (Marc Bradbrook) SF<L.42.1>
+Stadium: Small, Grass, Open.<C><T><Z>Stadium: Medium, Grass, Open.<C><ST.29.66.95><L.42.1>
+<Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><T><Z>Sh Name<T>Type  Ability Exp Pot Trd  Value<C><L.36.1>
+10 Jim Young<T>Pit L  9 ACC    5   3   9  46 LP<T> 6 Graeme Green<T>Pit R 10 ACC    7   8  11  67 LP<L.32.1>
+26 Francisco Hernandez<T>Pit R  8 STA    5   9   9  41 LP<T>20 Andy Young<T>Pit R  9 CON    7   5  10  61 LP<L.32.1>
+12 Alex Perez<T>Pit R  8 ACC    1  15  11  32 LP<T> 4 Jeff Weaver<T>Pit R  8 CON    9   9   9  54 LP<L.32.1>
+ 5 Joe Roberts<T>Pit R  8 CON    2  11  10  30 LP<T>21 Glen Mirer<T>Pit R  8 CON    8   7   9  50 LP<L.32.1>
+ 6 Steve Fraser<T>Pit R  7 QUI   12   4   7  46 LP<T>19 Mark Flutie<T>Pit R  8 STA    8   4   8  50 LP<L.32.1>
+19 Jon Williams<T>Pit L  7 ACC   11   7   8  39 LP<T>11 Scott Lee<T>Pit R  8 QUI    4  13  10  42 LP<L.32.1>
+ 4 Ramon Ibanez<T>Pit L  7 STA    4   9   8  36 LP<T>14 Jason Abbott<T>Pit L  8 STA    3   8   9  39 LP<L.32.1>
+13 Simon Miller<T>Pit R  7 ACC    8   6   8  35 LP<T>24 Jack White<T>Pit L  7 ACC    5  10   9  44 LP<L.32.1>
+20 Jack Nelson<T>Pit L  7 ACC    7   5   8  31 LP<T> 8 Gene Stechschulte<T>Pit R  7 CON   11   3   7  36 LP<L.32.1>
+25 Miguel Diaz<T>Pit R  7 STA    5   7   8  26 LP<T>30 Ruben Cabrera<T>Pit R  7 ACC    3  12   9  30 LP<L.32.1>
+29 Jim Jones<T>Pit R  6 QUI    1  11   8  17 LP<T>26 Todd Robinson<T>Pit L  7 STA    3  10   9  28 LP<L.32.1>
+22 Mark Abbott<T>Pit R  6 ACC    R  12   8  14 LP<T> 5 Angel Guzman<T>Pit R  7 ACC    5   9   8  26 LP<L.32.1>
+ 3 Ryne Sandberg (C)<T>Cat L  4 POW   15   0   4  59 LP<T>15 Tony Wilson<T>Pit R  7 QUI    R  11   9  20 LP<L.32.1>
+21 Danny Shaeffer (C)<T>Cat R  3 HIT   22   0   3  77 LP<T>13 Matt Brooks<T>Pit L  6 ACC    2  13   8  26 LP<L.32.1>
+11 Jose Vizcaino (CF)<T>Bat L 11 HIT   16   4  11 115 LP<T>18 Tony Cruz<T>Pit R  6 CON    R  14   8  15 LP<L.32.1>
+ 8 Chipper Jones (OF)<T>Bat R  9 HIT   12   5  10  73 LP<T> 1 Curtis Thigpen (C)<T>Cat L  7 SPD    4   7   8  24 LP<L.32.1>
+24 Simon Thompson (IF)<T>Bat L  9 FLD   12   6  10  65 LP<T>23 Scott Anderson (C)<T>Cat S  6 HIT    8   4   6  20 LP<L.32.1>
+ 1 Tony Dixon (RF)<T>Bat R  9 SPD    8  10  11  50 LP<T>55 John Dean Newman (CF)<T>Bat L 11 POW   14   0  11 129 LP<L.32.1>
+27 David Kelly (1B)<T>Bat R  8 HIT    3  12  10  39 LP<T>12 Brian Lewis (SS)<T>Bat L 10 FLD   10   1  10 104 LP<L.32.1>
+28 Brian Rushton (3B)<T>Bat R  8 POW    8   4   8  38 LP<T> 9 Bill Mirer (LF)<T>Bat L 10 SPD   11   0  10  94 LP<L.32.1>
+ 9 Angel Pena (CF)<T>Bat R  8 HIT    2  10  10  34 LP<T>27 Nick Johnson (IF)<T>Bat L  9 SPD   11   2   9  67 LP<L.32.1>
+23 Orlando Ordonez (RF)<T>Bat L  8 SPD    4  11  10  34 LP<T>10 Ruben Gonzalez (1B)<T>Bat R  8 SPD    2  12  10  31 LP<L.32.1>
+15 Randy Kelly (CF)<T>Bat R  8 HIT    R  17  11  22 LP<T> 7 Graeme Robinson (RF)<T>Bat R  7 SPD   12   0   7  30 LP<L.32.1>
+ 2 Jim Mitchell (2B)<T>Bat L  7 SPD    6   7   8  33 LP<T> 3 Chris Green (3B)<T>Bat R  7 POW   13   2   7  27 LP<L.32.1>
+14 Jose Rincon (SS)<T>Bat R  7 HIT    8   4   7  29 LP<T>17 Danny Lewis (CF)<T>Bat R  7 POW    1  12   9  24 LP<L.32.1>
+17 David Wilson (SS)<T>Bat R  7 HIT    4   9   8  27 LP<T>28 Edgar Palmeiro (SS)<T>Bat R  7 POW    2  12   9  23 LP<L.32.1>
+16 John Wells (LF)<T>Bat R  7 SPD    1  16  10  22 LP<T>29 Joe Lewis (LF)<T>Bat R  6 SPD    4  15   9  23 LP<L.32.1>
+ 7 Darren Young (LF)<T>Bat R  6 SPD    8   7   7  29 LP<T>40 Daniel Ortmeier (1B)<T>Bat R  6 FLD    1  15   9  16 LP<L.32.1>
+<T><T>22 Jack Thompson (3B)<T>Bat R  5 POW    R  10   7  12 LP<L.32.1>
+<T><T><T><T><T><T><L.1.1>
+<D><E><DU>

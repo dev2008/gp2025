@@ -1,0 +1,921 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: alanscottmilnes@gmail.com
+Received: by 10.70.88.4 with SMTP id bc4csp14001pdb;
+        Sat, 16 Aug 2014 04:36:58 -0700 (PDT)
+X-Received: by 10.112.161.72 with SMTP id xq8mr16410422lbb.18.1408189017778;
+        Sat, 16 Aug 2014 04:36:57 -0700 (PDT)
+Return-Path: <alan@gameplan.org.uk>
+Received: from mout.kundenserver.de (mout.kundenserver.de. [212.227.126.187])
+        by mx.google.com with ESMTPS id q20si16606941lal.6.2014.08.16.04.36.56
+        for <alanscottmilnes@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 16 Aug 2014 04:36:57 -0700 (PDT)
+Received-SPF: none (google.com: alan@gameplan.org.uk does not designate permitted sender hosts) client-ip=212.227.126.187;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: alan@gameplan.org.uk does not designate permitted sender hosts) smtp.mail=alan@gameplan.org.uk
+Message-Id: <53ef4259.d42a980a.1f50.6d3cSMTPIN_ADDED_MISSING@mx.google.com>
+Received: from [212.227.17.191] ([212.227.17.191]) by mx.kundenserver.de
+ (mxeue005) with ESMTP (Nemesis) id 0Lzlyx-1WMiNo3Vlj-0152dr for
+ <alanscottmilnes@gmail.com>; Sat, 16 Aug 2014 13:36:56 +0200
+Received: from [212.227.17.191] ([212.227.17.191]) by mx.kundenserver.de
+ (mxeue005) with ESMTP (Nemesis) id 0LavZl-1WYKK63VU1-00kdAr for
+ <alan@gameplan.org.uk>; Sat, 16 Aug 2014 13:36:55 +0200
+Received: from know-smtprelay-omc-11.server.virginmedia.net ([80.0.253.75]) by
+ mx.kundenserver.de (mxeue005) with ESMTP (Nemesis) id
+ 0Lx0pR-1WL4l42q0v-016gGr for <mlb@gameplan.org.uk>; Sat, 16 Aug 2014 13:36:55
+ +0200
+Received: from Danny-PC ([62.252.214.74])
+	by know-smtprelay-11-imp with bizsmtp
+	id fPb11o02g1csyh201Pcupx; Sat, 16 Aug 2014 12:36:54 +0100
+X-Originating-IP: [62.252.214.74]
+X-Spam: 0
+X-Authority: v=2.1 cv=b7w8472x c=1 sm=1 tr=0 a=5N0bNrfUYWHoiq3f/DLiuQ==:117
+ a=5N0bNrfUYWHoiq3f/DLiuQ==:17 a=8M_8ShS1pGgA:10 a=AnmFHKzuSg4A:10
+ a=UhfA_SvEAAAA:8 a=FHEM_hz9AAAA:8 a=0y6RWqGiAAAA:8 a=lyAKHSfY6u58CSIfBTUA:9
+ a=Uf14r8C5tFgcuhEh:21 a=H-I9KS6JYorz97ME:21 a=cwikN1ivp5oq4cjg:21
+ a=tfGsoaTpPh0A:10 a=v4QsWJBxQs0A:10 a=R3cNOcjXviUA:10
+From: "Danny McConnell" <danny@pbmsports.com>
+Subject: MLB6-AB, Turn 2
+To: MLB@GAMEPLAN.ORG.UK
+Content-Type: text/plain
+Date: Sat, 16 Aug 2014 12:37:29 +0100
+X-UI-Out-Filterresults: notjunk:1;
+
+MLB@GAMEPLAN.ORG.UK
+0
+MLB6-AB, Turn 2
+<STARTREP>
+<BK.Team Report><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Team Report  Season 23   Week 2   16/8/14<ST.28.88.105.110><L.48.1>
+Atlanta Braves (Alan/Gordon Milnes)    <L.48.1>
+<C>Turn Credits =  2.6  (deducted 1.0)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Acc Con Qui Sta<T>Sqd<T>MxB MxH MxE FIn MnB<C><L.42.1>
+ 1  Tony Armas<T>Pit R   9 QUI   12   2   9   0   2   0   0   58 LP   5 LP<T> Go  Go  Ex  Go <T>Act<T><T> 27   4   6   1  21<L.33.1>
+20  Todd Lee<T>Pit R   9 STA    9   3   9   3   4   5   0   47 LP   4 LP<T> Go  Go  Go  Ex <T>Act<T><T> 38   9   9   1  27<L.33.1>
+11  Jason Arnold<T>Pit R   9 ACC   12   2   9   3   5   8   0   80 LP   8 LP<T> Ex  Go  Go  Go <T>Act<T><T> 27   4   6   1   1<L.33.1>
+ 5  Huston Street<T>Pit L   9 CON   11   6  10   2   2   1   0   48 LP   4 LP<T> Go  Ex  Av  Go <T>Act<T><T> 27   4   6   1  24<L.33.1>
+<L.6.1>
+67  Jose Ortegano<T>Pit R   7 CON    5  11   9   1   4   6   0   35 LP   3 LP<T> Av  Go  Av  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+21  Kev Gilfillan<T>Pit L   7 QUI    4   7   8   0   3   5   0   24 LP   2 LP<T> Av  Go  Go  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+26  Edgar Ortiz<T>Pit R   7 QUI    3   8   8   0   3   5   0   36 LP   3 LP<T> Go  Av  Go  Fa <T>Act<T><T>  9   3   6   1  14<L.33.1>
+13  Jonny Venters<T>Pit R   6 ACC    7   9   7   0   2   4   0   23 LP   2 LP<T> Av  Av  Av  Av <T>Act<T><T>  9   3   6   1   1<L.33.1>
+14  Matt Hamilton<T>Pit L   5 CON    7   6   6   0   3   4   0   20 LP   2 LP<T> Fa  Go  Fa  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+ 8  Dave Green<T>Pit L   6 CON    2  14   8   0   1   1   0   19 LP   1 LP<T> Av  Av  Av  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+ 4  Eric Martinez<T>Pit L   6 CON    1  14   8   0   0  -1   0   14 LP   1 LP<T> Av  Av  Av  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+10  Raul Garcia<T>Pit R   5 CON    1  12   7   0   0   0   0   10 LP   1 LP<T> Fa  Fa  Fa  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+28  Shane Youman<T>Pit R   9 STA    8   4   9   0   0   0   0   45 LP   4 LP<T> Go  Ex  Av  Ex <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+<Z>Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Hit Pow Spd Fld<T>Sqd<T>Pos vRH Plt Pin<L.42.1>
+<C>23  Chris Johnson<T>Bat S   7 SPD    1  16  10   0  -1+ -3   0   20 LP   2 LP<T> Av  Av  Go  Av <T>Act<T> RF  RF        <L.33.1>
+18  Ryan Langerhans<T>Bat R  11 FLD   11   2  11   0   7  10   0  135 LP  13 LP<T> Ex  Ex  Ex  WC <T>Act<T> 2B  2B        <L.33.1>
+19  Kurt Suzuki<T>Cat L   8 POW    9   6   9   0   2   3   0   47 LP   4 LP<T> Go  Go  Go  Av <T>Act<T>  C   C        <L.33.1>
+27  Kelly Johnson<T>Bat R  10 HIT   11   2  10   0   5   6   0  112 LP  11 LP<T> Ex  Ex  Ex  Av <T>Act<T> LF  LF        <L.33.1>
+71  Jason Heyward<T>Bat L   9 POW    5   7  10   0   2   3   0   48 LP   4 LP<T> Go  Ex  Av  Go <T>Act<T> 1B  DH        <L.33.1>
+ 9  Jose Bautista<T>Bat L   7 HIT    6   5   8   0  -2  -2   0   27 LP   2 LP<T> Go  Av  Av  Av <T>Act<T> 3B  3B        <L.33.1>
+12  Martin Prado<T>Bat R   9 HIT    6   8  10   0   5   7   0   54 LP   5 LP<T> Go  Go  Go  Go <T>Act<T> SS  SS        <L.33.1>
+16  Pete Mitchell<T>Bat L   6 POW    2  13   8   0  -1  -1   0   18 LP   1 LP<T> Fa  Av  Av  Fa <T>Act<T> CF  CF      DH<L.33.1>
+<L.6.1>
+ 6  Tyler Flowers<T>Cat R   8 POW    5  12  10   0  -4  -4   0   45 LP   4 LP<T> Go  Ex  Av  Go <T>Act<T>  C   -   C   C<L.33.1>
+53  Melky Cabrera<T>Bat L   9 POW    5   9  10   0   4   5   0   48 LP   4 LP<T> Ex  Ex  Go  Av <T>Act<T> RF   -        <L.33.1>
+81  Bob Milnes<T>Bat R   8 HIT    4   7   9   0   1   2   0   42 LP   4 LP<T> Ex  Go  Av  Av <T>Act<T> 3B   -        <L.33.1>
+17  Nate Mclouth<T>Bat L   7 FLD    7   6   8   0   4   6<Z>   6<C>   30 LP   3 LP<T> Av  Av  Fa  Go <T>Act<T> CF   -        <L.33.1>
+<L.6.1>
+24  Evan Gattis<T>Cat L   6 FLD    1  19   9   0   3   4   0   17 LP   1 LP<T> Av  Fa  Fa  Av <T>Res<T>  C   -        <L.33.1>
+ 7  Randy Miller<T>Bat S   8 HIT    2  15  11   0   4   5   0   32 LP   3 LP<T> Go  Av  Av  Go <T>Res<T> SS   -      CF<L.33.1>
+ 3  Raul Pena<T>Bat S   7 POW    4  13   9   0   3   5   0   37 LP   3 LP<T> Go  Go  Fa  Go <T>Res<T> 1B   -        <L.33.1>
+88  Joe Terdoslavich<T>Bat L   7 POW    2  20  11   0   2   2   0   19 LP   1 LP<T> Av  Av  Av  Av <T>Res<T> RF   -     COF<L.33.1>
+<L.6.1>
+15  Jason Jordan<T>Bat S   6 HIT    R  17   9   0   3   4   0   18 LP   1 LP<T> Av  Av  Av  Av <T>Drf<T> SS   -        <L.33.1>
+<L.6.1>
+Key to Ratings: Po = Poor, Fa = Fair, Av = Average, Go = Good, Ex = Excellent, WC = World Class. Pos is Primary Field Position.<ST.20.64.86.98.120><L.48.1>
+<Z>Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>   1  20  11   5<L.36.1>
+<Z>Shirt Number:<C><T>  19<Z>   2<C>  18   9  12  27  16  23  71<T><Z>Bullpen Depth Chart:<C><T>  67  21  26  13  14   8<L.36.1>
+<Z>Batting Order:<C><T>   3   7   2   6   8   4   9   1   5<T><Z>Setup Pitcher:<C><T>  none<T><Z>Closing Pitcher:<C><T>  none<ST.20.32.64.86.98.120><L.36.1>
+<Z>Platoon Hitter 1:<C><T>   6   C<T><Z>Platoon Hitter 2:<C>  none<T><Z>Opposite Hand: <C><T>  NO<T><Z>Starter Innings:<C><T>   5<T><L.36.1>
+<Z>Platoon Hitter 3:<C><T>  none<T><Z>Platoon Hitter 4:<C>  none<T><Z>Minimum Lead:<C><T>   0<T><Z>Maximum Lead:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 1:  <C><T>   7  CF<T><Z>Pinch Hitter 2:  <C>   6   C<T><Z>Long Relief Pitcher: <T><C>  none<T><Z>Long Innings:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 3:  <C><T>  16  DH<T><Z>Pinch Hitter 4:  <C>  88 COF<T><Z>Blowout Innings:<C><T>   7<T><Z>Blowout Margin:<C><T>   8<T><L.36.1>
+<Z>Pinch Innings: <C><T>   7<Z><T>Pinch Deficit: <C>     5<ST.32.64.86.98.120><L.45.1>
+<Z>Stadium Size:        <C>Small<T><Z>Stadium Surface:  <C>Grass<T><Z>Stadium Building:       <C>Open<ST.22.32.42.52.64.88.98.108.118><L.36.1>
+<Z>Batting Training:<C><T>HIT  3<T>POW  3<T>SPD  0<T>FLD  0<Z><T>Pitching Training:<C><T>ACC  0<T>CON  0<T>QUI  0<T>STA  0<ST.20.32.49.64.86.98.120><L.45.1>
+<Z>Losing Points:<C><T>  96<T><Z>Base Income:<C><T>  58<T><Z>Fans Income:<C><T>  21<T><Z>Stadium Income:<C><T>   9<T><L.36.1>
+<Z>Merchandise Income:<C><T>  20<T><Z>Trade Income:<C><T>  36<T><Z>Trade Costs:<C><T>  45<T><Z>Overall Costs:<C><T>   3<T><L.36.1>
+<Z>Wages Paid:<C><T> 106<T><Z>Total Fans:<C><T>  21,840<T><Z>Stadium Level:<C><T>   9<T><Z>Merchandising:<C><T> 180<T><L.36.1>
+<Z>Current Wages:<C><T> 106<T><Z>Trainer Level:<C><T>   5<T><Z>Minor League System:<C><T>   3<T><Z>Full Reports:<C><T>  No<L.36.1>
+<Z>Postal Reports:<C><T>  No<T><Z>Email Reports:<C><T>  Text<T><Z>Email Address: <C>MLB@GAMEPLAN.ORG.UK<ST.22><L.45.1>
+<Z>Special Actions:<C><T>ADDFORM 23 for 3 weeks: OK, cost 3 LP<L.39.1>
+<T>RELEASE 25: OK, 25 released for 11 LPs<L.39.1>
+<T>RELEASE 22: OK, 22 released for 14 LPs<L.39.1>
+<T>PLATOON1 6 at C: OK, 6 selected as platoon batter<L.39.1>
+<T>PINCH2 6 at C: OK, 6 selected as pinch hitter<L.39.1>
+<L.3.1>
+<Z>Free Agent Bid:<C><T>133 for 45 LP to replace 2: OK, 28 Shane Youman (ex-LA) signed, net cost 34 LP (11 LP compensation)<L.42.1>
+<Z>Injuries/Holdouts:<C><T>17 Nate Mclouth - Strained Calf, 6 games. <L.42.1>
+<ST.22.58.95><L.1.1>
+<Z>Forthcoming Series:<C><T>vs Phillies. Out 22 <T>vs Diamondbacks. Out 23 <T>at Reds. Out none <L.42.1>
+<L.1.1>
+<D><E><P>
+<BK.Team Stats><ST.30.90.97.104><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL   MLB6  Regular Season 23 Totals   Week 2   16/8/14<L.48.1>
+Atlanta Braves  (Alan/Gordon Milnes)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.25.90.98.103.111.118.124><L.48.1>
+Individual Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+26 Edgar Ortiz<T>  6    0    0    2   10 1/3     3    0    0    0    3    5    0<T>  0-0<T>  1<T>  0-0<T>  5.23<T> .088<T>  0.00<L.36.1>
+14 Matt Hamilton<T>  3    0    0    2    3 1/3     4    0    0    0    1    3    0<T>  0-0<T>  0<T>  0-0<T>  0.00<T> .285<T>  0.00<L.36.1>
+13 Jonny Venters<T>  4    0    0    2    6 1/3     7    2    1    0    2    3    0<T>  1-0<T>  0<T>  0-0<T>  7.11<T> .269<T>  1.42<L.36.1>
+21 Kev Gilfillan<T>  7    0    0    5   10 1/3     9    2    2    0    5    9    0<T>  0-0<T>  1<T>  0-0<T>  2.61<T> .225<T>  1.74<L.36.1>
+11 Jason Arnold<T>  5    5    1    1   30 1/3    30   12    7    2   10   19    2<T>  3-0<T>  0<T>  5-0<T> 12.46<T> .247<T>  2.08<L.36.1>
+67 Jose Ortegano<T>  8    0    0    3   13        11    3    3    0    4   11    0<T>  3-2<T>  0<T>  0-0<T>  9.00<T> .220<T>  2.08<L.36.1>
+ 5 Huston Street<T>  5    5    0    0   32        28   14   13    2   12   19    3<T>  2-1<T>  0<T>  3-2<T>  5.91<T> .225<T>  3.66<L.36.1>
+20 Todd Lee<T>  4    4    1    1   26 2/3    31   11   11    4    8   15    4<T>  3-0<T>  0<T>  3-1<T>  7.76<T> .279<T>  3.71<L.36.1>
+ 8 Dave Green<T>  1    0    0    1    2 1/3     3    1    1    0    0    2    0<T>  0-0<T>  0<T>  0-0<T> 15.43<T> .300<T>  3.86<L.36.1>
+ 1 Tony Armas<T>  4    4    0    0   24 1/3    29   14   13    3    9   16    1<T>  2-1<T>  0<T>  3-1<T>  4.81<T> .284<T>  4.81<L.36.1>
+ 4 Eric Martinez<T>  2    0    0    1    3 1/3     4    6    2    1    3    1    3<T>  0-0<T>  0<T>  0-0<T>  5.40<T> .285<T>  5.40<L.36.1>
+28 Shane Youman<T>  0    0    0    0    0         0    0    0    0    0    0    0<T>  0-0<T>  0<T>  0-0<T>  -  <T> .000<T>  0.00<L.36.1>
+10 Raul Garcia<T>  0    0    0    0    0         0    0    0    0    0    0    0<T>  0-0<T>  0<T>  0-0<T>  -  <T> .000<T>  0.00<L.36.1>
+<L.9.1>
+<Z>Team Pitching<T> 18   18    2   18  162 1/3   159   65   53   12   57  103   13<T> 14-4<T>  2<T> 14-4<T>  7.32<T> .246<T>  2.94<C><L.18.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>Individual Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+27 Kelly Johnson lf<T> 18   76   18   31   72    8   3   9   26   10   1   4    8   3   0   1   19    1<T>1.000<T> .407<T> .488<T> .947<L.36.1>
+53 Melky Cabrera rf<T> 17   75   18   29   52    9   1   4    8    6   0   6    9   2   0   0   29    0<T>1.000<T> .386<T> .432<T> .693<L.36.1>
+19 Kurt Suzuki c<T> 14   59   13   22   35    7   0   2    9    5   0   1    6   2   2   3   44    9<T> .963<T> .372<T> .421<T> .593<L.36.1>
+18 Ryan Langerhans 2b<T> 18   77   18   28   66   12   1   8   20    6   5   7   13  13   0  18   32   72<T>1.000<T> .363<T> .469<T> .857<L.36.1>
+71 Jason Heyward 1b<T> 18   78    9   27   39    6   0   2   13    6   2   0   11   1   3  19  147    3<T> .980<T> .346<T> .416<T> .500<L.36.1>
+ 6 Tyler Flowers c<T>  4   19    5    6    9    3   0   0    1    1   0   0    2   0   1   0   12    2<T> .933<T> .315<T> .350<T> .473<L.36.1>
+17 Nate Mclouth cf<T> 17   66   15   20   39    8   1   3   15    5   1   0   10   4   0   0   36    3<T>1.000<T> .303<T> .366<T> .590<L.36.1>
+12 Martin Prado ss<T> 18   77   12   22   50    7   0   7   18    7   1   1   17  10   0  15   27   60<T>1.000<T> .285<T> .357<T> .649<L.36.1>
+81 Bob Milnes 3b<T>  9   36    8   10   19    3   0   2    9    4   2   0    9   2   1   2    7   25<T> .969<T> .277<T> .400<T> .527<L.36.1>
+ 9 Jose Bautista 3b<T>  9   37    4    9   10    1   0   0    4    5   1   0    5   1   1   1    4   18<T> .956<T> .243<T> .357<T> .270<L.36.1>
+23 Chris Johnson rf<T> 10   38    6    8    9    1   0   0    2    2   2   0    3   0   0   0    1    0<T>1.000<T> .210<T> .300<T> .236<L.36.1>
+16 Pete Mitchell cf<T>  1    4    0    0    0    0   0   0    0    0   0   0    1   0   0   0    1    0<T>1.000<T> .000<T> .000<T> .000<L.36.1>
+24 Evan Gattis c<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+ 7 Randy Miller ss<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+ 3 Raul Pena 1b<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+88 Joe Terdoslavich rf<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+15 Jason Jordan ss<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+<L.9.1>
+<Z>Team Batting<T> 18  682  132  223  414   65   6  38  129   60  15  19  100  39   8  21  384  195<T> .986<T> .326<T> .401<T> .607<ST.24.78.100><L.48.1>
+Selection Orders This Turn<L.48.1>
+Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>   5   1  20  11<L.39.1>
+<Z>Shirt Number:<C><T>  19  71  18   9  12  27  17  53   2<T><Z>Bullpen Depth Chart:<C><T>  67  21  26  13  14   8<L.39.1>
+<Z>Batting Order:<C><T>   3   5   2   6   8   4   9   1   7<T><Z>Setup Pitcher:<C><T>   0<L.39.1>
+<T><T><Z>Closing Pitcher:<C><T>   0<L.39.1>
+<Z>Lineup Changes:<C><T>  Pick 23, replacing 53 from game 9 onwards<L.39.1>
+<T>  Pick 2, replacing 71 from game 7 onwards<L.39.1>
+<T>  Pick 16, replacing 17 from game 9 onwards<L.39.1>
+<Z>Pitching Changes:<C><T>  Shirt 20:  MxB 38   MxH  9   MxE  9   FIn  -   MnB 27   <L.39.1>
+<T>  Shirt 21:  MxB  9   MxH  3   MxE  -   FIn  -   MnB  -   <L.39.1>
+<T>  Shirt 11:  MxB 27   MxH  -   MxE  -   FIn  -   MnB  -   <L.39.1>
+<Z>Training & Practice:<C><T>  Series 1: Train Skill - POW     Bonus Skill - HIT     Bonus Player - 23     Key Player -  2<L.39.1>
+<T>  Series 2: Train Skill - POW     Bonus Skill - POW     Bonus Player - 23     Key Player - 12<L.39.1>
+<T>  Series 3: Train Skill - POW     Bonus Skill - HIT     Bonus Player - 23     Key Player - 74<L.39.1>
+<ST.24.78><L.9.1>
+<Z>Enforced Selection Changes This Turn<L.48.1>
+<C>All OK, no selection changes required<L.1.1>
+<D><E><DU>
+<BK.Series 1><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Game Report   Season 23  Week 2 of 18   16/8/14<L.48.1>
+Atlanta Braves (7-2) at New York Mets (6-3)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Game 1<ST.14.125><L.3.1>
+<L.33.1>
+Braves<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,1d)<Z> 3 <C>(4,0) <Z> 0 <C>(0,0) <Z> 2 <C>(2,0) <Z> 2 <C>(3,0) <Z> 6 <C>(4,2) <Z> 4 <C>(4,2) <Z> 0 <C>(0,0) <T><Z> 17<C><L.33.1>
+<Z>Mets<C><T><Z> 1 <C>(1,3) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,0) <T><Z>  3<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Mets Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 6  2  5  1  1  1  2  0  0  1  0  0  0<T>19 Tony Sierra dh<T> 5  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+18 Ryan Langerhans 2b<T> 5  0  0  0  0  0  1  0  1  0  1  0  0<T> 4 Roberto Martinez lf<T> 2  0  0  0  0  0  0  1  0  0  2  0  0<L.30.1>
+19 Kurt Suzuki c <T> 5  1  0  0  0  0  0  1  0  0  1  0  0<T>17 Orlando Rivera rf<T> 4  1  1  1  0  0  0  0  0  0  0  0  0<L.30.1>
+27 Kelly Johnson lf<T> 5  3  2  0  0  2  2  1  0  0  1  0  0<T> 1 Jorge Cabrera 3b<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+71 Jason Heyward 1b<T> 5  2  3  1  0  0  0  1  0  0  1  0  0<T> 8 Scott Washington 2b<T> 4  2  2  0  0  0  0  0  0  2  0  1  0<L.30.1>
+ 9 Jose Bautista 3b<T> 4  2  1  1  0  0  2  1  0  0  0  0  0<T>15 Carlos Beltran cf<T> 2  0  0  0  0  0  1  1  0  0  1  0  0<L.30.1>
+ 2 Rafael Rivera dh<T> 4  3  2  0  0  0  2  1  0  0  0  0  0<T>24 Brady Clark ss<T> 4  0  2  1  0  0  1  0  0  0  0  1  1<L.30.1>
+12 Martin Prado ss<T> 5  2  2  0  0  2  6  0  0  0  1  0  0<T> 2 Andre Ethier c <T> 4  0  1  0  0  0  1  0  0  0  1  0  0<L.30.1>
+17 Nate Mclouth cf<T> 5  2  3  1  0  1  2  0  0  0  0  0  0<T>23 Greg Dobbs 1b<T> 4  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+<T><T> 3 John Roberts lf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<T><T>20 Joe Jones cf<T> 1  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>44 17 18  4  1  6 17  5  1  1  5  0  0<T>Totals<T>34  3  7  2  0  0  3  3  0  2  6  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Mets Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+11 R.Hernandez (l)<T> 5        7  5  5  4  1  3  3B    0<T> 5 Huston Street (w)<T> 6 2/3    4  2  2  0  3  4  2B    1<L.30.1>
+12 Fernando Rincon<T> 1        5  6  6  0  2  1  2H    2<T> 8 Dave Green<T> 2 1/3    3  1  1  0  0  2  2     0<L.30.1>
+27 Miguel Guillen<T> 3        6  6  6  2  2  1  2     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<Z>Game 2<ST.14.125><L.3.1>
+<L.33.1>
+Braves<C><T><Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 2 <C>(3,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <T><Z>  5<C><L.33.1>
+<Z>Mets<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,1) <Z> 0 <C>(1,1) <Z> 0 <C>(1,1d)<Z> 0 <C>(2,0) <Z> 0 <C>(0,1) <T><Z>  1<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Mets Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 5  1  1  0  0  0  0  0  0  0  1  0  0<T>19 Tony Sierra dh<T> 5  0  2  1  0  0  0  0  0  0  0  0  0<L.30.1>
+18 Ryan Langerhans 2b<T> 5  1  1  0  0  1  1  0  0  0  1  0  0<T> 4 Roberto Martinez lf<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+19 Kurt Suzuki c <T> 5  2  4  0  0  0  0  0  0  0  0  0  0<T>17 Orlando Rivera rf<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+27 Kelly Johnson lf<T> 3  0  2  2  0  0  3  1  0  0  0  0  0<T> 1 Jorge Cabrera 3b<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+71 Jason Heyward 1b<T> 4  0  0  0  0  0  0  0  0  0  0  1  0<T> 8 Scott Washington 2b<T> 4  0  2  1  0  0  0  0  0  1  1  0  0<L.30.1>
+ 9 Jose Bautista 3b<T> 4  1  1  0  0  0  0  0  0  0  1  1  0<T>15 Carlos Beltran cf<T> 3  1  1  1  0  0  0  1  0  0  2  0  0<L.30.1>
+ 2 Rafael Rivera dh<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T>24 Brady Clark ss<T> 3  0  2  1  0  0  1  1  0  0  1  0  1<L.30.1>
+12 Martin Prado ss<T> 3  0  0  0  0  0  1  0  1  0  1  0  0<T> 2 Andre Ethier c <T> 3  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+17 Nate Mclouth cf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>23 Greg Dobbs 1b<T> 4  0  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+<T><T> 3 John Roberts lf<T> 0  0  0  0  0  0  0  2  0  0  0  0  0<L.30.1>
+<T><T>20 Joe Jones rf<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>37  5 10  2  0  1  5  1  1  0  5  2  0<T>Totals<T>34  1  8  4  0  0  1  5  0  1  7  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Mets Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+13 Tom Lee (l)<T> 6        7  3  3  0  1  3  3B    0<T> 1 Tony Armas (w)<T> 6 1/3    5  1  1  0  3  5  3B    0<L.30.1>
+ 6 Jim Walker<T> 3        3  2  2  1  0  2  1     0<T>67 Jose Ortegano<T> 2        3  0  0  0  1  2  1B    0<L.30.1>
+<T><T>21 Kev Gilfillan<T>   2/3    0  0  0  0  1  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<Z>Game 3<ST.14.125><L.3.1>
+<L.33.1>
+Braves<C><T><Z> 1 <C>(3,0) <Z> 0 <C>(0,0) <Z> 3 <C>(4,0) <Z> 0 <C>(0,1) <Z> 1 <C>(1,0) <Z> 0 <C>(2,0) <Z> 1 <C>(2,2) <Z> 0 <C>(0,0) <Z> 1 <C>(3,0) <T><Z>  7<C><L.33.1>
+<Z>Mets<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0d)<Z> 0 <C>(0,1) <Z> 0 <C>(1,1) <Z> 0 <C>(2,0d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 2 <C>(2,1) <T><Z>  2<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Mets Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 5  1  2  0  0  0  0  0  0  2  0  0  0<T>19 Tony Sierra dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+18 Ryan Langerhans 2b<T> 5  1  1  0  0  1  2  0  0  0  2  2  0<T> 4 Roberto Martinez lf<T> 3  0  2  1  0  0  0  1  0  0  0  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 5  3  3  2  0  0  0  0  0  0  1  0  0<T>17 Orlando Rivera rf<T> 4  0  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+27 Kelly Johnson lf<T> 4  2  3  0  0  2  2  0  1  0  1  0  0<T> 1 Jorge Cabrera 3b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+71 Jason Heyward 1b<T> 5  0  4  1  0  0  3  0  0  0  0  2  0<T> 8 Scott Washington 2b<T> 4  1  2  0  0  1  1  0  0  0  1  0  0<L.30.1>
+ 9 Jose Bautista 3b<T> 3  0  0  0  0  0  0  1  1  0  1  0  0<T>15 Carlos Beltran cf<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 2 Rafael Rivera dh<T> 5  0  1  0  0  0  0  0  0  0  0  0  0<T>24 Brady Clark ss<T> 4  0  1  0  1  0  1  0  0  0  0  0  0<L.30.1>
+12 Martin Prado ss<T> 3  0  1  1  0  0  0  2  0  0  1  2  0<T> 2 Andre Ethier c <T> 3  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+17 Nate Mclouth cf<T> 5  0  0  0  0  0  0  0  0  0  1  0  0<T>23 Greg Dobbs 1b<T> 4  0  2  1  0  0  0  0  0  0  0  0  0<L.30.1>
+<T><T> 3 John Roberts cf<T> 1  1  0  0  0  0  0  1  0  1  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>40  7 15  4  0  3  7  3  2  2  7  6  0<T>Totals<T>33  2  8  2  1  1  2  3  0  1  8  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Mets Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+30 Paul Davis (l)<T> 5 1/3    8  5  5  2  1  3  3B    0<T>20 Todd Lee (w)<T> 9        8  2  2  1  3  8  4     0<L.30.1>
+25 Manny Sanchez<T> 3 2/3    7  2  2  1  2  4  2     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<L.1.1>
+<D><E><P>
+<BK.Series 2><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Game Report   Season 23  Week 2 of 18   16/8/14<L.48.1>
+San Francisco Giants (7-5) at Atlanta Braves (10-2)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Game 1<ST.14.125><L.3.1>
+<L.33.1>
+Giants<C><T><Z> 0 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  0<C><L.33.1>
+<Z>Braves<C><T><Z> 2 <C>(4,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 4 <C>(6,0) <Z> 4 <C>(5,0) <Z> 5 <C>(4,1) <Z> 0 <C>(0,0) <Z> 2 <C>(2,0) <Z> x       <T> 18<C><ST.24.66.90><L.42.1>
+<Z>Giants Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+16 Patrick Stewart rf<T> 4  0  2  1  0  0  0  0  0  0  0  0  0<T>53 Melky Cabrera rf<T> 6  3  4  1  0  1  2  0  0  1  0  0  0<L.30.1>
+13 O.Hernandez ss<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>18 Ryan Langerhans 2b<T> 2  3  2  0  0  1  2  1  3  1  0  2  0<L.30.1>
+27 Michael Dorn 3b<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>19 Kurt Suzuki c <T> 6  3  2  0  0  1  2  0  0  0  0  0  0<L.30.1>
+ 3 Pete Jordan lf<T> 4  0  1  1  0  0  0  0  0  0  1  0  0<T>27 Kelly Johnson lf<T> 6  4  4  1  0  2  7  0  0  0  0  0  0<L.30.1>
+23 Gary Sprake dh<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T>71 Jason Heyward 1b<T> 5  0  3  1  0  0  2  0  0  0  0  2  0<L.30.1>
+31 Jose Perez 2b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T> 9 Jose Bautista 3b<T> 5  0  3  0  0  0  1  0  0  0  1  0  0<L.30.1>
+ 7 Jt Snow cf<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T> 2 Rafael Rivera dh<T> 5  1  1  0  0  1  1  0  0  0  1  0  0<L.30.1>
+17 Scott Jackson 1b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T>12 Martin Prado ss<T> 5  1  2  0  0  1  1  0  0  0  0  2  0<L.30.1>
+12 Darren Fletcher c <T> 3  0  1  1  0  0  0  0  0  0  0  0  0<T>17 Nate Mclouth cf<T> 5  3  3  1  0  0  0  0  0  0  0  0  0<L.30.1>
+ 8 V.Guerrero cf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+32 Randy Winn 1b<T> 0  0  0  0  0  0  0  1  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>31  0  6  3  0  0  0  2  0  0  3  0  0<T>Totals<T>45 18 24  4  0  7 18  1  3  2  2  6  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Giants Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+11 Jason Arnold (w)<T> 9        6  0  0  0  2  3  4     0<T>26 Alex Graman (l)<T> 3 2/3   10  6  6  1  0  0  1H    2<L.30.1>
+<T><T>24 Ruben Rivera<T> 1 1/3    8  5  5  3  0  2  3H    0<L.30.1>
+<T><T> 1 Tom Kane<T> 3        6  7  7  3  1  0  2     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<Z>Game 2<ST.14.125><L.3.1>
+<L.33.1>
+Giants<C><T><Z> 0 <C>(1,0) <Z> 2 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,1d)<Z> 0 <C>(1,0d)<Z> 0 <C>(0,2) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  2<C><L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(2,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1d)<Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 3 <C>(3,2) <Z> x       <T>  4<C><ST.24.66.90><L.42.1>
+<Z>Giants Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+16 Patrick Stewart rf<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>53 Melky Cabrera rf<T> 4  1  1  1  0  0  1  0  0  0  2  0  0<L.30.1>
+13 O.Hernandez ss<T> 4  0  1  1  0  0  0  0  0  0  1  1  0<T>18 Ryan Langerhans 2b<T> 4  0  2  1  0  0  1  0  0  0  0  2  0<L.30.1>
+27 Michael Dorn 3b<T> 4  0  1  0  0  0  0  0  0  0  0  1  0<T> 6 Tyler Flowers c <T> 3  1  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+ 3 Pete Jordan lf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>27 Kelly Johnson lf<T> 2  0  1  1  0  0  1  2  0  0  0  0  0<L.30.1>
+23 Gary Sprake dh<T> 3  1  1  0  0  0  0  1  0  0  1  0  0<T>71 Jason Heyward 1b<T> 3  0  0  0  0  0  1  0  1  0  0  2  0<L.30.1>
+31 Jose Perez 2b<T> 2  1  1  0  0  0  0  1  1  0  0  1  0<T> 9 Jose Bautista 3b<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+ 7 Jt Snow cf<T> 3  0  1  0  0  0  1  0  1  0  0  0  0<T> 2 Rafael Rivera dh<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+17 Scott Jackson 1b<T> 1  0  0  0  0  0  1  1  1  0  0  2  0<T>12 Martin Prado ss<T> 3  0  0  0  0  0  0  0  0  0  1  2  0<L.30.1>
+12 Darren Fletcher c <T> 3  0  0  0  0  0  0  0  0  0  0  1  0<T>17 Nate Mclouth cf<T> 3  2  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>27  2  5  1  0  0  2  4  3  0  3  6  0<T>Totals<T>29  4  8  4  0  0  4  4  1  0  5  6  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Giants Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 5 Huston Street<T> 6 2/3    5  2  2  0  4  0  3B    2<T>10 Manny Guerrero<T> 6 1/3    4  1  1  0  2  5  3B    0<L.30.1>
+67 Jose Ortegano (w)<T> 2 1/3    0  0  0  0  0  3  1     0<T> 9 Paul Lewis (l)<T> 1        4  3  3  0  1  0  1H    2<L.30.1>
+<T><T>19 Pete Anderson<T>   2/3    0  0  0  0  1  0  1 *   0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<Z>Game 3<ST.14.125><L.3.1>
+<L.33.1>
+Giants<C><T><Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0d)<Z> 2 <C>(2,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <T><Z>  5<C><L.33.1>
+<Z>Braves<C><T><Z> 3 <C>(3,1d)<Z> 1 <C>(3,0) <Z> 0 <C>(1,1d)<Z> 0 <C>(1,0) <Z> 0 <C>(2,1) <Z> 1 <C>(1,3) <Z> 1 <C>(2,0) <Z> 1 <C>(2,1) <Z> x       <T>  7<C><ST.24.66.90><L.42.1>
+<Z>Giants Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+16 Patrick Stewart rf<T> 5  1  1  1  0  0  0  0  0  0  1  0  1<T>53 Melky Cabrera rf<T> 4  1  2  0  0  0  0  1  0  0  0  0  0<L.30.1>
+13 O.Hernandez ss<T> 3  1  2  2  0  0  1  1  0  0  0  1  0<T>18 Ryan Langerhans 2b<T> 4  1  2  1  0  0  0  1  0  1  1  2  0<L.30.1>
+27 Michael Dorn 3b<T> 4  0  2  1  0  0  0  0  0  0  1  0  0<T>19 Kurt Suzuki c <T> 4  1  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+ 3 Pete Jordan lf<T> 2  0  0  0  0  0  1  0  1  0  0  0  0<T>27 Kelly Johnson lf<T> 4  1  2  2  0  0  1  1  0  2  0  0  0<L.30.1>
+23 Gary Sprake dh<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>71 Jason Heyward 1b<T> 5  1  2  0  0  1  3  0  0  0  0  2  0<L.30.1>
+31 Jose Perez 2b<T> 4  1  2  0  0  0  0  0  0  0  0  2  0<T> 9 Jose Bautista 3b<T> 3  0  2  0  0  0  1  2  0  0  1  0  1<L.30.1>
+ 7 Jt Snow cf<T> 4  0  1  0  1  0  1  0  0  0  0  0  0<T> 2 Rafael Rivera dh<T> 4  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+17 Scott Jackson 1b<T> 4  1  1  0  0  0  0  0  0  0  0  2  0<T>12 Martin Prado ss<T> 5  1  3  2  0  0  0  0  0  0  1  2  0<L.30.1>
+12 Darren Fletcher c <T> 4  1  1  0  1  0  1  0  0  0  2  1  0<T>17 Nate Mclouth cf<T> 5  1  2  1  0  1  2  0  0  0  0  0  0<L.30.1>
+ 8 V.Guerrero lf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>35  5 10  4  2  0  4  1  1  0  4  6  1<T>Totals<T>38  7 15  6  0  2  7  7  0  3  4  6  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Giants Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 1 Tony Armas (w)<T> 6 2/3    7  4  3  0  1  2  3B    0<T> 4 Mike Jackson<T> 4        8  4  4  1  2  2  3B    0<L.30.1>
+21 Kev Gilfillan<T> 2        3  1  1  0  0  2  2B    1<T> 9 Paul Lewis<T> 1 2/3    3  1  1  0  3  0  2H*   2<L.30.1>
+26 Edgar Ortiz (s)<T>   1/3    0  0  0  0  0  0  0     0<T>19 Pete Anderson (l)<T> 2 1/3    4  2  2  1  2  2  2 *   0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<L.1.1>
+<D><E><DU>
+<BK.Series 3><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Game Report   Season 23  Week 2 of 18   16/8/14<L.48.1>
+Atlanta Braves (13-2) at Pittsburgh Pirates (7-8)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Game 1<ST.14.125><L.3.1>
+<L.33.1>
+Braves<C><T><Z> 2 <C>(3,0) <Z> 0 <C>(1,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(2,0) <Z> 2 <C>(3,0) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <T><Z>  4<C><L.33.1>
+<Z>Pirates<C><T><Z> 0 <C>(3,0) <Z> 3 <C>(4,0) <Z> 0 <C>(0,0d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 1 <C>(1,1) <Z> 0 <C>(0,0) <Z> 1 <C>(2,1) <T><Z>  5<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Pirates Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 5  1  1  0  0  0  0  0  0  0  1  0  0<T>17 Freddy Sanchez dh<T> 5  1  2  0  1  0  1  0  0  0  1  0  0<L.30.1>
+18 Ryan Langerhans 2b<T> 5  1  2  0  0  1  1  0  0  1  1  1  0<T>31 Andrew Mccutchen cf<T> 5  0  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 5  1  1  0  0  0  0  0  0  0  0  0  1<T>27 Shane Spencer lf<T> 4  0  1  0  0  0  1  1  0  1  1  0  0<L.30.1>
+27 Kelly Johnson lf<T> 5  1  4  0  2  1  3  0  0  0  0  1  0<T>74 Gary Blondes c <T> 5  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+71 Jason Heyward dh<T> 5  0  3  1  0  0  0  0  0  0  0  0  0<T>44 Garrett Jones 2b<T> 5  1  2  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 9 Jose Bautista 3b<T> 5  0  0  0  0  0  0  0  0  0  0  0  0<T>18 Pedro Alvarez rf<T> 3  1  0  0  0  0  0  2  0  1  0  0  0<L.30.1>
+ 2 Rafael Rivera 1b<T> 5  0  1  0  0  0  0  0  0  0  1  1  0<T> 7 Carl Washington ss<T> 5  1  3  0  0  0  1  0  0  0  1  0  0<L.30.1>
+12 Martin Prado ss<T> 5  0  1  0  0  0  0  0  0  0  3  0  0<T>22 Jose Tabata 3b<T> 3  0  0  0  0  0  1  0  2  0  0  0  0<L.30.1>
+17 Nate Mclouth cf<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>16 Starling Marte 1b<T> 2  1  1  0  0  0  1  1  1  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>43  4 13  1  2  2  4  1  0  1  6  3  1<T>Totals<T>37  5 12  1  1  0  5  4  3  2  4  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Pirates Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+75 Chris Bootcheck<T> 5 2/3    9  2  2  1  0  5  3B    2<T>20 Todd Lee<T> 7 2/3   10  4  4  0  3  4  5F*   1<L.30.1>
+29 Ernest's Frieri (w)<T> 4 1/3    4  2  2  1  1  1  2     0<T>67 Jose Ortegano (l)<T> 1 1/3    2  1  1  0  1  0  1H    3<L.30.1>
+<T><T>26 Edgar Ortiz<T>   1/3    0  0  0  0  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<Z>Game 2<ST.14.125><L.3.1>
+<L.33.1>
+Braves<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(2,0) <Z> 1 <C>(1,1) <Z> 5 <C>(2,1) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 5 <C>(6,0) <Z> 0 <C>(2,0d)<T><Z> 12<C><L.33.1>
+<Z>Pirates<C><T><Z> 1 <C>(2,1) <Z> 0 <C>(0,1) <Z> 6 <C>(4,2) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0d)<Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <T><Z>  8<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Pirates Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+53 Melky Cabrera rf<T> 6  2  1  1  0  0  0  0  0  0  0  0  0<T>17 Freddy Sanchez dh<T> 5  0  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+18 Ryan Langerhans 2b<T> 5  2  3  2  0  0  3  1  0  1  0  1  0<T>31 Andrew Mccutchen cf<T> 3  2  2  2  0  0  1  2  0  1  0  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 6  0  1  1  0  0  1  0  0  0  1  0  0<T>27 Shane Spencer lf<T> 4  1  2  0  0  0  1  0  1  0  1  0  0<L.30.1>
+27 Kelly Johnson lf<T> 5  2  2  0  0  0  0  1  0  0  0  0  0<T>74 Gary Blondes c <T> 5  1  1  1  0  0  1  0  0  0  1  0  1<L.30.1>
+71 Jason Heyward dh<T> 6  1  3  0  0  0  0  0  0  0  0  0  0<T>44 Garrett Jones 2b<T> 4  1  2  1  0  0  2  1  0  0  1  0  3<L.30.1>
+ 9 Jose Bautista 3b<T> 6  1  1  0  0  0  0  0  0  0  0  0  0<T>18 Pedro Alvarez rf<T> 5  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 2 Rafael Rivera 1b<T> 5  2  2  0  0  0  1  1  0  0  1  1  0<T> 7 Carl Washington ss<T> 3  0  0  0  0  0  0  1  0  0  0  1  2<L.30.1>
+12 Martin Prado ss<T> 5  0  1  0  0  0  0  0  0  1  2  1  0<T>22 Jose Tabata 3b<T> 4  1  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+17 Nate Mclouth cf<T> 5  2  3  0  0  1  4  0  0  0  0  0  0<T>16 Starling Marte 1b<T> 3  2  2  0  0  1  3  1  0  0  1  1  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>49 12 17  4  0  1  9  3  0  2  4  3  0<T>Totals<T>36  8 11  5  0  1  8  5  1  1  6  3  6<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Pirates Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+48 Javier Lopez<T> 3 2/3    5  6  1  0  3  0  3B    3<T>11 Jason Arnold<T> 5        8  7  7  1  4  3  4B*   0<L.30.1>
+71 Brian Burres (l)<T> 3 1/3    8  5  5  0  0  2  2H    3<T>13 Jonny Venters (w)<T> 2 1/3    2  1  1  0  0  2  1B    0<L.30.1>
+ 3 James Mcdonald<T> 2        4  1  1  1  0  2  1     0<T>14 Matt Hamilton<T> 1 2/3    1  0  0  0  1  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<Z>Game 3<ST.14.125><L.3.1>
+<L.33.1>
+Braves<C><T><Z> 2 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,2) <Z> 0 <C>(1,0d)<T><Z>  2<C><L.33.1>
+<Z>Pirates<C><T><Z> 1 <C>(1,0) <Z> 0 <C>(2,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,0) <Z> x       <T>  3<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Pirates Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+23 Chris Johnson rf<T> 4  1  1  0  0  0  0  0  0  0  2  0  0<T>17 Freddy Sanchez dh<T> 4  1  1  0  1  0  0  0  0  0  2  0  0<L.30.1>
+18 Ryan Langerhans 2b<T> 3  0  0  0  0  0  0  1  0  1  1  0  0<T>31 Andrew Mccutchen cf<T> 3  1  1  0  0  0  1  0  1  0  0  0  0<L.30.1>
+19 Kurt Suzuki c <T> 3  1  1  0  0  0  0  1  0  0  0  0  0<T>27 Shane Spencer lf<T> 4  0  1  1  0  0  1  0  0  0  1  0  0<L.30.1>
+27 Kelly Johnson lf<T> 4  0  2  0  1  0  2  0  0  1  0  0  0<T>74 Gary Blondes c <T> 4  1  1  0  0  1  1  0  0  0  3  0  0<L.30.1>
+71 Jason Heyward dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>44 Garrett Jones 2b<T> 4  0  2  0  0  0  0  0  0  0  1  1  0<L.30.1>
+ 9 Jose Bautista 3b<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>18 Pedro Alvarez rf<T> 4  0  1  0  0  0  0  0  0  0  1  1  0<L.30.1>
+ 2 Rafael Rivera 1b<T> 4  0  2  0  0  0  0  0  0  0  1  0  0<T>85 L.Milledge ss<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+12 Martin Prado ss<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>22 Jose Tabata 3b<T> 2  0  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+16 Pete Mitchell cf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>16 Starling Marte 1b<T> 3  0  1  0  0  0  0  0  0  0  1  1  1<L.30.1>
+<L.6.1>
+<Z>Totals<T>34  2  7  0  1  0  2  2  0  2  7  0  0<T>Totals<T>32  3  9  1  1  1  3  1  1  0 10  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Pirates Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+49 Ross Ohlendorf<T> 6 1/3    6  2  1  0  0  6  3B    0<T> 5 Huston Street<T> 6 2/3    6  2  2  1  1  7  2B    0<L.30.1>
+45 Gerrit Cole (w)<T> 2 2/3    1  0  0  0  2  1  2     0<T>67 Jose Ortegano (l)<T> 1        3  1  1  0  0  2  1H    2<L.30.1>
+<T><T>21 Kev Gilfillan<T>   1/3    0  0  0  0  0  1  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<L.1.1>
+<D><E><DU>
+<BK.Results Summary><P.70><B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB6  Season 23  Week 2 Results   16/8/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<ST.27.63.90.126><L.1.1>
+<U>American League<UC><L.48.1>
+<C><Z>RED SOX 11<C> (18h, 6bb)<T>11 Williams (3 1/3, 3r 7h 2bb)<T><Z>Blue Jays 7<C> (11h, 4bb)<T>12 Diaz (3, 6r 8h 2bb)<L.36.1>
+<Z>Red Sox 1<C> (9h, 3bb)<T>27 Cecil (4 1/3, 1r 6h 3bb)<T><Z>BLUE JAYS 7<C> (9h, 4bb)<T>23 Kelly (4 1/3, 5r 6h 1bb)<L.36.1>
+<Z>RED SOX 8<C> (13h, 4bb)<T> 3 Carreno (5 2/3, 4r 5h 2bb)<T><Z>Blue Jays 3<C> (7h, 2bb)<T>61 Buchholz (6 2/3, 3r 6h 1bb)<L.36.1>
+<L.9.1>
+<Z>YANKEES 9<C> (14h, 2bb)<T>29 Thompson (6, 3r 6h 2bb)<T><Z>Rays 1<C> (7h, 0bb)<T>65 Hughes (6, 1r 6h 0bb)<L.36.1>
+<Z>Yankees 0<C> (4h, 0bb)<T> 1 Ascanio (9, 0r 4h 0bb)<T><Z>RAYS 6<C> (11h, 0bb)<T> 9 Davis (6 1/3, 6r 10h 0bb)<L.36.1>
+<Z>Yankees 6<C> (11h, 3bb)<T>19 Young (4 1/3, 2r 5h 2bb)<T><Z>RAYS 8<C> (11h, 3bb)<T>52 Sabathia (4 1/3, 4r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Indians 6<C> (9h, 3bb)<T>29 Thompson (5, 5r 6h 2bb)<T><Z>TWINS 9<C> (13h, 8bb)<T>25 Lewis (3, 4r 6h 2bb)<L.36.1>
+<Z>Indians 1<C> (9h, 4bb)<T> 1 Sanchez (5, 1r 4h 2bb)<T><Z>TWINS 2<C> (6h, 1bb)<T>60 Romero (6 2/3, 1r 4h 0bb)<T>11 inn<L.36.1>
+<Z>Indians 3<C> (6h, 1bb)<T>17 Green (6 1/3, 2r 5h 1bb)<T><Z>TWINS 4<C> (11h, 2bb)<T>41 Kobayashi (5 2/3, 2r 7h 2bb)<L.36.1>
+<L.9.1>
+<Z>WHITE SOX 5<C> (12h, 3bb)<T>19 Sanchez (5, 2r 5h 1bb)<T><Z>Brewers 2<C> (7h, 5bb)<T>19 Garcia (3, 2r 3h 1bb)<L.36.1>
+<Z>White Sox 1<C> (7h, 3bb)<T> 9 Kolb (5 1/3, 1r 5h 2bb)<T><Z>BREWERS 2<C> (7h, 1bb)<T>53 Dolsi (6 1/3, 1r 6h 1bb)<T>10 inn<L.36.1>
+<Z>WHITE SOX 10<C> (18h, 6bb)<T>13 Vizcaino (5, 5r 6h 5bb)<T><Z>Brewers 2<C> (5h, 1bb)<T> 5 Cordero (5 1/3, 2r 4h 1bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 1<C> (10h, 2bb)<T>68 Kazmir (8 1/3, 1r 10h 1bb)<T><Z>ANGELS 10<C> (12h, 4bb)<T>26 Eveland (4 1/3, 9r 10h 2bb)<L.36.1>
+<Z>Athletics 2<C> (10h, 1bb)<T>43 Brazoban (5 2/3, 1r 7h 1bb)<T><Z>ANGELS 7<C> (12h, 4bb)<T>20 Baldwin (4, 7r 11h 2bb)<L.36.1>
+<Z>Athletics 3<C> (9h, 2bb)<T>39 Jones (7, 2r 6h 2bb)<T><Z>ANGELS 4<C> (8h, 2bb)<T> 1 Harden (6, 1r 4h 2bb)<L.36.1>
+<L.9.1>
+<Z>MARINERS 8<C> (15h, 1bb)<T> 8 Wilson (5 1/3, 2r 8h 1bb)<T><Z>Rangers 6<C> (8h, 7bb)<T>97 Beimel (3 2/3, 4r 5h 2bb)<L.36.1>
+<Z>MARINERS 10<C> (15h, 8bb)<T> 9 Washington (4, 5r 5h 5bb)<T><Z>Rangers 5<C> (8h, 4bb)<T>34 Garcia (6, 5r 6h 3bb)<L.36.1>
+<Z>Mariners 13<C> (19h, 12bb)<T>86 Rupe (4, 8r 14h 4bb)<T><Z>RANGERS 15<C> (16h, 7bb)<T>60 Huber (3, 6r 8h 2bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Indians 1<C> (5h, 6bb)<T> 6 Thornton (6, 1r 3h 4bb)<T><Z>RED SOX 10<C> (10h, 5bb)<T>39 Cornell (5, 2r 4h 2bb)<L.36.1>
+<Z>INDIANS 6<C> (8h, 5bb)<T>60 Bard (4 2/3, 3r 6h 2bb)<T><Z>Red Sox 2<C> (10h, 7bb)<T>28 Bolivar (3 2/3, 1r 4h 4bb)<L.36.1>
+<Z>INDIANS 6<C> (9h, 4bb)<T>12 Diaz (5 1/3, 5r 7h 3bb)<T><Z>Red Sox 3<C> (6h, 1bb)<T>25 Lewis (6 1/3, 3r 6h 1bb)<L.36.1>
+<L.9.1>
+<Z>MARINERS 1<C> (9h, 3bb)<T> 5 Vogelsong (5 2/3, 1r 6h 3bb)<T><Z>Yankees 0<C> (6h, 1bb)<T>53 Rhodes (7, 0r 4h 1bb)<L.36.1>
+<Z>MARINERS 6<C> (8h, 2bb)<T>65 Hughes (6 1/3, 4r 5h 2bb)<T><Z>Yankees 0<C> (5h, 1bb)<T>11 Kelly (6 2/3, 0r 5h 1bb)<L.36.1>
+<Z>Mariners 1<C> (7h, 0bb)<T> 9 Davis (9, 1r 7h 0bb)<T><Z>YANKEES 3<C> (9h, 0bb)<T>97 Beimel (5 1/3, 2r 7h 0bb)<L.36.1>
+<L.9.1>
+<Z>ATHLETICS 7<C> (14h, 4bb)<T> 7 Sanchez (6, 4r 10h 2bb)<T><Z>White Sox 2<C> (6h, 2bb)<T> 5 Miller (5 1/3, 1r 4h 1bb)<L.36.1>
+<Z>Athletics 4<C> (8h, 7bb)<T> 2 Thomas (4 1/3, 2r 1h 2bb)<T><Z>WHITE SOX 13<C> (14h, 4bb)<T>13 Gonzalez (4, 7r 7h 3bb)<L.36.1>
+<Z>ATHLETICS 8<C> (9h, 5bb)<T>23 Crespo (3, 5r 4h 3bb)<T><Z>White Sox 3<C> (8h, 0bb)<T>26 Eveland (6, 3r 7h 0bb)<L.36.1>
+<L.9.1>
+<Z>TWINS 7<C> (9h, 4bb)<T>48 Ryan (5 2/3, 7r 6h 4bb)<T><Z>Blue Jays 1<C> (8h, 2bb)<T>16 Green (5 1/3, 1r 6h 2bb)<L.36.1>
+<Z>TWINS 9<C> (14h, 8bb)<T>32 Litsch (4 2/3, 5r 6h 5bb)<T><Z>Blue Jays 7<C> (14h, 1bb)<T>26 Harris (3 2/3, 2r 8h 1bb)<L.36.1>
+<Z>TWINS 8<C> (8h, 7bb)<T>11 Williams (5 1/3, 0r 1h 2bb)<T><Z>Blue Jays 6<C> (12h, 3bb)<T>29 Thompson (4, 5r 7h 3bb)<T>10 inn<L.36.1>
+<L.9.1>
+<Z>RANGERS 7<C> (15h, 1bb)<T>17 Brooks (3 1/3, 3r 8h 1bb)<T><Z>Rays 2<C> (8h, 1bb)<T> 2 Brooks (5 1/3, 1r 6h 1bb)<L.36.1>
+<Z>Rangers 6<C> (9h, 2bb)<T>20 Green (7, 1r 3h 1bb)<T><Z>RAYS 8<C> (8h, 4bb)<T>23 Ibanez (5, 3r 5h 1bb)<L.36.1>
+<Z>Rangers 3<C> (7h, 2bb)<T>29 Thompson (8, 3r 7h 1bb)<T><Z>RAYS 6<C> (10h, 3bb)<T> 8 Wilson (4, 6r 7h 2bb)<L.36.1>
+<L.9.1>
+<Z>Angels 4<C> (11h, 5bb)<T>37 Eveland (5 1/3, 0r 5h 3bb)<T><Z>BREWERS 5<C> (13h, 5bb)<T>14 Jimenez (7 1/3, 2r 8h 2bb)<T>11 inn<L.36.1>
+<Z>ANGELS 5<C> (10h, 2bb)<T> 4 Johnson (6 1/3, 2r 7h 0bb)<T><Z>Brewers 0<C> (7h, 0bb)<T>98 Tully (9, 0r 7h 0bb)<L.36.1>
+<Z>ANGELS 10<C> (9h, 9bb)<T>19 Sanchez (5, 4r 7h 3bb)<T><Z>Brewers 3<C> (10h, 2bb)<T>68 Kazmir (7 1/3, 3r 8h 2bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Red Sox 4<C> (16h, 2bb)<T>20 Baldwin (6 1/3, 4r 8h 1bb)<T><Z>ATHLETICS 5<C> (14h, 5bb)<T>23 Kelly (5, 3r 4h 1bb)<T>14 inn<L.36.1>
+<Z>Red Sox 2<C> (11h, 4bb)<T> 1 Harden (5, 1r 5h 1bb)<T><Z>ATHLETICS 6<C> (11h, 3bb)<T>61 Buchholz (4 1/3, 6r 10h 2bb)<L.36.1>
+<Z>Red Sox 6<C> (13h, 3bb)<T> 5 Miller (4 1/3, 3r 8h 0bb)<T><Z>ATHLETICS 9<C> (12h, 3bb)<T> 6 Thornton (5 1/3, 5r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Yankees 8<C> (13h, 0bb)<T>60 Romero (5 2/3, 5r 8h 0bb)<T><Z>INDIANS 12<C> (20h, 6bb)<T>52 Sabathia (4, 7r 10h 4bb)<L.36.1>
+<Z>Yankees 3<C> (7h, 0bb)<T>41 Kobayashi (8 1/3, 3r 7h 0bb)<T><Z>INDIANS 4<C> (10h, 3bb)<T> 5 Vogelsong (4, 3r 8h 3bb)<L.36.1>
+<Z>YANKEES 7<C> (11h, 0bb)<T>39 Cornell (5, 4r 6h 0bb)<T><Z>Indians 3<C> (14h, 3bb)<T>65 Hughes (4, 3r 7h 3bb)<L.36.1>
+<L.9.1>
+<Z>White Sox 5<C> (8h, 2bb)<T>34 Garcia (7 1/3, 2r 4h 1bb)<T><Z>MARINERS 7<C> (15h, 3bb)<T>19 Garcia (3, 4r 8h 1bb)<L.36.1>
+<Z>White Sox 0<C> (4h, 2bb)<T>60 Huber (9, 0r 4h 2bb)<T><Z>MARINERS 5<C> (8h, 3bb)<T>53 Dolsi (3 1/3, 3r 4h 2bb)<L.36.1>
+<Z>WHITE SOX 7<C> (18h, 1bb)<T>53 Rhodes (5 1/3, 3r 8h 1bb)<T><Z>Mariners 6<C> (10h, 2bb)<T> 5 Cordero (5 1/3, 6r 9h 1bb)<L.36.1>
+<L.9.1>
+<Z>Blue Jays 3<C> (7h, 3bb)<T>43 Brazoban (7 2/3, 3r 6h 3bb)<T><Z>ANGELS 6<C> (10h, 6bb)<T>27 Cecil (3 2/3, 1r 3h 4bb)<L.36.1>
+<Z>Blue Jays 3<C> (9h, 3bb)<T>39 Jones (3 2/3, 1r 6h 0bb)<T><Z>ANGELS 10<C> (17h, 5bb)<T> 3 Carreno (3 2/3, 8r 11h 1bb)<L.36.1>
+<Z>Blue Jays 5<C> (10h, 4bb)<T>14 Jimenez (5, 5r 8h 3bb)<T><Z>ANGELS 6<C> (10h, 2bb)<T>48 Ryan (6 2/3, 3r 6h 0bb)<L.36.1>
+<L.9.1>
+<Z>Rays 7<C> (8h, 2bb)<T> 1 Sanchez (3 2/3, 6r 7h 1bb)<T><Z>TWINS 9<C> (13h, 2bb)<T> 1 Ascanio (3, 7r 9h 1bb)<L.36.1>
+<Z>Rays 2<C> (4h, 5bb)<T>17 Green (6, 2r 3h 4bb)<T><Z>TWINS 7<C> (10h, 1bb)<T>19 Young (3 2/3, 6r 6h 1bb)<L.36.1>
+<Z>RAYS 4<C> (7h, 6bb)<T>16 Green (5, 3r 3h 5bb)<T><Z>Twins 2<C> (8h, 3bb)<T>17 Brooks (4, 2r 5h 2bb)<L.36.1>
+<L.9.1>
+<Z>Brewers 9<C> (11h, 4bb)<T> 9 Washington (4, 5r 6h 4bb)<T><Z>RANGERS 27<C> (28h, 9bb)<T> 9 Kolb (5, 17r 19h 6bb)<L.36.1>
+<Z>Brewers 2<C> (5h, 6bb)<T>86 Rupe (5 2/3, 1r 1h 4bb)<T><Z>RANGERS 4<C> (10h, 1bb)<T>13 Vizcaino (5, 3r 5h 1bb)<L.36.1>
+<Z>Brewers 0<C> (3h, 1bb)<T> 2 Brooks (8 2/3, 0r 3h 1bb)<T><Z>RANGERS 3<C> (10h, 1bb)<T>37 Eveland (5 2/3, 3r 8h 0bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<L.1.1>
+<D><E><P>
+<B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB6  Season 23  Week 2 Results   16/8/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<U>National League<UC><L.48.1>
+<C><Z>MARLINS 2<C> (6h, 3bb)<T>14 Devine (6, 1r 4h 3bb)<T><Z>Phillies 0<C> (3h, 1bb)<T>57 Tankersley (9, 0r 3h 1bb)<L.36.1>
+<Z>Marlins 3<C> (5h, 3bb)<T>44 Oswalt (6 1/3, 2r 1h 3bb)<T><Z>PHILLIES 4<C> (12h, 7bb)<T>15 Rasmussen (5 2/3, 0r 4h 4bb)<T>11 inn<L.36.1>
+<Z>MARLINS 13<C> (16h, 6bb)<T> 4 Brooks (3 2/3, 10r 11h 2bb)<T><Z>Phillies 9<C> (13h, 4bb)<T>22 Del Orbe (5 1/3, 4r 7h 3bb)<L.36.1>
+<L.6.1>
+<Z>BRAVES 17<C> (18h, 5bb)<T>11 Hernandez (5, 5r 7h 1bb)<T><Z>Mets 3<C> (7h, 3bb)<T> 5 Street (6 2/3, 2r 4h 3bb)<L.36.1>
+<Z>BRAVES 5<C> (10h, 1bb)<T>13 Lee (6, 3r 7h 1bb)<T><Z>Mets 1<C> (8h, 5bb)<T> 1 Armas (6 1/3, 1r 5h 3bb)<L.36.1>
+<Z>BRAVES 7<C> (15h, 3bb)<T>30 Davis (5 1/3, 5r 8h 1bb)<T><Z>Mets 2<C> (8h, 3bb)<T>20 Lee (9, 2r 8h 3bb)<L.36.1>
+<L.6.1>
+<Z>Pirates 2<C> (6h, 0bb)<T> 9 Mitchell (9, 2r 6h 0bb)<T><Z>CARDINALS 13<C> (21h, 4bb)<T>32 Colon (4 2/3, 7r 11h 3bb)<L.36.1>
+<Z>PIRATES 8<C> (10h, 2bb)<T>56 Guzman (6, 4r 6h 1bb)<T><Z>Cardinals 4<C> (10h, 2bb)<T>75 Bootcheck (5, 3r 6h 2bb)<L.36.1>
+<Z>Pirates 0<C> (4h, 4bb)<T>99 Kensing (9, 0r 4h 4bb)<T><Z>CARDINALS 3<C> (7h, 4bb)<T>48 Lopez (6 1/3, 0r 4h 2bb)<L.36.1>
+<L.6.1>
+<Z>CUBS 5<C> (8h, 5bb)<T>91 Sanders (5 1/3, 5r 5h 5bb)<T><Z>Reds 3<C> (6h, 1bb)<T>24 Williams (6, 3r 6h 0bb)<L.36.1>
+<Z>CUBS 5<C> (12h, 6bb)<T> 6 Benitez (6, 1r 4h 2bb)<T><Z>Reds 1<C> (9h, 4bb)<T>17 Washington (4, 1r 4h 1bb)<T>11 inn<L.36.1>
+<Z>CUBS 6<C> (11h, 4bb)<T>26 Thompson (4 2/3, 3r 7h 2bb)<T><Z>Reds 2<C> (6h, 5bb)<T>11 Delgado (5, 0r 3h 3bb)<L.36.1>
+<L.6.1>
+<Z>PADRES 9<C> (13h, 5bb)<T>14 Mitchell (5, 9r 11h 3bb)<T><Z>Diamondbacks 5<C> (9h, 5bb)<T>21 Miller (6 1/3, 3r 3h 3bb)<L.36.1>
+<Z>PADRES 8<C> (13h, 7bb)<T>15 Gonzalez (5, 4r 6h 6bb)<T><Z>Diamondbacks 5<C> (10h, 2bb)<T>28 Melendez (6, 4r 7h 1bb)<L.36.1>
+<Z>Padres 1<C> (8h, 3bb)<T>22 Jones (5 2/3, 1r 5h 3bb)<T><Z>DIAMONDBACKS 2<C> (7h, 2bb)<T>13 Murray (5, 2r 5h 1bb)<L.36.1>
+<L.6.1>
+<Z>GIANTS 7<C> (10h, 4bb)<T>50 Eovaldi (5, 6r 8h 4bb)<T><Z>Dodgers 2<C> (6h, 0bb)<T> 4 Jackson (6, 0r 3h 0bb)<L.36.1>
+<Z>GIANTS 4<C> (9h, 1bb)<T>90 Lowe (8 1/3, 4r 8h 1bb)<T><Z>Dodgers 1<C> (7h, 0bb)<T>18 Martinez (6 1/3, 1r 5h 0bb)<L.36.1>
+<Z>Giants 0<C> (2h, 3bb)<T>77 Arredondo (9, 0r 2h 3bb)<T><Z>DODGERS 11<C> (16h, 2bb)<T>30 Adams (4, 8r 11h 0bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>Pirates 6<C> (8h, 3bb)<T>47 German (2 1/3, 5r 4h 2bb)<T><Z>MARLINS 8<C> (9h, 5bb)<T>49 Ohlendorf (5, 7r 8h 3bb)<L.36.1>
+<Z>PIRATES 17<C> (21h, 5bb)<T> 7 Perez (5 1/3, 5r 8h 1bb)<T><Z>Marlins 4<C> (8h, 6bb)<T>23 Karstens (5 1/3, 4r 6h 3bb)<L.36.1>
+<Z>Pirates 3<C> (9h, 1bb)<T>57 Tankersley (8, 3r 8h 1bb)<T><Z>MARLINS 6<C> (12h, 4bb)<T>32 Colon (5, 3r 7h 3bb)<L.36.1>
+<L.6.1>
+<Z>Giants 0<C> (6h, 2bb)<T>11 Arnold (9, 0r 6h 2bb)<T><Z>BRAVES 18<C> (24h, 1bb)<T>26 Graman (3 2/3, 6r 10h 0bb)<L.36.1>
+<Z>Giants 2<C> (5h, 4bb)<T> 5 Street (6 2/3, 2r 5h 4bb)<T><Z>BRAVES 4<C> (8h, 4bb)<T>10 Guerrero (6 1/3, 1r 4h 2bb)<L.36.1>
+<Z>Giants 5<C> (10h, 1bb)<T> 1 Armas (6 2/3, 4r 7h 1bb)<T><Z>BRAVES 7<C> (15h, 7bb)<T> 4 Jackson (4, 4r 8h 2bb)<L.36.1>
+<L.6.1>
+<Z>PADRES 6<C> (7h, 5bb)<T>27 Sanchez (4 2/3, 5r 3h 4bb)<T><Z>Cubs 0<C> (6h, 3bb)<T>22 Scott (6 1/3, 0r 5h 2bb)<L.36.1>
+<Z>Padres 1<C> (8h, 1bb)<T>15 Alou (5 1/3, 1r 6h 1bb)<T><Z>CUBS 2<C> (6h, 0bb)<T> 1 Harris (6, 2r 5h 0bb)<L.36.1>
+<Z>PADRES 9<C> (21h, 2bb)<T>24 Williams (3 2/3, 6r 11h 2bb)<T><Z>Cubs 8<C> (10h, 3bb)<T>21 Miller (6, 2r 3h 3bb)<L.36.1>
+<L.6.1>
+<Z>Cardinals 3<C> (8h, 0bb)<T>46 Fraser (6 1/3, 1r 4h 0bb)<T><Z>PHILLIES 9<C> (13h, 3bb)<T>67 Hamilton (5 2/3, 4r 6h 2bb)<L.36.1>
+<Z>Cardinals 1<C> (5h, 3bb)<T>45 Saito (5 2/3, 0r 2h 2bb)<T><Z>PHILLIES 4<C> (5h, 3bb)<T>45 Charlton (8, 4r 5h 3bb)<L.36.1>
+<Z>Cardinals 3<C> (8h, 1bb)<T>14 Devine (6, 1r 5h 1bb)<T><Z>PHILLIES 4<C> (8h, 5bb)<T>68 Jones (8, 3r 6h 5bb)<L.36.1>
+<L.6.1>
+<Z>DODGERS 9<C> (15h, 4bb)<T>14 Thompson (4, 8r 13h 1bb)<T><Z>Mets 5<C> (10h, 4bb)<T>33 Billingsley (5, 5r 7h 0bb)<L.36.1>
+<Z>DODGERS 16<C> (18h, 9bb)<T> 7 Cordero (4, 11r 10h 5bb)<T><Z>Mets 13<C> (20h, 6bb)<T>99 Tomko (5, 6r 11h 2bb)<L.36.1>
+<Z>DODGERS 9<C> (14h, 4bb)<T>11 Hernandez (5 1/3, 3r 6h 1bb)<T><Z>Mets 5<C> (9h, 0bb)<T>50 Eovaldi (6 1/3, 2r 4h 0bb)<L.36.1>
+<L.6.1>
+<Z>DIAMONDBACKS 2<C> (6h, 4bb)<T> 2 Thomas (4 1/3, 0r 4h 4bb)<T><Z>Reds 1<C> (7h, 6bb)<T> 7 Jordan (5, 1r 3h 5bb)<L.36.1>
+<Z>Diamondbacks 1<C> (3h, 0bb)<T>10 Hamilton (5 2/3, 1r 1h 0bb)<T><Z>REDS 4<C> (6h, 1bb)<T> 6 Castillo (5 2/3, 2r 3h 1bb)<L.36.1>
+<Z>DIAMONDBACKS 3<C> (6h, 1bb)<T>91 Sanders (7, 2r 5h 1bb)<T><Z>Reds 2<C> (10h, 2bb)<T>14 Mitchell (6, 2r 8h 2bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>MARLINS 5<C> (12h, 5bb)<T>28 Melendez (5, 1r 8h 2bb)<T><Z>Padres 3<C> (11h, 4bb)<T>15 Rasmussen (6, 1r 6h 1bb)<L.36.1>
+<Z>MARLINS 6<C> (10h, 6bb)<T>13 Murray (4 2/3, 4r 5h 3bb)<T><Z>Padres 5<C> (10h, 2bb)<T>22 Del Orbe (5 1/3, 5r 7h 2bb)<L.36.1>
+<Z>Marlins 8<C> (15h, 3bb)<T>22 Scott (5 1/3, 5r 10h 1bb)<T><Z>PADRES 9<C> (12h, 4bb)<T>47 German (5 1/3, 4r 6h 2bb)<T>10 inn<L.36.1>
+<L.6.1>
+<Z>Braves 4<C> (13h, 1bb)<T>75 Bootcheck (5 2/3, 2r 9h 0bb)<T><Z>PIRATES 5<C> (12h, 4bb)<T>20 Lee (7 2/3, 4r 10h 3bb)<T>10 inn<L.36.1>
+<Z>BRAVES 12<C> (17h, 3bb)<T>48 Lopez (3 2/3, 6r 5h 3bb)<T><Z>Pirates 8<C> (11h, 5bb)<T>11 Arnold (5, 7r 8h 4bb)<L.36.1>
+<Z>Braves 2<C> (7h, 2bb)<T>49 Ohlendorf (6 1/3, 2r 6h 0bb)<T><Z>PIRATES 3<C> (9h, 1bb)<T> 5 Street (6 2/3, 2r 6h 1bb)<L.36.1>
+<L.6.1>
+<Z>CUBS 10<C> (16h, 1bb)<T>18 Martinez (5 1/3, 6r 10h 0bb)<T><Z>Giants 0<C> (8h, 4bb)<T>17 Washington (4 1/3, 0r 7h 1bb)<L.36.1>
+<Z>CUBS 5<C> (11h, 3bb)<T>30 Adams (5 2/3, 4r 6h 1bb)<T><Z>Giants 2<C> (5h, 1bb)<T>11 Delgado (6, 1r 3h 1bb)<L.36.1>
+<Z>Cubs 1<C> (4h, 2bb)<T>26 Graman (5 1/3, 1r 3h 2bb)<T><Z>GIANTS 3<C> (9h, 3bb)<T>27 Sanchez (5 1/3, 1r 6h 0bb)<T>10 inn<L.36.1>
+<L.6.1>
+<Z>PHILLIES 7<C> (12h, 8bb)<T>15 Gonzalez (5, 6r 5h 7bb)<T><Z>Diamondbacks 4<C> (7h, 0bb)<T>44 Oswalt (7 1/3, 2r 3h 0bb)<L.36.1>
+<Z>PHILLIES 4<C> (12h, 4bb)<T>22 Jones (6, 1r 5h 2bb)<T><Z>Diamondbacks 2<C> (14h, 1bb)<T> 4 Brooks (3 2/3, 2r 7h 0bb)<L.36.1>
+<Z>Phillies 4<C> (8h, 2bb)<T> 7 Jordan (5 1/3, 2r 5h 1bb)<T><Z>DIAMONDBACKS 8<C> (11h, 6bb)<T>46 Fraser (2 2/3, 5r 3h 3bb)<L.36.1>
+<L.6.1>
+<Z>Mets 0<C> (6h, 3bb)<T> 9 Mitchell (9, 0r 6h 3bb)<T><Z>CARDINALS 2<C> (6h, 2bb)<T>13 Lee (7 1/3, 2r 5h 2bb)<L.36.1>
+<Z>METS 4<C> (13h, 0bb)<T>56 Guzman (8, 4r 12h 0bb)<T><Z>Cardinals 1<C> (4h, 1bb)<T>30 Davis (9, 1r 4h 1bb)<L.36.1>
+<Z>Mets 0<C> (8h, 3bb)<T>99 Kensing (9, 0r 8h 3bb)<T><Z>CARDINALS 2<C> (3h, 2bb)<T>14 Thompson (6, 2r 3h 1bb)<L.36.1>
+<L.6.1>
+<Z>Reds 2<C> (9h, 3bb)<T>90 Lowe (6, 2r 9h 1bb)<T><Z>DODGERS 5<C> (10h, 3bb)<T> 6 Benitez (5, 4r 7h 2bb)<L.36.1>
+<Z>Reds 2<C> (9h, 1bb)<T>77 Arredondo (8, 2r 8h 1bb)<T><Z>DODGERS 9<C> (14h, 4bb)<T>26 Thompson (3 2/3, 7r 10h 2bb)<L.36.1>
+<Z>Reds 0<C> (5h, 0bb)<T>33 Billingsley (9, 0r 5h 0bb)<T><Z>DODGERS 1<C> (6h, 4bb)<T> 2 Thomas (4 1/3, 1r 4h 1bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<L.1.1>
+<D><E><DU>
+<BK.Standings><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Season 23  Week 2 Standings   16/8/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.44.75.95.102.107><L.48.1>
+<C><Z>American League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Tampa Bay Rays (Rob Byrne)<T>  9   9  .500   -   5-4   W 1<T>  78    81    5-4<T> 4-5<T> 19<T>21,321   2  81   7  111<L.33.1>
+New York Yankees (Alex Quilliam)<T>  7  11  .388   2   3-6   W 1<T>  73    78    3-6<T> 4-5<T> 52<T>21,115   9 103   9  113<L.33.1>
+Toronto Blue Jays (Paul Beaumont)<T>  7  11  .388   2   1-8   L 7<T> 101   110    4-5<T> 3-6<T>153<T>21,112   9 199  11  111<L.33.1>
+Boston Red Sox (Alan Clements)<T>  5  13  .277   4   3-6   L 5<T>  73    95    2-7<T> 3-6<T> 46<T>20,910   1 106   7   97<L.33.1>
+<L.9.1>
+<Z>American League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Minnesota Twins (Mark J Hall)<T> 13   5  .722   -   8-1   L 1<T>  93    70    7-2<T> 6-3<T>124<T>21,735   9 188  12  107<L.33.1>
+Chicago White Sox (Robert Crowther)<T>  9   9  .500   4   4-5   W 1<T>  79    75    3-6<T> 6-3<T> 39<T>26,224   9 116   8  113<L.33.1>
+Cleveland Indians (Simon Richards)<T>  8  10  .444   5   4-5   L 1<T>  79    79    5-4<T> 3-6<T> 68<T>21,218   8 140  11  102<L.33.1>
+Milwaukee Brewers (Paul Denyer)<T>  6  12  .333   7   2-7   L 5<T>  61   120    4-5<T> 2-7<T> 37<T>21,012   3 103   5  105<L.33.1>
+<L.9.1>
+<Z>American League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Los Angeles Angels (Marc Rivoira)<T> 13   5  .722   -   8-1   W 5<T> 101    51    7-2<T> 6-3<T> 33<T>26,082  14 182   7  109<L.33.1>
+Seattle Mariners (Gareth Jenkins)<T> 12   6  .666   1   6-3   L 1<T> 115    88    6-3<T> 6-3<T> 35<T>21,632  13 191   7  122<L.33.1>
+Oakland Athletics (Dave Flesfader)<T> 10   8  .555   3   5-4   W 4<T>  74    93    6-3<T> 4-5<T> 34<T>21,424   8 134   8  111<L.33.1>
+Texas Rangers (Mike Sim)<T>  9   9  .500   4   5-4   W 3<T> 131   118    6-3<T> 3-6<T>  7<T>21,321   4  53   4  118<L.33.1>
+<L.9.1>
+<Z>National League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Atlanta Braves (Alan/Gordon Milnes)<T> 14   4  .777   -   7-2   L 1<T> 132    65    7-2<T> 7-2<T> 96<T>21,840   9 180   5  106<L.33.1>
+Miami Marlins (Patrick Lee)<T> 12   6  .666   2   6-3   L 1<T> 115    96    6-3<T> 6-3<T> 21<T>25,958   9  97   8  114<L.33.1>
+Philadelphia Phillies (Martin Halls)<T> 10   8  .555   4   6-3   L 1<T>  94   102    6-3<T> 4-5<T>110<T>21,681  11 186  10  101<L.33.1>
+New York Mets (Kevin Gibson)<T>  7  11  .388   7   1-8   L 1<T>  71    98    2-7<T> 5-4<T>242<T>21,112  12 199  11   92<L.33.1>
+<L.9.1>
+<Z>National League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>St Louis Cardinals (Troy Dilworth)<T> 11   7  .611   -   4-5   W 1<T>  75    51    7-2<T> 4-5<T> 64<T>25,865  15 194  18  104<L.33.1>
+Pittsburgh Pirates (Nigel Beck)<T>  9   9  .500   2   4-5   W 1<T>  98    87    4-5<T> 5-4<T>136<T>21,321  11 188   8  106<L.33.1>
+Chicago Cubs (Graeme Odgers)<T>  9   9  .500   2   6-3   L 1<T>  79    81    3-6<T> 6-3<T> 95<T>21,320   4  95   6  105<L.33.1>
+Cincinnati Reds (Alistair Brearley)<T>  3  15  .166   8   1-8   L 4<T>  48    77    1-8<T> 2-7<T> 90<T>20,706   3 187  10   94<L.33.1>
+<L.9.1>
+<Z>National League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Los Angeles Dodgers (Barry Andrews)<T> 10   8  .555   -   7-2   W 7<T> 105    85    6-3<T> 4-5<T>102<T>21,422  13 176   9  116<L.33.1>
+San Diego Padres (Neil Bassett)<T>  8  10  .444   2   5-4   W 1<T>  82    91    3-6<T> 5-4<T> 28<T>21,217   0  13   5  105<L.33.1>
+San Francisco Giants (Trevor Payling)<T>  8  10  .444   2   3-6   W 1<T>  55    99    4-5<T> 4-5<T>103<T>21,217   5 196  10  102<L.33.1>
+Arizona Diamondbacks (Ashley Rossouw)<T>  7  11  .388   3   4-5   W 1<T>  54    76    3-6<T> 4-5<T>139<T>21,115   9 194  10   92<L.33.1>
+<L.9.1>
+<Z>GM: Danny McConnell    Version: 4.4 (2009 Rules)    Deadline: Saturday 30th August<L.39.1>
+Postal Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND.  Tel: 020 8325 2448.<L.39.1>
+Email Address: danny@pbmsports.com      Info Website: www.pbmsports.com      Active Website: www.softsim.co.uk<L.39.1>
+Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty. Cheques made payable to: Ab Initio Games<L.39.1>
+<U>Messages<UC><C><L.36.1>
+<L.6.1>
+<Z>Early Warning <C> That I'll be on holiday from Friday 12th September until Friday 19th September, so turns due on Saturday 13th<L.31.1>
+will be run the following weekend, so please be patient, and be aware of the need to turn those around quickly.<L.31.1>
+<L.12.1>
+<Z>Printer Quality <C> Apologies for the recent quality for those of you having reports printed. I'm trying to get them cleaner,<L.31.1>
+but it's a bit of an ongoing issue, though they seem to be cleaner at the moment.<L.31.1>
+<L.12.1>
+<Z>Deadlines <C> Please remember that deadlines are 9am Saturday, but turns may be run any time Saturday or Sunday, so if you<L.31.1>
+submit orders after 9am Saturday don't rely on them being used, but equally please don't chase me for "late" results until Monday<L.31.1>
+- I'm running the games in my spare time now, so it's nice to have some flexibility over the weekend with regard to running them.<L.31.1>
+<L.12.1>
+<Z>Late Email Results <C> If you think results are late, please make sure you wait until the following morning before chasing up<L.31.1>
+results. First step is to check out the Latest News at www.pbmsports.com - if I am running late I'll post a notice there (be aware<L.31.1>
+you may need to refresh the page, in case you get an old copy from Cache memory). Please don't chase me up because you know your<L.31.1>
+mate got his half an hour ago, because whilst most emails are "instant", often they do get delayed for a few hours and it does<L.31.1>
+take a while to send them all out (I spread them out to avoid triggering firewalls).<L.31.1>
+<L.12.1>
+<Z>PDF Reports <C> Emailed game reports are available for all games here. The standard format is a PDF file - Adobe Reader is free<L.31.1>
+to download (see www.pbmsports.com for a link) and you can open your reports with one click of the mouse and you can either view<L.31.1>
+them on screen, or print them as you wish. You don't need to worry about formatting or printer drivers. The text format for<L.31.1>
+reports is available but I only expect people will want to do so if they use the text file for other purposes (such as exporting<L.31.1>
+the listings into software produced yourself). If you've not tried email reports before, try them out - it really is very easy. <L.31.1>
+<L.1.1>
+<P>
+<L>
+<L.1.1>
+<BK.Actions><B>GAMEPLAN BASEBALL  MLB6   Week 2 Actions Report   16/8/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.33.66.99><L.48.1>
+Next Week: Regular Season Week 3<L.36.1>
+<C>Rays at Red Sox<T>Blue Jays at Yankees<T>Brewers at Indians<T>Twins at White Sox<T><L.33.1>
+Rangers at Athletics<T>Angels at Mariners<T>Mets at Marlins<T>Phillies at Braves<T><L.33.1>
+Reds at Pirates<T>Cardinals at Cubs<T>Dodgers at Padres<T>Diamondbacks at Giants<T><L.33.1>
+<L.6.1>
+Brewers at Red Sox<T>Angels at Yankees<T>Rangers at Indians<T>White Sox at Blue Jays<T><L.33.1>
+Athletics at Rays<T>Mariners at Twins<T>Reds at Marlins<T>Diamondbacks at Braves<T><L.33.1>
+Dodgers at Pirates<T>Cubs at Phillies<T>Padres at Mets<T>Giants at Cardinals<T><L.33.1>
+<L.6.1>
+Blue Jays at Mariners<T>Rays at White Sox<T>Twins at Athletics<T>Red Sox at Rangers<T><L.33.1>
+Yankees at Brewers<T>Indians at Angels<T>Phillies at Giants<T>Mets at Cubs<T><L.33.1>
+Cardinals at Padres<T>Marlins at Dodgers<T>Braves at Reds<T>Pirates at Diamondbacks<T><L.33.1>
+<L.6.1>
+<ST.33.66.99><L.3.1>
+<Z>Injuries and Holdouts<C><L.36.1>
+29 Tom Thompson (TB) 6 games<T> 4 Adrian Castillo (BR) 6 games<T>10 Ray Olmedo (TO) 9 games<T>52 C.C. Sabathia (NY) 11 games<L.33.1>
+ 5 Luis Cordero (CW) 14 games<T>24 Tony Cabrera (MT) 12 games<T>12 Jhonn Gaino (CL) 6 games<T> 9 Dan Kolb (MB) 10 games<L.33.1>
+68 Scott Kazmir (LG) 14 games<T>25 Roberto Diaz (OA) 10 games<T>24 Mike Lansing (SM) 14 games<T>10 Michael Young (TR) holdout<L.33.1>
+19 J.Whittleman (TR) 6 games<T>17 Nate Mclouth (AB) 6 games<T>22 Marlon Byrd (PH) 14 games<T>72 Roman Colon (MM) 6 games<L.33.1>
+21 Jim Lewis (NM) 9 games<T>29 Alex Rodriguez (CU) 15 games<T>13 Miguel Guzman (CI) 6 games<T>56 Ivan Guzman (SL) 6 games<L.33.1>
+18 Pedro Alvarez (PI) 11 games<T>23 Leroy Jones (AD) 14 games<T>20 James Loney (LA) 8 games<T>42 Jack Wilson (SD) 10 games<L.33.1>
+23 Gary Sprake (SF) 7 games<T><L.36.1>
+<ST.27.53.79.105><L.6.1>
+<Z>Players Waived  <C>(either from Promote or Release actions)<L.36.1>
+25 Greg Lee (AB)<T>22 Matt Robinson (AB)<T><L.42.1>
+<ST.27.66.93><L.6.1>
+<Z>Trading List<C>    no players listed for trade this turn<L.36.1>
+<L.12.1>
+<Z>Free Agent Signings<C><L.36.1>
+New York Yankees sign FA 138, 12 Francisco Pena (ex-MB) for 31 LP to replace 6 Greg Williams, net cost 19 LP<L.33.1>
+Oakland Athletics sign FA 113, 12 Dave Robinson for 16 LP to replace 6 Greg Jordan, net cost -21 LP<L.33.1>
+Atlanta Braves sign FA 133, 28 Shane Youman (ex-LA) for 45 LP to replace 2 Rafael Rivera, net cost 34 LP<L.33.1>
+Philadelphia Phillies sign FA 103 (3B), 57 Ryan Howard for 23 LP to replace 8 Rafael Pena, net cost -2 LP<L.33.1>
+New York Mets sign FA 148, 26 Eric Johnson (ex-CU) for 31 LP to replace 17 Orlando Rivera, net cost 8 LP<L.33.1>
+St Louis Cardinals sign FA 109 (RF), 4 Javier Castillo (ex-SL) for 42 LP to replace 1 Fernando Sanchez, net cost 12 LP<L.33.1>
+Pittsburgh Pirates sign FA 107, 70 Anthony Ortega (ex-LG) for 38 LP to replace 71 Brian Burres, net cost 17 LP<L.33.1>
+<L.6.1>
+<Z>Free Agent Pool<C>  (+ indicates player will be deleted after next turn's bids have been processed)<ST.30.66.96><L.36.1>
+<Z>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<T>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<C><L.36.1>
+101  Ollie Magnuson (ex-PH)<T>Bat R  8 POW  CF   7  0  8  48 LP<T>102  <T>Pit R  5 CON       1 12  7  18 LP<L.33.1>
+103  Rafael Pena (ex-PH)<T>Pit R  8 CON       6  5  9  51 LP<T>104  <T>Bat R  5 POW  SS   7  3  5  15 LP<L.33.1>
+105  F.Liriano (ex-PI)<T>Pit R  8 ACC       6  6  9  36 LP<T>106  Harry Herndon (ex-SD)<T>Pit L  8 ACC       3  0  8  41 LP<L.33.1>
+107  Brian Burres (ex-PI)<T>Pit R  8 CON       7  9  9  43 LP<T>108+ Robert Andino (ex-PH)<T>Bat L  9 POW  IF   9  2  9  59 LP<L.33.1>
+109  Fernando Sanchez (ex-SL)<T>Bat R  7 FLD  SS   1 14  9  23 LP<T>110  <T>Bat L  5 POW  CF   1 16  8  14 LP<L.33.1>
+111  Denard Span (ex-NY)<T>Bat L  8 HIT  LF  12  3  8  43 LP<T>112  Greg Lee (ex-AB)<T>Cat L  7 POW   C   R  4  7  22 LP<L.33.1>
+113  Greg Jordan (ex-OA)<T>Pit L  9 STA      11  4  9  74 LP<T>114  <T>Bat R  6 POW  SS   R 16  9  15 LP<L.33.1>
+115  Damaso Marte (ex-PI)<T>Pit R  8 CON       7  6  9  42 LP<T>116  Tony Thompson (ex-AB)<T>Pit R  9 CON       9  0  9  33 LP<L.33.1>
+117  <T>Pit R  6 STA       3  9  7  25 LP<T>118  Paul Wells (ex-CL)<T>Pit R  8 ACC      11  3  8  54 LP<L.33.1>
+119  Austin Brice (ex-MM)<T>Pit R  8 QUI       4  9  9  40 LP<T>120  Kelly Wunsch (ex-NY)<T>Pit R  9 QUI      13  2  9  66 LP<L.33.1>
+121  Ivan Ramirez (ex-SF)<T>Pit L  8 CON       8  2  8  49 LP<T>122  Brandon League (ex-TO)<T>Pit L  8 ACC      10  7  9  55 LP<L.33.1>
+123  Brad Ziegler (ex-AD)<T>Pit R  8 STA       7  3  8  40 LP<T>124  Tony Ordonez (ex-SM)<T>Pit L  8 QUI       R  3  8  22 LP<L.33.1>
+125+ Danny Abbott (ex-NM)<T>Pit R  8 ACC       1  0  8  27 LP<T>126+ Mike Walsh (ex-TB)<T>Bat S  9 FLD  3B  13  0  9  95 LP<L.33.1>
+127  Jim Johnson (ex-CL)<T>Bat R  8 HIT  3B  10  0  8  32 LP<T>128  Geoff Blum (ex-OA)<T>Cat R  9 FLD   C  14  2  9  60 LP<L.33.1>
+129  Frank Thomas (ex-SL)<T>Bat R  8 POW  1B   9  3  8  47 LP<T>130  Jose Guerrero (ex-CW)<T>Bat R  8 FLD  SS  10  0  8  42 LP<L.33.1>
+131  Santiago Casilla (ex-OA)<T>Pit R  8 STA       7  7  9  47 LP<T>132  Orlando Benitez (ex-MB)<T>Pit R  8 STA       6  2  8  34 LP<L.33.1>
+133  Rafael Rivera (ex-AB)<T>Bat L  6 FLD  1B   6  8  7  22 LP<T>134  Matt Robinson (ex-AB)<T>Bat S  8 FLD  2B   R  4  8  29 LP<L.33.1>
+135  <T>Bat L  5 HIT  LF   4  5  6  20 LP<T>136  Joe Johnson (ex-SF)<T>Cat S  7 HIT   C  13  0  7  48 LP<L.33.1>
+137  <T>Bat R  7 SPD  RF   1 15 10  24 LP<T>138  Greg Williams (ex-NY)<T>Bat S  7 HIT  IF   2 11  9  25 LP<L.33.1>
+139  <T>Pit L  5 CON       5 10  7  19 LP<T>140  Blaine Boyer (ex-SL)<T>Pit R  8 CON      11  1  8  36 LP<L.33.1>
+141+ Endy Chavez (ex-SM)<T>Bat S  7 POW  3B  13  0  7  55 LP<T>142  Jonathan Broxton (ex-LA)<T>Pit R  9 STA       9  5 10  50 LP<L.33.1>
+143  David Ortiz (ex-BR)<T>Bat R  9 HIT  CF  14  0  9  67 LP<T>144  Justin Morneau (ex-PI)<T>Bat R  7 POW  1B   6 14  9  31 LP<L.33.1>
+145  <T>Pit L  7 ACC       2 13  9  34 LP<T>146  N.Garciaparra (ex-PH)<T>Bat L  8 POW  3B   8  0  8  41 LP<L.33.1>
+147  Brent Spiner (ex-SF)<T>Pit L  8 ACC       5  6  9  27 LP<T>148  Orlando Rivera (ex-NM)<T>Bat S  8 FLD  RF   8  9  9  46 LP<L.33.1>
+<L.1.1>
+<D><E><DU>
+<BK.League Stats><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Regular Season 23 Team Stats   Week 2   16/8/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<B>American League<ST.25.90.98.102.110.116><L.48.1>
+<Z>Team Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+Los Angeles Angels<T> 18   18    4   18  161 2/3   144   51   50   11   41  126   15<T> 13-5<T>  3<T>  5.62<T> .228<T>  2.78<L.33.1>
+Minnesota Twins<T> 18   18    0   18  162 1/3   153   70   61   13   52  117   12<T> 13-5<T>  7<T>  5.16<T> .239<T>  3.38<L.33.1>
+Chicago White Sox<T> 18   18    1   18  162       158   75   70   13   52  101   15<T>  9-9<T>  3<T>  4.39<T> .245<T>  3.89<L.33.1>
+New York Yankees<T> 18   18    2   18  159       182   78   69    7   50  105   16<T>  7-11<T>  3<T>  4.13<T> .276<T>  3.91<L.33.1>
+<L.6.1>
+Tampa Bay Rays<T> 18   18    2   18  159 1/3   168   81   71   17   42  111   17<T>  9-9<T>  7<T>  4.41<T> .260<T>  4.01<L.33.1>
+Cleveland Indians<T> 18   18    0   18  158       160   79   72   17   41  112   16<T>  8-10<T>  2<T>  4.50<T> .252<T>  4.10<L.33.1>
+Toronto Blue Jays<T> 18   18    0   18  159       206  110   77   12   63  117   17<T>  7-11<T>  3<T>  5.72<T> .301<T>  4.36<L.33.1>
+Boston Red Sox<T> 18   18    1   18  164 1/3   179   95   81   14   74  132   18<T>  5-13<T>  2<T>  4.00<T> .266<T>  4.44<L.33.1>
+<L.6.1>
+Seattle Mariners<T> 18   18    2   18  161 2/3   167   88   82   12   58  120   16<T> 12-6<T>  6<T>  6.40<T> .256<T>  4.56<L.33.1>
+Oakland Athletics<T> 18   18    1   18  162       193   93   89   22   51  122   18<T> 10-8<T>  6<T>  4.11<T> .284<T>  4.94<L.33.1>
+Texas Rangers<T> 18   18    0   18  158       183  118  102   31   70   91   17<T>  9-9<T>  6<T>  7.46<T> .278<T>  5.81<L.33.1>
+Milwaukee Brewers<T> 18   18    0   18  159 2/3   203  120  106   16   80  118   18<T>  6-12<T>  2<T>  3.44<T> .297<T>  5.97<L.33.1>
+<L.6.1>
+<L.6.1>
+American League Average<T> 18   18    1   18  160 1/3   174   88   77   15   56  114   16<T>  9-9<T>  4<T>  4.94<T> .265<T>  4.32<ST.25.107.113.119.125><L.48.1>
+<Z>Team Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+Texas Rangers<T> 18  677  131  208  350   59  10  21  129   60   9  21  111  29  19  18  383  202<T> .968<T> .307<T> .375<T> .516<L.33.1>
+Seattle Mariners<T> 18  667  115  202  339   55   2  26  111   69   6  16   93  36  11  15  365  157<T> .979<T> .302<T> .376<T> .508<L.33.1>
+Los Angeles Angels<T> 18  641  101  183  307   62   7  16   95   68  12  26  105  34   3  13  359  163<T> .994<T> .285<T> .370<T> .478<L.33.1>
+Toronto Blue Jays<T> 18  656  101  179  278   48   6  13   97   69   9  21  120  33  21  17  360  173<T> .962<T> .272<T> .354<T> .423<L.33.1>
+<L.6.1>
+Chicago White Sox<T> 18  664   79  180  278   53   6  11   77   52   7  20  126  39  10  21  385  193<T> .982<T> .271<T> .333<T> .418<L.33.1>
+Cleveland Indians<T> 18  639   79  172  261   53   3  10   75   59  12  12  123  27   8  17  362  162<T> .984<T> .269<T> .348<T> .408<L.33.1>
+Boston Red Sox<T> 18  662   73  175  265   45   3  13   68   58   5  11  120  18  16  14  361  177<T> .971<T> .264<T> .330<T> .400<L.33.1>
+Oakland Athletics<T> 18  645   74  168  280   52   9  14   70   49   6  17  102  38  10  17  364  167<T> .981<T> .260<T> .321<T> .434<L.33.1>
+<L.6.1>
+Minnesota Twins<T> 18  633   93  160  273   36   7  21   88   55   3  12  137  19  16  13  370  173<T> .971<T> .252<T> .316<T> .431<L.33.1>
+Milwaukee Brewers<T> 18  638   61  161  257   53   2  13   57   46   5  11  123  28  15   9  361  162<T> .972<T> .252<T> .309<T> .402<L.33.1>
+New York Yankees<T> 18  632   73  159  254   42   4  15   73   33   7   8  109  28  18  12  372  179<T> .968<T> .251<T> .299<T> .401<L.33.1>
+Tampa Bay Rays<T> 18  620   78  149  240   41   7  12   74   56   7  20  103  31  13   9  367  163<T> .976<T> .240<T> .313<T> .387<L.33.1>
+<L.6.1>
+<L.6.1>
+American League Average<T> 18  647   88  174  278   49   5  15   84   56   7  16  114  30  13  14  367  172<T> .976<T> .268<T> .337<T> .429<L.48.1>
+<B>National League<ST.25.90.98.102.110.116><L.48.1>
+<Z>Team Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+St Louis Cardinals<T> 18   18    9   18  157 1/3   138   51   47   12   51  112    9<T> 11-7<T>  1<T>  4.29<T> .226<T>  2.69<L.33.1>
+Atlanta Braves<T> 18   18    2   18  162 1/3   159   65   53   12   57  103   13<T> 14-4<T>  2<T>  7.32<T> .246<T>  2.94<L.33.1>
+Pittsburgh Pirates<T> 18   18    0   18  159       178   87   62    7   56  129   24<T>  9-9<T>  4<T>  5.55<T> .271<T>  3.51<L.33.1>
+Cincinnati Reds<T> 18   18    0   18  159       156   77   67   16   55  104   10<T>  3-15<T>  1<T>  2.72<T> .246<T>  3.79<L.33.1>
+<L.6.1>
+Chicago Cubs<T> 18   18    0   18  164 2/3   181   81   75   18   60  120   10<T>  9-9<T>  6<T>  4.32<T> .268<T>  4.10<L.33.1>
+Arizona Diamondbacks<T> 18   18    0   18  160 2/3   181   76   76    5   67  111   16<T>  7-11<T>  4<T>  3.02<T> .273<T>  4.26<L.33.1>
+San Diego Padres<T> 18   18    0   18  159       167   91   81   16   66  110   11<T>  8-10<T>  4<T>  4.64<T> .259<T>  4.58<L.33.1>
+Los Angeles Dodgers<T> 18   18    3   18  158       180   85   82   11   48  113   13<T> 10-8<T>  1<T>  5.98<T> .275<T>  4.67<L.33.1>
+<L.6.1>
+Miami Marlins<T> 18   18    1   18  163       172   96   95   28   57  121   23<T> 12-6<T>  6<T>  6.35<T> .260<T>  5.25<L.33.1>
+Philadelphia Phillies<T> 18   18    0   18  160 2/3   179  102   94   23   58  103   27<T> 10-8<T>  6<T>  5.27<T> .270<T>  5.27<L.33.1>
+New York Mets<T> 18   18    1   18  162 1/3   183   98   96   27   48  105   17<T>  7-11<T>  3<T>  3.94<T> .273<T>  5.32<L.33.1>
+San Francisco Giants<T> 18   18    0   18  158       187   99   95   22   54  106   21<T>  8-10<T>  6<T>  3.13<T> .282<T>  5.41<L.33.1>
+<L.6.1>
+<L.6.1>
+National League Average<T> 18   18    1   18  160 1/3   171   84   76   16   56  111   16<T>  9-9<T>  3<T>  4.72<T> .262<T>  4.27<ST.25.107.113.119.125><L.48.1>
+<Z>Team Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+Atlanta Braves<T> 18  682  132  223  414   65   6  38  129   60  15  19  100  39   8  21  384  195<T> .986<T> .326<T> .401<T> .607<L.33.1>
+Miami Marlins<T> 18  669  115  194  326   50   8  22  105   79   7  31  106  40   3   8  368  157<T> .994<T> .289<T> .374<T> .487<L.33.1>
+Los Angeles Dodgers<T> 18  643  105  185  309   57   8  17  103   65   6  14  101  26   6  13  361  172<T> .988<T> .287<T> .361<T> .480<L.33.1>
+San Diego Padres<T> 18  655   82  185  270   38   7  11   81   58   5  21  126  27  14  11  367  181<T> .975<T> .282<T> .347<T> .412<L.33.1>
+<L.6.1>
+Pittsburgh Pirates<T> 18  638   98  176  307   48   7  23   95   53  13  15  126  25  31  14  348  171<T> .943<T> .275<T> .350<T> .481<L.33.1>
+New York Mets<T> 18  646   71  175  267   49   2  13   70   59   6  10  113  19   8   9  382  159<T> .985<T> .270<T> .340<T> .413<L.33.1>
+St Louis Cardinals<T> 18  645   75  170  252   45   8   7   70   46   3  24  109  36   6  18  360  176<T> .988<T> .263<T> .316<T> .390<L.33.1>
+Philadelphia Phillies<T> 18  634   94  167  279   63   2  15   92   64   6  23  111  35  15  10  379  170<T> .973<T> .263<T> .339<T> .440<L.33.1>
+<L.6.1>
+Chicago Cubs<T> 18  632   79  157  267   36   4  22   76   52  10  10  111  28   8   8  374  179<T> .985<T> .248<T> .320<T> .422<L.33.1>
+San Francisco Giants<T> 18  607   55  143  223   38   6  10   53   46  10   7  106  42  13  21  368  183<T> .976<T> .235<T> .304<T> .367<L.33.1>
+Cincinnati Reds<T> 18  630   48  147  221   43   2   9   44   46   8  12  110  24  14  21  373  191<T> .975<T> .233<T> .297<T> .350<L.33.1>
+Arizona Diamondbacks<T> 18  622   54  139  211   40   1  10   53   49   5   8  118  27   8  16  371  189<T> .985<T> .223<T> .287<T> .339<L.33.1>
+<L.6.1>
+<L.6.1>
+National League Average<T> 18  641   84  171  276   47   5  16   80   56   7  16  111  30  11  14  369  176<T> .980<T> .266<T> .335<T> .430<L.1.1>
+<D><E><P>
+<BK.Batting Leaders><P.70><ST.30.107.113.119.125><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Season 23 Batting Leaders  Week 2  16/8/14<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+American League Leaders<T>  G   AB    R    H   TB  2B 3B  HR  RBI  BB  SA  SB  SO  FS  DP Er   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<L.39.1>
+<C>81 Troy Glaus (LG, 2b)<T> 18   62   15   30   52  11  1   3   18  10   0   <Z>6<C>   7   7  11  0   24   67<T>1.000<T> .483<T> .555<T> .838<L.33.1>
+13 Juan Senreiso (TR, cf)<T> 18   79   <Z>27<C>   <Z>35<C>   <Z>76<C>   9  1  <Z>10<C>   25   9   1   4   9   6   0  0   30    0<T>1.000<T> .443<T> .511<T> .962<L.33.1>
+44 Alex Escobar (CW, ss)<T> 18   76   17   30   55   6  2   5   15   8   1   2  12  10  13  2   24   46<T> .972<T> .394<T> .464<T> .723<L.33.1>
+12 Ricardo Pena (SM, ss)<T> 18   67   12   26   42   7  0   3   15  10   0   5   4  <Z>12<C>  11  0   31   47<T>1.000<T> .388<T> .467<T> .626<L.33.1>
+16 Bill Hall (CL, 1b)<T> 18   66   10   25   42   9  1   2    8   4   1   0  13   8   5  1   12   36<T> .979<T> .378<T> .428<T> .636<L.33.1>
+92 Derek Jeter (NY, 2b)<T> 13   49    4   18   27   3  0   2    9   2   0   1   7   3   8  0   22   40<T>1.000<T> .367<T> .392<T> .551<L.33.1>
+<L.6.1>
+24 Aaron Hill (TO, lf)<T> 15   63   10   23   50   8  2   5   <Z>26<C>   6   2   5  11   0   0  0    0    0<T> .000<T> .365<T> .449<T> .793<L.33.1>
+ 5 Todd Wilson (CL, ss)<T> 18   80   15   29   47  <Z>12<C>  0   2    9   4   1   5   6   8   8  0   28   44<T>1.000<T> .362<T> .404<T> .587<L.33.1>
+28 Xavier Nady (CW, ss)<T> 18   72   10   25   41   5  1   3   15   8   1   4  12   3  16  3   27   <Z>84<C><T> .973<T> .347<T> .425<T> .569<L.33.1>
+29 Rod Barajas (TR, c)<T> 16   49   17   17   33   3  2   3   14   6   0   0   8   0   2  1   33    9<T> .976<T> .346<T> .418<T> .673<L.33.1>
+10 Ray Olmedo (TO, ss)<T> 18   81   20   28   52  <Z>12<C>  3   2   16   8   0   <Z>6<C>  17  <Z>12<C>  15  1   31   41<T> .986<T> .345<T> .404<T> .641<L.33.1>
+51 Ichiro Suzuki (SM, 2b)<T> 18   64   16   22   49   4  1   7   23  <Z>13<C>   2   2   5   5  13  4   33   59<T> .958<T> .343<T> .480<T> .765<L.33.1>
+<L.6.1>
+14 Eric Thompson (MT, 3b)<T> 18   67   11   23   40   5  0   4   11   4   1   1  15   3   7  1   15   46<T> .983<T> .343<T> .394<T> .597<L.33.1>
+35 Nick Swisher (OA, 1b)<T> 18   68   11   23   39   8  1   2   16   8   0   3   5   3  16  1  147    5<T> .993<T> .338<T> .407<T> .573<L.33.1>
+ 4 Jack Cust (OA, cf)<T> 18   81   12   27   43   4  3   2    4   5   0   4  11   6   1  0   45    2<T>1.000<T> .333<T> .372<T> .530<L.33.1>
+17 Carlos Lee (TR, rf)<T> 16   75   20   25   48   6  <Z>4<C>   3   17   6   0   3  12   3   0  2   31    2<T> .942<T> .333<T> .382<T> .640<L.33.1>
+46 Jacoby Ellsbury (BR, rf)<T> 18   72   12   24   44   9  1   3   11   7   2   <Z>6<C>  11   3   0  0   31    0<T>1.000<T> .333<T> .417<T> .611<L.33.1>
+ 1 Todd Sanders (TO, c)<T> 18   67   17   22   34   9  0   1   13   8   0   2  10   5   1  3   62    9<T> .959<T> .328<T> .400<T> .507<L.33.1>
+<L.6.1>
+ 8 Alex Cruz (SM, lf)<T> 18   77   18   25   38   7  0   2   10   6   0   3  11   4   0  1   29    1<T> .967<T> .324<T> .373<T> .493<L.33.1>
+19 J.Whittleman (TR, ss)<T> 18   75   10   24   35   9  1   0   14   6   2   5  19   9   9  5   25   55<T> .941<T> .320<T> .395<T> .466<L.33.1>
+21 Bob Jackson (SM, cf)<T> 18   76   17   24   51   7  1   6   19   7   2   3  17   5   0  0   48    1<T>1.000<T> .315<T> .397<T> .671<L.33.1>
+31 Carl Crawford (TB, lf)<T> 17   57   10   18   35   5  3   2   13   8   2   2  11   0   7  5   71   24<T> .950<T> .315<T> .430<T> .614<L.33.1>
+ 6 Erick Aybar (TR, 2b)<T> 18   70   12   22   36   6  1   2   13   2   1   0  12   6  13  1   25   75<T> .990<T> .314<T> .347<T> .514<L.33.1>
+15 Jim Abbott (CW, rf)<T> 18   70    4   22   29   7  0   0    3   3   1   1  15   0   0  0    0    0<T> .000<T> .314<T> .356<T> .414<L.33.1>
+<L.6.1>
+10 Andy Brooks (MB, 3b)<T> 18   61    8   19   36   5  0   4   10   3   0   0   8   5   3  0    6   37<T>1.000<T> .311<T> .343<T> .590<L.33.1>
+43 Jed Lowrie (BR, 2b)<T> 18   78    6   24   41   8  0   3    9   6   0   1   9   0   0  0    0    0<T> .000<T> .307<T> .357<T> .525<L.33.1>
+25 Jack Wilson (SM, c)<T> 16   62    8   19   28   9  0   0    5   6   0   0   7   3   1  0   53   14<T>1.000<T> .306<T> .367<T> .451<L.33.1>
+ 5 Jeff Mathis (LG, rf)<T> 18   82   13   25   41  11  1   1   14   6   2   <Z>6<C>  12   1   0  0   13    1<T>1.000<T> .304<T> .375<T> .500<L.33.1>
+16 Mark Ellis (SM, 3b)<T> 18   <Z>86<C>   13   26   42   7  0   3   10   4   1   1  14   6   5  1    8   31<T> .975<T> .302<T> .344<T> .488<L.33.1>
+74 Robb Quinlan (LG, lf)<T> 18   74   12   22   41  11  1   2    9  10   3   3   6   2   0  1   24    0<T> .960<T> .297<T> .416<T> .554<L.33.1>
+<L.6.1>
+<L.18.1>
+<Z>National League Leaders<T>  G   AB    R    H   TB  2B 3B  HR  RBI  BB  SA  SB  SO  FS  DP Er   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<L.39.1>
+<C>27 Kelly Johnson (AB, lf)<T> 18   76   <Z>18<C>   <Z>31<C>   <Z>72<C>   8  3   <Z>9<C>   <Z>26<C>  10   1   4   8   3   1  0   19    1<T>1.000<T> .407<T> .488<T> .947<L.33.1>
+15 Carlos Beltran (NM, cf)<T> 18   63   14   25   47   7  0   5   16   8   2   1  10   1   0  0   55    0<T>1.000<T> .396<T> .492<T> .746<L.33.1>
+53 Melky Cabrera (AB, rf)<T> 17   75   <Z>18<C>   29   52   9  1   4    8   6   0   6   9   2   0  0   29    0<T>1.000<T> .386<T> .432<T> .693<L.33.1>
+31 Andrew Mccutchen (PI, cf)<T> 18   75   13   29   42  10  0   1    9   7   2   5  15   5   0  0   44    1<T>1.000<T> .386<T> .463<T> .560<L.33.1>
+ 7 Brad Wilkerson (LA, lf)<T> 18   73   12   28   44   5  1   3   20   5   2   0   9   0   0  0   24    1<T>1.000<T> .383<T> .448<T> .602<L.33.1>
+19 Kurt Suzuki (AB, c)<T> 14   59   13   22   35   7  0   2    9   5   0   1   6   2   3  2   44    9<T> .963<T> .372<T> .421<T> .593<L.33.1>
+<L.6.1>
+ 3 Jose Reyes (LA, ss)<T> 18   60   12   22   37  <Z>12<C>  0   1    9   9   1   0   7   4   9  1   29   43<T> .986<T> .366<T> .463<T> .616<L.33.1>
+18 Ryan Langerhans (AB, 2b)<T> 18   77   <Z>18<C>   28   66  <Z>12<C>  1   8   20   6   <Z>5<C>   7  13  <Z>13<C>  18  0   32   72<T>1.000<T> .363<T> .469<T> .857<L.33.1>
+16 Ramon Gonzalez (CI, 3b)<T> 18   66   10   24   43   3  2   4   13   4   4   0   6   2   3  0    5   47<T>1.000<T> .363<T> .457<T> .651<L.33.1>
+ 2 Tony White (LA, c)<T> 12   44    8   16   26   2  1   2    6   5   1   0   6   3   0  1   32    6<T> .974<T> .363<T> .448<T> .590<L.33.1>
+ 4 Ruben Avila (SD, 2b)<T> 18   67    9   24   34   2  1   2   14   8   0  <Z>10<C>  14   4  10  1   27   69<T> .989<T> .358<T> .426<T> .507<L.33.1>
+28 Jonny Gomes (MM, cf)<T> 18   74   16   26   48   5  1   5   21   9   0   2  10   3   0  0   44    0<T>1.000<T> .351<T> .421<T> .648<L.33.1>
+<L.6.1>
+71 Jason Heyward (AB, 1b)<T> 18   78    9   27   39   6  0   2   13   6   2   0  11   1  19  3  147    3<T> .980<T> .346<T> .416<T> .500<L.33.1>
+37 Ian Kinsler (SL, lf)<T> 18   74    8   25   42  10  2   1    9   8   1   7   5   6   0  0   32    4<T>1.000<T> .337<T> .414<T> .567<L.33.1>
+ 2 Ian Pearson (SD, lf)<T> 18   75   11   25   36   8  0   1    4  <Z>13<C>   0   1  11   3   0  1   33    1<T> .971<T> .333<T> .431<T> .480<L.33.1>
+39 Isaac Galloway (MM, rf)<T> 18   76   14   25   42   4  2   3   14   7   1   2  10   0   0  0   14    0<T>1.000<T> .328<T> .397<T> .552<L.33.1>
+24 Chris Snyder (PH, c)<T> 18   70   10   23   33   7  0   1   13   7   0   4   7   4   1  2   57    9<T> .970<T> .328<T> .389<T> .471<L.33.1>
+42 Jack Wilson (SD, 1b)<T> 18   71   10   23   34   5  3   0    3   5   0   1   6   8   3  1   10   48<T> .983<T> .323<T> .368<T> .478<L.33.1>
+<L.6.1>
+11 Ty Taubenheim (SL, c)<T> 18   71    7   23   33   7  0   1    8   1   0   3  13   0   0  1   60    4<T> .984<T> .323<T> .333<T> .464<L.33.1>
+ 9 Dee Gordon (LA, if)<T> 15   44    6   14   26   6  0   2    8   3   0   0   6   2   0  0    6   20<T>1.000<T> .318<T> .361<T> .590<L.33.1>
+ 4 Alex Black (CU, lf)<T> 18   63   12   20   42   0  2   6   12   6   2   1  15   8   2  1   16   42<T> .983<T> .317<T> .405<T> .666<L.33.1>
+ 7 Jt Snow (SF, 1b)<T> 18   57   11   18   36   5  2   3   11   5   2   2   5   5   0  0   32    0<T>1.000<T> .315<T> .403<T> .631<L.33.1>
+37 Eric Joyce (SD, lf)<T> 18   73   14   23   47   5  2   5   19   7   2   5   9   2   0  0   31    1<T>1.000<T> .315<T> .400<T> .643<L.33.1>
+22 Jose Tabata (PI, 3b)<T> 18   65   11   20   40   5  0   5   10   3   3   0  15   8   4  1    6   43<T> .980<T> .307<T> .382<T> .615<L.33.1>
+<L.6.1>
+ 4 Bill Thompson (AD, 1b)<T> 18   75    6   23   33   5  1   1    7   5   0   3   9   0  16  1  163    5<T> .994<T> .306<T> .350<T> .440<L.33.1>
+ 6 Pete Williams (PH, cf)<T> 18   72   14   22   41  10  0   3   12   6   0   4  11   3   0  0   37    1<T>1.000<T> .305<T> .358<T> .569<L.33.1>
+ 2 Andre Ethier (NM, c)<T> 18   69    5   21   28   4  0   1    9   5   1   0  11   2   1  0   54    8<T>1.000<T> .304<T> .364<T> .405<L.33.1>
+17 Nate Mclouth (AB, cf)<T> 17   66   15   20   39   8  1   3   15   5   1   0  10   4   0  0   36    3<T>1.000<T> .303<T> .366<T> .590<L.33.1>
+ 2 Terrence Dayleg (CU, ss)<T> 18   73   10   22   39   8  0   3   10   9   0   0  13   2   4  1   28   52<T> .987<T> .301<T> .378<T> .534<L.33.1>
+27 Vernon Wells (PH, 1b)<T> 18   78   11   23   33  10  0   0    7   7   0   6  12   3  10  3  164    9<T> .982<T> .294<T> .352<T> .423<L.33.1>
+<L.6.1>
+<L.9.1>
+<Z>Qualification: 40 At Bats. <L.1.1>
+<D><E><DU>
+<BK.Turnsheet><P.70><L>
+<B>GAMEPLAN BASEBALL   MLB6   Turnsheet    16/8/14<X>      MLB6-AB<L.48.1>
+<B>Atlanta Braves (Alan/Gordon Milnes)   Week 3<C>      Deadline: Saturday 30th August<ST.24><L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<C><L.45.1>
+Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND. Web Orders: www.softsim.co.uk<L.45.1>
+<Z>[I] Fielding Lineup    <C>Basic fielding selection for this week and batting order. Batting order should be position in batting<L.33.1>
+<Z>                       <C>order (1-9) NOT shirt number. Please only fill in CHANGES to selections.<L.45.1>
+Fielding Position:<T>    C          1B          2B          3B          SS          LF          CF          RF          DH       <L.45.1>
+Shirt Number:<T>[  19  ]    [  <Z> 2<C>  ]    [  18  ]    [   9  ]    [  12  ]    [  27  ]    [  16  ]    [  23  ]    [  71  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.45.1>
+Batting Order (1-9):<T>[   3  ]    [   7  ]    [   2  ]    [   6  ]    [   8  ]    [   4  ]    [   9  ]    [   1  ]    [   5  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.54.1>
+<Z>[B] Lineup Changes    <C>Up to three changes in selection from basic order. Give shirt numbers of player to be picked, player<L.33.1>
+<Z>                       <C>to be replaced and game (2-9) from which change applies.<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+<L.9.1>
+<Z>[P] Pitching Changes    <C>Give shirt number of pitcher and changes to MAXBATS (MxB), MAXHITS (MxH), MAXEXTRA (MxE), FIRSTINN (FIn)<L.33.1>
+<Z>                        <C>and MINBATS (MnB). Please do not fill in parameters you are not changing.<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+<L.9.1>
+<Z>[S] Pitching Selections    <C>Pitching Selections for this week's games. A pitcher cannot be selected more than once. You must have<L.33.1>
+                           at least four pitchers in your starting rotation and four pitchers in your bullpen depth chart.<L.33.1>
+                           You do not have to select a setup and closing pitcher.<L.45.1>
+Starting Rotation: <T>[  1 :      ]    [ 20 :      ]    [ 11 :      ]    [  5 :      ]    [  0 :      ]    [  0 :      ]    <L.45.1>
+Bullpen Depth Chart:<T>[ 67 :      ]    [ 21 :      ]    [ 26 :      ]    [ 13 :      ]    [ 14 :      ]    [  8 :      ]    <L.45.1>
+Setup Pitcher: <T>[  0 :      ]    <L.45.1>
+Closer: <T>[  0 :      ]    <L.54.1>
+<Z>[T] Training    <C>Training & Bonus Skills (HIT, POW, SPD, FLD, ACC, CON, QUI or STA), Bonus & Key Players for each series. <L.45.1>
+Series 1 vs PH    [  POW :            ]   [  HIT :            ]   [  Bonus 23 :         ]   [  Key <Z> 2<C> :         ]<L.45.1>
+Series 2 vs AD    [  POW :            ]   [  POW :            ]   [  Bonus 23 :         ]   [  Key <Z>12<C> :         ]<L.45.1>
+Series 3 at CI    [  POW :            ]   [  HIT :            ]   [  Bonus 23 :         ]   [  Key <Z>74<C> :         ]<L.45.1>
+<L.6.1>
+<Z>[X] Special Actions<L.48.1>
+<C>ACTION 1 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 2 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 3 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 4 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 5 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+<L.9.1>
+Codes are: ACCEPT, ACTIVATE, ADDFORM, ALBATTERS, ALLEADERS, ALPITCHERS, ALPLAYERS, BATTERS, BLOWINN, BLOWMARG, BUILDING, CANFULL,<L.33.1>
+CANOPP, COACH, FANS, LEADERS, LIST, LONGINN, LONGPIT, MAXLEAD, MERC, MINLEAD, MINORS, NEWPOS, NLBATTERS, NLLEADERS, NLPITCHERS, <L.33.1>
+NLPLAYERS, OFFER, PINCH1, PINCH2, PINCH3, PINCH4, PINCHDEF, PINCHINN, PITCHERS, PLATOON1, PLATOON2, PLATOON3, PLATOON4, PLAYERS, <L.33.1>
+PROMOTE, REHAB, RELEASE, RENAME, ROUNDUP, SCHEDULE, SCOUT, SETFULL, SETOPP, SIZE, STADIUM, STARTINN, STATS, SURFACE, SWAP, TRAINER<L.48.1>
+<Z>[Z] Free Agent Bid    <C>Give free agent number, shirt number of player to be replaced, amount bid for free agent and new shirt<L.33.1>
+<Z>                      <C>number and name for player signed. Bids are processed after special actions.<L.45.1>
+NUM [        ]   WAIVE [        ]   AMOUNT [        ]   SHIRT [        ]   NAME [                                          ]<L.54.1>
+<Z>[C] Payments<C>    Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty.  MLB6-AB tc= 2.6<L.48.1>
+<Z><C>AMOUNT ENCLOSED [ #      .      ]   Cheques made payable to: Ab Initio Games<L.45.1>
+Indicate any change of address in the space below.<D><E><DU>
