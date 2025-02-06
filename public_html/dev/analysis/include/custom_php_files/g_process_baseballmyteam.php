@@ -59,7 +59,7 @@ $_cp_franchise = $_cp_franchise ?? 'default_franchise_value';
 					try {
 						// Step 1: Retrieve upload IDs that are not present in bb_myteam
 						$query = "SELECT a.upload_id, a.filename, a.league, a.season, a.week 
-																FROM a_uploads AS a
+																FROM g_uploads AS a
 																WHERE a.upload_id NOT IN (SELECT DISTINCT m_turnid FROM bb_myteam);
 						";
 						

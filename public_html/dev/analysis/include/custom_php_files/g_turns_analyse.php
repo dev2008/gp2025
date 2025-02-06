@@ -31,7 +31,7 @@ if (isset($_POST['_cp_mychoice']) && !empty($_POST['_cp_mychoice'])) {
 } else {
 	//Load in unprocessed files
 	$_cp_sql = "SELECT `upload_id`, `filename`
-			FROM `a_uploads` 
+			FROM `g_uploads` 
 			WHERE `processed`=0 
 			ORDER BY `filename` ASC";
 	$_cp_myturn=nz_pdo_array($_cp_sql,$conn);	

@@ -58,7 +58,7 @@ default:
 
 }
 
-$_cp_sql="UPDATE `a_uploads` SET `processed`=2 WHERE `upload_id`=$_cp_turnid";
+$_cp_sql="UPDATE `g_uploads` SET `processed`=2 WHERE `upload_id`=$_cp_turnid";
 #nz_pdo($_cp_sql,$conn);
 
 //Flag update has been run

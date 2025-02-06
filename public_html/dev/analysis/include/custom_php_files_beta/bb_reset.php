@@ -39,7 +39,7 @@ if (isset($_POST['reset']) && !empty($_POST['reset'])) {
 		#nz_pdo($_cp_sql,$conn);
 		#$_cp_sql = "DELETE FROM `bb_franchisehistory`";
 		#nz_pdo($_cp_sql,$conn);
-		#$_cp_sql = "DELETE FROM `a_uploads`";
+		#$_cp_sql = "DELETE FROM `g_uploads`";
 		#nz_pdo($_cp_sql,$conn);
 		#$str="<h2>Tables truncated!</h2>";
 		$str.="<p>**Remember to clear out uploads directory**</p>";

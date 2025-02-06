@@ -15,7 +15,7 @@ echo "<h1>Gameplan - Process turns</h1>";
 echo "<h2>Finding first turn to process ......</h2>";
 $mytimestamp=$_SESSION['logged_user_infos_ar']["username_user"];
 $mytimestamp.=idate("U");
-$_cp_sql = "SELECT `upload_id`, `filename`, `league`, `season`, `week`, `mytimestamp`, `processed` FROM `a_uploads` ORDER BY `mytimestamp` ASC LIMIT 1;";
+$_cp_sql = "SELECT `upload_id`, `filename`, `league`, `season`, `week`, `mytimestamp`, `processed` FROM `g_uploads` ORDER BY `mytimestamp` ASC LIMIT 1;";
 $result = $conn->prepare($_cp_sql); 
 $result->execute(); 
 

@@ -145,7 +145,7 @@ foreach ($draftees as $draftee) {
 	$_cp_sql="UPDATE `bb_dplayers` SET `LHP`='Y' WHERE `dp_type`='Pit' AND `dp_hand`='L'";
 	nz_pdo($_cp_sql,$conn);
 	
-	$_cp_sql="UPDATE `a_uploads` SET `processed`=`processed`+16 WHERE `upload_id`=$_cp_turnid";
+	$_cp_sql="UPDATE `g_uploads` SET `processed`=`processed`+16 WHERE `upload_id`=$_cp_turnid";
 	#echo $_cp_sql; 
 	nz_pdo($_cp_sql,$conn);
 

@@ -31,7 +31,7 @@ if (isset($_POST['reset']) && !empty($_POST['reset'])) {
 		#nz_pdo($_cp_sql,$conn);
 		#$_cp_sql = "DELETE FROM `bb_franchisehistory`";
 		#nz_pdo($_cp_sql,$conn);
-		$_cp_sql = "DELETE FROM `a_uploads`";
+		$_cp_sql = "DELETE FROM `g_uploads`";
 		nz_pdo($_cp_sql,$conn);
 		$_cp_sql = "SET FOREIGN_KEY_CHECKS=1;";
 		nz_pdo($_cp_sql,$conn);

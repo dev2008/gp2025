@@ -5,7 +5,7 @@ output($str);
 
 $_cp_sql = "SELECT a.`turn_id`, a.`game`, a.`league`, a.`season`, a.`week`, a.`coach`, b.`processed`, a.`roundup` , a.`uploadID` 
 			FROM `g_turnsummary` a
-			    INNER JOIN `a_uploads` b on a.`uploadID` = b.`upload_id`
+			    INNER JOIN `g_uploads` b on a.`uploadID` = b.`upload_id`
 			WHERE `uploadID`=?
 			ORDER BY b.`processed` ASC,a.`league` ASC, a.`season` ASC, a.`week` ASC;";
 
@@ -58,7 +58,7 @@ default:
 
 }
 
-$_cp_sql="UPDATE `a_uploads` SET `processed`=2 WHERE `upload_id`=$_cp_turnid";
+$_cp_sql="UPDATE `g_uploads` SET `processed`=2 WHERE `upload_id`=$_cp_turnid";
 #nz_pdo($_cp_sql,$conn);
 
 //Flag update has been run

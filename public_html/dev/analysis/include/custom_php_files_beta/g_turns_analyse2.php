@@ -7,7 +7,7 @@ require_once 'mydatabase.php';
 
 //Retrieve file details
 $_cp_sql = "SELECT `upload_id`, `filename`, `league`, `season`, `week`, `processed`
-			FROM `a_uploads` 
+			FROM `g_uploads` 
 			WHERE `upload_id`=? 
 			ORDER BY `processed` ASC,`league` ASC, `season` ASC, `week` ASC;";
 $myrow=nz_pdo_row($_cp_sql,$_cp_mychoice,$conn);
@@ -97,7 +97,7 @@ $_cp_sql="INSERT INTO `g_turnsummary`
 	output($str);
 	
 //Update uploads
-$_cp_sql="UPDATE `a_uploads` SET `processed`=1, `league`='$_cp_league', `season`=$_cp_season, `week`=$_cp_week  WHERE `upload_id`='$_cp_mychoice'";
+$_cp_sql="UPDATE `g_uploads` SET `processed`=1, `league`='$_cp_league', `season`=$_cp_season, `week`=$_cp_week  WHERE `upload_id`='$_cp_mychoice'";
 nz_pdo($_cp_sql,$conn);
 $str="<h3>Uploads table updated with turn details!</h3>";
 output($str);
@@ -128,7 +128,7 @@ $str="<h3>$i lines of turn $_cp_myid ($_cp_league s$_cp_season w$_cp_week - $_cp
 output($str);
 $str="";
 
-$_cp_sql="UPDATE `a_uploads` SET `processed`=1 WHERE `upload_id`=$_cp_myid";
+$_cp_sql="UPDATE `g_uploads` SET `processed`=1 WHERE `upload_id`=$_cp_myid";
 nz_pdo($_cp_sql,$conn);
 
 	
