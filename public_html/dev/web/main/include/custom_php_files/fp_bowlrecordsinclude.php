@@ -25,13 +25,13 @@ $res = execute_db($_cp_sql, $conn);
 				
 			}
         }          
-echo "<tr class='$mycolour6'>";
+echo "<tr class='w3-theme-l3'>";
 echo "<th>Franchises with multiple Superbowl wins ($mymultiples): </th>";
 echo "<td>";
 $myrow=substr($myrow,0,-2);
 echo "$myrow</td>";
 echo "</tr>";
-echo "<tr class='$mycolour5'>";
+echo "<tr class='w3-theme-l4'>";
 echo "<th>Franchises with one Superbowl win ($mysingles): </th>";
 echo "<td>";
 $myrow2=substr($myrow2,0,-2);
@@ -48,7 +48,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "$row[1], ";
 			$mynone++;
         }          
-echo "<tr class='$mycolour6'>";
+echo "<tr class='w3-theme-l3'>";
 echo "<th>Franchises with no Superbowl wins ($mynone):</th>";
 echo "<td>";
 $myrow=substr($myrow,0,-2);
@@ -65,7 +65,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "$row[1], ";
 			$mynone++;
         }          
-echo "<tr class='$mycolour5'>";
+echo "<tr class='w3-theme-l4'>";
 echo "<th>Franchises with no Superbowl wins or appearances ($mynone):</th>";
 echo "<td>";
 $myrow=substr($myrow,0,-2);
@@ -73,7 +73,7 @@ echo "$myrow</td>";
 echo "</tr>";
 
 //Conference
-echo "<tr class='$mycolour6'>";
+echo "<tr class='w3-theme-l3'>";
 echo "<th>Record by Conference: </th>";
 echo "<td>";
 
@@ -94,7 +94,7 @@ echo "$myrow</td>";
 echo "</tr>";
 
 //Division
-echo "<tr class='$mycolour5'>";
+echo "<tr class='w3-theme-l4'>";
 echo "<th>Record by Division: </th>";
 echo "<td>";
 

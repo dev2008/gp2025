@@ -19,7 +19,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "<span style=\"font-weight: 900\">$row[5] : $row[1]  $row[2]</span> - $row[3] $row[4] <em>($row[0]</em>)<br />";
 			$mynone++;
         }          
-echo "<tr class='$mycolour6'>";
+echo "<tr class='w3-theme-l3'>";
 echo "<th>Biggest margin of victory:</th>";
 echo "<td>";
 //$myrow=substr($myrow,0,-2);
@@ -42,7 +42,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "<span style=\"font-weight: 900\">$row[5] : $row[1]  $row[2]</span> - $row[3] $row[4] <em>($row[0]</em>)<br />";
 			$mynone++;
         }          
-echo "<tr class='$mycolour5'>";
+echo "<tr class='w3-theme-l4'>";
 echo "<th>Smallest margin of victory:</th>";
 echo "<td>";
 //$myrow=substr($myrow,0,-2);
@@ -66,7 +66,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "<span style=\"font-weight: 900\">$row[1]  $row[2]</span> - $row[3] $row[4] <em>($row[0]</em>)<br />";
 			$mynone++;
         }          
-echo "<tr class='$mycolour6'>";
+echo "<tr class='w3-theme-l3'>";
 echo "<th>Most points scored:</th>";
 echo "<td>";
 //$myrow=substr($myrow,0,-2);
@@ -89,7 +89,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "<span style=\"font-weight: 900\">$row[1]  $row[2]</span> - $row[3] $row[4] <em>($row[0]</em>)<br />";
 			$mynone++;
         }          
-echo "<tr class='$mycolour5'>";
+echo "<tr class='w3-theme-l4'>";
 echo "<th>Least points scored:</th>";
 echo "<td>";
 //$myrow=substr($myrow,0,-2);
@@ -113,7 +113,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "<span style=\"font-weight: 900\">$row[5] : $row[1]  $row[2]</span> - $row[3] $row[4] <em>($row[0]</em>)<br />";
 			$mynone++;
         }          
-echo "<tr class='$mycolour6'>";
+echo "<tr class='w3-theme-l3'>";
 echo "<th>Most total points:</th>";
 echo "<td>";
 //$myrow=substr($myrow,0,-2);
@@ -136,7 +136,7 @@ $res = execute_db($_cp_sql, $conn);
 			$myrow .= "<span style=\"font-weight: 900\">$row[1] $row[2]  </span> - $row[3] $row[4] <em>($row[0]</em>)<br />";
 			$mynone++;
         }          
-echo "<tr class='$mycolour5'>";
+echo "<tr class='w3-theme-l4'>";
 echo "<th>Most points in defeat:</th>";
 echo "<td>";
 //$myrow=substr($myrow,0,-2);
