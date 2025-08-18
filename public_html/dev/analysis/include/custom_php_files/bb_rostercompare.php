@@ -98,7 +98,7 @@ $sql = "SELECT
         ON `bb_myteam`.`m_team` = `bb_franchises`.`f_id`  -- Joining based on team ID
         WHERE `bb_myteam`.`m_turnid` = :turnid 
         ORDER BY `bb_myteam`.`m_sh` ASC";
-
+		print_r($sql);
 
 // Fetch data for Turn 1
 $stmt1 = $conn->prepare($sql);

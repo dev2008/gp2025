@@ -63,13 +63,13 @@ foreach ($_cp_tempdraftorder as $myabbr){
 		#Insert draft order into draft picks table i+24 i+48
 		$_cp_sql="INSERT INTO `bb_draftpicks` (`pick_id`, `d_id`, `round`, `pick`, `f_id`, `dp_ID`) VALUES (NULL, $mydraftid, 1, $i, $mydraftteam, NULL)";
 		#echo "<p>$_cp_sql</p>";
-		$asm=nz_pdo_insert($_cp_sql,$conn);
+		#$asm=nz_pdo_insert($_cp_sql,$conn);
 		$_cp_sql="INSERT INTO `bb_draftpicks` (`pick_id`, `d_id`, `round`, `pick`, `f_id`, `dp_ID`) VALUES (NULL, $mydraftid, 2, $j, $mydraftteam, NULL)";
 		#echo "<p>$_cp_sql</p>";
-		$asm=nz_pdo_insert($_cp_sql,$conn);
+		#$asm=nz_pdo_insert($_cp_sql,$conn);
 		$_cp_sql="INSERT INTO `bb_draftpicks` (`pick_id`, `d_id`, `round`, `pick`, `f_id`, `dp_ID`) VALUES (NULL, $mydraftid, 3, $k, $mydraftteam, NULL)";
 		#echo "<p>$_cp_sql</p>";
-		$asm=nz_pdo_insert($_cp_sql,$conn);	
+		#$asm=nz_pdo_insert($_cp_sql,$conn);	
 		$i++;
 		$j++;
 		$k++;
