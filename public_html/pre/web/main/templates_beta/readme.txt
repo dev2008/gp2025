@@ -1,1 +1,0 @@
-Here you can store your PDF templates, read the documentation (chapter "How to create custom PDF reports / documents") to know how to write a template.
