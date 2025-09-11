@@ -1,0 +1,1220 @@
+
+                                                                                                                                                                                                                                                               
+Delivered-To: asmilnes@gmail.com
+Received: by 10.64.146.36 with SMTP id sz4csp112037ieb;
+        Fri, 16 Nov 2012 00:35:08 -0800 (PST)
+Received: by 10.180.89.234 with SMTP id br10mr3927000wib.2.1353054907066;
+        Fri, 16 Nov 2012 00:35:07 -0800 (PST)
+Return-Path: <SRS0=T8gq=JM=virginmedia.com=danny.mcconnell66@srs.kundenserver.de>
+Received: from moutng.kundenserver.de (moutng.kundenserver.de. [212.227.126.171])
+        by mx.google.com with ESMTPS id u12si476035wed.126.2012.11.16.00.35.06
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 16 Nov 2012 00:35:07 -0800 (PST)
+Received-SPF: pass (google.com: domain of SRS0=T8gq=JM=virginmedia.com=danny.mcconnell66@srs.kundenserver.de designates 212.227.126.171 as permitted sender) client-ip=212.227.126.171;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of SRS0=T8gq=JM=virginmedia.com=danny.mcconnell66@srs.kundenserver.de designates 212.227.126.171 as permitted sender) smtp.mail=SRS0=T8gq=JM=virginmedia.com=danny.mcconnell66@srs.kundenserver.de
+Received-SPF: pass (mxbap3: domain of virginmedia.com designates 74.125.82.53 as permitted sender) client-ip=74.125.82.53; envelope-from=danny.mcconnell66@virginmedia.com; helo=mail-wg0-f53.google.com;
+Received: from mail-wg0-f53.google.com (mail-wg0-f53.google.com [74.125.82.53])
+	by mx.kundenserver.de (node=mxbap3) with ESMTP (Nemesis)
+	id 0MS3uU-1TkiOG0HsI-00SeYc for ALAN@gameplan.org.uk; Fri, 16 Nov 2012 09:35:06 +0100
+Received: by mail-wg0-f53.google.com with SMTP id dr1so1032742wgb.22
+        for <ALAN@gameplan.org.uk>; Fri, 16 Nov 2012 00:35:05 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=message-id:from:subject:to:content-type:date:x-gm-message-state;
+        bh=vwHlas1M5HXWXQG7aa0QkMUgqpMgKmn5kej+ScxNBLE=;
+        b=MBN5ICbY8wyPeJr3npTlBmqObnCEfu5FzO8ahQ9sul45yOu99UD1kOwlk1d0Qnxc/P
+         jy8QJ8kU8QrVi8sax4BVrJckJkUg3NH+R5vWYL/a0sAy7OmXAZgKyENLvxWi0UDOZQ0b
+         QlL6QJIMxKaGmzSh2omILsMuHFXOZdTX91Q7V+Iyu+ipYgHH2VzbuPXUdSJUYiFguEEe
+         SrElTm99yAPrGqsEeOYySpsNBLQJlNeJuUbCkxxD8cde0mEajC8KDg+/HAoJn3s7aDw1
+         c1+BQhb8Vi4RGV97pCvcOqckX7NhAugAjnwVfNONrGQgOlh0rIJuSMFKtlRXIo9wJgVY
+         uIRQ==
+Received: by 10.216.212.225 with SMTP id y75mr1602231weo.39.1353054905375;
+        Fri, 16 Nov 2012 00:35:05 -0800 (PST)
+Return-Path: <danny.mcconnell66@virginmedia.com>
+Received: from Gromit (know-mailgateway-1.server.virginmedia.net. [62.254.26.97])
+        by mx.google.com with ESMTPS id hv4sm31020835wib.0.2012.11.16.00.35.03
+        (version=SSLv3 cipher=OTHER);
+        Fri, 16 Nov 2012 00:35:04 -0800 (PST)
+Message-ID: <50a5fab8.e46db40a.25cd.3b55@mx.google.com>
+From: Danny McConnell <danny.mcconnell66@virginmedia.com>
+Subject: MLB21-PH, Turn 14
+To: ALAN@GAMEPLAN.ORG.UK
+Content-Type: text/plain
+Date: Fri, 16 Nov 2012 08:35:07 +0000
+X-Gm-Message-State: ALoCoQmlPb8sHC1EGfDiCs1BlQPCrwoCBqkASesTalEHKA2WZOmg4sOAKZgdZsUO4V8BhhgHDl8K
+X-UI-Loop: V01:c9zvcSs1TXM=:NIDUaIJxKaIBwhx1L13TkybxYNEKUXbFNZVm+eHYyRY=
+
+ALAN@GAMEPLAN.ORG.UK
+0
+MLB21-PH, Turn 14
+<STARTREP>
+<BK.Team Report><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21  Team Report  Season 19   Week 14   16/11/12<ST.28.88.105.110><L.48.1>
+Philadelphia Phillies (Alan Milnes)    <L.48.1>
+<C>Turn Credits =  9.7  (receipts 10.0, deducted 1.2, includes full reports)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Acc Con Qui Sta<T>Sqd<T>MxB MxH MxE FIn MnB<C><L.42.1>
+50  Jamie Moyer<T>Pit L   8 CON   12   0   8   0   1  -7   0   77 LP   7 LP<T> Av  Go  Go  Go <T>Act<T><T> 24   4   6   1  17<L.33.1>
+ 4  Adrian Hernandez<T>Pit R   9 ACC   14   5  10   0   2  19   0   74 LP   7 LP<T> Ex  Ex  Go  Av <T>Act<T><T> 21   4   9   1  17<L.33.1>
+38  Kyle Kendrick<T>Pit R   9 QUI    5   5  10   1   3   6   0   60 LP   6 LP<T> Go  Go  Ex  Go <T>Act<T><T> 24   5   6   1   1<L.33.1>
+54  Brad Lidge<T>Pit R   9 ACC    2   0   9   2   1  18   0   42 LP   4 LP<T> Ex  Go  Go  Av <T>Act<T><T> 24   5   6   1   1<L.33.1>
+63  Ryan Madson<T>Pit R  10 STA    4  10  12   3   3  33   0   58 LP   5 LP<T> Go  Ex  Ex  Ex <T>Act<T><T> 27   4   3   1  17<L.33.1>
+<L.6.1>
+15  John Thomas<T>Pit R   7 CON    1   2   7   2   4  -3   0   26 LP   2 LP<T> Av  Go  Go  Av <T>Act<T><T>  9   3   6   1   1<L.33.1>
+16  Luis Guerrero<T>Pit R   6 QUI    1  11   8   1   2  -7   0   13 LP   1 LP<T> Fa  Av  Av  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+10  Scott Mathieson<T>Pit R   7 STA    5  10   9   0   2   0   0   32 LP   3 LP<T> Av  Av  Av  Go <T>Act<T><T> 35   9   6   1  24<L.33.1>
+49  Vance Worley<T>Pit L   6 ACC    R  15   9   1   2   2   0   14 LP   1 LP<T> Av  Fa  Av  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+ 1  Pete Jordan<T>Pit R   7 QUI   11   2   7   0   0   0   0   30 LP   3 LP<T> Av  Fa  Go  Go <T>Act<T><T>  9   4   6   1   1<L.33.1>
+13  Mark Jordan<T>Pit R   6 CON    1   9   7   0   1   3   0   16 LP   1 LP<T> Av  Av  Fa  Av <T>Act<T><T>  9   4   6   1   1<L.33.1>
+<L.6.1>
+58  Antonio Bastardo<T>Pit R   7 CON    2   2   7   0   3  13   0   30 LP   3 LP<T> Av  Go  Av  Av <T>Act<T><T>  9   3   6   1  24<L.33.1>
+80  Jeff Farnsworth<T>Pit R   8 CON    7   2   8   0   3   9   0   47 LP   4 LP<T> Go  Ex  Av  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+ 3  Danny Davis<T>Pit R   7 ACC    8   6   8   0   2 -10   0   29 LP   2 LP<T> Go  Av  Fa  Go <T>Res<T><T>  9   3   6   1   1<L.33.1>
+<L.6.1>
+<Z>Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Hit Pow Spd Fld<T>Sqd<T>Pos vRH Plt Pin<L.42.1>
+<C> 6  Craig Counsell<T>Bat L   8 HIT    5  10  10   3   3  11   0   42 LP   4 LP<T> Go  Go  Go  Av <T>Act<T> RF  RF        <L.33.1>
+26  Chase Utley<T>Bat R   9 FLD   14   0   9   3   7  46   0  106 LP  10 LP<T> Go  Go  Go  Ex <T>Act<T> 2B  2B        <L.33.1>
+22  Gordon Milnes<T>Cat S   7 FLD    4  12   9   4   2  19   0   36 LP   3 LP<T> Av  Av  Av  Go <T>Act<T>  C   C        <L.33.1>
+33  Aaron Rowand<T>Bat L  10 SPD   11   2  10   1   2  23   0   86 LP   8 LP<T> Ex  Ex  Ex  Av <T>Act<T> CF  CF        <L.33.1>
+ 5  Pat Burrell<T>Bat R   9 HIT    7   9  10   2   5  21<Z>  13<C>   55 LP   5 LP<T> Ex  Go  Ex  Av <T>Act<T> LF  LF        <L.33.1>
+27  Placido Polanco<T>Bat L   5 POW    R  16   8   1   3+ 21   0   12 LP   1 LP<T> Fa  Av  Fa  Fa <T>Act<T> 1B  1B        <L.33.1>
+11  Andy Nelson<T>Bat R   7 POW    4   6   8   3  -3 -10   0   27 LP   2 LP<T> Go  Go  Fa  Av <T>Act<T> SS  SS        <L.33.1>
+ 9  Paul Nelson<T>Bat R   7 POW    1   8   8   0  -5 -21   0   21 LP   2 LP<T> Av  Go  Av  Av <T>Act<T> 3B  3B     CIF<L.33.1>
+<L.6.1>
+ 2  Bob Walker<T>Cat R   7 FLD   10   4   7   0   0   2   0   32 LP   3 LP<T> Av  Fa  Av  Go <T>Act<T>  C   -       C<L.33.1>
+24  Ty Wigginton<T>Cat L   7 POW    R  11   9   0   1  23   0   22 LP   2 LP<T> Av  Go  Av  Fa <T>Act<T> IF*  -        <L.33.1>
+ 8  Oscar Sierra<T>Bat L   7 POW    7   7   8   0   0   0   0   35 LP   3 LP<T> Go  Go  Fa  Av <T>Act<T> IF   -        <L.33.1>
+ 7  Angel Guillen<T>Bat R   7 SPD    7   5   8   0   0   2   0   15 LP   1 LP<T> Av  Fa  Go  Av <T>Act<T> LF   -        <L.33.1>
+<L.6.1>
+28  Jamie Dick<T>Bat L   6 POW    1  18   9   0  -1  12   0   16 LP   1 LP<T> Fa  Av  Av  Av <T>Res<T> SS   -      SS<L.33.1>
+14  Fuzzy Dunlop<T>Bat L   6 POW    1  14   8   0   3  11   0   15 LP   1 LP<T> Fa  Go  Fa  Fa <T>Res<T> LF   -  DH  DH<L.33.1>
+99  Domonic Brown<T>Bat L   5 SPD    1  19   8   0   1   3   0   11 LP   1 LP<T> Fa  Av  Av  Fa <T>Res<T> CF   -        <L.33.1>
+<L.6.1>
+Key to Ratings: Po = Poor, Fa = Fair, Av = Average, Go = Good, Ex = Excellent, WC = World Class. Pos is Primary Field Position.<ST.20.64.86.98.120><L.48.1>
+<Z>Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  50   4  38  54  63<L.36.1>
+<Z>Shirt Number:<C><T>  22  27  26   9  11<Z>   5<C>  33   6<Z>  29<C><T><Z>Bullpen Depth Chart:<C><T>  15  16  10  49   1  13<L.36.1>
+<Z>Batting Order:<C><T>   3   7   2   9   8   5   4   1   6<T><Z>Setup Pitcher:<C><T>  58<T><Z>Closing Pitcher:<C><T>  80<ST.20.32.64.86.98.120><L.36.1>
+<Z>Platoon Hitter 1:<C><T>  14  DH<T><Z>Platoon Hitter 2:<C>  none<T><Z>Opposite Hand: <C><T>  YES<T><Z>Starter Innings:<C><T>   6<T><L.36.1>
+<Z>Platoon Hitter 3:<C><T>  none<T><Z>Platoon Hitter 4:<C>  none<T><Z>Minimum Lead:<C><T>   1<T><Z>Maximum Lead:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 1:  <C><T>   2   C<T><Z>Pinch Hitter 2:  <C>   9 CIF<T><Z>Long Relief Pitcher: <T><C>  none<T><Z>Long Innings:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 3:  <C><T>  14  DH<T><Z>Pinch Hitter 4:  <C>  28  SS<T><Z>Blowout Innings:<C><T>   7<T><Z>Blowout Margin:<C><T>  12<T><L.36.1>
+<Z>Pinch Innings: <C><T>   8<Z><T>Pinch Deficit: <C>     6<ST.32.64.86.98.120><L.45.1>
+<Z>Stadium Size:        <C>Small<T><Z>Stadium Surface:  <C>Grass<T><Z>Stadium Building:       <C>Open<ST.22.32.42.52.64.88.98.108.118><L.36.1>
+<Z>Batting Training:<C><T>HIT  0<T>POW 42<T>SPD  0<T>FLD  0<Z><T>Pitching Training:<C><T>ACC  0<T>CON  0<T>QUI  0<T>STA  0<ST.20.32.49.64.86.98.120><L.45.1>
+<Z>Losing Points:<C><T>  26<T><Z>Base Income:<C><T>  62<T><Z>Fans Income:<C><T>  32<T><Z>Stadium Income:<C><T>  10<T><L.36.1>
+<Z>Merchandise Income:<C><T>  18<T><Z>Trade Income:<C><T>  26<T><Z>Trade Costs:<C><T>  35<T><Z>Overall Costs:<C><T>  75<T><L.36.1>
+<Z>Wages Paid:<C><T>  96<T><Z>Total Fans:<C><T>  32,199<T><Z>Stadium Level:<C><T>  10<T><Z>Merchandising:<C><T> 191<T><L.36.1>
+<Z>Current Wages:<C><T>  96<T><Z>Trainer Level:<C><T>  10<T><Z>Minor League System:<C><T>   3<T><Z>Full Reports:<C><T> Yes<L.36.1>
+<Z>Postal Reports:<C><T>  No<T><Z>Email Reports:<C><T>  Text<T><Z>Email Address: <C>ALAN@GAMEPLAN.ORG.UK<ST.22><L.45.1>
+<Z>Special Actions:<C><T>ADDFORM 27 for 3 weeks: OK, cost 3 LP<L.39.1>
+<T>ACTIVATE 9 for 28: OK, 9 activated to replace 28<L.39.1>
+<T>NEWPOS 24 at IF: OK, cost 1 potential<L.39.1>
+<T>MERC 72: OK, cost 72 LP<L.39.1>
+<T>SCOUT 120: OK, ex-HA, Bat (RF) S 7. Pt 1, Ex 10, Fm 0, TF -21, Ft 3, Val 36 LP. HIT Av POW Go SPD Av FLD Av<L.39.1>
+<L.3.1>
+<Z>Free Agent Bid:<C><T>122 for 35 LP (reduced from 36 LP, balance 9 LP) to replace 29: OK, but offer reduced, 8 Oscar Sierra<L.33.1>
+<T>signed, net cost 9 LP (26 LP compensation)<L.42.1>
+<Z>Injuries/Holdouts:<C><T>5 Pat Burrell - Sprained Ankle, 13 games. <L.42.1>
+<Z>Last Turn's Lists:<C><T>33 Aaron Rowand made available for trading. <L.39.1>
+<T>17 Lance Mccullers offered by HA. Pit R Lvl 7. Pot 15, Exp 0, Val 19 LP. ACC Go, CON Go, QUI Fa, STA Av.<L.39.1>
+<L.6.1>
+<ST.22.58.95><L.1.1>
+<Z>Forthcoming Series:<C><T>vs Mets. Out 3 6 <T>at Pirates. Out 29 <T>vs Rockies. Out none <L.42.1>
+<L.1.1>
+<D><E><P>
+<BK.Team Stats><ST.30.90.97.104><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL   MLB21  Regular Season 19 Totals   Week 14   16/11/12<L.48.1>
+Philadelphia Phillies  (Alan Milnes)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.25.90.98.103.111.118.124><L.48.1>
+Individual Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+58 Antonio Bastardo<T> 28    0    0    8   25 2/3    24    6    5    0   11   21    5<T>  0-2<T>  6<T>  0-0<T>  3.86<T> .237<T>  1.75<L.36.1>
+63 Ryan Madson<T> 24   24    0    0  157 2/3   139   52   40    5   51  133   17<T> 13-5<T>  0<T> 13-11<T>  6.45<T> .227<T>  2.28<L.36.1>
+ 4 Adrian Hernandez<T> 25   25    0    0  152       137   60   51    8   49  104   12<T> 13-6<T>  0<T> 14-11<T>  6.10<T> .231<T>  3.02<L.36.1>
+54 Brad Lidge<T> 26   26    0    0  159 2/3   139   71   63   15   53  129   15<T> 11-6<T>  0<T> 14-12<T>  6.03<T> .224<T>  3.55<L.36.1>
+38 Kyle Kendrick<T> 26   26    0    0  161       153   78   73   16   51  113   19<T> 10-7<T>  0<T> 15-11<T>  7.55<T> .240<T>  4.08<L.36.1>
+49 Vance Worley<T> 38    0    0   21   47        56   26   23    8   22   28    5<T>  3-2<T>  0<T>  0-0<T>  5.74<T> .284<T>  4.40<L.36.1>
+10 Scott Mathieson<T> 29    0    0   23   39        57   33   22    6   22   23    8<T>  1-6<T>  0<T>  0-0<T>  4.62<T> .327<T>  5.08<L.36.1>
+80 Jeff Farnsworth<T> 30    3    0   23   43 2/3    50   31   25    5   19   36    3<T>  2-5<T> 20<T>  1-2<T>  2.68<T> .276<T>  5.15<L.36.1>
+50 Jamie Moyer<T> 22   22    0    0  133 1/3   147   78   77   20   65   56   13<T> 11-9<T>  0<T> 12-10<T>  6.62<T> .268<T>  5.20<L.36.1>
+15 John Thomas<T> 43    0    0    7   55 2/3    60   42   35    7   23   41   11<T>  2-1<T>  0<T>  0-0<T>  4.69<T> .264<T>  5.66<L.36.1>
+16 Luis Guerrero<T> 45    0    0   15   59        68   48   43   14   26   41    4<T>  3-3<T>  2<T>  0-0<T>  4.88<T> .277<T>  6.56<L.36.1>
+ 1 Pete Jordan<T> 20    0    0   13   21 2/3    33   18   16    8    7   17    5<T>  0-2<T>  2<T>  0-0<T>  6.23<T> .336<T>  6.65<L.36.1>
+ 3 Danny Davis<T> 30    0    0    8   40        50   37   32   10   16   35    9<T>  0-1<T>  1<T>  0-0<T>  5.62<T> .294<T>  7.20<L.36.1>
+13 Mark Jordan<T> 21    0    0    8   22 2/3    42   25   25    6   13    3    6<T>  0-2<T>  0<T>  0-0<T>  5.56<T> .381<T>  9.93<L.36.1>
+<L.9.1>
+<Z>Team Pitching<T>126  126    0  126 1118      1155  605  530  128  428  780  132<T> 69-57<T> 31<T> 69-57<T>  6.00<T> .256<T>  4.27<C><L.18.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>Individual Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+26 Chase Utley 2b<T>120  510  108  167  342   47  10  36  106   52   3  23   97  54  10  90  180  494<T> .985<T> .327<T> .395<T> .670<L.36.1>
+33 Aaron Rowand cf<T> 94  392   82  128  258   42   5  26   79   27   4  22   60  22   1   0  178    6<T> .994<T> .326<T> .379<T> .658<L.36.1>
+24 Ty Wigginton if<T>  6   29    3    9   12    3   0   0    6    0   0   0    7   1   1   3   12   22<T> .971<T> .310<T> .310<T> .413<L.36.1>
+ 6 Craig Counsell rf<T>105  407   74  119  191   36   3  10   48   39   5   9   64  18   1   0  114    5<T> .991<T> .292<T> .365<T> .469<L.36.1>
+ 5 Pat Burrell lf<T>112  460   88  130  275   37   3  34   95   53   5  21   89  11   4   0  186    6<T> .979<T> .282<T> .366<T> .597<L.36.1>
+22 Gordon Milnes c<T>126  488   82  136  228   33   1  19   56   58   6   6   79  23   6  12  362   73<T> .986<T> .278<T> .366<T> .467<L.36.1>
+ 7 Angel Guillen lf<T> 33  122   21   29   43    8   0   2   13   11   2   3   24   0   0   0    4    0<T>1.000<T> .237<T> .315<T> .352<L.36.1>
+28 Jamie Dick ss<T> 14   48    4   11   15    2   1   0    2    6   1   0    5   0   1   0   13    1<T> .933<T> .229<T> .333<T> .312<L.36.1>
+11 Andy Nelson ss<T>115  424   41   97  131   16   0   6   43   47  10   0   75  21  22  59  178  291<T> .955<T> .228<T> .326<T> .308<L.36.1>
+14 Fuzzy Dunlop lf<T> 37  141   19   32   46    6   1   2   16   14   1   0   24   1   1   0   31    3<T> .971<T> .226<T> .303<T> .326<L.36.1>
+27 P.Polanco 1b<T> 18   70   11   15   27    3   0   3    8    9   1   0   12   3   3   8   78   16<T> .969<T> .214<T> .316<T> .385<L.36.1>
+99 D.Brown cf<T> 54  199   17   36   53    8   0   3   17   25   3   0   34   0   0   0    0    0<T> .000<T> .180<T> .285<T> .266<L.36.1>
+ 9 Paul Nelson 3b<T> 64  235   21   42   59    8   0   3   24   20   1   0   49   7  10   3   31  114<T> .935<T> .178<T> .247<T> .251<L.36.1>
+ 2 Bob Walker c<T> 11   35    6    5    9    0   2   0    2    2   0   1   10   1   0   8    7   21<T>1.000<T> .142<T> .189<T> .257<L.36.1>
+ 8 Oscar Sierra if<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+<L.9.1>
+<Z>Team Batting<T>126 4526  745 1254 2305  340  33 215  726  456  57 132  795 189  79 106 2574 1224<T> .979<T> .277<T> .354<T> .509<ST.24.78.100><L.48.1>
+Selection Orders This Turn<L.48.1>
+Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>   4  38  54  63  50<L.39.1>
+<Z>Shirt Number:<C><T>  22  27  24   9  11   5  33   6  29<T><Z>Bullpen Depth Chart:<C><T>  15  16  10  49   1  13<L.39.1>
+<Z>Batting Order:<C><T>   3   7   2   9   8   5   4   1   6<T><Z>Setup Pitcher:<C><T>  58<L.39.1>
+<T><T><Z>Closing Pitcher:<C><T>  80<L.39.1>
+<Z>Lineup Changes:<C><T>  Pick 26, replacing 24 from game 7 onwards<L.39.1>
+<Z>Pitching Changes:<C><T>  none ordered<L.39.1>
+<Z>Training & Practice:<C><T>  Series 1: Train Skill - POW     Bonus Skill - HIT     Bonus Player - 27     Key Player -  1<L.39.1>
+<T>  Series 2: Train Skill - POW     Bonus Skill - HIT     Bonus Player - 27     Key Player -  1<L.39.1>
+<T>  Series 3: Train Skill - POW     Bonus Skill - POW     Bonus Player - 50     Key Player -  1<L.39.1>
+<ST.24.78><L.9.1>
+<Z>Enforced Selection Changes This Turn<L.48.1>
+<C>All OK, no selection changes required<L.1.1>
+<D><E><DU>
+<BK.Series 1><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 1: Philadelphia Phillies (63-54) at Florida Marlins (53-64)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Guerrero<UC> on mound. Counsell ground out to 1B (2B). Wigginton ground out to 1B (3B). Milnes ground out to 1B (3B).<L.33.1>
+<Z>FM  1st  <C><U>Hernandez<UC> on mound. Harris walked. Walker flied out to C. Sanchez flied out to RF, Harris to 2nd. Walker flied out to SS.<L.33.1>
+<Z>PH  2nd  <C>Rowand doubled to RF. Burrell walked. Roberson struck out. Polanco struck out. Nelson struck out.<L.33.1>
+<Z>FM  2nd  <C>Miller flied out to RF, field save. Diaz doubled to RF. Nelson ground out to 1B (2B). Washington singled, error by 1B, <L.30.1>
+         Diaz to 3rd. Thompson ground out to 1B (2B).<L.33.1>
+<Z>PH  3rd  <C>Nelson struck out. Counsell singled to CF. Wigginton singled to CF, Counsell to 3rd. Wigginton forced out at 2B (3B), <L.30.1>
+         Milnes ground into double play at 1B (2B).<L.33.1>
+<Z>FM  3rd  <C>Harris struck out. Walker flied out to C. Sanchez flied out to LF.<L.33.1>
+<Z>PH  4th  <C>Rowand ground out to 1B (SS, field save). Burrell ground out to 1B (3B). Roberson flied out to RF.<L.33.1>
+<Z>FM  4th  <C>Walker flied out to CF. Miller flied out to C. Diaz struck out.<L.33.1>
+<Z>PH  5th  <C>Polanco flied out to 1B. Nelson flied out to C. Nelson flied out to SS.<L.33.1>
+<Z>FM  5th  <C>Nelson struck out. Washington singled to CF. Washington forced out at 2B (SS), Thompson ground into double play at 1B <L.30.1>
+         (2B).<L.33.1>
+<Z>PH  6th  <C>Counsell walked. Counsell forced out at 2B (SS), Wigginton ground into double play at 1B (2B). <U>Davis<UC> took over on mound. <L.30.1>
+         Milnes struck out.<L.33.1>
+<Z>FM  6th  <C>Harris singled to CF. Walker singled to SS, Harris to 2nd. Sanchez doubled to RF, Harris scored, Walker scored, <Z>FM 2-0<C>. <L.30.1>
+         Walker struck out. Miller walked. Diaz flied out to LF. Nelson ground out to 1B (3B).<L.33.1>
+<Z>PH  7th  <C>Rowand singled to CF. Rowand stole 2nd. Burrell struck out. Roberson flied out to C. Polanco struck out.<L.33.1>
+<Z>FM  7th  <C><U>Thomas<UC> took over on mound. Washington ground out to 1B (SS). Thompson struck out. Harris walked. Walker flied out to RF.<L.33.1>
+<Z>PH  8th  <C>Nelson struck out. Nelson doubled to RF. Counsell flied out to SS. Wigginton singled to CF, Nelson to 3rd. Milnes walked, <L.30.1>
+         Wigginton to 2nd. Rowand singled, error by SS, Nelson scored, Wigginton scored, Milnes to 2nd, <Z>2-2<C>. Burrell doubled to <L.30.1>
+         CF, Milnes scored, Rowand to 3rd, <Z>PH 3-2<C>. Roberson singled, error by SS, Rowand scored, Burrell scored, <Z>PH 5-2<C>. <L.30.1>
+         Roberson stole 2nd. Polanco ground out to 1B (2B).<L.33.1>
+<Z>FM  8th  <C><U>Bastardo<UC> took over on mound. Sanchez doubled to RF. <U>Sierra<UC> pinch hitting at RF. Sierra ground out to 1B (2B). Miller <L.30.1>
+         singled to CF, Sanchez scored, <Z>PH 5-3<C>. Miller forced out at 2B (SS), Diaz ground into double play at 1B (2B).<L.33.1>
+<Z>PH  9th  <C>Nelson walked. Nelson flied out to C. Counsell walked, Nelson to 2nd. Wigginton doubled to RF, Nelson scored, Counsell <L.30.1>
+         scored, <Z>PH 7-3<C>. Milnes flied out to CF. Rowand walked. <U>Abbott<UC> took over on mound. Burrell singled to CF, Wigginton <L.30.1>
+         scored, Rowand to 2nd, <Z>PH 8-3<C>. Roberson walked, Rowand to 3rd, Burrell to 2nd. Polanco ground out to 1B (2B).<L.33.1>
+<Z>FM  9th  <C><U>Guerrero<UC> took over on mound. Nelson ground out to 1B (3B). Washington flied out to C. <U>Sierra<UC> pinch hitting at SS. Sierra <L.30.1>
+         ground out to 1B (SS).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(2,0d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1d)<Z> 0 <C>(1,0) <Z> 5 <C>(3,1) <Z> 3 <C>(2,4) <T><Z>  8<C><L.33.1>
+<Z>Marlins<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0d)<Z> 2 <C>(3,1) <Z> 0 <C>(0,1) <Z> 1 <C>(2,0d)<Z> 0 <C>(0,0) <T><Z>  3<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Marlins Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Craig Counsell rf<T> 3  1  1  0  0  0  0  2  0  0  0  0  0<T>26 Tom Harris 3b<T> 2  1  1  0  0  0  0  2  0  0  1  1  0<L.30.1>
+24 Ty Wigginton 2b<T> 5  2  3  1  0  0  2  0  0  0  0  2  0<T>21 Jeff Walker 1b<T> 4  1  1  0  0  0  0  0  0  0  0  2  0<L.30.1>
+22 Gordon Milnes c <T> 4  1  0  0  0  0  0  1  0  0  1  0  0<T> 2 Juan Sanchez 2b<T> 4  1  2  2  0  0  2  0  0  0  0  2  0<L.30.1>
+33 Aaron Rowand cf<T> 4  1  2  1  0  0  0  1  0  1  0  0  0<T> 4 Greg Walker rf<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 5 Pat Burrell lf<T> 4  1  2  1  0  0  2  1  0  0  1  0  0<T>28 Todd Miller c <T> 3  0  1  0  0  0  1  1  0  0  0  0  0<L.30.1>
+29 Chris Roberson dh<T> 4  0  0  0  0  0  0  1  0  1  1  0  0<T> 9 Angel Diaz cf<T> 4  0  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+27 Placido Polanco 1b<T> 5  0  0  0  0  0  0  0  0  0  2  2  1<T>15 Alan Nelson lf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+11 Andy Nelson ss<T> 3  1  0  0  0  0  0  1  0  0  2  2  0<T> 6 Tom Washington dh<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 9 Paul Nelson 3b<T> 4  1  1  1  0  0  0  0  0  0  1  0  0<T>20 Randy Thompson ss<T> 3  0  0  0  0  0  0  0  0  0  1  1  2<L.30.1>
+<T><T>25 Eddie Sierra rf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<T><T>22 Javier Sierra ss<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>36  8  9  4  0  0  4  7  0  2  8  6  1<T>Totals<T>33  3  7  3  0  0  3  3  0  0  5  6  2<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Marlins Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+23 F.Guerrero<T> 5 2/3    3  0  0  0  2  4  2B    0<T> 4 A.Hernandez<T> 6        5  2  2  0  2  4  3H    0<L.30.1>
+ 7 Bob Davis (l)<T> 3        5  8  3  0  4  4  2H    2<T>15 John Thomas (w)<T> 1        0  0  0  0  1  1  1S    0<L.30.1>
+16 Scott Abbott<T>   1/3    1  0  0  0  1  0  0     0<T>58 A.Bastardo<T> 1        2  1  1  0  0  0  0I    0<L.30.1>
+<T><T>16 Luis Guerrero<T> 1        0  0  0  0  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 2: Philadelphia Phillies (64-54) at Florida Marlins (53-65)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Garcia<UC> on mound. Counsell flied out to LF. Wigginton struck out. Milnes ground out to 1B (2B).<L.33.1>
+<Z>FM  1st  <C><U>Kendrick<UC> on mound. Harris flied out to CF. Walker ground out to 1B (RF). Sanchez walked. Sanchez stole 2nd. Walker <L.30.1>
+         walked. Miller flied out to 2B.<L.33.1>
+<Z>PH  2nd  <C>Rowand flied out to 3B. Burrell flied out to CF. Roberson homered to LF, <Z>PH 1-0<C>. Polanco walked. Nelson struck out.<L.33.1>
+<Z>FM  2nd  <C>Diaz ground out to 1B (3B). Nelson ground out to 1B (3B). Washington struck out.<L.33.1>
+<Z>PH  3rd  <C>Nelson flied out to LF. Counsell flied out to RF. Wigginton doubled to LF. Milnes flied out to SS.<L.33.1>
+<Z>FM  3rd  <C>Thompson struck out. Harris homered to RF, <Z>1-1<C>. Walker flied out to LF. Sanchez ground out to 1B (2B).<L.33.1>
+<Z>PH  4th  <C>Rowand ground out to 1B (SS). Burrell struck out. Roberson flied out to CF.<L.33.1>
+<Z>FM  4th  <C>Walker homered to CF, <Z>FM 2-1<C>. Miller flied out to 1B, field save. Diaz flied out to SS. Nelson flied out to CF, field <L.30.1>
+         save.<L.33.1>
+<Z>PH  5th  <C>Polanco singled to CF. Nelson walked, Polanco to 2nd. Nelson singled to RF, Polanco scored, Nelson to 2nd, <Z>2-2<C>. <L.30.1>
+         Counsell flied out to SS. Wigginton singled to CF, Nelson scored, Nelson to 2nd, <Z>PH 3-2<C>. <U>Abbott<UC> took over on mound. <L.30.1>
+         Milnes struck out. Rowand ground out to 1B (3B).<L.33.1>
+<Z>FM  5th  <C>Washington struck out. Thompson walked. Harris singled to CF, Thompson to 2nd. Walker walked, Thompson to 3rd, Harris to <L.30.1>
+         2nd. Thompson forced out at home (1B), Sanchez ground into double play at 1B (C).<L.33.1>
+<Z>PH  6th  <C>Burrell flied out to CF. Roberson doubled to RF. Polanco walked. Nelson struck out. Nelson walked, Roberson to 3rd, <L.30.1>
+         Polanco to 2nd. Counsell doubled to LF, Roberson scored, Polanco scored, Nelson to 3rd, <Z>PH 5-2<C>. Wigginton ground out <L.30.1>
+         to 1B (SS).<L.33.1>
+<Z>FM  6th  <C>Walker ground out to 1B (C). Miller flied out to C. Diaz flied out to C.<L.33.1>
+<Z>PH  7th  <C>Milnes ground out to 1B (2B). Rowand flied out to RF, field save. Burrell walked. Roberson flied out to LF.<L.33.1>
+<Z>FM  7th  <C><U>Worley<UC> took over on mound. <U>Sierra<UC> pinch hitting at LF. Sierra doubled to CF. Washington walked. <U>Sierra<UC> pinch hitting at <L.30.1>
+         SS. Sierra singled to 3B, Sierra to 3rd, Washington to 2nd. <U>Mathieson<UC> took over on mound. Harris homered to LF, Sierra <L.30.1>
+         scored, Washington scored, Sierra scored, <Z>FM 6-5<C>. Walker flied out to CF. Sanchez ground out to 1B (SS). Walker flied <L.30.1>
+         out to CF.<L.33.1>
+<Z>PH  8th  <C>Polanco struck out. Nelson singled to RF. Nelson struck out. Counsell ground out to 1B (2B, field save).<L.33.1>
+<Z>FM  8th  <C>Miller ground out to 1B (3B). Diaz flied out to LF. Sierra walked. Sierra stole 2nd. Washington struck out.<L.33.1>
+<Z>PH  9th  <C><U>Diaz<UC> took over on mound. Wigginton struck out. Milnes flied out to CF. Rowand flied out to C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 2 <C>(3,1) <Z> 2 <C>(2,2) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <T><Z>  5<C><L.33.1>
+<Z>Marlins<C><T><Z> 0 <C>(0,2) <Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <Z> 1 <C>(1,0) <Z> 0 <C>(1,2d)<Z> 0 <C>(0,0) <Z> 4 <C>(3,1) <Z> 0 <C>(0,1) <Z> x       <T>  6<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Marlins Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Craig Counsell rf<T> 5  0  1  1  0  0  2  0  0  0  0  0  0<T>26 Tom Harris 3b<T> 4  2  3  0  0  2  5  0  0  0  0  0  0<L.30.1>
+24 Ty Wigginton 2b<T> 5  0  2  1  0  0  1  0  0  0  2  0  0<T>21 Jeff Walker 1b<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+22 Gordon Milnes c <T> 5  0  0  0  0  0  0  0  0  0  1  1  0<T> 2 Juan Sanchez 2b<T> 3  0  0  0  0  0  0  1  0  1  0  0  0<L.30.1>
+33 Aaron Rowand cf<T> 5  0  0  0  0  0  0  0  0  0  0  0  0<T> 4 Greg Walker rf<T> 3  1  1  0  0  1  1  1  0  0  0  0  0<L.30.1>
+ 5 Pat Burrell lf<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<T>28 Todd Miller c <T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+29 Chris Roberson dh<T> 4  2  2  1  0  1  1  0  0  0  0  0  0<T> 9 Angel Diaz cf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+27 Placido Polanco 1b<T> 2  2  1  0  0  0  0  2  0  0  1  1  0<T>15 Alan Nelson lf<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+11 Andy Nelson ss<T> 3  1  1  0  0  0  0  1  0  0  2  0  0<T> 6 Tom Washington dh<T> 3  1  0  0  0  0  0  1  0  0  3  0  0<L.30.1>
+ 9 Paul Nelson 3b<T> 3  0  1  0  0  0  1  1  0  0  1  0  0<T>20 Randy Thompson ss<T> 1  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+<T><T>25 Eddie Sierra lf<T> 1  1  1  1  0  0  0  1  0  1  0  0  0<L.30.1>
+<T><T>22 Javier Sierra ss<T> 1  1  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>35  5  8  3  0  1  5  5  0  0  8  2  0<T>Totals<T>29  6  6  1  0  3  6  6  0  2  4  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Marlins Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 1 Ricardo Garcia<T> 4 1/3    5  3  3  1  2  3  2H    2<T>38 Kyle Kendrick<T> 6        3  2  2  2  4  3  2B    0<L.30.1>
+16 Scott Abbott (w)<T> 3 2/3    3  2  2  0  3  4  2C    0<T>49 Vance Worley<T> 0        2  3  3  0  1  0  1H    3<L.30.1>
+18 Julio Diaz (s)<T> 1        0  0  0  0  0  1  0     0<T>10 Scott Mathieson (l)<T> 2        1  1  1  1  1  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 3: Philadelphia Phillies (64-55) at Florida Marlins (54-65)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Young<UC> on mound. Counsell flied out to CF. Wigginton struck out. Milnes struck out.<L.33.1>
+<Z>FM  1st  <C><U>Lidge<UC> on mound. Harris flied out to C. Walker struck out. Sanchez doubled to RF. Walker ground out to 1B (2B).<L.33.1>
+<Z>PH  2nd  <C>Rowand doubled to CF. Burrell struck out. Roberson doubled to CF, Rowand scored, <Z>PH 1-0<C>. Polanco sacrificed to CF, <L.30.1>
+         Roberson to 3rd. Nelson ground out to 1B (3B).<L.33.1>
+<Z>FM  2nd  <C>Miller flied out to CF. Green doubled to LF. Nelson walked. Washington struck out. Thompson singled to CF, Green scored, <L.30.1>
+         Nelson to 2nd, <Z>1-1<C>. Harris singled to LF, Nelson scored, Thompson to 3rd, <Z>FM 2-1<C>. Walker doubled to CF, Thompson <L.30.1>
+         scored, Harris to 3rd, <Z>FM 3-1<C>. Sanchez ground out to 1B (2B).<L.33.1>
+<Z>PH  3rd  <C>Nelson flied out to C. Counsell singled to CF. Wigginton flied out to LF, Counsell to 2nd. Milnes ground out to 1B (3B).<L.33.1>
+<Z>FM  3rd  <C>Walker walked. Miller flied out to RF, field save. Walker stole 2nd. Green singled to LF, Walker to 3rd. Nelson reached <L.30.1>
+         1st, Green forced out at 2B (SS). Washington struck out.<L.33.1>
+<Z>PH  4th  <C>Rowand singled to RF. Burrell singled to CF, Rowand to 2nd. Roberson flied out to CF. Polanco singled to LF, Rowand <L.30.1>
+         scored, Burrell to 2nd, <Z>FM 3-2<C>. Nelson flied out to RF, Burrell to 3rd, Polanco to 2nd. Nelson walked. Counsell ground <L.30.1>
+         out to 1B (SS).<L.33.1>
+<Z>FM  4th  <C>Thompson flied out to LF. Harris walked. Walker singled to CF, Harris to 3rd. Walker forced out at 2B (SS), Sanchez <L.30.1>
+         ground into double play at 1B (2B).<L.33.1>
+<Z>PH  5th  <C>Wigginton ground out to 1B (2B, field save). Milnes flied out to CF. Rowand singled to LF. Rowand stole 2nd. Burrell <L.30.1>
+         singled to CF, Rowand scored, <Z>3-3<C>. <U>Ordonez<UC> took over on mound. Roberson flied out to CF.<L.33.1>
+<Z>FM  5th  <C>Walker struck out. Miller struck out. Green struck out.<L.33.1>
+<Z>PH  6th  <C>Polanco ground out to 1B (3B). Nelson ground out to 1B (2B). Nelson singled to RF. Counsell flied out to CF.<L.33.1>
+<Z>FM  6th  <C>Nelson singled to CF. Washington struck out. Thompson flied out to SS. Harris flied out to 2B.<L.33.1>
+<Z>PH  7th  <C>Wigginton ground out to 1B (SS). Milnes flied out to C. Rowand struck out.<L.33.1>
+<Z>FM  7th  <C><U>Thomas<UC> took over on mound. Walker singled to RF. Sanchez struck out. Walker singled to CF, Walker to 3rd. Walker stole <L.30.1>
+         2nd. Miller ground out to 1B (3B). Green walked. <U>Guerrero<UC> took over on mound. Nelson ground out to 1B (2B).<L.33.1>
+<Z>PH  8th  <C>Burrell homered to RF, <Z>PH 4-3<C>. Roberson walked. Polanco flied out to CF, field save. Roberson stole 2nd. Nelson flied <L.30.1>
+         out to RF. Nelson flied out to CF.<L.33.1>
+<Z>FM  8th  <C>Washington flied out to SS. Thompson doubled to LF. Harris sacrificed to 1B, Thompson to 3rd. Walker struck out.<L.33.1>
+<Z>PH  9th  <C>Counsell walked. Wigginton reached 1st, Counsell forced out at 2B (3B). Milnes struck out. Rowand struck out.<L.33.1>
+<Z>FM  9th  <C><U>Farnsworth<UC> took over on mound. Sanchez singled to RF. Walker reached 1st, Sanchez forced out at 2B (SS). Miller doubled <L.30.1>
+         to LF, Walker to 3rd. Green walked. Nelson struck out. Washington ground out to 1B (C).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 1 <C>(3,1) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 1 <C>(1,1) <Z> 0 <C>(0,1) <T><Z>  4<C><L.33.1>
+<Z>Marlins<C><T><Z> 0 <C>(1,0) <Z> 3 <C>(4,1) <Z> 0 <C>(1,1) <Z> 0 <C>(1,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(2,1) <Z> 0 <C>(1,0) <Z> 0 <C>(2,1) <T><Z>  3<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Marlins Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Craig Counsell rf<T> 4  0  1  0  0  0  0  1  0  0  0  0  0<T>26 Tom Harris 3b<T> 3  0  1  0  0  0  1  1  1  0  0  0  0<L.30.1>
+24 Ty Wigginton 2b<T> 5  0  0  0  0  0  0  0  0  0  1  1  0<T>21 Jeff Walker 1b<T> 5  0  3  1  0  0  1  0  0  0  2  0  0<L.30.1>
+22 Gordon Milnes c <T> 5  0  0  0  0  0  0  0  0  0  2  0  0<T> 2 Juan Sanchez 2b<T> 5  0  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+33 Aaron Rowand cf<T> 5  3  3  1  0  0  0  0  0  1  2  0  0<T> 4 Greg Walker rf<T> 4  0  1  0  0  0  0  1  0  2  1  0  0<L.30.1>
+ 5 Pat Burrell lf<T> 4  1  3  0  0  1  2  0  0  0  1  0  0<T>28 Todd Miller c <T> 5  0  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+29 Chris Roberson dh<T> 3  0  1  1  0  0  1  1  0  1  0  0  0<T> 5 Pete Green cf<T> 3  1  2  1  0  0  0  2  0  0  1  0  0<L.30.1>
+27 Placido Polanco 1b<T> 3  0  1  0  0  0  1  0  1  0  0  1  0<T>15 Alan Nelson lf<T> 4  1  1  0  0  0  0  1  0  0  1  0  0<L.30.1>
+11 Andy Nelson ss<T> 4  0  0  0  0  0  0  0  0  0  0  1  0<T> 6 Tom Washington dh<T> 5  0  0  0  0  0  0  0  0  0  3  0  0<L.30.1>
+ 9 Paul Nelson 3b<T> 3  0  1  0  0  0  0  1  0  0  0  0  0<T>20 Randy Thompson ss<T> 4  1  2  1  0  0  1  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>36  4 10  2  0  1  4  3  1  2  6  3  0<T>Totals<T>38  3 13  5  0  0  3  5  1  2 10  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Marlins Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+17 Mark Young<T> 4 2/3    8  3  3  0  1  3  3B    1<T>54 Brad Lidge<T> 6        8  3  3  0  3  7  3B    0<L.30.1>
+11 Ivan Ordonez (l)<T> 4 1/3    2  1  1  1  2  3  2     0<T>15 John Thomas<T>   2/3    2  0  0  0  1  1  1H    3<L.30.1>
+<T><T>16 Luis Guerrero (w)<T> 1 1/3    1  0  0  0  0  1  1C    0<L.30.1>
+<T><T>80 Jeff Farnsworth (s)<T> 1        2  0  0  0  1  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<BK.Series 2><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 1: Philadelphia Phillies (65-55) at Cincinnati Reds (58-62)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Nelson<UC> on mound. Counsell singled to RF. Counsell forced out at 2B (SS), Wigginton ground into double play at 1B (2B). <L.30.1>
+         Milnes walked. Rowand tripled to RF, Milnes scored, <Z>PH 1-0<C>. Burrell ground out to 1B (2B).<L.33.1>
+<Z>CI  1st  <C><U>Madson<UC> on mound. Wells flied out to LF. Hairston Jr. doubled to CF. Jones struck out. Diaz walked. Gardner walked, <L.30.1>
+         Hairston Jr. to 3rd, Diaz to 2nd. Palmeiro ground out to 1B (2B).<L.33.1>
+<Z>PH  2nd  <C>Roberson singled to LF. Polanco struck out. Nelson sacrificed to CF, Roberson to 2nd. Nelson struck out.<L.33.1>
+<Z>CI  2nd  <C>Abbott flied out to CF. Alonso flied out to 2B. Young flied out to 3B.<L.33.1>
+<Z>PH  3rd  <C>Counsell ground out to 1B (3B). Wigginton ground out to 1B (3B). Milnes walked. Rowand doubled to CF, Milnes scored, <L.30.1>
+         <Z>PH 2-0<C>. Burrell flied out to CF, field save.<L.33.1>
+<Z>CI  3rd  <C>Wells singled to LF. Wells stole 2nd. Hairston Jr. flied out to C. Jones flied out to 1B. Diaz singled to CF, Wells to <L.30.1>
+         3rd. Gardner ground out to 1B (2B).<L.33.1>
+<Z>PH  4th  <C>Roberson flied out to C. Polanco ground out to 1B (SS). Nelson struck out.<L.33.1>
+<Z>CI  4th  <C>Palmeiro ground out to 1B (C). Abbott singled to LF. Alonso struck out. Abbott stole 2nd. Young struck out.<L.33.1>
+<Z>PH  5th  <C>Nelson struck out. Counsell tripled to LF. Wigginton ground out to 1B (SS). Milnes doubled to LF, Counsell scored, <L.30.1>
+         <Z>PH 3-0<C>. Rowand singled to RF, Milnes to 3rd. <U>Alou<UC> took over on mound. Burrell walked, Rowand to 2nd. Roberson ground <L.30.1>
+         out to 1B (3B).<L.33.1>
+<Z>CI  5th  <C>Wells flied out to 1B. Hairston Jr. walked. Jones doubled to LF, Hairston Jr. scored, <Z>PH 3-1<C>. Diaz flied out to 1B. <L.30.1>
+         Gardner flied out to C.<L.33.1>
+<Z>PH  6th  <C>Polanco struck out. Nelson struck out. Nelson flied out to C.<L.33.1>
+<Z>CI  6th  <C>Palmeiro singled to CF. Abbott struck out. Alonso flied out to LF. Palmeiro stole 2nd. Young flied out to C.<L.33.1>
+<Z>PH  7th  <C>Counsell struck out. Wigginton struck out. Milnes singled to LF. Rowand ground out to 1B (SS).<L.33.1>
+<Z>CI  7th  <C><U>Worley<UC> took over on mound. Wells ground out to 1B (SS). Hairston Jr. flied out to C. Jones ground out to 1B (3B).<L.33.1>
+<Z>PH  8th  <C>Burrell singled to CF. Roberson singled, error by 1B, Burrell to 2nd. Polanco reached 1st, Burrell to 3rd, Roberson <L.30.1>
+         forced out at 2B (C). Nelson struck out. Nelson singled to LF, Burrell scored, Polanco to 2nd, <Z>PH 4-1<C>. Counsell ground <L.30.1>
+         out to 1B (2B).<L.33.1>
+<Z>CI  8th  <C>Diaz singled to LF. Gardner reached 1st, Diaz forced out at 2B (SS). Palmeiro reached 1st, Gardner forced out at 2B (3B). <L.30.1>
+         Abbott flied out to CF.<L.33.1>
+<Z>PH  9th  <C>Wigginton ground out to 1B (3B). Milnes ground out to 1B (3B). Rowand singled to RF. Burrell flied out to LF.<L.33.1>
+<Z>CI  9th  <C><U>Bastardo<UC> took over on mound. Alonso ground out to 1B (2B). Young walked. Wells struck out. Hairston Jr. singled, error <L.30.1>
+         by C, Young to 2nd. Jones flied out to CF.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 1 <C>(2,1d)<Z> 0 <C>(1,0) <Z> 1 <C>(1,1) <Z> 0 <C>(0,0) <Z> 1 <C>(3,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <T><Z>  4<C><L.33.1>
+<Z>Reds<C><T><Z> 0 <C>(1,2) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(1,0) <Z> 1 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <T><Z>  1<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Reds Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Craig Counsell rf<T> 5  1  2  0  1  0  0  0  0  0  1  0  0<T> 4 Tom Wells lf<T> 5  0  1  0  0  0  0  0  0  1  1  0  0<L.30.1>
+24 Ty Wigginton 2b<T> 5  0  0  0  0  0  0  0  0  0  1  0  0<T>29 J.Hairston Jr. 3b<T> 4  1  1  1  0  0  0  1  0  0  0  0  0<L.30.1>
+22 Gordon Milnes c <T> 3  2  2  1  0  0  1  2  0  0  0  0  1<T>27 Andy Jones cf<T> 5  0  1  1  0  0  1  0  0  0  1  0  0<L.30.1>
+33 Aaron Rowand cf<T> 5  0  4  1  1  0  2  0  0  0  0  0  0<T> 6 Ivan Diaz rf<T> 3  0  2  0  0  0  0  1  0  0  0  0  0<L.30.1>
+ 5 Pat Burrell lf<T> 4  1  1  0  0  0  0  1  0  0  0  0  0<T> 7 Brett Gardner 2b<T> 3  0  0  0  0  0  0  1  0  0  0  1  0<L.30.1>
+29 Chris Roberson dh<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 1 Orlando Palmeiro ss<T> 4  0  1  0  0  0  0  0  0  1  0  1  0<L.30.1>
+27 Placido Polanco 1b<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>19 Jack Abbott c <T> 4  0  1  0  0  0  0  0  0  1  1  0  0<L.30.1>
+11 Andy Nelson ss<T> 3  0  0  0  0  0  0  0  1  0  3  0  0<T>20 Yonder Alonso 1b<T> 4  0  0  0  0  0  0  0  0  0  1  1  1<L.30.1>
+ 9 Paul Nelson 3b<T> 4  0  1  0  0  0  1  0  0  0  2  0  0<T> 9 Danny Young dh<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>37  4 11  2  2  0  4  3  1  0  9  0  1<T>Totals<T>35  1  7  2  0  0  1  4  0  3  5  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Reds Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+21 Tony Nelson (l)<T> 4 2/3    7  3  3  0  2  4  2H    2<T>63 Ryan Madson (w)<T> 6        6  1  1  0  3  4  2B    0<L.30.1>
+23 Julio Alou<T> 4 1/3    4  1  0  0  1  5  3     0<T>49 Vance Worley<T> 2        1  0  0  0  0  0  2C    0<L.30.1>
+<T><T>58 A.Bastardo (s)<T> 1        0  0  0  0  1  1  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 2: Philadelphia Phillies (66-55) at Cincinnati Reds (58-63)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Diaz<UC> on mound. Counsell singled to LF. Wigginton singled to LF, Counsell to 2nd. Milnes flied out to LF. Rowand singled <L.30.1>
+         to LF, Counsell to 3rd, Wigginton to 2nd. Burrell reached 1st, Counsell forced out at home (3B), Wigginton to 3rd, <L.30.1>
+         Rowand to 2nd. Roberson ground out to 1B (SS).<L.33.1>
+<Z>CI  1st  <C><U>Moyer<UC> on mound. Wells flied out to SS. Hairston Jr. flied out to SS. Jones walked. Diaz flied out to C.<L.33.1>
+<Z>PH  2nd  <C>Polanco flied out to 1B. Nelson singled to CF. Nelson struck out. Counsell tripled to CF, Nelson scored, <Z>PH 1-0<C>. <L.30.1>
+         Wigginton ground out to 1B (C, field save).<L.33.1>
+<Z>CI  2nd  <C>Gardner ground out to 1B (RF). Palmeiro struck out. Abbott flied out to SS.<L.33.1>
+<Z>PH  3rd  <C>Milnes singled to RF. Rowand struck out. Burrell doubled to LF, Milnes scored, <Z>PH 2-0<C>. Roberson singled to LF, Burrell <L.30.1>
+         to 3rd. Roberson stole 2nd. Polanco struck out. Nelson ground out to 1B (3B).<L.33.1>
+<Z>CI  3rd  <C>Alonso flied out to CF. Young singled to LF. Wells tripled to LF, Young scored, <Z>PH 2-1<C>. Hairston Jr. ground out to 1B <L.30.1>
+         (2B). Jones doubled to CF, Wells scored, <Z>2-2<C>. Diaz homered to CF, Jones scored, <Z>CI 4-2<C>. Gardner walked. Palmeiro <L.30.1>
+         walked, Gardner to 2nd. Abbott flied out to CF.<L.33.1>
+<Z>PH  4th  <C>Nelson flied out to C. Counsell singled to CF. Wigginton doubled to RF, Counsell scored, <Z>CI 4-3<C>. Milnes sacrificed to <L.30.1>
+         LF, Wigginton to 3rd. Rowand singled to 3B, Wigginton scored, <Z>4-4<C>. Burrell singled to RF, Rowand to 3rd. Roberson <L.30.1>
+         singled to LF, Rowand scored, Burrell to 3rd, <Z>PH 5-4<C>. <U>Bailey<UC> took over on mound. Polanco ground out to 1B (2B).<L.33.1>
+<Z>CI  4th  <C>Alonso ground out to 1B (2B). Young struck out. Wells doubled to CF. Hairston Jr. flied out to C.<L.33.1>
+<Z>PH  5th  <C>Nelson flied out to SS. Nelson singled to RF. Counsell struck out. Wigginton struck out.<L.33.1>
+<Z>CI  5th  <C>Jones ground out to 1B (SS). Diaz flied out to LF. Gardner ground out to 1B (2B).<L.33.1>
+<Z>PH  6th  <C>Milnes flied out to RF. Rowand singled to LF. Burrell struck out. Roberson ground out to 1B (2B).<L.33.1>
+<Z>CI  6th  <C>Palmeiro struck out. Abbott flied out to SS. Alonso struck out.<L.33.1>
+<Z>PH  7th  <C>Polanco walked. Polanco forced out at 2B (3B), Nelson ground into double play at 1B (2B). Nelson ground out to 1B (C).<L.33.1>
+<Z>CI  7th  <C><U>Thomas<UC> took over on mound. Young singled to LF. Wells singled to CF, Young to 2nd. Hairston Jr. struck out. Jones ground <L.30.1>
+         out to 1B (SS). Diaz flied out to SS.<L.33.1>
+<Z>PH  8th  <C>Counsell flied out to CF. Wigginton struck out. Milnes flied out to LF, field save.<L.33.1>
+<Z>CI  8th  <C><U>Bastardo<UC> took over on mound. Gardner flied out to C. Palmeiro struck out. Abbott struck out.<L.33.1>
+<Z>PH  9th  <C>Rowand flied out to C, field save. Burrell flied out to LF. Roberson flied out to CF.<L.33.1>
+<Z>CI  9th  <C><U>Farnsworth<UC> took over on mound. Alonso flied out to C. Young flied out to LF. Wells ground out to 1B (2B, field save).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(3,0) <Z> 1 <C>(2,0) <Z> 1 <C>(3,0) <Z> 3 <C>(5,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  5<C><L.33.1>
+<Z>Reds<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 4 <C>(4,2) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  4<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Reds Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Craig Counsell rf<T> 5  1  3  0  1  0  1  0  0  0  1  0  0<T> 4 Tom Wells lf<T> 5  1  3  1  1  0  1  0  0  0  0  0  0<L.30.1>
+24 Ty Wigginton 2b<T> 5  1  2  1  0  0  1  0  0  0  2  0  0<T>29 J.Hairston Jr. 3b<T> 4  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+22 Gordon Milnes c <T> 4  1  1  0  0  0  0  0  1  0  0  0  0<T>27 Andy Jones cf<T> 3  1  1  1  0  0  1  1  0  0  0  0  0<L.30.1>
+33 Aaron Rowand cf<T> 5  1  3  0  0  0  1  0  0  0  1  0  0<T> 6 Ivan Diaz rf<T> 4  1  1  0  0  1  2  0  0  0  0  0  0<L.30.1>
+ 5 Pat Burrell lf<T> 5  0  2  1  0  0  1  0  0  0  1  0  0<T> 7 Brett Gardner 2b<T> 3  0  0  0  0  0  0  1  0  0  0  1  0<L.30.1>
+29 Chris Roberson dh<T> 5  0  2  0  0  0  1  0  0  1  0  0  0<T> 1 Orlando Palmeiro ss<T> 3  0  0  0  0  0  0  1  0  0  3  0  0<L.30.1>
+27 Placido Polanco 1b<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<T>19 Jack Abbott c <T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+11 Andy Nelson ss<T> 4  1  1  0  0  0  0  0  0  0  0  0  0<T>20 Yonder Alonso 1b<T> 4  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+ 9 Paul Nelson 3b<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T> 9 Danny Young dh<T> 4  1  2  0  0  0  0  0  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>40  5 15  2  1  0  5  1  1  1  7  0  0<T>Totals<T>34  4  7  2  1  1  4  3  0  0  7  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Reds Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+11 Adrian Diaz (l)<T> 3 2/3   13  5  5  0  0  3  3H    2<T>50 Jamie Moyer (w)<T> 6        5  4  4  1  3  4  3B    0<L.30.1>
+25 Homer Bailey<T> 5 1/3    2  0  0  0  1  4  2     0<T>15 John Thomas<T> 1        2  0  0  0  0  1  1S    0<L.30.1>
+<T><T>58 A.Bastardo<T> 1        0  0  0  0  0  2  1C    0<L.30.1>
+<T><T>80 Jeff Farnsworth (s)<T> 1        0  0  0  0  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 3: Philadelphia Phillies (67-55) at Cincinnati Reds (58-64)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Radford<UC> on mound. Counsell struck out. Wigginton singled to CF. Milnes singled to CF, Wigginton to 2nd. Rowand flied out <L.30.1>
+         to C. Burrell flied out to LF.<L.33.1>
+<Z>CI  1st  <C><U>Hernandez<UC> on mound. Wells flied out to C. Russo struck out. Jones ground out to 1B (3B).<L.33.1>
+<Z>PH  2nd  <C>Roberson flied out to C. Polanco doubled to CF. Nelson struck out. Nelson flied out to C.<L.33.1>
+<Z>CI  2nd  <C>Diaz flied out to 1B. Gardner homered to CF, <Z>CI 1-0<C>. Palmeiro ground out to 1B (3B). Abbott walked. Alonso singled to <L.30.1>
+         RF, Abbott to 2nd. Young flied out to RF.<L.33.1>
+<Z>PH  3rd  <C>Counsell ground out to 1B (2B). Wigginton struck out. Milnes ground out to 1B (SS).<L.33.1>
+<Z>CI  3rd  <C>Wells ground out to 1B (3B). Russo ground out to 1B (2B). Jones ground out to 1B (2B).<L.33.1>
+<Z>PH  4th  <C>Rowand flied out to C. Burrell walked. Roberson flied out to C. Polanco ground out to 1B (2B).<L.33.1>
+<Z>CI  4th  <C>Diaz struck out. Gardner singled to CF. Palmeiro reached 1st, Gardner forced out at 2B (3B). Palmeiro stole 2nd. Abbott <L.30.1>
+         flied out to LF.<L.33.1>
+<Z>PH  5th  <C>Nelson flied out to SS, field save. Nelson flied out to RF. Counsell struck out.<L.33.1>
+<Z>CI  5th  <C>Alonso walked. Young walked, Alonso to 2nd. Wells reached 1st, Alonso to 3rd, Young forced out at 2B (SS). Wells stole <L.30.1>
+         2nd. Russo walked. Jones doubled to CF, Alonso scored, Wells scored, Russo scored, <Z>CI 4-0<C>. Diaz flied out to C. <L.30.1>
+         Gardner ground out to 1B (3B).<L.33.1>
+<Z>PH  6th  <C>Wigginton ground out to 1B (3B). Milnes struck out. Rowand doubled to CF. Burrell flied out to C.<L.33.1>
+<Z>CI  6th  <C>Palmeiro ground out to 1B (2B). Abbott flied out to SS. Alonso ground out to 1B (3B).<L.33.1>
+<Z>PH  7th  <C><U>Herrera<UC> took over on mound. Roberson struck out. Polanco doubled to LF. Nelson walked. Nelson struck out. Counsell <L.30.1>
+         doubled to CF, Polanco scored, Nelson to 3rd, <Z>CI 4-1<C>. Wigginton singled to LF, Nelson scored, Counsell scored, <L.30.1>
+         <Z>CI 4-3<C>. <U>Crespo<UC> took over on mound. Milnes flied out to C.<L.33.1>
+<Z>CI  7th  <C><U>Guerrero<UC> took over on mound. Young doubled to RF. Wells flied out to RF. Russo flied out to C, field save. Jones flied <L.30.1>
+         out to CF.<L.33.1>
+<Z>PH  8th  <C>Rowand flied out to C. Burrell doubled to RF. Roberson struck out. Polanco ground out to 1B (2B).<L.33.1>
+<Z>CI  8th  <C>Diaz singled, error by 2B. Gardner flied out to C. Palmeiro walked, Diaz to 2nd. Abbott singled to LF, Diaz to 3rd, <L.30.1>
+         Palmeiro to 2nd. Alonso singled to 3B, Diaz scored, Palmeiro to 3rd, Abbott to 2nd, <Z>CI 5-3<C>. <U>Mathieson<UC> took over on <L.30.1>
+         mound. Young singled to CF, Palmeiro scored, Abbott scored, Alonso to 3rd, <Z>CI 7-3<C>. Wells singled to CF, Alonso scored, <L.30.1>
+         Young to 2nd, <Z>CI 8-3<C>. Russo reached 1st, Young forced out at 3B (2B), Wells to 2nd. Jones ground out to 1B (2B).<L.33.1>
+<Z>PH  9th  <C>Nelson ground out to 1B (SS). Nelson ground out to 1B (SS). Counsell ground out to 1B (SS).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 3 <C>(3,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <T><Z>  3<C><L.33.1>
+<Z>Reds<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(2,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 3 <C>(1,3) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 4 <C>(4,1) <Z> x       <T>  8<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Reds Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Craig Counsell rf<T> 5  1  1  1  0  0  1  0  0  0  2  0  0<T> 4 Tom Wells lf<T> 5  1  1  0  0  0  1  0  0  1  0  0  0<L.30.1>
+24 Ty Wigginton 2b<T> 4  0  2  0  0  0  2  0  0  0  1  0  1<T> 2 Kevin Russo 3b<T> 4  1  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+22 Gordon Milnes c <T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>27 Andy Jones cf<T> 5  0  1  1  0  0  3  0  0  0  0  0  0<L.30.1>
+33 Aaron Rowand cf<T> 4  0  1  1  0  0  0  0  0  0  0  0  0<T> 6 Ivan Diaz rf<T> 4  1  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 5 Pat Burrell lf<T> 3  0  1  1  0  0  0  1  0  0  0  0  0<T> 7 Brett Gardner 2b<T> 4  1  2  0  0  1  1  0  0  0  0  0  0<L.30.1>
+29 Chris Roberson dh<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T> 1 Orlando Palmeiro ss<T> 3  1  0  0  0  0  0  1  0  1  0  0  0<L.30.1>
+27 Placido Polanco 1b<T> 4  1  2  2  0  0  0  0  0  0  0  0  0<T>19 Jack Abbott c <T> 3  1  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+11 Andy Nelson ss<T> 3  1  0  0  0  0  0  1  0  0  1  0  0<T>20 Yonder Alonso 1b<T> 3  2  2  0  0  0  1  1  0  0  0  0  0<L.30.1>
+ 9 Paul Nelson 3b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T> 9 Danny Young dh<T> 3  0  2  1  0  0  2  1  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>35  3  8  5  0  0  3  2  0  0  8  0  1<T>Totals<T>34  8  9  2  0  1  8  5  0  2  2  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Reds Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 8 Mark Radford (w)<T> 6        4  0  0  0  1  5  2B    0<T> 4 A.Hernandez (l)<T> 6        4  4  4  1  4  2  2B    0<L.30.1>
+ 5 D.Herrera<T>   2/3    3  3  3  0  1  2  1H    1<T>16 Luis Guerrero<T> 1 1/3    3  4  3  0  1  0  1H    3<L.30.1>
+18 Adrian Crespo (s)<T> 2 1/3    1  0  0  0  0  1  1     0<T>10 Scott Mathieson<T>   2/3    2  0  0  0  0  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Series 3><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 1: Los Angeles Dodgers (55-68) at Philadelphia Phillies (67-56)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+LA  1st  <C><U>Kendrick<UC> on mound. Betemit ground out to 1B (2B). Pierre singled to CF. Pierre stole 2nd. Pierre stole 3rd. Dewitt <L.30.1>
+         ground out to 1B (3B). Loney doubled to LF, Pierre scored, <Z>LA 1-0<C>. Furcal flied out to RF.<L.33.1>
+<Z>PH  1st  <C><U>Kuo<UC> on mound. Counsell flied out to CF. Utley flied out to RF. Milnes flied out to RF.<L.33.1>
+<Z>LA  2nd  <C>Martin struck out. Rincon singled to CF. Hu sacrificed to SS, Rincon to 2nd. Gonzalez struck out.<L.33.1>
+<Z>PH  2nd  <C>Rowand flied out to SS. Burrell flied out to CF. Roberson singled to LF. Polanco ground out to 1B (SS).<L.33.1>
+<Z>LA  3rd  <C>Betemit ground out to 1B (SS). Pierre ground out to 1B (2B, field save). Dewitt flied out to RF.<L.33.1>
+<Z>PH  3rd  <C>Nelson singled to 2B. Nelson flied out to SS. Counsell struck out. Utley ground out to 1B (3B).<L.33.1>
+<Z>LA  4th  <C>Loney struck out. Furcal singled, error by 3B. Martin flied out to C. Rincon flied out to 1B.<L.33.1>
+<Z>PH  4th  <C>Milnes singled to RF. Rowand flied out to C. Burrell struck out. Roberson singled to LF, Milnes to 2nd. Polanco ground <L.30.1>
+         out to 1B (2B).<L.33.1>
+<Z>LA  5th  <C>Hu flied out to RF. Gonzalez flied out to 1B. Betemit flied out to CF.<L.33.1>
+<Z>PH  5th  <C>Nelson singled to CF. Nelson flied out to C. Counsell flied out to LF. Utley flied out to LF, field save.<L.33.1>
+<Z>LA  6th  <C>Pierre flied out to CF. Dewitt struck out. Loney singled to LF. Furcal singled to RF, Loney to 3rd. Martin ground out to <L.30.1>
+         1B (2B, field save).<L.33.1>
+<Z>PH  6th  <C>Milnes flied out to CF, field save. Rowand ground out to 1B (3B). <U>Proctor<UC> took over on mound. Burrell struck out.<L.33.1>
+<Z>LA  7th  <C><U>Thomas<UC> took over on mound. Rincon flied out to CF. Hu ground out to 1B (SS). Gonzalez flied out to RF.<L.33.1>
+<Z>PH  7th  <C>Roberson walked. Roberson stole 2nd. Polanco struck out. Nelson struck out. Nelson struck out.<L.33.1>
+<Z>LA  8th  <C>Betemit singled to RF. Pierre struck out. Dewitt struck out. Loney struck out.<L.33.1>
+<Z>PH  8th  <C>Counsell flied out to LF. Utley ground out to 1B (2B). Milnes ground out to 1B (3B).<L.33.1>
+<Z>LA  9th  <C>Furcal flied out to 3B. Martin flied out to RF. <U>Worley<UC> took over on mound. Rincon flied out to C.<L.33.1>
+<Z>PH  9th  <C><U>Schlichting<UC> took over on mound. Rowand walked. Burrell doubled to RF, Rowand scored, <Z>1-1<C>. Burrell stole 3rd. Roberson <L.30.1>
+         ground out to 1B (C). Polanco homered to LF, Burrell scored, <Z>PH 3-1<C>.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Dodgers<C><T><Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <T><Z>  1<C><L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 3 <C>(2,1) <T><Z>  3<C><ST.24.66.90><L.42.1>
+<Z>Dodgers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+24 Wilson Betemit 3b<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 6 Craig Counsell rf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 8 Juan Pierre cf<T> 4  1  1  0  0  0  0  0  0  2  1  0  0<T>26 Chase Utley 2b<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+33 Blake Dewitt lf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>22 Gordon Milnes c <T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 7 James Loney 1b<T> 4  0  2  1  0  0  1  0  0  0  2  0  0<T>33 Aaron Rowand cf<T> 3  1  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+15 Rafael Furcal ss<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 5 Pat Burrell lf<T> 4  1  1  1  0  0  1  0  0  1  2  0  0<L.30.1>
+55 Russell Martin c <T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>29 Chris Roberson dh<T> 3  0  2  0  0  0  0  1  0  1  0  0  0<L.30.1>
+99 Carlos Rincon rf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T>27 Placido Polanco 1b<T> 4  1  1  0  0  1  2  0  0  0  1  0  0<L.30.1>
+12 Chin-Lung Hu dh<T> 2  0  0  0  0  0  0  0  1  0  0  0  0<T>11 Andy Nelson ss<T> 3  0  2  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 9 Rafael Gonzalez 2b<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<T> 9 Paul Nelson 3b<T> 3  0  0  0  0  0  0  0  0  0  1  0  1<L.30.1>
+<L.6.1>
+<Z>Totals<T>33  1  6  1  0  0  1  0  1  2  7  0  0<T>Totals<T>32  3  7  1  0  1  3  2  0  2  6  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Dodgers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+38 Kyle Kendrick<T> 6        5  1  1  0  0  4  3B    0<T>56 Hong-Chih Kuo<T> 5 2/3    5  0  0  0  0  2  2B    0<L.30.1>
+15 John Thomas<T> 2 2/3    1  0  0  0  0  3  1B    0<T> 1 Scott Proctor<T> 2 1/3    0  0  0  0  1  4  0C    0<L.30.1>
+49 Vance Worley (w)<T>   1/3    0  0  0  0  0  0  0     0<T>59 T.Schlichting (l)<T>   1/3    2  3  3  1  1  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 2: Los Angeles Dodgers (55-69) at Philadelphia Phillies (68-56)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+LA  1st  <C><U>Lidge<UC> on mound. Betemit struck out. Pierre struck out. Dewitt flied out to LF.<L.33.1>
+<Z>PH  1st  <C><U>Penny<UC> on mound. Counsell homered to CF, <Z>PH 1-0<C>. Utley doubled to CF. Milnes flied out to CF. Rowand ground out to 1B <L.30.1>
+         (3B). Utley stole 3rd. Burrell ground out to 1B (2B).<L.33.1>
+<Z>LA  2nd  <C>Loney walked. Furcal flied out to RF, field save. Martin reached 1st, Loney forced out at 2B (C). Rincon homered to RF, <L.30.1>
+         Martin scored, <Z>LA 2-1<C>. Hu flied out to 2B.<L.33.1>
+<Z>PH  2nd  <C>Roberson flied out to C, field save. Polanco flied out to CF. Nelson doubled to CF. Nelson flied out to C.<L.33.1>
+<Z>LA  3rd  <C>Gonzalez flied out to C. Betemit ground out to 1B (2B). Pierre ground out to 1B (SS).<L.33.1>
+<Z>PH  3rd  <C>Counsell struck out. Utley ground out to 1B (2B). Milnes doubled to CF. Rowand flied out to LF.<L.33.1>
+<Z>LA  4th  <C>Dewitt struck out. Loney struck out. Furcal ground out to 1B (SS).<L.33.1>
+<Z>PH  4th  <C>Burrell ground out to 1B (SS). Roberson ground out to 1B (SS). Polanco flied out to SS.<L.33.1>
+<Z>LA  5th  <C>Martin singled to CF. Martin forced out at 2B (SS), Rincon ground into double play at 1B (2B). Hu walked. Gonzalez flied <L.30.1>
+         out to SS.<L.33.1>
+<Z>PH  5th  <C>Nelson struck out. Nelson flied out to C. Counsell ground out to 1B (3B).<L.33.1>
+<Z>LA  6th  <C>Betemit struck out. Pierre flied out to LF. Dewitt flied out to SS.<L.33.1>
+<Z>PH  6th  <C>Utley flied out to CF. Milnes flied out to SS. <U>Broxton<UC> took over on mound. Rowand struck out.<L.33.1>
+<Z>LA  7th  <C>Loney flied out to CF. Furcal homered to CF, <Z>LA 3-1<C>. Martin ground out to 1B (SS). <U>Guerrero<UC> took over on mound. Rincon <L.30.1>
+         flied out to C.<L.33.1>
+<Z>PH  7th  <C>Burrell singled to CF. Roberson flied out to RF. Polanco flied out to CF, Burrell to 2nd. Nelson ground out to 1B (2B).<L.33.1>
+<Z>LA  8th  <C>Hu singled to RF. Hu forced out at 2B (SS), Gonzalez ground into double play at 1B (2B). Betemit singled to CF. Pierre <L.30.1>
+         struck out.<L.33.1>
+<Z>PH  8th  <C>Nelson flied out to CF. Counsell flied out to RF. Utley flied out to CF.<L.33.1>
+<Z>LA  9th  <C>Dewitt walked. Loney singled to SS, Dewitt to 2nd. Dewitt to 3rd, Loney forced out at 2B (SS, field save), Furcal ground <L.30.1>
+         into double play at 1B (2B, field save). Martin struck out.<L.33.1>
+<Z>PH  9th  <C><U>Schlichting<UC> took over on mound. Milnes singled to SS. Rowand singled to LF, Milnes to 3rd. Rowand forced out at 2B (1B), <L.30.1>
+         Burrell ground into double play at 1B (2B). Roberson struck out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Dodgers<C><T><Z> 0 <C>(0,0) <Z> 2 <C>(1,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1d)<Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <Z> 0 <C>(2,0d)<Z> 0 <C>(1,1d)<T><Z>  3<C><L.33.1>
+<Z>Phillies<C><T><Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0d)<T><Z>  1<C><ST.24.66.90><L.42.1>
+<Z>Dodgers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+24 Wilson Betemit 3b<T> 4  0  1  0  0  0  0  0  0  0  2  0  0<T> 6 Craig Counsell rf<T> 4  1  1  0  0  1  1  0  0  0  1  0  0<L.30.1>
+ 8 Juan Pierre cf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>26 Chase Utley 2b<T> 4  0  1  1  0  0  0  0  0  1  0  3  0<L.30.1>
+33 Blake Dewitt lf<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<T>22 Gordon Milnes c <T> 4  0  2  1  0  0  0  0  0  0  0  0  0<L.30.1>
+ 7 James Loney 1b<T> 3  0  1  0  0  0  0  1  0  0  1  1  0<T>33 Aaron Rowand cf<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+15 Rafael Furcal ss<T> 4  1  1  0  0  1  1  0  0  0  0  0  0<T> 5 Pat Burrell lf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+55 Russell Martin c <T> 4  1  1  0  0  0  0  0  0  0  1  0  0<T>29 Chris Roberson dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+99 Carlos Rincon rf<T> 3  1  1  0  0  1  2  0  0  0  0  0  0<T>27 Placido Polanco 1b<T> 3  0  0  0  0  0  0  0  0  0  0  3  0<L.30.1>
+12 Chin-Lung Hu dh<T> 2  0  1  0  0  0  0  1  0  0  0  0  0<T>11 Andy Nelson ss<T> 3  0  1  1  0  0  0  0  0  0  1  3  0<L.30.1>
+ 9 Rafael Gonzalez 2b<T> 3  0  0  0  0  0  0  0  0  0  0  1  0<T> 9 Paul Nelson 3b<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>30  3  6  0  0  2  3  3  0  0  7  2  0<T>Totals<T>33  1  7  3  0  1  1  0  0  1  4  9  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Dodgers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+54 Brad Lidge (l)<T> 6 2/3    3  3  3  2  2  5  3B    0<T>31 Brad Penny (w)<T> 5 2/3    4  1  1  1  0  2  2B    0<L.30.1>
+16 Luis Guerrero<T> 2 1/3    3  0  0  0  1  2  2     0<T>51 J.Broxton<T> 2 1/3    1  0  0  0  0  1  1C    0<L.30.1>
+<T><T>59 T.Schlichting (s)<T> 1        2  0  0  0  0  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 19   Week 14 of 18   16/11/12<L.54.1>
+Game 3: Los Angeles Dodgers (56-69) at Philadelphia Phillies (68-57)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+LA  1st  <C><U>Madson<UC> on mound. Betemit struck out. Pierre doubled to CF. Dewitt ground out to 1B (2B). Loney singled to CF, Pierre to <L.30.1>
+         3rd. Furcal singled to CF, Pierre scored, Loney to 2nd, <Z>LA 1-0<C>. Martin flied out to RF, field save.<L.33.1>
+<Z>PH  1st  <C><U>Kershaw<UC> on mound. Counsell walked. Utley struck out. Milnes walked, Counsell to 2nd. Rowand walked, Counsell to 3rd, <L.30.1>
+         Milnes to 2nd. Burrell homered to CF, Counsell scored, Milnes scored, Rowand scored, <Z>PH 4-1<C>. Roberson struck out. <L.30.1>
+         Polanco flied out to CF.<L.33.1>
+<Z>LA  2nd  <C>Rincon struck out. Hu ground out to 1B (LF). Gonzalez ground out to 1B (3B).<L.33.1>
+<Z>PH  2nd  <C>Nelson walked. Nelson flied out to C. Counsell reached 1st, Nelson forced out at 2B (1B). Utley ground out to 1B (SS).<L.33.1>
+<Z>LA  3rd  <C>Betemit struck out. Pierre flied out to C. Dewitt singled to 2B. Loney ground out to 1B (3B).<L.33.1>
+<Z>PH  3rd  <C>Milnes singled to LF. Rowand flied out to CF, Milnes to 2nd. Burrell ground out to 1B (3B). Roberson flied out to SS.<L.33.1>
+<Z>LA  4th  <C>Furcal flied out to LF. Martin walked. Rincon reached 1st, Martin forced out at 2B (3B). Hu flied out to CF.<L.33.1>
+<Z>PH  4th  <C>Polanco ground out to 1B (SS). Nelson flied out to LF. Nelson singled to SS. Counsell singled to LF, Nelson to 3rd. <L.30.1>
+         Counsell stole 2nd. Utley doubled to RF, Nelson scored, Counsell scored, <Z>PH 6-1<C>. Milnes singled to CF, Utley scored, <L.30.1>
+         <Z>PH 7-1<C>. Rowand flied out to SS.<L.33.1>
+<Z>LA  5th  <C>Gonzalez flied out to CF. Betemit flied out to C. Pierre doubled to CF. Dewitt singled to CF, Pierre scored, <Z>PH 7-2<C>. <L.30.1>
+         Loney flied out to LF.<L.33.1>
+<Z>PH  5th  <C><U>Blazek<UC> took over on mound. Burrell flied out to RF. Roberson ground out to 1B (SS). Polanco flied out to RF.<L.33.1>
+<Z>LA  6th  <C>Furcal doubled to RF. Martin sacrificed to LF, Furcal to 3rd. Rincon struck out. Hu struck out.<L.33.1>
+<Z>PH  6th  <C>Nelson walked. Nelson flied out to CF. Counsell struck out. Utley homered to CF, Nelson scored, <Z>PH 9-2<C>. Milnes walked. <L.30.1>
+         Rowand singled to CF, Milnes to 3rd. Burrell singled to 2B, Milnes scored, Rowand to 2nd, <Z>PH 10-2<C>. Roberson flied out <L.30.1>
+         to C.<L.33.1>
+<Z>LA  7th  <C><U>De Jesus<UC> pinch hitting at 2B. De Jesus walked. <U>Thomas<UC> took over on mound. Betemit doubled to LF, De Jesus to 3rd. Pierre <L.30.1>
+         singled to CF, De Jesus scored, Betemit to 3rd, <Z>PH 10-3<C>. Pierre forced out at 2B (SS), Dewitt ground into double play <L.30.1>
+         at 1B (2B). Loney ground out to 1B (SS).<L.33.1>
+<Z>PH  7th  <C>Polanco walked. Nelson reached 1st, Polanco forced out at 2B (3B). Nelson struck out. Counsell singled, error by 1B, <L.30.1>
+         Nelson to 2nd. Utley flied out to C.<L.33.1>
+<Z>LA  8th  <C>Furcal flied out to 1B. Martin flied out to SS. <U>Washington<UC> pinch hitting at RF. Washington ground out to 1B (2B).<L.33.1>
+<Z>PH  8th  <C>Milnes singled to LF. Rowand flied out to RF. Burrell singled to LF, Milnes to 2nd. <U>Alou<UC> took over on mound. Roberson <L.30.1>
+         ground out to 1B (SS, field save). Polanco struck out.<L.33.1>
+<Z>LA  9th  <C>Hu struck out. De Jesus flied out to RF, field save. <U>Worley<UC> took over on mound. Betemit walked. Pierre walked, Betemit <L.30.1>
+         to 2nd. Dewitt flied out to C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Dodgers<C><T><Z> 1 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,2) <T><Z>  3<C><L.33.1>
+<Z>Phillies<C><T><Z> 4 <C>(1,3) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 3 <C>(4,0) <Z> 0 <C>(0,0) <Z> 3 <C>(3,2) <Z> 0 <C>(0,1) <Z> 0 <C>(2,0) <Z> x       <T> 10<C><ST.24.66.90><L.42.1>
+<Z>Dodgers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+24 Wilson Betemit 3b<T> 4  0  1  1  0  0  0  1  0  0  2  0  0<T> 6 Craig Counsell rf<T> 4  2  1  0  0  0  0  1  0  1  1  0  0<L.30.1>
+ 8 Juan Pierre cf<T> 4  2  3  2  0  0  1  1  0  0  0  0  0<T>26 Chase Utley 2b<T> 5  2  2  1  0  1  4  0  0  0  1  1  0<L.30.1>
+33 Blake Dewitt lf<T> 5  0  2  0  0  0  1  0  0  0  0  0  0<T>22 Gordon Milnes c <T> 3  2  3  0  0  0  1  2  0  0  0  0  0<L.30.1>
+ 7 James Loney 1b<T> 4  0  1  0  0  0  0  0  0  0  0  0  1<T>33 Aaron Rowand cf<T> 4  1  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+15 Rafael Furcal ss<T> 4  0  2  1  0  0  1  0  0  0  0  0  0<T> 5 Pat Burrell lf<T> 5  1  3  0  0  1  5  0  0  0  0  0  0<L.30.1>
+55 Russell Martin c <T> 2  0  0  0  0  0  0  1  1  0  0  0  0<T>29 Chris Roberson dh<T> 5  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+99 Carlos Rincon rf<T> 3  0  0  0  0  0  0  0  0  0  2  0  0<T>27 Placido Polanco 1b<T> 4  0  0  0  0  0  0  1  0  0  1  1  0<L.30.1>
+12 Chin-Lung Hu dh<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>11 Andy Nelson ss<T> 2  1  0  0  0  0  0  2  0  0  0  1  0<L.30.1>
+ 9 Rafael Gonzalez 2b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T> 9 Paul Nelson 3b<T> 4  1  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+87 Ivan De Jesus 2b<T> 1  1  0  0  0  0  0  1  0  0  0  0  0<T><L.30.1>
+ 4 Andy Washington rf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>34  3  9  4  0  0  3  4  1  0  6  0  1<T>Totals<T>36 10 11  1  0  2 10  7  0  1  5  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Dodgers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+63 Ryan Madson (w)<T> 6        7  3  3  0  2  5  3B    1<T>25 Clayton Kershaw (l)<T> 4        6  7  7  1  4  2  2H    0<L.30.1>
+15 John Thomas<T> 2 2/3    2  0  0  0  0  1  2B    0<T>63 Chris Blazek<T> 3 1/3    5  3  3  1  3  2  3B    2<L.30.1>
+49 Vance Worley<T>   1/3    0  0  0  0  2  0  1     0<T>21 Orlando Alou<T>   2/3    0  0  0  0  0  1  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Results Summary><P.70><B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB21  Season 19  Week 14 Results   16/11/12<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<ST.27.63.90.126><L.1.1>
+<U>American League<UC><L.48.1>
+<C><Z>Blue Jays 6<C> (11h, 7bb)<T>23 Ortiz (5 2/3, 5r 9h 6bb)<T><Z>RED SOX 8<C> (12h, 3bb)<T> 7 Green (3, 2r 4h 2bb)<L.36.1>
+<Z>Blue Jays 1<C> (4h, 4bb)<T>10 Ramirez (5 1/3, 0r 1h 4bb)<T><Z>RED SOX 4<C> (8h, 4bb)<T>28 League (4 1/3, 3r 6h 2bb)<L.36.1>
+<Z>BLUE JAYS 9<C> (13h, 5bb)<T>20 Matsuzaka (5, 9r 12h 5bb)<T><Z>Red Sox 8<C> (9h, 6bb)<T>32 Purcey (4 2/3, 4r 5h 2bb)<L.36.1>
+<L.9.1>
+<Z>ORIOLES 3<C> (11h, 4bb)<T>40 Wang (6, 2r 7h 3bb)<T><Z>Yankees 2<C> (5h, 2bb)<T>70 Brown (7 2/3, 1r 4h 1bb)<L.36.1>
+<Z>Orioles 8<C> (9h, 3bb)<T>66 Mitchell (8, 2r 4h 2bb)<T><Z>YANKEES 11<C> (11h, 8bb)<T>40 Washington (3 2/3, 4r 5h 5bb)<L.36.1>
+<Z>Orioles 2<C> (3h, 2bb)<T>43 Janssen (9, 2r 3h 2bb)<T><Z>YANKEES 9<C> (14h, 2bb)<T>14 Guerrero (7, 5r 9h 1bb)<L.36.1>
+<L.9.1>
+<Z>Tigers 3<C> (3h, 4bb)<T>12 Benitez (9, 3r 3h 4bb)<T><Z>INDIANS 9<C> (11h, 2bb)<T>23 Elway (5 1/3, 3r 6h 1bb)<L.36.1>
+<Z>Tigers 1<C> (8h, 5bb)<T>25 Brazoban (5 1/3, 1r 5h 4bb)<T><Z>INDIANS 7<C> (10h, 2bb)<T>26 Ordonez (5 1/3, 0r 4h 1bb)<L.36.1>
+<Z>TIGERS 3<C> (11h, 4bb)<T>20 Lee (3 2/3, 2r 7h 0bb)<T><Z>Indians 1<C> (4h, 1bb)<T>15 Castillo (6, 1r 4h 1bb)<L.36.1>
+<L.9.1>
+<Z>BREWERS 11<C> (14h, 3bb)<T> 1 Gonzalez (2 1/3, 7r 7h 1bb)<T><Z>White Sox 4<C> (10h, 0bb)<T>79 Gallardo (5 2/3, 1r 5h 0bb)<L.36.1>
+<Z>BREWERS 6<C> (14h, 4bb)<T> 5 Adenhart (4 1/3, 3r 6h 3bb)<T><Z>White Sox 2<C> (5h, 0bb)<T>37 Weaver (9, 2r 5h 0bb)<L.36.1>
+<Z>BREWERS 11<C> (17h, 4bb)<T>26 Wilson (2 1/3, 3r 3h 2bb)<T><Z>White Sox 2<C> (7h, 1bb)<T> 5 Roberts (5 2/3, 2r 3h 1bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 4<C> (9h, 3bb)<T> 8 Crespo (6, 2r 5h 1bb)<T><Z>RAYS 5<C> (8h, 6bb)<T>54 Mazzaro (3, 4r 5h 1bb)<T>12 inn<L.36.1>
+<Z>ATHLETICS 5<C> (14h, 5bb)<T> 6 Lee (3 2/3, 3r 8h 2bb)<T><Z>Rays 0<C> (2h, 3bb)<T>24 Mendoza (9, 0r 2h 3bb)<L.36.1>
+<Z>ATHLETICS 2<C> (6h, 1bb)<T> 1 Rivera (5, 1r 5h 0bb)<T><Z>Rays 0<C> (5h, 2bb)<T>64 Magnuson (3 1/3, 0r 3h 2bb)<L.36.1>
+<L.9.1>
+<Z>Rangers 4<C> (9h, 4bb)<T>11 Russell (5 2/3, 3r 6h 2bb)<T><Z>ANGELS 12<C> (16h, 5bb)<T>80 Gutsie (5, 8r 10h 3bb)<L.36.1>
+<Z>RANGERS 7<C> (12h, 3bb)<T> 7 Palmeiro (5 1/3, 4r 7h 2bb)<T><Z>Angels 4<C> (13h, 2bb)<T>14 White (5, 1r 7h 2bb)<L.36.1>
+<Z>Rangers 8<C> (9h, 9bb)<T>23 Robinson (5 2/3, 6r 3h 5bb)<T><Z>ANGELS 10<C> (16h, 3bb)<T>21 Lopez (5, 2r 6h 2bb)<T>11 inn<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Blue Jays 0<C> (3h, 5bb)<T>21 Jackson (7, 0r 3h 5bb)<T><Z>TIGERS 10<C> (13h, 5bb)<T>27 Halladay (3, 4r 5h 3bb)<L.36.1>
+<Z>Blue Jays 2<C> (7h, 3bb)<T>22 Castillo (3 1/3, 2r 3h 1bb)<T><Z>TIGERS 5<C> (8h, 5bb)<T>22 Alou (4 2/3, 5r 7h 3bb)<L.36.1>
+<Z>Blue Jays 2<C> (9h, 3bb)<T>23 Elway (5 1/3, 1r 4h 2bb)<T><Z>TIGERS 3<C> (7h, 4bb)<T> 7 Green (5, 2r 5h 3bb)<L.36.1>
+<L.9.1>
+<Z>Orioles 1<C> (6h, 3bb)<T>26 Keisler (6 1/3, 0r 5h 3bb)<T><Z>RANGERS 2<C> (8h, 0bb)<T>19 Cabrera (6, 2r 7h 0bb)<L.36.1>
+<Z>Orioles 3<C> (6h, 7bb)<T> 5 Foster (5, 3r 5h 5bb)<T><Z>RANGERS 5<C> (13h, 4bb)<T>70 Brown (4 1/3, 4r 9h 2bb)<L.36.1>
+<Z>ORIOLES 4<C> (11h, 3bb)<T>80 Gutsie (6 1/3, 1r 6h 0bb)<T><Z>Rangers 3<C> (6h, 5bb)<T>40 Washington (3, 3r 4h 4bb)<L.36.1>
+<L.9.1>
+<Z>BREWERS 2<C> (8h, 0bb)<T>14 Delgado (7 1/3, 1r 5h 0bb)<T><Z>Athletics 1<C> (9h, 7bb)<T>71 Ramirez (4 2/3, 0r 5h 4bb)<T>12 inn<L.36.1>
+<Z>BREWERS 18<C> (16h, 7bb)<T>65 Figueroa (3 2/3, 10r 8h 4bb)<T><Z>Athletics 12<C> (16h, 2bb)<T>79 Gallardo (5 1/3, 5r 6h 0bb)<L.36.1>
+<Z>BREWERS 7<C> (9h, 4bb)<T>22 Cruz (3 1/3, 3r 0h 4bb)<T><Z>Athletics 4<C> (14h, 4bb)<T>37 Weaver (4 2/3, 1r 6h 3bb)<L.36.1>
+<L.9.1>
+<Z>Red Sox 4<C> (10h, 5bb)<T> 5 Miller (4 1/3, 3r 6h 1bb)<T><Z>INDIANS 6<C> (10h, 2bb)<T>22 Gonzalez (6 1/3, 5r 7h 2bb)<L.36.1>
+<Z>Red Sox 2<C> (4h, 0bb)<T> 7 Wells (6 2/3, 2r 4h 0bb)<T><Z>INDIANS 5<C> (11h, 3bb)<T> 3 Ordonez (5, 5r 10h 3bb)<L.36.1>
+<Z>RED SOX 11<C> (16h, 7bb)<T>12 Benitez (4 1/3, 7r 11h 4bb)<T><Z>Indians 7<C> (13h, 2bb)<T> 7 Zink (7 1/3, 7r 12h 2bb)<L.36.1>
+<L.9.1>
+<Z>Yankees 0<C> (5h, 2bb)<T>48 Moseley (8 1/3, 0r 5h 2bb)<T><Z>ANGELS 9<C> (17h, 3bb)<T>44 Marte (2 2/3, 7r 9h 2bb)<L.36.1>
+<Z>Yankees 2<C> (6h, 4bb)<T>34 Chaffee (7, 2r 4h 4bb)<T><Z>ANGELS 4<C> (8h, 3bb)<T>30 Robertson (7 1/3, 4r 8h 3bb)<L.36.1>
+<Z>Yankees 6<C> (11h, 2bb)<T>11 Russell (6 2/3, 4r 7h 2bb)<T><Z>ANGELS 7<C> (13h, 5bb)<T>40 Wang (5, 6r 10h 3bb)<L.36.1>
+<L.9.1>
+<Z>White Sox 8<C> (14h, 5bb)<T>23 Thompson (1 2/3, 1r 3h 1bb)<T><Z>RAYS 10<C> (14h, 7bb)<T>16 Santana (4 2/3, 4r 8h 1bb)<L.36.1>
+<Z>White Sox 2<C> (6h, 1bb)<T>12 Cryer (6, 2r 4h 1bb)<T><Z>RAYS 9<C> (15h, 6bb)<T> 2 Rodriguez (2, 7r 6h 4bb)<L.36.1>
+<Z>White Sox 2<C> (9h, 2bb)<T> 8 Crespo (5 2/3, 2r 6h 1bb)<T><Z>RAYS 3<C> (9h, 2bb)<T> 1 Gonzalez (3 2/3, 1r 4h 1bb)<T>10 inn<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Athletics 3<C> (6h, 2bb)<T>28 League (5 2/3, 2r 3h 2bb)<T><Z>BLUE JAYS 4<C> (8h, 3bb)<T>54 Mazzaro (5 1/3, 4r 6h 2bb)<L.36.1>
+<Z>ATHLETICS 8<C> (12h, 4bb)<T>32 Purcey (4 2/3, 6r 6h 2bb)<T><Z>Blue Jays 2<C> (8h, 1bb)<T>24 Mendoza (8, 2r 8h 1bb)<L.36.1>
+<Z>ATHLETICS 6<C> (14h, 6bb)<T>27 Halladay (3 2/3, 4r 6h 3bb)<T><Z>Blue Jays 4<C> (4h, 3bb)<T>64 Magnuson (7 2/3, 3r 2h 3bb)<L.36.1>
+<L.9.1>
+<Z>Tigers 2<C> (7h, 0bb)<T>14 Guerrero (7 2/3, 2r 7h 0bb)<T><Z>ORIOLES 10<C> (12h, 6bb)<T>26 Ordonez (3, 9r 9h 3bb)<L.36.1>
+<Z>Tigers 2<C> (10h, 3bb)<T>19 Cabrera (6 1/3, 1r 5h 1bb)<T><Z>ORIOLES 6<C> (13h, 4bb)<T>15 Castillo (3, 2r 7h 1bb)<L.36.1>
+<Z>TIGERS 7<C> (14h, 3bb)<T>70 Brown (5 1/3, 5r 7h 2bb)<T><Z>Orioles 4<C> (9h, 0bb)<T>21 Jackson (8 2/3, 4r 9h 0bb)<L.36.1>
+<L.9.1>
+<Z>Rangers 0<C> (3h, 2bb)<T> 5 Roberts (9, 0r 3h 2bb)<T><Z>BREWERS 2<C> (6h, 2bb)<T>14 White (5 2/3, 2r 6h 2bb)<L.36.1>
+<Z>Rangers 4<C> (6h, 7bb)<T>71 Ramirez (6 2/3, 0r 2h 4bb)<T><Z>BREWERS 5<C> (11h, 2bb)<T>21 Lopez (5, 5r 8h 0bb)<L.36.1>
+<Z>Rangers 6<C> (8h, 1bb)<T>79 Gallardo (5 1/3, 3r 4h 1bb)<T><Z>BREWERS 20<C> (21h, 3bb)<T>26 Keisler (5, 11r 12h 2bb)<L.36.1>
+<L.9.1>
+<Z>RAYS 11<C> (11h, 4bb)<T>23 Ortiz (5, 7r 6h 3bb)<T><Z>Red Sox 7<C> (13h, 3bb)<T> 6 Lee (4 1/3, 3r 6h 2bb)<L.36.1>
+<Z>Rays 6<C> (10h, 4bb)<T>10 Ramirez (5, 5r 5h 3bb)<T><Z>RED SOX 8<C> (6h, 3bb)<T> 1 Rivera (5, 6r 5h 2bb)<L.36.1>
+<Z>Rays 1<C> (4h, 2bb)<T>20 Matsuzaka (9, 1r 4h 2bb)<T><Z>RED SOX 3<C> (6h, 5bb)<T>23 Thompson (4, 0r 2h 2bb)<L.36.1>
+<L.9.1>
+<Z>Indians 1<C> (9h, 3bb)<T>66 Mitchell (6, 1r 7h 0bb)<T><Z>YANKEES 5<C> (9h, 1bb)<T>25 Brazoban (4, 5r 6h 1bb)<L.36.1>
+<Z>Indians 4<C> (12h, 3bb)<T>43 Janssen (5, 0r 6h 2bb)<T><Z>YANKEES 6<C> (8h, 2bb)<T>20 Lee (7 1/3, 3r 4h 1bb)<L.36.1>
+<Z>Indians 3<C> (10h, 3bb)<T>44 Marte (6, 2r 8h 2bb)<T><Z>YANKEES 5<C> (12h, 1bb)<T> 5 Miller (4 2/3, 3r 6h 0bb)<L.36.1>
+<L.9.1>
+<Z>ANGELS 6<C> (9h, 3bb)<T> 5 Adenhart (3 1/3, 4r 5h 3bb)<T><Z>White Sox 1<C> (7h, 2bb)<T> 7 Palmeiro (8 1/3, 1r 7h 1bb)<L.36.1>
+<Z>ANGELS 4<C> (11h, 1bb)<T>26 Wilson (5 1/3, 3r 9h 1bb)<T><Z>White Sox 3<C> (6h, 3bb)<T>23 Robinson (6, 3r 6h 3bb)<L.36.1>
+<Z>ANGELS 16<C> (22h, 5bb)<T>16 Santana (4 1/3, 5r 8h 2bb)<T><Z>White Sox 3<C> (8h, 2bb)<T>48 Moseley (7 2/3, 2r 6h 2bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<L.1.1>
+<D><E><P>
+<B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB21  Season 19  Week 14 Results   16/11/12<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<U>National League<UC><L.48.1>
+<C><Z>PHILLIES 8<C> (9h, 7bb)<T>23 Guerrero (5 2/3, 0r 3h 2bb)<T><Z>Marlins 3<C> (7h, 3bb)<T> 4 Hernandez (6, 2r 5h 2bb)<L.36.1>
+<Z>Phillies 5<C> (8h, 5bb)<T> 1 Garcia (4 1/3, 3r 5h 2bb)<T><Z>MARLINS 6<C> (6h, 6bb)<T>38 Kendrick (6, 2r 3h 4bb)<L.36.1>
+<Z>PHILLIES 4<C> (10h, 3bb)<T>17 Young (4 2/3, 3r 8h 1bb)<T><Z>Marlins 3<C> (13h, 5bb)<T>54 Lidge (6, 3r 8h 3bb)<L.36.1>
+<L.6.1>
+<Z>NATIONALS 4<C> (10h, 6bb)<T>30 Sanchez (4 2/3, 2r 5h 4bb)<T><Z>Mets 0<C> (5h, 5bb)<T>28 Lopez (7 1/3, 0r 4h 4bb)<L.36.1>
+<Z>Nationals 0<C> (1h, 2bb)<T>26 Ibanez (9, 0r 1h 2bb)<T><Z>METS 5<C> (8h, 2bb)<T>44 Burnett (5 2/3, 5r 7h 2bb)<L.36.1>
+<Z>Nationals 1<C> (6h, 2bb)<T> 4 Harris (5 2/3, 1r 4h 1bb)<T><Z>METS 4<C> (12h, 2bb)<T>58 Eischen (5 1/3, 3r 7h 1bb)<L.36.1>
+<L.6.1>
+<Z>REDS 6<C> (11h, 4bb)<T>45 Gallagher (4 2/3, 5r 6h 4bb)<T><Z>Cubs 2<C> (6h, 1bb)<T> 8 Radford (6 2/3, 0r 3h 1bb)<L.36.1>
+<Z>REDS 2<C> (10h, 1bb)<T>18 Prior (5 2/3, 2r 8h 1bb)<T><Z>Cubs 1<C> (5h, 0bb)<T>15 Cruz (9, 1r 5h 0bb)<L.36.1>
+<Z>Reds 0<C> (2h, 1bb)<T>58 Ascanio (7 2/3, 0r 2h 1bb)<T><Z>CUBS 1<C> (1h, 3bb)<T>17 Cueto (8, 0r 0h 0bb)<L.36.1>
+<L.6.1>
+<Z>Astros 3<C> (9h, 5bb)<T> 5 Hernandez (5, 2r 3h 4bb)<T><Z>PIRATES 6<C> (8h, 2bb)<T>37 Albers (5 2/3, 6r 7h 1bb)<L.36.1>
+<Z>ASTROS 9<C> (15h, 6bb)<T>19 Jones (3, 4r 7h 2bb)<T><Z>Pirates 5<C> (12h, 2bb)<T> 8 Hernandez (6 2/3, 4r 10h 2bb)<L.36.1>
+<Z>ASTROS 5<C> (13h, 1bb)<T>15 Rincon (2 1/3, 5r 9h 1bb)<T><Z>Pirates 4<C> (10h, 6bb)<T>14 Walsh (4 2/3, 3r 5h 3bb)<L.36.1>
+<L.6.1>
+<Z>Dodgers 6<C> (16h, 2bb)<T>38 Guillen (5, 2r 9h 0bb)<T><Z>DIAMONDBACKS 7<C> (10h, 4bb)<T>44 Saito (4 1/3, 6r 6h 2bb)<L.36.1>
+<Z>DODGERS 10<C> (12h, 4bb)<T>12 Perez (2, 5r 3h 2bb)<T><Z>Diamondbacks 4<C> (10h, 2bb)<T>56 Kuo (4 2/3, 2r 7h 1bb)<L.36.1>
+<Z>Dodgers 3<C> (10h, 3bb)<T> 5 Roberts (2, 3r 7h 2bb)<T><Z>DIAMONDBACKS 12<C> (11h, 5bb)<T>31 Penny (4, 8r 6h 4bb)<L.36.1>
+<L.6.1>
+<Z>GIANTS 3<C> (4h, 5bb)<T>24 Peguero (3, 3r 4h 4bb)<T><Z>Rockies 1<C> (4h, 1bb)<T>13 Brooks (5 1/3, 1r 4h 1bb)<L.36.1>
+<Z>Giants 0<C> (2h, 1bb)<T>13 Benitez (9, 0r 2h 1bb)<T><Z>ROCKIES 3<C> (8h, 4bb)<T>11 Lee (2, 1r 2h 2bb)<L.36.1>
+<Z>Giants 1<C> (5h, 2bb)<T>34 Belisle (7 1/3, 1r 5h 2bb)<T><Z>ROCKIES 10<C> (17h, 4bb)<T>15 Wilson (5, 3r 7h 3bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>PHILLIES 4<C> (11h, 3bb)<T>21 Nelson (4 2/3, 3r 7h 2bb)<T><Z>Reds 1<C> (7h, 4bb)<T>63 Madson (6, 1r 6h 3bb)<L.36.1>
+<Z>PHILLIES 5<C> (15h, 1bb)<T>11 Diaz (3 2/3, 5r 13h 0bb)<T><Z>Reds 4<C> (7h, 3bb)<T>50 Moyer (6, 4r 5h 3bb)<L.36.1>
+<Z>Phillies 3<C> (8h, 2bb)<T> 8 Radford (6, 0r 4h 1bb)<T><Z>REDS 8<C> (9h, 5bb)<T> 4 Hernandez (6, 4r 4h 4bb)<L.36.1>
+<L.6.1>
+<Z>NATIONALS 3<C> (5h, 4bb)<T> 4 Weaver (3 1/3, 0r 1h 0bb)<T><Z>Giants 2<C> (8h, 4bb)<T>38 Majewski (5, 2r 4h 3bb)<L.36.1>
+<Z>NATIONALS 12<C> (12h, 6bb)<T>13 Brooks (4 2/3, 3r 5h 2bb)<T><Z>Giants 1<C> (9h, 0bb)<T>88 Crespo (5 2/3, 0r 6h 0bb)<L.36.1>
+<Z>Nationals 4<C> (8h, 3bb)<T>11 Lee (3, 3r 3h 0bb)<T><Z>GIANTS 5<C> (5h, 4bb)<T>28 Lopez (5 1/3, 5r 3h 4bb)<L.36.1>
+<L.6.1>
+<Z>ASTROS 5<C> (10h, 4bb)<T>25 Kershaw (4, 4r 6h 3bb)<T><Z>Dodgers 1<C> (6h, 1bb)<T>19 Mitchell (7, 0r 5h 0bb)<L.36.1>
+<Z>Astros 4<C> (11h, 5bb)<T>50 Hernandez (5, 3r 5h 2bb)<T><Z>DODGERS 5<C> (13h, 2bb)<T> 6 Cordero (8 2/3, 4r 10h 1bb)<T>12 inn<L.36.1>
+<Z>ASTROS 5<C> (8h, 2bb)<T>44 Saito (5 2/3, 4r 4h 2bb)<T><Z>Dodgers 0<C> (3h, 0bb)<T> 1 Gervacio (9, 0r 3h 0bb)<L.36.1>
+<L.6.1>
+<Z>MARLINS 9<C> (16h, 5bb)<T> 5 Samardzija (4, 7r 11h 1bb)<T><Z>Cubs 3<C> (7h, 2bb)<T> 3 Anderson (8 2/3, 3r 5h 2bb)<L.36.1>
+<Z>MARLINS 7<C> (11h, 5bb)<T>54 Mateo (4 2/3, 4r 6h 4bb)<T><Z>Cubs 1<C> (6h, 4bb)<T>27 Sierra (4 1/3, 1r 6h 2bb)<L.36.1>
+<Z>MARLINS 8<C> (9h, 4bb)<T>45 Gallagher (5, 5r 5h 1bb)<T><Z>Cubs 2<C> (11h, 2bb)<T>23 Guerrero (4 1/3, 2r 7h 0bb)<L.36.1>
+<L.6.1>
+<Z>METS 4<C> (11h, 3bb)<T> 4 Masterson (3 2/3, 2r 6h 0bb)<T><Z>Rockies 0<C> (4h, 1bb)<T> 3 Guzman (9, 0r 4h 1bb)<L.36.1>
+<Z>METS 10<C> (17h, 3bb)<T>29 Chacin (6 1/3, 2r 6h 3bb)<T><Z>Rockies 7<C> (11h, 6bb)<T>27 Roberts (5, 2r 4h 3bb)<L.36.1>
+<Z>Mets 1<C> (6h, 4bb)<T>24 Peguero (6, 0r 4h 4bb)<T><Z>ROCKIES 6<C> (16h, 2bb)<T>30 Sanchez (4 2/3, 3r 8h 1bb)<L.36.1>
+<L.6.1>
+<Z>Pirates 2<C> (10h, 1bb)<T>42 Chico (7 1/3, 1r 8h 1bb)<T><Z>DIAMONDBACKS 5<C> (7h, 2bb)<T>28 Wilson (4, 5r 5h 1bb)<L.36.1>
+<Z>Pirates 1<C> (6h, 4bb)<T>21 Howry (3 2/3, 1r 4h 1bb)<T><Z>DIAMONDBACKS 5<C> (9h, 1bb)<T>14 Garcia (4 2/3, 5r 7h 0bb)<L.36.1>
+<Z>PIRATES 4<C> (6h, 7bb)<T>38 Guillen (5 2/3, 0r 3h 4bb)<T><Z>Diamondbacks 2<C> (5h, 0bb)<T> 5 Hernandez (6 2/3, 1r 3h 0bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>Dodgers 1<C> (6h, 0bb)<T>38 Kendrick (6, 1r 5h 0bb)<T><Z>PHILLIES 3<C> (7h, 2bb)<T>56 Kuo (5 2/3, 0r 5h 0bb)<L.36.1>
+<Z>DODGERS 3<C> (6h, 3bb)<T>54 Lidge (6 2/3, 3r 3h 2bb)<T><Z>Phillies 1<C> (7h, 0bb)<T>31 Penny (5 2/3, 1r 4h 0bb)<L.36.1>
+<Z>Dodgers 3<C> (9h, 4bb)<T>63 Madson (6, 3r 7h 2bb)<T><Z>PHILLIES 10<C> (11h, 7bb)<T>25 Kershaw (4, 7r 6h 4bb)<L.36.1>
+<L.6.1>
+<Z>REDS 5<C> (11h, 3bb)<T>44 Burnett (4 2/3, 4r 7h 2bb)<T><Z>Nationals 3<C> (8h, 2bb)<T>15 Cruz (4 1/3, 2r 4h 2bb)<L.36.1>
+<Z>Reds 2<C> (8h, 4bb)<T>58 Eischen (4, 2r 7h 2bb)<T><Z>NATIONALS 4<C> (8h, 5bb)<T>17 Cueto (4 1/3, 2r 4h 3bb)<T>11 inn<L.36.1>
+<Z>REDS 6<C> (9h, 3bb)<T>38 Majewski (6 1/3, 4r 7h 1bb)<T><Z>Nationals 3<C> (7h, 5bb)<T>21 Nelson (2, 1r 3h 1bb)<L.36.1>
+<L.6.1>
+<Z>GIANTS 4<C> (9h, 1bb)<T>37 Albers (6 2/3, 4r 7h 1bb)<T><Z>Astros 2<C> (11h, 5bb)<T>15 Wilson (4 2/3, 2r 7h 5bb)<L.36.1>
+<Z>Giants 4<C> (9h, 3bb)<T> 8 Hernandez (7 2/3, 4r 8h 3bb)<T><Z>ASTROS 6<C> (5h, 5bb)<T> 4 Weaver (3 1/3, 0r 1h 1bb)<L.36.1>
+<Z>Giants 2<C> (9h, 3bb)<T>14 Walsh (7, 2r 9h 3bb)<T><Z>ASTROS 7<C> (10h, 6bb)<T>13 Brooks (5, 2r 4h 2bb)<L.36.1>
+<L.6.1>
+<Z>DIAMONDBACKS 6<C> (9h, 3bb)<T> 1 Garcia (4, 6r 7h 1bb)<T><Z>Marlins 3<C> (6h, 3bb)<T>12 Perez (6 2/3, 2r 4h 1bb)<L.36.1>
+<Z>Diamondbacks 5<C> (10h, 0bb)<T>17 Young (6 1/3, 2r 4h 0bb)<T><Z>MARLINS 6<C> (10h, 4bb)<T> 5 Roberts (3 1/3, 3r 5h 2bb)<L.36.1>
+<Z>DIAMONDBACKS 9<C> (12h, 3bb)<T> 3 Anderson (4 2/3, 7r 10h 2bb)<T><Z>Marlins 5<C> (13h, 2bb)<T>42 Chico (3 1/3, 3r 6h 1bb)<L.36.1>
+<L.6.1>
+<Z>CUBS 5<C> (8h, 2bb)<T>26 Ibanez (5 2/3, 1r 4h 1bb)<T><Z>Mets 4<C> (12h, 6bb)<T>18 Prior (4 1/3, 3r 9h 3bb)<L.36.1>
+<Z>CUBS 8<C> (12h, 4bb)<T> 4 Harris (4 2/3, 4r 6h 1bb)<T><Z>Mets 1<C> (5h, 2bb)<T>58 Ascanio (5 2/3, 1r 3h 2bb)<L.36.1>
+<Z>Cubs 0<C> (1h, 1bb)<T> 3 Guzman (9, 0r 1h 1bb)<T><Z>METS 2<C> (2h, 2bb)<T> 5 Samardzija (5, 2r 2h 2bb)<L.36.1>
+<L.6.1>
+<Z>ROCKIES 6<C> (15h, 2bb)<T>19 Jones (4 2/3, 3r 10h 1bb)<T><Z>Pirates 3<C> (11h, 2bb)<T>13 Benitez (3 1/3, 2r 4h 1bb)<L.36.1>
+<Z>ROCKIES 7<C> (12h, 2bb)<T>15 Rincon (3 2/3, 5r 5h 1bb)<T><Z>Pirates 4<C> (8h, 3bb)<T>34 Belisle (4 1/3, 2r 5h 2bb)<L.36.1>
+<Z>Rockies 1<C> (7h, 1bb)<T>28 Wilson (5 2/3, 0r 3h 0bb)<T><Z>PIRATES 11<C> (14h, 7bb)<T> 4 Masterson (4, 5r 7h 2bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<L.1.1>
+<D><E><DU>
+<BK.Standings><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21  Season 19  Week 14 Standings   16/11/12<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.44.75.95.102.107><L.48.1>
+<C><Z>American League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Baltimore Orioles (Simon Richards)<T> 70  56  .555   -   4-5   L 1<T> 703   561   33-27<T>37-29<T> 58<T>32,356  10  67  13  109<L.33.1>
+New York Yankees (Craig Sandry)<T> 69  57  .547   1   5-4   W 3<T> 692   628   40-23<T>29-34<T> 17<T>32,194   4  63   3  100<L.33.1>
+Boston Red Sox (Mark J Hall)<T> 56  70  .444  14   5-4   W 2<T> 559   626   35-31<T>21-39<T>137<T>30,234  10 189   9   87<L.33.1>
+Toronto Blue Jays (Dave Biggs)<T> 33  93  .261  37   2-7   L 2<T> 455   789   18-45<T>15-48<T>211<T>27,028   9 197  12   98<L.33.1>
+<L.9.1>
+<Z>American League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Milwaukee Brewers (Marc Rivoira)<T> 95  31  .753   -   9-0   W18<T> 829   451   50-10<T>45-21<T> 69<T>43,784  15 174  11  109<L.33.1>
+Cleveland Indians (Dave Pinder)<T> 52  74  .412  43   4-5   L 4<T> 495   658   33-33<T>19-41<T>786<T>29,649  11 194  14   86<L.33.1>
+Chicago White Sox (Tony Legg)<T> 44  82  .349  51   0-9   L12<T> 500   728   22-41<T>22-41<T>362<T>28,519   8 200  14   95<L.33.1>
+Detroit Tigers (James Ross)<T> 39  87  .309  56   5-4   W 1<T> 437   770   24-39<T>15-48<T>399<T>27,833   9 193  12   90<L.33.1>
+<L.9.1>
+<Z>American League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Los Angeles Angels (Patrick Lee)<T> 98  28  .777   -   8-1   W 7<T> 820   405   49-14<T>49-14<T>  7<T>44,423  10  78  10  113<L.33.1>
+Oakland Athletics (Rob Crowther)<T> 85  41  .674  13   4-5   W 2<T> 781   471   48-15<T>37-26<T> 28<T>42,784  10 107  10  112<L.33.1>
+Texas Rangers (Stefan Toth)<T> 79  47  .626  19   3-6   L 4<T> 823   597   39-21<T>40-26<T>104<T>34,418  11 128  12  117<L.33.1>
+Tampa Bay Rays (Dan Ehlers)<T> 47  79  .373  51   5-4   L 2<T> 496   799   31-35<T>16-44<T>643<T>28,943  14 193  14   92<L.33.1>
+<L.9.1>
+<Z>National League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Washington Nationals (Troy Dilworth)<T> 77  49  .611   -   4-5   L 1<T> 660   471   45-15<T>32-34<T> 47<T>33,466  15  96  12  105<L.33.1>
+Philadelphia Phillies (Alan Milnes)<T> 69  57  .547   8   6-3   W 1<T> 745   605   39-24<T>30-33<T> 26<T>32,199  10 191  10   96<L.33.1>
+Florida Marlins (Darren Norman)<T> 58  68  .460  19   5-4   L 1<T> 595   665   32-34<T>26-34<T>202<T>30,529   7 193  11   99<L.33.1>
+New York Mets (Daniel Papantoniou)<T> 53  73  .420  24   5-4   W 1<T> 530   628   33-30<T>20-43<T>790<T>29,790  11 193  14   89<L.33.1>
+<L.9.1>
+<Z>National League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Houston Astros (Ian Gibson)<T> 66  60  .523   -   6-3   W 2<T> 654   587   33-27<T>33-33<T> 37<T>31,736  13  58   9  101<L.33.1>
+Cincinnati Reds (Keiron Peskett)<T> 61  65  .484   5   5-4   W 1<T> 562   548   33-30<T>28-35<T>  4<T>30,969  10  74  11  124<L.33.1>
+Pittsburgh Pirates (Greg Salmon)<T> 52  74  .412  14   3-6   W 1<T> 459   678   27-36<T>25-38<T>765<T>29,649  12 196  14   86<L.33.1>
+Chicago Cubs (David Trice)<T> 51  75  .404  15   3-6   L 1<T> 439   633   30-36<T>21-39<T>300<T>29,512   9 196  12   98<L.33.1>
+<L.9.1>
+<Z>National League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Arizona Diamondbacks (Jon Gick)<T> 90  36  .714   -   6-3   W 1<T> 842   478   52-14<T>38-22<T> 25<T>42,752  12  94  14  111<L.33.1>
+Colorado Rockies (Paul Beaumont)<T> 84  42  .666   6   5-4   L 1<T> 766   456   43-20<T>41-22<T> 99<T>34,620  15 166  14  108<L.33.1>
+Los Angeles Dodgers (Mark Cooper)<T> 56  70  .444  34   3-6   L 1<T> 586   690   33-30<T>23-40<T>622<T>30,234  11 196  14   92<L.33.1>
+San Francisco Giants (Marc Bradbrook)<T> 28  98  .222  62   3-6   L 2<T> 397   903   16-44<T>12-54<T>367<T>32,507   5  86   6   86<L.33.1>
+<L.9.1>
+<Z>GM: Danny McConnell    Version: 4.4 (2009 Rules)    Deadline: Thursday 29th November<L.39.1>
+Postal Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND.  Tel: 020 8325 2448.  Fax: 020 8249 1819.<L.39.1>
+Email Address: danny@pbmsports.com      Info Website: www.pbmsports.com      Active Website: www.softsim.co.uk<L.39.1>
+Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty. Cheques made payable to: Ab Initio Games<L.39.1>
+<U>Messages<UC><C><L.36.1>
+<L.6.1>
+<Z>Late <C> With apologies, out of office all day Wednesday, Thursday and Friday, so catching up Saturday.<L.31.1>
+<L.12.1>
+<Z>FA Work <C> Is now pretty much full time, in terms of hours, and effectively pays my bills, with the PBM stuff being spare<L.31.1>
+time. Please understand that games processing may well be delayed, though equally if I am working at home on a deadline day, I<L.31.1>
+need to crack on with running turns at 9am, and not be waiting around for stragglers. I'll do my best to keep www.pbmsports.com<L.31.1>
+updated if I am running late, and I may have to revisit whether Wednesday/Thursday deadlines should be moved to Friday so I can<L.31.1>
+get them done over the weekend, but that's something for consideration later this summer. Watch this space.<L.31.1>
+<L.12.1>
+<Z>9am Deadline <C> Can I remind everyone that orders should be here by 9am (which for postal users means the previous day's<L.31.1>
+post). A few people seem to be dribbling in email orders during the morning (or afternoon) so be warned, they will miss the boat.<L.31.1>
+<L.12.1>
+<Z>Late Email Results <C> If you think results are late, please make sure you wait until the following morning before chasing up<L.31.1>
+results. First step is to check out the Latest News at www.pbmsports.com - if I am running late I'll post a notice there (be aware<L.31.1>
+you may need to refresh the page, in case you get an old copy from Cache memory). Please don't chase me up because you know your<L.31.1>
+mate got his half an hour ago, because whilst most emails are "instant", often they do get delayed for a few hours and it does<L.31.1>
+take a while to send them all out (I spread them out to avoid triggering firewalls).<L.31.1>
+<L.12.1>
+Equally however, if it's the next morning and you've not had results, and there's nothing on www.pbmsports.com saying I've had a<L.31.1>
+problem, then please chase me up. If it hasn't shown 12 hours later, odds are it won't, and probably some firewall or spam filter<L.31.1>
+somewhere has gobbled it (and they do appear to do so without pattern). I'd rather you ended up with two copies than none.<L.31.1>
+<L.12.1>
+<Z>PDF Reports <C> Emailed game reports are available for all games here. The standard format is a PDF file - Adobe Reader is free<L.31.1>
+to download (see www.pbmsports.com for a link) and you can open your reports with one click of the mouse and you can either view<L.31.1>
+them on screen, or print them as you wish. You don't need to worry about formatting or printer drivers. The text format for<L.31.1>
+reports is available but I only expect people will want to do so if they use the text file for other purposes (such as exporting<L.31.1>
+the listings into software produced yourself). If you've not tried email reports before, try them out - it really is very easy. <L.31.1>
+<L.1.1>
+<P>
+<L>
+<L.1.1>
+<BK.Actions><B>GAMEPLAN BASEBALL  MLB21   Week 14 Actions Report   16/11/12<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.33.66.99><L.48.1>
+Next Week: Regular Season Week 15<L.36.1>
+<C>Yankees at Blue Jays (9-3)<T>Red Sox at Orioles (6-6)<T>White Sox at Tigers (9-3)<T>Indians at Brewers (4-8)<T><L.33.1>
+Angels at Athletics (7-5)<T>Rays at Rangers (2-10)<T>Mets at Phillies (4-8)<T>Marlins at Nationals (4-8)<T><L.33.1>
+Pirates at Reds (6-6)<T>Cubs at Astros (7-5)<T>Rockies at Dodgers (10-2)<T>Diamondbacks at Giants (11-1)<T><L.33.1>
+<L.6.1>
+Blue Jays at White Sox (3-6)<T>Orioles at Rays (7-2)<T>Tigers at Angels (0-9)<T>Red Sox at Brewers (6-3)<T><L.33.1>
+Yankees at Athletics (4-5)<T>Indians at Rangers (4-5)<T>Phillies at Pirates (6-3)<T>Nationals at Diamondbacks (6-3)<T><L.33.1>
+Reds at Rockies (2-7)<T>Marlins at Astros (6-3)<T>Mets at Dodgers (5-4)<T>Cubs at Giants (6-3)<T><L.33.1>
+<L.6.1>
+Rangers at Red Sox (6-3)<T>Brewers at Yankees (8-1)<T>Athletics at Indians (8-1)<T>Angels at Blue Jays (9-0)<T><L.33.1>
+White Sox at Orioles (4-5)<T>Rays at Tigers (6-3)<T>Giants at Marlins (2-7)<T>Astros at Mets (8-1)<T><L.33.1>
+Dodgers at Cubs (4-5)<T>Rockies at Phillies (6-3)<T>Pirates at Nationals (0-9)<T>Diamondbacks at Reds (7-2)<T><L.33.1>
+<L.6.1>
+<ST.33.66.99><L.3.1>
+<Z>Injuries and Holdouts<C><L.36.1>
+70 Todd Brown (BA) 6 games<T>20 D.Matsuzaka (BR) 14 games<T>30 Brett Cecil (TO) 6 games<T>41 Michael Pineda (NY) 11 games<L.33.1>
+27 Jose Guillen (CW) 6 games<T>11 Jon Garden (DT) 10 games<T>16 Drew Henson (CL) 9 games<T> 4 Edgar Ortiz (MB) 13 games<L.33.1>
+35 Casey Kotchman (LG) 13 games<T> 5 Hideki Matsui (OA) 13 games<T>15 Jack Thompson (TB) 6 games<T>24 Carlos Cruz (TR) 9 games<L.33.1>
+58 Joey Eischen (WN) 13 games<T>26 Tom Harris (FM) 6 games<T> 5 Pat Burrell (PH) 13 games<T> 3 Mario Guzman (NM) 6 games<L.33.1>
+29 Alex Guillen (PI) 6 games<T>21 Felix Pie (CU) 9 games<T> 8 F.Hernandez (HA) 8 games<T> 3 Tom Brown (CI) holdout<L.33.1>
+29 J.Hairston Jr. (CI) 11 games<T> 6 Chance Douglass (CO) 6 games<T>33 Blake Dewitt (LA) 14 games<T> 1 Tony Dixon (AD) 6 games<L.33.1>
+27 Nick Johnson (SF) 6 games<T><L.36.1>
+<ST.27.53.79.105><L.6.1>
+<ST.27.66.93><L.6.1>
+<Z>Trading List<C>    no players listed for trade this turn<L.36.1>
+<L.12.1>
+<Z>Free Agent Signings<C><L.36.1>
+Milwaukee Brewers sign FA 137, 17 Joe Roberts (ex-MB) for 91 LP to replace 1 Tony Thomas, net cost 44 LP<L.33.1>
+Oakland Athletics sign FA 108, 2 Rafael Ibanez for 30 LP to replace 10 Joe Thomas, net cost 18 LP<L.33.1>
+Washington Nationals sign FA 112 (2B), 48 Danny Espinosa for 30 LP to replace 21 Brian Washington, net cost 18 LP<L.33.1>
+Philadelphia Phillies sign FA 122 (IF), 8 Oscar Sierra for 35 LP to replace 29 Chris Roberson, net cost 9 LP<L.33.1>
+Houston Astros sign FA 120 (RF), 9 David Green (ex-CO) for 34 LP to replace 15 Angel Pagan, net cost 16 LP<L.33.1>
+Arizona Diamondbacks sign FA 114, 13 Jeremy Accardo (ex-AD) for 29 LP to replace 66 Stephen Drew, net cost 5 LP<L.33.1>
+<L.6.1>
+<Z>Free Agent Pool<C>  (+ indicates player will be deleted after next turn's bids have been processed)<ST.30.66.96><L.36.1>
+<Z>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<T>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<C><L.36.1>
+101  <T>Bat S  6 SPD  LF   3 12  8  25 LP<T>102  <T>Bat R  7 FLD  1B   5  7  8  25 LP<L.33.1>
+103  <T>Bat L  6 POW  3B   6  6  7  26 LP<T>104  <T>Bat R  5 FLD  2B   3 15  8  17 LP<L.33.1>
+105  <T>Bat S  7 POW  RF   7  9  8  31 LP<T>106  Tom Lee (ex-BR)<T>Pit L  8 STA       2  7  9  28 LP<L.33.1>
+107  Danny Walker (ex-HA)<T>Pit L  8 QUI       8  5  9  21 LP<T>108  Joe Thomas (ex-OA)<T>Pit L  6 ACC       7  7  7  24 LP<L.33.1>
+109  <T>Bat L  6 HIT  1B   5  9  7  24 LP<T>110  Richard Davis (ex-OA)<T>Pit L  7 ACC      11  3  7  17 LP<L.33.1>
+111  Jon Williams (ex-WN)<T>Pit L  8 ACC      14  4  8  27 LP<T>112  Brian Washington (ex-WN)<T>Pit R  7 QUI       1 13  9  24 LP<L.33.1>
+113  <T>Cat L  6 SPD   C   3  8  7  26 LP<T>114  Stephen Drew (ex-AD)<T>Bat L  7 FLD  SS   1 13  9  20 LP<L.33.1>
+115  <T>Bat R  6 HIT  LF   2 18  9  21 LP<T>116  <T>Pit R  8 ACC       2 14 10  43 LP<L.33.1>
+117  <T>Pit R  7 CON       3 12  9  36 LP<T>118  <T>Bat S  5 POW  OF   6  8  6  18 LP<L.33.1>
+119  <T>Bat R  7 HIT  OF   1 11  9  24 LP<T>120  Angel Pagan (ex-HA)<T>Bat S  7 POW  RF  10  1  7  36 LP<L.33.1>
+121  <T>Pit L  6 STA       5  9  7  26 LP<T>122  Chris Roberson (ex-PH)<T>Bat R  9 POW  CF   6  9 10  53 LP<L.33.1>
+123  <T>Pit R  6 CON       1 16  9  17 LP<T>124  Trevor Reckling (ex-LG)<T>Pit R  6 CON       3 13  8  14 LP<L.33.1>
+125  <T>Pit R  7 ACC       3  7  8  30 LP<T>126+ Boris Del Potro (ex-MB)<T>Cat L  5 HIT   C   3 13  7  15 LP<L.33.1>
+127  David Washington (ex-BA)<T>Pit L  9 CON       8  4  9  41 LP<T>128  Matt Mitchell (ex-CU)<T>Pit R  7 CON       3  9  8  19 LP<L.33.1>
+130  Dustin Pedroia (ex-BR)<T>Cat L  8 HIT   C   6  6  9  45 LP<T>132  Jeff Hamilton (ex-AD)<T>Pit L  8 QUI      10  4  8  27 LP<L.33.1>
+135  Jacoby Ellsbury (ex-BR)<T>Bat R  8 HIT  LF   5  8  9  29 LP<T>137  Tony Thomas (ex-MB)<T>Cat R  5 HIT   C   R 16  8  13 LP<L.33.1>
+139+ Rafael Sierra (ex-AD)<T>Cat R  7 POW   C   5  4  7  19 LP<T>142  Phil Hughes (ex-NY)<T>Pit R  7 QUI       5  8  8  27 LP<L.33.1>
+143  Jose Guillen (ex-MB)<T>Pit R  9 ACC       4  8 10  51 LP<T>147  Pil Joon Jang (ex-HA)<T>Pit R  6 ACC       3 12  8  15 LP<L.33.1>
+<L.1.1>
+<D><E><DU>
+<BK.League Stats><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21  Regular Season 19 Team Stats   Week 14   16/11/12<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<B>American League<ST.25.90.98.102.110.116><L.48.1>
+<Z>Team Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+Milwaukee Brewers<T>126  126   15  126 1143 2/3  1068  451  385   85  365  923  100<T> 95-31<T> 33<T>  6.52<T> .237<T>  3.03<L.33.1>
+Los Angeles Angels<T>126  126   23  126 1128 2/3  1011  405  392   65  338  829   97<T> 98-28<T> 36<T>  6.54<T> .229<T>  3.13<L.33.1>
+Oakland Athletics<T>126  126   15  126 1141      1026  471  443  112  370  843   83<T> 85-41<T> 20<T>  6.16<T> .230<T>  3.49<L.33.1>
+Baltimore Orioles<T>126  126    9  126 1115      1136  561  522  146  382  790  105<T> 70-56<T> 30<T>  5.67<T> .253<T>  4.21<L.33.1>
+<L.6.1>
+Boston Red Sox<T>126  126   25  126 1134      1225  626  551  132  404  816  102<T> 56-70<T> 19<T>  4.44<T> .264<T>  4.37<L.33.1>
+Texas Rangers<T>126  126    2  126 1124      1183  597  554  131  429  773  138<T> 79-47<T> 39<T>  6.59<T> .259<T>  4.44<L.33.1>
+New York Yankees<T>126  126   18  126 1114 1/3  1163  628  569  133  398  794  111<T> 69-57<T> 24<T>  5.59<T> .258<T>  4.60<L.33.1>
+Cleveland Indians<T>126  126    6  126 1123 1/3  1211  658  589  145  433  777  169<T> 52-74<T> 28<T>  3.97<T> .264<T>  4.72<L.33.1>
+<L.6.1>
+Chicago White Sox<T>126  126    1  126 1114 1/3  1306  728  634  152  446  705  121<T> 44-82<T> 26<T>  4.04<T> .280<T>  5.12<L.33.1>
+Tampa Bay Rays<T>126  126    2  126 1129 2/3  1327  799  680  168  447  812  166<T> 47-79<T> 27<T>  3.95<T> .281<T>  5.42<L.33.1>
+Detroit Tigers<T>126  126    1  126 1099 1/3  1322  770  675  168  492  708  157<T> 39-87<T> 23<T>  3.58<T> .286<T>  5.53<L.33.1>
+Toronto Blue Jays<T>126  126    1  126 1103      1306  789  688  177  505  677  160<T> 33-93<T> 20<T>  3.71<T> .282<T>  5.61<L.33.1>
+<L.6.1>
+<L.6.1>
+American League Average<T>126  126    9  126 1122 1/3  1190  623  556  134  417  787  125<T> 63-62<T> 27<T>  5.07<T> .261<T>  4.46<ST.25.107.113.119.125><L.48.1>
+<Z>Team Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+Los Angeles Angels<T>126 4591  820 1395 2477  463  50 173  793  438  76 207  778 249  40 122 2557 1231<T> .989<T> .303<T> .379<T> .539<L.33.1>
+Oakland Athletics<T>126 4651  781 1372 2323  384  33 167  760  450  57 169  769 269  41 119 2580 1233<T> .989<T> .294<T> .368<T> .499<L.33.1>
+Milwaukee Brewers<T>126 4628  829 1359 2491  381  50 217  799  429  53 165  760 224  89  98 2508 1162<T> .976<T> .293<T> .364<T> .538<L.33.1>
+Texas Rangers<T>126 4557  823 1284 2255  371  45 170  797  468  62 177  808 230  73 106 2599 1179<T> .981<T> .281<T> .360<T> .494<L.33.1>
+<L.6.1>
+Baltimore Orioles<T>126 4546  703 1278 2308  323  37 211  683  423  59 140  780 244  70 101 2555 1158<T> .981<T> .281<T> .354<T> .507<L.33.1>
+New York Yankees<T>126 4455  692 1197 2070  291  27 176  661  462  56 100  750 224  87 107 2549 1222<T> .977<T> .268<T> .348<T> .464<L.33.1>
+Boston Red Sox<T>126 4465  559 1143 1908  283  28 142  544  375  59 118  778 200 114 113 2586 1245<T> .971<T> .255<T> .325<T> .427<L.33.1>
+Cleveland Indians<T>126 4437  495 1114 1749  302  36  87  475  399  52  67  845 223  99 109 2593 1232<T> .974<T> .251<T> .323<T> .394<L.33.1>
+<L.6.1>
+Tampa Bay Rays<T>126 4447  496 1106 1702  275  39  81  465  384  51  85  781 179 116  89 2577 1279<T> .970<T> .248<T> .318<T> .382<L.33.1>
+Toronto Blue Jays<T>126 4434  455 1099 1657  289  31  69  435  364  41  79  822 194 120  97 2632 1260<T> .970<T> .247<T> .313<T> .373<L.33.1>
+Chicago White Sox<T>126 4462  500 1099 1664  289  30  72  477  400  46 132  802 230 110 116 2638 1255<T> .972<T> .246<T> .317<T> .372<L.33.1>
+Detroit Tigers<T>126 4297  437 1008 1563  288  21  75  415  381  54  85  824 199 102 105 2590 1291<T> .974<T> .234<T> .308<T> .363<L.33.1>
+<L.6.1>
+<L.6.1>
+American League Average<T>126 4497  632 1204 2010  328  35 136  608  414  55 127  791 222  88 106 2580 1228<T> .977<T> .267<T> .340<T> .446<L.48.1>
+<B>National League<ST.25.90.98.102.110.116><L.48.1>
+<Z>Team Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+Washington Nationals<T>126  126   17  126 1125 1/3  1118  471  424   76  327  884   66<T> 77-49<T> 29<T>  5.28<T> .248<T>  3.39<L.33.1>
+Colorado Rockies<T>126  126    9  126 1124 2/3  1074  456  424   89  393  888  101<T> 84-42<T> 32<T>  6.13<T> .241<T>  3.39<L.33.1>
+Arizona Diamondbacks<T>126  126    7  126 1128 1/3  1041  478  431  105  377  812  109<T> 90-36<T> 30<T>  6.72<T> .235<T>  3.44<L.33.1>
+Cincinnati Reds<T>126  126    7  126 1123      1144  548  488   89  343  912   94<T> 61-65<T> 32<T>  4.50<T> .253<T>  3.91<L.33.1>
+<L.6.1>
+Houston Astros<T>126  126   25  126 1129      1250  587  513   90  329  830   97<T> 66-60<T> 16<T>  5.21<T> .269<T>  4.09<L.33.1>
+Philadelphia Phillies<T>126  126    0  126 1118      1155  605  530  128  428  780  132<T> 69-57<T> 31<T>  6.00<T> .256<T>  4.27<L.33.1>
+New York Mets<T>126  126    3  126 1112 1/3  1218  628  553  127  448  722  125<T> 53-73<T> 23<T>  4.29<T> .267<T>  4.47<L.33.1>
+Pittsburgh Pirates<T>126  126    0  126 1125 1/3  1244  678  574  105  444  830  115<T> 52-74<T> 27<T>  3.67<T> .269<T>  4.59<L.33.1>
+<L.6.1>
+Florida Marlins<T>126  126    0  126 1136      1245  665  582  119  451  777  103<T> 58-68<T> 24<T>  4.71<T> .267<T>  4.61<L.33.1>
+Chicago Cubs<T>126  126    0  126 1110 2/3  1173  633  571  136  410  791  113<T> 51-75<T> 27<T>  3.56<T> .260<T>  4.63<L.33.1>
+Los Angeles Dodgers<T>126  126    1  126 1114 1/3  1267  690  593  127  404  836  134<T> 56-70<T> 31<T>  4.73<T> .274<T>  4.79<L.33.1>
+San Francisco Giants<T>126  126    5  126 1091 1/3  1344  903  732  238  547  685  181<T> 28-98<T> 17<T>  3.27<T> .291<T>  6.04<L.33.1>
+<L.6.1>
+<L.6.1>
+National League Average<T>126  126    6  126 1119 2/3  1189  611  534  119  408  812  114<T> 62-63<T> 26<T>  4.84<T> .261<T>  4.29<ST.25.107.113.119.125><L.48.1>
+<Z>Team Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+Arizona Diamondbacks<T>126 4606  842 1357 2497  411  45 213  808  404  57 202  828 222  67 111 2573 1198<T> .982<T> .294<T> .362<T> .542<L.33.1>
+Colorado Rockies<T>126 4568  766 1335 2252  403  47 140  732  430  55 138  763 168  58 111 2486 1215<T> .984<T> .292<T> .364<T> .492<L.33.1>
+Philadelphia Phillies<T>126 4526  745 1254 2305  340  33 215  726  456  57 132  795 189  79 106 2574 1224<T> .979<T> .277<T> .354<T> .509<L.33.1>
+Washington Nationals<T>126 4499  660 1215 2062  306  44 151  621  442  69 151  775 215  78  93 2492 1122<T> .978<T> .270<T> .349<T> .458<L.33.1>
+<L.6.1>
+Houston Astros<T>126 4538  654 1219 1965  335  24 121  627  442  52  98  768 188  98 104 2557 1261<T> .974<T> .268<T> .343<T> .433<L.33.1>
+Los Angeles Dodgers<T>126 4493  586 1195 1852  292  31 101  545  402  51  84  793 172 119 100 2507 1184<T> .968<T> .265<T> .336<T> .412<L.33.1>
+Cincinnati Reds<T>126 4473  562 1162 1858  331  31 101  532  396  36 126  793 199  79 105 2457 1141<T> .978<T> .259<T> .327<T> .415<L.33.1>
+Florida Marlins<T>126 4526  595 1172 1834  337  44  79  564  423  55 106  800 229  98 110 2631 1242<T> .975<T> .258<T> .333<T> .405<L.33.1>
+<L.6.1>
+New York Mets<T>126 4426  530 1125 1709  319  23  73  499  408  58  86  846 188  99  99 2615 1253<T> .975<T> .254<T> .329<T> .386<L.33.1>
+Pittsburgh Pirates<T>126 4422  459 1064 1610  272  29  72  437  392  49  62  838 156 119  89 2546 1190<T> .969<T> .240<T> .312<T> .364<L.33.1>
+Chicago Cubs<T>126 4342  439 1006 1558  257  23  83  418  369  36  99  866 168 107 102 2541 1159<T> .971<T> .231<T> .299<T> .358<L.33.1>
+San Francisco Giants<T>126 4343  397  999 1448  253  17  54  373  373  34  71  832 148 150  76 2589 1242<T> .962<T> .230<T> .298<T> .333<L.33.1>
+<L.6.1>
+<L.6.1>
+National League Average<T>126 4480  602 1175 1908  321  32 116  573  411  50 112  808 186  95 100 2547 1202<T> .975<T> .262<T> .334<T> .425<L.1.1>
+<D><E><P>
+<BK.Batting Leaders><P.70><ST.30.107.113.119.125><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21  Season 19 Batting Leaders  Week 14  16/11/12<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+American League Leaders<T>  G   AB    R    H   TB  2B 3B  HR  RBI  BB  SA  SB  SO  FS  DP Er   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<L.39.1>
+<C> 7 Ramon Ortiz (BA, cf)<T>108  456   98  <Z>184<C>  <Z>380<C>  53  7  43  115  55   6  31  50  34   0  2  265    4<T> .992<T> .403<T> .479<T> .833<L.33.1>
+ 5 Hideki Matsui (OA, lf)<T> 99  424  109  162  357  47  8  <Z>44<C>  126  43   9  23  50  21   2  0  174    6<T>1.000<T> .382<T> .458<T> .841<L.33.1>
+ 8 Matt Stairs (TO, lf)<T>105  422   85  155  301  58 11  22   70  37   4  27  61  21   2  2  140   26<T> .988<T> .367<T> .427<T> .713<L.33.1>
+28 Carlos Gomez (MB, rf)<T>108  435  106  159  294  57  6  22   90  46   6  29  61  20   0  0  112    1<T>1.000<T> .365<T> .438<T> .675<L.33.1>
+ 1 Vernon Wells (OA, cf)<T> 91  395  109  143  264  47  7  20   77  41   6  20  60  28   2  0  211    6<T>1.000<T> .362<T> .435<T> .668<L.33.1>
+24 Francisco Crespo (MB, lf)<T> 99  408   83  146  297  45  5  32   97  36   5  20  72  19   0  1  129    8<T> .992<T> .357<T> .421<T> .727<L.33.1>
+<L.6.1>
+77 Reggie Willits (LG, lf)<T>116  484   80  169  316  58  7  25  103  44   6  32  74  15   1  0  172    6<T>1.000<T> .349<T> .414<T> .652<L.33.1>
+88 Jorge Posada (MB, c)<T> 99  401   95  140  303  37  9  36  108  41   4  18  42  17  13  2  296   57<T> .994<T> .349<T> .418<T> .755<L.33.1>
+23 Robinson Cano (NY, 2b)<T>109  423   83  145  290  37  6  32  107  55  10  14  58  56  87  7  157  449<T> .988<T> .342<T> .439<T> .685<L.33.1>
+ 2 Erick Aybar (LG, 2b)<T>123  512  <Z>113<C>  172  341  <Z>62<C>  4  33  <Z>128<C>  51   8  31  84  47 <Z>109<C>  8  172  <Z>501<C><T> .988<T> .335<T> .410<T> .666<L.33.1>
+ 2 Phil Blake (TB, cf)<T> 93  333   49  111  178  33  5   8   40  38   4  12  49  13  10  0   82   56<T>1.000<T> .333<T> .412<T> .534<L.33.1>
+27 Erick Almonte (DT, 2b)<T> 90  284   41   94  131  30  2   1   37  30   7  17  44  35  68 12  144  345<T> .976<T> .330<T> .417<T> .461<L.33.1>
+<L.6.1>
+ 5 Frank Thomas (TO, cf)<T>111  405   63  134  219  49  3  10   52  36   3  20  76  25   0  2  208   11<T> .990<T> .330<T> .392<T> .540<L.33.1>
+82 James Hardy (MB, ss)<T>120  501  101  165  312  37  4  34  103  44   4  22  88  <Z>62<C>  60 10  180  294<T> .979<T> .329<T> .390<T> .622<L.33.1>
+ 3 Chipper Jones (TR, of)<T>101  396   72  130  237  49  8  14   89  34   5  17  80  23  35 11   87  254<T> .968<T> .328<T> .393<T> .598<L.33.1>
+29 Fernando Alou (TR, 1b)<T>100  403   75  130  232  40  4  18   78  34   5  13  66  16  82  8  732   55<T> .989<T> .322<T> .386<T> .575<L.33.1>
+ 1 Randal Grichuk (LG, rf)<T> 96  374   67  120  211  29  4  18   71  35   4   8  61  10   0  0  126    3<T>1.000<T> .320<T> .388<T> .564<L.33.1>
+11 Tom Anderson (OA, cf)<T>117  438   75  139  232  32  5  17   71  48   4  12  76  15   0  2  111    3<T> .982<T> .317<T> .393<T> .529<L.33.1>
+<L.6.1>
+ 7 Paul Robinson (TB, 2b)<T> 86  341   56  108  204  21  6  21   59  33   3  10  56   3   5  2   24   35<T> .967<T> .316<T> .385<T> .598<L.33.1>
+ 5 Mike Walker (BR, cf)<T>117  505   76  159  248  44  6  11   54  45   4  34  77  24   0  4  254    4<T> .984<T> .314<T> .378<T> .491<L.33.1>
+ 2 Raul Mendoza (TR, cf)<T> 99  331   76  104  196  36  4  16   65  46   5  31  54  19   0  2  236    1<T> .991<T> .314<T> .411<T> .592<L.33.1>
+ 6 Aaron Peel (OA, lf)<T>109  487   81  153  249  39  3  17   82  35   4  <Z>40<C>  81  15   1  0  164    4<T>1.000<T> .314<T> .367<T> .511<L.33.1>
+13 Carlos Guzman (BR, lf)<T> 72  281   43   88  158  27  5  11   43  26   5   5  42  18   1  2  114    5<T> .983<T> .313<T> .387<T> .562<L.33.1>
+84 Ryan Braun (MB, cf)<T> 99  441   90  138  242  34 <Z>14<C>  14   54  48   4  24  62  18   0  0  190    1<T>1.000<T> .312<T> .388<T> .548<L.33.1>
+<L.6.1>
+35 Casey Kotchman (LG, 3b)<T>111  429   76  133  234  35  6  18   65  46   7  12  63  39  23  5   41  247<T> .982<T> .310<T> .391<T> .545<L.33.1>
+15 Larry Broadway (CL, 2b)<T> 95  386   46  119  198  42  5   9   44  33   5   6  70  48  78 11  144  353<T> .978<T> .308<T> .374<T> .512<L.33.1>
+21 Raul Rivera (CW, rf)<T> 95  351   49  108  177  35  2  10   42  24   5  26  53   5   7  4  101   15<T> .966<T> .307<T> .365<T> .504<L.33.1>
+57 Howie Kendrick (LG, 1b)<T>116  501   98  153  264  45  9  16   75  45   9  33  90   6  79  8  665   21<T> .988<T> .305<T> .379<T> .526<L.33.1>
+19 Drew Toussaint (LG, cf)<T>117  480   92  146  262  56  6  16   78  46   7  32  78  19   1  1  218    8<T> .995<T> .304<T> .378<T> .545<L.33.1>
+ 2 Aaron Hill (NY, 2b)<T> 79  293   46   89  165  26  1  16   44  17   2   7  50  15  52 11  398   97<T> .978<T> .303<T> .348<T> .563<L.33.1>
+<L.6.1>
+<L.18.1>
+<Z>National League Leaders<T>  G   AB    R    H   TB  2B 3B  HR  RBI  BB  SA  SB  SO  FS  DP Er   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<L.39.1>
+<C>11 Jose Vizcaino (AD, cf)<T>116  487  120  <Z>186<C>  <Z>405<C>  <Z>70<C>  4  <Z>47<C>  <Z>149<C>  47   7  36  76  26   0  0  288    6<T>1.000<T> .381<T> .449<T> .831<L.33.1>
+26 Orlando Rincon (HA, 2b)<T>118  485   91  168  321  52  4  31  113  53   4  22  72  52  88  8  187  480<T> .988<T> .346<T> .418<T> .661<L.33.1>
+26 Tom Harris (FM, cf)<T>103  403   72  138  264  33  9  25   87  41   5  13  62  22   3  3  195   29<T> .986<T> .342<T> .414<T> .655<L.33.1>
+55 Carlos Gonzalez (CO, rf)<T>109  425   84  145  239  54  8   8   65  <Z>58<C>   6  28  71   7   1  3  134    9<T> .979<T> .341<T> .432<T> .562<L.33.1>
+ 3 Ryan Howard (HA, 1b)<T>117  483   87  164  320  50  2  34  114  52   5  19  79  10  96 12 <Z>1055<C>   38<T> .989<T> .339<T> .413<T> .662<L.33.1>
+ 4 Tom Wells (CI, lf)<T>122  482   77  162  294  54  9  20   93  48   6  28  59  19   0  0  121    3<T>1.000<T> .336<T> .407<T> .609<L.33.1>
+<L.6.1>
+23 Orlando Ordonez (AD, rf)<T> 88  352   63  118  219  44  3  17   57  29   4  15  58   1   0  0   19    0<T>1.000<T> .335<T> .396<T> .622<L.33.1>
+24 Wilson Betemit (LA, 3b)<T>105  391   74  131  249  36  5  24   77  26   4   3  77  23  21  7   51  211<T> .973<T> .335<T> .386<T> .636<L.33.1>
+18 Paul Foster (WN, cf)<T>117  475   94  159  331  52  3  38  127  51   7  29  87  25   6  4  255   33<T> .986<T> .334<T> .412<T> .696<L.33.1>
+ 8 Juan Pierre (LA, cf)<T>112  458   80  153  282  48  6  23   84  29   4  25  78  21   7  2  242   24<T> .992<T> .334<T> .381<T> .615<L.33.1>
+ 2 Juan Sanchez (FM, 2b)<T> 94  330   54  109  186  36  4  11   50  41   2  14  59  32  57 17  134  279<T> .960<T> .330<T> .409<T> .563<L.33.1>
+22 Pedro Mendoza (PI, lf)<T> 92  310   30  102  137  29  0   2   32  27   0   4  51   7   6  0   87   37<T>1.000<T> .329<T> .382<T> .441<L.33.1>
+<L.6.1>
+14 Jimmy Rollins (AD, ss)<T> 99  421   83  138  270  40  7  26   97  26   4  18  66  41  72  6  140  341<T> .987<T> .327<T> .375<T> .641<L.33.1>
+26 Chase Utley (PH, 2b)<T>120  510  108  167  342  47 10  36  106  52   3  23  97  <Z>54<C>  90 10  180  <Z>494<C><T> .985<T> .327<T> .395<T> .670<L.33.1>
+33 Aaron Rowand (PH, cf)<T> 94  392   82  128  258  42  5  26   79  27   4  22  60  22   0  1  178    6<T> .994<T> .326<T> .379<T> .658<L.33.1>
+ 6 Ian Atherton (NM, 1b)<T> 96  377   42  122  177  40  3   3   48  28   4  15  53  19  40 14  334  156<T> .972<T> .323<T> .380<T> .469<L.33.1>
+29 Kosuke Fukudome (CU, lf)<T> 90  313   50   99  174  36  3  11   33  25   1  19  58  18  10  1  128   48<T> .994<T> .316<T> .369<T> .555<L.33.1>
+ 1 Tony Dixon (AD, rf)<T>126  <Z>547<C>  <Z>134<C>  173  335  51 <Z>12<C>  29   89  53   4  <Z>42<C>  90  12   2  2  176   10<T> .989<T> .316<T> .383<T> .612<L.33.1>
+<L.6.1>
+13 Cody Ransom (FM, 3b)<T> 85  339   58  107  171  35  4   7   47  28   1  10  56  32  18  5   61  206<T> .981<T> .315<T> .370<T> .504<L.33.1>
+ 1 Orlando Palmeiro (CI, ss)<T>126  457   75  143  267  40  3  26   80  31   0  22  72  <Z>54<C>  78  8  188  317<T> .984<T> .312<T> .356<T> .584<L.33.1>
+64 Richard Sanders (CO, lf)<T>111  459   79  143  275  37  7  27   94  30   4   7  84  12   0  4  104    4<T> .964<T> .311<T> .361<T> .599<L.33.1>
+33 Blake Dewitt (LA, ss)<T>112  421   48  131  194  38  2   7   62  40   8   6  70  28  46 23  181  206<T> .943<T> .311<T> .388<T> .460<L.33.1>
+24 Yordany Ramirez (HA, cf)<T>115  492  103  153  277  42  5  24   92  53   7  19  85  13   0  8  240    4<T> .968<T> .310<T> .390<T> .563<L.33.1>
+28 Prince Fielder (CO, 1b)<T>120  500   82  155  257  48  3  16   97  50  10  14  78  14 <Z>104<C> 11 1048   34<T> .989<T> .310<T> .390<T> .514<L.33.1>
+<L.6.1>
+18 Miguel Guzman (NM, 2b)<T>102  326   40  101  151  34  2   4   44  39   5   0  56  33  40  5  125  271<T> .987<T> .309<T> .397<T> .463<L.33.1>
+21 Scott Mitchell (HA, 1b)<T>113  474   71  146  260  46  4  20  116  44   8  11  87  24  59 16  424  201<T> .975<T> .308<T> .382<T> .548<L.33.1>
+ 4 Matt Brooks (WN, rf)<T> 98  401   84  123  223  30 11  16   74  47   7  27  70   5   0  0   36    1<T>1.000<T> .306<T> .395<T> .556<L.33.1>
+21 Jeff Walker (FM, 1b)<T> 96  372   56  113  166  32  6   3   49  30   6   4  58  12  42 10  412  103<T> .980<T> .303<T> .370<T> .446<L.33.1>
+99 Carlos Rincon (LA, rf)<T>117  415   65  126  201  23  5  14   61  35   2  14  69  15   1  2  174   11<T> .989<T> .303<T> .362<T> .484<L.33.1>
+15 Randy Kelly (AD, cf)<T>118  447   76  135  237  41  2  19   75  51  10  22  77  14   1  2  179    5<T> .989<T> .302<T> .393<T> .530<L.33.1>
+<L.6.1>
+<L.9.1>
+<Z>Qualification: 280 At Bats. <L.1.1>
+<D><E><DU>
+<BK.Turnsheet><P.70><L>
+<B>GAMEPLAN BASEBALL   MLB21   Turnsheet    16/11/12<X>      MLB21-PH<L.48.1>
+<B>Philadelphia Phillies (Alan Milnes)   Week 15<C>      Deadline: Thursday 29th November<ST.24><L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<C><L.45.1>
+Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND. Fax: 020 8249 1819. Web Orders: www.softsim.co.uk<L.45.1>
+<Z>[I] Fielding Lineup    <C>Basic fielding selection for this week and batting order. Batting order should be position in batting<L.33.1>
+<Z>                       <C>order (1-9) NOT shirt number. Please only fill in CHANGES to selections.<L.45.1>
+Fielding Position:<T>    C          1B          2B          3B          SS          LF          CF          RF          DH       <L.45.1>
+Shirt Number:<T>[  22  ]    [  27  ]    [  26  ]    [   9  ]    [  11  ]    [  <Z> 5<C>  ]    [  33  ]    [   6  ]    [  <Z>29<C>  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.45.1>
+Batting Order (1-9):<T>[   3  ]    [   7  ]    [   2  ]    [   9  ]    [   8  ]    [   5  ]    [   4  ]    [   1  ]    [   6  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.54.1>
+<Z>[B] Lineup Changes    <C>Up to three changes in selection from basic order. Give shirt numbers of player to be picked, player<L.33.1>
+<Z>                       <C>to be replaced and game (2-9) from which change applies.<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+<L.9.1>
+<Z>[P] Pitching Changes    <C>Give shirt number of pitcher and changes to MAXBATS (MxB), MAXHITS (MxH), MAXEXTRA (MxE), FIRSTINN (FIn)<L.33.1>
+<Z>                        <C>and MINBATS (MnB). Please do not fill in parameters you are not changing.<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+<L.9.1>
+<Z>[S] Pitching Selections    <C>Pitching Selections for this week's games. A pitcher cannot be selected more than once. You must have<L.33.1>
+                           at least four pitchers in your starting rotation and four pitchers in your bullpen depth chart.<L.33.1>
+                           You do not have to select a setup and closing pitcher.<L.45.1>
+Starting Rotation: <T>[ 50 :      ]    [  4 :      ]    [ 38 :      ]    [ 54 :      ]    [ 63 :      ]    [  0 :      ]    <L.45.1>
+Bullpen Depth Chart:<T>[ 15 :      ]    [ 16 :      ]    [ 10 :      ]    [ 49 :      ]    [  1 :      ]    [ 13 :      ]    <L.45.1>
+Setup Pitcher: <T>[ 58 :      ]    <L.45.1>
+Closer: <T>[ 80 :      ]    <L.54.1>
+<Z>[T] Training    <C>Training & Bonus Skills (HIT, POW, SPD, FLD, ACC, CON, QUI or STA), Bonus & Key Players for each series. <L.45.1>
+Series 1 vs NM    [  POW :            ]   [  HIT :            ]   [  Bonus 27 :         ]   [  Key <Z> 1<C> :         ]<L.45.1>
+Series 2 at PI    [  POW :            ]   [  HIT :            ]   [  Bonus 27 :         ]   [  Key <Z> 1<C> :         ]<L.45.1>
+Series 3 vs CO    [  POW :            ]   [  POW :            ]   [  Bonus 50 :         ]   [  Key <Z> 1<C> :         ]<L.45.1>
+<L.6.1>
+<Z>[X] Special Actions<L.48.1>
+<C>ACTION 1 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 2 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 3 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 4 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 5 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+<L.9.1>
+Codes are: ACCEPT, ACTIVATE, ADDFORM, ALBATTERS, ALLEADERS, ALPITCHERS, ALPLAYERS, BATTERS, BLOWINN, BLOWMARG, BUILDING, CANFULL,<L.33.1>
+CANOPP, COACH, FANS, LEADERS, LIST, LONGINN, LONGPIT, MAXLEAD, MERC, MINLEAD, MINORS, NEWPOS, NLBATTERS, NLLEADERS, NLPITCHERS, <L.33.1>
+NLPLAYERS, OFFER, PINCH1, PINCH2, PINCH3, PINCH4, PINCHDEF, PINCHINN, PITCHERS, PLATOON1, PLATOON2, PLATOON3, PLATOON4, PLAYERS, <L.33.1>
+PROMOTE, REHAB, RELEASE, RENAME, ROUNDUP, SCHEDULE, SCOUT, SETFULL, SETOPP, SIZE, STADIUM, STARTINN, STATS, SURFACE, SWAP, TRAINER<L.48.1>
+<Z>[Z] Free Agent Bid    <C>Give free agent number, shirt number of player to be replaced, amount bid for free agent and new shirt<L.33.1>
+<Z>                      <C>number and name for player signed. Bids are processed after special actions.<L.45.1>
+NUM [        ]   WAIVE [        ]   AMOUNT [        ]   SHIRT [        ]   NAME [                                          ]<L.54.1>
+<Z>[C] Payments<C>    Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty.  MLB21-PH tc= 9.7<L.48.1>
+<Z><C>AMOUNT ENCLOSED [ #      .      ]   Cheques made payable to: Ab Initio Games<L.45.1>
+Indicate any change of address in the space below.<D><E><DU>
