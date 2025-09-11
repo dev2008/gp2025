@@ -20,6 +20,7 @@ WEB_DIR="${BASE}/public_html"
 # Format per item: 'name=<db>|host=<host>|user=<user>|pass=<password>'
 DBS=(
   'name=cricket-36399056|host=shareddb-f.hosting.stackcp.net|user=cricket-36399056|pass=Cccq5pk79i#'
+  'name=gplan8-35303737a645|host=sdb-78.hosting.stackcp.net|user=gplan8-35303737a645|pass=hnebllfgibsb0n0irghsalEe'
 )
 
 # Remote rsync.net target (SSH keys already set up)
@@ -249,8 +250,8 @@ CURRENT_STAGE="Show current symlink"
 
 
 CURRENT_STAGE="Clear local SQL dumps"
-#find "${SQL_DIR}" -maxdepth 1 -type f -name "${CLIENT}-*.sql" -print -delete >>"${LOG_FILE}" 2>&1 || true
-#log "INFO" "Cleared local SQL dumps for ${CLIENT}"
+find "${SQL_DIR}" -maxdepth 1 -type f -name "${CLIENT}-*.sql" -print -delete >>"${LOG_FILE}" 2>&1 || true
+log "INFO" "Cleared local SQL dumps for ${CLIENT}"
 
 CURRENT_STAGE="End job"
 log "INFO" "===== Backup job end for ${CLIENT} at $(date '+%F %T') ====="

@@ -1,0 +1,1011 @@
+/*M!999999\- enable the sandbox mode */ 
+-- MariaDB dump 10.19  Distrib 10.6.21-MariaDB, for Linux (x86_64)
+--
+-- Host: shareddb-f.hosting.stackcp.net    Database: cricket-36399056
+-- ------------------------------------------------------
+-- Server version	10.6.19-MariaDB-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `dismissals`
+--
+
+DROP TABLE IF EXISTS `dismissals`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `dismissals` (
+  `dismissal_id` int(11) NOT NULL AUTO_INCREMENT,
+  `dismissal_type` varchar(25) NOT NULL,
+  `dismissal_fulltype` varchar(25) NOT NULL,
+  PRIMARY KEY (`dismissal_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1018 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dismissals`
+--
+
+LOCK TABLES `dismissals` WRITE;
+/*!40000 ALTER TABLE `dismissals` DISABLE KEYS */;
+INSERT INTO `dismissals` VALUES (1000,'Bowled','Bowled'),(1001,'Handled the ball','Handled the ball'),(1002,'Hit the ball twice','Hit the ball twice'),(1003,'Hit wicket','Hit wicket'),(1004,'LBW','LBW'),(1005,'Obstructing the field','Obstructing the field'),(1006,'Retired','Retired'),(1007,'Run out','Run out'),(1008,'Stumped','Stumped'),(1009,'Timed out','Timed out'),(1010,'Caught','Caught behind'),(1011,'Caught','Caught at fine leg'),(1012,'Caught','Caught at midwicket'),(1013,'Caught','Caught close'),(1014,'Caught','Caught in covers'),(1015,'Caught','Caught in outfield'),(1016,'Caught','Caught in slips'),(1017,'Caught','Caught and bowled');
+/*!40000 ALTER TABLE `dismissals` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `matches`
+--
+
+DROP TABLE IF EXISTS `matches`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `matches` (
+  `match_id` int(11) NOT NULL AUTO_INCREMENT,
+  `season` int(11) NOT NULL DEFAULT 2,
+  `matchdate` date NOT NULL,
+  `level` enum('Amateur','Pro','International') DEFAULT NULL,
+  `type` enum('T20','ListA','2Innings') DEFAULT NULL,
+  `stage` enum('League','Semi Final','Final') DEFAULT NULL,
+  `venue_id` int(11) DEFAULT NULL,
+  `my_team_id` int(11) DEFAULT NULL,
+  `opp_team_id` int(11) DEFAULT NULL,
+  `my_tot1` varchar(20) DEFAULT NULL,
+  `my_tot2` varchar(20) DEFAULT NULL,
+  `opp_tot1` varchar(20) DEFAULT NULL,
+  `opp_tot2` varchar(20) DEFAULT NULL,
+  `result` enum('Won','Lost','Tie','Drawn') DEFAULT NULL,
+  `margin` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`match_id`),
+  KEY `venue_id` (`venue_id`),
+  KEY `my_team_id` (`my_team_id`),
+  KEY `opp_team_id` (`opp_team_id`),
+  CONSTRAINT `matches_ibfk_1` FOREIGN KEY (`venue_id`) REFERENCES `venues` (`venue_id`),
+  CONSTRAINT `matches_ibfk_2` FOREIGN KEY (`my_team_id`) REFERENCES `teams` (`team_id`),
+  CONSTRAINT `matches_ibfk_3` FOREIGN KEY (`opp_team_id`) REFERENCES `teams` (`team_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1031 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `matches`
+--
+
+LOCK TABLES `matches` WRITE;
+/*!40000 ALTER TABLE `matches` DISABLE KEYS */;
+INSERT INTO `matches` VALUES (1000,2,'2023-11-11','Amateur','T20','League',2000,1000,1005,'86',NULL,'89-5',NULL,'Lost','5 wickets'),(1001,2,'2023-11-18','Amateur','ListA','League',2000,1000,1002,'109-1',NULL,'106',NULL,'Won','9 wickets'),(1002,2,'2023-11-25','Amateur','2Innings','League',2000,1000,1005,'246',NULL,'116','114','Won','Innings and 16 runs'),(1003,2,'2023-12-02','Amateur','T20','League',2000,1000,1002,'109',NULL,'110-5',NULL,'Lost','5 wickets'),(1004,2,'2023-12-09','Amateur','ListA','League',2005,1000,1003,'218-9',NULL,'118',NULL,'Won','100 runs'),(1005,2,'2023-12-16','Amateur','2Innings','League',2001,1000,1004,'231','351-7 (dec)','256','132','Won','194 runs'),(1006,2,'2023-12-23','Amateur','T20','League',2003,1000,1001,'139-8',NULL,'145-9',NULL,'Lost','1 wicket'),(1007,2,'2023-12-30','Amateur','ListA','League',2004,1000,1005,'278-6',NULL,'194',NULL,'Won','84 runs'),(1008,2,'2024-01-06','Amateur','2Innings','League',2002,1000,1002,'148','189','198','140-5','Lost','5 wickets'),(1009,2,'2024-01-13','Amateur','T20','League',2000,1000,1003,'96-0',NULL,'94',NULL,'Won','10 wickets'),(1010,2,'2024-01-20','Amateur','ListA','League',2000,1000,1001,'271-9',NULL,'286-3',NULL,'Lost','15 runs'),(1011,2,'2024-01-27','Amateur','2Innings','League',2000,1000,1003,'454',NULL,'187','93','Won','Innings and 174 runs'),(1012,2,'2024-02-03','Amateur','T20','League',2001,1000,1004,'168-1',NULL,'167-5',NULL,'Won','9 wickets'),(1013,2,'2024-02-10','Amateur','ListA','League',2000,1000,1004,'243-5',NULL,'240',NULL,'Won','5 wickets'),(1014,2,'2024-02-17','Amateur','2Innings','League',2000,1000,1001,'257','292-8 dec','212','174-9','Drawn',NULL),(1015,2,'2024-03-02','Amateur','ListA','Final',2000,1000,1003,'269-5',NULL,'265-6',NULL,'Won','5 wickets'),(1016,2,'2024-11-30','Amateur','T20','League',2000,1000,1002,'57-0',NULL,'52',NULL,'Won','10 wickets'),(1017,2,'2024-12-06','Pro','2Innings','League',2011,1011,1006,'219','151','234','328','Lost','192 runs'),(1018,2,'2024-12-13','Pro','2Innings','League',2012,1011,1008,'441',NULL,'206','159','Won','Innings and 77 runs'),(1019,2,'2024-12-20','Pro','2Innings','League',2009,1011,1007,'344','111-2','251','203','Won','8 wickets'),(1020,2,'2024-12-28','Pro','2Innings','League',2012,1011,1009,'382',NULL,'185','190','Won','Innings and 7 runs'),(1021,2,'2025-01-04','Pro','2Innings','League',2012,1011,1010,'392','112-6','198','304','Won','4 wickets'),(1022,2,'2025-01-11','Pro','2Innings','League',2008,1011,1009,'432','231-8','316','346','Won','2 wickets'),(1023,2,'2025-01-18','Pro','2Innings','League',2012,1011,1007,'171','351-9','232','286','Won','1 wicket'),(1024,2,'2025-01-25','Pro','2Innings','League',2012,1011,1006,'426','35-0','236','223','Won','10 wickets'),(1025,2,'2025-02-01','Pro','2Innings','League',2010,1011,1008,'691',NULL,'124','132','Won','Innings and 435 runs'),(1026,2,'2025-02-08','Pro','2Innings','League',2007,1011,1010,'239','218','206','169','Won','82 runs'),(1027,2,'2025-02-15','Amateur','2Innings','League',2001,1000,1004,'427-9 dec',NULL,'174','204','Won','Inns and 49 runs'),(1028,2,'2025-02-22','Amateur','T20','League',2004,1000,1005,'147-0',NULL,'143-8',NULL,'Won','10 wickets'),(1029,2,'2025-03-01','Amateur','ListA','League',2001,1000,1004,'206',NULL,'119',NULL,'Won','87 runs'),(1030,2,'2025-03-08','Amateur','2Innings','League',2000,1000,1003,'147','339','321','127-4','Drawn',NULL);
+/*!40000 ALTER TABLE `matches` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `performances`
+--
+
+DROP TABLE IF EXISTS `performances`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `performances` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `match_id` int(11) DEFAULT NULL,
+  `innings` int(11) NOT NULL DEFAULT 1,
+  `score` int(11) DEFAULT NULL,
+  `out_status` enum('Y','N','') DEFAULT 'Y',
+  `balls` int(11) DEFAULT NULL,
+  `sr` decimal(10,2) DEFAULT NULL,
+  `dismissal_id` int(11) DEFAULT NULL,
+  `pom` enum('Y','N','') DEFAULT 'N',
+  `notes` text DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `match_id` (`match_id`),
+  KEY `method_id` (`dismissal_id`),
+  CONSTRAINT `performances_ibfk_1` FOREIGN KEY (`match_id`) REFERENCES `matches` (`match_id`),
+  CONSTRAINT `performances_ibfk_2` FOREIGN KEY (`dismissal_id`) REFERENCES `dismissals` (`dismissal_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10042 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `performances`
+--
+
+LOCK TABLES `performances` WRITE;
+/*!40000 ALTER TABLE `performances` DISABLE KEYS */;
+INSERT INTO `performances` VALUES (10000,1000,1,35,'Y',20,175.00,1010,'N','Debut'),(10001,1001,1,54,'N',98,55.10,NULL,'N',NULL),(10002,1002,1,158,'N',226,69.91,NULL,'Y',NULL),(10003,1003,1,30,'Y',34,88.24,1010,'N',NULL),(10004,1004,1,154,'N',154,100.00,NULL,'Y',NULL),(10005,1005,1,130,'Y',178,73.03,1007,'Y',NULL),(10006,1005,2,96,'Y',131,73.28,1000,NULL,NULL),(10007,1006,1,22,'Y',16,137.50,1010,'N',NULL),(10008,1007,1,149,'N',142,104.93,NULL,'Y',NULL),(10009,1008,1,72,'Y',161,44.72,1014,'N',NULL),(10010,1008,2,68,'Y',95,71.58,1010,'N',NULL),(10011,1009,1,69,'N',31,222.58,NULL,'Y',NULL),(10012,1010,1,82,'Y',76,107.89,1015,'N',NULL),(10013,1011,1,315,'Y',371,84.91,1000,'Y',NULL),(10014,1012,1,81,'N',54,150.00,NULL,'N',NULL),(10015,1013,1,14,'Y',12,116.67,1010,'N',NULL),(10016,1014,1,86,'Y',153,56.21,1015,'N',NULL),(10017,1014,2,4,'Y',4,100.00,1000,'N',NULL),(10018,1015,1,111,'Y',106,104.72,1010,'Y','BVI\'s first ever trophy'),(10019,1016,1,33,'N',21,157.14,NULL,'N',NULL),(10020,1017,1,127,'N',248,51.21,NULL,'N','Debut'),(10021,1017,2,2,'Y',5,40.00,1010,'N',NULL),(10022,1018,1,151,'Y',240,62.92,1007,'N',NULL),(10023,1019,1,71,'Y',109,65.14,1007,'N',NULL),(10024,1019,2,56,'N',106,52.83,NULL,'N',NULL),(10025,1020,1,218,'Y',274,79.56,1010,'Y','3rd highest score in Leewards history'),(10026,1021,1,202,'Y',265,76.23,1007,'Y',NULL),(10027,1021,2,19,'Y',30,63.33,1007,'N',NULL),(10028,1022,1,139,'Y',228,60.96,1000,'Y',NULL),(10029,1022,2,159,'Y',165,96.36,1000,'N',NULL),(10030,1023,1,17,'Y',18,94.44,1007,'Y',NULL),(10031,1023,2,187,'Y',236,79.24,1000,'N',NULL),(10032,1024,1,151,'Y',198,76.26,1010,'Y',NULL),(10033,1024,2,30,'N',17,176.47,NULL,'N',NULL),(10034,1025,1,173,'Y',321,53.89,1010,'N',NULL),(10035,1026,1,12,'Y',20,60.00,1016,'N',NULL),(10036,1026,2,23,'Y',62,37.10,1010,'N',NULL),(10037,1027,1,251,'Y',302,83.11,1014,'Y',NULL),(10038,1028,1,36,'N',41,87.80,NULL,'N',NULL),(10039,1029,1,41,'Y',32,128.13,1016,'N',NULL),(10040,1030,1,39,'Y',30,130.00,1014,'Y',NULL),(10041,1030,2,152,'Y',363,41.87,1010,NULL,'7 hours innings for a draw and the championship');
+/*!40000 ALTER TABLE `performances` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `teams`
+--
+
+DROP TABLE IF EXISTS `teams`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `teams` (
+  `team_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `nickname` varchar(255) DEFAULT NULL,
+  `abbr` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`team_id`),
+  UNIQUE KEY `iABBR` (`abbr`)
+) ENGINE=InnoDB AUTO_INCREMENT=1012 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `teams`
+--
+
+LOCK TABLES `teams` WRITE;
+/*!40000 ALTER TABLE `teams` DISABLE KEYS */;
+INSERT INTO `teams` VALUES (1000,'British Virgin Islands','Seahorses','BVI'),(1001,'Montserrat',NULL,'MON'),(1002,'Nevis',NULL,'NEV'),(1003,'St Kitts',NULL,'STK'),(1004,'Anguilla',NULL,'ANG'),(1005,'Antigua & Barbuda',NULL,'AAB'),(1006,'Barbados',NULL,'BAR'),(1007,'Guyana',NULL,'GUY'),(1008,'Jamaica',NULL,'JAM'),(1009,'Trinidad & Tobago',NULL,'T&T'),(1010,'Windward Islands',NULL,'WIN'),(1011,'Leeward Islands',NULL,NULL);
+/*!40000 ALTER TABLE `teams` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `venues`
+--
+
+DROP TABLE IF EXISTS `venues`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `venues` (
+  `venue_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `location` varchar(255) NOT NULL,
+  PRIMARY KEY (`venue_id`),
+  UNIQUE KEY `iGROUND` (`name`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2013 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `venues`
+--
+
+LOCK TABLES `venues` WRITE;
+/*!40000 ALTER TABLE `venues` DISABLE KEYS */;
+INSERT INTO `venues` VALUES (2000,'Islands Cricket Ground','1000'),(2001,'Anguilla Oval','1004'),(2002,'Nevis Cricket Ground','1002'),(2003,'Montserrat Ground','1001'),(2004,'Antigua Oval','1005'),(2005,'Saint Kitts Bowl','1003'),(2006,'Queens Park Oval','1009'),(2007,'Daren Sammy Stadium','1010'),(2008,'Brian Lara Stadium','1009'),(2009,'Providence Stadium','1007'),(2010,'Sabina Park','1008'),(2011,'Kensington Oval','1006'),(2012,'Warner Park','1011');
+/*!40000 ALTER TABLE `venues` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_api_tokens`
+--
+
+DROP TABLE IF EXISTS `zc_api_tokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_api_tokens` (
+  `id_api_token` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id_user` int(11) NOT NULL,
+  `value_api_token` varchar(100) NOT NULL,
+  `date_time_api_token` datetime NOT NULL,
+  PRIMARY KEY (`id_api_token`),
+  UNIQUE KEY `value_api_token` (`value_api_token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_api_tokens`
+--
+
+LOCK TABLES `zc_api_tokens` WRITE;
+/*!40000 ALTER TABLE `zc_api_tokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `zc_api_tokens` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_config`
+--
+
+DROP TABLE IF EXISTS `zc_config`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_config` (
+  `name_config` varchar(100) NOT NULL,
+  `value_config` mediumtext NOT NULL,
+  PRIMARY KEY (`name_config`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_config`
+--
+
+LOCK TABLES `zc_config` WRITE;
+/*!40000 ALTER TABLE `zc_config` DISABLE KEYS */;
+INSERT INTO `zc_config` VALUES ('custom_buttons_bgcolor','#6C757D'),('custom_buttons_text_color','#ffffff'),('custom_css',''),('danger_buttons_bgcolor','#DF3445'),('data_types','advanced'),('delete_icon_color','#eb1515'),('details_icon_color','#4f84f3'),('dont_show_menu_if_only_one_item','0'),('edit_icon_color','#5067c1'),('font','manrope'),('graphic_theme','bluegray'),('grid_layout_scrolling','grid_scroll'),('hide_advanced_features_public_user','0'),('hide_menu','0'),('hide_menu_public_user','0'),('hide_top_bar','0'),('hide_top_bar_public_user','0'),('install_enable_tables_on_creation','no'),('left_menu_bgcolor','#0B0F1A'),('left_menu_text_color','#FFFFFF'),('logo_img','images/logo.png'),('logo_uploaded','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'),('maxlength_grid','0'),('menu_type','left_side_menu'),('results_display_mode_menu','both'),('results_grid_fixed_header','0'),('results_grid_header_bgcolor','#EEEEEE'),('standard_buttons_bgcolor','#5268BE'),('standard_buttons_text_color','#ffffff'),('theme','Default'),('title_application','Cricket24 DB'),('top_bar_bgcolor','#ffffff'),('username_public_user','');
+/*!40000 ALTER TABLE `zc_config` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_config_beta`
+--
+
+DROP TABLE IF EXISTS `zc_config_beta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_config_beta` (
+  `name_config` varchar(100) NOT NULL,
+  `value_config` mediumtext NOT NULL,
+  PRIMARY KEY (`name_config`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_config_beta`
+--
+
+LOCK TABLES `zc_config_beta` WRITE;
+/*!40000 ALTER TABLE `zc_config_beta` DISABLE KEYS */;
+INSERT INTO `zc_config_beta` VALUES ('custom_buttons_bgcolor','#6C757D'),('custom_buttons_text_color','#ffffff'),('custom_css',''),('danger_buttons_bgcolor','#DF3445'),('data_types','advanced'),('delete_icon_color','#eb1515'),('details_icon_color','#4f84f3'),('dont_show_menu_if_only_one_item','0'),('edit_icon_color','#5067c1'),('font','manrope'),('graphic_theme','bluegray'),('grid_layout_scrolling','grid_scroll'),('hide_advanced_features_public_user','0'),('hide_menu','0'),('hide_menu_public_user','0'),('hide_top_bar','0'),('hide_top_bar_public_user','0'),('install_enable_tables_on_creation','no'),('left_menu_bgcolor','#0B0F1A'),('left_menu_text_color','#FFFFFF'),('logo_img','images/logo.png'),('logo_uploaded',''),('maxlength_grid','0'),('menu_type','left_side_menu'),('results_display_mode_menu','both'),('results_grid_fixed_header','0'),('results_grid_header_bgcolor','#EEEEEE'),('standard_buttons_bgcolor','#5268BE'),('standard_buttons_text_color','#ffffff'),('theme','Default'),('title_application','DaDaBIK no-code low-code platform and database front-end - dadabik.com'),('top_bar_bgcolor','#ffffff'),('username_public_user','');
+/*!40000 ALTER TABLE `zc_config_beta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_failed_login`
+--
+
+DROP TABLE IF EXISTS `zc_failed_login`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_failed_login` (
+  `id_failed_login` int(11) NOT NULL AUTO_INCREMENT,
+  `timestamp_failed_login` int(11) NOT NULL,
+  `username_user` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_failed_login`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_failed_login`
+--
+
+LOCK TABLES `zc_failed_login` WRITE;
+/*!40000 ALTER TABLE `zc_failed_login` DISABLE KEYS */;
+/*!40000 ALTER TABLE `zc_failed_login` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_forms`
+--
+
+DROP TABLE IF EXISTS `zc_forms`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_forms` (
+  `id_field` int(11) NOT NULL AUTO_INCREMENT,
+  `name_field` varchar(255) DEFAULT NULL,
+  `label_field` varchar(500) NOT NULL DEFAULT '',
+  `label_grid_field` varchar(500) NOT NULL DEFAULT '',
+  `type_field` varchar(50) NOT NULL DEFAULT 'text',
+  `show_if_field_field` varchar(255) NOT NULL DEFAULT '',
+  `show_if_operator_field` varchar(15) NOT NULL DEFAULT '',
+  `show_if_value_field` varchar(50) NOT NULL DEFAULT '',
+  `formula_field` varchar(255) NOT NULL DEFAULT '',
+  `calculated_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_validation_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_formatting_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_csv_formatting_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_required_function_field` varchar(255) NOT NULL DEFAULT '',
+  `js_event_functions_field` varchar(500) NOT NULL DEFAULT '',
+  `content_field` varchar(50) NOT NULL DEFAULT 'alphanumeric',
+  `present_search_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_results_search_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_details_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_insert_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_edit_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_csv_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_filter_form_field` varchar(1) NOT NULL DEFAULT '0',
+  `present_ext_update_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `required_field` varchar(1) NOT NULL,
+  `check_duplicated_insert_field` varchar(1) NOT NULL DEFAULT '0',
+  `other_choices_field` varchar(1) NOT NULL DEFAULT '0',
+  `show_lookup_link_field` varchar(1) NOT NULL DEFAULT '0',
+  `chosen_field` varchar(1) NOT NULL DEFAULT '0',
+  `chosen_ajax_field` varchar(1) NOT NULL DEFAULT '0',
+  `select_options_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_field_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_table_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_db_field` varchar(50) NOT NULL DEFAULT '',
+  `linked_fields_field` varchar(500) NOT NULL DEFAULT '',
+  `linked_fields_order_by_field` varchar(500) NOT NULL DEFAULT '',
+  `linked_fields_order_type_field` varchar(100) NOT NULL DEFAULT '',
+  `where_clause_field` varchar(500) NOT NULL DEFAULT '',
+  `select_type_field` varchar(200) NOT NULL,
+  `items_table_names_field` varchar(500) NOT NULL DEFAULT '',
+  `items_table_fk_field_names_field` varchar(500) NOT NULL DEFAULT '',
+  `cascade_filter_field` varchar(500) NOT NULL DEFAULT '',
+  `cascade_parent_field` varchar(500) NOT NULL DEFAULT '',
+  `prefix_field` varchar(500) NOT NULL DEFAULT '',
+  `default_value_field` varchar(500) NOT NULL DEFAULT '',
+  `width_field` varchar(500) NOT NULL DEFAULT '',
+  `height_field` varchar(500) NOT NULL DEFAULT '',
+  `maxlength_field` varchar(500) NOT NULL DEFAULT '100',
+  `hint_insert_field` varchar(500) NOT NULL DEFAULT '',
+  `tooltip_field` varchar(500) NOT NULL DEFAULT '',
+  `order_form_field` int(11) NOT NULL,
+  `separator_field` varchar(500) NOT NULL DEFAULT '~',
+  `details_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `search_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `insert_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `edit_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `insert_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `edit_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `search_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `details_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `min_width_results_grid_column_field` varchar(50) NOT NULL DEFAULT '',
+  `table_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_field`)
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_forms`
+--
+
+LOCK TABLES `zc_forms` WRITE;
+/*!40000 ALTER TABLE `zc_forms` DISABLE KEYS */;
+INSERT INTO `zc_forms` VALUES (1,'dismissal_id','Dismissal id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','dismissals'),(2,'dismissal_type','Dismissal type','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','25','','',2,'~','1','1','1','1','','','','','','dismissals'),(3,'dismissal_fulltype','Dismissal fulltype','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','25','','',3,'~','1','1','1','1','','','','','','dismissals'),(18,'id','id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','performances'),(19,'match_id','Match','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','match_id','matches','','matchdate~type','matchdate','DESC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',2,'~','1','1','1','1','','','','','','performances'),(20,'innings','Innings','','select_single','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','~1~2~','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','performances'),(21,'score','Score','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',4,'~','1','1','1','1','','','','','','performances'),(22,'out_status','Out?','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Y~N~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',5,'~','1','1','1','1','','','','','','performances'),(23,'balls','Balls','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',6,'~','1','1','1','1','','','','','','performances'),(24,'sr','Sr','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',7,'~','1','1','1','1','','','','','','performances'),(25,'dismissal_id','Dismissal id','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','dismissal_id','dismissals','','dismissal_fulltype','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','performances'),(26,'pom','Pom','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Y~N~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','performances'),(27,'notes','Notes','','textarea','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','contains/doesnt_contain/is_equal/is_different/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',10,'~','1','1','1','1','','','','','','performances'),(28,'team_id','Team id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','teams'),(29,'name','Name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',2,'~','1','1','1','1','','','','','','teams'),(30,'nickname','Nickname','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',3,'~','1','1','1','1','','','','','','teams'),(31,'abbr','Abbr','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',4,'~','1','1','1','1','','','','','','teams'),(32,'venue_id','Venue id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','venues'),(33,'name','Name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',2,'~','1','1','1','1','','','','','','venues'),(34,'location','Location','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',3,'~','1','1','1','1','','','','','','venues'),(35,'id_group','id_group','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','zc_groups'),(36,'name_group','Group name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','1','1','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',2,'~','1','1','1','1','','','','','','zc_groups'),(37,'id_user','id_user','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','zc_users'),(38,'username_user','Username','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','1','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','50','','',2,'~','1','1','1','1','','','','','','zc_users'),(39,'first_name_user','First name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','zc_users'),(40,'last_name_user','Last name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',4,'~','1','1','1','1','','','','','','zc_users'),(41,'email_user','Email','','text','','','','','','','','','','','email','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',5,'~','1','1','1','1','','','','','','zc_users'),(42,'id_group','Main group','','select_single','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','id_group','zc_groups','','name_group','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',6,'~','1','1','1','1','','','','','','zc_users'),(43,'ids_group_others','Other groups','','select_multiple_menu','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','1','0','','id_group','zc_groups','','name_group','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','<a href=\"javascript:show_admin_help(\'Info\', \'Here you can specify additional groups the user belongs to. If the config parameter $enable_multiple_groups is set to 1, the permissions will be computed considering all the groups (main + others) and adopting a &lt;i&gt;most permissive&lt;/i&gt; strategy. Check the documentation (Chapter &lt;i&gt;Permissions based on multiple groups&lt;/i&gt;) for further details.\');\"><i class=\"far fa-question-circle fa-lg\"></i></a>','',7,'~','1','1','1','1','','','','','','zc_users'),(44,'password_user','Password','','text','','','','','','','','','','','alphanumeric','0','0','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','zc_users'),(45,'authentication_type_user','Authentication type','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','zc_users'),(46,'force_password_change_user','Force password change','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','~yes~no~','','','','','','','','is_equal/is_different','','','','','','yes','','','100','If yes, user will be forced to change password after login (LDAP users won\'t be forced)','',10,'~','1','1','1','1','','','','','','zc_users'),(47,'temporary_password_user','temporary_password_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',11,'~','1','1','1','1','','','','','','zc_users'),(48,'temporary_password_timestamp_user','temporary_password_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',12,'~','1','1','1','1','','','','','','zc_users'),(49,'confirmed_timestamp_user','confirmed_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',13,'~','1','1','1','1','','','','','','zc_users'),(50,'id_confirmation_user','id_confirmation_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',14,'~','1','1','1','1','','','','','','zc_users'),(51,'id_confirmation_timestamp_user','id_confirmation_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',15,'~','1','1','1','1','','','','','','zc_users'),(52,'secret_2fa_user','secret_2fa_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',16,'~','1','1','1','1','','','','','','zc_users'),(53,'nonce_secret_2fa_user','nonce_secret_2fa_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',17,'~','1','1','1','1','','','','','','zc_users'),(54,'accept_terms_privacy_1_user','Accept terms - 1','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',18,'~','1','1','1','1','','','','','','zc_users'),(55,'accept_terms_privacy_2_user','Accept terms - 2','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',19,'~','1','1','1','1','','','','','','zc_users'),(56,'accept_terms_privacy_3_user','Accept terms - 3','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',20,'~','1','1','1','1','','','','','','zc_users'),(57,'enable_2fa_user','Enable 2FA','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','~yes~no~','','','','','','','','is_equal/is_different','','','','','','no','','','','','',21,'~','1','1','1','1','','','','','','zc_users'),(58,'match_id','id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','matches'),(59,'season','Season','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','2','','','100','','',2,'~','1','1','1','1','','','','','','matches'),(60,'matchdate','Match Date','','date','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','matches'),(61,'level','Level','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~Amateur~Pro~International~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','Pro','','','100','','',4,'~','1','1','1','1','','','','','','matches'),(62,'type','Type','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~T20~ListA~2Innings~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','2Innings','','','100','','',5,'~','1','1','1','1','','','','','','matches'),(63,'stage','Stage','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~League~Semi Final~Final~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','League','','','100','','',6,'~','1','1','1','1','','','','','','matches'),(64,'venue_id','Venue','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','venue_id','venues','','name','name','ASC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',7,'~','1','1','1','1','','','','','','matches'),(65,'my_team_id','Team','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','team_id','teams','','name','name','ASC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','matches'),(66,'opp_team_id','Opponent','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','team_id','teams','','name','name','ASC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','matches'),(67,'my_tot1','My 1st Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',10,'~','1','1','1','1','','','','','','matches'),(68,'my_tot2','My 2nd Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',11,'~','1','1','1','1','','','','','','matches'),(69,'opp_tot1','Their 1st Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',12,'~','1','1','1','1','','','','','','matches'),(70,'opp_tot2','Their 2nd Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',13,'~','1','1','1','1','','','','','','matches'),(71,'result','Result','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~Won~Lost~Tie~Drawn~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',14,'~','1','1','1','1','','','','','','matches'),(72,'margin','Margin','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','50','','',15,'~','1','1','1','1','','','','','','matches');
+/*!40000 ALTER TABLE `zc_forms` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_forms_beta`
+--
+
+DROP TABLE IF EXISTS `zc_forms_beta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_forms_beta` (
+  `id_field` int(11) NOT NULL AUTO_INCREMENT,
+  `name_field` varchar(255) DEFAULT NULL,
+  `label_field` varchar(500) NOT NULL DEFAULT '',
+  `label_grid_field` varchar(500) NOT NULL DEFAULT '',
+  `type_field` varchar(50) NOT NULL DEFAULT 'text',
+  `show_if_field_field` varchar(255) NOT NULL DEFAULT '',
+  `show_if_operator_field` varchar(15) NOT NULL DEFAULT '',
+  `show_if_value_field` varchar(50) NOT NULL DEFAULT '',
+  `formula_field` varchar(255) NOT NULL DEFAULT '',
+  `calculated_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_validation_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_formatting_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_csv_formatting_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_required_function_field` varchar(255) NOT NULL DEFAULT '',
+  `js_event_functions_field` varchar(500) NOT NULL DEFAULT '',
+  `content_field` varchar(50) NOT NULL DEFAULT 'alphanumeric',
+  `present_search_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_results_search_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_details_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_insert_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_edit_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_csv_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_filter_form_field` varchar(1) NOT NULL DEFAULT '0',
+  `present_ext_update_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `required_field` varchar(1) NOT NULL,
+  `check_duplicated_insert_field` varchar(1) NOT NULL DEFAULT '0',
+  `other_choices_field` varchar(1) NOT NULL DEFAULT '0',
+  `show_lookup_link_field` varchar(1) NOT NULL DEFAULT '0',
+  `chosen_field` varchar(1) NOT NULL DEFAULT '0',
+  `chosen_ajax_field` varchar(1) NOT NULL DEFAULT '0',
+  `select_options_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_field_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_table_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_db_field` varchar(50) NOT NULL DEFAULT '',
+  `linked_fields_field` varchar(500) NOT NULL DEFAULT '',
+  `linked_fields_order_by_field` varchar(500) NOT NULL DEFAULT '',
+  `linked_fields_order_type_field` varchar(100) NOT NULL DEFAULT '',
+  `where_clause_field` varchar(500) NOT NULL DEFAULT '',
+  `select_type_field` varchar(200) NOT NULL,
+  `items_table_names_field` varchar(500) NOT NULL DEFAULT '',
+  `items_table_fk_field_names_field` varchar(500) NOT NULL DEFAULT '',
+  `cascade_filter_field` varchar(500) NOT NULL DEFAULT '',
+  `cascade_parent_field` varchar(500) NOT NULL DEFAULT '',
+  `prefix_field` varchar(500) NOT NULL DEFAULT '',
+  `default_value_field` varchar(500) NOT NULL DEFAULT '',
+  `width_field` varchar(500) NOT NULL DEFAULT '',
+  `height_field` varchar(500) NOT NULL DEFAULT '',
+  `maxlength_field` varchar(500) NOT NULL DEFAULT '100',
+  `hint_insert_field` varchar(500) NOT NULL DEFAULT '',
+  `tooltip_field` varchar(500) NOT NULL DEFAULT '',
+  `order_form_field` int(11) NOT NULL,
+  `separator_field` varchar(500) NOT NULL DEFAULT '~',
+  `details_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `search_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `insert_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `edit_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `insert_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `edit_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `search_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `details_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `min_width_results_grid_column_field` varchar(50) NOT NULL DEFAULT '',
+  `table_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_field`)
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_forms_beta`
+--
+
+LOCK TABLES `zc_forms_beta` WRITE;
+/*!40000 ALTER TABLE `zc_forms_beta` DISABLE KEYS */;
+INSERT INTO `zc_forms_beta` VALUES (1,'dismissal_id','Dismissal id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','dismissals'),(2,'dismissal_type','Dismissal type','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','25','','',2,'~','1','1','1','1','','','','','','dismissals'),(3,'dismissal_fulltype','Dismissal fulltype','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','25','','',3,'~','1','1','1','1','','','','','','dismissals'),(4,'match_id','Match id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','matches'),(5,'matchdate','Matchdate','','date','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',2,'~','1','1','1','1','','','','','','matches'),(6,'level','Level','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Amateur~Pro~International~~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','matches'),(7,'type','Type','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~T20~ListA~2Innings~~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',4,'~','1','1','1','1','','','','','','matches'),(8,'stage','Stage','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~League~Semi Final~Final~~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',5,'~','1','1','1','1','','','','','','matches'),(9,'venue_id','Venue id','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','venue_id','venues','','name','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',6,'~','1','1','1','1','','','','','','matches'),(10,'my_team_id','My team id','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','team_id','teams','','name','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',7,'~','1','1','1','1','','','','','','matches'),(11,'opp_team_id','Opp team id','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','team_id','teams','','name','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','matches'),(12,'my_tot1','My tot1','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',9,'~','1','1','1','1','','','','','','matches'),(13,'my_tot2','My tot2','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',10,'~','1','1','1','1','','','','','','matches'),(14,'opp_tot1','Opp tot1','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',11,'~','1','1','1','1','','','','','','matches'),(15,'opp_tot2','Opp tot2','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',12,'~','1','1','1','1','','','','','','matches'),(16,'result','Result','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Won~Lost~Tie~Drawn~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',13,'~','1','1','1','1','','','','','','matches'),(17,'margin','Margin','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','50','','',14,'~','1','1','1','1','','','','','','matches'),(18,'id','Id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','performances'),(19,'match_id','Match id','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','match_id','matches','','my_tot1','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',2,'~','1','1','1','1','','','','','','performances'),(20,'innings','Innings','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','performances'),(21,'score','Score','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',4,'~','1','1','1','1','','','','','','performances'),(22,'out_status','Out status','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Y~N~~~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',5,'~','1','1','1','1','','','','','','performances'),(23,'balls','Balls','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',6,'~','1','1','1','1','','','','','','performances'),(24,'sr','Sr','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',7,'~','1','1','1','1','','','','','','performances'),(25,'dismissal_id','Dismissal id','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','dismissal_id','dismissals','','dismissal_type','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','performances'),(26,'pom','Pom','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Y~N~~~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','performances'),(27,'notes','Notes','','textarea','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','contains/doesnt_contain/is_equal/is_different/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',10,'~','1','1','1','1','','','','','','performances'),(28,'team_id','Team id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','teams'),(29,'name','Name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',2,'~','1','1','1','1','','','','','','teams'),(30,'nickname','Nickname','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',3,'~','1','1','1','1','','','','','','teams'),(31,'abbr','Abbr','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',4,'~','1','1','1','1','','','','','','teams'),(32,'venue_id','Venue id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','venues'),(33,'name','Name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',2,'~','1','1','1','1','','','','','','venues'),(34,'location','Location','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',3,'~','1','1','1','1','','','','','','venues'),(35,'id_group','id_group','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','zc_groups'),(36,'name_group','Group name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','1','1','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',2,'~','1','1','1','1','','','','','','zc_groups'),(37,'id_user','id_user','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','zc_users'),(38,'username_user','Username','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','1','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','50','','',2,'~','1','1','1','1','','','','','','zc_users'),(39,'first_name_user','First name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','zc_users'),(40,'last_name_user','Last name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',4,'~','1','1','1','1','','','','','','zc_users'),(41,'email_user','Email','','text','','','','','','','','','','','email','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',5,'~','1','1','1','1','','','','','','zc_users'),(42,'id_group','Main group','','select_single','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','id_group','zc_groups','','name_group','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',6,'~','1','1','1','1','','','','','','zc_users'),(43,'ids_group_others','Other groups','','select_multiple_menu','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','1','0','','id_group','zc_groups','','name_group','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','<a href=\"javascript:show_admin_help(\'Info\', \'Here you can specify additional groups the user belongs to. If the config parameter $enable_multiple_groups is set to 1, the permissions will be computed considering all the groups (main + others) and adopting a &lt;i&gt;most permissive&lt;/i&gt; strategy. Check the documentation (Chapter &lt;i&gt;Permissions based on multiple groups&lt;/i&gt;) for further details.\');\"><i class=\"far fa-question-circle fa-lg\"></i></a>','',7,'~','1','1','1','1','','','','','','zc_users'),(44,'password_user','Password','','text','','','','','','','','','','','alphanumeric','0','0','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','zc_users'),(45,'authentication_type_user','Authentication type','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','zc_users'),(46,'force_password_change_user','Force password change','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','~yes~no~','','','','','','','','is_equal/is_different','','','','','','yes','','','100','If yes, user will be forced to change password after login (LDAP users won\'t be forced)','',10,'~','1','1','1','1','','','','','','zc_users'),(47,'temporary_password_user','temporary_password_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',11,'~','1','1','1','1','','','','','','zc_users'),(48,'temporary_password_timestamp_user','temporary_password_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',12,'~','1','1','1','1','','','','','','zc_users'),(49,'confirmed_timestamp_user','confirmed_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',13,'~','1','1','1','1','','','','','','zc_users'),(50,'id_confirmation_user','id_confirmation_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',14,'~','1','1','1','1','','','','','','zc_users'),(51,'id_confirmation_timestamp_user','id_confirmation_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',15,'~','1','1','1','1','','','','','','zc_users'),(52,'secret_2fa_user','secret_2fa_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',16,'~','1','1','1','1','','','','','','zc_users'),(53,'nonce_secret_2fa_user','nonce_secret_2fa_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',17,'~','1','1','1','1','','','','','','zc_users'),(54,'accept_terms_privacy_1_user','Accept terms - 1','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',18,'~','1','1','1','1','','','','','','zc_users'),(55,'accept_terms_privacy_2_user','Accept terms - 2','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',19,'~','1','1','1','1','','','','','','zc_users'),(56,'accept_terms_privacy_3_user','Accept terms - 3','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',20,'~','1','1','1','1','','','','','','zc_users'),(57,'enable_2fa_user','Enable 2FA','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','~yes~no~','','','','','','','','is_equal/is_different','','','','','','no','','','','','',21,'~','1','1','1','1','','','','','','zc_users');
+/*!40000 ALTER TABLE `zc_forms_beta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_forms_preview`
+--
+
+DROP TABLE IF EXISTS `zc_forms_preview`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_forms_preview` (
+  `id_field` int(11) NOT NULL AUTO_INCREMENT,
+  `name_field` varchar(255) DEFAULT NULL,
+  `label_field` varchar(500) NOT NULL DEFAULT '',
+  `label_grid_field` varchar(500) NOT NULL DEFAULT '',
+  `type_field` varchar(50) NOT NULL DEFAULT 'text',
+  `show_if_field_field` varchar(255) NOT NULL DEFAULT '',
+  `show_if_operator_field` varchar(15) NOT NULL DEFAULT '',
+  `show_if_value_field` varchar(50) NOT NULL DEFAULT '',
+  `formula_field` varchar(255) NOT NULL DEFAULT '',
+  `calculated_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_validation_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_formatting_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_csv_formatting_function_field` varchar(255) NOT NULL DEFAULT '',
+  `custom_required_function_field` varchar(255) NOT NULL DEFAULT '',
+  `js_event_functions_field` varchar(500) NOT NULL DEFAULT '',
+  `content_field` varchar(50) NOT NULL DEFAULT 'alphanumeric',
+  `present_search_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_results_search_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_details_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_insert_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_edit_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_csv_field` varchar(1) NOT NULL DEFAULT '1',
+  `present_filter_form_field` varchar(1) NOT NULL DEFAULT '0',
+  `present_ext_update_form_field` varchar(1) NOT NULL DEFAULT '1',
+  `required_field` varchar(1) NOT NULL,
+  `check_duplicated_insert_field` varchar(1) NOT NULL DEFAULT '0',
+  `other_choices_field` varchar(1) NOT NULL DEFAULT '0',
+  `show_lookup_link_field` varchar(1) NOT NULL DEFAULT '0',
+  `chosen_field` varchar(1) NOT NULL DEFAULT '0',
+  `chosen_ajax_field` varchar(1) NOT NULL DEFAULT '0',
+  `select_options_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_field_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_table_field` varchar(500) NOT NULL DEFAULT '',
+  `primary_key_db_field` varchar(50) NOT NULL DEFAULT '',
+  `linked_fields_field` varchar(500) NOT NULL DEFAULT '',
+  `linked_fields_order_by_field` varchar(500) NOT NULL DEFAULT '',
+  `linked_fields_order_type_field` varchar(100) NOT NULL DEFAULT '',
+  `where_clause_field` varchar(500) NOT NULL DEFAULT '',
+  `select_type_field` varchar(200) NOT NULL,
+  `items_table_names_field` varchar(500) NOT NULL DEFAULT '',
+  `items_table_fk_field_names_field` varchar(500) NOT NULL DEFAULT '',
+  `cascade_filter_field` varchar(500) NOT NULL DEFAULT '',
+  `cascade_parent_field` varchar(500) NOT NULL DEFAULT '',
+  `prefix_field` varchar(500) NOT NULL DEFAULT '',
+  `default_value_field` varchar(500) NOT NULL DEFAULT '',
+  `width_field` varchar(500) NOT NULL DEFAULT '',
+  `height_field` varchar(500) NOT NULL DEFAULT '',
+  `maxlength_field` varchar(500) NOT NULL DEFAULT '100',
+  `hint_insert_field` varchar(500) NOT NULL DEFAULT '',
+  `tooltip_field` varchar(500) NOT NULL DEFAULT '',
+  `order_form_field` int(11) NOT NULL,
+  `separator_field` varchar(500) NOT NULL DEFAULT '~',
+  `details_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `search_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `insert_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `edit_new_line_after_field` varchar(1) NOT NULL DEFAULT '1',
+  `insert_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `edit_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `search_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `details_separator_before_field` varchar(500) NOT NULL DEFAULT '',
+  `min_width_results_grid_column_field` varchar(50) NOT NULL DEFAULT '',
+  `table_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_field`)
+) ENGINE=InnoDB AUTO_INCREMENT=14081 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_forms_preview`
+--
+
+LOCK TABLES `zc_forms_preview` WRITE;
+/*!40000 ALTER TABLE `zc_forms_preview` DISABLE KEYS */;
+INSERT INTO `zc_forms_preview` VALUES (14023,'dismissal_id','Dismissal id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','dismissals'),(14024,'dismissal_type','Dismissal type','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','25','','',2,'~','1','1','1','1','','','','','','dismissals'),(14025,'dismissal_fulltype','Dismissal fulltype','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','25','','',3,'~','1','1','1','1','','','','','','dismissals'),(14026,'id','id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','performances'),(14027,'match_id','Match','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','match_id','matches','','matchdate~type','matchdate','DESC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',2,'~','1','1','1','1','','','','','','performances'),(14028,'innings','Innings','','select_single','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','~1~2~','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','performances'),(14029,'score','Score','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',4,'~','1','1','1','1','','','','','','performances'),(14030,'out_status','Out?','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Y~N~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',5,'~','1','1','1','1','','','','','','performances'),(14031,'balls','Balls','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',6,'~','1','1','1','1','','','','','','performances'),(14032,'sr','Sr','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',7,'~','1','1','1','1','','','','','','performances'),(14033,'dismissal_id','Dismissal id','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','dismissal_id','dismissals','','dismissal_fulltype','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','performances'),(14034,'pom','Pom','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','~Y~N~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','performances'),(14035,'notes','Notes','','textarea','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','contains/doesnt_contain/is_equal/is_different/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',10,'~','1','1','1','1','','','','','','performances'),(14036,'team_id','Team id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','teams'),(14037,'name','Name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',2,'~','1','1','1','1','','','','','','teams'),(14038,'nickname','Nickname','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',3,'~','1','1','1','1','','','','','','teams'),(14039,'abbr','Abbr','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',4,'~','1','1','1','1','','','','','','teams'),(14040,'venue_id','Venue id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','venues'),(14041,'name','Name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',2,'~','1','1','1','1','','','','','','venues'),(14042,'location','Location','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','255','','',3,'~','1','1','1','1','','','','','','venues'),(14043,'id_group','id_group','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','zc_groups'),(14044,'name_group','Group name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','1','1','1','1','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',2,'~','1','1','1','1','','','','','','zc_groups'),(14045,'id_user','id_user','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','1','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','zc_users'),(14046,'username_user','Username','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','1','1','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','50','','',2,'~','1','1','1','1','','','','','','zc_users'),(14047,'first_name_user','First name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','zc_users'),(14048,'last_name_user','Last name','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',4,'~','1','1','1','1','','','','','','zc_users'),(14049,'email_user','Email','','text','','','','','','','','','','','email','1','1','1','1','1','1','0','1','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',5,'~','1','1','1','1','','','','','','zc_users'),(14050,'id_group','Main group','','select_single','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','id_group','zc_groups','','name_group','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','','',6,'~','1','1','1','1','','','','','','zc_users'),(14051,'ids_group_others','Other groups','','select_multiple_menu','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','0','0','0','0','1','0','','id_group','zc_groups','','name_group','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','100','<a href=\"javascript:show_admin_help(\'Info\', \'Here you can specify additional groups the user belongs to. If the config parameter $enable_multiple_groups is set to 1, the permissions will be computed considering all the groups (main + others) and adopting a &lt;i&gt;most permissive&lt;/i&gt; strategy. Check the documentation (Chapter &lt;i&gt;Permissions based on multiple groups&lt;/i&gt;) for further details.\');\"><i class=\"far fa-question-circle fa-lg\"></i></a>','',7,'~','1','1','1','1','','','','','','zc_users'),(14052,'password_user','Password','','text','','','','','','','','','','','alphanumeric','0','0','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','zc_users'),(14053,'authentication_type_user','Authentication type','','text','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','zc_users'),(14054,'force_password_change_user','Force password change','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','~yes~no~','','','','','','','','is_equal/is_different','','','','','','yes','','','100','If yes, user will be forced to change password after login (LDAP users won\'t be forced)','',10,'~','1','1','1','1','','','','','','zc_users'),(14055,'temporary_password_user','temporary_password_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',11,'~','1','1','1','1','','','','','','zc_users'),(14056,'temporary_password_timestamp_user','temporary_password_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',12,'~','1','1','1','1','','','','','','zc_users'),(14057,'confirmed_timestamp_user','confirmed_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',13,'~','1','1','1','1','','','','','','zc_users'),(14058,'id_confirmation_user','id_confirmation_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',14,'~','1','1','1','1','','','','','','zc_users'),(14059,'id_confirmation_timestamp_user','id_confirmation_timestamp_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',15,'~','1','1','1','1','','','','','','zc_users'),(14060,'secret_2fa_user','secret_2fa_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',16,'~','1','1','1','1','','','','','','zc_users'),(14061,'nonce_secret_2fa_user','nonce_secret_2fa_user','','text','','','','','','','','','','','alphanumeric','0','0','0','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/is_null/is_not_null/is_empty/is_not_empty','','','','','','','','','100','','',17,'~','1','1','1','1','','','','','','zc_users'),(14062,'accept_terms_privacy_1_user','Accept terms - 1','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',18,'~','1','1','1','1','','','','','','zc_users'),(14063,'accept_terms_privacy_2_user','Accept terms - 2','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',19,'~','1','1','1','1','','','','','','zc_users'),(14064,'accept_terms_privacy_3_user','Accept terms - 3','','date_time','','','','','','','','','','','alphanumeric','1','1','1','0','0','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','','','',20,'~','1','1','1','1','','','','','','zc_users'),(14065,'enable_2fa_user','Enable 2FA','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','~yes~no~','','','','','','','','is_equal/is_different','','','','','','no','','','','','',21,'~','1','1','1','1','','','','','','zc_users'),(14066,'match_id','id','','text','','','','','','','','','','','numeric','0','0','0','0','0','0','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',1,'~','1','1','1','1','','','','','','matches'),(14067,'season','Season','','text','','','','','','','','','','','numeric','1','1','1','1','1','1','0','1','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','2','','','100','','',2,'~','1','1','1','1','','','','','','matches'),(14068,'matchdate','Match Date','','date','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','1','0','0','0','0','0','','','','','','','','','is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between','','','','','','','','','100','','',3,'~','1','1','1','1','','','','','','matches'),(14069,'level','Level','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~Amateur~Pro~International~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','Pro','','','100','','',4,'~','1','1','1','1','','','','','','matches'),(14070,'type','Type','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~T20~ListA~2Innings~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','2Innings','','','100','','',5,'~','1','1','1','1','','','','','','matches'),(14071,'stage','Stage','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~League~Semi Final~Final~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','League','','','100','','',6,'~','1','1','1','1','','','','','','matches'),(14072,'venue_id','Venue','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','venue_id','venues','','name','name','ASC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',7,'~','1','1','1','1','','','','','','matches'),(14073,'my_team_id','Team','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','team_id','teams','','name','name','ASC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',8,'~','1','1','1','1','','','','','','matches'),(14074,'opp_team_id','Opponent','','select_single','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','team_id','teams','','name','name','ASC','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',9,'~','1','1','1','1','','','','','','matches'),(14075,'my_tot1','My 1st Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',10,'~','1','1','1','1','','','','','','matches'),(14076,'my_tot2','My 2nd Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',11,'~','1','1','1','1','','','','','','matches'),(14077,'opp_tot1','Their 1st Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',12,'~','1','1','1','1','','','','','','matches'),(14078,'opp_tot2','Their 2nd Inn','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','20','','',13,'~','1','1','1','1','','','','','','matches'),(14079,'result','Result','','select_single_radio','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','~Won~Lost~Tie~Drawn~','','','','','','','','is_equal/is_different/is_null/is_not_null','','','','','','','','','100','','',14,'~','1','1','1','1','','','','','','matches'),(14080,'margin','Margin','','text','','','','','','','','','','','alphanumeric','1','1','1','1','1','1','0','0','0','0','0','0','0','0','','','','','','','','','is_equal/is_different/contains/doesnt_contain/starts_with/ends_with/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/is_empty/is_not_empty/between','','','','','','','','','50','','',15,'~','1','1','1','1','','','','','','matches');
+/*!40000 ALTER TABLE `zc_forms_preview` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_groups`
+--
+
+DROP TABLE IF EXISTS `zc_groups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_groups` (
+  `id_group` int(11) NOT NULL AUTO_INCREMENT,
+  `name_group` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_group`),
+  UNIQUE KEY `name_group` (`name_group`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_groups`
+--
+
+LOCK TABLES `zc_groups` WRITE;
+/*!40000 ALTER TABLE `zc_groups` DISABLE KEYS */;
+INSERT INTO `zc_groups` VALUES (1,'admin'),(2,'default');
+/*!40000 ALTER TABLE `zc_groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_installation_tab`
+--
+
+DROP TABLE IF EXISTS `zc_installation_tab`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_installation_tab` (
+  `id_installation` int(11) DEFAULT NULL,
+  `code_installation` varchar(19) NOT NULL,
+  `date_time_installation` datetime NOT NULL,
+  `dbms_type_installation` varchar(50) NOT NULL,
+  `dadabik_version_installation` varchar(50) NOT NULL,
+  `dadabik_version_2_installation` varchar(10) NOT NULL,
+  `other_infos_installation` varchar(255) DEFAULT NULL,
+  `other_infos_2_installation` text DEFAULT NULL,
+  `url_installation` varchar(500) DEFAULT NULL,
+  `status_installation` varchar(50) NOT NULL DEFAULT 'available',
+  `users_maintenance_installation` varchar(500) DEFAULT NULL,
+  `beta_users_installation` text DEFAULT NULL,
+  PRIMARY KEY (`code_installation`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_installation_tab`
+--
+
+LOCK TABLES `zc_installation_tab` WRITE;
+/*!40000 ALTER TABLE `zc_installation_tab` DISABLE KEYS */;
+INSERT INTO `zc_installation_tab` VALUES (20718,'20718686d6481befc7','2025-07-08 19:33:37','mysql','12.7-Aveto','platinum','l=86~date_feedback_sent=2025-07-21','2025-09-03 21:12:18','https://cricket.gameplan.org.uk//','available',NULL,NULL);
+/*!40000 ALTER TABLE `zc_installation_tab` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_locked_records`
+--
+
+DROP TABLE IF EXISTS `zc_locked_records`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_locked_records` (
+  `id_locked_record` int(11) NOT NULL AUTO_INCREMENT,
+  `table_locked_record` varchar(50) NOT NULL,
+  `pk_locked_record` varchar(50) NOT NULL,
+  `value_locked_record` varchar(100) NOT NULL,
+  `username_user` varchar(255) NOT NULL,
+  `timestamp_locked_record` int(11) NOT NULL,
+  PRIMARY KEY (`id_locked_record`),
+  UNIQUE KEY `table_locked_record` (`table_locked_record`,`pk_locked_record`,`value_locked_record`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_locked_records`
+--
+
+LOCK TABLES `zc_locked_records` WRITE;
+/*!40000 ALTER TABLE `zc_locked_records` DISABLE KEYS */;
+/*!40000 ALTER TABLE `zc_locked_records` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_logs`
+--
+
+DROP TABLE IF EXISTS `zc_logs`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_logs` (
+  `id_log` int(11) NOT NULL AUTO_INCREMENT,
+  `timestamp_log` int(11) NOT NULL,
+  `username_user` varchar(255) DEFAULT NULL,
+  `operation_log` varchar(50) NOT NULL,
+  `sql_log` text NOT NULL,
+  PRIMARY KEY (`id_log`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_logs`
+--
+
+LOCK TABLES `zc_logs` WRITE;
+/*!40000 ALTER TABLE `zc_logs` DISABLE KEYS */;
+/*!40000 ALTER TABLE `zc_logs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_permission_options`
+--
+
+DROP TABLE IF EXISTS `zc_permission_options`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_permission_options` (
+  `id_permission_option` int(11) NOT NULL AUTO_INCREMENT,
+  `label_permission_option` varchar(50) NOT NULL,
+  `value_permission_option` int(11) NOT NULL,
+  PRIMARY KEY (`id_permission_option`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_permission_options`
+--
+
+LOCK TABLES `zc_permission_options` WRITE;
+/*!40000 ALTER TABLE `zc_permission_options` DISABLE KEYS */;
+INSERT INTO `zc_permission_options` VALUES (1,'Yes',1),(2,'No',0),(3,'My',2),(4,'Yes but disabled',3),(5,'Yes but don\'t show in menu',4);
+/*!40000 ALTER TABLE `zc_permission_options` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_permission_types`
+--
+
+DROP TABLE IF EXISTS `zc_permission_types`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_permission_types` (
+  `id_permission_type` int(11) NOT NULL AUTO_INCREMENT,
+  `type_permission_type` varchar(50) NOT NULL,
+  `object_type_permission_type` varchar(50) NOT NULL,
+  `options_permission_type` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_permission_type`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_permission_types`
+--
+
+LOCK TABLES `zc_permission_types` WRITE;
+/*!40000 ALTER TABLE `zc_permission_types` DISABLE KEYS */;
+INSERT INTO `zc_permission_types` VALUES (1,'read','table','0,1,2'),(2,'delete','table','0,1,2'),(3,'edit','table','0,1,2'),(4,'create','table','0,1'),(5,'details','table','0,1'),(7,'results','field','0,1'),(8,'edit','field','0,1,3'),(9,'create','field','0,1'),(10,'details','field','0,1'),(11,'quick search','field','0,1'),(12,'search','field','0,1'),(13,'view','custom_page','0,1,4'),(14,'csv','table','0,1,2'),(15,'csv','field','0,1');
+/*!40000 ALTER TABLE `zc_permission_types` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_permissions`
+--
+
+DROP TABLE IF EXISTS `zc_permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_permissions` (
+  `id_permission` int(11) NOT NULL AUTO_INCREMENT,
+  `subject_type_permission` varchar(50) NOT NULL,
+  `id_subject` int(11) NOT NULL,
+  `object_type_permission` varchar(50) NOT NULL,
+  `object_permission` varchar(130) NOT NULL,
+  `id_permission_type` int(11) DEFAULT NULL,
+  `value_permission` int(11) NOT NULL,
+  PRIMARY KEY (`id_permission`),
+  UNIQUE KEY `unique_permission` (`id_subject`,`object_type_permission`,`object_permission`,`id_permission_type`)
+) ENGINE=InnoDB AUTO_INCREMENT=1137 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_permissions`
+--
+
+LOCK TABLES `zc_permissions` WRITE;
+/*!40000 ALTER TABLE `zc_permissions` DISABLE KEYS */;
+INSERT INTO `zc_permissions` VALUES (1,'group',1,'table','dismissals',1,1),(2,'group',1,'table','dismissals',2,1),(3,'group',1,'table','dismissals',3,1),(4,'group',1,'table','dismissals',4,1),(5,'group',1,'table','dismissals',5,1),(6,'group',1,'table','dismissals',14,1),(10,'group',1,'field','dismissals.dismissal_type',7,1),(11,'group',1,'field','dismissals.dismissal_type',8,1),(12,'group',1,'field','dismissals.dismissal_type',9,1),(13,'group',1,'field','dismissals.dismissal_type',10,1),(14,'group',1,'field','dismissals.dismissal_type',11,0),(15,'group',1,'field','dismissals.dismissal_type',12,1),(16,'group',1,'field','dismissals.dismissal_type',15,1),(17,'group',2,'field','dismissals.dismissal_type',7,1),(18,'group',2,'field','dismissals.dismissal_type',10,1),(19,'group',2,'field','dismissals.dismissal_type',12,1),(20,'group',2,'field','dismissals.dismissal_type',15,1),(21,'group',1,'field','dismissals.dismissal_fulltype',7,1),(22,'group',1,'field','dismissals.dismissal_fulltype',8,1),(23,'group',1,'field','dismissals.dismissal_fulltype',9,1),(24,'group',1,'field','dismissals.dismissal_fulltype',10,1),(25,'group',1,'field','dismissals.dismissal_fulltype',11,0),(26,'group',1,'field','dismissals.dismissal_fulltype',12,1),(27,'group',1,'field','dismissals.dismissal_fulltype',15,1),(28,'group',2,'field','dismissals.dismissal_fulltype',7,1),(29,'group',2,'field','dismissals.dismissal_fulltype',10,1),(30,'group',2,'field','dismissals.dismissal_fulltype',12,1),(31,'group',2,'field','dismissals.dismissal_fulltype',15,1),(32,'group',1,'table','matches',1,1),(33,'group',1,'table','matches',2,1),(34,'group',1,'table','matches',3,1),(35,'group',1,'table','matches',4,1),(36,'group',1,'table','matches',5,1),(37,'group',1,'table','matches',14,1),(41,'group',1,'field','matches.matchdate',7,1),(42,'group',1,'field','matches.matchdate',8,1),(43,'group',1,'field','matches.matchdate',9,1),(44,'group',1,'field','matches.matchdate',10,1),(45,'group',1,'field','matches.matchdate',11,0),(46,'group',1,'field','matches.matchdate',12,1),(47,'group',1,'field','matches.matchdate',15,1),(52,'group',1,'field','matches.level',7,1),(53,'group',1,'field','matches.level',8,1),(54,'group',1,'field','matches.level',9,1),(55,'group',1,'field','matches.level',10,1),(56,'group',1,'field','matches.level',11,0),(57,'group',1,'field','matches.level',12,1),(58,'group',1,'field','matches.level',15,1),(63,'group',1,'field','matches.type',7,1),(64,'group',1,'field','matches.type',8,1),(65,'group',1,'field','matches.type',9,1),(66,'group',1,'field','matches.type',10,1),(67,'group',1,'field','matches.type',11,0),(68,'group',1,'field','matches.type',12,1),(69,'group',1,'field','matches.type',15,1),(74,'group',1,'field','matches.stage',7,1),(75,'group',1,'field','matches.stage',8,1),(76,'group',1,'field','matches.stage',9,1),(77,'group',1,'field','matches.stage',10,1),(78,'group',1,'field','matches.stage',11,0),(79,'group',1,'field','matches.stage',12,1),(80,'group',1,'field','matches.stage',15,1),(85,'group',1,'field','matches.venue_id',7,1),(86,'group',1,'field','matches.venue_id',8,1),(87,'group',1,'field','matches.venue_id',9,1),(88,'group',1,'field','matches.venue_id',10,1),(89,'group',1,'field','matches.venue_id',11,0),(90,'group',1,'field','matches.venue_id',12,1),(91,'group',1,'field','matches.venue_id',15,1),(96,'group',1,'field','matches.my_team_id',7,1),(97,'group',1,'field','matches.my_team_id',8,1),(98,'group',1,'field','matches.my_team_id',9,1),(99,'group',1,'field','matches.my_team_id',10,1),(100,'group',1,'field','matches.my_team_id',11,0),(101,'group',1,'field','matches.my_team_id',12,1),(102,'group',1,'field','matches.my_team_id',15,1),(107,'group',1,'field','matches.opp_team_id',7,1),(108,'group',1,'field','matches.opp_team_id',8,1),(109,'group',1,'field','matches.opp_team_id',9,1),(110,'group',1,'field','matches.opp_team_id',10,1),(111,'group',1,'field','matches.opp_team_id',11,0),(112,'group',1,'field','matches.opp_team_id',12,1),(113,'group',1,'field','matches.opp_team_id',15,1),(118,'group',1,'field','matches.my_tot1',7,1),(119,'group',1,'field','matches.my_tot1',8,1),(120,'group',1,'field','matches.my_tot1',9,1),(121,'group',1,'field','matches.my_tot1',10,1),(122,'group',1,'field','matches.my_tot1',11,0),(123,'group',1,'field','matches.my_tot1',12,1),(124,'group',1,'field','matches.my_tot1',15,1),(129,'group',1,'field','matches.my_tot2',7,1),(130,'group',1,'field','matches.my_tot2',8,1),(131,'group',1,'field','matches.my_tot2',9,1),(132,'group',1,'field','matches.my_tot2',10,1),(133,'group',1,'field','matches.my_tot2',11,0),(134,'group',1,'field','matches.my_tot2',12,1),(135,'group',1,'field','matches.my_tot2',15,1),(140,'group',1,'field','matches.opp_tot1',7,1),(141,'group',1,'field','matches.opp_tot1',8,1),(142,'group',1,'field','matches.opp_tot1',9,1),(143,'group',1,'field','matches.opp_tot1',10,1),(144,'group',1,'field','matches.opp_tot1',11,0),(145,'group',1,'field','matches.opp_tot1',12,1),(146,'group',1,'field','matches.opp_tot1',15,1),(151,'group',1,'field','matches.opp_tot2',7,1),(152,'group',1,'field','matches.opp_tot2',8,1),(153,'group',1,'field','matches.opp_tot2',9,1),(154,'group',1,'field','matches.opp_tot2',10,1),(155,'group',1,'field','matches.opp_tot2',11,0),(156,'group',1,'field','matches.opp_tot2',12,1),(157,'group',1,'field','matches.opp_tot2',15,1),(162,'group',1,'field','matches.result',7,1),(163,'group',1,'field','matches.result',8,1),(164,'group',1,'field','matches.result',9,1),(165,'group',1,'field','matches.result',10,1),(166,'group',1,'field','matches.result',11,0),(167,'group',1,'field','matches.result',12,1),(168,'group',1,'field','matches.result',15,1),(173,'group',1,'field','matches.margin',7,1),(174,'group',1,'field','matches.margin',8,1),(175,'group',1,'field','matches.margin',9,1),(176,'group',1,'field','matches.margin',10,1),(177,'group',1,'field','matches.margin',11,0),(178,'group',1,'field','matches.margin',12,1),(179,'group',1,'field','matches.margin',15,1),(184,'group',1,'table','performances',1,1),(185,'group',1,'table','performances',2,1),(186,'group',1,'table','performances',3,1),(187,'group',1,'table','performances',4,1),(188,'group',1,'table','performances',5,1),(189,'group',1,'table','performances',14,1),(193,'group',1,'field','performances.match_id',7,1),(194,'group',1,'field','performances.match_id',8,1),(195,'group',1,'field','performances.match_id',9,1),(196,'group',1,'field','performances.match_id',10,1),(197,'group',1,'field','performances.match_id',11,0),(198,'group',1,'field','performances.match_id',12,1),(199,'group',1,'field','performances.match_id',15,1),(204,'group',1,'field','performances.innings',7,1),(205,'group',1,'field','performances.innings',8,1),(206,'group',1,'field','performances.innings',9,1),(207,'group',1,'field','performances.innings',10,1),(208,'group',1,'field','performances.innings',11,0),(209,'group',1,'field','performances.innings',12,1),(210,'group',1,'field','performances.innings',15,1),(215,'group',1,'field','performances.score',7,1),(216,'group',1,'field','performances.score',8,1),(217,'group',1,'field','performances.score',9,1),(218,'group',1,'field','performances.score',10,1),(219,'group',1,'field','performances.score',11,0),(220,'group',1,'field','performances.score',12,1),(221,'group',1,'field','performances.score',15,1),(226,'group',1,'field','performances.out_status',7,1),(227,'group',1,'field','performances.out_status',8,1),(228,'group',1,'field','performances.out_status',9,1),(229,'group',1,'field','performances.out_status',10,1),(230,'group',1,'field','performances.out_status',11,0),(231,'group',1,'field','performances.out_status',12,1),(232,'group',1,'field','performances.out_status',15,1),(237,'group',1,'field','performances.balls',7,1),(238,'group',1,'field','performances.balls',8,1),(239,'group',1,'field','performances.balls',9,1),(240,'group',1,'field','performances.balls',10,1),(241,'group',1,'field','performances.balls',11,0),(242,'group',1,'field','performances.balls',12,1),(243,'group',1,'field','performances.balls',15,1),(248,'group',1,'field','performances.sr',7,1),(249,'group',1,'field','performances.sr',8,1),(250,'group',1,'field','performances.sr',9,1),(251,'group',1,'field','performances.sr',10,1),(252,'group',1,'field','performances.sr',11,0),(253,'group',1,'field','performances.sr',12,1),(254,'group',1,'field','performances.sr',15,1),(259,'group',1,'field','performances.dismissal_id',7,1),(260,'group',1,'field','performances.dismissal_id',8,1),(261,'group',1,'field','performances.dismissal_id',9,1),(262,'group',1,'field','performances.dismissal_id',10,1),(263,'group',1,'field','performances.dismissal_id',11,0),(264,'group',1,'field','performances.dismissal_id',12,1),(265,'group',1,'field','performances.dismissal_id',15,1),(270,'group',1,'field','performances.pom',7,1),(271,'group',1,'field','performances.pom',8,1),(272,'group',1,'field','performances.pom',9,1),(273,'group',1,'field','performances.pom',10,1),(274,'group',1,'field','performances.pom',11,0),(275,'group',1,'field','performances.pom',12,1),(276,'group',1,'field','performances.pom',15,1),(281,'group',1,'field','performances.notes',7,1),(282,'group',1,'field','performances.notes',8,1),(283,'group',1,'field','performances.notes',9,1),(284,'group',1,'field','performances.notes',10,1),(285,'group',1,'field','performances.notes',11,0),(286,'group',1,'field','performances.notes',12,1),(287,'group',1,'field','performances.notes',15,1),(292,'group',1,'table','teams',1,1),(293,'group',1,'table','teams',2,1),(294,'group',1,'table','teams',3,1),(295,'group',1,'table','teams',4,1),(296,'group',1,'table','teams',5,1),(297,'group',1,'table','teams',14,1),(301,'group',1,'field','teams.name',7,1),(302,'group',1,'field','teams.name',8,1),(303,'group',1,'field','teams.name',9,1),(304,'group',1,'field','teams.name',10,1),(305,'group',1,'field','teams.name',11,0),(306,'group',1,'field','teams.name',12,1),(307,'group',1,'field','teams.name',15,1),(308,'group',2,'field','teams.name',7,1),(309,'group',2,'field','teams.name',10,1),(310,'group',2,'field','teams.name',12,1),(311,'group',2,'field','teams.name',15,1),(312,'group',1,'field','teams.nickname',7,1),(313,'group',1,'field','teams.nickname',8,1),(314,'group',1,'field','teams.nickname',9,1),(315,'group',1,'field','teams.nickname',10,1),(316,'group',1,'field','teams.nickname',11,0),(317,'group',1,'field','teams.nickname',12,1),(318,'group',1,'field','teams.nickname',15,1),(319,'group',2,'field','teams.nickname',7,1),(320,'group',2,'field','teams.nickname',10,1),(321,'group',2,'field','teams.nickname',12,1),(322,'group',2,'field','teams.nickname',15,1),(323,'group',1,'field','teams.abbr',7,1),(324,'group',1,'field','teams.abbr',8,1),(325,'group',1,'field','teams.abbr',9,1),(326,'group',1,'field','teams.abbr',10,1),(327,'group',1,'field','teams.abbr',11,0),(328,'group',1,'field','teams.abbr',12,1),(329,'group',1,'field','teams.abbr',15,1),(330,'group',2,'field','teams.abbr',7,1),(331,'group',2,'field','teams.abbr',10,1),(332,'group',2,'field','teams.abbr',12,1),(333,'group',2,'field','teams.abbr',15,1),(334,'group',1,'table','venues',1,1),(335,'group',1,'table','venues',2,1),(336,'group',1,'table','venues',3,1),(337,'group',1,'table','venues',4,1),(338,'group',1,'table','venues',5,1),(339,'group',1,'table','venues',14,1),(343,'group',1,'field','venues.name',7,1),(344,'group',1,'field','venues.name',8,1),(345,'group',1,'field','venues.name',9,1),(346,'group',1,'field','venues.name',10,1),(347,'group',1,'field','venues.name',11,0),(348,'group',1,'field','venues.name',12,1),(349,'group',1,'field','venues.name',15,1),(350,'group',2,'field','venues.name',7,1),(351,'group',2,'field','venues.name',10,1),(352,'group',2,'field','venues.name',12,1),(353,'group',2,'field','venues.name',15,1),(354,'group',1,'field','venues.location',7,1),(355,'group',1,'field','venues.location',8,1),(356,'group',1,'field','venues.location',9,1),(357,'group',1,'field','venues.location',10,1),(358,'group',1,'field','venues.location',11,0),(359,'group',1,'field','venues.location',12,1),(360,'group',1,'field','venues.location',15,1),(361,'group',2,'field','venues.location',7,1),(362,'group',2,'field','venues.location',10,1),(363,'group',2,'field','venues.location',12,1),(364,'group',2,'field','venues.location',15,1),(365,'group',1,'table','zc_groups',1,1),(366,'group',1,'table','zc_groups',2,1),(367,'group',1,'table','zc_groups',3,1),(368,'group',1,'table','zc_groups',4,1),(369,'group',1,'table','zc_groups',5,1),(370,'group',1,'table','zc_groups',14,1),(371,'group',1,'field','zc_groups.id_group',8,0),(372,'group',1,'field','zc_groups.id_group',9,0),(373,'group',1,'field','zc_groups.name_group',7,1),(374,'group',1,'field','zc_groups.name_group',8,1),(375,'group',1,'field','zc_groups.name_group',9,1),(376,'group',1,'field','zc_groups.name_group',10,1),(377,'group',1,'field','zc_groups.name_group',11,0),(378,'group',1,'field','zc_groups.name_group',12,1),(379,'group',1,'field','zc_groups.name_group',15,1),(380,'group',1,'table','zc_users',1,1),(381,'group',1,'table','zc_users',2,1),(382,'group',1,'table','zc_users',3,1),(383,'group',1,'table','zc_users',4,1),(384,'group',1,'table','zc_users',5,1),(385,'group',1,'table','zc_users',14,1),(386,'group',1,'field','zc_users.id_user',8,0),(387,'group',1,'field','zc_users.id_user',9,0),(388,'group',1,'field','zc_users.id_group',7,1),(389,'group',1,'field','zc_users.id_group',8,1),(390,'group',1,'field','zc_users.id_group',9,1),(391,'group',1,'field','zc_users.id_group',10,1),(392,'group',1,'field','zc_users.id_group',11,0),(393,'group',1,'field','zc_users.id_group',12,1),(394,'group',1,'field','zc_users.id_group',15,1),(395,'group',1,'field','zc_users.ids_group_others',7,1),(396,'group',1,'field','zc_users.ids_group_others',8,1),(397,'group',1,'field','zc_users.ids_group_others',9,1),(398,'group',1,'field','zc_users.ids_group_others',10,1),(399,'group',1,'field','zc_users.ids_group_others',11,0),(400,'group',1,'field','zc_users.ids_group_others',12,1),(401,'group',1,'field','zc_users.ids_group_others',15,1),(402,'group',1,'field','zc_users.first_name_user',7,1),(403,'group',1,'field','zc_users.first_name_user',8,1),(404,'group',1,'field','zc_users.first_name_user',9,1),(405,'group',1,'field','zc_users.first_name_user',10,1),(406,'group',1,'field','zc_users.first_name_user',11,0),(407,'group',1,'field','zc_users.first_name_user',12,1),(408,'group',1,'field','zc_users.first_name_user',15,1),(409,'group',1,'field','zc_users.last_name_user',7,1),(410,'group',1,'field','zc_users.last_name_user',8,1),(411,'group',1,'field','zc_users.last_name_user',9,1),(412,'group',1,'field','zc_users.last_name_user',10,1),(413,'group',1,'field','zc_users.last_name_user',11,0),(414,'group',1,'field','zc_users.last_name_user',12,1),(415,'group',1,'field','zc_users.last_name_user',15,1),(416,'group',1,'field','zc_users.email_user',7,1),(417,'group',1,'field','zc_users.email_user',8,1),(418,'group',1,'field','zc_users.email_user',9,1),(419,'group',1,'field','zc_users.email_user',10,1),(420,'group',1,'field','zc_users.email_user',11,0),(421,'group',1,'field','zc_users.email_user',12,1),(422,'group',1,'field','zc_users.email_user',15,1),(423,'group',1,'field','zc_users.username_user',7,1),(424,'group',1,'field','zc_users.username_user',8,1),(425,'group',1,'field','zc_users.username_user',9,1),(426,'group',1,'field','zc_users.username_user',10,1),(427,'group',1,'field','zc_users.username_user',11,0),(428,'group',1,'field','zc_users.username_user',12,1),(429,'group',1,'field','zc_users.username_user',15,1),(430,'group',1,'field','zc_users.password_user',7,0),(431,'group',1,'field','zc_users.password_user',8,1),(432,'group',1,'field','zc_users.password_user',9,1),(433,'group',1,'field','zc_users.password_user',10,1),(434,'group',1,'field','zc_users.password_user',11,0),(435,'group',1,'field','zc_users.password_user',12,1),(436,'group',1,'field','zc_users.password_user',15,1),(437,'group',1,'field','zc_users.authentication_type_user',7,1),(438,'group',1,'field','zc_users.authentication_type_user',8,0),(439,'group',1,'field','zc_users.authentication_type_user',9,0),(440,'group',1,'field','zc_users.authentication_type_user',10,1),(441,'group',1,'field','zc_users.authentication_type_user',11,0),(442,'group',1,'field','zc_users.authentication_type_user',12,1),(443,'group',1,'field','zc_users.authentication_type_user',15,1),(444,'group',1,'field','zc_users.force_password_change_user',7,0),(445,'group',1,'field','zc_users.force_password_change_user',8,1),(446,'group',1,'field','zc_users.force_password_change_user',9,1),(447,'group',1,'field','zc_users.force_password_change_user',10,1),(448,'group',1,'field','zc_users.force_password_change_user',11,0),(449,'group',1,'field','zc_users.force_password_change_user',12,1),(450,'group',1,'field','zc_users.force_password_change_user',15,1),(451,'group',1,'field','zc_users.accept_terms_privacy_1_user',7,0),(452,'group',1,'field','zc_users.accept_terms_privacy_1_user',8,3),(453,'group',1,'field','zc_users.accept_terms_privacy_1_user',9,0),(454,'group',1,'field','zc_users.accept_terms_privacy_1_user',10,1),(455,'group',1,'field','zc_users.accept_terms_privacy_1_user',11,0),(456,'group',1,'field','zc_users.accept_terms_privacy_1_user',12,1),(457,'group',1,'field','zc_users.accept_terms_privacy_1_user',15,1),(458,'group',1,'field','zc_users.accept_terms_privacy_2_user',7,0),(459,'group',1,'field','zc_users.accept_terms_privacy_2_user',8,3),(460,'group',1,'field','zc_users.accept_terms_privacy_2_user',9,0),(461,'group',1,'field','zc_users.accept_terms_privacy_2_user',10,1),(462,'group',1,'field','zc_users.accept_terms_privacy_2_user',11,0),(463,'group',1,'field','zc_users.accept_terms_privacy_2_user',12,1),(464,'group',1,'field','zc_users.accept_terms_privacy_2_user',15,1),(465,'group',1,'field','zc_users.accept_terms_privacy_3_user',7,0),(466,'group',1,'field','zc_users.accept_terms_privacy_3_user',8,3),(467,'group',1,'field','zc_users.accept_terms_privacy_3_user',9,0),(468,'group',1,'field','zc_users.accept_terms_privacy_3_user',10,1),(469,'group',1,'field','zc_users.accept_terms_privacy_3_user',11,0),(470,'group',1,'field','zc_users.accept_terms_privacy_3_user',12,1),(471,'group',1,'field','zc_users.accept_terms_privacy_3_user',15,1),(472,'group',1,'field','zc_users.enable_2fa_user',7,1),(473,'group',1,'field','zc_users.enable_2fa_user',8,1),(474,'group',1,'field','zc_users.enable_2fa_user',9,1),(475,'group',1,'field','zc_users.enable_2fa_user',10,1),(476,'group',1,'field','zc_users.enable_2fa_user',11,0),(477,'group',1,'field','zc_users.enable_2fa_user',12,1),(478,'group',1,'field','zc_users.enable_2fa_user',15,1),(479,'group',1,'custom_page','1',13,1),(480,'group',2,'custom_page','1',13,1),(481,'group',2,'table','dismissals',1,0),(482,'group',2,'table','dismissals',2,0),(483,'group',2,'table','dismissals',3,0),(484,'group',2,'table','dismissals',4,0),(485,'group',2,'table','dismissals',5,1),(486,'group',2,'table','dismissals',14,1),(487,'group',2,'table','teams',1,0),(488,'group',2,'table','teams',2,0),(489,'group',2,'table','teams',3,0),(490,'group',2,'table','teams',4,0),(491,'group',2,'table','teams',5,1),(492,'group',2,'table','teams',14,1),(493,'group',2,'table','venues',1,0),(494,'group',2,'table','venues',2,0),(495,'group',2,'table','venues',3,0),(496,'group',2,'table','venues',4,0),(497,'group',2,'table','venues',5,1),(498,'group',2,'table','venues',14,1),(870,'group',1,'field','matches.season',7,1),(871,'group',1,'field','matches.season',8,1),(872,'group',1,'field','matches.season',9,1),(873,'group',1,'field','matches.season',10,1),(874,'group',1,'field','matches.season',11,0),(875,'group',1,'field','matches.season',12,1),(876,'group',1,'field','matches.season',15,1),(983,'group',2,'field','matches.matchdate',7,1),(984,'group',2,'field','matches.matchdate',8,1),(985,'group',2,'field','matches.matchdate',9,1),(986,'group',2,'field','matches.matchdate',10,1),(987,'group',2,'field','matches.matchdate',12,1),(988,'group',2,'field','matches.matchdate',15,1),(989,'group',2,'field','matches.level',7,1),(990,'group',2,'field','matches.level',8,1),(991,'group',2,'field','matches.level',9,1),(992,'group',2,'field','matches.level',10,1),(993,'group',2,'field','matches.level',11,1),(994,'group',2,'field','matches.level',12,1),(995,'group',2,'field','matches.level',15,1),(996,'group',2,'field','matches.type',7,1),(997,'group',2,'field','matches.type',8,1),(998,'group',2,'field','matches.type',9,1),(999,'group',2,'field','matches.type',10,1),(1000,'group',2,'field','matches.type',11,1),(1001,'group',2,'field','matches.type',12,1),(1002,'group',2,'field','matches.type',15,1),(1003,'group',2,'field','matches.stage',7,1),(1004,'group',2,'field','matches.stage',8,1),(1005,'group',2,'field','matches.stage',9,1),(1006,'group',2,'field','matches.stage',10,1),(1007,'group',2,'field','matches.stage',12,1),(1008,'group',2,'field','matches.stage',15,1),(1009,'group',2,'field','matches.venue_id',7,1),(1010,'group',2,'field','matches.venue_id',8,1),(1011,'group',2,'field','matches.venue_id',9,1),(1012,'group',2,'field','matches.venue_id',10,1),(1013,'group',2,'field','matches.venue_id',11,1),(1014,'group',2,'field','matches.venue_id',12,1),(1015,'group',2,'field','matches.venue_id',15,1),(1016,'group',2,'field','matches.my_team_id',7,1),(1017,'group',2,'field','matches.my_team_id',8,1),(1018,'group',2,'field','matches.my_team_id',9,1),(1019,'group',2,'field','matches.my_team_id',10,1),(1020,'group',2,'field','matches.my_team_id',11,1),(1021,'group',2,'field','matches.my_team_id',12,1),(1022,'group',2,'field','matches.my_team_id',15,1),(1023,'group',2,'field','matches.opp_team_id',7,1),(1024,'group',2,'field','matches.opp_team_id',8,1),(1025,'group',2,'field','matches.opp_team_id',9,1),(1026,'group',2,'field','matches.opp_team_id',10,1),(1027,'group',2,'field','matches.opp_team_id',11,1),(1028,'group',2,'field','matches.opp_team_id',12,1),(1029,'group',2,'field','matches.opp_team_id',15,1),(1030,'group',2,'field','matches.my_tot1',7,1),(1031,'group',2,'field','matches.my_tot1',8,1),(1032,'group',2,'field','matches.my_tot1',9,1),(1033,'group',2,'field','matches.my_tot1',10,1),(1034,'group',2,'field','matches.my_tot1',12,1),(1035,'group',2,'field','matches.my_tot1',15,1),(1036,'group',2,'field','matches.my_tot2',7,1),(1037,'group',2,'field','matches.my_tot2',8,1),(1038,'group',2,'field','matches.my_tot2',9,1),(1039,'group',2,'field','matches.my_tot2',10,1),(1040,'group',2,'field','matches.my_tot2',12,1),(1041,'group',2,'field','matches.my_tot2',15,1),(1042,'group',2,'field','matches.opp_tot1',7,1),(1043,'group',2,'field','matches.opp_tot1',8,1),(1044,'group',2,'field','matches.opp_tot1',9,1),(1045,'group',2,'field','matches.opp_tot1',10,1),(1046,'group',2,'field','matches.opp_tot1',12,1),(1047,'group',2,'field','matches.opp_tot1',15,1),(1048,'group',2,'field','matches.opp_tot2',7,1),(1049,'group',2,'field','matches.opp_tot2',8,1),(1050,'group',2,'field','matches.opp_tot2',9,1),(1051,'group',2,'field','matches.opp_tot2',10,1),(1052,'group',2,'field','matches.opp_tot2',12,1),(1053,'group',2,'field','matches.opp_tot2',15,1),(1054,'group',2,'field','matches.result',7,1),(1055,'group',2,'field','matches.result',8,1),(1056,'group',2,'field','matches.result',9,1),(1057,'group',2,'field','matches.result',10,1),(1058,'group',2,'field','matches.result',11,1),(1059,'group',2,'field','matches.result',12,1),(1060,'group',2,'field','matches.result',15,1),(1061,'group',2,'field','matches.margin',7,1),(1062,'group',2,'field','matches.margin',8,1),(1063,'group',2,'field','matches.margin',9,1),(1064,'group',2,'field','matches.margin',10,1),(1065,'group',2,'field','matches.margin',12,1),(1066,'group',2,'field','matches.margin',15,1),(1067,'group',2,'field','matches.season',7,1),(1068,'group',2,'field','matches.season',10,1),(1069,'group',2,'field','matches.season',11,1),(1070,'group',2,'table','matches',1,1),(1071,'group',2,'table','matches',2,0),(1072,'group',2,'table','matches',3,1),(1073,'group',2,'table','matches',4,1),(1074,'group',2,'table','matches',5,1),(1075,'group',2,'table','matches',14,1),(1076,'group',2,'table','performances',1,1),(1077,'group',2,'table','performances',2,0),(1078,'group',2,'table','performances',3,1),(1079,'group',2,'table','performances',4,1),(1080,'group',2,'table','performances',5,1),(1081,'group',2,'table','performances',14,1),(1082,'group',2,'field','performances.match_id',7,1),(1083,'group',2,'field','performances.match_id',8,1),(1084,'group',2,'field','performances.match_id',9,1),(1085,'group',2,'field','performances.match_id',10,1),(1086,'group',2,'field','performances.match_id',11,1),(1087,'group',2,'field','performances.match_id',12,1),(1088,'group',2,'field','performances.match_id',15,1),(1089,'group',2,'field','performances.innings',7,1),(1090,'group',2,'field','performances.innings',8,1),(1091,'group',2,'field','performances.innings',9,1),(1092,'group',2,'field','performances.innings',10,1),(1093,'group',2,'field','performances.innings',12,1),(1094,'group',2,'field','performances.innings',15,1),(1095,'group',2,'field','performances.score',7,1),(1096,'group',2,'field','performances.score',8,1),(1097,'group',2,'field','performances.score',9,1),(1098,'group',2,'field','performances.score',10,1),(1099,'group',2,'field','performances.score',11,1),(1100,'group',2,'field','performances.score',12,1),(1101,'group',2,'field','performances.score',15,1),(1102,'group',2,'field','performances.out_status',7,1),(1103,'group',2,'field','performances.out_status',8,1),(1104,'group',2,'field','performances.out_status',9,1),(1105,'group',2,'field','performances.out_status',10,1),(1106,'group',2,'field','performances.out_status',12,1),(1107,'group',2,'field','performances.out_status',15,1),(1108,'group',2,'field','performances.balls',7,1),(1109,'group',2,'field','performances.balls',8,1),(1110,'group',2,'field','performances.balls',9,1),(1111,'group',2,'field','performances.balls',10,1),(1112,'group',2,'field','performances.balls',12,1),(1113,'group',2,'field','performances.balls',15,1),(1114,'group',2,'field','performances.sr',7,1),(1115,'group',2,'field','performances.sr',8,3),(1116,'group',2,'field','performances.sr',10,1),(1117,'group',2,'field','performances.sr',15,1),(1118,'group',2,'field','performances.dismissal_id',7,1),(1119,'group',2,'field','performances.dismissal_id',8,1),(1120,'group',2,'field','performances.dismissal_id',9,1),(1121,'group',2,'field','performances.dismissal_id',10,1),(1122,'group',2,'field','performances.dismissal_id',12,1),(1123,'group',2,'field','performances.dismissal_id',15,1),(1124,'group',2,'field','performances.pom',7,1),(1125,'group',2,'field','performances.pom',8,1),(1126,'group',2,'field','performances.pom',9,1),(1127,'group',2,'field','performances.pom',10,1),(1128,'group',2,'field','performances.pom',11,1),(1129,'group',2,'field','performances.pom',12,1),(1130,'group',2,'field','performances.pom',15,1),(1131,'group',2,'field','performances.notes',7,1),(1132,'group',2,'field','performances.notes',8,1),(1133,'group',2,'field','performances.notes',9,1),(1134,'group',2,'field','performances.notes',10,1),(1135,'group',2,'field','performances.notes',12,1),(1136,'group',2,'field','performances.notes',15,1);
+/*!40000 ALTER TABLE `zc_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_permissions_beta`
+--
+
+DROP TABLE IF EXISTS `zc_permissions_beta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_permissions_beta` (
+  `id_permission` int(11) NOT NULL AUTO_INCREMENT,
+  `subject_type_permission` varchar(50) NOT NULL,
+  `id_subject` int(11) NOT NULL,
+  `object_type_permission` varchar(50) NOT NULL,
+  `object_permission` varchar(130) NOT NULL,
+  `id_permission_type` int(11) DEFAULT NULL,
+  `value_permission` int(11) NOT NULL,
+  PRIMARY KEY (`id_permission`),
+  UNIQUE KEY `unique_permission_beta` (`id_subject`,`object_type_permission`,`object_permission`,`id_permission_type`)
+) ENGINE=InnoDB AUTO_INCREMENT=481 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_permissions_beta`
+--
+
+LOCK TABLES `zc_permissions_beta` WRITE;
+/*!40000 ALTER TABLE `zc_permissions_beta` DISABLE KEYS */;
+INSERT INTO `zc_permissions_beta` VALUES (1,'group',1,'table','dismissals',1,1),(2,'group',1,'table','dismissals',2,1),(3,'group',1,'table','dismissals',3,1),(4,'group',1,'table','dismissals',4,1),(5,'group',1,'table','dismissals',5,1),(6,'group',1,'table','dismissals',14,1),(7,'group',2,'table','dismissals',1,1),(8,'group',2,'table','dismissals',5,1),(9,'group',2,'table','dismissals',14,1),(10,'group',1,'field','dismissals.dismissal_type',7,1),(11,'group',1,'field','dismissals.dismissal_type',8,1),(12,'group',1,'field','dismissals.dismissal_type',9,1),(13,'group',1,'field','dismissals.dismissal_type',10,1),(14,'group',1,'field','dismissals.dismissal_type',11,0),(15,'group',1,'field','dismissals.dismissal_type',12,1),(16,'group',1,'field','dismissals.dismissal_type',15,1),(17,'group',2,'field','dismissals.dismissal_type',7,1),(18,'group',2,'field','dismissals.dismissal_type',10,1),(19,'group',2,'field','dismissals.dismissal_type',12,1),(20,'group',2,'field','dismissals.dismissal_type',15,1),(21,'group',1,'field','dismissals.dismissal_fulltype',7,1),(22,'group',1,'field','dismissals.dismissal_fulltype',8,1),(23,'group',1,'field','dismissals.dismissal_fulltype',9,1),(24,'group',1,'field','dismissals.dismissal_fulltype',10,1),(25,'group',1,'field','dismissals.dismissal_fulltype',11,0),(26,'group',1,'field','dismissals.dismissal_fulltype',12,1),(27,'group',1,'field','dismissals.dismissal_fulltype',15,1),(28,'group',2,'field','dismissals.dismissal_fulltype',7,1),(29,'group',2,'field','dismissals.dismissal_fulltype',10,1),(30,'group',2,'field','dismissals.dismissal_fulltype',12,1),(31,'group',2,'field','dismissals.dismissal_fulltype',15,1),(32,'group',1,'table','matches',1,1),(33,'group',1,'table','matches',2,1),(34,'group',1,'table','matches',3,1),(35,'group',1,'table','matches',4,1),(36,'group',1,'table','matches',5,1),(37,'group',1,'table','matches',14,1),(38,'group',2,'table','matches',1,1),(39,'group',2,'table','matches',5,1),(40,'group',2,'table','matches',14,1),(41,'group',1,'field','matches.matchdate',7,1),(42,'group',1,'field','matches.matchdate',8,1),(43,'group',1,'field','matches.matchdate',9,1),(44,'group',1,'field','matches.matchdate',10,1),(45,'group',1,'field','matches.matchdate',11,0),(46,'group',1,'field','matches.matchdate',12,1),(47,'group',1,'field','matches.matchdate',15,1),(48,'group',2,'field','matches.matchdate',7,1),(49,'group',2,'field','matches.matchdate',10,1),(50,'group',2,'field','matches.matchdate',12,1),(51,'group',2,'field','matches.matchdate',15,1),(52,'group',1,'field','matches.level',7,1),(53,'group',1,'field','matches.level',8,1),(54,'group',1,'field','matches.level',9,1),(55,'group',1,'field','matches.level',10,1),(56,'group',1,'field','matches.level',11,0),(57,'group',1,'field','matches.level',12,1),(58,'group',1,'field','matches.level',15,1),(59,'group',2,'field','matches.level',7,1),(60,'group',2,'field','matches.level',10,1),(61,'group',2,'field','matches.level',12,1),(62,'group',2,'field','matches.level',15,1),(63,'group',1,'field','matches.type',7,1),(64,'group',1,'field','matches.type',8,1),(65,'group',1,'field','matches.type',9,1),(66,'group',1,'field','matches.type',10,1),(67,'group',1,'field','matches.type',11,0),(68,'group',1,'field','matches.type',12,1),(69,'group',1,'field','matches.type',15,1),(70,'group',2,'field','matches.type',7,1),(71,'group',2,'field','matches.type',10,1),(72,'group',2,'field','matches.type',12,1),(73,'group',2,'field','matches.type',15,1),(74,'group',1,'field','matches.stage',7,1),(75,'group',1,'field','matches.stage',8,1),(76,'group',1,'field','matches.stage',9,1),(77,'group',1,'field','matches.stage',10,1),(78,'group',1,'field','matches.stage',11,0),(79,'group',1,'field','matches.stage',12,1),(80,'group',1,'field','matches.stage',15,1),(81,'group',2,'field','matches.stage',7,1),(82,'group',2,'field','matches.stage',10,1),(83,'group',2,'field','matches.stage',12,1),(84,'group',2,'field','matches.stage',15,1),(85,'group',1,'field','matches.venue_id',7,1),(86,'group',1,'field','matches.venue_id',8,1),(87,'group',1,'field','matches.venue_id',9,1),(88,'group',1,'field','matches.venue_id',10,1),(89,'group',1,'field','matches.venue_id',11,0),(90,'group',1,'field','matches.venue_id',12,1),(91,'group',1,'field','matches.venue_id',15,1),(92,'group',2,'field','matches.venue_id',7,1),(93,'group',2,'field','matches.venue_id',10,1),(94,'group',2,'field','matches.venue_id',12,1),(95,'group',2,'field','matches.venue_id',15,1),(96,'group',1,'field','matches.my_team_id',7,1),(97,'group',1,'field','matches.my_team_id',8,1),(98,'group',1,'field','matches.my_team_id',9,1),(99,'group',1,'field','matches.my_team_id',10,1),(100,'group',1,'field','matches.my_team_id',11,0),(101,'group',1,'field','matches.my_team_id',12,1),(102,'group',1,'field','matches.my_team_id',15,1),(103,'group',2,'field','matches.my_team_id',7,1),(104,'group',2,'field','matches.my_team_id',10,1),(105,'group',2,'field','matches.my_team_id',12,1),(106,'group',2,'field','matches.my_team_id',15,1),(107,'group',1,'field','matches.opp_team_id',7,1),(108,'group',1,'field','matches.opp_team_id',8,1),(109,'group',1,'field','matches.opp_team_id',9,1),(110,'group',1,'field','matches.opp_team_id',10,1),(111,'group',1,'field','matches.opp_team_id',11,0),(112,'group',1,'field','matches.opp_team_id',12,1),(113,'group',1,'field','matches.opp_team_id',15,1),(114,'group',2,'field','matches.opp_team_id',7,1),(115,'group',2,'field','matches.opp_team_id',10,1),(116,'group',2,'field','matches.opp_team_id',12,1),(117,'group',2,'field','matches.opp_team_id',15,1),(118,'group',1,'field','matches.my_tot1',7,1),(119,'group',1,'field','matches.my_tot1',8,1),(120,'group',1,'field','matches.my_tot1',9,1),(121,'group',1,'field','matches.my_tot1',10,1),(122,'group',1,'field','matches.my_tot1',11,0),(123,'group',1,'field','matches.my_tot1',12,1),(124,'group',1,'field','matches.my_tot1',15,1),(125,'group',2,'field','matches.my_tot1',7,1),(126,'group',2,'field','matches.my_tot1',10,1),(127,'group',2,'field','matches.my_tot1',12,1),(128,'group',2,'field','matches.my_tot1',15,1),(129,'group',1,'field','matches.my_tot2',7,1),(130,'group',1,'field','matches.my_tot2',8,1),(131,'group',1,'field','matches.my_tot2',9,1),(132,'group',1,'field','matches.my_tot2',10,1),(133,'group',1,'field','matches.my_tot2',11,0),(134,'group',1,'field','matches.my_tot2',12,1),(135,'group',1,'field','matches.my_tot2',15,1),(136,'group',2,'field','matches.my_tot2',7,1),(137,'group',2,'field','matches.my_tot2',10,1),(138,'group',2,'field','matches.my_tot2',12,1),(139,'group',2,'field','matches.my_tot2',15,1),(140,'group',1,'field','matches.opp_tot1',7,1),(141,'group',1,'field','matches.opp_tot1',8,1),(142,'group',1,'field','matches.opp_tot1',9,1),(143,'group',1,'field','matches.opp_tot1',10,1),(144,'group',1,'field','matches.opp_tot1',11,0),(145,'group',1,'field','matches.opp_tot1',12,1),(146,'group',1,'field','matches.opp_tot1',15,1),(147,'group',2,'field','matches.opp_tot1',7,1),(148,'group',2,'field','matches.opp_tot1',10,1),(149,'group',2,'field','matches.opp_tot1',12,1),(150,'group',2,'field','matches.opp_tot1',15,1),(151,'group',1,'field','matches.opp_tot2',7,1),(152,'group',1,'field','matches.opp_tot2',8,1),(153,'group',1,'field','matches.opp_tot2',9,1),(154,'group',1,'field','matches.opp_tot2',10,1),(155,'group',1,'field','matches.opp_tot2',11,0),(156,'group',1,'field','matches.opp_tot2',12,1),(157,'group',1,'field','matches.opp_tot2',15,1),(158,'group',2,'field','matches.opp_tot2',7,1),(159,'group',2,'field','matches.opp_tot2',10,1),(160,'group',2,'field','matches.opp_tot2',12,1),(161,'group',2,'field','matches.opp_tot2',15,1),(162,'group',1,'field','matches.result',7,1),(163,'group',1,'field','matches.result',8,1),(164,'group',1,'field','matches.result',9,1),(165,'group',1,'field','matches.result',10,1),(166,'group',1,'field','matches.result',11,0),(167,'group',1,'field','matches.result',12,1),(168,'group',1,'field','matches.result',15,1),(169,'group',2,'field','matches.result',7,1),(170,'group',2,'field','matches.result',10,1),(171,'group',2,'field','matches.result',12,1),(172,'group',2,'field','matches.result',15,1),(173,'group',1,'field','matches.margin',7,1),(174,'group',1,'field','matches.margin',8,1),(175,'group',1,'field','matches.margin',9,1),(176,'group',1,'field','matches.margin',10,1),(177,'group',1,'field','matches.margin',11,0),(178,'group',1,'field','matches.margin',12,1),(179,'group',1,'field','matches.margin',15,1),(180,'group',2,'field','matches.margin',7,1),(181,'group',2,'field','matches.margin',10,1),(182,'group',2,'field','matches.margin',12,1),(183,'group',2,'field','matches.margin',15,1),(184,'group',1,'table','performances',1,1),(185,'group',1,'table','performances',2,1),(186,'group',1,'table','performances',3,1),(187,'group',1,'table','performances',4,1),(188,'group',1,'table','performances',5,1),(189,'group',1,'table','performances',14,1),(190,'group',2,'table','performances',1,1),(191,'group',2,'table','performances',5,1),(192,'group',2,'table','performances',14,1),(193,'group',1,'field','performances.match_id',7,1),(194,'group',1,'field','performances.match_id',8,1),(195,'group',1,'field','performances.match_id',9,1),(196,'group',1,'field','performances.match_id',10,1),(197,'group',1,'field','performances.match_id',11,0),(198,'group',1,'field','performances.match_id',12,1),(199,'group',1,'field','performances.match_id',15,1),(200,'group',2,'field','performances.match_id',7,1),(201,'group',2,'field','performances.match_id',10,1),(202,'group',2,'field','performances.match_id',12,1),(203,'group',2,'field','performances.match_id',15,1),(204,'group',1,'field','performances.innings',7,1),(205,'group',1,'field','performances.innings',8,1),(206,'group',1,'field','performances.innings',9,1),(207,'group',1,'field','performances.innings',10,1),(208,'group',1,'field','performances.innings',11,0),(209,'group',1,'field','performances.innings',12,1),(210,'group',1,'field','performances.innings',15,1),(211,'group',2,'field','performances.innings',7,1),(212,'group',2,'field','performances.innings',10,1),(213,'group',2,'field','performances.innings',12,1),(214,'group',2,'field','performances.innings',15,1),(215,'group',1,'field','performances.score',7,1),(216,'group',1,'field','performances.score',8,1),(217,'group',1,'field','performances.score',9,1),(218,'group',1,'field','performances.score',10,1),(219,'group',1,'field','performances.score',11,0),(220,'group',1,'field','performances.score',12,1),(221,'group',1,'field','performances.score',15,1),(222,'group',2,'field','performances.score',7,1),(223,'group',2,'field','performances.score',10,1),(224,'group',2,'field','performances.score',12,1),(225,'group',2,'field','performances.score',15,1),(226,'group',1,'field','performances.out_status',7,1),(227,'group',1,'field','performances.out_status',8,1),(228,'group',1,'field','performances.out_status',9,1),(229,'group',1,'field','performances.out_status',10,1),(230,'group',1,'field','performances.out_status',11,0),(231,'group',1,'field','performances.out_status',12,1),(232,'group',1,'field','performances.out_status',15,1),(233,'group',2,'field','performances.out_status',7,1),(234,'group',2,'field','performances.out_status',10,1),(235,'group',2,'field','performances.out_status',12,1),(236,'group',2,'field','performances.out_status',15,1),(237,'group',1,'field','performances.balls',7,1),(238,'group',1,'field','performances.balls',8,1),(239,'group',1,'field','performances.balls',9,1),(240,'group',1,'field','performances.balls',10,1),(241,'group',1,'field','performances.balls',11,0),(242,'group',1,'field','performances.balls',12,1),(243,'group',1,'field','performances.balls',15,1),(244,'group',2,'field','performances.balls',7,1),(245,'group',2,'field','performances.balls',10,1),(246,'group',2,'field','performances.balls',12,1),(247,'group',2,'field','performances.balls',15,1),(248,'group',1,'field','performances.sr',7,1),(249,'group',1,'field','performances.sr',8,1),(250,'group',1,'field','performances.sr',9,1),(251,'group',1,'field','performances.sr',10,1),(252,'group',1,'field','performances.sr',11,0),(253,'group',1,'field','performances.sr',12,1),(254,'group',1,'field','performances.sr',15,1),(255,'group',2,'field','performances.sr',7,1),(256,'group',2,'field','performances.sr',10,1),(257,'group',2,'field','performances.sr',12,1),(258,'group',2,'field','performances.sr',15,1),(259,'group',1,'field','performances.dismissal_id',7,1),(260,'group',1,'field','performances.dismissal_id',8,1),(261,'group',1,'field','performances.dismissal_id',9,1),(262,'group',1,'field','performances.dismissal_id',10,1),(263,'group',1,'field','performances.dismissal_id',11,0),(264,'group',1,'field','performances.dismissal_id',12,1),(265,'group',1,'field','performances.dismissal_id',15,1),(266,'group',2,'field','performances.dismissal_id',7,1),(267,'group',2,'field','performances.dismissal_id',10,1),(268,'group',2,'field','performances.dismissal_id',12,1),(269,'group',2,'field','performances.dismissal_id',15,1),(270,'group',1,'field','performances.pom',7,1),(271,'group',1,'field','performances.pom',8,1),(272,'group',1,'field','performances.pom',9,1),(273,'group',1,'field','performances.pom',10,1),(274,'group',1,'field','performances.pom',11,0),(275,'group',1,'field','performances.pom',12,1),(276,'group',1,'field','performances.pom',15,1),(277,'group',2,'field','performances.pom',7,1),(278,'group',2,'field','performances.pom',10,1),(279,'group',2,'field','performances.pom',12,1),(280,'group',2,'field','performances.pom',15,1),(281,'group',1,'field','performances.notes',7,1),(282,'group',1,'field','performances.notes',8,1),(283,'group',1,'field','performances.notes',9,1),(284,'group',1,'field','performances.notes',10,1),(285,'group',1,'field','performances.notes',11,0),(286,'group',1,'field','performances.notes',12,1),(287,'group',1,'field','performances.notes',15,1),(288,'group',2,'field','performances.notes',7,1),(289,'group',2,'field','performances.notes',10,1),(290,'group',2,'field','performances.notes',12,1),(291,'group',2,'field','performances.notes',15,1),(292,'group',1,'table','teams',1,1),(293,'group',1,'table','teams',2,1),(294,'group',1,'table','teams',3,1),(295,'group',1,'table','teams',4,1),(296,'group',1,'table','teams',5,1),(297,'group',1,'table','teams',14,1),(298,'group',2,'table','teams',1,1),(299,'group',2,'table','teams',5,1),(300,'group',2,'table','teams',14,1),(301,'group',1,'field','teams.name',7,1),(302,'group',1,'field','teams.name',8,1),(303,'group',1,'field','teams.name',9,1),(304,'group',1,'field','teams.name',10,1),(305,'group',1,'field','teams.name',11,0),(306,'group',1,'field','teams.name',12,1),(307,'group',1,'field','teams.name',15,1),(308,'group',2,'field','teams.name',7,1),(309,'group',2,'field','teams.name',10,1),(310,'group',2,'field','teams.name',12,1),(311,'group',2,'field','teams.name',15,1),(312,'group',1,'field','teams.nickname',7,1),(313,'group',1,'field','teams.nickname',8,1),(314,'group',1,'field','teams.nickname',9,1),(315,'group',1,'field','teams.nickname',10,1),(316,'group',1,'field','teams.nickname',11,0),(317,'group',1,'field','teams.nickname',12,1),(318,'group',1,'field','teams.nickname',15,1),(319,'group',2,'field','teams.nickname',7,1),(320,'group',2,'field','teams.nickname',10,1),(321,'group',2,'field','teams.nickname',12,1),(322,'group',2,'field','teams.nickname',15,1),(323,'group',1,'field','teams.abbr',7,1),(324,'group',1,'field','teams.abbr',8,1),(325,'group',1,'field','teams.abbr',9,1),(326,'group',1,'field','teams.abbr',10,1),(327,'group',1,'field','teams.abbr',11,0),(328,'group',1,'field','teams.abbr',12,1),(329,'group',1,'field','teams.abbr',15,1),(330,'group',2,'field','teams.abbr',7,1),(331,'group',2,'field','teams.abbr',10,1),(332,'group',2,'field','teams.abbr',12,1),(333,'group',2,'field','teams.abbr',15,1),(334,'group',1,'table','venues',1,1),(335,'group',1,'table','venues',2,1),(336,'group',1,'table','venues',3,1),(337,'group',1,'table','venues',4,1),(338,'group',1,'table','venues',5,1),(339,'group',1,'table','venues',14,1),(340,'group',2,'table','venues',1,1),(341,'group',2,'table','venues',5,1),(342,'group',2,'table','venues',14,1),(343,'group',1,'field','venues.name',7,1),(344,'group',1,'field','venues.name',8,1),(345,'group',1,'field','venues.name',9,1),(346,'group',1,'field','venues.name',10,1),(347,'group',1,'field','venues.name',11,0),(348,'group',1,'field','venues.name',12,1),(349,'group',1,'field','venues.name',15,1),(350,'group',2,'field','venues.name',7,1),(351,'group',2,'field','venues.name',10,1),(352,'group',2,'field','venues.name',12,1),(353,'group',2,'field','venues.name',15,1),(354,'group',1,'field','venues.location',7,1),(355,'group',1,'field','venues.location',8,1),(356,'group',1,'field','venues.location',9,1),(357,'group',1,'field','venues.location',10,1),(358,'group',1,'field','venues.location',11,0),(359,'group',1,'field','venues.location',12,1),(360,'group',1,'field','venues.location',15,1),(361,'group',2,'field','venues.location',7,1),(362,'group',2,'field','venues.location',10,1),(363,'group',2,'field','venues.location',12,1),(364,'group',2,'field','venues.location',15,1),(365,'group',1,'table','zc_groups',1,1),(366,'group',1,'table','zc_groups',2,1),(367,'group',1,'table','zc_groups',3,1),(368,'group',1,'table','zc_groups',4,1),(369,'group',1,'table','zc_groups',5,1),(370,'group',1,'table','zc_groups',14,1),(371,'group',1,'field','zc_groups.id_group',8,0),(372,'group',1,'field','zc_groups.id_group',9,0),(373,'group',1,'field','zc_groups.name_group',7,1),(374,'group',1,'field','zc_groups.name_group',8,1),(375,'group',1,'field','zc_groups.name_group',9,1),(376,'group',1,'field','zc_groups.name_group',10,1),(377,'group',1,'field','zc_groups.name_group',11,0),(378,'group',1,'field','zc_groups.name_group',12,1),(379,'group',1,'field','zc_groups.name_group',15,1),(380,'group',1,'table','zc_users',1,1),(381,'group',1,'table','zc_users',2,1),(382,'group',1,'table','zc_users',3,1),(383,'group',1,'table','zc_users',4,1),(384,'group',1,'table','zc_users',5,1),(385,'group',1,'table','zc_users',14,1),(386,'group',1,'field','zc_users.id_user',8,0),(387,'group',1,'field','zc_users.id_user',9,0),(388,'group',1,'field','zc_users.id_group',7,1),(389,'group',1,'field','zc_users.id_group',8,1),(390,'group',1,'field','zc_users.id_group',9,1),(391,'group',1,'field','zc_users.id_group',10,1),(392,'group',1,'field','zc_users.id_group',11,0),(393,'group',1,'field','zc_users.id_group',12,1),(394,'group',1,'field','zc_users.id_group',15,1),(395,'group',1,'field','zc_users.ids_group_others',7,1),(396,'group',1,'field','zc_users.ids_group_others',8,1),(397,'group',1,'field','zc_users.ids_group_others',9,1),(398,'group',1,'field','zc_users.ids_group_others',10,1),(399,'group',1,'field','zc_users.ids_group_others',11,0),(400,'group',1,'field','zc_users.ids_group_others',12,1),(401,'group',1,'field','zc_users.ids_group_others',15,1),(402,'group',1,'field','zc_users.first_name_user',7,1),(403,'group',1,'field','zc_users.first_name_user',8,1),(404,'group',1,'field','zc_users.first_name_user',9,1),(405,'group',1,'field','zc_users.first_name_user',10,1),(406,'group',1,'field','zc_users.first_name_user',11,0),(407,'group',1,'field','zc_users.first_name_user',12,1),(408,'group',1,'field','zc_users.first_name_user',15,1),(409,'group',1,'field','zc_users.last_name_user',7,1),(410,'group',1,'field','zc_users.last_name_user',8,1),(411,'group',1,'field','zc_users.last_name_user',9,1),(412,'group',1,'field','zc_users.last_name_user',10,1),(413,'group',1,'field','zc_users.last_name_user',11,0),(414,'group',1,'field','zc_users.last_name_user',12,1),(415,'group',1,'field','zc_users.last_name_user',15,1),(416,'group',1,'field','zc_users.email_user',7,1),(417,'group',1,'field','zc_users.email_user',8,1),(418,'group',1,'field','zc_users.email_user',9,1),(419,'group',1,'field','zc_users.email_user',10,1),(420,'group',1,'field','zc_users.email_user',11,0),(421,'group',1,'field','zc_users.email_user',12,1),(422,'group',1,'field','zc_users.email_user',15,1),(423,'group',1,'field','zc_users.username_user',7,1),(424,'group',1,'field','zc_users.username_user',8,1),(425,'group',1,'field','zc_users.username_user',9,1),(426,'group',1,'field','zc_users.username_user',10,1),(427,'group',1,'field','zc_users.username_user',11,0),(428,'group',1,'field','zc_users.username_user',12,1),(429,'group',1,'field','zc_users.username_user',15,1),(430,'group',1,'field','zc_users.password_user',7,0),(431,'group',1,'field','zc_users.password_user',8,1),(432,'group',1,'field','zc_users.password_user',9,1),(433,'group',1,'field','zc_users.password_user',10,1),(434,'group',1,'field','zc_users.password_user',11,0),(435,'group',1,'field','zc_users.password_user',12,1),(436,'group',1,'field','zc_users.password_user',15,1),(437,'group',1,'field','zc_users.authentication_type_user',7,1),(438,'group',1,'field','zc_users.authentication_type_user',8,0),(439,'group',1,'field','zc_users.authentication_type_user',9,0),(440,'group',1,'field','zc_users.authentication_type_user',10,1),(441,'group',1,'field','zc_users.authentication_type_user',11,0),(442,'group',1,'field','zc_users.authentication_type_user',12,1),(443,'group',1,'field','zc_users.authentication_type_user',15,1),(444,'group',1,'field','zc_users.force_password_change_user',7,0),(445,'group',1,'field','zc_users.force_password_change_user',8,1),(446,'group',1,'field','zc_users.force_password_change_user',9,1),(447,'group',1,'field','zc_users.force_password_change_user',10,1),(448,'group',1,'field','zc_users.force_password_change_user',11,0),(449,'group',1,'field','zc_users.force_password_change_user',12,1),(450,'group',1,'field','zc_users.force_password_change_user',15,1),(451,'group',1,'field','zc_users.accept_terms_privacy_1_user',7,0),(452,'group',1,'field','zc_users.accept_terms_privacy_1_user',8,3),(453,'group',1,'field','zc_users.accept_terms_privacy_1_user',9,0),(454,'group',1,'field','zc_users.accept_terms_privacy_1_user',10,1),(455,'group',1,'field','zc_users.accept_terms_privacy_1_user',11,0),(456,'group',1,'field','zc_users.accept_terms_privacy_1_user',12,1),(457,'group',1,'field','zc_users.accept_terms_privacy_1_user',15,1),(458,'group',1,'field','zc_users.accept_terms_privacy_2_user',7,0),(459,'group',1,'field','zc_users.accept_terms_privacy_2_user',8,3),(460,'group',1,'field','zc_users.accept_terms_privacy_2_user',9,0),(461,'group',1,'field','zc_users.accept_terms_privacy_2_user',10,1),(462,'group',1,'field','zc_users.accept_terms_privacy_2_user',11,0),(463,'group',1,'field','zc_users.accept_terms_privacy_2_user',12,1),(464,'group',1,'field','zc_users.accept_terms_privacy_2_user',15,1),(465,'group',1,'field','zc_users.accept_terms_privacy_3_user',7,0),(466,'group',1,'field','zc_users.accept_terms_privacy_3_user',8,3),(467,'group',1,'field','zc_users.accept_terms_privacy_3_user',9,0),(468,'group',1,'field','zc_users.accept_terms_privacy_3_user',10,1),(469,'group',1,'field','zc_users.accept_terms_privacy_3_user',11,0),(470,'group',1,'field','zc_users.accept_terms_privacy_3_user',12,1),(471,'group',1,'field','zc_users.accept_terms_privacy_3_user',15,1),(472,'group',1,'field','zc_users.enable_2fa_user',7,1),(473,'group',1,'field','zc_users.enable_2fa_user',8,1),(474,'group',1,'field','zc_users.enable_2fa_user',9,1),(475,'group',1,'field','zc_users.enable_2fa_user',10,1),(476,'group',1,'field','zc_users.enable_2fa_user',11,0),(477,'group',1,'field','zc_users.enable_2fa_user',12,1),(478,'group',1,'field','zc_users.enable_2fa_user',15,1),(479,'group',1,'custom_page','1',13,1),(480,'group',2,'custom_page','1',13,1);
+/*!40000 ALTER TABLE `zc_permissions_beta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_pushes`
+--
+
+DROP TABLE IF EXISTS `zc_pushes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_pushes` (
+  `id_push` int(11) NOT NULL AUTO_INCREMENT,
+  `username_push` varchar(255) NOT NULL,
+  `date_time_push` datetime NOT NULL,
+  `comment_push` text NOT NULL,
+  PRIMARY KEY (`id_push`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_pushes`
+--
+
+LOCK TABLES `zc_pushes` WRITE;
+/*!40000 ALTER TABLE `zc_pushes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `zc_pushes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_static_pages`
+--
+
+DROP TABLE IF EXISTS `zc_static_pages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_static_pages` (
+  `id_static_page` int(11) NOT NULL AUTO_INCREMENT,
+  `link_static_page` varchar(255) NOT NULL,
+  `type_static_page` varchar(10) NOT NULL DEFAULT '',
+  `file_static_page` varchar(100) NOT NULL DEFAULT '',
+  `content_static_page` text NOT NULL,
+  `menu_order_static_page` int(11) NOT NULL DEFAULT 1,
+  `menu_parent_page` varchar(500) NOT NULL DEFAULT 'top',
+  `enabled_static_page` int(11) NOT NULL DEFAULT 0,
+  `href_link_static_page` text NOT NULL,
+  `separator_before_static_page` char(1) NOT NULL DEFAULT 'n',
+  `is_homepage_static_page` char(1) NOT NULL,
+  `icon_static_page` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id_static_page`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_static_pages`
+--
+
+LOCK TABLES `zc_static_pages` WRITE;
+/*!40000 ALTER TABLE `zc_static_pages` DISABLE KEYS */;
+INSERT INTO `zc_static_pages` VALUES (1,'Home','html','','<p>Congratulations! This is the homepage of the DaDaBIK application you have created.</p>\r\n<p>If you login as administrator you can customize this application by clicking on <b>Edit this app</b><br/><br/>To change this homepage: <b>Edit this app</b> > <b>Pages</b> > <b>Show: Custom Pages</b>.</p>',1,'top',1,'','n','y','home-alt');
+/*!40000 ALTER TABLE `zc_static_pages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_static_pages_beta`
+--
+
+DROP TABLE IF EXISTS `zc_static_pages_beta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_static_pages_beta` (
+  `id_static_page` int(11) NOT NULL AUTO_INCREMENT,
+  `link_static_page` varchar(255) NOT NULL,
+  `type_static_page` varchar(10) NOT NULL DEFAULT '',
+  `file_static_page` varchar(100) NOT NULL DEFAULT '',
+  `content_static_page` text NOT NULL,
+  `menu_order_static_page` int(11) NOT NULL DEFAULT 1,
+  `menu_parent_page` varchar(500) NOT NULL DEFAULT 'top',
+  `enabled_static_page` int(11) NOT NULL DEFAULT 0,
+  `href_link_static_page` text NOT NULL,
+  `separator_before_static_page` char(1) NOT NULL DEFAULT 'n',
+  `is_homepage_static_page` char(1) NOT NULL,
+  `icon_static_page` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id_static_page`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_static_pages_beta`
+--
+
+LOCK TABLES `zc_static_pages_beta` WRITE;
+/*!40000 ALTER TABLE `zc_static_pages_beta` DISABLE KEYS */;
+INSERT INTO `zc_static_pages_beta` VALUES (1,'Home','html','','<p>Congratulations! This is the homepage of the DaDaBIK application you have created.</p>\r\n<p>If you login as administrator you can customize this application by clicking on <b>Edit this app</b><br/><br/>To change this homepage: <b>Edit this app</b> > <b>Pages</b> > <b>Show: Custom Pages</b>.</p>',1,'top',1,'','n','y','home-alt');
+/*!40000 ALTER TABLE `zc_static_pages_beta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_table_list`
+--
+
+DROP TABLE IF EXISTS `zc_table_list`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_table_list` (
+  `name_table` varchar(128) NOT NULL DEFAULT '',
+  `allowed_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_insert_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_edit_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_csv_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_delete_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_details_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_list_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_delete_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_update_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_browse_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_csv_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_revision_table` char(1) NOT NULL DEFAULT '0',
+  `alias_table` varchar(255) NOT NULL DEFAULT '',
+  `enable_template_table` varchar(1) NOT NULL DEFAULT '0',
+  `template_table` text NOT NULL,
+  `menu_order_table` int(11) NOT NULL DEFAULT 1,
+  `menu_parent_table` varchar(255) NOT NULL DEFAULT 'top',
+  `separator_before_table` char(1) NOT NULL DEFAULT 'n',
+  `order_by_table` varchar(500) NOT NULL DEFAULT '',
+  `order_type_table` varchar(4) NOT NULL DEFAULT '',
+  `pk_field_table` varchar(500) NOT NULL DEFAULT '',
+  `icon_table` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`name_table`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_table_list`
+--
+
+LOCK TABLES `zc_table_list` WRITE;
+/*!40000 ALTER TABLE `zc_table_list` DISABLE KEYS */;
+INSERT INTO `zc_table_list` VALUES ('dismissals','1','1','1','1','1','1','1','0','0','0','0','0','Dismissals','0','',2,'top','n','','','dismissal_id',''),('matches','1','1','1','1','1','1','1','0','0','0','0','0','Matches','0','',3,'top','n','','','match_id',''),('performances','1','1','1','1','1','1','1','0','0','0','0','0','Performances','0','',4,'top','n','','','id',''),('teams','1','1','1','1','1','1','1','0','0','0','0','0','Teams','0','',5,'top','n','','','team_id',''),('venues','1','1','1','1','1','1','1','0','0','0','0','0','Venues','0','',6,'top','n','','','venue_id',''),('zc_groups','1','1','1','1','1','1','1','0','0','0','0','0','groups','0','',1001,'Admin','n','','','id_group','user'),('zc_users','1','1','1','1','1','1','1','0','0','0','0','0','users','0','',1000,'Admin','n','','','id_user','user');
+/*!40000 ALTER TABLE `zc_table_list` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_table_list_beta`
+--
+
+DROP TABLE IF EXISTS `zc_table_list_beta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_table_list_beta` (
+  `name_table` varchar(128) NOT NULL DEFAULT '',
+  `allowed_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_insert_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_edit_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_csv_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_delete_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_details_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_list_table` varchar(1) NOT NULL DEFAULT '',
+  `enable_delete_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_update_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_browse_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_csv_authorization_table` varchar(1) NOT NULL DEFAULT '0',
+  `enable_revision_table` char(1) NOT NULL DEFAULT '0',
+  `alias_table` varchar(255) NOT NULL DEFAULT '',
+  `enable_template_table` varchar(1) NOT NULL DEFAULT '0',
+  `template_table` text NOT NULL,
+  `menu_order_table` int(11) NOT NULL DEFAULT 1,
+  `menu_parent_table` varchar(255) NOT NULL DEFAULT 'top',
+  `separator_before_table` char(1) NOT NULL DEFAULT 'n',
+  `order_by_table` varchar(500) NOT NULL DEFAULT '',
+  `order_type_table` varchar(4) NOT NULL DEFAULT '',
+  `pk_field_table` varchar(500) NOT NULL DEFAULT '',
+  `icon_table` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`name_table`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_table_list_beta`
+--
+
+LOCK TABLES `zc_table_list_beta` WRITE;
+/*!40000 ALTER TABLE `zc_table_list_beta` DISABLE KEYS */;
+INSERT INTO `zc_table_list_beta` VALUES ('dismissals','1','1','1','1','1','1','1','0','0','0','0','0','Dismissals','0','',2,'top','n','','','dismissal_id',''),('matches','1','1','1','1','1','1','1','0','0','0','0','0','Matches','0','',3,'top','n','','','match_id',''),('performances','1','1','1','1','1','1','1','0','0','0','0','0','Performances','0','',4,'top','n','','','id',''),('teams','1','1','1','1','1','1','1','0','0','0','0','0','Teams','0','',5,'top','n','','','team_id',''),('venues','1','1','1','1','1','1','1','0','0','0','0','0','Venues','0','',6,'top','n','','','venue_id',''),('zc_groups','1','1','1','1','1','1','1','0','0','0','0','0','groups','0','',1001,'Admin','n','','','id_group','user'),('zc_users','1','1','1','1','1','1','1','0','0','0','0','0','users','0','',1000,'Admin','n','','','id_user','user');
+/*!40000 ALTER TABLE `zc_table_list_beta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_unique_ids`
+--
+
+DROP TABLE IF EXISTS `zc_unique_ids`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_unique_ids` (
+  `value_unique_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`value_unique_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=410 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_unique_ids`
+--
+
+LOCK TABLES `zc_unique_ids` WRITE;
+/*!40000 ALTER TABLE `zc_unique_ids` DISABLE KEYS */;
+INSERT INTO `zc_unique_ids` VALUES (1),(2),(3),(4),(5),(6),(7),(8),(9),(10),(11),(12),(13),(14),(15),(16),(17),(18),(19),(20),(21),(22),(23),(24),(25),(26),(27),(28),(29),(30),(31),(32),(33),(34),(35),(36),(37),(38),(39),(40),(41),(42),(43),(44),(45),(46),(47),(48),(49),(50),(51),(52),(53),(54),(55),(56),(57),(58),(59),(60),(61),(62),(63),(64),(65),(66),(67),(68),(69),(70),(71),(72),(73),(74),(75),(76),(77),(78),(79),(80),(81),(82),(83),(84),(85),(86),(87),(88),(89),(90),(91),(92),(93),(94),(95),(96),(97),(98),(99),(100),(101),(102),(103),(104),(105),(106),(107),(108),(109),(110),(111),(112),(113),(114),(115),(116),(117),(118),(119),(120),(121),(122),(123),(124),(125),(126),(127),(128),(129),(130),(131),(132),(133),(134),(135),(136),(137),(138),(139),(140),(141),(142),(143),(144),(145),(146),(147),(148),(149),(150),(151),(152),(153),(154),(155),(156),(157),(158),(159),(160),(161),(162),(163),(164),(165),(166),(167),(168),(169),(170),(171),(172),(173),(174),(175),(176),(177),(178),(179),(180),(181),(182),(183),(184),(185),(186),(187),(188),(189),(190),(191),(192),(193),(194),(195),(196),(197),(198),(199),(200),(201),(202),(203),(204),(205),(206),(207),(208),(209),(210),(211),(212),(213),(214),(215),(216),(217),(218),(219),(220),(221),(222),(223),(224),(225),(226),(227),(228),(229),(230),(231),(232),(233),(234),(235),(236),(237),(238),(239),(240),(241),(242),(243),(244),(245),(246),(247),(248),(249),(250),(251),(252),(253),(254),(255),(256),(257),(258),(259),(260),(261),(262),(263),(264),(265),(266),(267),(268),(269),(270),(271),(272),(273),(274),(275),(276),(277),(278),(279),(280),(281),(282),(283),(284),(285),(286),(287),(288),(289),(290),(291),(292),(293),(294),(295),(296),(297),(298),(299),(300),(301),(302),(303),(304),(305),(306),(307),(308),(309),(310),(311),(312),(313),(314),(315),(316),(317),(318),(319),(320),(321),(322),(323),(324),(325),(326),(327),(328),(329),(330),(331),(332),(333),(334),(335),(336),(337),(338),(339),(340),(341),(342),(343),(344),(345),(346),(347),(348),(349),(350),(351),(352),(353),(354),(355),(356),(357),(358),(359),(360),(361),(362),(363),(364),(365),(366),(367),(368),(369),(370),(371),(372),(373),(374),(375),(376),(377),(378),(379),(380),(381),(382),(383),(384),(385),(386),(387),(388),(389),(390),(391),(392),(393),(394),(395),(396),(397),(398),(399),(400),(401),(402),(403),(404),(405),(406),(407),(408),(409);
+/*!40000 ALTER TABLE `zc_unique_ids` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `zc_users`
+--
+
+DROP TABLE IF EXISTS `zc_users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `zc_users` (
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+  `id_group` int(11) NOT NULL,
+  `ids_group_others` text DEFAULT NULL,
+  `first_name_user` varchar(100) DEFAULT NULL,
+  `last_name_user` varchar(100) DEFAULT NULL,
+  `email_user` varchar(100) DEFAULT NULL,
+  `username_user` varchar(50) NOT NULL,
+  `password_user` varchar(255) NOT NULL,
+  `authentication_type_user` varchar(255) NOT NULL DEFAULT 'dadabik',
+  `id_confirmation_user` varchar(100) DEFAULT NULL,
+  `id_confirmation_timestamp_user` int(11) DEFAULT NULL,
+  `temporary_password_user` varchar(255) DEFAULT NULL,
+  `temporary_password_timestamp_user` int(11) DEFAULT NULL,
+  `confirmed_timestamp_user` int(11) DEFAULT NULL,
+  `force_password_change_user` varchar(3) NOT NULL DEFAULT 'no',
+  `accept_terms_privacy_1_user` datetime DEFAULT NULL,
+  `accept_terms_privacy_2_user` datetime DEFAULT NULL,
+  `accept_terms_privacy_3_user` datetime DEFAULT NULL,
+  `enable_2fa_user` varchar(3) NOT NULL DEFAULT 'no',
+  `secret_2fa_user` varchar(255) DEFAULT NULL,
+  `nonce_secret_2fa_user` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_user`),
+  UNIQUE KEY `username_user` (`username_user`),
+  UNIQUE KEY `email_user` (`email_user`),
+  UNIQUE KEY `id_confirmation_user` (`id_confirmation_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `zc_users`
+--
+
+LOCK TABLES `zc_users` WRITE;
+/*!40000 ALTER TABLE `zc_users` DISABLE KEYS */;
+INSERT INTO `zc_users` VALUES (1,1,NULL,NULL,NULL,NULL,'root','$2y$10$yzz6wL7gC1x.IhpyX1he7uY3lkC/wmqlgR9hdHqfirPt9u4sJRS4e','dadabik',NULL,NULL,NULL,NULL,1751999617,'no',NULL,NULL,NULL,'no',NULL,NULL),(3,2,NULL,NULL,NULL,'cricket24@milnes7.com','AlanM','$2y$10$4a8IIJQkqNO93WiUc46BwuP/iAf3T8k4Jq7Lm34PTzOB25g70ifNa','dadabik',NULL,NULL,NULL,NULL,1751999746,'no',NULL,NULL,NULL,'no',NULL,NULL);
+/*!40000 ALTER TABLE `zc_users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-09-11 15:46:53
