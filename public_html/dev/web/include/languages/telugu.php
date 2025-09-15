@@ -32,7 +32,8 @@ $submit_buttons_ar = array (
 	"details" => "వివరాలు",
 	"insert_as_new" => "Insert as new", // to change
 	"multiple_inserts" => "Multiple inserts", // to change
-	"change_table" => "టేబుల్‌ మార్చండి"
+	"change_table" => "టేబుల్‌ మార్చండి",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -42,8 +43,12 @@ $normal_messages_ar = array (
 "insert_item" => "కొత్త ఐటెమ్‌ తయారుచేయండి",
 "show_all_records" => "అన్ని ఐటెమ్స్‌నూ చూపించండి",
 "show_records" => "ఐటెమ్స్‌ చూపించండి",
-"ldap_user_dont_update" => "ఇది ఒక ఇంపోర్టెడ్‌ ఎల్‌డీఏపీ యూజర్‌ : అవసరమైతే మీరు మార్చాల్సింది వారి గ్రూప్‌ ఒక్కటే ",
+"ldap_user_dont_update" => "This is an imported user (LDAP, Google, ...): his/her group is the only information you should change, if needed.", // to change
+"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 "remove_search_filter" => "సెర్చ్‌ ఫిల్టర్స్‌ తొలగించండి",
+"set_default_search_filter" => "set default search filter", // to change 
 "logout" => "లాగ్‌ అవుట్‌",
 "top" => "పైకి",
 "last_search_results" => "గత సెర్చ్‌ రిజల్ట్స్‌",
@@ -70,6 +75,7 @@ $normal_messages_ar = array (
 "url_not_valid" => "మీరు ఎక్కించిన యుఆర్‌ఎల్‌ పనికిరాదు.",
 "phone_not_valid" => "మీరు ఎక్కించిన ఫోన్‌ నంబర్‌ పనికిరాదు..<br>దయచేసి \"+(దేశం కోడ్‌)(ఏరియా కోడ్‌)(ఫోన్‌ నంబర్‌)\" అనే ఫార్మాట్‌ ఉపయోగించండి. ఉదా. +919951400379, 00390523599318, 0523599318.",
 "date_not_valid" => "మీరు ఒకటి లేదా ఎక్కువ పనికిరాని తేదీల్ని ఎంటర్‌ చేశారు.",
+"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin", // to change
 "similar_records" => "ఈ కింది ఐటెమ్స్‌ మీరు ఇన్‌సర్ట్‌ చేయాలనుకున్న ఐటెమ్‌ లాగే కనిపిస్తున్నాయి (I'll show max ".$number_duplicated_records." similar items, there could be more).<br>మరి మీరేం చేయాలనుకుంటున్నారు?", // to change
 "similar_records_short" => "ఈ కింది ఐటెమ్స్‌ మీరు ఇన్‌సర్ట్‌ చేయాలనుకున్న ఐటెమ్‌ లాగే కనిపిస్తున్నాయి (I'll show max ".$number_duplicated_records." similar items, there could be more).", // to change
 "no_records_found" => "ఐటెమ్స్‌ ఏవీ లభించలేదు.",
@@ -105,6 +111,7 @@ $normal_messages_ar = array (
 "profile_updated" => "మీ ప్రొఫైల్‌ సరిగ్గా అప్‌డేట్‌ చేయబడింది.",
 "delete_result" => "డిలీట్‌ రిజల్ట్‌:",
 "record_deleted" => "ఐటెమ్‌ సరిగ్గా డిలీట్‌ అయ్యింది.",
+"records_deleted" => "Item(s) correctly deleted.", // to change
 "duplication_possible" => "బహుశా ఒకే ఫైల్‌ డూప్లికేట్‌ చేసి ఉండచ్చు",
 "fields_max_length" => " ఒకటి లేదా అంతకంటే ఎక్కువ ఫీల్డ్స్‌ లో మీరు పరిమితి మించి సమాచారం ఇన్‌సర్ట్‌ చేశారు.",
 "current_upload" => "ప్రస్తుత ఫైల్‌",
@@ -191,6 +198,7 @@ $normal_messages_ar = array (
 'add_column' => 'add column', // add column in the pivot report // to change
 'remove_this_column' => 'remove this column', // remove column in the pivot report // to change
 'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand', // to change
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "The item has been correctly inserted, you can <a href='#' onclick='window.close();return false;'>close</a> this window.", // to change
 
 "import" => "Import", // to change

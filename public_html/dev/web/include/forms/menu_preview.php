@@ -174,8 +174,6 @@ foreach ($menu_items_ar as $menu_item){
 
 
 
-	<!-- Latest Sortable -->
-	<script src="include/Sortable.min.js"></script>
 
 
 	

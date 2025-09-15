@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -15,7 +15,7 @@ If you are unsure about what you are allowed to do with this license, feel free 
 <?php
 function build_form_element($fields_labels_ar, $i, $_POST_2, $details_row, $form_type, $disabled_attribute, $set_field_default_value, $default_value_field_name, $default_value, $sql_res_primary_key_back, $res_primary_key, $show_edit_form_after_error, $show_insert_form_after_error, $user_group_name, $not_valid_fields_ar=array())
 {
-	global $conn, $submit_buttons_ar, $normal_messages_ar, $select_operator_feature, $default_operator, $db_name, $size_multiple_select, $upload_relative_url, $show_top_buttons, $quote, $enable_authentication, $enable_browse_authorization, $current_user, $null_checkbox_prefix, $year_field_suffix, $month_field_suffix, $day_field_suffix, $hours_field_suffix, $minutes_field_suffix, $seconds_field_suffix, $start_year, $null_checkbox, $users_table_name, $prefix_internal_table, $enable_granular_permissions, $dadabik_main_file, $field_type_for_date, $htmlawed_config, $treat_blank_as_null, $use_id_group_for_ownership, $current_id_group, $file_access_mode, $separator_display_linked_field_2, $lenght_separator_display_linked_field_2;
+	global $conn, $submit_buttons_ar, $normal_messages_ar, $select_operator_feature, $default_operator, $db_name, $size_multiple_select, $upload_relative_url, $show_top_buttons, $quote, $enable_authentication, $enable_browse_authorization, $current_user, $null_checkbox_prefix, $year_field_suffix, $month_field_suffix, $day_field_suffix, $hours_field_suffix, $minutes_field_suffix, $seconds_field_suffix, $start_year, $null_checkbox, $users_table_name, $prefix_internal_table, $enable_granular_permissions, $dadabik_main_file, $field_type_for_date, $htmlawed_config, $treat_blank_as_null, $use_id_group_for_ownership, $current_id_group, $file_access_mode, $separator_display_linked_field_2, $lenght_separator_display_linked_field_2, $enable_cascade_advanced_search_form;
 	
 	$add_hidden_field = 0;
 	
@@ -58,7 +58,7 @@ function build_form_element($fields_labels_ar, $i, $_POST_2, $details_row, $form
 				else{
 				    $form_element .= $disabled_attribute;
 				}
-				if ($fields_labels_ar[$i]['is_cascade_parent_field'] === 1){
+				if ($fields_labels_ar[$i]['is_cascade_parent_field'] === 1 && ($form_type === 'insert' || $form_type === 'update' || $form_type === 'search' && $enable_cascade_advanced_search_form === 1)){
 				
 					$form_element .= ' onchange="'.htmlentities( $javascript_function).'"';
 				

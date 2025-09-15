@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -13,13 +13,14 @@ If you are unsure about what you are allowed to do with this license, feel free 
 */
 ?>
 <?php
+// shares some core with build_csv, build_json, get_calendar_field_value, build_details_table
 function build_results_table($results_display_mode, $fields_labels_ar, $table_name, $res_records, $results_type, $name_mailing, $action, $where_clause, $page, $order, $order_type, $master_table_name, $master_table_function, $master_table_where_field , $master_table_where_value, $is_items_table, $template_infos_ar, $onlygrid = 0, $show_revisions = 0, $linked_tables_count = 0)
 // goal: build the results grid you see when you click on a table/view or after a search
 // input: ...
 // output: $results_table, the HTML results table
 // global: ...
 {
-	global $submit_buttons_ar, $normal_messages_ar, $edit_target_window, $delete_icon, $edit_icon, $details_icon, $enable_edit, $enable_delete, $enable_details, $conn, $quote, $ask_confirmation_delete, $word_wrap_col, $word_wrap_fix_width, $alias_prefix, $dadabik_main_file, $enable_row_highlighting, $prefix_internal_table, $enable_granular_permissions, $enable_authentication, $separator_display_select_multiple, $separator_display_linked_field, $function_link_to_record, $results_display_mode_menu, $enable_csv, $select_checkbox_prefix, $enable_record_checkboxes, $fields_to_display_ar, $details_link, $edit_link, $delete_link, $enable_custom_display_results_grid, $grid_ids, $results_grid_fixed_header, $grid_layout_scrolling;
+	global $submit_buttons_ar, $normal_messages_ar, $edit_target_window, $delete_icon, $edit_icon, $details_icon, $enable_edit, $enable_delete, $enable_details, $conn, $quote, $ask_confirmation_delete, $word_wrap_col, $word_wrap_fix_width, $alias_prefix, $dadabik_main_file, $enable_row_highlighting, $prefix_internal_table, $enable_granular_permissions, $enable_authentication, $separator_display_select_multiple, $separator_display_linked_field, $function_link_to_record, $results_display_mode_menu, $enable_csv, $select_checkbox_prefix, $enable_record_checkboxes, $fields_to_display_ar, $details_link, $edit_link, $delete_link, $enable_custom_display_results_grid, $grid_ids, $results_grid_fixed_header, $grid_layout_scrolling, $align_right_numeric_values;
 	
 	$grid_ids = array();
 	
@@ -118,6 +119,37 @@ function build_results_table($results_display_mode, $fields_labels_ar, $table_na
 			$link_fixed .= '?tablename='.urlencode($table_name).'&function=search&where_clause='.urlencode($where_clause);
 		} // end else
 
+		/*
+
+		if ($table_infos_ar['enable_grid_layout_table'] === '1'){
+			if ($results_display_mode === 'classic_grid'){
+				$results_display_mode_form .= '<i class="bx bx-grid-alt fs-4" title="grid view"></i>';
+			}
+			else{
+				$results_display_mode_form .= '<a href="'.$link_fixed.'&results_display_mode=classic_grid"><i class="bx bx-grid-alt fs-4" title="grid view"></i></a>';
+			}
+		}
+
+		if ($table_infos_ar['enable_list_layout_table'] === '1'){
+			if ($results_display_mode === 'list'){
+				$results_display_mode_form .= '<i class="bx bx-grid-alt fs-4" title="list view"></i>';
+			}
+			else{
+				$results_display_mode_form .= '<a href="'.$link_fixed.'&results_display_mode=list"><i class="bx bx-grid-alt fs-4" title="list view"></i></a>';
+			}
+		}
+
+		if ($table_infos_ar['enable_calendar_layout_table'] === '1'){
+			if ($results_display_mode === 'calendar'){
+				$results_display_mode_form .= '<i class="bx bx-grid-alt fs-4" title="calendar view"></i>';
+			}
+			else{
+				$results_display_mode_form .= '<a href="'.$link_fixed.'&results_display_mode=calendar"><i class="bx bx-grid-alt fs-4" title="calendar view"></i></a>';
+			}
+		}
+
+		*/
+
 		if ($results_display_mode === 'classic_grid'){
 			$results_display_mode_form .= '<i class="bx bx-grid-alt fs-4" title="grid view"></i> <a href="'.$link_fixed.'&results_display_mode=list"><i class="bx bx-list-ul fs-4" title="list view"></i></a>';
 		}
@@ -154,7 +186,7 @@ function build_results_table($results_display_mode, $fields_labels_ar, $table_na
 			$order_by_form .= '<input type="hidden" name="where_clause" value="'.urlencode($where_clause).'">';
 		} // end else
 		
-		$order_by_form .= '&nbsp;&nbsp;<table><tr><td>'.$normal_messages_ar['sort_by'].':</td><td><select name="order" class="form-select" style="display:inline-block">';
+		$order_by_form .= '&nbsp;&nbsp;<table><tr class="list_view_sort_by_container"><td>'.$normal_messages_ar['sort_by'].':</td><td><select name="order" class="form-select" style="display:inline-block">';
 		
 		foreach($fields_labels_ar as $value){
 			if ($value['present_results_search_field'] == '1'){
@@ -170,7 +202,7 @@ function build_results_table($results_display_mode, $fields_labels_ar, $table_na
 	
 		$order_by_form .= ' <select name="order_type" class="form-select" style="display:inline-block">
 	<option value="ASC"'.( ($order === 'ASC') ? ' selected':'').'>ASC</option>
-	<option value="DESC"'.(($results_display_mode === 'DESC') ? ' selected':'').'>DESC</option></select></td><td> <input type="submit" class="btn btn-primary" value="'.$normal_messages_ar['sort'].'"></td></tr></table></form>';
+	<option value="DESC"'.(($results_display_mode === 'DESC') ? ' selected':'').'>DESC</option></select></td><td> <input type="submit" class="btn btn-primary" value="'.$normal_messages_ar['sort'].'" id="sort_btn"></td></tr></table></form>';
 	
 		$results_table .= $order_by_form;
 		
@@ -466,7 +498,13 @@ function build_results_table($results_display_mode, $fields_labels_ar, $table_na
 						$data_live_edit_part = $fields_live_edit_ar[$fields_labels_ar[$i]["name_field"]];
 					}
 
-					$results_table .= '<td class="results_grid_cell" '.$data_live_edit_part.' data-source="'.$table_name.'" data-row="'.$where_value.'" data-field="'.$fields_labels_ar[$i]["name_field"].'"  data-type="'.$fields_labels_ar[$i]["type_field"].'">'; // start the cell
+					$align_attribute = '';
+
+					if ($align_right_numeric_values === 1 && $fields_labels_ar[$i]['type_field'] === 'text' && $fields_labels_ar[$i]['content_field'] === 'numeric' ){
+						$align_attribute = ' align="right"';
+					}
+
+					$results_table .= '<td class="results_grid_cell" '.$data_live_edit_part.' data-source="'.$table_name.'" data-row="'.$where_value.'" data-field="'.$fields_labels_ar[$i]["name_field"].'"  data-type="'.$fields_labels_ar[$i]["type_field"].'"'.$align_attribute.'>'; // start the cell
 
 					$field_name_temp = $fields_labels_ar[$i]["name_field"];
 					$field_type = $fields_labels_ar[$i]["type_field"];
@@ -662,7 +700,7 @@ function build_results_table($results_display_mode, $fields_labels_ar, $table_na
 								$field_to_pass = $field_to_display;
 							}
 
-							$field_to_display = get_field_correct_displaying($field_to_pass, $linked_field_type, $linked_field_content, $linked_field_separator, "results_table", $fields_labels_ar[$i], $template_infos_ar, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions);
+							$field_to_display = get_field_correct_displaying($field_to_pass, $linked_field_type, $linked_field_content, $linked_field_separator, "results_table", $fields_labels_ar[$i], $template_infos_ar, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions, $records_row);
 						
 							$results_table .= $field_to_display;
 							$results_table .= $separator_display_select_multiple;
@@ -698,16 +736,16 @@ function build_results_table($results_display_mode, $fields_labels_ar, $table_na
     
                                     reset($fields_labels_linked_field_ar);
                             
-                                    $field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $linked_field_type, $linked_field_content, $linked_field_separator, "results_table", $fields_labels_linked_field_ar[$key_linked], $template_infos_ar, $primary_key_field_field, $records_row[$field_name_temp], $is_items_table, $master_table_name, $table_name, $show_revisions); // get the correct display mode for the field
+                                    $field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $linked_field_type, $linked_field_content, $linked_field_separator, "results_table", $fields_labels_linked_field_ar[$key_linked], $template_infos_ar, $primary_key_field_field, $records_row[$field_name_temp], $is_items_table, $master_table_name, $table_name, $show_revisions, $records_row); // get the correct display mode for the field
                             
                             
                                 } // end if
                                 else {
                                     if ($unique_field_name != "" && $unique_field_name != NULL){
-                                        $field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $field_type, $field_content, $field_separator, "results_table", $fields_labels_ar[$i], $template_infos_ar, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions); // get the correct display mode for the field
+                                        $field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $field_type, $field_content, $field_separator, "results_table", $fields_labels_ar[$i], $template_infos_ar, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions, $records_row); // get the correct display mode for the field
                                     }
                                     else{
-                                        $field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $field_type, $field_content, $field_separator, "results_table", $fields_labels_ar[$i], $template_infos_ar, NULL, NULL, $is_items_table, $master_table_name, $table_name, $show_revisions); // get the correct display mode for the field
+                                        $field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $field_type, $field_content, $field_separator, "results_table", $fields_labels_ar[$i], $template_infos_ar, NULL, NULL, $is_items_table, $master_table_name, $table_name, $show_revisions, $records_row); // get the correct display mode for the field
 
                                     }
                                     

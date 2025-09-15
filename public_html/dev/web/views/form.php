@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -22,7 +22,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 // global: $submit_buttons_ar, the array containing the values of the submit buttons, $normal_messages_ar, the array containig the normal messages, $select_operator_feature, wheter activate or not displaying "and/or" in the search form, $default_operator, the default operator if $select_operator_feature is not activated, $db_name, $size_multiple_select, the size (number of row) of the select_multiple_menu fields, $table_name, $not_valid_fields_ar (the array containing the name of the field having not valid values, to highlight in the form)
 // output: $form, the html tabled form
 {
-	global $conn, $submit_buttons_ar, $normal_messages_ar, $select_operator_feature, $default_operator, $db_name, $size_multiple_select, $upload_relative_url, $show_top_buttons, $quote, $enable_authentication, $enable_browse_authorization, $current_user, $null_checkbox_prefix, $year_field_suffix, $month_field_suffix, $day_field_suffix, $hours_field_suffix, $minutes_field_suffix, $seconds_field_suffix, $start_year, $null_checkbox, $users_table_name, $prefix_internal_table, $enable_granular_permissions, $dadabik_main_file, $field_type_for_date, $htmlawed_config, $treat_blank_as_null, $use_id_group_for_ownership, $current_id_group, $file_access_mode, $link_target_generic_file, $site_url, $enable_browse, $alias_prefix, $show_multiple_inserts_checkbox, $insert_again_after_insert, $show_details_after_insert, $enable_insert, $separator_display_linked_field_2, $lenght_separator_display_linked_field_2, $enable_uploads, $picture_thumbnail_details_max_width, $picture_thumbnail_details_max_height, $show_images_in_edit_form, $custom_button_ids_prefix, $field_button_hint_container_id_prefix, $users_table_password_field, $enable_lookup_insert_popup, $upload_field_type, $use_old_insert_form_button_label, $alternative_primary_key_tables, $button_confirm_messages;
+	global $conn, $submit_buttons_ar, $normal_messages_ar, $select_operator_feature, $default_operator, $db_name, $size_multiple_select, $upload_relative_url, $show_top_buttons, $quote, $enable_authentication, $enable_browse_authorization, $current_user, $null_checkbox_prefix, $year_field_suffix, $month_field_suffix, $day_field_suffix, $hours_field_suffix, $minutes_field_suffix, $seconds_field_suffix, $start_year, $null_checkbox, $users_table_name, $prefix_internal_table, $enable_granular_permissions, $dadabik_main_file, $field_type_for_date, $htmlawed_config, $treat_blank_as_null, $use_id_group_for_ownership, $current_id_group, $file_access_mode, $link_target_generic_file, $site_url, $enable_browse, $alias_prefix, $show_multiple_inserts_checkbox, $insert_again_after_insert, $show_details_after_insert, $enable_insert, $separator_display_linked_field_2, $lenght_separator_display_linked_field_2, $enable_uploads, $picture_thumbnail_details_max_width, $picture_thumbnail_details_max_height, $show_images_in_edit_form, $custom_button_ids_prefix, $field_button_hint_container_id_prefix, $users_table_password_field, $enable_lookup_insert_popup, $upload_field_type, $use_old_insert_form_button_label, $alternative_primary_key_tables, $button_confirm_messages, $enable_delete, $enable_edit, $enable_details, $ask_confirmation_delete, $show_delete_button_in_edit;
 
 	global $lookup_insert_popup, $lookup_insert_popup_table_from, $lookup_insert_popup_field_from,$lookup_insert_popup_pk_field_from,$modal_mode,$lookup_insert_popup, $lookup_insert_popup_linked_field_from, $fid, $camera_capture_value;
 
@@ -77,7 +77,6 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 	$form = "";
 
 	$form .= "\n<!--[if !lte IE 9]><!-->\n";
-
 
 	$form .= "<form class=\"css_form\" id=\"dadabik_main_form\" name=\"contacts_form\" method=\"post\" action=\"".$action."?fid=".$fid."&tablename=".urlencode($table_name)."&function=".$function.$form_querystring_temp."\" enctype=\"multipart/form-data\">\n";
 	$form .= "<!--<![endif]-->\n";
@@ -160,22 +159,6 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	switch($form_type){
 		case "insert":
 			$number_cols = 3;
@@ -213,7 +196,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 			$form .= "<div class=\"save_buttons_container\">";
 			if ( $show_top_buttons == 1 && $onlyform === 0) {
 
-				$form .= "<input class=\"button_form btn btn-primary\" type=\"submit\" value=\"".$submit_buttons_ar[$form_type]."\" onclick=\"".$onclick_confirm_part['save']."\"> ";
+				$form .= '<input class="button_form btn btn-primary" type="submit" value="'.$submit_buttons_ar[$form_type].'" onclick="'.$onclick_confirm_part['save'].'" id="form_save_top_btn"> ';
 
 
 
@@ -252,6 +235,20 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 				    $form .= '&nbsp;&nbsp;&nbsp;<input type="submit" class="button_form btn btn-outline-primary save_go_back" value="'.$submit_buttons_ar['insert_as_new'].'" onclick="'.$onclick_confirm_part['insert_as_new'].'javascript:document.getElementById(\'dadabik_main_form\').action=document.getElementById(\'dadabik_main_form\').action + \'&function=insert\'">';
 				}
 
+				if ($form_type === 'update' && $enable_delete == '1' && $show_delete_button_in_edit === 1){
+
+					$links_ar = build_edit_details_delete_links($table_name, $where_field, $where_value, $enable_edit, $enable_delete, $enable_details, $master_table_name, $master_table_function, $master_table_where_value, $master_table_where_field, $is_items_table, $fields_labels_ar);
+					$delete_link = $links_ar['delete_link'];
+					
+				    $form .= '&nbsp;&nbsp;&nbsp;<a class="button_form btn btn-outline-primary" href="'.$delete_link.'"';
+
+					if ($ask_confirmation_delete === 1){
+						$form .= " onclick=\"if (!confirm('".str_replace('\'', '\\\'', $normal_messages_ar['confirm_delete?'])."')){ return false;}\"";
+					}
+					
+					$form .= '>'.$submit_buttons_ar['delete'].'</a>';
+				}
+
 			}
 			$form .= '&nbsp;&nbsp;'.$buttons_html;
 			$form .= "</div>";
@@ -284,7 +281,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 
 				//$form .= "<br/><input  class=\"button_form\" type=\"submit\" value=\"".$submit_buttons_ar['search_short']." >>\">";
 
-				$form .= '<br/><button class="btn btn-primary" type="submit"><i class="fa fa-search"></i> '.$submit_buttons_ar['search_short'].'</button>';
+				$form .= '<br/><button class="btn btn-primary" type="submit" id="form_search_top_btn"><i class="fa fa-search"></i> '.$submit_buttons_ar['search_short'].'</button>';
 			}
 
 			$form .= "<div class=\"save_buttons_container\">";
@@ -336,7 +333,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
     $first_field = 1;
     $fields_in_row_counter = 0;
 	for ($i=0; $i<count($fields_labels_ar); $i++){
-		if ( ($fields_labels_ar[$i][$field_to_ceck] == "1" || $fields_labels_ar[$i][$field_to_ceck] == "3") && ($fields_labels_ar[$i]['type_field'] !== 'insert_date_time' || $form_type !== 'insert') && ($fields_labels_ar[$i]['type_field'] !== 'update_date_time' || $form_type !== 'update' && $form_type !== 'insert' )  ) { // the user want to display the field in the form
+		if ( ($fields_labels_ar[$i][$field_to_ceck] == "1" || $fields_labels_ar[$i][$field_to_ceck] == "3") && ($fields_labels_ar[$i]['type_field'] !== 'insert_date_time' && $fields_labels_ar[$i]['type_field'] !== 'barcode' && $fields_labels_ar[$i]['type_field'] !== 'qrcode'|| $form_type !== 'insert') && ($fields_labels_ar[$i]['type_field'] !== 'update_date_time' || $form_type !== 'update' && $form_type !== 'insert' )  ) { // the user want to display the field in the form
 
 			$field_name_temp = $fields_labels_ar[$i]["name_field"];
 
@@ -344,7 +341,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 			if ($fields_labels_ar[$i][$field_to_ceck] == "1"){
 
 
-				if ($fields_labels_ar[$i]['calculated_function_field'] !== '' && $form_type !== 'search'){
+				if ( ( $fields_labels_ar[$i]['calculated_function_field'] !== '' || $fields_labels_ar[$i]['formula_field'] !== '') && $form_type !== 'search'){
 					$disabled_attribute = ' disabled';
 				}
 				else{
@@ -415,7 +412,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 
 			$form .= $fields_labels_ar[$i]["label_field"];
 			// modreq
-			$form .= '<span id="'.$field_name_temp.'_req" style="color:red">';
+			$form .= '<span id="'.$field_name_temp.'_req" class="required_asterisk">';
 			if ($fields_labels_ar[$i]["required_field"] == "1" and $form_type != "search"){
 				$form .= '*';
 			} // end if
@@ -634,6 +631,8 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 				case "date_time":
 				case "insert_date_time":
 				case "update_date_time":
+				case "barcode":
+				case "qrcode":
 					if ($field_type_for_date === 'date_picker' || ($fields_labels_ar[$i]["type_field"] !== 'date' && $fields_labels_ar[$i]["type_field"] !== 'date_time')){
 
 						if ($fields_labels_ar[$i]["tooltip_field"] !== ''){
@@ -727,7 +726,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 						} // end if
 
 						// between textbox
-						if ($form_type == "search" && in_array($fields_labels_ar[$i]["type_field"], array('text', 'date','date_time','insert_date_time','update_date_time'))){
+						if ($form_type == "search" && in_array($fields_labels_ar[$i]["type_field"], array('text', 'date','date_time','insert_date_time','update_date_time','barcode','qrcode'))){
 
 						    $form .= ' <div id="between_textbox_'.$field_name_temp.'" style="display:none;"> '.$normal_messages_ar['between_and'].' <input type="text" ';
 
@@ -788,7 +787,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
                     <div></div></td></tr></table></div>';
 
                     $form .=   '<template id="uploader-dadabik-form-template">
-                    <div>
+                    <div class="uploader_container">
                         <div data-uploader-drop-zone class="dropzone">
                             <input';
 					
@@ -806,8 +805,8 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
                                 </label>
                             </div>
                         </div>
-                        <progress data-uploader-progress-bar id="progress-bar" style="width: 100%; height:10px;" max=100 value=0></progress>
-                        <div data-uploader-result></div>
+                        <progress data-uploader-progress-bar id="progress-bar" style="width: 100%; height:10px" max=100 value=0 ></progress>
+                        <div class="uploader_result" id="uploader_result"  data-uploader-result></div>
                     </div>
                 </template>';
            }
@@ -1442,7 +1441,7 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 
 						// don't show the + button if we are in a edit form and the field has edit permissions "yes but disabled"
 						if ($form_type !== 'update' || $fields_labels_ar[$i][$field_to_ceck] != "3"){
-							$buttons_html .= '<button type="button" class="btn btn-icon btn-primary" onclick="javascript:void(generic_js_popup(\'index.php?tablename='.urlencode($fields_labels_ar[$i]["primary_key_table_field"]).'&function=show_insert_form&modal_mode=1&lookup_insert_popup=1&lookup_insert_popup_table_from='.urlencode($table_name).'&lookup_insert_popup_field_from='.urlencode($fields_labels_ar[$i]["name_field"]).'&lookup_insert_popup_linked_field_from='.urlencode($fields_labels_ar[$i]["linked_fields_field"]).'&lookup_insert_popup_pk_field_from='.urlencode($fields_labels_ar[$i]["primary_key_field_field"]).'\',\'\',800,500));return false;"><b>+</b></button>';
+							$buttons_html .= '<button type="button" class="btn btn-icon btn-primary" onclick="javascript:void(generic_js_popup(\'index.php?tablename='.urlencode($fields_labels_ar[$i]["primary_key_table_field"]).'&function=show_insert_form&modal_mode=1&lookup_insert_popup=1&lookup_insert_popup_table_from='.urlencode($table_name).'&lookup_insert_popup_field_from='.urlencode($fields_labels_ar[$i]["name_field"]).'&lookup_insert_popup_linked_field_from='.urlencode($fields_labels_ar[$i]["linked_fields_field"]).'&lookup_insert_popup_pk_field_from='.urlencode($fields_labels_ar[$i]["primary_key_field_field"]).'\',\'\',800,500));return false;" id="plus_btn_'.$field_name_temp.'"><b>+</b></button>';
 						}
 					}
 
@@ -1468,8 +1467,15 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 
 			$form .= '<span class="form_input_element_button">'.$buttons_html.'</span>';
 
-			if ($table_name === $users_table_name  && $fields_labels_ar[$i]["name_field"] === 'password_user' && $form_type === 'update'){ // overwrite the hint 
-				$fields_labels_ar[$i]["hint_insert_field"] = 'Leave it blank to keep the current password';
+			if ($table_name === $users_table_name ){ // overwrite the hint 
+				if ($fields_labels_ar[$i]["name_field"] === 'password_user' && $form_type === 'update'){
+					$fields_labels_ar[$i]["hint_insert_field"] = $normal_messages_ar['leave_blank_keep_current_password'];
+				}
+				elseif ($fields_labels_ar[$i]["name_field"] === 'force_password_change_user'){
+					$fields_labels_ar[$i]["hint_insert_field"] = $normal_messages_ar['users_will_be_forced_change_after_login_except_ldap'];
+				}
+
+				
 			}
 
 			if ($form_type == "insert" or $form_type == "update" or $form_type == "ext_update"){
@@ -1535,13 +1541,13 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
 	if ($onlyform === 0){
 
 	    if ($form_type === 'search'){
-	        $form .= '<div class=\"save_buttons_container\"><button class="btn btn-primary" type="submit"><i class="fa fa-search"></i> '.$submit_buttons_ar['search_short'].'</button>';
+	        $form .= '<div class="save_buttons_container"><button class="btn btn-primary" type="submit" id="form_search_bottom_btn"><i class="fa fa-search"></i> '.$submit_buttons_ar['search_short'].'</button>';
 	    }
 	    elseif ($form_type === 'insert' && $use_old_insert_form_button_label === 0 ){
-	        $form .= "<div class=\"save_buttons_container\"><input type=\"submit\" class=\"button_form btn btn-primary\" value=\"".$submit_buttons_ar['update']."\" onclick=\"".$onclick_confirm_part['save']."\">";
+	        $form .= '<div class="save_buttons_container"><input type="submit" class="button_form btn btn-primary" value="'.$submit_buttons_ar['update'].'" onclick="'.$onclick_confirm_part['save'].'" id="form_save_bottom_btn">';
 	    }
 	    else{
-            $form .= "<div class=\"save_buttons_container\"><input type=\"submit\" class=\"button_form btn btn-primary\" value=\"".$submit_buttons_ar[$form_type]."\" onclick=\"".$onclick_confirm_part['save']."\">";
+            $form .= '<div class="save_buttons_container"><input type="submit" class="button_form btn btn-primary" value="'.$submit_buttons_ar[$form_type].'" onclick="'.$onclick_confirm_part['save'].'" id="form_save_bottom_btn">';
         }
 
         if ($is_items_table === 1){
@@ -1569,6 +1575,20 @@ function build_form($table_name, $action, $fields_labels_ar, $form_type, $res_de
         if ($form_type === 'update' && $enable_insert == '1'){
             $form .= '&nbsp;&nbsp;&nbsp;<input type="submit" class="button_form btn btn-outline-primary save_go_back" value="'.$submit_buttons_ar['insert_as_new'].'" onclick="'.$onclick_confirm_part['insert_as_new'].'javascript:document.getElementById(\'dadabik_main_form\').action=document.getElementById(\'dadabik_main_form\').action + \'&function=insert\'">';
         }
+
+		if ($form_type === 'update' && $enable_delete == '1' && $show_delete_button_in_edit === 1){
+
+			$links_ar = build_edit_details_delete_links($table_name, $where_field, $where_value, $enable_edit, $enable_delete, $enable_details, $master_table_name, $master_table_function, $master_table_where_value, $master_table_where_field, $is_items_table, $fields_labels_ar);
+			$delete_link = $links_ar['delete_link'];
+			
+			$form .= '&nbsp;&nbsp;&nbsp;<a class="button_form btn btn-outline-primary" href="'.$delete_link.'"';
+
+			if ($ask_confirmation_delete === 1){
+				$form .= " onclick=\"if (!confirm('".str_replace('\'', '\\\'', $normal_messages_ar['confirm_delete?'])."')){ return false;}\"";
+			}
+			
+			$form .= '>'.$submit_buttons_ar['delete'].'</a>';
+		}
 
         if ($show_multiple_inserts_checkbox === 1 && $show_details_after_insert === 0 && $lookup_insert_popup === 0 && ($form_type === 'update' || $form_type === 'insert')){
             $form .= '<br/><br/><input type="checkbox" name="multiple_inserts'.$alias_prefix.'" value="1"';

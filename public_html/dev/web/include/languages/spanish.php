@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 "details" => "Detalles",
 "insert_as_new" => "Adicionar como nuevo",
 "multiple_inserts" => "Multiples adiciones",
-"change_table" => "Cambiar tabla"
+"change_table" => "Cambiar tabla",
+"search_includes_following_fields" => 'La búsqueda incluye los siguientes campos:',
 );
 
 // normal messages
@@ -40,8 +41,12 @@ $normal_messages_ar = array (
 "insert_item" => "Adicionar item",
 "show_all_records" => "Mostrar todos los registros",
 "show_records" => "Mostrar items",
-"ldap_user_dont_update" => "Este es un usuario LDAP importado: su grupo es la única información que podrás cambiar.",
+"ldap_user_dont_update" => "Este es un usuario importado (LDAP, Google, ...): su grupo es la única información que podrás cambiar.",
+"leave_blank_keep_current_password" => "Campo vacío para mantener la contraseña actual",
+"users_will_be_forced_change_after_login_except_ldap" => "Si lo habilitas, este usuario deberá cambiar su contraseña después del siguiente ingreso. No aplica para las autenticaciones externas (ej. LDAP, Google).",
+"deleting_group_also_delete_users" => "Por favor nota que al remover un grupo también removerás a todos sus usuarios",
 "remove_search_filter" => "borrar el filtro de búsqueda",
+"set_default_search_filter" => "configura el filtro de búsqueda por defecto", 
 "logout" => "Cerrar sesión",
 "top" => "Tope",
 "last_search_results" => "últimos resultados",
@@ -68,6 +73,7 @@ $normal_messages_ar = array (
 "url_not_valid" => "la(s) URL(s) ingresada(s) no es/son válida(s)",
 "phone_not_valid" => "El número telefónico adicionado no es válido.",
 "date_not_valid" => "Has ingresado una o mas fechas erradas.",
+"id_group_admin_by_non_admin_not_valid" => "No puedes crear o editar un usuario administrador si no eres un administrador igualmente",
 "similar_records" => "Los siguientes elementos se parecen a los que quieres adicionar (podrás ver máximo ".$number_duplicated_records." elementos similares, pueden ser mas).<br>¿Que quieres hacer?",
 "similar_records_short" => "Los siguientes elementos se parecen a los que quieres adicionar (podrás ver máximo ".$number_duplicated_records." elementos similares, pueden ser mas).",
 "no_records_found" => "No se encontraron registos.",
@@ -103,6 +109,7 @@ $normal_messages_ar = array (
 "profile_updated" => "Su perfil ha sido actualizado.",
 "delete_result" => "Borrar resultado:",
 "record_deleted" => "Registro eliminado.",
+"records_deleted" => "Los elemento(s) han sido borrado(s) correctamente.",
 "duplication_possible" => "Es posible duplicar",
 "fields_max_length" => "Ha ingresado demasiado texto en uno o mas campos.",
 "current_upload" => "Archivo actual",
@@ -190,6 +197,7 @@ $normal_messages_ar = array (
 'add_column' => 'adicionar columna ', // add column in the pivot report
 'remove_this_column' => 'remover esta columna', // remove column in the pivot report
 'advanced_sql_report_instructions_pivot_part' => 'Para la generación de tabla pivot, además, puedes usar un alias (para especificar etiquetas) y puedes usar más de una función agregada, por ejemplo: SELECT marca AS marca_producto, count(*) AS Number, AVG (precio_producto) AS AvgPrice FROM productos GROUP BY marca',
+'advanced_sql_report_instructions_stat_card_part' => 'Para <b>stat cards</b>, no hay agregado; debes seleccionar un solo elemento. Por ejemplo, esto cuenta el número de clientes: SELECT COUNT(*) FROM customers.',
 "record_inserted_close_window" => "El item se ha adicionado correctamente, puedes <a href='#' onclick='window.close();return false;'>cerrar</a> esta ventana.",
 
 "import" => "Importar",

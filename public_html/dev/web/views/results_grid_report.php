@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -48,7 +48,7 @@ function build_results_table_report($data, $head_labels)
             $tr_results_class = 'tr_results_1';
         } // end else
 
-        if ($enable_row_highlighting === 1) {
+        if (false && $enable_row_highlighting === 1) {
             $results_table .= "<tr class=\"".$tr_results_class."\" onmouseover=\"if (this.className!='tr_highlighted_onclick'){this.className='tr_highlighted_onmouseover'}\" onmouseout=\"if (this.className!='tr_highlighted_onclick'){this.className='".$tr_results_class."'}\" onclick=\"if (this.className == 'tr_highlighted_onclick'){ this.className='".$tr_results_class."';}else{ this.className='tr_highlighted_onclick';}\">";
         } // end if
         else {

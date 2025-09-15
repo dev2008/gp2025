@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 	"details" => "Tiedot",
 	"insert_as_new" => "Insert as new", // to change
 	"multiple_inserts" => "Multiple inserts", // to change
-	"change_table" => "Vaihda taulua"
+	"change_table" => "Vaihda taulua",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -40,8 +41,12 @@ $normal_messages_ar = array (
 	"insert_item" => "Lisää kohde",
 	"show_all_records" => "Näytä kaikki tietueet",
 	"show_records" => "Näytä tietueet",
-	"ldap_user_dont_update" => "Tämä on tuotu LDAP-käyttäjä: hänen ryhmänsä on ainoa tieto, joka mahdollisesti kaipaa päivittämistä.",
+	"ldap_user_dont_update" => "This is an imported user (LDAP, Google, ...): his/her group is the only information you should change, if needed.", // to change
+	"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 	"remove_search_filter" => "tyhjennä hakuehdot",
+	"set_default_search_filter" => "set default search filter", // to change 
 	"logout" => "Kirjaudu ulos",
 	"top" => "Ylös",
 	"last_search_results" => "Viimeisimmän haun tulokset",
@@ -68,6 +73,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => "Antamasi url (www-osoite) ei ole kelvollinen.",
 	"phone_not_valid" => "Antamasi puhelinnumero ei ole kelvollinen.<br>Käytä muotoa \"+(maatunnus)(aluetunnus)(numero)\" esim. +358401235678, 00358401235678, 8401235678.",
 	"date_not_valid" => "Antamasi päivämäärä ei ole kelvollinen.",
+	"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin", // to change
 	"similar_records" => "Oheiset tietueet ovat yhteneväisiä antamiesi tietojen kanssa  (I'll show max ".$number_duplicated_records." similar items, there could be more).<br>Mitä haluat tehdä?", // to change
 	"similar_records_short" => "Oheiset tietueet ovat yhteneväisiä antamiesi tietojen kanssa  (I'll show max ".$number_duplicated_records." similar items, there could be more).", // to change
 	"no_records_found" => "Yhtään tietuetta ei löytynyt.",
@@ -103,6 +109,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "Käyttäjätietosi on päivitetty ongelmitta.",
 	"delete_result" => "Poisto:",
 	"record_deleted" => "Tietue poistettu ongelmitta.",
+	"records_deleted" => "Item(s) correctly deleted.", // to change
 	"duplication_possible" => "Kahdentuminen on mahdollinen",
 	"fields_max_length" => "Sisältö yhdessä tai useammassa kentässä on liian pitkä.",
 	"current_upload" => "Nykyinen tiedosto",
@@ -188,6 +195,7 @@ $normal_messages_ar = array (
 'add_column' => 'add column', // add column in the pivot report // to change
 'remove_this_column' => 'remove this column', // remove column in the pivot report // to change
 'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand', // to change
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "The item has been correctly inserted, you can <a href='#' onclick='window.close();return false;'>close</a> this window.", // to change
 
 "import" => "Import", // to change

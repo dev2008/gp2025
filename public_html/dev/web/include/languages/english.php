@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -33,7 +33,8 @@ $submit_buttons_ar = array (
 	"details" => "Details",
 	"insert_as_new" => "Insert as new",
 	"multiple_inserts" => "Multiple inserts",
-	"change_table" => "Change table"
+	"change_table" => "Change table",
+	"search_includes_following_fields" => 'The search includes the following fields:',
 );
 
 // normal messages
@@ -43,8 +44,12 @@ $normal_messages_ar = array (
 "insert_item" => "Create new item",
 "show_all_records" => "Show all items",
 "show_records" => "Show items",
-"ldap_user_dont_update" => "This is an imported LDAP user: his/her group is the only information you should change, if needed.",
+"ldap_user_dont_update" => "This is an imported user (LDAP, Google, ...): his/her group is the only information you should change, if needed.",
+"leave_blank_keep_current_password" => "Leave it blank to keep the current password",
+"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).",
+"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users",
 "remove_search_filter" => "remove search filter",
+"set_default_search_filter" => "set default search filter",
 "logout" => "Logout",
 "top" => "Top",
 "last_search_results" => "Last search results",
@@ -71,6 +76,7 @@ $normal_messages_ar = array (
 "url_not_valid" => "An url you have inserted is not valid.",
 "phone_not_valid" => "A phone number you have inserted is not valid.<br>Please use the \"+(country code)(area code)(number)\" format e.g. +390523599318, 00390523599318, 0523599318.",
 "date_not_valid" => "You have inserted one or more not valid dates.",
+"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin",
 "similar_records" => "The items below seem similar to the one you want to insert (I'll show max ".$number_duplicated_records." similar items, there could be more).<br>What do you want to do?",
 "similar_records_short" => "The items below seem similar to the one you want to insert (I'll show max ".$number_duplicated_records." similar items, there could be more).",
 "no_records_found" => "No items found.",
@@ -106,6 +112,7 @@ $normal_messages_ar = array (
 "profile_updated" => "Your profile has been correctly updated.",
 "delete_result" => "Delete result:",
 "record_deleted" => "Item correctly deleted.",
+"records_deleted" => "Item(s) correctly deleted.",
 "duplication_possible" => "Possible duplication",
 "fields_max_length" => "You have inserted too much text in one or more field.",
 "current_upload" => "Current file",
@@ -131,7 +138,7 @@ $normal_messages_ar = array (
 "less_equal_than" => "<=",
 "between" => "between",
 "between_and" => "and", // used for the between search operator: between .... AND .....
-"export_to_csv" => "Export to CSV",
+"export_to_csv" => "Export CSV",
 "import" => "Import",
 "new_insert_executed" => "New insert executed",
 "new_update_executed" => "New update executed",
@@ -193,7 +200,8 @@ $normal_messages_ar = array (
 'you_might_have_additional_rows_admin_set_to' => 'You might have additional rows but the admin set the maximum rows to ',
 'add_column' => 'add column', // add column in the pivot report
 'remove_this_column' => 'remove this column', // remove column in the pivot report
-'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand',
+'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, COUNT(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand',
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.',
 "record_inserted_close_window" => "The item has been correctly inserted, you can <a href='#' onclick='window.close();return false;'>close</a> this window.",
 
 'file_type' => 'File type',

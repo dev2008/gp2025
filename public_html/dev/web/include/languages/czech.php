@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 	"details" => "Detaily",
 	"insert_as_new" => "Insert as new", // to change
 	"multiple_inserts" => "Multiple inserts", // to change
-	"change_table" => "Změnit seznam"
+	"change_table" => "Změnit seznam",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -40,7 +41,12 @@ $normal_messages_ar = array (
 	"insert_item" => "Vožit položku",
 	"show_all_records" => "Zobrazit všechny záznamy",
 	"show_records" => "Zobrazit položky",
+	"ldap_user_dont_update" => "This is an imported user (LDAP, Google, ...): his group is the only information which you should change, if needed.", // to change
+	"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 	"remove_search_filter" => "smazat filtry hledání",
+	"set_default_search_filter" => "set default search filter", // to change 
 	"logout" => "Odhlásit",
 	"top" => "Nahoru",
 	"last_search_results" => "Poslední výsledky hledání",
@@ -67,6 +73,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => "Url adresa je neplatná.",
 	"phone_not_valid" => "Telefonní číslo je neplatné.<br>Prosím, pouzijte formát \"+(kod statu)(kod oblasti)(cislo)\"  napr. +420245005050, 00420245005050, 0245005050.",
 	"date_not_valid" => "Vložili jste jeden nebo více nesprávných datumů.",
+	"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin", // to change
 	"similar_records" => "Zaznam se zdá být podobný již uloženému  (I'll show max ".$number_duplicated_records." similar items, there could be more)..<br>Co si přejete provést?", // to change
 	"similar_records_short" => "Zaznam se zdá být podobný již uloženému  (I'll show max ".$number_duplicated_records." similar items, there could be more).", // to change
 	"no_records_found" => "záznam nebyl nalezen.",
@@ -103,6 +110,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "Váš profil by obnoven korektně.",
 	"delete_result" => "Vymazat vysledek:",
 	"record_deleted" => "Záznam byl vymazán korektně.",
+	"records_deleted" => "Item(s) correctly deleted.", // to change
 	"duplication_possible" => "Povolit duplikace",
 	"fields_max_length" => "Příliž mnoho textu nebo položek.",
 	"current_upload" => "Aktualní soubor",
@@ -189,6 +197,7 @@ $normal_messages_ar = array (
 'add_column' => 'add column', // add column in the pivot report // to change
 'remove_this_column' => 'remove this column', // remove column in the pivot report // to change
 'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand', // to change
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "The item has been correctly inserted, you can <a href='#' onclick='window.close();return false;'>close</a> this window.", // to change
 
 "import" => "Import", // to change
