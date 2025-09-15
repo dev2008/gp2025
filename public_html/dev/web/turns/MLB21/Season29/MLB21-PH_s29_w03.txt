@@ -1,0 +1,1120 @@
+Delivered-To: alanscottmilnes@gmail.com
+Received: by 2002:ab0:6dcc:0:0:0:0:0 with SMTP id r12csp2178219uaf;
+        Sat, 21 Nov 2020 03:02:42 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJzQD8OvXb2XOEoLg3iqClwiSGmS6wXbH4FB1qZD+YuQXcj33K7hyUxa+VLizkEYO501CdDa
+X-Received: by 2002:adf:f3cf:: with SMTP id g15mr1653955wrp.71.1605956561947;
+        Sat, 21 Nov 2020 03:02:41 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1605956561; cv=none;
+        d=google.com; s=arc-20160816;
+        b=u1BvpKsHhMr7ahZpqY0S+jzSq3Qqi2rgPfMAXVw5x45Ow+Ca3hwCqkKVNYJe9OwHlK
+         7wt+6gREhX1YQLkxUQUveMZr1UJ6g+gI0QIRE9Q346s0lFuuY2iQTWaQVUSnpsF3vNH8
+         DLZxBgX1hykBH+QWTX0BPezi2dLF/G/F5mEcvb0lBsNV2ZgVlMeS0bGj6PaYA5lmkqnq
+         dddaCITa3wMvlrfOQ0dp8zD8awXnZFSYSeEUrw+ysYWBXF2YUHtfht95kwlrThKX3qII
+         Mrg9c05j+9gOSbxoIKxQAkbr4lgcD2j9ZWfPVpxRR4C1hc4qU25s43WIwnC/tLTO0gRO
+         OhWw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:to:subject:from:message-id;
+        bh=6U+5Z8lT83jh5LF/GxPdQs/xFgcYaAzV4XXF+7PAhD0=;
+        b=QyysKfjhWlhhblAcQVPiLOSEzHpGM3XFuuLn/NwbNc4b16lb3eXKfOhsLZ4YupWjaD
+         2BwuFIa3Fpi7fUjpafX5ATZB7YZyvzfbaw0iQ7sw+1WJhP1QiW93X70cZuRgW3eP45NL
+         tUg3h9KJEoEjsmfN5AunpgpVlVM/+PGHbjzP50rAMh4G1T2DeP1RnN5jbHc5V4i+NIQ0
+         4L+nDzeJiJXYD53yZZzncQ/cR40qEe7mPnqGQtyomELvO7DARUyd1FASMQTeCnkJXhxn
+         UQJM/hB24pcsJwZ4zCrwCbvGQbtAit75GEI2BlWr7qV9CvmyQwINs+HEK/mmX7FjJ5rp
+         6m3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 217.72.192.73 is neither permitted nor denied by best guess record for domain of alan@milnes7.com) smtp.mailfrom=alan@milnes7.com
+Return-Path: <alan@milnes7.com>
+Received: from mout.kundenserver.de (mout.kundenserver.de. [217.72.192.73])
+        by mx.google.com with ESMTPS id d4si5843146wre.270.2020.11.21.03.02.41
+        for <alanscottmilnes@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 21 Nov 2020 03:02:41 -0800 (PST)
+Received-SPF: neutral (google.com: 217.72.192.73 is neither permitted nor denied by best guess record for domain of alan@milnes7.com) client-ip=217.72.192.73;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 217.72.192.73 is neither permitted nor denied by best guess record for domain of alan@milnes7.com) smtp.mailfrom=alan@milnes7.com
+Message-ID: <5fb8f3d1.1c69fb81.2b029.ba68SMTPIN_ADDED_BROKEN@mx.google.com>
+X-Google-Original-Message-ID: <5ED9AA6E1B7223CB@sa-prd-rgout-002.btmx-prd.synchronoss.net> (added by postmaster@btinternet.com)
+Received: from [217.72.192.67] ([217.72.192.67]) by mx.kundenserver.de
+ (mxeue109 [217.72.192.67]) with ESMTPS (Nemesis) id 1MDPma-1kZFP43pEE-00AdG0
+ for <alanscottmilnes@gmail.com>; Sat, 21 Nov 2020 12:02:41 +0100
+Received: from [217.72.192.67] ([217.72.192.67]) by mx.kundenserver.de
+ (mxeue109 [217.72.192.67]) with ESMTPS (Nemesis) id 1M4Ia7-1kghe53p9V-000QNH
+ for <alan@milnes7.com>; Sat, 21 Nov 2020 12:02:40 +0100
+Received: from sa-prd-fep-043.btinternet.com ([213.120.69.16]) by
+ mx.kundenserver.de (mxeue109 [217.72.192.67]) with ESMTPS (Nemesis) id
+ 1MvrIv-1kQY6h3mXX-00sniH for <ALAN@GAMEPLAN.ORG.UK>; Sat, 21 Nov 2020
+ 12:02:40 +0100
+Received: from sa-prd-rgout-002.btmx-prd.synchronoss.net ([10.2.38.5])
+          by sa-prd-fep-043.btinternet.com with ESMTP
+          id <20201121110240.NEOT15936.sa-prd-fep-043.btinternet.com@sa-prd-rgout-002.btmx-prd.synchronoss.net>;
+          Sat, 21 Nov 2020 11:02:40 +0000
+Authentication-Results: btinternet.com; none
+X-SNCR-Rigid: 5ED9AA6E1B7223CB
+X-Originating-IP: [86.134.45.175]
+X-OWM-Source-IP: 86.134.45.175 (GB)
+X-OWM-Env-Sender: janice.shackleton@btinternet.com
+X-VadeSecure-score: verdict=clean score=0/300, class=clean
+X-RazorGate-Vade: gggruggvucftvghtrhhoucdtuddrgedujedrudegvddgvdefucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecuueftkffvkffujffvgffngfevqffopdfqfgfvnecuuegrihhlohhuthemuceftddunecunecujfgurhephffuvfgtffesthdttddttddttdenucfhrhhomhepfdffrghnnhihucfotgevohhnnhgvlhhlfdcuoegurghnnhihsehpsghmshhpohhrthhsrdgtohhmqeenucggtffrrghtthgvrhhnpeefhfefteeitefgteehueeuiedviefffeelvdegjeehhffhhfevjeefteehjeehfeenucffohhmrghinhepphgsmhhsphhorhhtshdrtghomhdpshhofhhtshhimhdrtghordhukhdpshhlrggtkhdrtghomhenucfkphepkeeirddufeegrdeghedrudejheenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhephhgvlhhopeffrghnnhihqdfrvedpihhnvghtpeekiedrudefgedrgeehrddujeehpdhmrghilhhfrhhomhepoegurghnnhihsehpsghmshhpohhrthhsrdgtohhmqedprhgtphhtthhopeeotefntefpsefitefogffrnfetpfdrqfftifdrfgfmqedprhgtphhtthhopeeorghlrghnshgtohhtthhmihhlnhgvshesghhmrghilhdrtghomheq
+X-RazorGate-Vade-Verdict: clean 0
+X-RazorGate-Vade-Classification: clean
+Received: from Danny-PC (86.134.45.175) by sa-prd-rgout-002.btmx-prd.synchronoss.net (5.8.340) (authenticated as janice.shackleton@btinternet.com)
+        id 5ED9AA6E1B7223CB; Sat, 21 Nov 2020 11:02:40 +0000
+From: "Danny McConnell" <danny@pbmsports.com>
+Subject: MLB21-PH, Turn 3
+To: ALAN@GAMEPLAN.ORG.UK, alanscottmilnes@gmail.com
+Content-Type: text/plain
+Date: Sat, 21 Nov 2020 11:02:40 +0000
+X-Spam-Flag: NO
+X-UI-Out-Filterresults: notjunk:1;V03:K0:rx2gMlL2jzw=:0k8kqya4pB2PyD/1Foas7x
+ Ca0Br/B8TNoagLWy6kshxP9U2N6AShNp2vtABUpGUcO1SvX8nvJ1sUgT25V2GhppAWbThOJfw
+ L2xfNawimuUCOcBocSdtk8K2q3ziFm4ogApheItUMQ+eq4QFSqdDqVdxkB8BaAC1PvMyFGIKt
+ /iu0CXBUclmzikkoTQWE24NRIGQeZZwQ87RnrX1FvMIysQIt/KBFsUULixhFWOSzwqC/KAfyv
+ a/Nx7TsQPDNzyTSCmZudEEwqcllftg/+gziJRAXq2fBxc2u28Dzxr6gEBL7rsOOBNf1yyENpM
+ O4+9zreFOrZgza2ppfxHmFnZj/eIjx1WIZTZG7HX/QMOGvEDqft9OVbtAaFmPQfg0jwl7GSQw
+ 21Js7lpyz4Osotq4ktWOu2RpnQB2LtPcUU0EtmjlV6DVqFBFpm7bIG5dUL3AZ+Ge4/hiHA29Y
+ uL0qBbWWu/cQ+bcBaBhM98sYO22zzgjSmRBkl/S7KurodOk7VBjbZ4Z4TvdKGyP0PvYD6QPrh
+ YozuL5Xj3OUNqAMYOI7W+o=
+
+ALAN@GAMEPLAN.ORG.UK; alanscottmilnes@gmail.com
+0
+MLB21-PH, Turn 3
+<STARTREP>
+<BK.Team Report><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21  Team Report  Season 29   Week 3   21/11/20<ST.28.88.105.110><L.48.1>
+Philadelphia Phillies (Alan Milnes)    <L.48.1>
+<C>Turn Credits =  4.6  (deducted 1.2, includes full reports)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Acc Con Qui Sta<T>Sqd<T>MxB MxH MxE FIn MnB<C><L.42.1>
+ 7  Oscar Rincon<T>Pit L   9 ACC    9   7  10   0   0   4   0   62 LP   6 LP<T> Ex  Ex  Go  Go <T>Act<T><T>  9   3   1   1   9<L.33.1>
+77  Adonis Medina<T>Pit L   8 CON    5  13  10   1   0  -2   0   48 LP   4 LP<T> Go  Go  Go  Av <T>Act<T><T>  5   3   6   1   1<L.33.1>
+ 3  Juan Crespo<T>Pit R  10 CON   14   2  10   0   7  10<Z>  14<C>   65 LP   6 LP<T> Go  Ex  Ex  Ex <T>Act<T><T> 21   4   6   1   1<L.33.1>
+ 8  Eddie Ordonez<T>Pit R  10 QUI   11   3  10   1   5  10   0   53 LP   5 LP<T> Go  Go  Ex  Go <T>Act<T><T> 21   4   6   1   1<L.33.1>
+13  Javier Castillo<T>Pit R   9 STA    3  15  12   3  -4  -3   0   42 LP   4 LP<T> Go  Go  Av  Ex <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+15  Carl Wells<T>Pit L   8 ACC    7   9   9   1   0   0   0   58 LP   5 LP<T> Go  Go  Go  Go <T>Act<T><T>  5   3   6   1   1<L.33.1>
+11  Alex Crespo<T>Pit R   7 STA    1   9   8   0   0   1   0   17 LP   1 LP<T> Fa  Av  Av  Go <T>Act<T><T> 21   4   6   1   1<L.33.1>
+41  Adonis Medina<T>Pit R   7 STA    1  14   9   0   2   0   0   20 LP   2 LP<T> Fa  Av  Av  Go <T>Act<T><T> 21   4   6   1   1<L.33.1>
+19  Dave Roberts<T>Pit L   6 CON    R  11   8   0  -1   2   0   16 LP   1 LP<T> Fa  Go  Av  Fa <T>Act<T><T>  9   3   1   1   9<L.33.1>
+ 9  Mike Jordan<T>Pit R   6 STA    3  13   8   1  -2  -1   0   20 LP   2 LP<T> Av  Fa  Fa  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+ 1  Mike Jordan<T>Pit L   6 CON    3  12   8   0   0   1   0   21 LP   2 LP<T> Fa  Go  Av  Av <T>Act<T><T>  9   3   1   1   9<L.33.1>
+<L.6.1>
+ 4  Dave Davis<T>Pit R   5 ACC    4   6   6   0   0   0   0   17 LP   1 LP<T> Av  Fa  Fa  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+18  Jose Rivera<T>Pit R   6 STA    3  15   9   0   0   0   0   23 LP   2 LP<T> Fa  Av  Av  Go <T>Act<T><T> 21   4   6   1   1<L.33.1>
+14  Dominic Pipkin<T>Pit R   6 ACC    1  13   8   0   0   1   0   15 LP   1 LP<T> Av  Av  Fa  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+<Z>Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Hit Pow Spd Fld<T>Sqd<T>Pos vRH Plt Pin<L.42.1>
+<C>80  Zach Collier<T>Bat L  10 POW    8  11  12   1   6  11   0   69 LP   6 LP<T> Ex  WC  Go  Go <T>Act<T> CF  CF        <L.33.1>
+81  Alec Bohm<T>Bat L   8 HIT    2  15  11   0  -2+ -2   0   22 LP   2 LP<T> Go  Av  Av  Go <T>Act<T> 3B  3B        <L.33.1>
+22  Gordon Milnes<T>Cat S   9 FLD   14   2   9   0   4   7   0   88 LP   8 LP<T> Av  Go  Av  Ex <T>Act<T>  C   C        <L.33.1>
+20  Mickey Moniak<T>Bat S  10 HIT    5  11  12   1   6  10   0   69 LP   6 LP<T> WC  Ex  Ex  Go <T>Act<T> LF  LF        <L.33.1>
+ 5  Alex Guerrero<T>Bat R  10 POW   16   1  10   1   7  11   0   77 LP   7 LP<T> Ex  Ex  Av  Ex <T>Act<T> SS  SS        <L.33.1>
+28  Jamie Dick<T>Bat L  10 POW   11   5  11   1   1   1   0   82 LP   8 LP<T> Go  Ex  Go  Ex <T>Act<T> IF  1B      SS<L.33.1>
+ 6  Jason Wilson<T>Bat L   9 POW    3  12  11   0   6  11   0   39 LP   3 LP<T> Go  Go  Go  Av <T>Act<T> RF  RF        <L.33.1>
+25  Scott Kingery<T>Bat R   9 FLD    4  13  11   0   2   6   0   41 LP   4 LP<T> Go  Go  Go  Ex <T>Act<T> 2B  2B        <L.33.1>
+29  Nick Maton<T>Bat L   8 POW    2  14  10   0   4   6   0   30 LP   3 LP<T> Go  Ex  Av  Av <T>Act<T> RF  DH        <L.33.1>
+<L.6.1>
+31  Freddy Galvis<T>Bat L  11 FLD    9   4  11   0   0   7<Z>  38<C>   93 LP   9 LP<T> WC  Ex  Ex  WC <T>Act<T> 3B   -        <L.33.1>
+10  Daniel Brito<T>Bat R   6 HIT    4   8   7   0   1   2   0   23 LP   2 LP<T> Go  Go  Fa  Fa <T>Act<T> 3B   -      DH<L.33.1>
+<L.6.1>
+57  Luis Garcia<T>Cat L   7 POW    1  14   9   0   5  10   0   19 LP   1 LP<T> Av  Go  Av  Av <T>Res<T>  C   -        <L.33.1>
+37  Jhailyn Ortiz<T>Cat R   4 HIT    R  21   8   0   4   6   0   11 LP   1 LP<T> Av  Fa  Fa  Fa <T>Res<T>  C   -        <L.33.1>
+12  Eric Crespo<T>Bat R   8 SPD    2  15  11   0   3+  1   0   27 LP   2 LP<T> Go  Av  Go  Av <T>Res<T> OF   -  DH    <L.33.1>
+36  Rafael Marchan<T>Bat L   7 HIT    R  15  10   0   2   7   0   18 LP   1 LP<T> Go  Av  Fa  Fa <T>Res<T> CF   -        <L.33.1>
+<L.6.1>
+Key to Ratings: Po = Poor, Fa = Fair, Av = Average, Go = Good, Ex = Excellent, WC = World Class. Pos is Primary Field Position.<ST.20.64.86.98.120><L.48.1>
+<Z>Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>   7  77<Z>   3<C>   8  13<L.36.1>
+<Z>Shirt Number:<C><T>  22  28  25  81   5  20  80   6  29<T><Z>Bullpen Depth Chart:<C><T>  15  11  41  19   9   1<L.36.1>
+<Z>Batting Order:<C><T>   3   6   8   2   5   4   1   7   9<T><Z>Setup Pitcher:<C><T>  none<T><Z>Closing Pitcher:<C><T>  none<ST.20.32.64.86.98.120><L.36.1>
+<Z>Platoon Hitter 1:<C><T>  12  DH<T><Z>Platoon Hitter 2:<C>  19  SS<T><Z>Opposite Hand: <C><T>  YES<T><Z>Starter Innings:<C><T>   6<T><L.36.1>
+<Z>Platoon Hitter 3:<C><T>  18  LF<T><Z>Platoon Hitter 4:<C>  none<T><Z>Minimum Lead:<C><T>   1<T><Z>Maximum Lead:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 1:  <C><T>  10  DH<T><Z>Pinch Hitter 2:  <C>  17  1B<T><Z>Long Relief Pitcher: <T><C>  13<T><Z>Long Innings:<C><T>   2<T><L.36.1>
+<Z>Pinch Hitter 3:  <C><T>  23  DH<T><Z>Pinch Hitter 4:  <C>  28  SS<T><Z>Blowout Innings:<C><T>   7<T><Z>Blowout Margin:<C><T>  12<T><L.36.1>
+<Z>Pinch Innings: <C><T>   8<Z><T>Pinch Deficit: <C>     4<ST.32.64.86.98.120><L.45.1>
+<Z>Stadium Size:        <C>Small<T><Z>Stadium Surface:  <C>Grass<T><Z>Stadium Building:       <C>Open<ST.22.32.42.52.64.88.98.108.118><L.36.1>
+<Z>Batting Training:<C><T>HIT  5<T>POW  4<T>SPD  0<T>FLD  0<Z><T>Pitching Training:<C><T>ACC  0<T>CON  0<T>QUI  0<T>STA  0<ST.20.32.49.64.86.98.120><L.45.1>
+<Z>Losing Points:<C><T>  97<T><Z>Base Income:<C><T>  62<T><Z>Fans Income:<C><T>  22<T><Z>Stadium Income:<C><T>   8<T><L.36.1>
+<Z>Merchandise Income:<C><T>   0<T><Z>Trade Income:<C><T>  11<T><Z>Trade Costs:<C><T>  17<T><Z>Overall Costs:<C><T>   3<T><L.36.1>
+<Z>Wages Paid:<C><T> 105<T><Z>Total Fans:<C><T>  22,713<T><Z>Stadium Level:<C><T>   8<T><Z>Merchandising:<C><T>  13<T><L.36.1>
+<Z>Current Wages:<C><T> 105<T><Z>Trainer Level:<C><T>   4<T><Z>Minor League System:<C><T>   5<T><Z>Full Reports:<C><T> Yes<L.36.1>
+<Z>Postal Reports:<C><T>  No<T><Z>Email Reports:<C><T>  Text<T><Z>Email Address: <C>ALAN@GAMEPLAN.ORG.UK; alanscottmilnes@gmail.com<ST.22><L.45.1>
+<Z>Special Actions:<C><T>ADDFORM 81 for 3 weeks: OK, cost 3 LP<L.39.1>
+<T>SCOUT 120: OK, ex-MM, Cat (C) L 6. Pt 14, Ex R, Fm 0, TF 1, Ft 0, Val 16 LP. HIT Fa POW Fa SPD Av FLD Av<L.39.1>
+<T>SCOUT 109: OK, ex-CO, Bat (CF) L 10. Pt 3, Ex 13, Fm -3, TF 0, Ft 0, Val 63 LP. HIT Go POW Go SPD WC FLD Go<L.39.1>
+<T>SCOUT 114: OK, ex-PI, Bat (2B) S 8. Pt 2, Ex 9, Fm 0, TF -6, Ft 0, Val 39 LP. HIT Go POW Av SPD Go FLD Go<L.39.1>
+<T>SCOUT 124: OK, ex-MB, Bat (SS) S 10. Pt 1, Ex 12, Fm -2, TF 0, Ft 0, Val 77 LP. HIT Ex POW Go SPD Ex FLD Ex<L.39.1>
+<L.3.1>
+<Z>Free Agent Bid:<C><T>122 for 17 LP to replace 2: OK, 4 Dave Davis signed, net cost 6 LP (11 LP compensation)<L.42.1>
+<Z>Injuries/Holdouts:<C><T>3 Juan Crespo - Strained Thigh, 14 games. 31 Freddy Galvis - Broken Foot, 38 games. <L.42.1>
+<ST.22.58.95><L.1.1>
+<Z>Forthcoming Series:<C><T>at Nationals. Out 8 15 14 11 <T>vs Cubs. Out 14 <T>at Dodgers. Out 36 46 <L.42.1>
+<L.1.1>
+<D><E><P>
+<BK.Team Stats><ST.30.90.97.104><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL   MLB21  Regular Season 29 Totals   Week 3   21/11/20<L.48.1>
+Philadelphia Phillies  (Alan Milnes)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.25.90.98.103.111.118.124><L.48.1>
+Individual Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+14 Dominic Pipkin<T>  1    0    0    0    1         1    0    0    0    2    0    0<T>  0-0<T>  0<T>  0-0<T>  9.00<T> .250<T>  0.00<L.36.1>
+ 8 Eddie Ordonez<T>  9    4    0    5   38 1/3    25    7    7    2   17   29    2<T>  4-0<T>  3<T>  3-1<T>  7.51<T> .178<T>  1.64<L.36.1>
+ 3 Juan Crespo<T>  9    4    0    3   36        24    7    7    1    6   33    2<T>  4-1<T>  2<T>  4-0<T>  8.00<T> .181<T>  1.75<L.36.1>
+19 Dave Roberts<T>  6    1    0    3   13 2/3    13    3    3    1    5    4    4<T>  1-0<T>  0<T>  1-0<T>  3.95<T> .240<T>  1.98<L.36.1>
+ 7 Oscar Rincon<T>  5    5    0    0   30        26   13   12    5   12   15    2<T>  4-0<T>  0<T>  5-0<T>  9.60<T> .224<T>  3.60<L.36.1>
+11 Alex Crespo<T>  8    0    0    7   19        19   10   10    3    9    7    2<T>  1-1<T>  3<T>  0-0<T>  8.05<T> .250<T>  4.74<L.36.1>
+15 Carl Wells<T> 12    2    0    0   23        19   16   13    3    8   19    1<T>  1-1<T>  0<T>  2-0<T>  8.22<T> .215<T>  5.09<L.36.1>
+41 Adonis Medina<T>  7    0    0    6   11 2/3    15    7    7    2    8    3    3<T>  2-1<T>  2<T>  0-0<T>  5.40<T> .300<T>  5.40<L.36.1>
+77 Adonis Medina<T>  5    5    0    0   30        37   20   20    5   11   17    0<T>  1-2<T>  0<T>  2-3<T>  5.10<T> .291<T>  6.00<L.36.1>
+13 Javier Castillo<T>  4    4    0    0   24        25   20   17    3    9   18    6<T>  1-1<T>  0<T>  2-2<T>  6.75<T> .257<T>  6.37<L.36.1>
+ 1 Mike Jordan<T>  3    2    0    0   14        17   12   12    4    4    9    0<T>  1-0<T>  0<T>  1-1<T>  9.64<T> .288<T>  7.71<L.36.1>
+ 9 Mike Jordan<T>  3    0    0    2    3         7    7    4    0    3    1    0<T>  0-0<T>  0<T>  0-0<T>  0.00<T> .437<T> 12.00<L.36.1>
+18 Jose Rivera<T>  0    0    0    0    0         0    0    0    0    0    0    0<T>  0-0<T>  0<T>  0-0<T>  -  <T> .000<T>  0.00<L.36.1>
+ 4 Dave Davis<T>  0    0    0    0    0         0    0    0    0    0    0    0<T>  0-0<T>  0<T>  0-0<T>  -  <T> .000<T>  0.00<L.36.1>
+<L.9.1>
+<Z>Team Pitching<T> 27   27    0   27  244 2/3   229  122  112   29   94  157   22<T> 20-7<T> 11<T> 20-7<T>  7.28<T> .237<T>  4.12<C><L.18.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>Individual Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+29 Nick Maton rf<T> 15   58   13   24   40    4   0   4   15    2   0   1    7   0   0   0    0    0<T> .000<T> .413<T> .433<T> .689<L.36.1>
+20 Mickey Moniak lf<T> 27  113   28   42   89   12   4   9   23   14   1   8   19   6   0   0   44    0<T>1.000<T> .371<T> .437<T> .787<L.36.1>
+ 6 Jason Wilson rf<T> 27  108   19   35   64    7   2   6   27    9   2   8    7   6   0   0   45    0<T>1.000<T> .324<T> .369<T> .592<L.36.1>
+80 Zach Collier cf<T> 27  122   25   39   91   11   1  13   31   10   0   5   12  10   1   0   78    1<T> .987<T> .319<T> .371<T> .745<L.36.1>
+31 Freddy Galvis 3b<T> 15   66   19   21   47    1   2   7   13    6   0   2   10   8   1   5    8   41<T> .980<T> .318<T> .375<T> .712<L.36.1>
+25 Scott Kingery 2b<T> 27  102   19   32   54    8   1   4   19   12   0   7   17   8   3  25   41   93<T> .978<T> .313<T> .385<T> .529<L.36.1>
+28 Jamie Dick if<T> 27  112   21   34   57    9   1   4   11    8   0   3   20   4   3  26  238    5<T> .987<T> .303<T> .350<T> .508<L.36.1>
+10 Daniel Brito 3b<T>  3   10    2    3    5    2   0   0    3    0   2   0    0   0   0   0    0    0<T> .000<T> .300<T> .250<T> .500<L.36.1>
+ 5 Alex Guerrero ss<T> 27  113   26   32   70    8   0  10   26    9   2   5   21  21   0  17   42   70<T>1.000<T> .283<T> .330<T> .619<L.36.1>
+22 Gordon Milnes c<T> 27  117   18   32   65    7   1   8   17    9   2   2   24   7   0   2   71   18<T>1.000<T> .273<T> .320<T> .555<L.36.1>
+12 Eric Crespo of<T>  9   36    4    7    9    2   0   0    2    2   1   0    5   0   0   0    0    0<T> .000<T> .194<T> .230<T> .250<L.36.1>
+81 Alec Bohm 3b<T> 12   53    4    7    7    0   0   0    3    5   1   0   12   0   2   0   10   27<T> .948<T> .132<T> .203<T> .132<L.36.1>
+57 Luis Garcia c<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+37 J.Ortiz c<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+36 Rafael Marchan cf<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+<L.9.1>
+<Z>Team Batting<T> 27 1010  198  308  598   71  12  65  190   86  11  41  154  70  10  26  577  255<T> .988<T> .304<T> .355<T> .592<ST.24.78.100><L.48.1>
+Selection Orders This Turn<L.48.1>
+Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  77   3   8  13   7<L.39.1>
+<Z>Shirt Number:<C><T>  22  28  25  81   5  20  80   6  29<T><Z>Bullpen Depth Chart:<C><T>  15  11  41  19   9   1<L.39.1>
+<Z>Batting Order:<C><T>   3   6   8   2   5   4   1   7   9<T><Z>Setup Pitcher:<C><T>   0<L.39.1>
+<T><T><Z>Closing Pitcher:<C><T>   0<L.39.1>
+<Z>Lineup Changes:<C><T>  none ordered<L.39.1>
+<Z>Pitching Changes:<C><T>  none ordered<L.39.1>
+<Z>Training & Practice:<C><T>  Series 1: Train Skill - HIT     Bonus Skill - POW     Bonus Player - 10     Key Player - 17<L.39.1>
+<T>  Series 2: Train Skill - HIT     Bonus Skill - POW     Bonus Player - 77     Key Player - 24<L.39.1>
+<T>  Series 3: Train Skill - POW     Bonus Skill - HIT     Bonus Player - 29     Key Player -  5<L.39.1>
+<ST.24.78><L.9.1>
+<Z>Enforced Selection Changes This Turn<L.48.1>
+Key Player 2: <C><T>  24 replaced by 99: No such player<L.39.1>
+<L.1.1>
+<D><E><DU>
+<BK.Series 1><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 1: New York Mets (7-11) at Philadelphia Phillies (14-4)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NM  1st  <C><U>Medina<UC> on mound. Jackson singled to CF. Castillo flied out to LF. Brooks flied out to LF. Cordero walked, Jackson to 2nd. <L.30.1>
+         Thomas flied out to C.<L.33.1>
+<Z>PH  1st  <C><U>Cordero<UC> on mound. Collier struck out. Bohm flied out to C. Milnes singled to CF. Moniak struck out.<L.33.1>
+<Z>NM  2nd  <C>Ryal flied out to C. Lee ground out to 1B (2B). Jolly ground out to 1B (3B).<L.33.1>
+<Z>PH  2nd  <C>Guerrero singled to RF. Guerrero stole 2nd. Dick ground out to 1B (2B). Wilson singled to LF, Guerrero scored, <Z>PH 1-0<C>. <L.30.1>
+         Kingery walked, Wilson to 2nd. Maton flied out to RF. Collier ground out to 1B (SS).<L.33.1>
+<Z>NM  3rd  <C>Rodriguez struck out. Jackson doubled to RF. Castillo flied out to 3B. Brooks doubled to LF, Jackson scored, <Z>1-1<C>. <L.30.1>
+         Cordero flied out to RF, field save.<L.33.1>
+<Z>PH  3rd  <C>Bohm flied out to LF. Milnes ground out to 1B (C). Moniak flied out to CF.<L.33.1>
+<Z>NM  4th  <C>Thomas flied out to CF. Ryal flied out to CF. Lee struck out.<L.33.1>
+<Z>PH  4th  <C>Guerrero walked. Dick singled to CF, Guerrero to 3rd. Wilson singled to CF, Guerrero scored, Dick to 2nd, <Z>PH 2-1<C>. <L.30.1>
+         Kingery ground out to 1B (2B, field save). Maton reached 1st, Dick forced out at 3B (SS), Wilson to 2nd. Collier singled <L.30.1>
+         to CF, Wilson scored, Maton to 3rd, <Z>PH 3-1<C>. <U>Lewis<UC> took over on mound. Bohm singled to 1B, Maton scored, Collier to 2nd, <L.30.1>
+         <Z>PH 4-1<C>. Milnes ground out to 1B (2B).<L.33.1>
+<Z>NM  5th  <C>Jolly flied out to SS. Rodriguez doubled to LF. Jackson flied out to RF, field save. Castillo singled to LF, Rodriguez <L.30.1>
+         scored, <Z>PH 4-2<C>. Brooks singled to 3B, Castillo to 2nd. Cordero walked, Castillo to 3rd, Brooks to 2nd. Thomas struck <L.30.1>
+         out.<L.33.1>
+<Z>PH  5th  <C>Moniak flied out to CF. Guerrero flied out to C. Dick singled to RF. Wilson walked, Dick to 2nd. Kingery homered to CF, <L.30.1>
+         Dick scored, Wilson scored, <Z>PH 7-2<C>. Maton flied out to 1B, field save.<L.33.1>
+<Z>NM  6th  <C>Ryal walked. Lee struck out. Jolly flied out to 3B. Rodriguez ground out to 1B (3B).<L.33.1>
+<Z>PH  6th  <C>Collier flied out to LF. Bohm flied out to CF. Milnes flied out to 3B.<L.33.1>
+<Z>NM  7th  <C><U>Crespo<UC> took over on mound. Jackson singled to CF. Jackson forced out at 2B (SS), Castillo ground into double play at 1B <L.30.1>
+         (2B). Brooks walked. <U>Guillen<UC> pinch hitting at 2B. Guillen ground out to 1B (3B).<L.33.1>
+<Z>PH  7th  <C>Moniak struck out. Guerrero homered to RF, <Z>PH 8-2<C>. Dick singled to LF. Wilson homered to RF, Dick scored, <Z>PH 10-2<C>. <L.30.1>
+         Kingery flied out to CF, field save. Maton flied out to C.<L.33.1>
+<Z>NM  8th  <C><U>Davis<UC> pinch hitting at LF. Davis flied out to CF. Ryal flied out to 2B. Lee flied out to RF.<L.33.1>
+<Z>PH  8th  <C>Collier flied out to C. Bohm flied out to LF. Milnes singled to CF. <U>Sanchez<UC> took over on mound. Moniak flied out to C.<L.33.1>
+<Z>NM  9th  <C>Jolly flied out to SS. Rodriguez ground out to 1B (SS, field save). Jackson flied out to CF.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Mets<C><T><Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,1) <Z> 0 <C>(0,1) <Z> 0 <C>(1,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  2<C><L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(1,0) <Z> 1 <C>(2,1) <Z> 0 <C>(0,0) <Z> 3 <C>(4,1) <Z> 3 <C>(2,1) <Z> 0 <C>(0,0) <Z> 3 <C>(3,0) <Z> 0 <C>(1,0) <Z> x       <T> 10<C><ST.24.66.90><L.42.1>
+<Z>Mets Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 4 Carl Jackson rf<T> 5  1  3  1  0  0  0  0  0  0  0  0  0<T>80 Zach Collier cf<T> 5  0  1  0  0  0  1  0  0  0  1  0  0<L.30.1>
+26 Ricardo Castillo cf<T> 4  0  1  0  0  0  1  0  0  0  0  0  0<T>81 Alec Bohm 3b<T> 5  0  1  0  0  0  1  0  0  0  0  0  0<L.30.1>
+ 9 Scott Brooks 3b<T> 3  0  2  1  0  0  1  1  0  0  0  0  0<T>22 Gordon Milnes c <T> 5  0  2  0  0  0  0  0  0  0  0  0  0<L.30.1>
+22 Fernando Cordero 2b<T> 1  0  0  0  0  0  0  2  0  0  0  0  0<T>20 Mickey Moniak lf<T> 5  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+14 Pete Thomas lf<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<T> 5 Alex Guerrero ss<T> 3  3  2  0  0  1  1  1  0  1  0  1  0<L.30.1>
+ 6 Rusty Ryal 1b<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>28 Jamie Dick 1b<T> 4  2  3  0  0  0  0  0  0  0  0  1  0<L.30.1>
+ 5 Paul Lee dh<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T> 6 Jason Wilson rf<T> 3  3  3  0  0  1  4  1  0  0  0  0  0<L.30.1>
+ 2 Luis Jolly c <T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>25 Scott Kingery 2b<T> 3  1  1  0  0  1  3  1  0  0  0  1  0<L.30.1>
+13 Alex Rodriguez ss<T> 4  1  1  1  0  0  0  0  0  0  1  0  0<T>29 Nick Maton dh<T> 4  1  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+15 Edgar Guillen 2b<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+ 1 Danny Davis lf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>33  2  7  3  0  0  2  4  0  0  4  0  0<T>Totals<T>37 10 13  0  0  3 10  3  0  1  3  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Mets Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+77 Adonis Medina (w)<T> 6        6  2  2  0  3  4  4B    0<T>10 Orlando Cordero (l)<T> 3 2/3    6  4  4  0  2  2  1H    2<L.30.1>
+11 Alex Crespo (s)<T> 3        1  0  0  0  1  0  1     0<T>31 Andy Lewis<T> 4        7  6  6  3  1  1  3B    1<L.30.1>
+<T><T>30 Tony Sanchez<T>   1/3    0  0  0  0  0  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 2: New York Mets (7-12) at Philadelphia Phillies (15-4)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NM  1st  <C><U>Crespo<UC> on mound. Jackson struck out. Castillo struck out. Brooks singled to RF. Cordero struck out.<L.33.1>
+<Z>PH  1st  <C><U>Sanchez<UC> on mound. Collier doubled to LF. Bohm sacrificed to RF, Collier to 3rd. Milnes walked. Moniak sacrificed to LF, <L.30.1>
+         Collier scored, Milnes to 2nd, <Z>PH 1-0<C>. Guerrero ground out to 1B (3B).<L.33.1>
+<Z>NM  2nd  <C>Thomas struck out. Ryal ground out to 1B (C). Lee singled to RF. Jolly ground out to 1B (2B).<L.33.1>
+<Z>PH  2nd  <C>Dick ground out to 1B (CF, field save). Wilson struck out. Kingery struck out.<L.33.1>
+<Z>NM  3rd  <C>Rodriguez flied out to SS. Jackson struck out. Castillo ground out to 1B (2B).<L.33.1>
+<Z>PH  3rd  <C>Maton singled to LF. Maton forced out at 2B (SS), Collier ground into double play at 1B (2B). Bohm walked. Milnes struck <L.30.1>
+         out.<L.33.1>
+<Z>NM  4th  <C>Brooks struck out. Cordero ground out to 1B (C). Thomas flied out to RF.<L.33.1>
+<Z>PH  4th  <C>Moniak ground out to 1B (SS). Guerrero ground out to 1B (SS). Dick struck out.<L.33.1>
+<Z>NM  5th  <C>Ryal ground out to 1B (3B). Lee flied out to CF. Jolly flied out to LF.<L.33.1>
+<Z>PH  5th  <C>Wilson walked. Kingery flied out to RF. Maton flied out to SS. Collier ground out to 1B (SS).<L.33.1>
+<Z>NM  6th  <C>Rodriguez flied out to RF. Jackson flied out to CF. Castillo flied out to SS, field save.<L.33.1>
+<Z>PH  6th  <C>Bohm flied out to RF, field save. Milnes walked. <U>Pena<UC> took over on mound. Moniak walked, Milnes to 2nd. Guerrero flied <L.30.1>
+         out to RF, Milnes to 3rd, Moniak to 2nd. Dick ground out to 1B (2B).<L.33.1>
+<Z>NM  7th  <C>Brooks struck out. <U>Wells<UC> took over on mound. <U>Guillen<UC> pinch hitting at 2B. Guillen flied out to CF, field save. <U>Davis<UC> <L.30.1>
+         pinch hitting at LF. Davis struck out.<L.33.1>
+<Z>PH  7th  <C>Wilson singled to LF. Wilson stole 2nd. Kingery singled to CF, Wilson to 3rd. Kingery forced out at 2B (SS), Maton <L.30.1>
+         ground into double play at 1B (2B). Collier ground out to 1B (SS).<L.33.1>
+<Z>NM  8th  <C>Ryal doubled to LF. Lee ground out to 1B (3B). Jolly doubled to CF, Ryal scored, <Z>1-1<C>. <U>Medina<UC> took over on mound. <L.30.1>
+         Rodriguez ground out to 1B (SS). Jackson singled to RF, Jolly to 3rd. Castillo singled to RF, Jolly scored, Jackson to <L.30.1>
+         2nd, <Z>NM 2-1<C>. Brooks singled to CF, Jackson scored, Castillo to 2nd, <Z>NM 3-1<C>. Guillen ground out to 1B (2B).<L.33.1>
+<Z>PH  8th  <C><U>Mendoza<UC> took over on mound. Bohm singled to CF. Milnes walked, Bohm to 2nd. Moniak struck out. Guerrero homered to CF, <L.30.1>
+         Bohm scored, Milnes scored, <Z>PH 4-3<C>. Dick flied out to LF. Wilson flied out to SS.<L.33.1>
+<Z>NM  9th  <C>Davis flied out to 1B. Ryal ground out to 1B (3B). Lee singled, error by 3B. Jolly walked, Lee to 2nd. Rodriguez flied <L.30.1>
+         out to RF.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Mets<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 3 <C>(5,0) <Z> 0 <C>(0,1) <T><Z>  3<C><L.33.1>
+<Z>Phillies<C><T><Z> 1 <C>(1,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,2) <Z> 0 <C>(2,0d)<Z> 3 <C>(2,1) <Z> x       <T>  4<C><ST.24.66.90><L.42.1>
+<Z>Mets Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 4 Carl Jackson rf<T> 4  1  1  0  0  0  0  0  0  0  2  0  0<T>80 Zach Collier cf<T> 4  1  1  1  0  0  0  0  0  0  0  0  0<L.30.1>
+26 Ricardo Castillo cf<T> 4  0  1  0  0  0  1  0  0  0  1  0  0<T>81 Alec Bohm 3b<T> 2  1  1  0  0  0  0  1  1  0  0  0  1<L.30.1>
+ 9 Scott Brooks 3b<T> 4  0  2  0  0  0  1  0  0  0  2  0  0<T>22 Gordon Milnes c <T> 1  1  0  0  0  0  0  3  0  0  1  0  0<L.30.1>
+22 Fernando Cordero 2b<T> 2  0  0  0  0  0  0  0  0  0  1  1  0<T>20 Mickey Moniak lf<T> 2  0  0  0  0  0  1  1  1  0  1  0  0<L.30.1>
+14 Pete Thomas lf<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<T> 5 Alex Guerrero ss<T> 4  1  1  0  0  1  3  0  0  0  0  0  0<L.30.1>
+ 6 Rusty Ryal 1b<T> 4  1  1  1  0  0  0  0  0  0  0  2  0<T>28 Jamie Dick 1b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 5 Paul Lee dh<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 6 Jason Wilson rf<T> 3  0  1  0  0  0  0  1  0  1  1  0  0<L.30.1>
+ 2 Luis Jolly c <T> 3  1  1  1  0  0  1  1  0  0  0  0  0<T>25 Scott Kingery 2b<T> 3  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+13 Alex Rodriguez ss<T> 4  0  0  0  0  0  0  0  0  0  0  2  0<T>29 Nick Maton dh<T> 3  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+15 Edgar Guillen 2b<T> 2  0  0  0  0  0  0  0  0  0  0  1  0<T><L.30.1>
+ 1 Danny Davis lf<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>35  3  7  2  0  0  3  1  0  0  8  6  0<T>Totals<T>26  4  6  1  0  1  4  6  2  1  5  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Mets Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 3 Juan Crespo<T> 6 1/3    2  0  0  0  0  7  2B    0<T>18 Luis Sanchez<T> 5 1/3    2  1  1  0  4  4  1B    1<L.30.1>
+15 Carl Wells<T> 1        2  2  2  0  0  1  0B    1<T> 8 Eddie Pena<T> 1 2/3    2  0  0  0  1  0  1S    0<L.30.1>
+41 Adonis Medina (w)<T> 1 2/3    3  1  1  0  1  0  0     0<T>28 Oscar Mendoza (l)<T> 1        2  3  3  1  1  1  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 3: New York Mets (7-13) at Philadelphia Phillies (16-4)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NM  1st  <C><U>Ordonez<UC> on mound. Jackson flied out to C. Castillo flied out to C. Brooks singled to CF. Cordero struck out.<L.33.1>
+<Z>PH  1st  <C><U>Robinson<UC> on mound. Collier flied out to CF. Bohm struck out. Milnes flied out to RF.<L.33.1>
+<Z>NM  2nd  <C>Thomas flied out to LF. Ryal struck out. Lee struck out.<L.33.1>
+<Z>PH  2nd  <C>Moniak walked. Guerrero struck out. Dick flied out to CF, field save. Wilson flied out to LF.<L.33.1>
+<Z>NM  3rd  <C>Jolly doubled to RF. Rodriguez flied out to CF, Jolly to 3rd. Jackson walked. Jackson forced out at 2B (SS), Castillo <L.30.1>
+         ground into double play at 1B (2B).<L.33.1>
+<Z>PH  3rd  <C>Kingery doubled to LF. Maton homered to RF, Kingery scored, <Z>PH 2-0<C>. Collier flied out to C. Bohm walked. Milnes <L.30.1>
+         homered to CF, Bohm scored, <Z>PH 4-0<C>. Moniak flied out to CF. Guerrero flied out to C.<L.33.1>
+<Z>NM  4th  <C>Brooks struck out. Cordero struck out. Thomas singled to CF. Ryal walked, Thomas to 2nd. Lee walked, Thomas to 3rd, Ryal <L.30.1>
+         to 2nd. Jolly ground out to 1B (2B).<L.33.1>
+<Z>PH  4th  <C>Dick homered to RF, <Z>PH 5-0<C>. Wilson singled to CF. Kingery flied out to LF. Maton flied out to CF, Wilson to 2nd. <L.30.1>
+         Collier flied out to C.<L.33.1>
+<Z>NM  5th  <C>Rodriguez ground out to 1B (2B). Jackson singled, error by 2B. Castillo struck out. Brooks ground out to 1B (3B).<L.33.1>
+<Z>PH  5th  <C>Bohm flied out to C. Milnes homered to RF, <Z>PH 6-0<C>. Moniak doubled to RF. Moniak stole 3rd. Guerrero sacrificed to RF, <L.30.1>
+         Moniak scored, <Z>PH 7-0<C>. Dick homered to LF, <Z>PH 8-0<C>. <U>Garcia<UC> took over on mound. Wilson singled to RF. Kingery flied <L.30.1>
+         out to 2B.<L.33.1>
+<Z>NM  6th  <C>Cordero flied out to 2B. Thomas struck out. Ryal walked. Lee singled to CF, Ryal to 2nd. Jolly ground out to 1B (3B).<L.33.1>
+<Z>PH  6th  <C>Maton singled to CF. Collier doubled to RF, Maton scored, <Z>PH 9-0<C>. Bohm flied out to LF. Milnes struck out. Moniak <L.30.1>
+         singled, error by 3B, Collier scored, <Z>PH 10-0<C>. Guerrero ground out to 1B (2B).<L.33.1>
+<Z>NM  7th  <C><U>Wells<UC> took over on mound. <U>Guillen<UC> pinch hitting at SS. Guillen struck out. <U>Davis<UC> pinch hitting at RF. Davis struck out. <L.30.1>
+         Castillo walked. Brooks flied out to LF, field save.<L.33.1>
+<Z>PH  7th  <C>Dick singled to RF. Wilson flied out to RF. Kingery struck out. Maton flied out to C.<L.33.1>
+<Z>NM  8th  <C>Cordero flied out to SS. <U>Crespo<UC> took over on mound. Thomas flied out to C. Ryal singled to LF. Lee singled to CF, Ryal <L.30.1>
+         to 3rd. Jolly singled to SS, Ryal scored, Lee to 2nd, <Z>PH 10-1<C>. Guillen flied out to SS.<L.33.1>
+<Z>PH  8th  <C>Collier doubled to RF. Bohm walked. Collier to 3rd, Bohm forced out at 2B (3B), Milnes ground into double play at 1B <L.30.1>
+         (2B). Moniak doubled to RF, Collier scored, <Z>PH 11-1<C>. Guerrero flied out to SS.<L.33.1>
+<Z>NM  9th  <C>Davis singled to LF. Castillo flied out to CF. Brooks walked, Davis to 2nd. Cordero flied out to 3B. Thomas flied out to <L.30.1>
+         C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Mets<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1d)<Z> 0 <C>(1,2) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,1) <Z> 1 <C>(3,0) <Z> 0 <C>(1,1) <T><Z>  1<C><L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 4 <C>(3,1) <Z> 1 <C>(2,0) <Z> 3 <C>(4,0) <Z> 2 <C>(2,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,1d)<Z> x       <T> 11<C><ST.24.66.90><L.42.1>
+<Z>Mets Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 4 Carl Jackson rf<T> 2  0  0  0  0  0  0  1  0  0  0  0  0<T>80 Zach Collier cf<T> 5  2  2  2  0  0  1  0  0  0  0  0  0<L.30.1>
+26 Ricardo Castillo cf<T> 4  0  0  0  0  0  0  1  0  0  1  0  0<T>81 Alec Bohm 3b<T> 3  1  0  0  0  0  0  2  0  0  1  0  0<L.30.1>
+ 9 Scott Brooks 3b<T> 4  0  1  0  0  0  0  1  0  0  1  1  1<T>22 Gordon Milnes c <T> 5  2  2  0  0  2  3  0  0  0  1  0  0<L.30.1>
+22 Fernando Cordero 2b<T> 5  0  0  0  0  0  0  0  0  0  2  1  0<T>20 Mickey Moniak lf<T> 4  1  2  2  0  0  1  1  0  1  0  0  0<L.30.1>
+14 Pete Thomas lf<T> 5  0  1  0  0  0  0  0  0  0  1  0  0<T> 5 Alex Guerrero ss<T> 4  0  0  0  0  0  1  0  1  0  1  1  0<L.30.1>
+ 6 Rusty Ryal 1b<T> 2  1  1  0  0  0  0  2  0  0  1  1  0<T>28 Jamie Dick 1b<T> 4  2  3  0  0  2  2  0  0  0  0  1  0<L.30.1>
+ 5 Paul Lee dh<T> 3  0  2  0  0  0  0  1  0  0  1  0  0<T> 6 Jason Wilson rf<T> 4  0  2  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 2 Luis Jolly c <T> 4  0  2  1  0  0  1  0  0  0  0  0  0<T>25 Scott Kingery 2b<T> 4  1  1  1  0  0  0  0  0  0  1  1  1<L.30.1>
+13 Alex Rodriguez ss<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T>29 Nick Maton dh<T> 4  2  2  0  0  1  2  0  0  0  0  0  0<L.30.1>
+15 Edgar Guillen ss<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<T><L.30.1>
+ 1 Danny Davis rf<T> 2  0  1  0  0  0  0  0  0  0  1  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>35  1  8  1  0  0  1  6  0  0  9  3  1<T>Totals<T>37 11 14  5  0  5 10  3  1  1  4  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Mets Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 8 Eddie Ordonez (w)<T> 6        4  0  0  0  4  7  4B*   0<T>23 Jack Robinson (l)<T> 4 2/3    8  8  8  5  2  2  3B    0<L.30.1>
+15 Carl Wells<T> 1 1/3    0  0  0  0  1  2  1B    0<T>16 Angel Garcia<T> 3 1/3    6  3  2  0  1  2  1     0<L.30.1>
+11 Alex Crespo<T> 1 2/3    4  1  1  0  1  0  2     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<BK.Series 2><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 1: Cincinnati Reds (11-10) at Philadelphia Phillies (17-4)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+CI  1st  <C><U>Castillo<UC> on mound. Alcantara struck out. Winker flied out to LF. Hart ground out to 1B (SS).<L.33.1>
+<Z>PH  1st  <C><U>Greene<UC> on mound. Collier walked. Collier stole 2nd. Bohm singled to RF, Collier scored, <Z>PH 1-0<C>. Milnes singled, error <L.30.1>
+         by 2B, Bohm to 3rd. Moniak reached 1st, Milnes forced out at 2B (1B, field save). Guerrero struck out. Dick ground out <L.30.1>
+         to 1B (2B).<L.33.1>
+<Z>CI  2nd  <C>Wells struck out. Napoli singled to LF. Stobbe flied out to 1B. Napoli stole 2nd. Senzel flied out to LF.<L.33.1>
+<Z>PH  2nd  <C>Wilson ground out to 1B (2B). Kingery walked. Maton struck out. Collier ground out to 1B (2B).<L.33.1>
+<Z>CI  3rd  <C>Trahan walked. Aquino struck out. Alcantara flied out to C. Winker flied out to CF.<L.33.1>
+<Z>PH  3rd  <C>Bohm singled to CF. Milnes struck out. Moniak flied out to CF, field save. Guerrero flied out to CF.<L.33.1>
+<Z>CI  4th  <C>Hart ground out to 1B (3B). Wells doubled to LF. Napoli singled to LF, Wells scored, <Z>1-1<C>. Stobbe doubled to RF, Napoli <L.30.1>
+         to 3rd. Senzel struck out. Trahan homered to CF, Napoli scored, Stobbe scored, <Z>CI 4-1<C>. Aquino singled to RF. Aquino <L.30.1>
+         stole 2nd. Alcantara flied out to 1B, field save.<L.33.1>
+<Z>PH  4th  <C>Dick flied out to RF. Wilson flied out to RF. Kingery singled to CF. Kingery stole 2nd. Maton singled to CF, Kingery to <L.30.1>
+         3rd. Collier singled to CF, Kingery scored, Maton to 2nd, <Z>CI 4-2<C>. Bohm flied out to CF.<L.33.1>
+<Z>CI  5th  <C>Winker walked. Hart singled to 3B, Winker to 2nd. Winker stole 3rd. Wells walked, Hart to 2nd. Napoli struck out. Stobbe <L.30.1>
+         singled to RF, Winker scored, Hart to 3rd, Wells to 2nd, <Z>CI 5-2<C>. Senzel singled to LF, Hart scored, Wells scored, <L.30.1>
+         Stobbe to 3rd, <Z>CI 7-2<C>. Trahan singled to CF, Stobbe scored, Senzel to 2nd, <Z>CI 8-2<C>. Aquino reached 1st, Senzel forced <L.30.1>
+         out at 3B (1B), Trahan to 2nd. Alcantara ground out to 1B (3B).<L.33.1>
+<Z>PH  5th  <C>Milnes ground out to 1B (2B). Moniak flied out to C. Guerrero ground out to 1B (2B).<L.33.1>
+<Z>CI  6th  <C>Winker homered to CF, <Z>CI 9-2<C>. Hart flied out to CF. Wells flied out to SS, field save. Napoli ground out to 1B (2B).<L.33.1>
+<Z>PH  6th  <C>Dick struck out. Wilson walked. Kingery struck out. <U>Santillan<UC> took over on mound. Maton ground out to 1B (SS).<L.33.1>
+<Z>CI  7th  <C><U>Roberts<UC> took over on mound. Stobbe flied out to C. Senzel struck out. Trahan ground out to 1B (SS, field save).<L.33.1>
+<Z>PH  7th  <C>Collier homered to CF, <Z>CI 9-3<C>. Bohm flied out to C. Milnes flied out to CF. Moniak ground out to 1B (C).<L.33.1>
+<Z>CI  8th  <C>Aquino flied out to SS, field save. Alcantara ground out to 1B (2B). Winker doubled to CF. Hart singled to CF, Winker to <L.30.1>
+         3rd. Hart stole 2nd. Wells ground out to 1B (SS).<L.33.1>
+<Z>PH  8th  <C>Guerrero singled to RF. Dick flied out to RF. Wilson tripled to CF, Guerrero scored, <Z>CI 9-4<C>. Kingery ground out to 1B <L.30.1>
+         (2B). Maton ground out to 1B (3B).<L.33.1>
+<Z>CI  9th  <C>Napoli flied out to CF, field save. <U>Medina<UC> took over on mound. Stobbe flied out to C. Senzel struck out.<L.33.1>
+<Z>PH  9th  <C>Collier flied out to SS. Bohm walked. Milnes flied out to SS. Moniak singled to RF, Bohm to 3rd. Guerrero ground out to <L.30.1>
+         1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Reds<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 4 <C>(5,0) <Z> 4 <C>(4,2) <Z> 1 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <T><Z>  9<C><L.33.1>
+<Z>Phillies<C><T><Z> 1 <C>(1,1) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 1 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 1 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,1) <T><Z>  4<C><ST.24.66.90><L.42.1>
+<Z>Reds Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+30 A.Alcantara lf<T> 5  0  0  0  0  0  0  0  0  0  1  0  0<T>80 Zach Collier cf<T> 4  2  2  0  0  1  2  1  0  1  0  0  0<L.30.1>
+99 Jesse Winker rf<T> 4  2  2  1  0  1  1  1  0  1  0  0  0<T>81 Alec Bohm 3b<T> 4  0  2  0  0  0  1  1  0  0  0  0  0<L.30.1>
+ 7 Corey Hart cf<T> 5  1  2  0  0  0  0  0  0  1  0  0  0<T>22 Gordon Milnes c <T> 5  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+19 John Wells 1b<T> 4  2  1  1  0  0  0  1  0  0  1  0  0<T>20 Mickey Moniak lf<T> 5  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 5 Mike Napoli c <T> 5  1  2  0  0  0  1  0  0  1  1  0  0<T> 5 Alex Guerrero ss<T> 5  1  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+26 Cole Stobbe 3b<T> 5  2  2  1  0  0  1  0  0  0  0  0  0<T>28 Jamie Dick 1b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+12 Nick Senzel 2b<T> 5  0  1  0  0  0  2  0  0  0  3  0  1<T> 6 Jason Wilson rf<T> 3  0  1  0  1  0  1  1  0  0  0  0  0<L.30.1>
+ 4 Blake Trahan ss<T> 3  1  2  0  0  1  4  1  0  0  0  0  0<T>25 Scott Kingery 2b<T> 3  1  1  0  0  0  0  1  0  1  1  0  0<L.30.1>
+ 6 Aristides Aquino dh<T> 4  0  1  0  0  0  0  0  0  1  1  0  0<T>29 Nick Maton dh<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>40  9 13  3  0  2  9  3  0  4  7  0  1<T>Totals<T>37  4  9  0  1  1  4  4  0  2  5  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Reds Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+13 Javier Castillo (l)<T> 6       11  9  9  2  3  5  4B    0<T>49 Hunter Greene (w)<T> 5 2/3    5  2  2  0  3  5  3B    1<L.30.1>
+19 Dave Roberts<T> 2 1/3    2  0  0  0  0  1  1B    0<T>56 Tony Santillan (s)<T> 3 1/3    4  2  2  1  1  0  3     0<L.30.1>
+41 Adonis Medina<T>   2/3    0  0  0  0  0  1  0     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 2: Cincinnati Reds (12-10) at Philadelphia Phillies (17-5)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+CI  1st  <C><U>Rincon<UC> on mound. Alcantara singled to RF. Winker flied out to LF. Hart doubled to LF, Alcantara scored, <Z>CI 1-0<C>. Wells <L.30.1>
+         struck out. Napoli singled to CF, Hart scored, <Z>CI 2-0<C>. Stobbe flied out to C.<L.33.1>
+<Z>PH  1st  <C><U>Romano<UC> on mound. Collier flied out to C. Bohm struck out. Milnes struck out.<L.33.1>
+<Z>CI  2nd  <C>Senzel ground out to 1B (SS, field save). Trahan ground out to 1B (SS). Aquino singled to CF. Alcantara flied out to 1B, <L.30.1>
+         field save.<L.33.1>
+<Z>PH  2nd  <C>Moniak struck out. Guerrero homered to CF, <Z>CI 2-1<C>. Dick flied out to RF. Wilson flied out to RF.<L.33.1>
+<Z>CI  3rd  <C>Winker flied out to CF. Hart homered to RF, <Z>CI 3-1<C>. Wells flied out to C. Napoli flied out to C.<L.33.1>
+<Z>PH  3rd  <C>Kingery singled to LF. Maton flied out to LF. Collier flied out to C. Bohm struck out.<L.33.1>
+<Z>CI  4th  <C>Stobbe ground out to 1B (3B). Senzel walked. Senzel forced out at 2B (SS, field save), Trahan ground into double play at <L.30.1>
+         1B (2B, field save).<L.33.1>
+<Z>PH  4th  <C>Milnes ground out to 1B (2B, field save). Moniak struck out. Guerrero ground out to 1B (2B).<L.33.1>
+<Z>CI  5th  <C>Aquino doubled to RF. Alcantara flied out to RF. Winker singled to CF, Aquino scored, <Z>CI 4-1<C>. Hart walked, Winker to <L.30.1>
+         2nd. Wells flied out to 3B. Napoli flied out to RF.<L.33.1>
+<Z>PH  5th  <C>Dick flied out to 2B. Wilson ground out to 1B (2B). Kingery struck out.<L.33.1>
+<Z>CI  6th  <C>Stobbe flied out to SS. Senzel struck out. Trahan homered to RF, <Z>CI 5-1<C>. Aquino ground out to 1B (SS).<L.33.1>
+<Z>PH  6th  <C>Maton singled to CF. Collier flied out to CF. Bohm struck out. Milnes ground out to 1B (3B).<L.33.1>
+<Z>CI  7th  <C><U>Wells<UC> took over on mound. Alcantara struck out. Winker flied out to 2B. Hart ground out to 1B (2B).<L.33.1>
+<Z>PH  7th  <C>Moniak doubled to CF. Guerrero sacrificed to RF, Moniak to 3rd. Dick ground out to 1B (2B, field save). Wilson homered <L.30.1>
+         to LF, Moniak scored, <Z>CI 5-3<C>. Kingery flied out to 3B.<L.33.1>
+<Z>CI  8th  <C>Wells struck out. Napoli ground out to 1B (SS). <U>Medina<UC> took over on mound. Stobbe homered to RF, <Z>CI 6-3<C>. Senzel flied <L.30.1>
+         out to C.<L.33.1>
+<Z>PH  8th  <C>Maton singled, error by 1B. Collier flied out to CF. Bohm struck out. Milnes doubled to LF, Maton to 3rd. <U>Ramirez<UC> took <L.30.1>
+         over on mound. Moniak homered to LF, Maton scored, Milnes scored, <Z>6-6<C>. Guerrero flied out to C.<L.33.1>
+<Z>CI  9th  <C>Trahan singled to RF. Aquino flied out to LF. Alcantara struck out. Winker walked, Trahan to 2nd. Hart walked, Trahan to <L.30.1>
+         3rd, Winker to 2nd. Wells ground out to 1B (2B).<L.33.1>
+<Z>PH  9th  <C>Dick flied out to RF. Wilson homered to CF, <Z>PH 7-6<C>.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Reds<C><T><Z> 2 <C>(3,0) <Z> 0 <C>(1,0) <Z> 1 <C>(1,0) <Z> 0 <C>(0,1d)<Z> 1 <C>(2,1) <Z> 1 <C>(1,0) <Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <Z> 0 <C>(1,2) <T><Z>  6<C><L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 2 <C>(2,0) <Z> 3 <C>(2,0) <Z> 1 <C>(1,0) <T><Z>  7<C><ST.24.66.90><L.42.1>
+<Z>Reds Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+30 A.Alcantara lf<T> 5  1  1  0  0  0  0  0  0  0  2  0  0<T>80 Zach Collier cf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+99 Jesse Winker rf<T> 4  0  1  0  0  0  1  1  0  0  0  0  0<T>81 Alec Bohm 3b<T> 4  0  0  0  0  0  0  0  0  0  4  0  0<L.30.1>
+ 7 Corey Hart cf<T> 3  2  2  1  0  1  2  2  0  0  0  0  0<T>22 Gordon Milnes c <T> 4  1  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+19 John Wells 1b<T> 5  0  0  0  0  0  0  0  0  0  2  0  1<T>20 Mickey Moniak lf<T> 4  2  2  1  0  1  3  0  0  0  2  0  0<L.30.1>
+ 5 Mike Napoli c <T> 4  0  1  0  0  0  1  0  0  0  0  0  0<T> 5 Alex Guerrero ss<T> 3  1  1  0  0  1  1  0  1  0  0  1  0<L.30.1>
+26 Cole Stobbe 3b<T> 4  1  1  0  0  1  1  0  0  0  0  0  0<T>28 Jamie Dick 1b<T> 4  0  0  0  0  0  0  0  0  0  0  1  0<L.30.1>
+12 Nick Senzel 2b<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<T> 6 Jason Wilson rf<T> 4  2  2  0  0  2  3  0  0  0  0  0  0<L.30.1>
+ 4 Blake Trahan ss<T> 4  1  2  0  0  1  1  0  0  0  0  0  0<T>25 Scott Kingery 2b<T> 3  0  1  0  0  0  0  0  0  0  1  1  0<L.30.1>
+ 6 Aristides Aquino dh<T> 4  1  2  1  0  0  0  0  0  0  0  0  0<T>29 Nick Maton dh<T> 3  1  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>36  6 10  2  0  3  6  4  0  0  5  0  1<T>Totals<T>33  7  8  2  0  4  7  0  1  0  8  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Reds Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 7 Oscar Rincon<T> 6        8  5  5  2  2  2  4B    0<T>10 Sal Romano<T> 7 2/3    6  5  3  2  0  8  4B    2<L.30.1>
+15 Carl Wells<T> 1 2/3    0  0  0  0  0  2  1B    0<T>13 Roberto Ramirez (l)<T>   2/3    2  2  1  2  0  0  1     0<L.30.1>
+41 Adonis Medina (w)<T> 1 1/3    2  1  1  1  2  1  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 3: Cincinnati Reds (12-11) at Philadelphia Phillies (18-5)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+CI  1st  <C><U>Medina<UC> on mound. Alcantara doubled to RF. Winker singled to CF, Alcantara scored, <Z>CI 1-0<C>. Hart flied out to C. Wells <L.30.1>
+         singled to RF, Winker to 2nd. Napoli flied out to LF, field save. Stobbe ground out to 1B (3B).<L.33.1>
+<Z>PH  1st  <C><U>Hanson<UC> on mound. Collier ground out to 1B (SS). Bohm struck out. Milnes homered to LF, <Z>1-1<C>. Moniak ground out to 1B <L.30.1>
+         (SS, field save).<L.33.1>
+<Z>CI  2nd  <C>Senzel flied out to RF. Trahan flied out to CF. Aquino struck out.<L.33.1>
+<Z>PH  2nd  <C>Guerrero struck out. Dick flied out to LF. Wilson tripled to CF. Kingery singled to RF, Wilson scored, <Z>PH 2-1<C>. Maton <L.30.1>
+         singled to LF, Kingery to 2nd. Collier ground out to 1B (SS).<L.33.1>
+<Z>CI  3rd  <C>Alcantara ground out to 1B (3B). Winker ground out to 1B (C, field save). Hart doubled to CF. Wells flied out to CF.<L.33.1>
+<Z>PH  3rd  <C>Bohm flied out to SS. Milnes flied out to CF. Moniak walked. Guerrero singled to 2B, Moniak to 2nd. Dick struck out.<L.33.1>
+<Z>CI  4th  <C>Napoli singled to CF. Stobbe reached 1st, Napoli forced out at 2B (3B). Senzel flied out to 1B. Trahan tripled to RF, <L.30.1>
+         Stobbe scored, <Z>2-2<C>. Aquino ground out to 1B (3B).<L.33.1>
+<Z>PH  4th  <C>Wilson flied out to LF. Kingery ground out to 1B (2B). Maton struck out.<L.33.1>
+<Z>CI  5th  <C>Alcantara flied out to CF. Winker struck out. Hart struck out.<L.33.1>
+<Z>PH  5th  <C>Collier homered to LF, <Z>PH 3-2<C>. Bohm ground out to 1B (SS). Milnes struck out. Moniak homered to LF, <Z>PH 4-2<C>. Guerrero <L.30.1>
+         ground out to 1B (2B).<L.33.1>
+<Z>CI  6th  <C>Wells tripled to RF. Napoli doubled to LF, Wells scored, <Z>PH 4-3<C>. Stobbe doubled to RF, Napoli scored, <Z>4-4<C>. Senzel <L.30.1>
+         ground out to 1B (SS, field save). Trahan doubled to CF, Stobbe scored, <Z>CI 5-4<C>. Aquino flied out to 3B. Alcantara <L.30.1>
+         doubled to RF, Trahan scored, <Z>CI 6-4<C>. Winker ground out to 1B (2B).<L.33.1>
+<Z>PH  6th  <C>Dick doubled to LF. Wilson flied out to C. Kingery doubled to RF, Dick scored, <Z>CI 6-5<C>. Maton ground out to 1B (C). <L>
+         <U>Williams<UC> took over on mound. Kingery stole 3rd. Collier tripled to LF, Kingery scored, <Z>6-6<C>. Bohm ground out to 1B (3B, <L.30.1>
+         field save).<L.33.1>
+<Z>CI  7th  <C><U>Crespo<UC> took over on mound. Hart homered to RF, <Z>CI 7-6<C>. Wells walked. Napoli flied out to LF. Stobbe flied out to LF, <L.30.1>
+         field save. Senzel walked, Wells to 2nd. Wells stole 3rd. Trahan ground out to 1B (2B).<L.33.1>
+<Z>PH  7th  <C>Milnes struck out. Moniak struck out. Guerrero ground out to 1B (3B).<L.33.1>
+<Z>CI  8th  <C>Aquino flied out to SS, field save. Alcantara singled to SS. Winker flied out to LF, field save. Hart walked, Alcantara <L.30.1>
+         to 2nd. Wells ground out to 1B (2B).<L.33.1>
+<Z>PH  8th  <C>Dick ground out to 1B (SS). Wilson flied out to CF. Kingery ground out to 1B (2B).<L.33.1>
+<Z>CI  9th  <C>Napoli walked. Stobbe sacrificed to CF, Napoli to 2nd. Senzel singled to CF, Napoli scored, <Z>CI 8-6<C>. Trahan singled to <L.30.1>
+         LF, Senzel to 2nd. Aquino reached 1st, Senzel to 3rd, Trahan forced out at 2B (3B). Alcantara ground out to 1B (2B).<L.33.1>
+<Z>PH  9th  <C><U>Kuhnel<UC> took over on mound. Maton doubled to CF. Collier walked. Bohm struck out. Milnes singled to RF, Maton scored, <L.30.1>
+         Collier to 2nd, <Z>CI 8-7<C>. Moniak singled to CF, Collier scored, Milnes to 3rd, <Z>8-8<C>. <U>Quackenbush<UC> took over on mound. <L.30.1>
+         Guerrero walked, Moniak to 2nd. Milnes forced out at home (2B), Dick ground into double play at 1B (C).<L.33.1>
+<Z>CI 10th  <C>Winker flied out to CF. Hart singled to CF. Wells walked, Hart to 2nd. Napoli doubled to RF, Hart scored, Wells scored, <L.30.1>
+         <Z>CI 10-8<C>. <U>Roberts<UC> took over on mound. Stobbe singled to LF, Napoli scored, <Z>CI 11-8<C>. Senzel sacrificed to CF, Stobbe <L.30.1>
+         to 2nd. Trahan homered to LF, Stobbe scored, <Z>CI 13-8<C>. Aquino flied out to C.<L.33.1>
+<Z>PH 10th  <C>Wilson flied out to 1B. Kingery walked. Kingery forced out at 2B (1B), Maton ground into double play at 1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Reds<C><T><Z> 1 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 4 <C>(5,0) <Z> 1 <C>(1,2) <Z> 0 <C>(1,1) <Z> 1 <C>(2,1) <Z> 5 <C>(4,1) <T><Z> 13<C><L.33.1>
+<Z>Phillies<C><T><Z> 1 <C>(1,0) <Z> 1 <C>(3,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 2 <C>(2,0) <Z> 2 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 2 <C>(3,2d)<Z> 0 <C>(0,1d)<T><Z>  8<C><ST.24.66.90><L.42.1>
+<Z>Reds Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+30 A.Alcantara lf<T> 6  1  3  2  0  0  1  0  0  0  0  0  0<T>80 Zach Collier cf<T> 4  2  2  0  1  1  2  1  0  0  0  0  0<L.30.1>
+99 Jesse Winker rf<T> 6  0  1  0  0  0  1  0  0  0  1  0  0<T>81 Alec Bohm 3b<T> 5  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+ 7 Corey Hart cf<T> 5  2  3  1  0  1  1  1  0  0  1  0  0<T>22 Gordon Milnes c <T> 5  1  2  0  0  1  2  0  0  0  2  0  0<L.30.1>
+19 John Wells 1b<T> 4  2  2  0  1  0  0  2  0  1  0  2  0<T>20 Mickey Moniak lf<T> 4  1  2  0  0  1  2  1  0  0  1  0  0<L.30.1>
+ 5 Mike Napoli c <T> 5  3  3  2  0  0  3  1  0  0  0  1  0<T> 5 Alex Guerrero ss<T> 4  0  1  0  0  0  0  1  0  0  1  0  0<L.30.1>
+26 Cole Stobbe 3b<T> 5  3  2  1  0  0  2  0  1  0  0  0  0<T>28 Jamie Dick 1b<T> 5  1  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+12 Nick Senzel 2b<T> 4  0  1  0  0  0  1  1  1  0  0  2  0<T> 6 Jason Wilson rf<T> 5  1  1  0  1  0  0  0  0  0  0  0  0<L.30.1>
+ 4 Blake Trahan ss<T> 6  2  4  1  1  1  4  0  0  0  0  0  0<T>25 Scott Kingery 2b<T> 4  1  2  1  0  0  2  1  0  1  0  0  0<L.30.1>
+ 6 Aristides Aquino dh<T> 6  0  0  0  0  0  0  0  0  0  1  0  0<T>29 Nick Maton dh<T> 5  1  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>47 13 19  7  2  2 13  5  2  1  3  5  0<T>Totals<T>41  8 13  3  2  3  8  4  0  1  8  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Reds Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+77 Adonis Medina<T> 6       11  6  6  0  0  3  4H    0<T>15 Nick Hanson<T> 5 2/3    9  6  6  3  1  5  4B    1<L.30.1>
+11 Alex Crespo (l)<T> 3 1/3    6  5  5  1  5  0  3B    1<T>14 Alan Williams<T> 2 1/3    1  0  0  0  0  2  0C    0<L.30.1>
+19 Dave Roberts<T>   2/3    2  2  2  1  0  0  0     0<T>66 Joel Kuhnel<T>   1/3    3  2  2  0  1  1  0H    2<L.30.1>
+<T><T> 1 K.Quackenbush (w)<T> 1 2/3    0  0  0  0  2  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Series 3><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 1: Philadelphia Phillies (18-6) at Colorado Rockies (14-10)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Belisle<UC> on mound. Collier flied out to C. Bohm flied out to 1B. Milnes struck out.<L.33.1>
+<Z>CO  1st  <C><U>Crespo<UC> on mound. Rivera walked. Rivera forced out at 2B (1B, field save), Barnes ground into double play at 1B (2B, <L.30.1>
+         field save). Guerrero flied out to C.<L.33.1>
+<Z>PH  2nd  <C>Moniak singled to RF. Guerrero singled to RF, Moniak to 3rd. Guerrero stole 2nd. Dick struck out. Wilson struck out. <L.30.1>
+         Kingery ground out to 1B (SS).<L.33.1>
+<Z>CO  2nd  <C>Rincon doubled to CF. Colvin flied out to C. Miller flied out to RF. Walker flied out to SS.<L.33.1>
+<Z>PH  3rd  <C>Maton singled to CF. Collier flied out to 1B, field save. Maton forced out at 2B (SS, field save), Bohm ground into <L.30.1>
+         double play at 1B (2B, field save).<L.33.1>
+<Z>CO  3rd  <C>Williams flied out to RF. Arrubarena struck out. Rivera flied out to CF.<L.33.1>
+<Z>PH  4th  <C>Milnes struck out. Moniak walked. Guerrero singled to RF, Moniak to 3rd. Guerrero stole 2nd. Dick ground out to 1B (3B). <L.30.1>
+         Wilson singled to CF, Moniak scored, Guerrero to 3rd, <Z>PH 1-0<C>. Kingery walked, Wilson to 2nd. Maton singled to CF, <L.30.1>
+         Guerrero scored, Wilson scored, Kingery to 3rd, <Z>PH 3-0<C>. <U>Gatto<UC> took over on mound. Collier singled to RF, Kingery <L.30.1>
+         scored, Maton to 3rd, <Z>PH 4-0<C>. Bohm struck out.<L.33.1>
+<Z>CO  4th  <C>Barnes ground out to 1B (2B). Guerrero struck out. Rincon flied out to SS.<L.33.1>
+<Z>PH  5th  <C>Milnes struck out. Moniak struck out. Guerrero doubled to RF. Dick walked. Wilson singled, error by 1B, Guerrero scored, <L.30.1>
+         Dick to 2nd, <Z>PH 5-0<C>. Kingery singled to P, Dick to 3rd, Wilson to 2nd. Maton homered to CF, Dick scored, Wilson scored, <L.30.1>
+         Kingery scored, <Z>PH 9-0<C>. Collier flied out to LF.<L.33.1>
+<Z>CO  5th  <C>Colvin struck out. Miller struck out. Walker singled to LF. Williams struck out.<L.33.1>
+<Z>PH  6th  <C><U>Gonzalez<UC> took over on mound. Bohm ground out to 1B (2B). Milnes walked. Moniak singled to RF, Milnes to 3rd. Moniak <L.30.1>
+         stole 2nd. Guerrero walked. Dick singled to 1B, Milnes scored, Moniak to 3rd, Guerrero to 2nd, <Z>PH 10-0<C>. Wilson <L.30.1>
+         sacrificed to RF, Moniak scored, Guerrero to 3rd, Dick to 2nd, <Z>PH 11-0<C>. Kingery ground out to 1B (SS).<L.33.1>
+<Z>CO  6th  <C>Arrubarena struck out. Rivera walked. Rivera stole 2nd. Barnes flied out to LF. Guerrero flied out to SS.<L.33.1>
+<Z>PH  7th  <C>Maton homered to CF, <Z>PH 12-0<C>. Collier homered to CF, <Z>PH 13-0<C>. Bohm flied out to C. Milnes homered to RF, <Z>PH 14-0<C>. <L.30.1>
+         Moniak walked. Guerrero homered to CF, Moniak scored, <Z>PH 16-0<C>. Dick struck out. Wilson ground out to 1B (2B, field <L.30.1>
+         save).<L.33.1>
+<Z>CO  7th  <C><U>Jordan<UC> took over on mound. Rincon flied out to C. Colvin flied out to 3B. Miller homered to CF, <Z>PH 16-1<C>. Walker flied <L.30.1>
+         out to CF.<L.33.1>
+<Z>PH  8th  <C><U>Alou<UC> took over on mound. Kingery flied out to C. Maton struck out. Collier ground out to 1B (3B, field save).<L.33.1>
+<Z>CO  8th  <C>Williams flied out to CF. Arrubarena ground out to 1B (2B). Rivera singled to RF. Barnes singled to 2B, Rivera to 2nd. <L.30.1>
+         Guerrero ground out to 1B (SS).<L.33.1>
+<Z>PH  9th  <C>Bohm flied out to C. Milnes flied out to SS. Moniak ground out to 1B (2B).<L.33.1>
+<Z>CO  9th  <C><U>Jordan<UC> took over on mound. Rincon walked. Colvin walked, Rincon to 2nd. Miller reached 1st, Rincon forced out at 3B (SS, <L.30.1>
+         field save), Colvin to 2nd. Walker doubled to LF, Colvin scored, Miller to 3rd, <Z>PH 16-2<C>. Williams ground out to 1B <L.30.1>
+         (3B). Arrubarena ground out to 1B (SS).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(1,0d)<Z> 4 <C>(4,2) <Z> 5 <C>(3,1) <Z> 2 <C>(2,2) <Z> 5 <C>(4,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z> 16<C><L.33.1>
+<Z>Rockies<C><T><Z> 0 <C>(0,1d)<Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 1 <C>(1,0) <Z> 0 <C>(2,0) <Z> 1 <C>(1,2) <T><Z>  2<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Rockies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+80 Zach Collier cf<T> 6  1  2  0  0  1  2  0  0  0  0  0  0<T>23 Alex Rivera rf<T> 2  0  1  0  0  0  0  2  0  1  0  0  0<L.30.1>
+81 Alec Bohm 3b<T> 6  0  0  0  0  0  0  0  0  0  1  0  0<T>22 Austin Barnes dh<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+22 Gordon Milnes c <T> 5  2  1  0  0  1  1  1  0  0  3  0  0<T>20 Jose Guerrero c <T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+20 Mickey Moniak lf<T> 4  3  2  0  0  0  0  2  0  1  1  0  0<T>19 Felipe Rincon 2b<T> 3  0  1  1  0  0  0  1  0  0  0  1  0<L.30.1>
+ 5 Alex Guerrero ss<T> 4  3  4  1  0  1  2  1  0  2  0  0  0<T>12 Tyler Colvin cf<T> 3  1  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+28 Jamie Dick 1b<T> 4  1  1  0  0  0  1  1  0  0  2  1  0<T> 1 Pete Miller lf<T> 4  1  1  0  0  1  1  0  0  0  1  0  0<L.30.1>
+ 6 Jason Wilson rf<T> 4  2  1  0  0  0  2  0  1  0  1  0  0<T> 3 Todd Walker 3b<T> 4  0  2  1  0  0  1  0  0  0  0  0  0<L.30.1>
+25 Scott Kingery 2b<T> 4  2  1  0  0  0  0  1  0  0  0  1  0<T> 8 Nick Williams ss<T> 4  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+29 Nick Maton dh<T> 5  2  4  0  0  2  7  0  0  0  1  0  0<T>15 E.Arrubarena 1b<T> 4  0  0  0  0  0  0  0  0  0  2  1  1<L.30.1>
+<L.6.1>
+<Z>Totals<T>42 16 16  1  0  5 15  6  1  3  9  2  0<T>Totals<T>32  2  6  2  0  1  2  4  0  1  6  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Rockies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 9 Matt Belisle (l)<T> 3 2/3    6  4  4  0  2  4  2H    2<T> 3 Juan Crespo (w)<T> 6        2  0  0  0  2  6  1B    0<L.30.1>
+11 Joe Gatto<T> 1 1/3    4  5  0  1  1  3  1H    0<T> 1 Mike Jordan<T> 2        3  1  1  1  0  0  1B    0<L.30.1>
+ 2 Rafael Gonzalez<T> 2        6  7  7  4  3  1  2H    0<T> 9 Mike Jordan<T> 1        1  1  1  0  2  0  1     0<L.30.1>
+14 Mario Alou<T> 2        0  0  0  0  0  1  1 *   0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 2: Philadelphia Phillies (19-6) at Colorado Rockies (14-11)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Lyles<UC> on mound. Collier ground out to 1B (3B, field save). Bohm singled to RF. Bohm forced out at 2B (3B, field save), <L.30.1>
+         Milnes ground into double play at 1B (2B, field save).<L.33.1>
+<Z>CO  1st  <C><U>Ordonez<UC> on mound. Rivera flied out to CF. Barnes singled to CF. Guerrero flied out to CF. Rincon flied out to SS, field <L.30.1>
+         save.<L.33.1>
+<Z>PH  2nd  <C>Moniak flied out to CF. Guerrero flied out to CF. Dick flied out to SS.<L.33.1>
+<Z>CO  2nd  <C>Colvin ground out to 1B (SS). Miller flied out to CF. Walker flied out to LF.<L.33.1>
+<Z>PH  3rd  <C>Wilson ground out to 1B (SS). Kingery flied out to SS. Maton singled to CF. Collier doubled to CF, Maton scored, <L.30.1>
+         <Z>PH 1-0<C>. Bohm flied out to C.<L.33.1>
+<Z>CO  3rd  <C>Williams flied out to C. Arrubarena ground out to 1B (SS). Rivera struck out.<L.33.1>
+<Z>PH  4th  <C>Milnes flied out to RF. Moniak flied out to SS. Guerrero struck out.<L.33.1>
+<Z>CO  4th  <C>Barnes walked. Barnes forced out at 2B (SS), Guerrero ground into double play at 1B (2B). Rincon walked. Colvin singled <L.30.1>
+         to SS, Rincon to 2nd. Rincon stole 3rd. Miller ground out to 1B (2B, field save).<L.33.1>
+<Z>PH  5th  <C>Dick flied out to CF, field save. Wilson ground out to 1B (SS). Kingery walked. Maton singled to RF, Kingery to 3rd. <L.30.1>
+         Collier ground out to 1B (2B).<L.33.1>
+<Z>CO  5th  <C>Walker struck out. Williams ground out to 1B (2B). Arrubarena flied out to C.<L.33.1>
+<Z>PH  6th  <C>Bohm singled to LF. Milnes sacrificed to RF, Bohm to 2nd. Moniak ground out to 1B (3B). Guerrero doubled to RF, Bohm <L.30.1>
+         scored, <Z>PH 2-0<C>. Dick singled to RF, Guerrero scored, <Z>PH 3-0<C>. Wilson flied out to CF, field save.<L.33.1>
+<Z>CO  6th  <C>Rivera singled to CF. Barnes doubled to CF, Rivera scored, <Z>PH 3-1<C>. Guerrero doubled to CF, Barnes scored, <Z>PH 3-2<C>. <L.30.1>
+         Rincon ground out to 1B (2B). Colvin ground out to 1B (3B). Miller doubled to CF, Guerrero scored, <Z>3-3<C>. Walker singled <L.30.1>
+         to CF, Miller to 3rd. Williams ground out to 1B (SS).<L.33.1>
+<Z>PH  7th  <C>Kingery singled to RF. Maton singled to CF, Kingery to 2nd. <U>Guerrero<UC> took over on mound. Collier reached 1st, Kingery <L.30.1>
+         forced out at 3B (1B), Maton to 2nd. Bohm reached 1st, Maton forced out at 3B (SS), Collier to 2nd. Milnes homered to RF, <L.30.1>
+         Collier scored, Bohm scored, <Z>PH 6-3<C>. Moniak homered to CF, <Z>PH 7-3<C>. Guerrero struck out.<L.33.1>
+<Z>CO  7th  <C><U>Wells<UC> took over on mound. Arrubarena flied out to CF. Rivera struck out. Barnes singled to CF. Guerrero ground out to 1B <L.30.1>
+         (3B).<L.33.1>
+<Z>PH  8th  <C>Dick singled to CF. Wilson walked, Dick to 2nd. Kingery struck out. Maton walked, Dick to 3rd, Wilson to 2nd. Collier <L.30.1>
+         walked, Dick scored, Wilson to 3rd, Maton to 2nd, <Z>PH 8-3<C>. Bohm struck out. Milnes singled, error by 1B, Wilson scored, <L.30.1>
+         Maton to 3rd, Collier to 2nd, <Z>PH 9-3<C>. Moniak singled to LF, Maton scored, Collier to 3rd, Milnes to 2nd, <Z>PH 10-3<C>. <L>
+         <U>Gatto<UC> took over on mound. Guerrero ground out to 1B (3B).<L.33.1>
+<Z>CO  8th  <C>Rincon ground out to 1B (SS). <U>Medina<UC> took over on mound. Colvin ground out to 1B (2B). Miller flied out to RF.<L.33.1>
+<Z>PH  9th  <C>Dick struck out. Wilson flied out to CF. Kingery ground out to 1B (SS).<L.33.1>
+<Z>CO  9th  <C>Walker flied out to RF. Williams singled to CF. Williams forced out at 2B (SS), Arrubarena ground into double play at 1B <L.30.1>
+         (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(1,0d)<Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 2 <C>(3,0) <Z> 4 <C>(4,0) <Z> 3 <C>(2,3) <Z> 0 <C>(0,0) <T><Z> 10<C><L.33.1>
+<Z>Rockies<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,2d)<Z> 0 <C>(0,0) <Z> 3 <C>(5,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0d)<T><Z>  3<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Rockies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+80 Zach Collier cf<T> 4  1  1  1  0  0  2  1  0  0  0  0  0<T>23 Alex Rivera rf<T> 4  1  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+81 Alec Bohm 3b<T> 5  2  2  0  0  0  0  0  0  0  1  0  0<T>22 Austin Barnes dh<T> 3  1  3  1  0  0  1  1  0  0  0  0  0<L.30.1>
+22 Gordon Milnes c <T> 4  1  1  0  0  1  3  0  1  0  0  0  0<T>20 Jose Guerrero c <T> 4  1  1  1  0  0  1  0  0  0  0  0  0<L.30.1>
+20 Mickey Moniak lf<T> 5  1  2  0  0  1  2  0  0  0  0  0  0<T>19 Felipe Rincon 2b<T> 3  0  0  0  0  0  0  1  0  1  0  1  0<L.30.1>
+ 5 Alex Guerrero ss<T> 5  1  1  1  0  0  1  0  0  0  2  2  0<T>12 Tyler Colvin cf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+28 Jamie Dick 1b<T> 5  1  2  0  0  0  1  0  0  0  1  2  0<T> 1 Pete Miller lf<T> 4  0  1  1  0  0  1  0  0  0  0  0  0<L.30.1>
+ 6 Jason Wilson rf<T> 4  1  0  0  0  0  0  1  0  0  0  0  0<T> 3 Todd Walker 3b<T> 4  0  1  0  0  0  0  0  0  0  1  1  0<L.30.1>
+25 Scott Kingery 2b<T> 4  0  1  0  0  0  0  1  0  0  1  2  0<T> 8 Nick Williams ss<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+29 Nick Maton dh<T> 3  2  3  0  0  0  0  1  0  0  0  0  0<T>15 E.Arrubarena 1b<T> 4  0  0  0  0  0  0  0  0  0  0  1  1<L.30.1>
+<L.6.1>
+<Z>Totals<T>39 10 13  2  0  2  9  4  1  0  5  6  0<T>Totals<T>34  3  9  3  0  0  3  2  0  1  3  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Rockies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+54 Jordan Lyles<T> 6        9  3  3  0  1  1  3B    2<T> 8 Eddie Ordonez (w)<T> 6        7  3  3  0  2  2  2H    0<L.30.1>
+16 Edgar Guerrero (l)<T> 1 2/3    4  7  5  2  3  3  3H*   3<T>15 Carl Wells<T> 1 1/3    1  0  0  0  0  1  0B    0<L.30.1>
+11 Joe Gatto<T> 1 1/3    0  0  0  0  0  1  1 *   0<T>41 Adonis Medina<T> 1 2/3    1  0  0  0  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21   Season 29   Week 3 of 18   21/11/20<L.54.1>
+Game 3: Philadelphia Phillies (20-6) at Colorado Rockies (14-12)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+PH  1st  <C><U>Washington<UC> on mound. Collier flied out to SS. Bohm ground out to 1B (SS). Milnes walked. Moniak flied out to C.<L.33.1>
+<Z>CO  1st  <C><U>Castillo<UC> on mound. Rivera struck out. Barnes struck out. Guerrero ground out to 1B (SS).<L.33.1>
+<Z>PH  2nd  <C>Guerrero flied out to 1B. Dick struck out. Wilson ground out to 1B (2B).<L.33.1>
+<Z>CO  2nd  <C>Rincon flied out to LF. Colvin flied out to RF. Miller doubled to RF. Walker flied out to C.<L.33.1>
+<Z>PH  3rd  <C>Kingery walked. Maton struck out. Collier struck out. Bohm struck out.<L.33.1>
+<Z>CO  3rd  <C>Williams struck out. Arrubarena flied out to LF. Rivera struck out.<L.33.1>
+<Z>PH  4th  <C>Milnes walked. Moniak tripled to RF, Milnes scored, <Z>PH 1-0<C>. Guerrero struck out. Dick ground out to 1B (3B). Wilson <L.30.1>
+         singled, error by 2B, Moniak scored, <Z>PH 2-0<C>. Kingery ground out to 1B (2B).<L.33.1>
+<Z>CO  4th  <C>Barnes ground out to 1B (2B). Guerrero struck out. Rincon doubled to CF. Colvin homered to RF, Rincon scored, <Z>2-2<C>. <L.30.1>
+         Miller ground out to 1B (2B).<L.33.1>
+<Z>PH  5th  <C>Maton singled to LF. Maton forced out at 2B (SS, field save), Collier ground into double play at 1B (2B, field save). <L.30.1>
+         Bohm flied out to CF.<L.33.1>
+<Z>CO  5th  <C>Walker flied out to CF. Williams walked. Arrubarena flied out to C. Rivera flied out to 1B.<L.33.1>
+<Z>PH  6th  <C>Milnes doubled to LF. Moniak walked. Guerrero homered to RF, Milnes scored, Moniak scored, <Z>PH 5-2<C>. Dick flied out to <L.30.1>
+         CF. <U>Wells<UC> took over on mound. Wilson ground out to 1B (3B). Kingery singled, error by C. Maton ground out to 1B (2B, <L.30.1>
+         field save).<L.33.1>
+<Z>CO  6th  <C>Barnes ground out to 1B (3B). Guerrero struck out. Rincon singled to LF. Colvin walked, Rincon to 2nd. Miller singled, <L.30.1>
+         error by 2B, Rincon scored, Colvin to 3rd, <Z>PH 5-3<C>. Walker singled, error by 1B, Colvin scored, Miller to 3rd, <Z>PH 5-4<C>. <L.30.1>
+         Williams ground out to 1B (2B).<L.33.1>
+<Z>PH  7th  <C>Collier homered to CF, <Z>PH 6-4<C>. Bohm struck out. Milnes singled to LF. Moniak flied out to C, field save. Guerrero <L.30.1>
+         flied out to LF.<L.33.1>
+<Z>CO  7th  <C><U>Wells<UC> took over on mound. Arrubarena singled, error by 3B. Rivera walked, Arrubarena to 2nd. Barnes flied out to SS. <L.30.1>
+         Guerrero singled to CF, Arrubarena scored, Rivera to 2nd, <Z>PH 6-5<C>. Rincon walked, Rivera to 3rd, Guerrero to 2nd. <U>Jordan<UC> <L.30.1>
+         took over on mound. Colvin reached 1st, Rivera forced out at home (SS), Guerrero to 3rd, Rincon to 2nd. Miller singled <L.30.1>
+         to RF, Guerrero scored, Rincon scored, Colvin to 3rd, <Z>CO 7-6<C>. Walker doubled to LF, Colvin scored, Miller scored, <L.30.1>
+         <Z>CO 9-6<C>. Williams singled to RF, Walker scored, <Z>CO 10-6<C>. Arrubarena struck out.<L.33.1>
+<Z>PH  8th  <C>Dick ground out to 1B (3B). Wilson walked. Wilson stole 2nd. Kingery singled to 2B, Wilson to 3rd. Kingery forced out at <L.30.1>
+         2B (SS), Maton ground into double play at 1B (2B).<L.33.1>
+<Z>CO  8th  <C>Rivera flied out to CF. Barnes doubled to CF. Guerrero singled to LF, Barnes to 3rd. Rincon doubled to CF, Barnes scored, <L.30.1>
+         Guerrero scored, <Z>CO 12-6<C>. Colvin walked. <U>Roberts<UC> took over on mound. Miller reached 1st, Rincon forced out at 3B (SS), <L.30.1>
+         Colvin to 2nd. Walker singled to CF, Colvin scored, Miller to 3rd, <Z>CO 13-6<C>. Williams walked, Walker to 2nd. Arrubarena <L.30.1>
+         ground out to 1B (3B).<L.33.1>
+<Z>PH  9th  <C>Collier ground out to 1B (SS). Bohm flied out to C. Milnes doubled to CF. Moniak singled, error by 2B, Milnes to 3rd. <L.30.1>
+         Guerrero ground out to 1B (3B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Phillies<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 2 <C>(1,1) <Z> 0 <C>(1,0d)<Z> 3 <C>(2,1) <Z> 1 <C>(2,0) <Z> 0 <C>(1,1d)<Z> 0 <C>(1,0) <T><Z>  6<C><L.33.1>
+<Z>Rockies<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 2 <C>(2,0) <Z> 0 <C>(0,1) <Z> 2 <C>(1,1) <Z> 6 <C>(4,2) <Z> 3 <C>(4,2) <Z> x       <T> 13<C><ST.24.66.90><L.42.1>
+<Z>Phillies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Rockies Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+80 Zach Collier cf<T> 5  1  1  0  0  1  1  0  0  0  1  0  0<T>23 Alex Rivera rf<T> 4  0  0  0  0  0  0  1  0  0  2  0  0<L.30.1>
+81 Alec Bohm 3b<T> 5  0  0  0  0  0  0  0  0  0  2  0  1<T>22 Austin Barnes dh<T> 5  1  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+22 Gordon Milnes c <T> 3  2  3  2  0  0  0  2  0  0  0  0  0<T>20 Jose Guerrero c <T> 5  2  2  0  0  0  1  0  0  0  2  0  1<L.30.1>
+20 Mickey Moniak lf<T> 4  2  1  0  1  0  1  1  0  0  0  0  0<T>19 Felipe Rincon 2b<T> 4  3  3  2  0  0  2  1  0  0  0  2  2<L.30.1>
+ 5 Alex Guerrero ss<T> 5  1  1  0  0  1  3  0  0  0  1  0  0<T>12 Tyler Colvin cf<T> 3  4  1  0  0  1  2  2  0  0  0  0  0<L.30.1>
+28 Jamie Dick 1b<T> 4  0  0  0  0  0  0  0  0  0  1  0  1<T> 1 Pete Miller lf<T> 5  1  2  1  0  0  2  0  0  0  0  0  0<L.30.1>
+ 6 Jason Wilson rf<T> 3  0  0  0  0  0  0  1  0  1  0  0  0<T> 3 Todd Walker 3b<T> 5  1  2  1  0  0  3  0  0  0  0  0  0<L.30.1>
+25 Scott Kingery 2b<T> 3  0  1  0  0  0  0  1  0  0  0  0  1<T> 8 Nick Williams ss<T> 3  0  1  0  0  0  1  2  0  0  1  2  0<L.30.1>
+29 Nick Maton dh<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>15 E.Arrubarena 1b<T> 5  1  0  0  0  0  0  0  0  0  1  2  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>36  6  8  2  1  2  5  5  0  1  6  0  3<T>Totals<T>39 13 12  5  0  1 11  6  0  0  7  6  3<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Rockies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Phillies Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+10 Jeff Washington<T> 5 1/3    4  5  4  1  4  5  3B    0<T>13 Javier Castillo<T> 6        4  4  2  1  2  6  3B    0<L.30.1>
+ 7 Jack Wells (w)<T> 3 2/3    4  1  1  1  1  1  2     0<T>15 Carl Wells (l)<T>   1/3    1  3  0  0  2  0  1H    3<L.30.1>
+<T><T> 9 Mike Jordan<T> 1        6  6  3  0  1  1  1H    2<L.30.1>
+<T><T>19 Dave Roberts<T>   2/3    1  0  0  0  1  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Results Summary><P.70><B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB21  Season 29  Week 3 Results   21/11/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<ST.27.63.90.126><L.1.1>
+<U>American League<UC><L.48.1>
+<C><Z>YANKEES 12<C> (16h, 6bb)<T>96 Trygg (3 2/3, 10r 9h 4bb)<T><Z>Red Sox 4<C> (13h, 2bb)<T>66 Paxton (7 2/3, 4r 12h 2bb)<L.36.1>
+<Z>YANKEES 6<C> (9h, 7bb)<T>88 Price (4 1/3, 2r 5h 4bb)<T><Z>Red Sox 5<C> (10h, 4bb)<T>40 Severino (7 2/3, 5r 9h 4bb)<L.36.1>
+<Z>YANKEES 3<C> (6h, 2bb)<T>11 Dorsey (5 2/3, 3r 5h 1bb)<T><Z>Red Sox 2<C> (7h, 4bb)<T>27 Montgomery (9, 2r 7h 4bb)<L.36.1>
+<L.9.1>
+<Z>ORIOLES 4<C> (8h, 2bb)<T>47 Medeiros (5 2/3, 3r 7h 1bb)<T><Z>Blue Jays 1<C> (7h, 3bb)<T>27 Wells (5, 1r 4h 2bb)<L.36.1>
+<Z>Orioles 6<C> (15h, 2bb)<T>19 Jones (4 2/3, 3r 7h 2bb)<T><Z>BLUE JAYS 12<C> (8h, 5bb)<T>40 Washington (3 2/3, 9r 6h 3bb)<L.36.1>
+<Z>ORIOLES 1<C> (3h, 2bb)<T>40 Hentgen (9, 1r 3h 2bb)<T><Z>Blue Jays 0<C> (4h, 0bb)<T> 1 Nelson (6 2/3, 0r 4h 0bb)<L.36.1>
+<L.9.1>
+<Z>Twins 3<C> (6h, 1bb)<T>79 Gallardo (9, 3r 6h 1bb)<T><Z>BREWERS 5<C> (8h, 4bb)<T>19 Chacin (5, 5r 8h 3bb)<L.36.1>
+<Z>Twins 4<C> (7h, 3bb)<T> 1 Corpas (5 1/3, 3r 5h 3bb)<T><Z>BREWERS 8<C> (12h, 2bb)<T>50 Tonkin (4, 5r 8h 0bb)<L.36.1>
+<Z>Twins 4<C> (9h, 3bb)<T> 3 Figueroa (5 2/3, 0r 6h 1bb)<T><Z>BREWERS 13<C> (12h, 5bb)<T>30 White (4, 8r 7h 4bb)<L.36.1>
+<L.9.1>
+<Z>Indians 1<C> (5h, 4bb)<T> 1 Jansen (7, 1r 3h 2bb)<T><Z>ROYALS 6<C> (8h, 4bb)<T>42 Burnes (3, 2r 3h 3bb)<L.36.1>
+<Z>INDIANS 12<C> (24h, 2bb)<T>20 Veal (2, 5r 8h 1bb)<T><Z>Royals 4<C> (9h, 2bb)<T>52 Belliard (5 2/3, 4r 7h 2bb)<L.36.1>
+<Z>Indians 1<C> (7h, 4bb)<T>17 Rodriguez (6 1/3, 1r 5h 3bb)<T><Z>ROYALS 2<C> (8h, 2bb)<T> 2 Scarpetta (6 1/3, 1r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 1<C> (7h, 1bb)<T>20 Young (6 1/3, 1r 5h 1bb)<T><Z>RANGERS 6<C> (8h, 6bb)<T>17 Roberts (4 1/3, 4r 6h 4bb)<L.36.1>
+<Z>Athletics 5<C> (9h, 1bb)<T>31 Bedrosian (6 2/3, 2r 3h 1bb)<T><Z>RANGERS 6<C> (13h, 3bb)<T>10 Kelly (4 1/3, 1r 7h 3bb)<L.36.1>
+<Z>Athletics 0<C> (5h, 1bb)<T> 6 Lee (6 1/3, 0r 4h 0bb)<T><Z>RANGERS 1<C> (3h, 2bb)<T>25 Kelly (6 1/3, 0r 2h 1bb)<L.36.1>
+<L.9.1>
+<Z>Rays 6<C> (11h, 2bb)<T>11 Alcantara (5 1/3, 4r 7h 2bb)<T><Z>ANGELS 8<C> (14h, 2bb)<T>14 Guzman (4 2/3, 7r 12h 2bb)<L.36.1>
+<Z>RAYS 3<C> (11h, 1bb)<T>60 Pastrone (8 2/3, 2r 7h 1bb)<T><Z>Angels 2<C> (6h, 6bb)<T>15 Rivera (3, 1r 2h 3bb)<T>10 inn<L.36.1>
+<Z>Rays 1<C> (7h, 2bb)<T>10 Chock (5 2/3, 1r 5h 1bb)<T><Z>ANGELS 4<C> (8h, 1bb)<T>11 Enright (6 1/3, 2r 5h 1bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Twins 2<C> (5h, 5bb)<T> 2 Cordero (5 2/3, 2r 4h 4bb)<T><Z>RED SOX 3<C> (4h, 3bb)<T>60 Roberts (7, 2r 2h 2bb)<T>11 inn<L.36.1>
+<Z>Twins 2<C> (6h, 4bb)<T>94 Sale (6, 0r 3h 4bb)<T><Z>RED SOX 5<C> (8h, 4bb)<T>20 Mendoza (6, 4r 7h 2bb)<L.36.1>
+<Z>TWINS 7<C> (10h, 2bb)<T>96 Trygg (6, 5r 6h 2bb)<T><Z>Red Sox 5<C> (8h, 2bb)<T>19 Chacin (5 2/3, 3r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>RAYS 14<C> (14h, 6bb)<T>34 Stewart (3, 9r 10h 3bb)<T><Z>Blue Jays 2<C> (9h, 0bb)<T> 2 Roberts (8, 2r 8h 0bb)<L.36.1>
+<Z>RAYS 5<C> (11h, 4bb)<T>44 Brow (3 1/3, 4r 6h 3bb)<T><Z>Blue Jays 4<C> (9h, 2bb)<T>21 Lewis (4 2/3, 2r 6h 2bb)<L.36.1>
+<Z>Rays 2<C> (6h, 4bb)<T>47 Medeiros (5 1/3, 2r 4h 3bb)<T><Z>BLUE JAYS 6<C> (11h, 1bb)<T>14 Guzman (6 2/3, 2r 5h 1bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 0<C> (2h, 2bb)<T> 4 Guerrero (9, 0r 2h 2bb)<T><Z>BREWERS 13<C> (14h, 5bb)<T> 6 Garcia (3, 3r 4h 1bb)<L.36.1>
+<Z>Athletics 4<C> (11h, 1bb)<T>79 Gallardo (5 2/3, 1r 6h 1bb)<T><Z>BREWERS 10<C> (15h, 4bb)<T> 5 Mitchell (3 1/3, 6r 8h 3bb)<L.36.1>
+<Z>Athletics 2<C> (5h, 3bb)<T> 1 Corpas (6, 1r 4h 2bb)<T><Z>BREWERS 3<C> (9h, 5bb)<T>17 Roberts (4 2/3, 3r 5h 4bb)<L.36.1>
+<L.9.1>
+<Z>ROYALS 6<C> (10h, 1bb)<T>13 Johnson (5 2/3, 4r 7h 0bb)<T><Z>Orioles 4<C> (8h, 7bb)<T>29 Gowdy (6 1/3, 1r 3h 4bb)<L.36.1>
+<Z>Royals 1<C> (8h, 2bb)<T>27 Wells (5, 1r 6h 1bb)<T><Z>ORIOLES 2<C> (5h, 2bb)<T> 1 Jansen (4 2/3, 2r 5h 1bb)<L.36.1>
+<Z>ROYALS 9<C> (14h, 2bb)<T>40 Washington (4 2/3, 5r 7h 0bb)<T><Z>Orioles 5<C> (8h, 4bb)<T>20 Veal (3 1/3, 3r 4h 1bb)<L.36.1>
+<L.9.1>
+<Z>RANGERS 3<C> (6h, 3bb)<T> 4 Warren (9, 3r 6h 3bb)<T><Z>Yankees 2<C> (5h, 1bb)<T>14 Williams (6, 2r 4h 1bb)<L.36.1>
+<Z>Rangers 8<C> (11h, 2bb)<T>46 Nova (2 2/3, 4r 6h 1bb)<T><Z>YANKEES 9<C> (13h, 1bb)<T>12 Garcia (5 1/3, 5r 6h 1bb)<T>10 inn<L.36.1>
+<Z>Rangers 0<C> (5h, 3bb)<T>66 Paxton (9, 0r 5h 3bb)<T><Z>YANKEES 4<C> (9h, 1bb)<T>20 Young (5 1/3, 3r 7h 1bb)<L.36.1>
+<L.9.1>
+<Z>Angels 1<C> (6h, 2bb)<T>15 Castillo (6 2/3, 1r 5h 2bb)<T><Z>INDIANS 3<C> (6h, 2bb)<T>31 Bukauskas (6, 3r 5h 2bb)<L.36.1>
+<Z>Angels 5<C> (7h, 6bb)<T>35 Verlander (5, 5r 5h 2bb)<T><Z>INDIANS 9<C> (9h, 3bb)<T>51 Sykes (6, 3r 4h 2bb)<L.36.1>
+<Z>Angels 1<C> (4h, 2bb)<T>42 Burnes (6, 1r 4h 0bb)<T><Z>INDIANS 2<C> (10h, 3bb)<T>11 Alcantara (5 2/3, 1r 6h 2bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>ORIOLES 6<C> (10h, 6bb)<T>60 Pastrone (4, 3r 4h 3bb)<T><Z>Angels 2<C> (9h, 4bb)<T> 1 Nelson (5, 1r 6h 3bb)<L.36.1>
+<Z>Orioles 1<C> (2h, 3bb)<T>10 Chock (9, 1r 2h 3bb)<T><Z>ANGELS 6<C> (11h, 1bb)<T>13 Johnson (5 1/3, 4r 8h 0bb)<L.36.1>
+<Z>ORIOLES 8<C> (17h, 1bb)<T>31 Bukauskas (6 1/3, 2r 6h 0bb)<T><Z>Angels 5<C> (9h, 7bb)<T>27 Wells (4, 4r 5h 3bb)<T>11 inn<L.36.1>
+<L.9.1>
+<Z>YANKEES 2<C> (8h, 5bb)<T>17 Rodriguez (5, 1r 4h 3bb)<T><Z>Royals 1<C> (3h, 5bb)<T>40 Severino (9, 1r 3h 5bb)<L.36.1>
+<Z>Yankees 5<C> (9h, 2bb)<T>29 Gowdy (6 2/3, 3r 6h 0bb)<T><Z>ROYALS 14<C> (15h, 6bb)<T>27 Montgomery (1, 2r 2h 3bb)<L.36.1>
+<Z>Yankees 11<C> (15h, 4bb)<T> 1 Jansen (3 1/3, 8r 7h 3bb)<T><Z>ROYALS 12<C> (17h, 1bb)<T> 4 Warren (1, 5r 6h 0bb)<L.36.1>
+<L.9.1>
+<Z>Indians 6<C> (7h, 5bb)<T>31 Bedrosian (5, 4r 5h 2bb)<T><Z>RANGERS 12<C> (13h, 6bb)<T>52 Belliard (6, 3r 4h 3bb)<L.36.1>
+<Z>Indians 1<C> (9h, 2bb)<T> 6 Lee (6 1/3, 1r 3h 2bb)<T><Z>RANGERS 2<C> (11h, 4bb)<T> 2 Scarpetta (5 2/3, 1r 6h 2bb)<T>10 inn<L.36.1>
+<Z>INDIANS 5<C> (6h, 7bb)<T>14 Williams (5, 5r 5h 3bb)<T><Z>Rangers 4<C> (8h, 2bb)<T>15 Castillo (6, 1r 5h 2bb)<L.36.1>
+<L.9.1>
+<Z>Red Sox 1<C> (3h, 0bb)<T>10 Kelly (6, 1r 3h 0bb)<T><Z>ATHLETICS 3<C> (5h, 4bb)<T>88 Price (3 2/3, 3r 3h 2bb)<L.36.1>
+<Z>RED SOX 4<C> (7h, 7bb)<T>25 Kelly (5, 1r 2h 5bb)<T><Z>Athletics 3<C> (8h, 4bb)<T>11 Dorsey (5 1/3, 2r 5h 3bb)<L.36.1>
+<Z>Red Sox 5<C> (14h, 7bb)<T> 6 Garcia (5, 2r 5h 3bb)<T><Z>ATHLETICS 6<C> (11h, 1bb)<T> 2 Cordero (6, 2r 7h 1bb)<T>10 inn<L.36.1>
+<L.9.1>
+<Z>BLUE JAYS 9<C> (17h, 4bb)<T>50 Tonkin (4, 6r 10h 3bb)<T><Z>Twins 3<C> (7h, 6bb)<T>19 Jones (5 1/3, 2r 5h 3bb)<L.36.1>
+<Z>Blue Jays 1<C> (4h, 2bb)<T>30 White (7, 0r 2h 2bb)<T><Z>TWINS 3<C> (6h, 2bb)<T>40 Hentgen (5 2/3, 3r 5h 1bb)<L.36.1>
+<Z>Blue Jays 2<C> (7h, 2bb)<T>60 Roberts (6 2/3, 0r 4h 0bb)<T><Z>TWINS 6<C> (11h, 3bb)<T>34 Stewart (4 2/3, 5r 8h 1bb)<L.36.1>
+<L.9.1>
+<Z>BREWERS 11<C> (14h, 3bb)<T>15 Rivera (3 2/3, 9r 10h 2bb)<T><Z>Rays 2<C> (9h, 2bb)<T> 3 Figueroa (5 2/3, 1r 6h 2bb)<L.36.1>
+<Z>Brewers 7<C> (13h, 4bb)<T>11 Enright (4, 7r 9h 1bb)<T><Z>RAYS 8<C> (18h, 4bb)<T> 4 Guerrero (4, 6r 10h 3bb)<T>12 inn<L.36.1>
+<Z>Brewers 7<C> (12h, 2bb)<T> 2 Roberts (8, 2r 7h 0bb)<T><Z>RAYS 9<C> (17h, 5bb)<T>79 Gallardo (5 2/3, 2r 6h 1bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<L.1.1>
+<D><E><P>
+<B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB21  Season 29  Week 3 Results   21/11/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<U>National League<UC><L.48.1>
+<C><Z>Mets 2<C> (7h, 4bb)<T>77 Medina (6, 2r 6h 3bb)<T><Z>PHILLIES 10<C> (13h, 3bb)<T>10 Cordero (3 2/3, 4r 6h 2bb)<L.36.1>
+<Z>Mets 3<C> (7h, 1bb)<T> 3 Crespo (6 1/3, 0r 2h 0bb)<T><Z>PHILLIES 4<C> (6h, 6bb)<T>18 Sanchez (5 1/3, 1r 2h 4bb)<L.36.1>
+<Z>Mets 1<C> (8h, 6bb)<T> 8 Ordonez (6, 0r 4h 4bb)<T><Z>PHILLIES 11<C> (14h, 3bb)<T>23 Robinson (4 2/3, 8r 8h 2bb)<L.36.1>
+<L.6.1>
+<Z>MARLINS 7<C> (11h, 5bb)<T> 8 Alburquerque (5 1/3, 2r 5h 1bb)<T><Z>Nationals 3<C> (13h, 1bb)<T>16 Abbott (8, 3r 10h 1bb)<T>10 inn<L.36.1>
+<Z>Marlins 4<C> (6h, 7bb)<T>36 Solis (6, 1r 4h 2bb)<T><Z>NATIONALS 7<C> (8h, 3bb)<T> 9 Sanders (5 1/3, 7r 8h 3bb)<L.36.1>
+<Z>Marlins 2<C> (3h, 3bb)<T>58 Fister (6, 2r 3h 3bb)<T><Z>NATIONALS 6<C> (6h, 3bb)<T>23 Guerrero (6 2/3, 5r 5h 3bb)<L.36.1>
+<L.6.1>
+<Z>REDS 10<C> (16h, 4bb)<T>62 Dykxhoorn (7, 4r 11h 2bb)<T><Z>Astros 5<C> (12h, 3bb)<T>15 Hanson (6 1/3, 2r 7h 1bb)<L.36.1>
+<Z>Reds 4<C> (11h, 2bb)<T> 7 Cruz (7, 3r 10h 1bb)<T><Z>ASTROS 9<C> (8h, 5bb)<T> 9 Diaz (6, 8r 6h 4bb)<L.36.1>
+<Z>Reds 6<C> (12h, 1bb)<T>11 Sandoval (6 2/3, 4r 8h 1bb)<T><Z>ASTROS 11<C> (15h, 5bb)<T> 8 Benitez (4 2/3, 8r 11h 2bb)<L.36.1>
+<L.6.1>
+<Z>CUBS 7<C> (12h, 3bb)<T>11 Cueto (5 2/3, 4r 6h 1bb)<T><Z>Pirates 6<C> (14h, 2bb)<T>58 Ascanio (6 1/3, 1r 6h 2bb)<L.36.1>
+<Z>CUBS 7<C> (9h, 4bb)<T>21 Morton (7, 2r 3h 1bb)<T><Z>Pirates 3<C> (7h, 3bb)<T>28 Jones (5, 1r 4h 3bb)<L.36.1>
+<Z>Cubs 3<C> (9h, 4bb)<T>30 Blanton (6 2/3, 0r 4h 3bb)<T><Z>PIRATES 6<C> (11h, 3bb)<T>25 Delgado (5 1/3, 5r 7h 3bb)<L.36.1>
+<L.6.1>
+<Z>ROCKIES 6<C> (14h, 2bb)<T>13 Guzman (4 2/3, 3r 7h 1bb)<T><Z>Giants 1<C> (5h, 1bb)<T>10 Washington (7 2/3, 1r 5h 1bb)<L.36.1>
+<Z>ROCKIES 3<C> (9h, 3bb)<T>27 Brown (5 1/3, 2r 5h 2bb)<T><Z>Giants 1<C> (5h, 2bb)<T> 5 Walker (6 1/3, 1r 3h 2bb)<L.36.1>
+<Z>Rockies 4<C> (8h, 0bb)<T>21 Harris (2 2/3, 3r 5h 0bb)<T><Z>GIANTS 6<C> (13h, 1bb)<T> 9 Belisle (3 2/3, 6r 9h 1bb)<L.36.1>
+<L.6.1>
+<Z>DODGERS 6<C> (12h, 2bb)<T> 5 Masterson (6 2/3, 2r 4h 0bb)<T><Z>Diamondbacks 2<C> (8h, 4bb)<T>22 Buehler (6, 1r 5h 2bb)<L.36.1>
+<Z>Dodgers 2<C> (7h, 3bb)<T>44 Davis (8 1/3, 2r 6h 3bb)<T><Z>DIAMONDBACKS 9<C> (10h, 6bb)<T>18 Maeda (6, 4r 3h 4bb)<L.36.1>
+<Z>DODGERS 11<C> (16h, 7bb)<T>46 Corbin (4 2/3, 6r 6h 5bb)<T><Z>Diamondbacks 3<C> (8h, 2bb)<T>44 Montas (6 1/3, 3r 6h 1bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>REDS 9<C> (13h, 3bb)<T>13 Castillo (6, 9r 11h 3bb)<T><Z>Phillies 4<C> (9h, 4bb)<T>49 Greene (5 2/3, 2r 5h 3bb)<L.36.1>
+<Z>Reds 6<C> (10h, 4bb)<T> 7 Rincon (6, 5r 8h 2bb)<T><Z>PHILLIES 7<C> (8h, 0bb)<T>10 Romano (7 2/3, 5r 6h 0bb)<L.36.1>
+<Z>REDS 13<C> (19h, 5bb)<T>77 Medina (6, 6r 11h 0bb)<T><Z>Phillies 8<C> (13h, 4bb)<T>15 Hanson (5 2/3, 6r 9h 1bb)<T>10 inn<L.36.1>
+<L.6.1>
+<Z>DODGERS 6<C> (9h, 3bb)<T> 7 Robinson (5 2/3, 4r 6h 1bb)<T><Z>Nationals 2<C> (2h, 3bb)<T>31 Seaton (7 1/3, 1r 0h 2bb)<L.36.1>
+<Z>Dodgers 2<C> (7h, 2bb)<T>64 Treinen (7, 1r 4h 1bb)<T><Z>NATIONALS 11<C> (16h, 5bb)<T>29 Travieso (4 2/3, 6r 8h 3bb)<L.36.1>
+<Z>DODGERS 1<C> (7h, 4bb)<T> 8 Alburquerque (5 2/3, 1r 3h 0bb)<T><Z>Nationals 0<C> (5h, 1bb)<T>22 Buehler (8 1/3, 0r 5h 1bb)<L.36.1>
+<L.6.1>
+<Z>ROCKIES 11<C> (14h, 4bb)<T>22 Majewski (4, 11r 11h 3bb)<T><Z>Astros 10<C> (9h, 5bb)<T>54 Lyles (5 1/3, 7r 5h 2bb)<L.36.1>
+<Z>Rockies 5<C> (8h, 5bb)<T>53 Javier (7, 2r 5h 3bb)<T><Z>ASTROS 6<C> (14h, 6bb)<T>10 Washington (4 2/3, 4r 7h 5bb)<L.36.1>
+<Z>ROCKIES 4<C> (8h, 3bb)<T>62 Dykxhoorn (9, 1r 4h 2bb)<T><Z>Astros 1<C> (9h, 3bb)<T> 5 Walker (4 2/3, 1r 6h 2bb)<T>10 inn<L.36.1>
+<L.6.1>
+<Z>Pirates 3<C> (14h, 4bb)<T>19 Mendoza (4 1/3, 0r 7h 2bb)<T><Z>MARLINS 4<C> (9h, 3bb)<T>29 Delgado (5 2/3, 2r 6h 0bb)<L.36.1>
+<Z>Pirates 3<C> (8h, 0bb)<T>24 Crespo (5 1/3, 3r 6h 0bb)<T><Z>MARLINS 4<C> (7h, 1bb)<T>12 Nicasio (7, 2r 4h 0bb)<L.36.1>
+<Z>Pirates 4<C> (8h, 2bb)<T>16 Abbott (9, 4r 8h 2bb)<T><Z>MARLINS 8<C> (9h, 5bb)<T>11 Cueto (3 1/3, 5r 7h 0bb)<L.36.1>
+<L.6.1>
+<Z>GIANTS 9<C> (9h, 4bb)<T>29 Robinson (5 2/3, 4r 4h 2bb)<T><Z>Mets 7<C> (16h, 3bb)<T>29 Cruz (4 2/3, 2r 5h 1bb)<T>10 inn<L.36.1>
+<Z>Giants 2<C> (9h, 2bb)<T>17 Ortiz (5 1/3, 2r 7h 2bb)<T><Z>METS 4<C> (8h, 6bb)<T> 8 Alou (5 1/3, 3r 6h 2bb)<L.36.1>
+<Z>Giants 0<C> (5h, 1bb)<T>10 Cordero (6 1/3, 0r 3h 0bb)<T><Z>METS 7<C> (12h, 5bb)<T>13 Guzman (3 2/3, 6r 7h 4bb)<L.36.1>
+<L.6.1>
+<Z>DIAMONDBACKS 10<C> (14h, 4bb)<T>17 Benitez (4 2/3, 4r 6h 3bb)<T><Z>Cubs 6<C> (13h, 6bb)<T>25 Bradley (3 1/3, 4r 6h 1bb)<L.36.1>
+<Z>DIAMONDBACKS 8<C> (12h, 2bb)<T>21 Washington (4 2/3, 4r 6h 2bb)<T><Z>Cubs 1<C> (2h, 1bb)<T>54 Sherfy (7, 1r 2h 1bb)<L.36.1>
+<Z>Diamondbacks 4<C> (12h, 4bb)<T>58 Ascanio (5 2/3, 3r 8h 1bb)<T><Z>CUBS 10<C> (12h, 5bb)<T> 5 Masterson (2, 4r 4h 0bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>MARLINS 11<C> (15h, 2bb)<T>44 Davis (4 1/3, 8r 10h 2bb)<T><Z>Diamondbacks 7<C> (12h, 5bb)<T> 9 Sanders (6, 6r 9h 4bb)<L.36.1>
+<Z>Marlins 5<C> (11h, 2bb)<T>46 Corbin (5 1/3, 4r 6h 1bb)<T><Z>DIAMONDBACKS 10<C> (11h, 6bb)<T>23 Guerrero (6 1/3, 8r 7h 4bb)<L.36.1>
+<Z>Marlins 6<C> (12h, 2bb)<T>25 Bradley (5 2/3, 6r 9h 1bb)<T><Z>DIAMONDBACKS 8<C> (13h, 1bb)<T>19 Mendoza (4 2/3, 5r 7h 1bb)<L.36.1>
+<L.6.1>
+<Z>METS 8<C> (17h, 3bb)<T>21 Morton (6, 0r 7h 1bb)<T><Z>Pirates 1<C> (6h, 6bb)<T>18 Sanchez (5 2/3, 1r 4h 1bb)<T>11 inn<L.36.1>
+<Z>METS 2<C> (3h, 3bb)<T>30 Blanton (6 2/3, 2r 2h 2bb)<T><Z>Pirates 1<C> (7h, 5bb)<T>23 Robinson (5 2/3, 1r 4h 4bb)<L.36.1>
+<Z>METS 9<C> (12h, 5bb)<T>29 Delgado (4 1/3, 7r 8h 2bb)<T><Z>Pirates 5<C> (12h, 4bb)<T>29 Robinson (3 2/3, 2r 5h 3bb)<L.36.1>
+<L.6.1>
+<Z>Cubs 2<C> (8h, 3bb)<T>27 Brown (6 1/3, 0r 3h 0bb)<T><Z>GIANTS 3<C> (10h, 4bb)<T>28 Jones (4 2/3, 2r 6h 3bb)<L.36.1>
+<Z>CUBS 5<C> (9h, 4bb)<T>21 Harris (6, 2r 4h 1bb)<T><Z>Giants 2<C> (8h, 2bb)<T>25 Delgado (6 1/3, 1r 5h 1bb)<L.36.1>
+<Z>CUBS 2<C> (13h, 3bb)<T>29 Cruz (4, 1r 7h 1bb)<T><Z>Giants 0<C> (7h, 2bb)<T>17 Benitez (5 2/3, 0r 4h 2bb)<L.36.1>
+<L.6.1>
+<Z>PHILLIES 16<C> (16h, 6bb)<T> 9 Belisle (3 2/3, 4r 6h 2bb)<T><Z>Rockies 2<C> (6h, 4bb)<T> 3 Crespo (6, 0r 2h 2bb)<L.36.1>
+<Z>PHILLIES 10<C> (13h, 4bb)<T>54 Lyles (6, 3r 9h 1bb)<T><Z>Rockies 3<C> (9h, 2bb)<T> 8 Ordonez (6, 3r 7h 2bb)<L.36.1>
+<Z>Phillies 6<C> (8h, 5bb)<T>10 Washington (5 1/3, 5r 4h 4bb)<T><Z>ROCKIES 13<C> (12h, 6bb)<T>13 Castillo (6, 4r 4h 2bb)<L.36.1>
+<L.6.1>
+<Z>NATIONALS 4<C> (9h, 1bb)<T> 9 Diaz (6 2/3, 4r 7h 0bb)<T><Z>Reds 3<C> (9h, 3bb)<T>36 Solis (5, 3r 6h 3bb)<L.36.1>
+<Z>NATIONALS 5<C> (11h, 1bb)<T> 8 Benitez (7, 2r 6h 1bb)<T><Z>Reds 1<C> (9h, 0bb)<T>58 Fister (6 1/3, 1r 6h 0bb)<L.36.1>
+<Z>Nationals 4<C> (7h, 0bb)<T> 3 Miller (9, 4r 7h 0bb)<T><Z>REDS 6<C> (12h, 2bb)<T> 7 Robinson (4 1/3, 4r 8h 2bb)<L.36.1>
+<L.6.1>
+<Z>ASTROS 2<C> (11h, 2bb)<T>18 Maeda (5 2/3, 1r 8h 2bb)<T><Z>Dodgers 0<C> (6h, 1bb)<T> 7 Cruz (9, 0r 6h 1bb)<L.36.1>
+<Z>ASTROS 7<C> (16h, 1bb)<T>44 Montas (4 2/3, 5r 10h 1bb)<T><Z>Dodgers 0<C> (9h, 1bb)<T>11 Sandoval (7 2/3, 0r 8h 1bb)<L.36.1>
+<Z>Astros 2<C> (3h, 3bb)<T>31 Seaton (6 1/3, 2r 3h 1bb)<T><Z>DODGERS 3<C> (10h, 4bb)<T>22 Majewski (6 1/3, 1r 5h 1bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<L.1.1>
+<D><E><DU>
+<BK.Standings><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB21  Season 29  Week 3 Standings   21/11/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.44.75.95.102.107><L.48.1>
+<C><Z>American League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Boston Red Sox (Harry Allen)<T> 12  15  .444   -   3-6   L 1<T> 125   131    7-8<T> 5-7<T> -2<T>21,854   7  65   3  125<L.33.1>
+New York Yankees (Craig Sandry)<T> 12  15  .444   -   6-3   L 2<T> 142   151    5-7<T> 7-8<T> 10<T>21,850   2  21   2  110<L.33.1>
+Baltimore Orioles (Simon Richards)<T> 10  17  .370   2   5-4   W 1<T> 106   132    5-7<T> 5-10<T> 71<T>21,641   7 134   6   99<L.33.1>
+Toronto Blue Jays (Ian Clark)<T>  7  20  .259   5   3-6   L 2<T> 109   160    4-11<T> 3-9<T> 63<T>38,203  13 196  13   94<L.33.1>
+<L.9.1>
+<Z>American League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Milwaukee Brewers (Marc Rivoira)<T> 23   4  .851   -   7-2   L 2<T> 187    85   15-0<T> 8-4<T> 83<T>27,649  15 190   7  117<L.33.1>
+Kansas City Royals (Paul Macguire)<T> 18   9  .666   5   6-3   W 2<T> 153   110   10-5<T> 8-4<T> 25<T>23,840  12 102   7  119<L.33.1>
+Minnesota Twins (Craig Jackson)<T> 14  13  .518   9   3-6   W 2<T> 113   134    8-4<T> 6-9<T> 59<T>22,066   8 180   9  104<L.33.1>
+Cleveland Indians (Joel Kinghorn)<T> 10  17  .370  13   5-4   W 1<T>  98   122    6-6<T> 4-11<T> 19<T>27,094  10  97   7  102<L.33.1>
+<L.9.1>
+<Z>American League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Tampa Bay Rays (Darren Halford)<T> 20   7  .740   -   5-4   W 2<T> 156    99   10-2<T>10-5<T>  6<T>22,713  12  82   8  104<L.33.1>
+Texas Rangers (Stefan Toth)<T> 14  13  .518   6   6-3   L 1<T> 111   133    8-7<T> 6-6<T> 91<T>22,066   8 181  11  112<L.33.1>
+Los Angeles Angels (Patrick Lee)<T> 12  15  .444   8   3-6   L 1<T> 128   120    7-8<T> 5-7<T> 77<T>26,224   7 110   5  102<L.33.1>
+Oakland Athletics (Rob Crowther)<T> 10  17  .370  10   2-7   W 1<T> 103   154    6-6<T> 4-11<T> 51<T>21,641   5 105   7  104<L.33.1>
+<L.9.1>
+<Z>National League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Philadelphia Phillies (Alan Milnes)<T> 20   7  .740   -   6-3   L 1<T> 198   122   11-4<T> 9-3<T> 97<T>22,713   8  13   5  105<L.33.1>
+New York Mets (Joseph Grillis)<T> 12  15  .444   8   5-4   W 5<T> 126   158    5-7<T> 7-8<T>280<T>21,854  11 193  11  108<L.33.1>
+Washington Nationals (Troy Dilworth)<T> 11  16  .407   9   5-4   L 1<T> 137   132    6-9<T> 5-7<T> -1<T>21,747   6  94   7  115<L.33.1>
+Miami Marlins (Mick Hankin)<T>  9  18  .333  11   5-4   L 2<T> 122   168    6-6<T> 3-12<T> 82<T>21,536   9 188   9  117<L.33.1>
+<L.9.1>
+<Z>National League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Houston Astros (Ian Gibson)<T> 18   9  .666   -   5-4   L 1<T> 158   132    9-6<T> 9-3<T> 56<T>22,495   4  11   7  102<L.33.1>
+Cincinnati Reds (Gordon Milnes)<T> 14  13  .518   4   4-5   W 1<T> 159   139    6-6<T> 8-7<T>130<T>22,066  15 194  10  113<L.33.1>
+Chicago Cubs (David Trice)<T> 12  15  .444   6   5-4   W 2<T> 132   129    3-9<T> 9-6<T>109<T>21,852   9 190  11  109<L.33.1>
+Pittsburgh Pirates (Michael Stewart)<T>  9  18  .333   9   1-8   L 6<T> 134   166    7-8<T> 2-10<T> 59<T>21,536   7  12   8  100<L.33.1>
+<L.9.1>
+<Z>National League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Los Angeles Dodgers (Mark Cooper)<T> 19   8  .703   -   5-4   W 1<T> 159   112    7-5<T>12-3<T>133<T>22,604   7  16   1  103<L.33.1>
+Colorado Rockies (Danny Slavin)<T> 15  12  .555   4   5-4   W 1<T> 134   128    7-5<T> 8-7<T>118<T>26,582  15 193  10  105<L.33.1>
+Arizona Diamondbacks (Jon Gick)<T> 15  12  .555   4   5-4   W 2<T> 145   160    8-7<T> 7-5<T>124<T>24,166  15 193   8  103<L.33.1>
+San Francisco Giants (Chris McDougall)<T>  8  19  .296  11   3-6   L 2<T>  85   143    3-12<T> 5-7<T>383<T>21,432  12 196  11   95<L.33.1>
+<L.9.1>
+<Z>GM: Danny McConnell    Version: 4.4 (2009 Rules)    Deadline: Saturday 5th December<L.39.1>
+Postal Address: Ab Initio Games, 82 Scotts Lane, Bromley, Kent, BR2 0LX.<L.39.1>
+Email Address: danny@pbmsports.com      Info Website: www.pbmsports.com      Active Website: www.softsim.co.uk<L.39.1>
+Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty. Cheques made payable to: Ab Initio Games<L.39.1>
+<U>Messages<UC><C><L.36.1>
+<L.6.1>
+<Z>Christmas is Coming <C> If you hadn't noticed... I will be running games normally over Christmas, even if I go away to see<L.31.1>
+family it'll only be for a couple of days, so turns should run normally (whether the turns due to be run on 26th December are<L.31.1>
+run on Boxing Day or the Sunday I'm not sure), so assume we'll be running things throughout.<L.31.1>
+<L.12.1>
+<Z>Covid World <C> I'll continue planning to run games on time, but if anything is late keep an eye on the latest news on<L.31.1>
+www.pbmsports.com, in case I'm suddenly struggling to run games. Equally, as we all spend a bit more time inside, there may<L.31.1>
+be more folk wanting to play games, or play more games, so feel free to pass on details of the offer below.<L.31.1>
+<L.12.1>
+<Z>Slack <C> There's a independent (i.e. I'm not on it) group on Slack of various players in various games (Gameplan, Raceplan, <L.31.1>
+Baseball, Run Chase and Dark Age - but other channels are welcome) covering things run here. For more information, go to <L.31.1>
+gameplanpbm.slack.com, or for an invite people can contact Alan Milnes at alan@gameplan.org.uk.<L.31.1>
+<L.12.1>
+<Z>Free Startups <C> I'm still running the offer of a free startup (first two turns) in any of the games currently running.<L.31.1>
+The rationale is simple, it's straightforward for me to do, there's a fair chance some folk out there might be looking to pick<L.31.1>
+up an old game, and yes, somewhere down the line you may have to pay for the turns, though that's far from the driving force. <L.31.1>
+If you fancy taking up a new team, or reviving your existing one, drop me an email. Feel free to flag up these games to <L.31.1>
+friends and family - the more the merrier when people have time on their hands.<L.31.1>
+<L.12.1>
+<Z>Late Turns <C> Deadlines are 9am Saturday. Please assume weekend turns will be run either Saturday or Sunday (i.e. please<L.31.1>
+don't chase me up Sunday for "missing turns"). I run these games in my spare time, so the more efficient that is the better.<L.31.1>
+<L.1.1>
+<P>
+<L>
+<L.1.1>
+<BK.Actions><B>GAMEPLAN BASEBALL  MLB21   Week 3 Actions Report   21/11/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.33.66.99><L.48.1>
+Next Week: Regular Season Week 4<L.36.1>
+<C>Red Sox at Blue Jays<T>Orioles at Yankees<T>Brewers at Royals<T>Indians at Twins<T><L.33.1>
+Rangers at Angels<T>Rays at Athletics<T>Phillies at Nationals<T>Marlins at Mets<T><L.33.1>
+Astros at Pirates<T>Cubs at Reds<T>Giants at Diamondbacks<T>Dodgers at Rockies<T><L.33.1>
+<L.6.1>
+Indians at Red Sox<T>Athletics at Blue Jays<T>Rays at Royals<T>Brewers at Orioles<T><L.33.1>
+Angels at Yankees<T>Rangers at Twins<T>Cubs at Phillies<T>Rockies at Nationals<T><L.33.1>
+Dodgers at Pirates<T>Astros at Marlins<T>Diamondbacks at Mets<T>Giants at Reds<T><L.33.1>
+<L.6.1>
+Orioles at Rangers<T>Yankees at Brewers<T>Twins at Angels<T>Red Sox at Rays<T><L.33.1>
+Blue Jays at Indians<T>Royals at Athletics<T>Marlins at Giants<T>Mets at Astros<T><L.33.1>
+Reds at Diamondbacks<T>Phillies at Dodgers<T>Nationals at Cubs<T>Pirates at Rockies<T><L.33.1>
+<L.6.1>
+<ST.33.66.99><L.3.1>
+<Z>Injuries and Holdouts<C><L.36.1>
+35 Stevie Crosby (BA) 13 games<T>96 Spencer Trygg (BR) holdout<T>90 Jonathan Lucroy (BR) holdout<T>31 Cody Ross (BR) 6 games<L.33.1>
+34 Dave Stewart (TO) 6 games<T>23 D.J Lemahieu (NY) 14 games<T>12 K.Middleton (MT) 14 games<T>25 Chris Woodward (CL) 15 games<L.33.1>
+20 Donald Veal (KC) 6 games<T> 4 Tony Guerrero (MB) 10 games<T>31 J.B. Bukauskas (LG) 6 games<T>24 David Davis (OA) 10 games<L.33.1>
+11 Barry Enright (TB) 7 games<T> 7 David Sanders (TR) 8 games<T> 8 Al Alburquerque (WN) holdout<T>15 Justin Gutsie (WN) holdout<L.33.1>
+11 John Wilson (WN) 9 games<T>24 Javier Crespo (MM) 14 games<T> 3 Juan Crespo (PH) 14 games<T>31 Andy Lewis (NM) 11 games<L.33.1>
+76 Dario Agrazal (PI) 14 games<T>14 Seth Smith (CU) 7 games<T> 2 Dexter Fowler (HA) 39 games<T>26 Cole Stobbe (CI) 6 games<L.33.1>
+16 Edgar Guerrero (CO) 39 games<T>36 M.Kasowski (LA) 12 games<T>10 Justin Upton (AD) 12 games<T> 9 Edgar Cabrera (SF) 12 games<L.33.1>
+<ST.27.53.79.105><L.6.1>
+<ST.27.66.93><L.6.1>
+<Z>Trading List<C>    no players listed for trade this turn<L.36.1>
+<L.12.1>
+<Z>Free Agent Signings<C><L.36.1>
+Boston Red Sox sign FA 117 (CF), 16 Jonathan Herrera (ex-AD) for 50 LP to replace 17 Clay Zavada, net cost 0 LP<L.33.1>
+Toronto Blue Jays sign FA 115 (RF), 82 Orlando Cabrera (ex-OA) for 37 LP to replace 74 Darrin Jackson, net cost 20 LP<L.33.1>
+Cleveland Indians sign FA 146, 55 Drew Pomeranz (ex-CU) for 25 LP to replace 21 Carl Kelly, net cost 6 LP<L.33.1>
+Milwaukee Brewers sign FA 102, 70 Eric Hernandez (ex-MB) for 28 LP to replace 17 Zak Brown, net cost -3 LP<L.33.1>
+Los Angeles Angels sign FA 144 (RF), 1 Randal Grichuk (ex-LG) for 79 LP to replace 69 Nonie Williams, net cost 21 LP<L.33.1>
+Miami Marlins sign FA 120 (3B), 62 Jake Rife (ex-LG) for 91 LP to replace 12 Jorge Alfaro, net cost 83 LP<L.33.1>
+Philadelphia Phillies sign FA 122, 4 Dave Davis for 17 LP to replace 2 Joe Lewis, net cost 6 LP<L.33.1>
+Pittsburgh Pirates sign FA 114 (2B), 6 Luis Guerrero (ex-LA) for 74 LP to replace 80 Angel Ortiz, net cost 55 LP<L.33.1>
+Arizona Diamondbacks sign FA 125, 12 Alex Perez (ex-AD) for 60 LP to replace 59 Mario Gonzalez, net cost -4 LP<L.33.1>
+San Francisco Giants sign FA 140, 11 Robert Stephenson (ex-TO) for 36 LP to replace 1 Todd Walker, net cost 17 LP<L.33.1>
+<L.6.1>
+<Z>Free Agent Pool<C>  (+ indicates player will be deleted after next turn's bids have been processed)<ST.30.66.96><L.36.1>
+<Z>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<T>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<C><L.36.1>
+101  Chris Kelly (ex-TB)<T>Bat S  8 POW  LF  13  2  8  66 LP<T>102  Zak Brown (ex-MB)<T>Pit R  8 ACC       2 12 10  34 LP<L.33.1>
+103  Steve Nelson (ex-MM)<T>Bat L  8 FLD  2B  15  2  8  41 LP<T>104  <T>Pit R  7 ACC       R 17 10  18 LP<L.33.1>
+105  David Cone (ex-TO)<T>Pit R  8 ACC       4  7  9  32 LP<T>106  F.Palmeiro (ex-MM)<T>Bat R  8 FLD  RF  10  4  8  36 LP<L.33.1>
+107  Vin Mazzaro (ex-OA)<T>Pit R  9 STA      13  1  9  53 LP<T>108  Gleyber Torres (ex-NY)<T>Bat L  8 HIT  3B   4  1  8  34 LP<L.33.1>
+109  Mark Trumbo (ex-CO)<T>Bat L 10 SPD  CF  13  3 10  63 LP<T>110  James Taillon (ex-PI)<T>Pit R  8 STA       4 12 10  36 LP<L.33.1>
+111  Kelly Johnson (ex-CL)<T>Bat L  8 FLD  2B  12  3  8  52 LP<T>112  Austin Nicely (ex-CL)<T>Pit L  8 STA       9  6  9  32 LP<L.33.1>
+113  D J Lemathieu (ex-TO)<T>Bat L  8 SPD  1B  11  5  9  29 LP<T>114  Angel Ortiz (ex-PI)<T>Bat S  8 FLD  2B   9  2  8  39 LP<L.33.1>
+115  Darrin Jackson (ex-TO)<T>Bat R  8 SPD  RF   4  7  9  34 LP<T>116  Jorge Ramirez (ex-BR)<T>Pit L  9 QUI      10  3  9  57 LP<L.33.1>
+117  Clay Zavada (ex-BR)<T>Pit L 10 CON      12  6 11 100 LP<T>118+ Trevor Bauer (ex-PI)<T>Pit R 11 STA      10  9 12  68 LP<L.33.1>
+119  Javier Alou (ex-CL)<T>Bat R  8 SPD  LF   8  6  9  25 LP<T>120  Jorge Alfaro (ex-MM)<T>Cat L  6 SPD   C   R 14  8  16 LP<L.33.1>
+121  Preston Tucker (ex-LA)<T>Bat R  8 POW  RF   9  8  9  33 LP<T>122  Joe Lewis (ex-PH)<T>Pit R  7 QUI       R  5  8  22 LP<L.33.1>
+123  Carson Larue (ex-HA)<T>Pit R  8 ACC       4  0  8  23 LP<T>124  Carlos Gomez (ex-MB)<T>Bat S 10 HIT  SS  12  1 10  77 LP<L.33.1>
+125  Mario Gonzalez (ex-AD)<T>Pit R 10 CON      12  5 11  68 LP<T>126  Ivan Lopez (ex-WN)<T>Bat R  9 FLD  2B  12  5 10  61 LP<L.33.1>
+127  Hunter Brown (ex-HA)<T>Pit R  8 STA       1  3  8  25 LP<T>128  Jeff Bianchi (ex-TB)<T>Bat S  8 FLD  SS   9  5  9  55 LP<L.33.1>
+129  Mark Sappington (ex-LG)<T>Pit R 10 CON      11  4 10  73 LP<T>130  <T>Pit R  5 QUI       R 15  8  12 LP<L.33.1>
+131  Carl Johnson (ex-CI)<T>Cat L  9 SPD   C  13  2  9  38 LP<T>132  Chris Jordan (ex-CL)<T>Bat R  8 HIT  3B  10  5  9  34 LP<L.33.1>
+133+ F.Hernandez (ex-CI)<T>Pit R  8 QUI       5  6  9  26 LP<T>134  Placido Polanco (ex-WN)<T>Bat L  9 POW  1B  10  6 10  46 LP<L.33.1>
+135  Mike Abbott (ex-PI)<T>Bat R  9 HIT  1B  10  6 10  58 LP<T>136  John Thomas (ex-MT)<T>Bat R  9 HIT  LF   9  4  9  47 LP<L.33.1>
+137+ Ken Green (ex-PI)<T>Pit R  9 QUI       5  0  9  33 LP<T>138+ Pedro Ortiz (ex-NM)<T>Pit L  8 QUI       4  8  9  25 LP<L.33.1>
+139  <T>Pit R  6 STA       R 13  8  17 LP<T>140  Todd Walker (ex-SF)<T>Bat R  8 POW  CF  11  4  8  38 LP<L.33.1>
+141  Bob Robinson (ex-MM)<T>Bat R  8 SPD  CF   5  0  8  27 LP<T>142  Eric Brown (ex-CU)<T>Pit L  9 ACC      10  6 10  53 LP<L.33.1>
+143  Javier Benitez (ex-KC)<T>Pit R 10 STA      11  3 10  69 LP<T>144  Nonie Williams (ex-LG)<T>Bat L  8 HIT  CF   4 10 10  38 LP<L.33.1>
+145  Chris Iannetta (ex-CO)<T>Cat R  9 SPD   C  11  7 10  51 LP<T>146  Carl Kelly (ex-CL)<T>Pit R  8 CON       4  8  9  39 LP<L.33.1>
+147  Juan Nicasio (ex-CO)<T>Pit R 10 ACC      11  8 11  62 LP<T>148+ Mark Young (ex-SF)<T>Pit L  8 QUI      11  0  8  46 LP<L.33.1>
+<L.1.1>
+<D><E><DU>
+<BK.Turnsheet><P.70><L>
+<B>GAMEPLAN BASEBALL   MLB21   Turnsheet    21/11/20<X>      MLB21-PH<L.48.1>
+<B>Philadelphia Phillies (Alan Milnes)   Week 4<C>      Deadline: Saturday 5th December<ST.24><L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<C><L.45.1>
+Address: Ab Initio Games, 82 Scotts Lane, Bromley, Kent, BR2 0LX. Web Orders: www.softsim.co.uk<L.45.1>
+<Z>[I] Fielding Lineup    <C>Basic fielding selection for this week and batting order. Batting order should be position in batting<L.33.1>
+<Z>                       <C>order (1-9) NOT shirt number. Please only fill in CHANGES to selections.<L.45.1>
+Fielding Position:<T>    C          1B          2B          3B          SS          LF          CF          RF          DH       <L.45.1>
+Shirt Number:<T>[  22  ]    [  28  ]    [  25  ]    [  81  ]    [   5  ]    [  20  ]    [  80  ]    [   6  ]    [  29  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.45.1>
+Batting Order (1-9):<T>[   3  ]    [   6  ]    [   8  ]    [   2  ]    [   5  ]    [   4  ]    [   1  ]    [   7  ]    [   9  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.54.1>
+<Z>[B] Lineup Changes    <C>Up to three changes in selection from basic order. Give shirt numbers of player to be picked, player<L.33.1>
+<Z>                       <C>to be replaced and game (2-9) from which change applies.<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+<L.9.1>
+<Z>[P] Pitching Changes    <C>Give shirt number of pitcher and changes to MAXBATS (MxB), MAXHITS (MxH), MAXEXTRA (MxE), FIRSTINN (FIn)<L.33.1>
+<Z>                        <C>and MINBATS (MnB). Please do not fill in parameters you are not changing.<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+<L.9.1>
+<Z>[S] Pitching Selections    <C>Pitching Selections for this week's games. A pitcher cannot be selected more than once. You must have<L.33.1>
+                           at least four pitchers in your starting rotation and four pitchers in your bullpen depth chart.<L.33.1>
+                           You do not have to select a setup and closing pitcher.<L.45.1>
+Starting Rotation: <T>[  7 :      ]    [ 77 :      ]    [ <Z> 3<C> :      ]    [  8 :      ]    [ 13 :      ]    [  0 :      ]    <L.45.1>
+Bullpen Depth Chart:<T>[ 15 :      ]    [ 11 :      ]    [ 41 :      ]    [ 19 :      ]    [  9 :      ]    [  1 :      ]    <L.45.1>
+Setup Pitcher: <T>[  0 :      ]    <L.45.1>
+Closer: <T>[  0 :      ]    <L.54.1>
+<Z>[T] Training    <C>Training & Bonus Skills (HIT, POW, SPD, FLD, ACC, CON, QUI or STA), Bonus & Key Players for each series. <L.45.1>
+Series 1 at WN    [  HIT :            ]   [  POW :            ]   [  Bonus 10 :         ]   [  Key <Z>17<C> :         ]<L.45.1>
+Series 2 vs CU    [  HIT :            ]   [  POW :            ]   [  Bonus 77 :         ]   [  Key <Z>99<C> :         ]<L.45.1>
+Series 3 at LA    [  POW :            ]   [  HIT :            ]   [  Bonus 29 :         ]   [  Key <Z> 5<C> :         ]<L.45.1>
+<L.6.1>
+<Z>[X] Special Actions<L.48.1>
+<C>ACTION 1 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 2 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 3 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 4 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 5 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+<L.9.1>
+Codes are: ACCEPT, ACTIVATE, ADDFORM, ALBATTERS, ALLEADERS, ALPITCHERS, ALPLAYERS, BATTERS, BLOWINN, BLOWMARG, BUILDING, CANFULL,<L.33.1>
+CANOPP, COACH, FANS, LEADERS, LIST, LONGINN, LONGPIT, MAXLEAD, MERC, MINLEAD, MINORS, NEWPOS, NLBATTERS, NLLEADERS, NLPITCHERS, <L.33.1>
+NLPLAYERS, OFFER, PINCH1, PINCH2, PINCH3, PINCH4, PINCHDEF, PINCHINN, PITCHERS, PLATOON1, PLATOON2, PLATOON3, PLATOON4, PLAYERS, <L.33.1>
+PROMOTE, REHAB, RELEASE, RENAME, ROUNDUP, SCHEDULE, SCOUT, SETFULL, SETOPP, SIZE, STADIUM, STARTINN, STATS, SURFACE, SWAP, TRAINER<L.48.1>
+<Z>[Z] Free Agent Bid    <C>Give free agent number, shirt number of player to be replaced, amount bid for free agent and new shirt<L.33.1>
+<Z>                      <C>number and name for player signed. Bids are processed after special actions.<L.45.1>
+NUM [        ]   WAIVE [        ]   AMOUNT [        ]   SHIRT [        ]   NAME [                                          ]<L.54.1>
+<Z>[C] Payments<C>    Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty.  MLB21-PH tc= 4.6<L.48.1>
+<Z><C>AMOUNT ENCLOSED [ #      .      ]   Cheques made payable to: Ab Initio Games<L.45.1>
+Indicate any change of address in the space below.<D><E><DU>
+

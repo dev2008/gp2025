@@ -1,0 +1,1104 @@
+Delivered-To: alanscottmilnes@gmail.com
+Received: by 2002:ab0:d82:0:0:0:0:0 with SMTP id i2csp209508uak;
+        Sat, 22 Aug 2020 03:08:41 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzVOedA5x8E/BW72vsLkHYsotWk0DAwtebnqY8bnWtFdQCRJallv19RM1SnxtRhJMYMfACA
+X-Received: by 2002:a7b:c5d0:: with SMTP id n16mr7425797wmk.7.1598090920998;
+        Sat, 22 Aug 2020 03:08:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1598090920; cv=none;
+        d=google.com; s=arc-20160816;
+        b=pGwcQcytFNwtQKoqfbfdAismC+MSWrCTKcx2CK2HdE8HBkntm6F2xCuioSgcDJeKQO
+         bQrgGPqMyZvy/mhU2xbR2hjwCFUZD2wEX4yJV56ZqvxMfGQeUCamIb0GV/vFVD6ZbBek
+         EJpLIHCMijUowtv8RjaIjPVau63j1Q071h0f8PSfu85X9a8Kh0cpDbqOgJYe/oJn1R7j
+         xD09MIpX8vADCGrC3jbEUy6wSxeQ4ffCauqU87vhf4CH5Pjs37LaQaZIcMutvIjC3DIN
+         nW1w4AMMEeLBSPpgWnYx0jcNPy5GAAvgXzEbUOXxRluppp46eHRKTr7gANF4MJF+xbme
+         qTTg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:to:subject:from:message-id;
+        bh=/tKJa/e2Nms+RuTRJw0cPJjI8dgX/j6K9t4swTyMU9c=;
+        b=LYKok3WD9vbok3gU4mWbKj7C/YqQds6i6n8Ri4JB41KWugqkJSMly9pOfi4JXly3PJ
+         NqG3OTNRcsTYmQ+5HbtkgfylruSKc8JxZsZuOUPXk1j3xFFk/TBW/HNJ1mjod0/iB7XQ
+         5V4AwXAJXIESwoBUDQf0T4Ha/EEmv78DWB+8lv5asAj7wMNG7ojYDsBsMezACGeX5G0o
+         58ql3Xup5oXT6UyqQ3bg7NWUqv1tRRYJ+bLlnsOl4yUYs/WBNKLBriDFDneJVHnvGhiQ
+         UceAMBjZ8ZFk4SkplhsILad+74usMLKdcYNCEOyMsvUvGxVS32Z6NeMWdZnGFiogRyB9
+         REgg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 212.227.126.134 is neither permitted nor denied by best guess record for domain of alan@milnes7.com) smtp.mailfrom=alan@milnes7.com
+Return-Path: <alan@milnes7.com>
+Received: from mout.kundenserver.de (mout.kundenserver.de. [212.227.126.134])
+        by mx.google.com with ESMTPS id b11si4316017wrp.468.2020.08.22.03.08.40
+        for <alanscottmilnes@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 22 Aug 2020 03:08:40 -0700 (PDT)
+Received-SPF: neutral (google.com: 212.227.126.134 is neither permitted nor denied by best guess record for domain of alan@milnes7.com) client-ip=212.227.126.134;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 212.227.126.134 is neither permitted nor denied by best guess record for domain of alan@milnes7.com) smtp.mailfrom=alan@milnes7.com
+Message-ID: <5f40eea8.1c69fb81.467ac.42b2SMTPIN_ADDED_BROKEN@mx.google.com>
+X-Google-Original-Message-ID: <5ED9C5060CFEDAFC@re-prd-rgout-004.btmx-prd.synchronoss.net> (added by postmaster@btinternet.com)
+Received: from [212.227.15.41] ([212.227.15.41]) by mx.kundenserver.de
+ (mxeue009 [212.227.15.41]) with ESMTPS (Nemesis) id 1MGRav-1kQAdB0153-00GsU0
+ for <alanscottmilnes@gmail.com>; Sat, 22 Aug 2020 12:08:40 +0200
+Received: from [212.227.15.41] ([212.227.15.41]) by mx.kundenserver.de
+ (mxeue009 [212.227.15.41]) with ESMTPS (Nemesis) id 1MqcHw-1kvfQm00ye-00meKP
+ for <alan@milnes7.com>; Sat, 22 Aug 2020 12:08:40 +0200
+Received: from re-prd-fep-046.btinternet.com ([213.120.69.97]) by
+ mx.kundenserver.de (mxeue009 [212.227.15.41]) with ESMTPS (Nemesis) id
+ 1MSbDl-1k2zTa4ADx-00SviS for <GP@MILNES7.COM>; Sat, 22 Aug 2020 12:08:39
+ +0200
+Received: from re-prd-rgout-004.btmx-prd.synchronoss.net ([10.2.54.7])
+          by re-prd-fep-046.btinternet.com with ESMTP
+          id <20200822100839.BUVE4657.re-prd-fep-046.btinternet.com@re-prd-rgout-004.btmx-prd.synchronoss.net>;
+          Sat, 22 Aug 2020 11:08:39 +0100
+Authentication-Results: btinternet.com; none
+X-Originating-IP: [81.154.9.95]
+X-OWM-Source-IP: 81.154.9.95 (GB)
+X-OWM-Env-Sender: janice.shackleton@btinternet.com
+X-VadeSecure-score: verdict=clean score=0/300, class=clean
+X-RazorGate-Vade: gggruggvucftvghtrhhoucdtuddrgeduiedruddugedgvdeiucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecuueftkffvkffujffvgffngfevqffopdfqfgfvnecuuegrihhlohhuthemuceftddunecunecujfgurhephffuvfgtffesthdttddttddttdenucfhrhhomhepfdffrghnnhihucfotgevohhnnhgvlhhlfdcuoegurghnnhihsehpsghmshhpohhrthhsrdgtohhmqeenucggtffrrghtthgvrhhnpeefhfefteeitefgteehueeuiedviefffeelvdegjeehhffhhfevjeefteehjeehfeenucffohhmrghinhepphgsmhhsphhorhhtshdrtghomhdpshhofhhtshhimhdrtghordhukhdpshhlrggtkhdrtghomhenucfkphepkedurdduheegrdelrdelheenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhephhgvlhhopeffrghnnhihqdfrvedpihhnvghtpeekuddrudehgedrledrleehpdhmrghilhhfrhhomhepoegurghnnhihsehpsghmshhpohhrthhsrdgtohhmqedprhgtphhtthhopeeoiffrsefirffordfokffnpffgufejrdevqffoqedprhgtphhtthhopeeoiffrsefokffnpffgufejrdevqffoqe
+X-RazorGate-Vade-Verdict: clean 0
+X-RazorGate-Vade-Classification: clean
+Received: from Danny-PC (81.154.9.95) by re-prd-rgout-004.btmx-prd.synchronoss.net (5.8.340) (authenticated as janice.shackleton@btinternet.com)
+        id 5ED9C5060CFEDAFC; Sat, 22 Aug 2020 11:08:39 +0100
+From: "Danny McConnell" <danny@pbmsports.com>
+Subject: MLB6-AB, Turn 5
+To: GP@MILNES7.COM, GP@GPM.MILNES7.COM
+Content-Type: text/plain
+Date: Sat, 22 Aug 2020 11:08:40 +0100
+X-Spam-Flag: NO
+X-UI-Out-Filterresults: notjunk:1;V03:K0:QTI4eB6OPto=:3od99CLnFz50u1NO4ZHsIm
+ aK8FEIuelvyhbnGWxJcNWRjZ59BVq9J+yeWN/s96iY7NaxOcfkgjUynGHTKbyMP0R28EH70zm
+ p0nwQrCNEy2f//BTbqV0A1Jr5p96NGvTeA86qnFfluHxJrM7B8bBCqSSkcwSWDRylbpwg7HZH
+ lllJsT+2C/sRno/0+fxseC4RDQXLshceTQycQhYseLtZUaORuQ5gaFnhsbxfQP3zUJS0CLI8a
+ fRcX+t6MaUc9knb7HPKdEsYJ6WlHMY3PyperVnhiVqPaqi547XN6XLmCPYrq5XJ6GxEzH89bA
+ dVVOrkFd0kuT2L/mYUxQ7XWzcBTJ3BHVe3pimZEKWsHo/A8KfM/EjH6zKcPX+cXhmKhQFsXlV
+ Hmns910l1yl0va0fEGdSHvQoPiFgX+k7PL2Co1Qq9NLkdFJBgtXm1KNzhsV1X+fNGCYXTsnL6
+ cYZ1JEKnSIMTn26VCGs6GJPmWrP+KKUPPUQR5r8H1clvgjxG0fi1VIU554AZzmzvFJUaqxOy6
+ gfTyV3TgQVOWj7/1K3rrEIjYTIPF0ZX2zcsiQ4745WtmUuUJz1XFqFna+beltiwVo7F5bE8QK
+ wCtlBC+z+3z/6PAHvt9X4OROMz3ojuwPvfKdpZcd3Mqc9EOIx5ump0Tx8FXHqXxYaliov5j+m
+ aSgndA0Gz6sGToY83LrF4DR2U
+
+GP@MILNES7.COM; GP@GPM.MILNES7.COM
+0
+MLB6-AB, Turn 5
+<STARTREP>
+<BK.Team Report><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Team Report  Season 30   Week 5   22/8/20<ST.28.88.105.110><L.48.1>
+Atlanta Braves (Alan/Gordon Milnes)    <L.48.1>
+<C>Turn Credits =  6.7  (deducted 1.2, includes full reports)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Acc Con Qui Sta<T>Sqd<T>MxB MxH MxE FIn MnB<C><L.42.1>
+45  Mike Soroka<T>Pit R  10 ACC    5  11  12   0   0  12   0   63 LP   6 LP<T> WC  Go  Go  Ex <T>Act<T><T> 27   5   7   1  15<L.33.1>
+52  Bryse Wilson<T>Pit L   9 QUI    2  14  11   0  -1   5   0   43 LP   4 LP<T> Go  Go  Ex  Go <T>Act<T><T> 27   5   7   1  15<L.33.1>
+ 9  Bob Abbott<T>Pit R   8 CON    3  16  11   1   2+ -2   0   39 LP   3 LP<T> Av  Ex  Av  Go <T>Act<T><T> 21   4   6   1   1<L.33.1>
+10  Kolby Allard<T>Pit R  10 STA    6   9  11   3  -3   1   0   71 LP   7 LP<T> Ex  Go  Ex  WC <T>Act<T><T> 27   5   7   1  15<L.33.1>
+19  Aaron Blair<T>Pit R  10 CON    5   9  11   5   6  10   0   68 LP   6 LP<T> Ex  WC  Ex  Av <T>Act<T><T> 27   5   7   1  15<L.33.1>
+<L.6.1>
+11  Miguel Guillen<T>Pit R   8 CON    2   1   8   1   4  11   0   25 LP   2 LP<T> Av  Ex  Av  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+ 4  Tom Thomas<T>Pit R   8 CON    1   1   8   0  -2  -1   0   19 LP   1 LP<T> Av  Go  Av  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+12  Kyle Muller<T>Pit R   7 ACC    1  16  10   0  -1  -4   0   22 LP   2 LP<T> Go  Av  Av  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+74  Huascar Ynoa<T>Pit L   6 CON    1  14   8   0  -1   1   0   18 LP   1 LP<T> Fa  Go  Fa  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+ 5  Bob Green<T>Pit R   5 CON    R  15   8   1   5   7   0   11 LP   1 LP<T> Fa  Av  Av  Fa <T>Act<T><T> 21   4   6   1   1<L.33.1>
+<L.6.1>
+73  Matt Wisler<T>Pit R  10 ACC    6  13  12   0   0   6<Z>   2<C>   64 LP   6 LP<T> WC  Ex  Ex  Av <T>Act<T><T> 27   5   7   1  15<L.33.1>
+44  Kyle Wright<T>Pit L   8 QUI    3  16  11   0   0   2<Z>   3<C>   38 LP   3 LP<T> Go  Go  Go  Av <T>Act<T><T> 27   5   7   1  15<L.33.1>
+<L.6.1>
+<Z>Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Hit Pow Spd Fld<T>Sqd<T>Pos vRH Plt Pin<L.42.1>
+<C> 1  Ruben Rivera<T>Bat R  11 FLD    5  10  13   1   5  11   0   70 LP   7 LP<T> Ex  Ex  WC  WC <T>Act<T> 2B  2B        <L.33.1>
+23  Chris Johnson<T>Bat S  10 SPD    8   8  11   0   2   7   0   69 LP   6 LP<T> Ex  Go  WC  Av <T>Act<T> RF  DH        <L.33.1>
+ 2  Cristian Pache<T>Bat R   9 SPD    2  16  12   1   4+  9   0   30 LP   3 LP<T> Go  Av  Ex  Go <T>Act<T> LF  LF        <L.33.1>
+88  Joe Terdoslavich<T>Bat L  11 POW    9  13  13   1   6  12   0   75 LP   7 LP<T> Ex  Ex  Ex  Ex <T>Act<T> RF  CF     COF<L.33.1>
+ 3  Raul Pena<T>Bat S   9 POW   11   6  10   1   2   3   0   73 LP   7 LP<T> Ex  Ex  Av  Go <T>Act<T> 1B  3B        <L.33.1>
+53  Melky Cabrera<T>Bat L  10 HIT   12   2  10   1   7   9   0   89 LP   8 LP<T> Ex  Ex  Ex  Av <T>Act<T> RF  RF        <L.33.1>
+ 6  Tyler Flowers<T>Cat R   9 POW   12   5  10   1   3   9   0   81 LP   8 LP<T> Go  Ex  Go  Go <T>Act<T>  C   C        <L.33.1>
+25  Ozzie Albies<T>Bat R  10 HIT    4  15  13   1   3   3   0   54 LP   5 LP<T> Ex  Go  Go  Ex <T>Act<T> 1B  1B        <L.33.1>
+14  Rafael Ibanez<T>Bat L   9 FLD    7   8  10   0   5  16<Z>   6<C>   55 LP   5 LP<T> Go  Go  Go  Go <T>Act<T> SS  SS      DH<L.33.1>
+<L.6.1>
+24  Evan Gattis<T>Cat L   9 HIT    8  11  11   0   1   7   0   57 LP   5 LP<T> Ex  Ex  Go  Go <T>Act<T> CF   -        <L.33.1>
+31  Lucas Herbert<T>Cat R   8 HIT    4  12  10   0   0   0   0   42 LP   4 LP<T> Go  Go  Av  Go <T>Act<T>  C   -        <L.33.1>
+27  Dansby Swanson<T>Bat R   8 HIT    5  10  10   0  -1   3   0   45 LP   4 LP<T> Go  Go  Go  Go <T>Act<T> SS   -  SS    <L.33.1>
+13  Austin Riley<T>Bat R   8 POW    2  14  10   0   0   0   0   29 LP   2 LP<T> Av  Ex  Av  Av <T>Act<T> 1B   -        <L.33.1>
+<L.6.1>
+40  Shea Langeliers<T>Cat L   6 HIT    R  18   9   0   2   9   0   20 LP   2 LP<T> Go  Av  Av  Fa <T>Res<T>  C   -        <L.33.1>
+55  Justin Dean<T>Bat L   7 SPD    1  16  10   0   3   3   0   19 LP   1 LP<T> Av  Av  Go  Av <T>Res<T> CF   -        <L.33.1>
+91  Drew Waters<T>Bat R   5 HIT    R  19   8   0   2   7   0   13 LP   1 LP<T> Av  Av  Fa  Fa <T>Res<T> RF   -        <L.33.1>
+28  Cj Alexander<T>Bat S   5 POW    R  18   8   0   6  13   0   13 LP   1 LP<T> Fa  Av  Fa  Fa <T>Res<T> RF   -        <L.33.1>
+<L.6.1>
+Key to Ratings: Po = Poor, Fa = Fair, Av = Average, Go = Good, Ex = Excellent, WC = World Class. Pos is Primary Field Position.<ST.20.64.86.98.120><L.48.1>
+<Z>Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  45  52   9  10  19<L.36.1>
+<Z>Shirt Number:<C><T>   6  25   1   3<Z>  14<C>   2  88  53  23<T><Z>Bullpen Depth Chart:<C><T>  11   4  12  74   5<L.36.1>
+<Z>Batting Order:<C><T>   7   8   1   5   9   3   4   6   2<T><Z>Setup Pitcher:<C><T>  none<T><Z>Closing Pitcher:<C><T>  none<ST.20.32.64.86.98.120><L.36.1>
+<Z>Platoon Hitter 1:<C><T>  none<T><Z>Platoon Hitter 2:<C>  27  SS<T><Z>Opposite Hand: <C><T>  NO<T><Z>Starter Innings:<C><T>   5<T><L.36.1>
+<Z>Platoon Hitter 3:<C><T>  none<T><Z>Platoon Hitter 4:<C>  none<T><Z>Minimum Lead:<C><T>   0<T><Z>Maximum Lead:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 1:  <C><T>  none<T><Z>Pinch Hitter 2:  <C>  14  DH<T><Z>Long Relief Pitcher: <T><C>  none<T><Z>Long Innings:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 3:  <C><T>  16  DH<T><Z>Pinch Hitter 4:  <C>  88 COF<T><Z>Blowout Innings:<C><T>   7<T><Z>Blowout Margin:<C><T>   8<T><L.36.1>
+<Z>Pinch Innings: <C><T>   7<Z><T>Pinch Deficit: <C>     5<ST.32.64.86.98.120><L.45.1>
+<Z>Stadium Size:        <C>Small<T><Z>Stadium Surface:  <C>Grass<T><Z>Stadium Building:       <C>Open<ST.22.32.42.52.64.88.98.108.118><L.36.1>
+<Z>Batting Training:<C><T>HIT  4<T>POW  3<T>SPD  2<T>FLD  0<Z><T>Pitching Training:<C><T>ACC  3<T>CON  0<T>QUI  3<T>STA  0<ST.20.32.49.64.86.98.120><L.45.1>
+<Z>Losing Points:<C><T>  97<T><Z>Base Income:<C><T>  66<T><Z>Fans Income:<C><T>  28<T><Z>Stadium Income:<C><T>  15<T><L.36.1>
+<Z>Merchandise Income:<C><T>  12<T><Z>Trade Income:<C><T>   0<T><Z>Trade Costs:<C><T>   0<T><Z>Overall Costs:<C><T>  27<T><L.36.1>
+<Z>Wages Paid:<C><T> 118<T><Z>Total Fans:<C><T>  28,035<T><Z>Stadium Level:<C><T>  15<T><Z>Merchandising:<C><T> 152<T><L.36.1>
+<Z>Current Wages:<C><T> 118<T><Z>Trainer Level:<C><T>   8<T><Z>Minor League System:<C><T>   8<T><Z>Full Reports:<C><T> Yes<L.36.1>
+<Z>Postal Reports:<C><T>  No<T><Z>Email Reports:<C><T>  Text<T><Z>Email Address: <C>GP@MILNES7.COM; GP@GPM.MILNES7.COM<ST.22><L.45.1>
+<Z>Special Actions:<C><T>ADDFORM 2 for 3 weeks: OK, cost 3 LP<L.39.1>
+<T>MERC 24: OK, cost 24 LP<L.39.1>
+<T>SCOUT 130: OK, ex-SF, Bat (2B) L 9. Pt 3, Ex 10, Fm 0, TF -5, Ft 0, Val 55 LP. HIT Ex POW Go SPD Av FLD Ex<L.39.1>
+<T>SCOUT 137: OK, ex-MM, Pit R 7. Pt 14, Ex 1, Fm -1, TF -5, Val 22 LP. ACC Av CON Go QUI Av STA Go<L.39.1>
+<T>SCOUT 104: OK, Pit R 7. Pt 10, Ex 1, Fm 0, TF 0, Val 28 LP. ACC Go CON Av QUI Go STA Fa<L.39.1>
+<L.3.1>
+<Z>Free Agent Bid:<C><T>none<L.42.1>
+<Z>Injuries/Holdouts:<C><T>73 Matt Wisler - Sore Shoulder, 2 games. 44 Kyle Wright - Wrist Ligaments, 3 games. <L.33.1>
+<T>14 Rafael Ibanez - Strained Bicep, 6 games. <L.42.1>
+<ST.22.58.95><L.1.1>
+<Z>Forthcoming Series:<C><T>vs Mets. Out 26 <T>at Dodgers. Out 85 <T>vs Reds. Out none <L.42.1>
+<L.1.1>
+<D><E><P>
+<BK.Team Stats><ST.30.90.97.104><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL   MLB6  Regular Season 30 Totals   Week 5   22/8/20<L.48.1>
+Atlanta Braves  (Alan/Gordon Milnes)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.25.90.98.103.111.118.124><L.48.1>
+Individual Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+ 5 Bob Green<T>  5    0    0    5    7 1/3     6    0    0    0    2    2    1<T>  0-0<T>  1<T>  0-0<T> 12.27<T> .214<T>  0.00<L.36.1>
+73 Matt Wisler<T>  8    6    0    1   47 1/3    47   14   14    1   12   37    5<T>  4-1<T>  1<T>  5-1<T>  9.51<T> .248<T>  2.66<L.36.1>
+11 Miguel Guillen<T> 16    0    0    8   36 1/3    41   12   12    4   11   21    5<T>  4-0<T>  1<T>  0-0<T>  6.19<T> .273<T>  2.97<L.36.1>
+45 Mike Soroka<T>  9    9    3    3   65        51   22   22    5   19   57    1<T>  5-1<T>  0<T>  6-3<T>  5.82<T> .207<T>  3.05<L.36.1>
+44 Kyle Wright<T>  3    0    0    3    8 1/3     9    3    3    0    1    6    2<T>  1-0<T>  1<T>  0-0<T> 11.88<T> .264<T>  3.24<L.36.1>
+19 Aaron Blair<T> 10   10    2    2   69        67   29   29    6   25   50    7<T>  5-1<T>  0<T>  8-2<T>  9.13<T> .244<T>  3.78<L.36.1>
+52 Bryse Wilson<T>  7    7    1    1   46        50   31   30    7   17   28    5<T>  4-2<T>  0<T>  4-3<T>  7.83<T> .265<T>  5.87<L.36.1>
+ 9 Bob Abbott<T> 11    3    0    6   24 1/3    29   17   16    2   17   14    3<T>  1-3<T>  4<T>  1-2<T>  2.59<T> .284<T>  5.92<L.36.1>
+ 4 Tom Thomas<T>  9    0    0    4   14        16   10   10    0   11    4    3<T>  1-1<T>  1<T>  0-0<T>  1.29<T> .275<T>  6.43<L.36.1>
+10 Kolby Allard<T> 10   10    1    1   57 1/3    83   45   41    6   26   39    2<T>  5-4<T>  0<T>  6-4<T>  7.85<T> .325<T>  6.44<L.36.1>
+74 Huascar Ynoa<T>  7    0    0    5   12 2/3    18   11   10    4    5    7    0<T>  0-0<T>  2<T>  0-0<T> 10.66<T> .321<T>  7.11<L.36.1>
+12 Kyle Muller<T> 10    0    0    5   12 1/3    22   19   14    2    8    6    3<T>  0-2<T>  2<T>  0-0<T>  2.19<T> .372<T> 10.22<L.36.1>
+<L.9.1>
+<Z>Team Pitching<T> 45   45    7   45  401 2/3   441  214  202   38  154  271   37<T> 30-15<T> 13<T> 30-15<T>  7.28<T> .267<T>  4.53<C><L.18.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>Individual Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+23 Chris Johnson rf<T> 27  110   24   37   68   11   1   6   21    9   1   9   29   3   0   0   22    1<T>1.000<T> .336<T> .383<T> .618<L.36.1>
+ 2 C.Pache lf<T> 18   81   25   27   48   10   1   3   12    7   1   1   13   6   0   1   39    1<T>1.000<T> .333<T> .382<T> .592<L.36.1>
+88 Joe Terdoslavich rf<T> 45  199   45   65  130   22   5  11   47   11   6  13   29   8   1   0   81    0<T> .987<T> .326<T> .351<T> .653<L.36.1>
+24 Evan Gattis cf<T> 27  113   23   36   69   12   3   5   22   13   1   4    9   3   0   0   49    0<T>1.000<T> .318<T> .385<T> .610<L.36.1>
+27 Dansby Swanson ss<T> 24   98   22   31   42    8   0   1   16   15   1   0   15   4   2   2    6   14<T> .909<T> .316<T> .403<T> .428<L.36.1>
+ 6 Tyler Flowers c<T> 45  173   29   52   91   15   0   8   30   14   3   6   27   5   0   5  124   22<T>1.000<T> .300<T> .347<T> .526<L.36.1>
+53 Melky Cabrera rf<T> 45  187   36   56  118   13   2  15   48   14   5  11   30   3   2   0   47    0<T> .959<T> .299<T> .339<T> .631<L.36.1>
+14 Rafael Ibanez ss<T> 39  142   29   40   78   11   3   7   31   14   3   5   24  20   3  38   62  127<T> .984<T> .281<T> .339<T> .549<L.36.1>
+ 3 Raul Pena 1b<T> 45  180   27   46   79   12   0   7   39   20   5   1   36   5   4   8   18   94<T> .965<T> .255<T> .321<T> .438<L.36.1>
+ 1 Ruben Rivera 2b<T> 45  200   40   51   90   18   0   7   27   23   2  17   32  21   1  54   81  203<T> .996<T> .255<T> .328<T> .450<L.36.1>
+25 Ozzie Albies 1b<T> 45  167   25   41   61   14   0   2   17   18   1   6   36   6   7  57  405    9<T> .983<T> .245<T> .317<T> .365<L.36.1>
+31 Lucas Herbert c<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+13 Austin Riley 1b<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+40 Shea Langeliers c<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+55 Justin Dean cf<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+91 Drew Waters rf<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+28 Cj Alexander rf<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+<L.9.1>
+<Z>Team Batting<T> 45 1650  325  482  874  146  15  72  310  158  29  73  280  84  20  57  934  471<T> .985<T> .292<T> .348<T> .529<ST.24.78.100><L.48.1>
+Selection Orders This Turn<L.48.1>
+Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  52   9  10  19  45<L.39.1>
+<Z>Shirt Number:<C><T>   6  25   1   3  14   2  88  53  23<T><Z>Bullpen Depth Chart:<C><T>  11   4  12  74   5<L.39.1>
+<Z>Batting Order:<C><T>   7   8   1   5   9   3   4   6   2<T><Z>Setup Pitcher:<C><T>   0<L.39.1>
+<T><T><Z>Closing Pitcher:<C><T>   9<L.39.1>
+<Z>Lineup Changes:<C><T>  none ordered<L.39.1>
+<Z>Pitching Changes:<C><T>  none ordered<L.39.1>
+<Z>Training & Practice:<C><T>  Series 1: Train Skill - QUI     Bonus Skill - HIT     Bonus Player - 23     Key Player - 22<L.39.1>
+<T>  Series 2: Train Skill - QUI     Bonus Skill - HIT     Bonus Player -  9     Key Player -  8<L.39.1>
+<T>  Series 3: Train Skill - SPD     Bonus Skill - HIT     Bonus Player -  3     Key Player - 22<L.39.1>
+<ST.24.78><L.9.1>
+<Z>Enforced Selection Changes This Turn<L.48.1>
+Closer: <C><T>   9 replaced by 0: Player already selected<L.39.1>
+<Z>Key Player 1: <C><T>  22 replaced by 11: Not on active squad<L.39.1>
+<Z>Key Player 2: <C><T>   8 replaced by 66: No such player<L.39.1>
+<L.1.1>
+<D><E><DU>
+<BK.Series 1><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 1: Atlanta Braves (25-11) at Boston Red Sox (14-22)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Walker<UC> on mound. Rivera singled to RF. Rivera stole 2nd. Johnson homered to CF, Rivera scored, <Z>AB 2-0<C>. Pache ground <L.30.1>
+         out to 1B (3B). Terdoslavich ground out to 1B (2B). Pena doubled to CF. Cabrera ground out to 1B (2B).<L.33.1>
+<Z>BR  1st  <C><U>Wilson<UC> on mound. Wells flied out to SS. Iglesias flied out to CF. Betts ground out to 1B (SS).<L.33.1>
+<Z>AB  2nd  <C>Flowers struck out. Albies singled to CF. Albies forced out at 2B (SS, field save), Ibanez ground into double play at 1B <L.30.1>
+         (2B, field save).<L.33.1>
+<Z>BR  2nd  <C>Almonte flied out to 1B, field save. Sierra ground out to 1B (3B). Rindfleisch flied out to C.<L.33.1>
+<Z>AB  3rd  <C>Rivera homered to RF, <Z>AB 3-0<C>. Johnson struck out. Pache ground out to 1B (2B). Terdoslavich flied out to SS, field <L.30.1>
+         save.<L.33.1>
+<Z>BR  3rd  <C>Coats homered to CF, <Z>AB 3-1<C>. Pastornicky tripled to RF. Cabrera struck out. Wells struck out. Iglesias ground out to <L.30.1>
+         1B (2B).<L.33.1>
+<Z>AB  4th  <C>Pena struck out. Cabrera flied out to 3B. Flowers struck out.<L.33.1>
+<Z>BR  4th  <C>Betts walked. Betts stole 2nd. Almonte singled to P, Betts to 3rd. Sierra struck out. Almonte forced out at 2B (1B, <L.30.1>
+         field save), Rindfleisch ground into double play at 1B (2B, field save).<L.33.1>
+<Z>AB  5th  <C>Albies flied out to C. Ibanez walked. Rivera reached 1st, Ibanez forced out at 2B (3B). Rivera stole 2nd. Johnson ground <L.30.1>
+         out to 1B (3B).<L.33.1>
+<Z>BR  5th  <C>Coats flied out to C. Pastornicky ground out to 1B (SS). Cabrera ground out to 1B (3B).<L.33.1>
+<Z>AB  6th  <C>Pache singled, error by 1B. Terdoslavich homered to CF, Pache scored, <Z>AB 5-1<C>. Pena doubled to RF. Cabrera flied out to <L.30.1>
+         CF, Pena to 3rd. <U>Castillo<UC> took over on mound. Flowers ground out to 1B (3B, field save). Albies struck out.<L.33.1>
+<Z>BR  6th  <C>Wells ground out to 1B (SS). Iglesias singled to LF. Iglesias forced out at 2B (SS), Betts ground into double play at 1B <L.30.1>
+         (2B).<L.33.1>
+<Z>AB  7th  <C>Ibanez ground out to 1B (SS). Rivera doubled to RF. Johnson struck out. Pache doubled to LF, Rivera scored, <Z>AB 6-1<C>. <L.30.1>
+         Terdoslavich doubled to CF, Pache scored, <Z>AB 7-1<C>. Pena flied out to C.<L.33.1>
+<Z>BR  7th  <C>Almonte struck out. Sierra flied out to 3B, field save. Rindfleisch ground out to 1B (2B).<L.33.1>
+<Z>AB  8th  <C>Cabrera flied out to SS. Flowers flied out to CF, field save. Albies struck out.<L.33.1>
+<Z>BR  8th  <C>Coats doubled to RF. Pastornicky ground out to 1B (2B, field save). Cabrera doubled to CF, Coats scored, <Z>AB 7-2<C>. <L.30.1>
+         <U>Crespo<UC> pinch hitting at 3B. Crespo singled to CF, Cabrera to 3rd. Iglesias singled to CF, Cabrera scored, Crespo to 2nd, <L.30.1>
+         <Z>AB 7-3<C>. Betts homered to CF, Crespo scored, Iglesias scored, <Z>AB 7-6<C>. <U>Thomas<UC> took over on mound. Almonte struck out. <L.30.1>
+         Sierra flied out to SS.<L.33.1>
+<Z>AB  9th  <C>Ibanez ground out to 1B (2B). Rivera singled to CF. Johnson struck out. Pache ground out to 1B (2B).<L.33.1>
+<Z>BR  9th  <C>Rindfleisch singled to CF. Coats flied out to RF. Rindfleisch forced out at 2B (SS), Pastornicky ground into double play <L.30.1>
+         at 1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 2 <C>(3,0) <Z> 0 <C>(1,0d)<Z> 1 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 2 <C>(2,0) <Z> 2 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <T><Z>  7<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0d)<Z> 0 <C>(0,0) <Z> 5 <C>(5,0) <Z> 0 <C>(1,0d)<T><Z>  6<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 1 Ruben Rivera 2b<T> 5  3  4  1  0  1  1  0  0  2  0  3  0<T>23 Joe Wells 3b<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+23 Chris Johnson dh<T> 5  1  1  0  0  1  2  0  0  0  3  0  0<T>70 Jose Iglesias ss<T> 4  1  2  0  0  0  1  0  0  0  0  1  0<L.30.1>
+ 2 Cristian Pache lf<T> 5  2  1  1  0  0  1  0  0  0  0  0  0<T>50 Mookie Betts rf<T> 3  1  1  0  0  1  3  1  0  1  0  0  0<L.30.1>
+88 Joe Terdoslavich cf<T> 4  1  2  1  0  1  3  0  0  0  0  0  0<T>24 Abraham Almonte dh<T> 4  0  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+ 3 Raul Pena 3b<T> 4  0  2  2  0  0  0  0  0  0  1  0  0<T>20 Moises Sierra lf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+53 Melky Cabrera rf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T> 5 J.Rindfleisch c <T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T> 8 Buck Coats 1b<T> 4  2  2  1  0  1  1  0  0  0  0  1  1<L.30.1>
+25 Ozzie Albies 1b<T> 4  0  1  0  0  0  0  0  0  0  2  3  0<T>19 T.Pastornicky 2b<T> 4  0  1  0  1  0  0  0  0  0  0  1  0<L.30.1>
+14 Rafael Ibanez ss<T> 3  0  0  0  0  0  0  1  0  0  0  2  0<T> 7 Luis Cabrera cf<T> 3  1  1  1  0  0  1  0  0  0  1  0  0<L.30.1>
+<T><T>10 Juan Crespo 3b<T> 1  1  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>38  7 11  5  0  3  7  1  0  2  8  8  0<T>Totals<T>34  6 10  2  1  2  6  1  0  1  5  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 9 Todd Walker (l)<T> 5 1/3    7  5  4  3  1  4  3B    1<T>52 Bryse Wilson (w)<T> 7 1/3    9  6  6  2  1  4  4H    0<L.30.1>
+13 Adrian Castillo<T> 3 2/3    4  2  2  0  0  4  2     0<T> 4 Tom Thomas (s)<T> 1 2/3    1  0  0  0  0  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 2: Atlanta Braves (26-11) at Boston Red Sox (14-23)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Guillen<UC> on mound. Rivera ground out to 1B (2B). Johnson walked. Pache walked, Johnson to 2nd. Terdoslavich flied out to <L.30.1>
+         C. Pena doubled to CF, Johnson scored, Pache to 3rd, <Z>AB 1-0<C>. Cabrera ground out to 1B (3B).<L.33.1>
+<Z>BR  1st  <C><U>Abbott<UC> on mound. Wells walked. Iglesias flied out to 1B. Wells forced out at 2B (SS), Betts ground into double play at <L.30.1>
+         1B (2B).<L.33.1>
+<Z>AB  2nd  <C>Flowers struck out. Albies struck out. Ibanez flied out to C.<L.33.1>
+<Z>BR  2nd  <C>Almonte flied out to RF. Sierra flied out to C. Rindfleisch flied out to RF.<L.33.1>
+<Z>AB  3rd  <C>Rivera struck out. Johnson doubled to RF. Pache doubled to CF, Johnson scored, <Z>AB 2-0<C>. Terdoslavich walked. Pena flied <L.30.1>
+         out to LF. Cabrera flied out to C.<L.33.1>
+<Z>BR  3rd  <C>Coats singled to RF. Pedroia flied out to LF. Cabrera flied out to C. Wells flied out to C.<L.33.1>
+<Z>AB  4th  <C>Flowers ground out to 1B (3B). Albies struck out. Ibanez walked. Rivera ground out to 1B (2B).<L.33.1>
+<Z>BR  4th  <C>Iglesias homered to RF, <Z>AB 2-1<C>. Betts flied out to RF. Almonte singled, error by 3B. Sierra walked, Almonte to 2nd. <L.30.1>
+         Rindfleisch walked, Almonte to 3rd, Sierra to 2nd. Coats reached 1st, Almonte forced out at home (3B), Sierra to 3rd, <L.30.1>
+         Rindfleisch to 2nd. Pedroia ground out to 1B (2B, field save).<L.33.1>
+<Z>AB  5th  <C>Johnson singled to P. Pache singled to RF, Johnson to 3rd. Terdoslavich sacrificed to RF, Johnson scored, Pache to 2nd, <L.30.1>
+         <Z>AB 3-1<C>. Pena singled to LF, Pache to 3rd. Cabrera singled to CF, Pache scored, Pena to 2nd, <Z>AB 4-1<C>. <U>Anderson<UC> took <L.30.1>
+         over on mound. Flowers flied out to C. Albies ground out to 1B (2B).<L.33.1>
+<Z>BR  5th  <C>Cabrera doubled to CF. Wells ground out to 1B (3B). Iglesias flied out to C. Betts walked. Almonte struck out.<L.33.1>
+<Z>AB  6th  <C>Ibanez doubled to CF. Rivera singled to CF, Ibanez scored, <Z>AB 5-1<C>. Rivera stole 2nd. Johnson flied out to SS. Pache <L.30.1>
+         struck out. Terdoslavich singled to 3B, Rivera to 3rd. Pena struck out.<L.33.1>
+<Z>BR  6th  <C><U>Guillen<UC> took over on mound. Sierra flied out to RF. Rindfleisch flied out to LF. Coats doubled to LF. Pedroia ground out <L.30.1>
+         to 1B (3B).<L.33.1>
+<Z>AB  7th  <C>Cabrera doubled to RF. Cabrera stole 3rd. Flowers sacrificed to RF, Cabrera scored, <Z>AB 6-1<C>. Albies ground out to 1B <L.30.1>
+         (SS, field save). Ibanez homered to LF, <Z>AB 7-1<C>. Rivera walked. Johnson ground out to 1B (2B, field save).<L.33.1>
+<Z>BR  7th  <C>Cabrera singled to CF. <U>Crespo<UC> pinch hitting at 3B. Crespo flied out to RF. Iglesias singled to LF, Cabrera to 3rd. <L.30.1>
+         Iglesias forced out at 2B (SS), Betts ground into double play at 1B (2B).<L.33.1>
+<Z>AB  8th  <C>Pache ground out to 1B (SS). Terdoslavich struck out. Pena singled to RF. Cabrera flied out to LF, field save.<L.33.1>
+<Z>BR  8th  <C>Almonte flied out to CF. Sierra flied out to RF. Rindfleisch struck out.<L.33.1>
+<Z>AB  9th  <C>Flowers ground out to 1B (SS). Albies ground out to 1B (2B). Ibanez homered to LF, <Z>AB 8-1<C>. Rivera ground out to 1B <L.30.1>
+         (SS).<L.33.1>
+<Z>BR  9th  <C>Coats singled to RF. <U>Ibanez<UC> pinch hitting at 2B. Ibanez flied out to CF. Cabrera sacrificed to RF, Coats to 2nd. Crespo <L.30.1>
+         singled to RF, Coats scored, <Z>AB 8-2<C>. Iglesias flied out to C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 1 <C>(1,2) <Z> 0 <C>(0,0) <Z> 1 <C>(2,1) <Z> 0 <C>(0,1) <Z> 2 <C>(4,0) <Z> 1 <C>(3,0) <Z> 2 <C>(2,1) <Z> 0 <C>(1,0) <Z> 1 <C>(1,0) <T><Z>  8<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(0,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(1,2) <Z> 0 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(2,0d)<Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <T><Z>  2<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 1 Ruben Rivera 2b<T> 5  0  1  0  0  0  1  1  0  1  1  2  0<T>23 Joe Wells 3b<T> 2  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+23 Chris Johnson dh<T> 4  3  2  1  0  0  0  1  0  0  0  0  0<T>70 Jose Iglesias ss<T> 5  1  2  0  0  1  1  0  0  0  0  0  0<L.30.1>
+ 2 Cristian Pache lf<T> 4  1  2  1  0  0  1  1  0  0  1  0  0<T>50 Mookie Betts rf<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+88 Joe Terdoslavich cf<T> 3  0  1  0  0  0  1  1  1  0  1  0  0<T>24 Abraham Almonte dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 3 Raul Pena 3b<T> 5  0  3  1  0  0  1  0  0  0  1  0  1<T>20 Moises Sierra lf<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+53 Melky Cabrera rf<T> 5  1  2  1  0  0  1  0  0  1  0  0  0<T> 5 J.Rindfleisch c <T> 3  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 4  0  0  0  0  0  1  0  1  0  1  0  0<T> 8 Buck Coats 1b<T> 4  1  3  1  0  0  0  0  0  0  0  0  0<L.30.1>
+25 Ozzie Albies 1b<T> 5  0  0  0  0  0  0  0  0  0  2  2  0<T>11 Dustin Pedroia 2b<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+14 Rafael Ibanez ss<T> 4  3  3  1  0  2  2  1  0  0  0  2  0<T> 7 Luis Cabrera cf<T> 3  0  2  1  0  0  0  0  1  0  0  0  0<L.30.1>
+<T><T>10 Juan Crespo 3b<T> 2  0  1  0  0  0  1  0  0  0  0  0  0<L.30.1>
+<T><T> 6 Orlando Ibanez 2b<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>39  8 14  5  0  2  8  5  2  2  7  6  1<T>Totals<T>33  2  8  2  0  1  2  4  1  0  2  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+14 Julio Guillen (l)<T> 4 1/3    7  4  4  0  4  4  3H    2<T> 9 Bob Abbott (w)<T> 5        3  1  1  1  4  1  2B    0<L.30.1>
+15 Tony Anderson<T> 4 2/3    7  4  4  2  1  3  4     0<T>11 Miguel Guillen (s)<T> 4        5  1  1  0  0  1  2     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 3: Atlanta Braves (27-11) at Boston Red Sox (14-24)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Guzman<UC> on mound. Rivera walked. Rivera stole 2nd. Johnson struck out. Pache struck out. Terdoslavich ground out to 1B <L.30.1>
+         (2B).<L.33.1>
+<Z>BR  1st  <C><U>Allard<UC> on mound. Wells flied out to LF. Iglesias walked. Betts flied out to RF. Almonte flied out to RF.<L.33.1>
+<Z>AB  2nd  <C>Pena singled to RF. Cabrera flied out to LF. Flowers flied out to CF. Albies ground out to 1B (2B).<L.33.1>
+<Z>BR  2nd  <C>Sierra flied out to SS. Rindfleisch flied out to SS. Coats singled to RF. Pedroia singled to CF, Coats to 2nd. Cabrera <L.30.1>
+         doubled to LF, Coats scored, Pedroia scored, <Z>BR 2-0<C>. Wells doubled to RF, Cabrera scored, <Z>BR 3-0<C>. Iglesias singled <L.30.1>
+         to LF, Wells to 3rd. Betts doubled to CF, Wells scored, Iglesias to 3rd, <Z>BR 4-0<C>. Almonte struck out.<L.33.1>
+<Z>AB  3rd  <C>Ibanez ground out to 1B (3B). Rivera flied out to SS. Johnson walked. Pache flied out to 3B.<L.33.1>
+<Z>BR  3rd  <C>Sierra ground out to 1B (C). Rindfleisch flied out to SS. Coats singled to LF. Pedroia flied out to LF, field save.<L.33.1>
+<Z>AB  4th  <C>Terdoslavich doubled to LF. Pena ground out to 1B (3B). Cabrera singled to LF, Terdoslavich scored, <Z>BR 4-1<C>. Cabrera <L.30.1>
+         forced out at 2B (SS), Flowers ground into double play at 1B (2B).<L.33.1>
+<Z>BR  4th  <C>Cabrera ground out to 1B (2B, field save). Wells ground out to 1B (SS). Iglesias ground out to 1B (2B).<L.33.1>
+<Z>AB  5th  <C>Albies flied out to 3B. Ibanez singled to RF. Rivera flied out to C. Johnson flied out to LF.<L.33.1>
+<Z>BR  5th  <C>Betts walked. Almonte doubled to LF, Betts scored, <Z>BR 5-1<C>. Sierra walked. Rindfleisch singled to CF, Almonte to 3rd, <L.30.1>
+         Sierra to 2nd. Coats sacrificed to LF, Almonte scored, Sierra to 3rd, Rindfleisch to 2nd, <Z>BR 6-1<C>. Pedroia singled to <L.30.1>
+         LF, Sierra scored, Rindfleisch scored, <Z>BR 8-1<C>. Cabrera homered to LF, Pedroia scored, <Z>BR 10-1<C>. Wells struck out. <L.30.1>
+         Iglesias doubled to CF. Betts struck out.<L.33.1>
+<Z>AB  6th  <C>Pache homered to RF, <Z>BR 10-2<C>. Terdoslavich ground out to 1B (SS). Pena flied out to RF. Cabrera singled to CF. Cabrera <L.30.1>
+         stole 2nd. Flowers singled to RF, Cabrera to 3rd. <U>Eovaldi<UC> took over on mound. Albies ground out to 1B (3B).<L.33.1>
+<Z>BR  6th  <C><U>Thomas<UC> took over on mound. Almonte flied out to LF. Sierra singled to LF. Rindfleisch singled to RF, Sierra to 2nd. <L.30.1>
+         Coats flied out to CF, field save. Pedroia singled to 1B, Sierra to 3rd, Rindfleisch to 2nd. Cabrera walked, Sierra <L.30.1>
+         scored, Rindfleisch to 3rd, Pedroia to 2nd, <Z>BR 11-2<C>. <U>Muller<UC> took over on mound. Wells walked, Rindfleisch scored, <L.30.1>
+         Pedroia to 3rd, Cabrera to 2nd, <Z>BR 12-2<C>. Iglesias ground out to 1B (3B).<L.33.1>
+<Z>AB  7th  <C>Ibanez ground out to 1B (2B). Rivera struck out. Johnson flied out to CF.<L.33.1>
+<Z>BR  7th  <C>Betts flied out to LF. Almonte flied out to CF, field save. Sierra flied out to C.<L.33.1>
+<Z>AB  8th  <C>Pache singled to CF. Terdoslavich doubled to LF, Pache to 3rd. Pena struck out. Cabrera ground out to 1B (2B). Flowers <L.30.1>
+         ground out to 1B (2B).<L.33.1>
+<Z>BR  8th  <C>Rindfleisch flied out to LF. Coats walked. Pedroia walked, Coats to 2nd. Cabrera singled, error by RF, Coats to 3rd, <L.30.1>
+         Pedroia to 2nd. Wells struck out. Iglesias walked, Coats scored, Pedroia to 3rd, Cabrera to 2nd, <Z>BR 13-2<C>. Betts <L.30.1>
+         homered to CF, Pedroia scored, Cabrera scored, Iglesias scored, <Z>BR 17-2<C>. <U>Green<UC> took over on mound. Almonte singled to <L.30.1>
+         RF. Sierra singled to LF, Almonte to 3rd. Sierra stole 2nd. Rindfleisch ground out to 1B (2B).<L.33.1>
+<Z>AB  9th  <C>Albies doubled to RF. Ibanez flied out to LF. Rivera singled to CF, Albies scored, <Z>BR 17-3<C>. Rivera stole 2nd. Johnson <L.30.1>
+         struck out. Pache tripled to LF, Rivera scored, <Z>BR 17-4<C>. Terdoslavich singled, error by 1B, Pache scored, <Z>BR 17-5<C>. <L.30.1>
+         Terdoslavich stole 2nd. Terdoslavich stole 3rd. Pena ground out to 1B (3B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 1 <C>(2,0d)<Z> 0 <C>(1,0) <Z> 1 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 3 <C>(3,0) <T><Z>  5<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(0,1) <Z> 4 <C>(6,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 6 <C>(5,2) <Z> 2 <C>(3,2) <Z> 0 <C>(0,0) <Z> 5 <C>(3,3) <Z> x       <T> 17<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 1 Ruben Rivera 2b<T> 4  1  1  0  0  0  1  1  0  2  1  0  0<T>23 Joe Wells 3b<T> 5  1  1  1  0  0  2  1  0  0  2  0  0<L.30.1>
+23 Chris Johnson dh<T> 4  0  0  0  0  0  0  1  0  0  2  0  0<T>70 Jose Iglesias ss<T> 4  1  2  1  0  0  1  2  0  0  0  1  0<L.30.1>
+ 2 Cristian Pache lf<T> 5  2  3  0  1  1  2  0  0  0  1  0  0<T>50 Mookie Betts rf<T> 5  2  2  1  0  1  5  1  0  0  1  0  0<L.30.1>
+88 Joe Terdoslavich cf<T> 5  1  2  2  0  0  0  0  0  2  0  0  0<T>24 Abraham Almonte dh<T> 6  1  2  1  0  0  1  0  0  0  1  0  0<L.30.1>
+ 3 Raul Pena 3b<T> 5  0  1  0  0  0  0  0  0  0  1  0  0<T>20 Moises Sierra lf<T> 5  2  2  0  0  0  0  1  0  1  0  0  0<L.30.1>
+53 Melky Cabrera rf<T> 4  0  2  0  0  0  1  0  0  1  0  0  1<T> 5 J.Rindfleisch c <T> 6  2  2  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 8 Buck Coats 1b<T> 3  2  2  0  0  0  1  1  1  0  0  1  1<L.30.1>
+25 Ozzie Albies 1b<T> 4  1  1  1  0  0  0  0  0  0  0  0  0<T>11 Dustin Pedroia 2b<T> 4  3  3  0  0  0  2  1  0  0  0  1  0<L.30.1>
+14 Rafael Ibanez ss<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 7 Luis Cabrera cf<T> 4  3  2  1  0  1  5  1  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>39  5 12  3  1  1  4  2  0  5  5  0  1<T>Totals<T>42 17 18  5  0  2 17  8  1  1  4  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+16 Miguel Guzman (w)<T> 5 2/3    7  2  2  1  2  2  2B    2<T>10 Kolby Allard (l)<T> 5       12 10 10  1  3  3  4H    0<L.30.1>
+ 3 Nathan Eovaldi (s)<T> 3 1/3    5  3  2  0  0  3  1     0<T> 4 Tom Thomas<T>   2/3    3  2  2  0  1  0  1H    3<L.30.1>
+<T><T>12 Kyle Muller<T> 2        1  5  0  1  4  1  1H    0<L.30.1>
+<T><T> 5 Bob Green<T>   1/3    2  0  0  0  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<BK.Series 2><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 1: Los Angeles Angels (30-9) at Atlanta Braves (27-12)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+LG  1st  <C><U>Blair<UC> on mound. Jones doubled to LF. Quinlan singled to LF, Jones scored, <Z>LG 1-0<C>. Quinlan stole 2nd. Williams flied <L.30.1>
+         out to CF, field save. Baldoquin struck out. Buxton ground out to 1B (2B).<L.33.1>
+<Z>AB  1st  <C><U>Cecil<UC> on mound. Rivera doubled to LF. Johnson struck out. Pache singled to 2B, Rivera to 3rd. Terdoslavich sacrificed to <L.30.1>
+         CF, Rivera scored, Pache to 2nd, <Z>1-1<C>. Pena flied out to CF.<L.33.1>
+<Z>LG  2nd  <C>Thaiss singled to SS. Maitan struck out. Thaiss forced out at 2B (LF, field save), Callapso ground into double play at <L.30.1>
+         1B (2B, field save).<L.33.1>
+<Z>AB  2nd  <C>Cabrera homered to LF, <Z>AB 2-1<C>. Flowers flied out to C. Albies flied out to 2B. Ibanez flied out to SS.<L.33.1>
+<Z>LG  3rd  <C>Sanger flied out to SS. Jones flied out to LF. Quinlan ground out to 1B (2B).<L.33.1>
+<Z>AB  3rd  <C>Rivera flied out to SS. Johnson flied out to CF. Pache flied out to C.<L.33.1>
+<Z>LG  4th  <C>Williams flied out to C. Baldoquin homered to CF, <Z>2-2<C>. Buxton ground out to 1B (3B). Thaiss struck out.<L.33.1>
+<Z>AB  4th  <C>Terdoslavich ground out to 1B (3B). Pena doubled to LF. Cabrera struck out. Flowers flied out to C.<L.33.1>
+<Z>LG  5th  <C>Maitan singled to LF. Callapso flied out to RF. Sanger sacrificed to RF, Maitan to 2nd. Jones walked. Quinlan flied out <L.30.1>
+         to RF.<L.33.1>
+<Z>AB  5th  <C>Albies singled to 2B. Ibanez struck out. Rivera singled to CF, Albies to 2nd. Johnson struck out. Pache singled to RF, <L.30.1>
+         Albies scored, Rivera to 2nd, <Z>AB 3-2<C>. Terdoslavich flied out to SS, field save.<L.33.1>
+<Z>LG  6th  <C>Williams flied out to RF. Baldoquin flied out to C. Buxton ground out to 1B (2B).<L.33.1>
+<Z>AB  6th  <C>Pena flied out to 3B. <U>Gatto<UC> took over on mound. Cabrera walked. Flowers homered to RF, Cabrera scored, <Z>AB 5-2<C>. Albies <L.30.1>
+         ground out to 1B (2B). Ibanez struck out.<L.33.1>
+<Z>LG  7th  <C>Thaiss flied out to SS. Maitan homered to LF, <Z>AB 5-3<C>. Callapso flied out to CF. Sanger flied out to C.<L.33.1>
+<Z>AB  7th  <C>Rivera struck out. Johnson struck out. Pache struck out.<L.33.1>
+<Z>LG  8th  <C>Jones struck out. Quinlan flied out to LF. Williams flied out to C, field save.<L.33.1>
+<Z>AB  8th  <C>Terdoslavich flied out to CF. Pena ground out to 1B (2B). Cabrera singled to RF. Cabrera stole 2nd. Flowers doubled to <L.30.1>
+         CF, Cabrera scored, <Z>AB 6-3<C>. Albies flied out to LF.<L.33.1>
+<Z>LG  9th  <C>Baldoquin struck out. Buxton singled to CF. Thaiss flied out to C. Maitan flied out to C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Angels<C><T><Z> 1 <C>(2,0) <Z> 0 <C>(1,0d)<Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 1 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <T><Z>  3<C><L.33.1>
+<Z>Braves<C><T><Z> 1 <C>(2,0) <Z> 1 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(3,0) <Z> 2 <C>(1,1) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> x       <T>  6<C><ST.24.66.90><L.42.1>
+<Z>Angels Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+47 Jahmai Jones rf<T> 3  1  1  1  0  0  0  1  0  0  1  0  0<T> 1 Ruben Rivera 2b<T> 4  1  2  1  0  0  0  0  0  0  1  1  0<L.30.1>
+74 Robb Quinlan cf<T> 4  0  1  0  0  0  1  0  0  1  0  0  0<T>23 Chris Johnson dh<T> 4  0  0  0  0  0  0  0  0  0  3  0  0<L.30.1>
+66 Bernie Williams dh<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T> 2 Cristian Pache lf<T> 4  0  2  0  0  0  1  0  0  0  1  1  0<L.30.1>
+83 R.Baldoquin 2b<T> 4  1  1  0  0  1  1  0  0  0  2  0  0<T>88 Joe Terdoslavich cf<T> 3  0  0  0  0  0  1  0  1  0  0  0  0<L.30.1>
+22 Byron Buxton lf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 3 Raul Pena 3b<T> 4  0  1  1  0  0  0  0  0  0  0  0  0<L.30.1>
+24 Matt Thaiss 3b<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>53 Melky Cabrera rf<T> 3  3  2  0  0  1  1  1  0  1  1  0  0<L.30.1>
+13 Kevin Maitan ss<T> 4  1  2  0  0  1  1  0  0  0  1  0  0<T> 6 Tyler Flowers c <T> 4  1  2  1  0  1  3  0  0  0  0  0  0<L.30.1>
+ 6 Alberto Callapso 1b<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<T>25 Ozzie Albies 1b<T> 4  1  1  0  0  0  0  0  0  0  0  1  0<L.30.1>
+44 Brendan Sanger c <T> 2  0  0  0  0  0  0  0  1  0  0  0  0<T>14 Rafael Ibanez ss<T> 3  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>32  3  7  1  0  2  3  1  1  1  5  0  0<T>Totals<T>33  6 10  3  0  2  6  1  1  1  8  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Angels Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+19 Aaron Blair (w)<T> 9        7  3  3  2  1  5  4     0<T>16 Brett Cecil (l)<T> 5 1/3    7  3  3  1  0  4  2B    0<L.30.1>
+<T><T>17 Joe Gatto<T> 2 2/3    3  3  3  1  1  4  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 2: Los Angeles Angels (30-10) at Atlanta Braves (28-12)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+LG  1st  <C><U>Soroka<UC> on mound. Jones ground out to 1B (SS). Quinlan struck out. Williams struck out.<L.33.1>
+<Z>AB  1st  <C><U>Kazmir<UC> on mound. Rivera flied out to 1B. Johnson singled, error by 3B. Johnson forced out at 2B (3B), Pache ground into <L.30.1>
+         double play at 1B (2B).<L.33.1>
+<Z>LG  2nd  <C>Baldoquin struck out. Buxton ground out to 1B (3B). Thaiss homered to CF, <Z>LG 1-0<C>. Maitan homered to CF, <Z>LG 2-0<C>. <L.30.1>
+         Callapso ground out to 1B (2B).<L.33.1>
+<Z>AB  2nd  <C>Terdoslavich walked. Terdoslavich forced out at 2B (SS), Pena ground into double play at 1B (2B). Cabrera walked. <L.30.1>
+         Flowers singled to CF, Cabrera to 2nd. Albies ground out to 1B (SS).<L.33.1>
+<Z>LG  3rd  <C>Sanger flied out to 3B. Jones ground out to 1B (2B). Quinlan homered to CF, <Z>LG 3-0<C>. Williams struck out.<L.33.1>
+<Z>AB  3rd  <C>Ibanez ground out to 1B (SS). Rivera flied out to SS. Johnson singled to CF. Pache ground out to 1B (3B).<L.33.1>
+<Z>LG  4th  <C>Baldoquin doubled to CF. Buxton sacrificed to CF, Baldoquin to 3rd. Thaiss singled to CF, Baldoquin scored, <Z>LG 4-0<C>. <L.30.1>
+         Maitan doubled to LF, Thaiss to 3rd. Callapso doubled to LF, Thaiss scored, Maitan scored, <Z>LG 6-0<C>. Sanger doubled to <L.30.1>
+         RF, Callapso scored, <Z>LG 7-0<C>. Jones flied out to C. Quinlan ground out to 1B (2B).<L.33.1>
+<Z>AB  4th  <C>Terdoslavich flied out to CF. Pena flied out to SS. Cabrera homered to CF, <Z>LG 7-1<C>. Flowers singled to CF. Albies flied <L.30.1>
+         out to SS.<L.33.1>
+<Z>LG  5th  <C>Williams doubled to CF. Baldoquin sacrificed to RF, Williams to 3rd. Buxton ground out to 1B (SS). Thaiss ground out to <L.30.1>
+         1B (C).<L.33.1>
+<Z>AB  5th  <C>Ibanez ground out to 1B (2B, field save). Rivera ground out to 1B (2B). Johnson doubled to CF. Pache flied out to SS.<L.33.1>
+<Z>LG  6th  <C>Maitan doubled to RF. Callapso ground out to 1B (SS, field save). Sanger flied out to RF, Maitan to 3rd. <U>Guillen<UC> took <L.30.1>
+         over on mound. Jones struck out.<L.33.1>
+<Z>AB  6th  <C>Terdoslavich flied out to LF. Pena ground out to 1B (3B). Cabrera flied out to CF.<L.33.1>
+<Z>LG  7th  <C>Quinlan walked. Quinlan forced out at 2B (SS), Williams ground into double play at 1B (2B). Baldoquin flied out to CF.<L.33.1>
+<Z>AB  7th  <C>Flowers flied out to CF. Albies flied out to SS. Ibanez singled to 2B. Rivera singled to RF, Ibanez to 2nd. Johnson <L.30.1>
+         singled to LF, Ibanez scored, Rivera to 3rd, <Z>LG 7-2<C>. <U>Sabathia<UC> took over on mound. Pache ground out to 1B (2B).<L.33.1>
+<Z>LG  8th  <C>Buxton flied out to RF, field save. Thaiss struck out. Maitan flied out to 1B.<L.33.1>
+<Z>AB  8th  <C>Terdoslavich homered to RF, <Z>LG 7-3<C>. Pena singled to CF. Cabrera singled to LF, Pena to 3rd. <U>Rodriguez<UC> took over on <L.30.1>
+         mound. Flowers walked, Cabrera to 2nd. Albies reached 1st, Pena forced out at home (3B), Cabrera to 3rd, Flowers to 2nd. <L.30.1>
+         Ibanez sacrificed to CF, Cabrera scored, Flowers to 3rd, Albies to 2nd, <Z>LG 7-4<C>. Rivera walked. <U>Sandoval<UC> took over on <L.30.1>
+         mound. Johnson singled to LF, Flowers scored, Albies to 3rd, Rivera to 2nd, <Z>LG 7-5<C>. Pache ground out to 1B (2B, field <L.30.1>
+         save).<L.33.1>
+<Z>LG  9th  <C>Callapso struck out. Sanger ground out to 1B (2B, field save). Jones singled to CF. Quinlan singled to LF, Jones to 2nd. <L.30.1>
+         Williams struck out.<L.33.1>
+<Z>AB  9th  <C>Terdoslavich ground out to 1B (2B). Pena walked. Cabrera flied out to C. Flowers homered to CF, Pena scored, <Z>7-7<C>. <L.30.1>
+         Albies ground out to 1B (3B).<L.33.1>
+<Z>LG 10th  <C>Baldoquin struck out. Buxton struck out. Thaiss walked. Maitan flied out to RF.<L.33.1>
+<Z>AB 10th  <C><U>Canning<UC> took over on mound. Ibanez walked. Rivera flied out to LF. Johnson tripled to CF, Ibanez scored, <Z>AB 8-7<C>.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Angels<C><T><Z> 0 <C>(0,0) <Z> 2 <C>(2,0) <Z> 1 <C>(1,0) <Z> 4 <C>(5,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1d)<Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,1) <T><Z>  7<C><L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,0d)<Z> 0 <C>(1,2d)<Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,0) <Z> 3 <C>(4,2) <Z> 2 <C>(1,1) <Z> 1 <C>(1,1) <T><Z>  8<C><ST.24.66.90><L.42.1>
+<Z>Angels Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+47 Jahmai Jones rf<T> 5  0  1  0  0  0  0  0  0  0  1  0  0<T> 1 Ruben Rivera 2b<T> 5  0  1  0  0  0  0  1  0  0  0  1  0<L.30.1>
+74 Robb Quinlan cf<T> 4  1  2  0  0  1  1  1  0  0  1  0  0<T>23 Chris Johnson dh<T> 6  0  5  1  1  0  3  0  0  0  0  0  0<L.30.1>
+66 Bernie Williams dh<T> 5  0  1  1  0  0  0  0  0  0  3  0  0<T> 2 Cristian Pache lf<T> 5  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+83 R.Baldoquin 2b<T> 4  1  1  1  0  0  0  0  1  0  2  2  0<T>88 Joe Terdoslavich cf<T> 4  1  1  0  0  1  1  1  0  0  0  0  0<L.30.1>
+22 Byron Buxton lf<T> 4  0  0  0  0  0  0  0  1  0  1  0  0<T> 3 Raul Pena 3b<T> 4  1  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+24 Matt Thaiss 3b<T> 4  2  2  0  0  1  2  1  0  0  1  1  1<T>53 Melky Cabrera rf<T> 4  2  2  0  0  1  1  1  0  0  0  0  0<L.30.1>
+13 Kevin Maitan ss<T> 5  2  3  2  0  1  1  0  0  0  0  1  0<T> 6 Tyler Flowers c <T> 4  2  3  0  0  1  2  1  0  0  0  0  0<L.30.1>
+ 6 Alberto Callapso 1b<T> 4  1  1  1  0  0  2  0  0  0  1  2  0<T>25 Ozzie Albies 1b<T> 5  0  0  0  0  0  0  0  0  0  0  1  0<L.30.1>
+44 Brendan Sanger c <T> 4  0  1  1  0  0  1  0  0  0  0  0  0<T>14 Rafael Ibanez ss<T> 3  2  1  0  0  0  1  1  1  0  0  1  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>39  7 12  6  0  3  7  2  2  0 10  6  1<T>Totals<T>40  8 14  1  1  3  8  6  1  0  0  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Angels Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+45 Mike Soroka<T> 5 2/3   10  7  7  3  0  4  3B    1<T> 7 Scott Kazmir<T> 6 2/3    8  2  2  1  2  0  3B    2<L.30.1>
+11 Miguel Guillen (w)<T> 4 1/3    2  0  0  0  2  6  2     0<T>27 C.C. Sabathia<T>   1/3    3  2  2  1  0  0  0H    2<L.30.1>
+<T><T>68 Chris Rodriguez<T>   2/3    0  1  1  0  2  0  0H    3<L.30.1>
+<T><T>15 P.Sandoval<T> 1 1/3    2  2  2  1  1  0  2H    0<L.30.1>
+<T><T>19 Griffin Canning (l)<T>   1/3    1  1  1  0  1  0  0     0<L.30.1>
+<T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 3: Los Angeles Angels (30-11) at Atlanta Braves (29-12)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+LG  1st  <C><U>Wilson<UC> on mound. Jones struck out. Quinlan flied out to LF, field save. Williams walked. Baldoquin singled to LF, <L.30.1>
+         Williams to 2nd. Buxton flied out to RF, field save.<L.33.1>
+<Z>AB  1st  <C><U>Miller<UC> on mound. Rivera ground out to 1B (SS). Johnson flied out to C. Pache singled to CF. Terdoslavich ground out to <L.30.1>
+         1B (C).<L.33.1>
+<Z>LG  2nd  <C>Thaiss singled to RF. Maitan struck out. Callapso homered to CF, Thaiss scored, <Z>LG 2-0<C>. Sanger flied out to RF. Jones <L.30.1>
+         flied out to LF.<L.33.1>
+<Z>AB  2nd  <C>Pena ground out to 1B (2B). Cabrera flied out to SS. Flowers singled to 3B. Albies ground out to 1B (C).<L.33.1>
+<Z>LG  3rd  <C>Quinlan struck out. Williams walked. Baldoquin flied out to LF, field save. Buxton doubled to RF, Williams scored, <L.30.1>
+         <Z>LG 3-0<C>. Thaiss flied out to CF.<L.33.1>
+<Z>AB  3rd  <C>Swanson flied out to C. Rivera flied out to SS. Johnson struck out.<L.33.1>
+<Z>LG  4th  <C>Maitan walked. Callapso struck out. Sanger flied out to LF, Maitan to 2nd. Jones walked. Quinlan singled to CF, Maitan <L.30.1>
+         to 3rd, Jones to 2nd. Williams ground out to 1B (SS).<L.33.1>
+<Z>AB  4th  <C>Pache struck out. Terdoslavich flied out to CF. Pena singled to CF. Cabrera flied out to CF, field save.<L.33.1>
+<Z>LG  5th  <C>Baldoquin struck out. Buxton struck out. Thaiss ground out to 1B (3B).<L.33.1>
+<Z>AB  5th  <C>Flowers flied out to CF. Albies ground out to 1B (2B). Swanson flied out to CF.<L.33.1>
+<Z>LG  6th  <C>Maitan flied out to CF. Callapso singled to CF. Sanger flied out to C. <U>Thomas<UC> took over on mound. Jones flied out to C.<L.33.1>
+<Z>AB  6th  <C>Rivera flied out to RF. Johnson singled to 1B. Johnson forced out at 2B (SS), Pache ground into double play at 1B (2B).<L.33.1>
+<Z>LG  7th  <C>Quinlan flied out to C. Williams walked. Williams forced out at 2B (SS), Baldoquin ground into double play at 1B (2B).<L.33.1>
+<Z>AB  7th  <C>Terdoslavich flied out to CF. Pena walked. Cabrera flied out to SS. Flowers singled to RF, Pena to 3rd. Albies ground <L.30.1>
+         out to 1B (SS).<L.33.1>
+<Z>LG  8th  <C>Buxton ground out to 1B (2B). Thaiss singled to RF. Maitan singled to CF, Thaiss to 2nd. Callapso sacrificed to CF, <L.30.1>
+         Thaiss to 3rd, Maitan to 2nd. Sanger walked. Jones tripled to CF, Thaiss scored, Maitan scored, Sanger scored, <Z>LG 6-0<C>. <L>
+         <U>Muller<UC> took over on mound. Quinlan struck out.<L.33.1>
+<Z>AB  8th  <C>Swanson struck out. Rivera ground out to 1B (2B). Johnson ground out to 1B (C).<L.33.1>
+<Z>LG  9th  <C>Williams doubled to CF. Baldoquin homered to RF, Williams scored, <Z>LG 8-0<C>. Buxton struck out. Thaiss flied out to 2B, <L.30.1>
+         field save. Maitan singled to CF. Callapso ground out to 1B (SS).<L.33.1>
+<Z>AB  9th  <C>Pache doubled to LF. Terdoslavich singled to SS, Pache to 3rd. <U>Buchholz<UC> took over on mound. Pena doubled to RF, Pache <L.30.1>
+         scored, Terdoslavich scored, <Z>LG 8-2<C>. Cabrera flied out to RF, field save. Flowers struck out. Albies struck out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Angels<C><T><Z> 0 <C>(1,1) <Z> 2 <C>(2,0) <Z> 1 <C>(1,1) <Z> 0 <C>(1,2) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1d)<Z> 3 <C>(3,1) <Z> 2 <C>(3,0) <T><Z>  8<C><L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0d)<Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 2 <C>(3,0) <T><Z>  2<C><ST.24.66.90><L.42.1>
+<Z>Angels Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+47 Jahmai Jones rf<T> 4  0  1  0  1  0  3  1  0  0  1  0  0<T> 1 Ruben Rivera 2b<T> 4  0  0  0  0  0  0  0  0  0  0  1  0<L.30.1>
+74 Robb Quinlan cf<T> 5  0  1  0  0  0  0  0  0  0  2  0  0<T>23 Chris Johnson dh<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+66 Bernie Williams dh<T> 2  2  1  1  0  0  0  3  0  0  0  0  0<T> 2 Cristian Pache lf<T> 4  1  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+83 R.Baldoquin 2b<T> 5  1  2  0  0  1  2  0  0  0  1  1  0<T>88 Joe Terdoslavich cf<T> 4  1  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+22 Byron Buxton lf<T> 5  0  1  1  0  0  1  0  0  0  2  0  0<T> 3 Raul Pena 3b<T> 3  0  2  1  0  0  2  1  0  0  0  0  0<L.30.1>
+24 Matt Thaiss 3b<T> 5  2  2  0  0  0  0  0  0  0  0  0  0<T>53 Melky Cabrera rf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+13 Kevin Maitan ss<T> 4  1  2  0  0  0  0  1  0  0  1  1  0<T> 6 Tyler Flowers c <T> 4  0  2  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 6 Alberto Callapso 1b<T> 4  1  2  0  0  1  2  0  1  0  1  1  0<T>25 Ozzie Albies 1b<T> 4  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+44 Brendan Sanger c <T> 3  1  0  0  0  0  0  1  0  0  0  0  0<T>27 Dansby Swanson ss<T> 3  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>37  8 12  2  1  2  8  6  1  0  8  3  0<T>Totals<T>34  2  8  2  0  0  2  1  0  0  5  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Angels Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+52 Bryse Wilson (l)<T> 5 2/3    6  3  3  1  4  6  3B    1<T> 1 Andrew Miller (w)<T> 8        7  2  2  0  1  3  3B    2<L.30.1>
+ 4 Tom Thomas<T> 2        3  3  3  0  2  0  1H    1<T> 9 Clay Buchholz<T> 1        1  0  0  0  0  2  0     0<L.30.1>
+12 Kyle Muller<T> 1 1/3    3  2  2  1  0  2  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Series 3><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 1: Atlanta Braves (29-13) at Milwaukee Brewers (14-28)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Washington<UC> on mound. Rivera ground out to 1B (2B). Johnson flied out to CF. Pache flied out to SS.<L.33.1>
+<Z>MB  1st  <C><U>Abbott<UC> on mound. Kelly singled to LF. Kelly stole 2nd. Young singled to RF, Kelly scored, <Z>MB 1-0<C>. Sanders flied out to <L.30.1>
+         C. Cabrera doubled to RF, Young scored, <Z>MB 2-0<C>. Martinez ground out to 1B (SS). Jordan ground out to 1B (C).<L.33.1>
+<Z>AB  2nd  <C>Terdoslavich ground out to 1B (SS, field save). Pena flied out to RF. Cabrera doubled to CF. Flowers flied out to 3B.<L.33.1>
+<Z>MB  2nd  <C>Ibanez struck out. Abbott struck out. Sanchez struck out.<L.33.1>
+<Z>AB  3rd  <C>Albies singled to RF. Albies stole 2nd. Ibanez ground out to 1B (C). Rivera struck out. Johnson struck out.<L.33.1>
+<Z>MB  3rd  <C>Kelly walked. Young struck out. Sanders struck out. Cabrera doubled to LF, Kelly to 3rd. Martinez ground out to 1B (3B).<L.33.1>
+<Z>AB  4th  <C>Pache ground out to 1B (3B, field save). Terdoslavich flied out to 1B. Pena flied out to C.<L.33.1>
+<Z>MB  4th  <C>Jordan flied out to LF. Ibanez walked. Ibanez forced out at 2B (C), Abbott ground into double play at 1B (2B).<L.33.1>
+<Z>AB  5th  <C>Cabrera flied out to LF. Flowers flied out to RF. Albies doubled to CF. Albies stole 3rd. Ibanez struck out.<L.33.1>
+<Z>MB  5th  <C>Sanchez ground out to 1B (3B). Kelly walked. Kelly stole 2nd. Young flied out to SS. Sanders singled to CF, Kelly to 3rd. <L.30.1>
+         Cabrera doubled to LF, Kelly scored, Sanders to 3rd, <Z>MB 3-0<C>. Martinez ground out to 1B (2B).<L.33.1>
+<Z>AB  6th  <C>Rivera singled to LF. Johnson reached 1st, Rivera forced out at 2B (3B). Pache struck out. <U>Guillen<UC> took over on mound. <L.30.1>
+         Johnson stole 2nd. Terdoslavich flied out to C.<L.33.1>
+<Z>MB  6th  <C><U>Ynoa<UC> took over on mound. Jordan ground out to 1B (3B). Ibanez walked. Abbott flied out to CF, Ibanez to 2nd. Sanchez <L.30.1>
+         flied out to C.<L.33.1>
+<Z>AB  7th  <C>Pena struck out. Cabrera homered to RF, <Z>MB 3-1<C>. Flowers flied out to CF. Albies flied out to LF.<L.33.1>
+<Z>MB  7th  <C>Kelly walked. Young walked, Kelly to 2nd. Sanders flied out to C. Cabrera doubled to RF, Kelly scored, Young scored, <L.30.1>
+         <Z>MB 5-1<C>. Martinez homered to LF, Cabrera scored, <Z>MB 7-1<C>. <U>Green<UC> took over on mound. Jordan flied out to RF, field save. <L.30.1>
+         Ibanez doubled to RF. Abbott ground out to 1B (2B).<L.33.1>
+<Z>AB  8th  <C>Ibanez flied out to CF. Rivera flied out to CF. Johnson singled, error by 2B. Pache doubled to RF, Johnson scored, <L.30.1>
+         <Z>MB 7-2<C>. Terdoslavich singled to RF, Pache scored, <Z>MB 7-3<C>. Pena ground out to 1B (2B).<L.33.1>
+<Z>MB  8th  <C>Sanchez ground out to 1B (3B). Kelly doubled to CF. Young walked. Sanders struck out. Cabrera ground out to 1B (3B).<L.33.1>
+<Z>AB  9th  <C>Cabrera flied out to C. Flowers struck out. Albies flied out to C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 1 <C>(1,0) <Z> 2 <C>(2,0) <Z> 0 <C>(0,0) <T><Z>  3<C><L.33.1>
+<Z>Brewers<C><T><Z> 2 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,1d)<Z> 1 <C>(2,1) <Z> 0 <C>(0,1) <Z> 4 <C>(3,2) <Z> 0 <C>(1,1) <Z> x       <T>  7<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Brewers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 1 Ruben Rivera 2b<T> 4  0  1  0  0  0  0  0  0  0  1  1  0<T> 2 Bill Kelly 2b<T> 2  3  2  1  0  0  0  3  0  2  0  0  1<L.30.1>
+23 Chris Johnson dh<T> 4  1  0  0  0  0  0  0  0  1  1  0  0<T>28 Micheal Young ss<T> 3  2  1  0  0  0  1  2  0  0  1  0  0<L.30.1>
+ 2 Cristian Pache lf<T> 4  1  1  1  0  0  1  0  0  0  1  0  0<T>22 Scott Sanders c <T> 5  0  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+88 Joe Terdoslavich cf<T> 4  0  1  0  0  0  1  0  0  0  0  0  0<T>30 F.Cabrera lf<T> 5  1  4  4  0  0  4  0  0  0  0  0  0<L.30.1>
+ 3 Raul Pena 3b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>12 F.Martinez 3b<T> 4  1  1  0  0  1  2  0  0  0  0  0  0<L.30.1>
+53 Melky Cabrera rf<T> 4  1  2  1  0  1  1  0  0  0  0  0  0<T>17 Mark Jordan cf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 4  0  0  0  0  0  0  0  0  0  1  1  0<T> 4 Juan Ibanez dh<T> 2  0  1  1  0  0  0  2  0  0  1  0  0<L.30.1>
+25 Ozzie Albies 1b<T> 4  0  2  1  0  0  0  0  0  2  0  1  0<T>10 Jack Abbott 1b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+14 Rafael Ibanez ss<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<T> 9 Tony Sanchez rf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>35  3  7  3  0  1  3  0  0  3  6  3  0<T>Totals<T>33  7 10  6  0  1  7  7  0  2  6  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Brewers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+21 J.Washington (w)<T> 5 2/3    4  0  0  0  0  4  1B    1<T> 9 Bob Abbott (l)<T> 5        6  3  3  0  3  5  3B    0<L.30.1>
+ 5 Julio Guillen (s)<T> 3 1/3    3  3  1  1  0  2  2     0<T>74 Huascar Ynoa<T> 1 1/3    2  4  4  1  3  0  1H    0<L.30.1>
+<T><T> 5 Bob Green<T> 1 2/3    2  0  0  0  1  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 2: Atlanta Braves (29-14) at Milwaukee Brewers (15-28)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Williams<UC> on mound. Rivera doubled to CF. Johnson flied out to CF, Rivera to 3rd. Pache struck out. Terdoslavich doubled <L.30.1>
+         to LF, Rivera scored, <Z>AB 1-0<C>. Pena doubled to RF, Terdoslavich scored, <Z>AB 2-0<C>. Cabrera singled to LF, Pena to 3rd. <L.30.1>
+         Flowers ground out to 1B (3B, field save).<L.33.1>
+<Z>MB  1st  <C><U>Allard<UC> on mound. Kelly homered to RF, <Z>AB 2-1<C>. Young struck out. Sanders flied out to C. Cabrera flied out to C.<L.33.1>
+<Z>AB  2nd  <C>Albies flied out to C. Swanson ground out to 1B (2B). Rivera ground out to 1B (SS).<L.33.1>
+<Z>MB  2nd  <C>Martinez struck out. Jordan doubled to CF. Ibanez homered to LF, Jordan scored, <Z>MB 3-2<C>. Abbott walked. Sanchez doubled <L.30.1>
+         to LF, Abbott scored, <Z>MB 4-2<C>. Kelly flied out to LF. Young walked. Sanders walked, Sanchez to 3rd, Young to 2nd. <L.30.1>
+         Cabrera singled, error by 1B, Sanchez scored, Young to 3rd, Sanders to 2nd, <Z>MB 5-2<C>. Martinez walked, Young scored, <L.30.1>
+         Sanders to 3rd, Cabrera to 2nd, <Z>MB 6-2<C>. Jordan ground out to 1B (3B).<L.33.1>
+<Z>AB  3rd  <C>Johnson singled to CF. Johnson stole 2nd. Pache flied out to 2B. Terdoslavich flied out to C. Pena walked. Cabrera <L.30.1>
+         singled, error by 1B, Johnson scored, Pena to 3rd, <Z>MB 6-3<C>. Flowers ground out to 1B (3B, field save).<L.33.1>
+<Z>MB  3rd  <C>Ibanez struck out. Abbott struck out. Sanchez singled to 2B. Kelly homered to LF, Sanchez scored, <Z>MB 8-3<C>. Young flied <L.30.1>
+         out to 1B.<L.33.1>
+<Z>AB  4th  <C>Albies flied out to CF. Swanson ground out to 1B (C). Rivera doubled to RF. Johnson walked. Pache ground out to 1B (2B).<L.33.1>
+<Z>MB  4th  <C>Sanders ground out to 1B (SS). Cabrera singled to LF. Martinez singled to LF, Cabrera to 2nd. Jordan singled to SS, <L.30.1>
+         Cabrera to 3rd, Martinez to 2nd. Ibanez doubled to LF, Cabrera scored, Martinez scored, Jordan to 3rd, <Z>MB 10-3<C>. Abbott <L.30.1>
+         ground out to 1B (C). Sanchez doubled to LF, Jordan scored, Ibanez scored, <Z>MB 12-3<C>. Kelly ground out to 1B (2B).<L.33.1>
+<Z>AB  5th  <C>Terdoslavich struck out. Pena flied out to C. Cabrera ground out to 1B (2B).<L.33.1>
+<Z>MB  5th  <C>Young flied out to SS. Sanders flied out to C. Cabrera singled, error by SS. Martinez struck out.<L.33.1>
+<Z>AB  6th  <C><U>Ordonez<UC> took over on mound. Flowers struck out. Albies struck out. Swanson walked. Rivera ground out to 1B (2B).<L.33.1>
+<Z>MB  6th  <C><U>Guillen<UC> took over on mound. Jordan singled to LF. Ibanez singled to CF, Jordan to 3rd. Abbott walked, Ibanez to 2nd. <L.30.1>
+         Sanchez struck out. Kelly reached 1st, Jordan forced out at home (SS), Ibanez to 3rd, Abbott to 2nd. Young ground out to <L.30.1>
+         1B (2B).<L.33.1>
+<Z>AB  7th  <C>Johnson doubled to LF. Pache struck out. Terdoslavich ground out to 1B (3B). Pena ground out to 1B (3B).<L.33.1>
+<Z>MB  7th  <C>Sanders doubled to RF. Cabrera flied out to CF. Martinez flied out to LF. Jordan ground out to 1B (2B).<L.33.1>
+<Z>AB  8th  <C>Cabrera singled to CF. Flowers flied out to RF. Albies singled to RF, Cabrera to 2nd. Cabrera stole 3rd. Albies forced <L.30.1>
+         out at 2B (SS), Swanson ground into double play at 1B (2B).<L.33.1>
+<Z>MB  8th  <C>Ibanez singled to CF. Abbott struck out. Sanchez doubled to LF, Ibanez to 3rd. Kelly doubled to CF, Ibanez scored, <L.30.1>
+         Sanchez scored, <Z>MB 14-3<C>. Young flied out to 2B. Sanders ground out to 1B (SS).<L.33.1>
+<Z>AB  9th  <C>Rivera struck out. Johnson singled to CF. Johnson stole 2nd. Pache ground out to 1B (2B). Terdoslavich flied out to 2B.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 2 <C>(4,0) <Z> 0 <C>(0,0) <Z> 1 <C>(1,1) <Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(2,0d)<Z> 0 <C>(1,0) <T><Z>  3<C><L.33.1>
+<Z>Brewers<C><T><Z> 1 <C>(1,0) <Z> 5 <C>(3,4) <Z> 2 <C>(2,0) <Z> 4 <C>(5,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,1) <Z> 0 <C>(1,0) <Z> 2 <C>(3,0) <Z> x       <T> 14<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Brewers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 1 Ruben Rivera 2b<T> 5  1  2  2  0  0  0  0  0  0  1  0  0<T> 2 Bill Kelly 2b<T> 6  2  3  1  0  2  5  0  0  0  0  1  0<L.30.1>
+23 Chris Johnson dh<T> 4  1  3  1  0  0  0  1  0  2  0  0  0<T>28 Micheal Young ss<T> 5  1  0  0  0  0  0  1  0  0  1  1  0<L.30.1>
+ 2 Cristian Pache lf<T> 5  0  0  0  0  0  0  0  0  0  2  0  0<T>22 Scott Sanders c <T> 5  0  1  1  0  0  0  1  0  0  0  0  0<L.30.1>
+88 Joe Terdoslavich cf<T> 5  1  1  1  0  0  1  0  0  0  1  0  0<T>30 F.Cabrera lf<T> 5  1  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 3 Raul Pena 3b<T> 3  0  1  1  0  0  1  1  0  0  0  0  0<T>12 F.Martinez 3b<T> 4  1  1  0  0  0  1  1  0  0  2  0  0<L.30.1>
+53 Melky Cabrera rf<T> 4  0  2  0  0  0  0  0  0  1  0  0  0<T>17 Mark Jordan cf<T> 5  2  3  1  0  0  0  0  0  0  0  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T> 4 Juan Ibanez dh<T> 5  3  4  1  0  1  4  0  0  0  1  0  0<L.30.1>
+25 Ozzie Albies 1b<T> 4  0  1  0  0  0  0  0  0  0  1  0  1<T>10 Jack Abbott 1b<T> 3  1  0  0  0  0  0  2  0  0  2  1  1<L.30.1>
+27 Dansby Swanson ss<T> 3  0  0  0  0  0  0  1  0  0  0  0  1<T> 9 Tony Sanchez rf<T> 5  3  4  3  0  0  3  0  0  0  1  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>37  3 10  5  0  0  2  3  0  3  6  0  2<T>Totals<T>43 14 17  7  0  3 13  5  0  0  7  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Brewers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+14 Jim Williams (w)<T> 5        6  3  2  0  2  2  3B    0<T>10 Kolby Allard (l)<T> 5       11 12 10  3  4  5  4B    0<L.30.1>
+29 Alex Ordonez (s)<T> 4        4  0  0  0  1  4  2     0<T>11 Miguel Guillen<T> 3        6  2  2  0  1  2  2     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6   Season 30   Week 5 of 18   22/8/20<L.54.1>
+Game 3: Atlanta Braves (29-15) at Milwaukee Brewers (16-28)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+AB  1st  <C><U>Sanchez<UC> on mound. Rivera struck out. Johnson struck out. Pache flied out to C.<L.33.1>
+<Z>MB  1st  <C><U>Blair<UC> on mound. Kelly walked. Young flied out to LF. Sanders reached 1st, Kelly forced out at 2B (3B). Cabrera ground <L.30.1>
+         out to 1B (2B, field save).<L.33.1>
+<Z>AB  2nd  <C>Terdoslavich singled, error by SS. Pena walked, Terdoslavich to 2nd. Cabrera struck out. Flowers singled to LF, <L.30.1>
+         Terdoslavich scored, Pena to 2nd, <Z>AB 1-0<C>. Albies doubled to CF, Pena scored, Flowers to 3rd, <Z>AB 2-0<C>. Ibanez singled <L.30.1>
+         to LF, Flowers scored, Albies scored, <Z>AB 4-0<C>. Rivera flied out to LF. Johnson flied out to C.<L.33.1>
+<Z>MB  2nd  <C>Martinez flied out to CF. Jordan flied out to C. Ibanez flied out to RF.<L.33.1>
+<Z>AB  3rd  <C>Pache singled to P. Terdoslavich flied out to C. Pena singled to CF, Pache to 2nd. Cabrera doubled to LF, Pache scored, <L.30.1>
+         Pena to 3rd, <Z>AB 5-0<C>. Flowers ground out to 1B (2B). Albies doubled to CF, Pena scored, Cabrera scored, <Z>AB 7-0<C>. <L.30.1>
+         Ibanez ground out to 1B (3B).<L.33.1>
+<Z>MB  3rd  <C>Abbott struck out. Sanchez flied out to CF. Kelly walked. Young struck out.<L.33.1>
+<Z>AB  4th  <C>Rivera flied out to 3B. Johnson struck out. Pache ground out to 1B (3B).<L.33.1>
+<Z>MB  4th  <C>Sanders ground out to 1B (2B). Cabrera ground out to 1B (2B). Martinez singled to CF. Jordan singled to P, Martinez to <L.30.1>
+         2nd. Martinez stole 3rd. Ibanez singled to CF, Martinez scored, Jordan to 2nd, <Z>AB 7-1<C>. Abbott ground out to 1B (C).<L.33.1>
+<Z>AB  5th  <C>Terdoslavich tripled to CF. Pena sacrificed to CF, Terdoslavich scored, <Z>AB 8-1<C>. Cabrera singled to CF. Cabrera forced <L.30.1>
+         out at 2B (SS), Flowers ground into double play at 1B (2B).<L.33.1>
+<Z>MB  5th  <C>Sanchez ground out to 1B (SS). Kelly doubled to RF. Young ground out to 1B (3B). Sanders struck out.<L.33.1>
+<Z>AB  6th  <C><U>Crespo<UC> took over on mound. Albies singled to RF. Albies stole 2nd. Ibanez flied out to RF. Rivera singled to RF, Albies <L.30.1>
+         to 3rd. Rivera stole 2nd. Johnson sacrificed to LF, Albies scored, Rivera to 3rd, <Z>AB 9-1<C>. Pache ground out to 1B (SS).<L.33.1>
+<Z>MB  6th  <C>Cabrera flied out to CF. Martinez flied out to C. Jordan flied out to RF.<L.33.1>
+<Z>AB  7th  <C>Terdoslavich singled to LF. Terdoslavich stole 2nd. Pena flied out to 3B. Cabrera singled to RF, Terdoslavich scored, <L.30.1>
+         <Z>AB 10-1<C>. Flowers singled, error by SS, Cabrera to 2nd. Albies reached 1st, Cabrera forced out at 3B (SS, field save), <L.30.1>
+         Flowers to 2nd. Ibanez struck out.<L.33.1>
+<Z>MB  7th  <C>Ibanez walked. <U>Thompson<UC> pinch hitting at 1B. Thompson flied out to RF, Ibanez to 2nd. Sanchez ground out to 1B (3B). <L.30.1>
+         Kelly flied out to CF.<L.33.1>
+<Z>AB  8th  <C>Rivera ground out to 1B (3B). Johnson singled, error by 2B. Pache walked, Johnson to 2nd. Terdoslavich flied out to LF. <L.30.1>
+         Pena homered to RF, Johnson scored, Pache scored, <Z>AB 13-1<C>. Cabrera homered to LF, <Z>AB 14-1<C>. Flowers struck out.<L.33.1>
+<Z>MB  8th  <C><U>Rodriguez<UC> pinch hitting at SS. Rodriguez flied out to C. Sanders ground out to 1B (2B). Cabrera ground out to 1B (SS).<L.33.1>
+<Z>AB  9th  <C>Albies flied out to RF. Ibanez walked. Ibanez stole 2nd. Rivera flied out to 1B. Johnson homered to CF, Ibanez scored, <L.30.1>
+         <Z>AB 16-1<C>. Pache flied out to CF.<L.33.1>
+<Z>MB  9th  <C>Martinez ground out to 1B (SS). <U>Green<UC> took over on mound. Jordan struck out. Ibanez flied out to C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Braves<C><T><Z> 0 <C>(0,0) <Z> 4 <C>(3,1) <Z> 3 <C>(4,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0d)<Z> 1 <C>(2,0) <Z> 1 <C>(2,0) <Z> 4 <C>(2,1) <Z> 2 <C>(1,1) <T><Z> 16<C><L.33.1>
+<Z>Brewers<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 1 <C>(3,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  1<C><ST.24.66.90><L.42.1>
+<Z>Braves Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Brewers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 1 Ruben Rivera 2b<T> 6  0  1  0  0  0  0  0  0  1  1  0  0<T> 2 Bill Kelly 2b<T> 2  0  1  1  0  0  0  2  0  0  0  1  1<L.30.1>
+23 Chris Johnson dh<T> 5  2  1  0  0  1  3  0  1  0  2  0  0<T>28 Micheal Young ss<T> 3  0  0  0  0  0  0  0  0  0  1  1  2<L.30.1>
+ 2 Cristian Pache lf<T> 5  2  1  0  0  0  0  1  0  0  0  0  0<T>22 Scott Sanders c <T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+88 Joe Terdoslavich cf<T> 5  3  2  0  1  0  0  0  0  1  0  0  0<T>30 F.Cabrera lf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 3 Raul Pena 3b<T> 3  3  2  0  0  1  4  1  1  0  0  0  0<T>12 F.Martinez 3b<T> 4  1  1  0  0  0  0  0  0  1  0  0  0<L.30.1>
+53 Melky Cabrera rf<T> 5  2  4  1  0  1  3  0  0  0  1  0  0<T>17 Mark Jordan cf<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 6 Tyler Flowers c <T> 5  1  1  0  0  0  1  0  0  0  1  0  0<T> 4 Juan Ibanez dh<T> 3  0  1  0  0  0  1  1  0  0  0  0  0<L.30.1>
+25 Ozzie Albies 1b<T> 5  2  3  2  0  0  3  0  0  1  0  0  0<T>10 Jack Abbott 1b<T> 2  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+14 Rafael Ibanez ss<T> 4  1  1  0  0  0  2  1  0  1  1  0  0<T> 9 Tony Sanchez rf<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<T><T>23 David Thompson 1b<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<T><T>16 F.Rodriguez ss<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>43 16 16  3  1  3 16  3  2  4  6  0  0<T>Totals<T>31  1  4  1  0  0  1  3  0  1  4  3  3<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Brewers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Braves Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+19 Tony Sanchez (l)<T> 5        9  8  7  0  1  4  3B    0<T>19 Aaron Blair (w)<T> 8 1/3    4  1  1  0  3  3  5F    0<L.30.1>
+13 Roberto Crespo<T> 4        7  8  4  3  2  2  4     0<T> 5 Bob Green<T>   2/3    0  0  0  0  0  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Results Summary><P.70><B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB6  Season 30  Week 5 Results   22/8/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<ST.27.63.90.126><L.1.1>
+<U>Interleague Games<UC><L.48.1>
+<C><Z>MARLINS 3<C> (12h, 3bb)<T>11 Williams (4, 1r 6h 1bb)<T><Z>Blue Jays 0<C> (5h, 2bb)<T>56 Bugg (9, 0r 5h 2bb)<L.36.1>
+<Z>MARLINS 3<C> (7h, 7bb)<T>84 Devereaux (5 2/3, 2r 3h 5bb)<T><Z>Blue Jays 1<C> (4h, 3bb)<T>22 Del Orbe (9, 1r 4h 3bb)<L.36.1>
+<Z>MARLINS 15<C> (17h, 4bb)<T> 6 Jones (4, 7r 6h 3bb)<T><Z>Blue Jays 0<C> (3h, 4bb)<T> 1 Suggs (9, 0r 3h 4bb)<L.36.1>
+<L.9.1>
+<Z>BRAVES 7<C> (11h, 1bb)<T> 9 Walker (5 1/3, 5r 7h 1bb)<T><Z>Red Sox 6<C> (10h, 1bb)<T>52 Wilson (7 1/3, 6r 9h 1bb)<L.36.1>
+<Z>BRAVES 8<C> (14h, 5bb)<T>14 Guillen (4 1/3, 4r 7h 4bb)<T><Z>Red Sox 2<C> (8h, 4bb)<T> 9 Abbott (5, 1r 3h 4bb)<L.36.1>
+<Z>Braves 5<C> (12h, 2bb)<T>16 Guzman (5 2/3, 2r 7h 2bb)<T><Z>RED SOX 17<C> (18h, 8bb)<T>10 Allard (5, 10r 12h 3bb)<L.36.1>
+<L.9.1>
+<Z>Cubs 3<C> (12h, 2bb)<T>21 Perez (5 1/3, 2r 6h 0bb)<T><Z>TWINS 5<C> (10h, 3bb)<T>10 Martinez (6, 1r 3h 2bb)<L.36.1>
+<Z>Cubs 3<C> (8h, 1bb)<T>17 Hope (5 1/3, 3r 7h 0bb)<T><Z>TWINS 12<C> (18h, 4bb)<T>27 Jones (3 2/3, 8r 10h 2bb)<L.36.1>
+<Z>Cubs 1<C> (6h, 5bb)<T>10 Harris (5 2/3, 1r 4h 4bb)<T><Z>TWINS 8<C> (11h, 4bb)<T>18 Lewis (3, 4r 5h 3bb)<L.36.1>
+<L.9.1>
+<Z>PIRATES 3<C> (9h, 0bb)<T>18 Sierra (7 2/3, 3r 8h 0bb)<T><Z>White Sox 2<C> (6h, 1bb)<T> 5 Billingsley (6 2/3, 2r 4h 1bb)<L.36.1>
+<Z>Pirates 4<C> (9h, 5bb)<T>29 Robinson (6, 1r 3h 3bb)<T><Z>WHITE SOX 15<C> (16h, 7bb)<T>51 Rodriguez (3 2/3, 6r 6h 1bb)<L.36.1>
+<Z>PIRATES 9<C> (15h, 5bb)<T>24 Robinson (3, 3r 4h 3bb)<T><Z>White Sox 4<C> (8h, 3bb)<T>70 Ortega (5, 2r 4h 1bb)<L.36.1>
+<L.9.1>
+<Z>Diamondbacks 0<C> (2h, 1bb)<T>27 Green (9, 0r 2h 1bb)<T><Z>ATHLETICS 1<C> (2h, 0bb)<T>15 Gonzalez (8, 1r 2h 0bb)<L.36.1>
+<Z>Diamondbacks 7<C> (12h, 3bb)<T> 3 Alou (4, 5r 7h 3bb)<T><Z>ATHLETICS 8<C> (10h, 2bb)<T>10 Ortiz (5, 5r 4h 2bb)<L.36.1>
+<Z>Diamondbacks 2<C> (9h, 4bb)<T>19 Rodriguez (5, 2r 5h 3bb)<T><Z>ATHLETICS 4<C> (10h, 3bb)<T>13 Lopez (5, 2r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Dodgers 2<C> (4h, 0bb)<T> 7 Kazmir (9, 2r 4h 0bb)<T><Z>ANGELS 5<C> (9h, 3bb)<T> 7 Mendoza (6, 5r 7h 2bb)<L.36.1>
+<Z>Dodgers 5<C> (10h, 2bb)<T> 1 Miller (6 1/3, 4r 5h 2bb)<T><Z>ANGELS 6<C> (12h, 3bb)<T>10 Bedrosian (6, 4r 8h 2bb)<T>10 inn<L.36.1>
+<Z>Dodgers 4<C> (9h, 3bb)<T>55 Soler (5, 4r 6h 3bb)<T><Z>ANGELS 7<C> (8h, 2bb)<T>36 Jones (5 2/3, 7r 8h 1bb)<L.36.1>
+<L.9.1>
+<Z>Mets 2<C> (7h, 2bb)<T>12 Davis (5, 2r 7h 1bb)<T><Z>RAYS 3<C> (10h, 4bb)<T> 2 Brown (5, 1r 4h 2bb)<L.36.1>
+<Z>Mets 1<C> (5h, 4bb)<T> 4 Jordan (7, 1r 4h 3bb)<T><Z>RAYS 2<C> (5h, 2bb)<T>11 Ordonez (6 2/3, 1r 3h 1bb)<L.36.1>
+<Z>Mets 0<C> (7h, 2bb)<T> 9 Washington (5 2/3, 0r 5h 1bb)<T><Z>RAYS 8<C> (11h, 4bb)<T>25 Ordonez (4 2/3, 3r 6h 1bb)<L.36.1>
+<L.9.1>
+<Z>PHILLIES 3<C> (14h, 5bb)<T>77 Sikkema (5 2/3, 2r 7h 2bb)<T><Z>Yankees 2<C> (7h, 2bb)<T>28 Anderson (5 2/3, 2r 6h 1bb)<L.36.1>
+<Z>Phillies 5<C> (10h, 2bb)<T>26 Abbott (6 1/3, 4r 7h 2bb)<T><Z>YANKEES 12<C> (11h, 4bb)<T>12 Crawford (5 1/3, 6r 6h 2bb)<L.36.1>
+<Z>Phillies 2<C> (10h, 0bb)<T> 1 Jackson (8, 2r 9h 0bb)<T><Z>YANKEES 11<C> (12h, 6bb)<T> 5 Santiago (4 2/3, 6r 8h 2bb)<L.36.1>
+<L.9.1>
+<Z>CARDINALS 4<C> (9h, 3bb)<T> 8 Lowrie (6, 1r 5h 2bb)<T><Z>Indians 3<C> (10h, 5bb)<T> 6 Washington (4 1/3, 2r 5h 4bb)<L.36.1>
+<Z>Cardinals 8<C> (14h, 8bb)<T>32 Thomas (6, 0r 6h 2bb)<T><Z>INDIANS 9<C> (10h, 2bb)<T> 8 Benitez (5 2/3, 6r 6h 2bb)<L.36.1>
+<Z>Cardinals 5<C> (14h, 1bb)<T>43 Toussaint (4 1/3, 3r 8h 0bb)<T><Z>INDIANS 11<C> (17h, 5bb)<T>30 Robinson (3 1/3, 7r 11h 2bb)<L.36.1>
+<L.9.1>
+<Z>REDS 6<C> (11h, 4bb)<T>18 Guzman (5, 6r 10h 2bb)<T><Z>Brewers 1<C> (5h, 2bb)<T> 2 Sierra (8 1/3, 1r 5h 2bb)<L.36.1>
+<Z>REDS 6<C> (12h, 4bb)<T>21 Washington (5, 2r 7h 2bb)<T><Z>Brewers 2<C> (9h, 1bb)<T>72 Rijo (6, 1r 5h 1bb)<L.36.1>
+<Z>REDS 3<C> (8h, 1bb)<T>14 Williams (5, 3r 8h 0bb)<T><Z>Brewers 2<C> (7h, 2bb)<T> 6 Benitez (6 1/3, 0r 4h 2bb)<L.36.1>
+<L.9.1>
+<Z>Giants 4<C> (13h, 7bb)<T> 1 Castillo (3 1/3, 3r 6h 5bb)<T><Z>MARINERS 8<C> (10h, 7bb)<T> 6 Sanders (4 1/3, 4r 6h 1bb)<L.36.1>
+<Z>Giants 0<C> (6h, 2bb)<T>24 Cordero (6 1/3, 0r 5h 2bb)<T><Z>MARINERS 2<C> (9h, 4bb)<T>22 Walker (4 2/3, 1r 6h 2bb)<L.36.1>
+<Z>Giants 0<C> (5h, 5bb)<T>53 Benoit (5 1/3, 0r 4h 4bb)<T><Z>MARINERS 1<C> (4h, 2bb)<T> 7 Abbott (6 2/3, 0r 3h 2bb)<L.36.1>
+<L.9.1>
+<Z>Padres 1<C> (4h, 4bb)<T> 2 Cruz (7 2/3, 1r 4h 3bb)<T><Z>RANGERS 6<C> (7h, 2bb)<T>15 Nieves (3 1/3, 4r 6h 0bb)<L.36.1>
+<Z>Padres 4<C> (11h, 2bb)<T> 9 Dolsi (3 2/3, 3r 7h 0bb)<T><Z>RANGERS 5<C> (9h, 3bb)<T>99 Noble (6, 3r 6h 1bb)<T>10 inn<L.36.1>
+<Z>PADRES 1<C> (6h, 3bb)<T>17 Jordan (6 1/3, 1r 5h 3bb)<T><Z>Rangers 0<C> (9h, 3bb)<T>19 Bolivar (4 1/3, 0r 7h 2bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Cubs 5<C> (10h, 4bb)<T>18 Sierra (3 2/3, 4r 5h 3bb)<T><Z>BLUE JAYS 6<C> (10h, 2bb)<T>11 Delgado (3 1/3, 5r 8h 2bb)<L.36.1>
+<Z>Cubs 1<C> (3h, 2bb)<T>17 Abbott (7 2/3, 1r 3h 1bb)<T><Z>BLUE JAYS 3<C> (9h, 2bb)<T>25 Cordero (4 2/3, 3r 6h 1bb)<L.36.1>
+<Z>CUBS 2<C> (7h, 3bb)<T>11 Williams (5 1/3, 0r 4h 1bb)<T><Z>Blue Jays 1<C> (5h, 3bb)<T>10 Martinez (5 2/3, 0r 3h 2bb)<L.36.1>
+<L.9.1>
+<Z>Giants 5<C> (13h, 3bb)<T>31 Jansson (4, 1r 6h 3bb)<T><Z>RAYS 8<C> (13h, 6bb)<T>29 Green (3, 6r 9h 4bb)<L.36.1>
+<Z>GIANTS 9<C> (12h, 2bb)<T>12 Davis (4 1/3, 5r 6h 1bb)<T><Z>Rays 5<C> (10h, 3bb)<T>21 Thomas (5 1/3, 0r 3h 2bb)<L.36.1>
+<Z>GIANTS 3<C> (6h, 5bb)<T> 4 Jordan (7 2/3, 3r 6h 4bb)<T><Z>Rays 0<C> (8h, 3bb)<T> 6 Sanders (4 2/3, 0r 4h 2bb)<L.36.1>
+<L.9.1>
+<Z>Diamondbacks 2<C> (6h, 2bb)<T>16 Green (8 2/3, 2r 6h 1bb)<T><Z>TWINS 4<C> (12h, 2bb)<T> 4 Sanchez (5, 4r 9h 2bb)<L.36.1>
+<Z>Diamondbacks 4<C> (11h, 4bb)<T> 2 Ramirez (5 1/3, 1r 6h 2bb)<T><Z>TWINS 21<C> (19h, 8bb)<T>26 Palmeiro (5, 18r 14h 7bb)<L.36.1>
+<Z>Diamondbacks 3<C> (8h, 5bb)<T>21 Perez (4 2/3, 1r 3h 3bb)<T><Z>TWINS 13<C> (15h, 3bb)<T>15 Gonzalez (5, 13r 12h 3bb)<L.36.1>
+<L.9.1>
+<Z>PIRATES 5<C> (9h, 1bb)<T>17 Jordan (4 1/3, 5r 6h 1bb)<T><Z>Red Sox 2<C> (5h, 3bb)<T> 2 Locke (6, 2r 4h 3bb)<L.36.1>
+<Z>Pirates 3<C> (4h, 4bb)<T>26 Brooks (6, 3r 4h 3bb)<T><Z>RED SOX 7<C> (11h, 2bb)<T>11 Glasnow (4 2/3, 6r 9h 0bb)<L.36.1>
+<Z>Pirates 5<C> (12h, 2bb)<T> 9 Walker (3, 4r 8h 2bb)<T><Z>RED SOX 8<C> (12h, 1bb)<T> 5 Billingsley (5, 5r 9h 1bb)<L.36.1>
+<L.9.1>
+<Z>Padres 7<C> (12h, 1bb)<T>14 Dayton (6, 5r 8h 0bb)<T><Z>YANKEES 11<C> (11h, 6bb)<T>20 Harris (3, 8r 8h 4bb)<L.36.1>
+<Z>Padres 0<C> (5h, 5bb)<T> 4 Lopez (6 2/3, 0r 5h 5bb)<T><Z>YANKEES 5<C> (9h, 4bb)<T>23 Rivera (4 2/3, 4r 6h 3bb)<L.36.1>
+<Z>Padres 3<C> (9h, 3bb)<T>77 Sikkema (5 2/3, 2r 6h 3bb)<T><Z>YANKEES 9<C> (10h, 6bb)<T>15 Nieves (3, 2r 3h 3bb)<L.36.1>
+<L.9.1>
+<Z>Dodgers 6<C> (8h, 6bb)<T>26 Jackson (7 1/3, 3r 6h 2bb)<T><Z>WHITE SOX 11<C> (16h, 3bb)<T>85 May (6, 3r 7h 2bb)<L.36.1>
+<Z>DODGERS 10<C> (13h, 6bb)<T>15 Pena (3 1/3, 6r 5h 3bb)<T><Z>White Sox 5<C> (9h, 1bb)<T>51 Maurer (6 1/3, 5r 8h 1bb)<L.36.1>
+<Z>DODGERS 9<C> (16h, 6bb)<T>18 Sierra (4 1/3, 6r 10h 4bb)<T><Z>White Sox 1<C> (3h, 4bb)<T> 7 Mendoza (6, 1r 2h 4bb)<L.36.1>
+<L.9.1>
+<D><E><P>
+<B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB6  Season 30  Week 5 Results   22/8/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<U>Interleague Games<UC><L.48.1>
+<C><Z>Indians 5<C> (9h, 4bb)<T>24 Pena (4, 3r 6h 3bb)<T><Z>METS 10<C> (14h, 5bb)<T> 2 Thompson (3, 6r 6h 3bb)<L.36.1>
+<Z>INDIANS 7<C> (16h, 7bb)<T>21 Young (5 1/3, 4r 9h 4bb)<T><Z>Mets 0<C> (1h, 3bb)<T> 8 Lowrie (7 2/3, 0r 1h 3bb)<L.36.1>
+<Z>INDIANS 10<C> (15h, 5bb)<T> 2 Brown (4, 1r 6h 0bb)<T><Z>Mets 4<C> (11h, 5bb)<T>32 Thomas (4 2/3, 2r 6h 4bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 2<C> (6h, 3bb)<T>19 Jackson (6 1/3, 2r 5h 2bb)<T><Z>MARLINS 7<C> (11h, 2bb)<T>16 Gonzalez (4, 4r 8h 0bb)<L.36.1>
+<Z>ATHLETICS 7<C> (12h, 6bb)<T>40 Lilek (5 1/3, 4r 9h 0bb)<T><Z>Marlins 6<C> (12h, 3bb)<T>18 Kelly (5 1/3, 4r 7h 3bb)<L.36.1>
+<Z>Athletics 2<C> (8h, 1bb)<T>56 Bugg (7, 2r 7h 1bb)<T><Z>MARLINS 3<C> (12h, 3bb)<T>27 Green (5 2/3, 3r 8h 3bb)<L.36.1>
+<L.9.1>
+<Z>Mariners 1<C> (10h, 2bb)<T>61 Maness (5 2/3, 0r 6h 1bb)<T><Z>CARDINALS 3<C> (8h, 7bb)<T>58 Scribner (3 1/3, 3r 6h 7bb)<L.36.1>
+<Z>Mariners 2<C> (6h, 3bb)<T>25 Kelly (6 2/3, 1r 3h 2bb)<T><Z>CARDINALS 7<C> (11h, 4bb)<T>19 Rivera (4 1/3, 5r 7h 2bb)<L.36.1>
+<Z>MARINERS 10<C> (15h, 4bb)<T> 6 Washington (4 2/3, 4r 4h 2bb)<T><Z>Cardinals 4<C> (9h, 2bb)<T> 1 Castillo (6, 4r 8h 1bb)<L.36.1>
+<L.9.1>
+<Z>Brewers 2<C> (7h, 2bb)<T>10 Guillen (6, 2r 6h 1bb)<T><Z>PHILLIES 3<C> (6h, 3bb)<T>19 Sanchez (6, 1r 4h 2bb)<L.36.1>
+<Z>BREWERS 8<C> (17h, 4bb)<T>40 May (4 1/3, 2r 7h 1bb)<T><Z>Phillies 3<C> (7h, 4bb)<T>25 Diaz (5 2/3, 3r 6h 2bb)<T>12 inn<L.36.1>
+<Z>Brewers 1<C> (5h, 2bb)<T>28 Anderson (6 1/3, 1r 3h 1bb)<T><Z>PHILLIES 7<C> (14h, 2bb)<T>18 Guzman (5 2/3, 3r 8h 1bb)<L.36.1>
+<L.9.1>
+<Z>Angels 3<C> (7h, 1bb)<T>19 Blair (9, 3r 7h 1bb)<T><Z>BRAVES 6<C> (10h, 1bb)<T>16 Cecil (5 1/3, 3r 7h 0bb)<L.36.1>
+<Z>Angels 7<C> (12h, 2bb)<T>45 Soroka (5 2/3, 7r 10h 0bb)<T><Z>BRAVES 8<C> (14h, 6bb)<T> 7 Kazmir (6 2/3, 2r 8h 2bb)<T>10 inn<L.36.1>
+<Z>ANGELS 8<C> (12h, 6bb)<T>52 Wilson (5 2/3, 3r 6h 4bb)<T><Z>Braves 2<C> (8h, 1bb)<T> 1 Miller (8, 2r 7h 1bb)<L.36.1>
+<L.9.1>
+<Z>Rangers 1<C> (4h, 6bb)<T>36 Soto (6 1/3, 1r 3h 4bb)<T><Z>REDS 2<C> (5h, 7bb)<T> 3 Rasmussen (6 2/3, 2r 4h 5bb)<L.36.1>
+<Z>Rangers 3<C> (7h, 3bb)<T>33 Browning (6, 2r 6h 2bb)<T><Z>REDS 4<C> (12h, 1bb)<T> 2 Cruz (6 2/3, 2r 9h 1bb)<L.36.1>
+<Z>Rangers 4<C> (7h, 1bb)<T> 2 Sierra (6 1/3, 4r 7h 1bb)<T><Z>REDS 5<C> (8h, 1bb)<T> 9 Dolsi (6, 5r 7h 1bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Mets 2<C> (6h, 4bb)<T>24 Cordero (6 1/3, 2r 3h 3bb)<T><Z>MARINERS 3<C> (7h, 2bb)<T>11 Ordonez (5 2/3, 3r 6h 1bb)<L.36.1>
+<Z>Mets 3<C> (6h, 4bb)<T>53 Benoit (4 2/3, 1r 4h 3bb)<T><Z>MARINERS 4<C> (5h, 4bb)<T>25 Ordonez (4 2/3, 3r 4h 3bb)<L.36.1>
+<Z>METS 7<C> (11h, 3bb)<T>58 Scribner (3, 7r 10h 0bb)<T><Z>Mariners 2<C> (7h, 1bb)<T>24 Pena (5 2/3, 2r 5h 1bb)<L.36.1>
+<L.9.1>
+<Z>MARLINS 5<C> (12h, 3bb)<T>20 Pena (3 1/3, 4r 7h 1bb)<T><Z>Indians 4<C> (8h, 2bb)<T>22 Del Orbe (5 1/3, 4r 7h 2bb)<L.36.1>
+<Z>MARLINS 8<C> (9h, 5bb)<T>43 Toussaint (4 1/3, 5r 5h 3bb)<T><Z>Indians 1<C> (3h, 0bb)<T> 1 Suggs (9, 1r 3h 0bb)<L.36.1>
+<Z>Marlins 6<C> (12h, 4bb)<T> 2 Thompson (5 2/3, 4r 7h 2bb)<T><Z>INDIANS 7<C> (13h, 7bb)<T>19 Jackson (4 2/3, 1r 4h 3bb)<T>11 inn<L.36.1>
+<L.9.1>
+<Z>Cardinals 5<C> (7h, 2bb)<T> 3 Alou (5, 2r 3h 1bb)<T><Z>ATHLETICS 6<C> (9h, 3bb)<T> 8 Benitez (5, 4r 6h 1bb)<L.36.1>
+<Z>CARDINALS 7<C> (9h, 5bb)<T>19 Rodriguez (4, 7r 6h 5bb)<T><Z>Athletics 3<C> (7h, 2bb)<T>30 Robinson (3 2/3, 2r 4h 1bb)<L.36.1>
+<Z>CARDINALS 8<C> (13h, 3bb)<T>16 Gonzalez (4, 7r 9h 3bb)<T><Z>Athletics 1<C> (5h, 1bb)<T>61 Maness (6 1/3, 1r 4h 1bb)<L.36.1>
+<L.9.1>
+<Z>Phillies 1<C> (5h, 4bb)<T>17 Jordan (6 2/3, 1r 4h 3bb)<T><Z>RANGERS 7<C> (12h, 2bb)<T>12 Crawford (5, 4r 7h 1bb)<L.36.1>
+<Z>Phillies 1<C> (8h, 2bb)<T> 3 Rasmussen (5 1/3, 1r 6h 2bb)<T><Z>RANGERS 2<C> (8h, 1bb)<T> 5 Santiago (6, 1r 6h 0bb)<L.36.1>
+<Z>Phillies 2<C> (10h, 3bb)<T> 2 Cruz (7, 2r 9h 0bb)<T><Z>RANGERS 8<C> (9h, 3bb)<T>10 Guillen (5, 6r 7h 2bb)<L.36.1>
+<L.9.1>
+<Z>Braves 3<C> (7h, 0bb)<T>21 Washington (5 2/3, 0r 4h 0bb)<T><Z>BREWERS 7<C> (10h, 7bb)<T> 9 Abbott (5, 3r 6h 3bb)<L.36.1>
+<Z>Braves 3<C> (10h, 3bb)<T>14 Williams (5, 3r 6h 2bb)<T><Z>BREWERS 14<C> (17h, 5bb)<T>10 Allard (5, 12r 11h 4bb)<L.36.1>
+<Z>BRAVES 16<C> (16h, 3bb)<T>19 Sanchez (5, 8r 9h 1bb)<T><Z>Brewers 1<C> (4h, 3bb)<T>19 Blair (8 1/3, 1r 4h 3bb)<L.36.1>
+<L.9.1>
+<Z>Reds 1<C> (11h, 0bb)<T>55 Soler (5 2/3, 1r 7h 0bb)<T><Z>ANGELS 9<C> (12h, 3bb)<T>72 Rijo (3, 4r 5h 2bb)<L.36.1>
+<Z>Reds 1<C> (6h, 0bb)<T>16 Cecil (9, 1r 6h 0bb)<T><Z>ANGELS 5<C> (12h, 2bb)<T> 6 Benitez (5 1/3, 2r 5h 2bb)<L.36.1>
+<Z>Reds 2<C> (7h, 3bb)<T> 7 Kazmir (7 1/3, 2r 7h 3bb)<T><Z>ANGELS 8<C> (13h, 5bb)<T>36 Soto (6, 1r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Blue Jays 5<C> (10h, 8bb)<T>10 Ortiz (5, 4r 7h 6bb)<T><Z>DIAMONDBACKS 9<C> (11h, 4bb)<T>84 Devereaux (5, 5r 7h 2bb)<L.36.1>
+<Z>Blue Jays 3<C> (4h, 5bb)<T>13 Lopez (5 2/3, 3r 2h 4bb)<T><Z>DIAMONDBACKS 4<C> (10h, 6bb)<T> 6 Jones (3 2/3, 4r 7h 3bb)<L.36.1>
+<Z>Blue Jays 3<C> (7h, 4bb)<T> 4 Sanchez (5 2/3, 2r 6h 2bb)<T><Z>DIAMONDBACKS 5<C> (14h, 4bb)<T>18 Sierra (3 2/3, 1r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Rays 2<C> (4h, 6bb)<T>27 Jones (5 2/3, 2r 3h 2bb)<T><Z>CUBS 3<C> (10h, 2bb)<T> 9 Washington (5, 1r 4h 2bb)<T>11 inn<L.36.1>
+<Z>RAYS 11<C> (17h, 9bb)<T>18 Lewis (3, 6r 7h 5bb)<T><Z>Cubs 2<C> (6h, 4bb)<T>31 Jansson (5 2/3, 1r 3h 2bb)<L.36.1>
+<Z>Rays 4<C> (3h, 8bb)<T>11 Delgado (5, 0r 1h 4bb)<T><Z>CUBS 10<C> (11h, 3bb)<T>12 Davis (4, 8r 8h 3bb)<L.36.1>
+<L.9.1>
+<Z>TWINS 7<C> (13h, 4bb)<T>22 Walker (4 2/3, 3r 8h 1bb)<T><Z>Giants 6<C> (10h, 5bb)<T>17 Hope (5 1/3, 3r 6h 2bb)<L.36.1>
+<Z>Twins 3<C> (7h, 2bb)<T> 7 Abbott (6 1/3, 1r 4h 1bb)<T><Z>GIANTS 4<C> (7h, 1bb)<T>10 Harris (5 1/3, 4r 6h 1bb)<L.36.1>
+<Z>TWINS 3<C> (9h, 4bb)<T>29 Green (4 1/3, 3r 4h 3bb)<T><Z>Giants 2<C> (8h, 2bb)<T>16 Green (6 2/3, 1r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Red Sox 2<C> (3h, 2bb)<T>10 Bedrosian (9, 2r 3h 2bb)<T><Z>DODGERS 7<C> (11h, 5bb)<T>14 Guillen (5, 5r 7h 3bb)<L.36.1>
+<Z>Red Sox 4<C> (8h, 2bb)<T>36 Jones (8, 4r 7h 2bb)<T><Z>DODGERS 10<C> (11h, 5bb)<T>16 Guzman (5 1/3, 6r 6h 3bb)<L.36.1>
+<Z>Red Sox 3<C> (7h, 4bb)<T>85 May (9, 3r 7h 4bb)<T><Z>DODGERS 7<C> (13h, 1bb)<T>17 Jordan (5 1/3, 4r 8h 1bb)<L.36.1>
+<L.9.1>
+<Z>YANKEES 13<C> (12h, 3bb)<T>51 Rodriguez (5 1/3, 9r 8h 2bb)<T><Z>Pirates 7<C> (13h, 2bb)<T>26 Abbott (5 2/3, 4r 8h 1bb)<L.36.1>
+<Z>YANKEES 4<C> (9h, 5bb)<T>70 Ortega (5 1/3, 1r 3h 2bb)<T><Z>Pirates 2<C> (7h, 1bb)<T> 1 Jackson (9, 2r 7h 1bb)<L.36.1>
+<Z>YANKEES 3<C> (5h, 3bb)<T> 2 Locke (6 1/3, 3r 2h 3bb)<T><Z>Pirates 2<C> (6h, 4bb)<T>14 Dayton (6 1/3, 2r 5h 4bb)<L.36.1>
+<L.9.1>
+<Z>White Sox 5<C> (11h, 6bb)<T>99 Noble (4 1/3, 4r 8h 4bb)<T><Z>PADRES 6<C> (13h, 2bb)<T>29 Robinson (4 2/3, 2r 6h 2bb)<L.36.1>
+<Z>WHITE SOX 3<C> (13h, 2bb)<T>19 Bolivar (3, 2r 7h 0bb)<T><Z>Padres 2<C> (4h, 3bb)<T>24 Robinson (9, 2r 4h 3bb)<L.36.1>
+<Z>White Sox 2<C> (10h, 0bb)<T>20 Harris (6, 0r 3h 0bb)<T><Z>PADRES 4<C> (10h, 2bb)<T>26 Jackson (8, 1r 5h 1bb)<T>10 inn<L.36.1>
+<L.9.1>
+<L.12.1>
+<L.1.1>
+<D><E><DU>
+<BK.Standings><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB6  Season 30  Week 5 Standings   22/8/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.44.75.95.102.107><L.48.1>
+<C><Z>American League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>New York Yankees (Danny Slavin)<T> 31  14  .688   -   8-1   W 8<T> 285   193   18-6<T>13-8<T> 95<T>27,294  15 188  12   98<L.33.1>
+Boston Red Sox (Darren Halford)<T> 17  28  .377  14   3-6   L 3<T> 185   231   11-10<T> 6-18<T> 42<T>22,847   6 107   9  107<L.33.1>
+Tampa Bay Rays (Rob Byrne)<T> 16  29  .355  15   5-4   L 1<T> 170   223   13-14<T> 3-15<T>262<T>22,735   9 193  12   99<L.33.1>
+Toronto Blue Jays (Mike Thorp-Potter)<T> 13  32  .288  18   2-7   L 4<T> 158   282    7-17<T> 6-15<T>189<T>22,406   9 197  11  106<L.33.1>
+<L.9.1>
+<Z>American League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Minnesota Twins (Mark J Hall)<T> 33  12  .733   -   8-1   W 1<T> 319   166   19-5<T>14-7<T> 23<T>24,679   7 188   9  108<L.33.1>
+Cleveland Indians (Simon Richards)<T> 27  18  .600   6   5-4   W 1<T> 245   204   18-9<T> 9-9<T> 36<T>23,980   7  81   7   98<L.33.1>
+Chicago White Sox (Robert Crowther)<T> 19  26  .422  14   3-6   L 1<T> 208   254    9-12<T>10-14<T>124<T>23,901   6 196  11   92<L.33.1>
+Milwaukee Brewers (Paul Denyer)<T> 16  29  .355  17   3-6   L 1<T> 139   234    9-15<T> 7-14<T> 46<T>22,737   5 134   9  101<L.33.1>
+<L.9.1>
+<Z>American League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Los Angeles Angels (Marc Rivoira)<T> 34  11  .755   -   7-2   W 4<T> 267   175   18-3<T>16-8<T> 82<T>29,763  15 190   9  109<L.33.1>
+Texas Rangers (Greg Salmon)<T> 30  15  .666   4   5-4   W 3<T> 229   122   20-4<T>10-11<T> 39<T>29,195  15 193  11  110<L.33.1>
+Oakland Athletics (Dave Flesfader)<T> 21  24  .466  13   5-4   L 2<T> 217   239   12-12<T> 9-12<T> 76<T>23,295  11 148  10  108<L.33.1>
+Seattle Mariners (Keiron Peskett)<T> 19  26  .422  15   6-3   L 1<T> 210   221   14-13<T> 5-13<T> 10<T>23,070   6  96   6  112<L.33.1>
+<L.9.1>
+<Z>National League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Miami Marlins (Patrick Lee)<T> 33  12  .733   -   7-2   L 1<T> 290   158   19-5<T>14-7<T>  5<T>29,620   6  83   3  117<L.33.1>
+Atlanta Braves (Alan/Gordon Milnes)<T> 30  15  .666   3   5-4   W 1<T> 325   214   15-6<T>15-9<T> 97<T>28,035  15 152   8  118<L.33.1>
+Philadelphia Phillies (Paul Bailey)<T> 17  28  .377  16   3-6   L 3<T> 176   231    7-11<T>10-17<T>335<T>22,847  13 196  11   97<L.33.1>
+New York Mets (Kevin Gibson)<T> 15  30  .333  18   2-7   W 1<T> 155   225    9-12<T> 6-18<T>421<T>22,626  12 197  12   93<L.33.1>
+<L.9.1>
+<Z>National League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Cincinnati Reds (Bo Mayfield)<T> 27  18  .600   -   6-3   L 3<T> 217   196   12-6<T>15-12<T> 23<T>23,980  11 191  15   99<L.33.1>
+Pittsburgh Pirates (Nigel Beck)<T> 26  19  .577   1   3-6   L 5<T> 216   186   11-10<T>15-9<T> 57<T>23,864   8  91   6  115<L.33.1>
+St Louis Cardinals (Troy Dilworth)<T> 21  24  .466   6   5-4   W 2<T> 216   229    8-13<T>13-11<T> 75<T>23,296   7  96   7  103<L.33.1>
+Chicago Cubs (Graeme Odgers)<T> 14  31  .311  13   3-6   W 1<T> 158   266   10-14<T> 4-17<T>342<T>22,516  10 196  11   99<L.33.1>
+<L.9.1>
+<Z>National League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Los Angeles Dodgers (Barry Andrews)<T> 25  20  .555   -   5-4   W 5<T> 276   200   14-7<T>11-13<T>188<T>26,788  13 176  11  107<L.33.1>
+San Francisco Giants (Phil Butlin)<T> 22  23  .488   3   3-6   L 1<T> 180   192   11-10<T>11-13<T>358<T>23,407  13 196  13   93<L.33.1>
+Arizona Diamondbacks (Ashley Rossouw)<T> 20  25  .444   5   3-6   W 3<T> 207   262   16-8<T> 4-17<T> 74<T>23,181   8 179  11  112<L.33.1>
+San Diego Padres (Neil Bassett)<T> 14  31  .311  11   3-6   W 1<T> 150   295    6-12<T> 8-19<T> 99<T>22,514   5 160   7   88<L.33.1>
+<L.9.1>
+<Z>GM: Danny McConnell    Version: 4.4 (2009 Rules)    Deadline: Saturday 5th September<L.39.1>
+Postal Address: Ab Initio Games, 82 Scotts Lane, Bromley, Kent, BR2 0LX.<L.39.1>
+Email Address: danny@pbmsports.com      Info Website: www.pbmsports.com      Active Website: www.softsim.co.uk<L.39.1>
+Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty. Cheques made payable to: Ab Initio Games<L.39.1>
+<U>Messages<UC><C><L.36.1>
+<L.6.1>
+<Z>Slack <C> There's a independent (i.e. I'm not on it) group on Slack of various players in various games (Gameplan, Raceplan, <L.31.1>
+Baseball, Run Chase and Dark Age - but other channels are welcome) covering things run here. For more information, go to <L.31.1>
+gameplanpbm.slack.com, or for an invite people can contact Alan Milnes at alan@gameplan.org.uk.<L.31.1>
+<L.12.1>
+<Z>Early Warning <C> I should be away on holiday from 11th to 18th September, so we'll have some of the usual late running of<L.31.1>
+turns when that happens (unhelpfully, both the Premier League and NFL kickoff that weekend). I'll provide more details closer<L.31.1>
+to the time of how turns will be affected.<L.31.1>
+<L.12.1>
+<Z>Free Startups <C> I'm still running the offer of a free startup (first two turns) in any of the games currently running.<L.31.1>
+The rationale is simple, it's straightforward for me to do, there's a fair chance some folk out there might be looking to pick <L.31.1>
+up an old game, and yes, somewhere down the line you may have to pay for the turns, though that's far from the driving force. <L.31.1>
+If you fancy taking up a new team, or reviving your existing one, drop me an email. Feel free to flag up these games to <L.31.1>
+friends and family - the more the merrier when people have time on their hands.<L.31.1>
+<L.12.1>
+<Z>Late Turns <C> Deadlines are 9am Saturday. Please assume weekend turns will be run either Saturday or Sunday (i.e. please<L.31.1>
+don't chase me up Sunday for "missing turns"). I run these games in my spare time, so the more efficient that is the better. <L.31.1>
+<L.12.1>
+<Z>Playing Online/Postage Costs <C> Note that from the start of April, I'm now considering all games to be "online first", and<L.31.1>
+if you do want/need a posted copy of the results, there's an extra 0.4 credit charge. Please try and use email if possible<L.31.1>
+<L.1.1>
+<P>
+<L>
+<L.1.1>
+<BK.Actions><B>GAMEPLAN BASEBALL  MLB6   Week 5 Actions Report   22/8/20<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.33.66.99><L.48.1>
+Next Week: Regular Season Week 6<L.36.1>
+<C>Blue Jays at Yankees (2-1)<T>Rays at Red Sox (2-1)<T>Twins at Brewers (3-0)<T>Indians at White Sox (3-0)<T><L.33.1>
+Athletics at Rangers (1-2)<T>Mariners at Angels (0-3)<T>Mets at Braves (1-2)<T>Marlins at Phillies (3-0)<T><L.33.1>
+Cardinals at Pirates (1-2)<T>Cubs at Reds (0-3)<T>Giants at Dodgers (3-0)<T>Diamondbacks at Padres (2-1)<T><L.33.1>
+<L.6.1>
+Blue Jays at Twins (0-3)<T>Rays at Mariners (2-1)<T>Indians at Athletics (2-1)<T>Red Sox at White Sox (1-2)<T><L.33.1>
+Yankees at Rangers (3-0)<T>Brewers at Angels (1-2)<T>Mets at Cardinals (1-2)<T>Marlins at Diamondbacks (3-0)<T><L.33.1>
+Cubs at Giants (1-2)<T>Phillies at Reds (0-3)<T>Braves at Dodgers (1-2)<T>Pirates at Padres (2-1)<T><L.33.1>
+<L.6.1>
+Athletics at Blue Jays (2-1)<T>Twins at Rays (2-1)<T>Mariners at Indians (1-2)<T>Angels at Red Sox (3-0)<T><L.33.1>
+White Sox at Yankees (0-3)<T>Rangers at Brewers (3-0)<T>Giants at Mets (2-1)<T>Cardinals at Marlins (0-3)<T><L.33.1>
+Diamondbacks at Cubs (3-0)<T>Padres at Phillies (0-3)<T>Reds at Braves (1-2)<T>Dodgers at Pirates (1-2)<T><L.33.1>
+<L.6.1>
+<ST.33.66.99><L.3.1>
+<Z>Injuries and Holdouts<C><L.36.1>
+32 Bob Thomas (TB) 39 games<T>26 Alan Brooks (BR) 6 games<T> 6 Randy Jones (TO) 9 games<T>77 T.J. Sikkema (NY) 24 games<L.33.1>
+ 2 Mike Stanton (CW) 10 games<T>16 Pete Green (MT) 14 games<T> 5 Todd Wilson (CL) 12 games<T>18 Orlando Guzman (MB) 14 games<L.33.1>
+83 R.Baldoquin (LG) 6 games<T>28 Mario Gonzalez (OA) 15 games<T>25 Jack Wilson (SM) holdout<T>11 Jose Tabata (SM) 14 games<L.33.1>
+17 Pete Jordan (TR) 8 games<T>14 Rafael Ibanez (AB) 6 games<T> 7 Joe Thompson (PH) 8 games<T>27 Viosergy Rosa (MM) 6 games<L.33.1>
+45 Kolby Copeland (MM) holdout<T>26 Mario Garcia (NM) 8 games<T> 5 R.Westmoreland (CU) 10 games<T> 6 Eddie Benitez (CI) 6 games<L.33.1>
+ 8 Ramon Benitez (SL) 12 games<T>51 Wandy Rodriguez (PI) 13 games<T>15 Edgar Gonzalez (AD) 6 games<T>85 Dustin May (LA) 12 games<L.33.1>
+ 4 Ruben Avila (SD) 10 games<T> 5 Conor Jackson (SF) 8 games<T><L.36.1>
+<ST.27.53.79.105><L.6.1>
+<ST.27.66.93><L.6.1>
+<Z>Trading List<C>    no players listed for trade this turn<L.36.1>
+<L.12.1>
+<Z>Free Agent Signings<C><L.36.1>
+Minnesota Twins sign FA 116, 25 Jack Moss for 18 LP to replace 40 Brian Dopirak, net cost -18 LP<L.33.1>
+Cleveland Indians sign FA 144, 89 Eric Brooks (ex-CW) for 33 LP to replace 7 Jack Green, net cost 17 LP<L.33.1>
+Los Angeles Angels sign FA 139, 10 Derek Lowe (ex-LG) for 61 LP to replace 1 Andrew Miller, net cost -4 LP<L.33.1>
+Texas Rangers sign FA 132 (CF), 15 Bob Jackson (ex-TR) for 83 LP to replace 29 Randy Robinson, net cost 35 LP<L.33.1>
+Cincinnati Reds sign FA 102 (LF), 15 Mark Thompson (ex-SF) for 38 LP to replace 21 Mark Wells, net cost 22 LP<L.33.1>
+Pittsburgh Pirates sign FA 141, 3 Chris Bootcheck (ex-PI) for 143 LP to replace 5 Chad Billingsley, net cost 16 LP<L.33.1>
+San Francisco Giants sign FA 130, 3 Tom Roberts (ex-PI) for 50 LP to replace 31 Jose Perez, net cost 23 LP<L.33.1>
+<L.6.1>
+<Z>Free Agent Pool<C>  (+ indicates player will be deleted after next turn's bids have been processed)<ST.30.66.96><L.36.1>
+<Z>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<T>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<C><L.36.1>
+101+ J.J. Hardy (ex-TR)<T>Bat L 10 FLD  2B  14  0 10  56 LP<T>102  Mark Wells (ex-CI)<T>Bat R  7 HIT  LF   9  7  8  33 LP<L.33.1>
+103  Luis Hernandez (ex-PH)<T>Bat L  7 HIT  RF   R  6  8  17 LP<T>104  <T>Pit R  7 QUI       1 10  9  28 LP<L.33.1>
+105  Colton Hock (ex-MM)<T>Pit R  7 CON       3 13  9  27 LP<T>106  <T>Pit R  6 QUI       1 13  8  22 LP<L.33.1>
+107  Aaron Bailey (ex-MT)<T>Bat L  8 POW  LF  11  3  8  45 LP<T>108  Todd Davis (ex-TB)<T>Bat R  7 POW  1B   7  3  7  28 LP<L.33.1>
+109  Jason Heyward (ex-TR)<T>Bat L  8 POW  1B  12  0  8  44 LP<T>110+ Jack Lewis (ex-CI)<T>Bat L  9 POW  SS  14  0  9  50 LP<L.33.1>
+111  Miguel Guillen (ex-NM)<T>Pit R  8 STA      11  3  8  40 LP<T>112  Eric White (ex-CI)<T>Pit R  8 QUI       6  9  9  36 LP<L.33.1>
+113  C J Wilson (ex-MT)<T>Pit R  8 STA      13  4  8  27 LP<T>114  <T>Bat R  5 FLD  SS   R 14  7  11 LP<L.33.1>
+115  Rafael Illuchio (ex-TO)<T>Bat R  8 SPD  CF  10  7  9  29 LP<T>116  Brian Dopirak (ex-MT)<T>Bat S  9 POW  CF  12  3  9  73 LP<L.33.1>
+117  John Thomas (ex-CI)<T>Pit L  8 STA      15  1  8  49 LP<T>118  Frankie Montas (ex-SF)<T>Pit R  8 CON       5  6  9  36 LP<L.33.1>
+119+ Mark Abbott (ex-NM)<T>Pit L  8 QUI       4  5  9  25 LP<T>120  Jimmy Rollins (ex-CL)<T>Bat R  8 SPD  3B  12  0  8  33 LP<L.33.1>
+121+ Jonny Gomes (ex-PI)<T>Bat R 10 HIT  CF  16  3 10 102 LP<T>122  Ray Olmedo (ex-CW)<T>Bat L 10 HIT  CF   9  5 11  54 LP<L.33.1>
+123  <T>Bat L  5 FLD  IF   5  6  6  17 LP<T>124  Tony Gwynn Jr (ex-LA)<T>Cat S  8 SPD   C   7  8  9  37 LP<L.33.1>
+125  Logan Bawcom (ex-SM)<T>Pit L  8 CON       8  7  9  30 LP<T>126  A.J. Ellis (ex-SD)<T>Bat R  7 FLD  1B  12  5  8  27 LP<L.33.1>
+127  <T>Pit R  6 CON       1 13  8  18 LP<T>128  Lem Aspell (ex-CL)<T>Pit L  8 CON      10  6  9  40 LP<L.33.1>
+129  S.Stonecipher (ex-LG)<T>Cat S 10 POW   C  12  3 10  73 LP<T>130  Jose Perez (ex-SF)<T>Bat L  9 FLD  2B  10  3  9  55 LP<L.33.1>
+131  <T>Pit R  5 QUI       3 13  7  17 LP<T>132  Randy Robinson (ex-TR)<T>Bat S  8 SPD  LF   1  0  8  32 LP<L.33.1>
+133  Jose Reyes (ex-LA)<T>Bat S  9 FLD  1B  11  4  9  54 LP<T>134  Brian Roberts (ex-SF)<T>Bat R  7 HIT  1B  12  3  7  28 LP<L.33.1>
+135  Felipe Hernandez (ex-CL)<T>Bat L  8 SPD  CF   3  8  9  33 LP<T>136  Anthony Siegler (ex-NY)<T>Cat L  7 FLD   C   2 12  9  22 LP<L.33.1>
+137  Jordan Yamamoto (ex-MM)<T>Pit R  7 STA       1 14  9  22 LP<T>138  Jeff Young (ex-TB)<T>Pit R  8 ACC       9  5  9  43 LP<L.33.1>
+139  Andrew Miller (ex-LG)<T>Pit L 10 QUI      15  1 10  70 LP<T>140  <T>Pit L  6 CON       4 11  8  25 LP<L.33.1>
+141  Chad Billingsley (ex-PI)<T>Pit R 10 QUI      12  4 10 113 LP<T>142  <T>Pit R  5 CON       3 15  8  21 LP<L.33.1>
+143  Ramon Sanchez (ex-TR)<T>Pit R 11 ACC      14  2 11  87 LP<T>144  Jack Green (ex-CL)<T>Pit L  7 CON       3  8  8  33 LP<L.33.1>
+145  <T>Bat S  6 HIT  2B   R 13  8  15 LP<T>146  <T>Pit L  5 STA       1 12  7  17 LP<L.33.1>
+147  Joe Robinson (ex-LG)<T>Pit R  6 STA       4  5  7  22 LP<T>148+ Chris Sale (ex-BR)<T>Pit R  8 ACC       5  9  9  33 LP<L.33.1>
+<L.1.1>
+<D><E><DU>
+<BK.Turnsheet><P.70><L>
+<B>GAMEPLAN BASEBALL   MLB6   Turnsheet    22/8/20<X>      MLB6-AB<L.48.1>
+<B>Atlanta Braves (Alan/Gordon Milnes)   Week 6<C>      Deadline: Saturday 5th September<ST.24><L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<C><L.45.1>
+Address: Ab Initio Games, 82 Scotts Lane, Bromley, Kent, BR2 0LX. Web Orders: www.softsim.co.uk<L.45.1>
+<Z>[I] Fielding Lineup    <C>Basic fielding selection for this week and batting order. Batting order should be position in batting<L.33.1>
+<Z>                       <C>order (1-9) NOT shirt number. Please only fill in CHANGES to selections.<L.45.1>
+Fielding Position:<T>    C          1B          2B          3B          SS          LF          CF          RF          DH       <L.45.1>
+Shirt Number:<T>[   6  ]    [  25  ]    [   1  ]    [   3  ]    [  <Z>14<C>  ]    [   2  ]    [  88  ]    [  53  ]    [  23  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.45.1>
+Batting Order (1-9):<T>[   7  ]    [   8  ]    [   1  ]    [   5  ]    [   9  ]    [   3  ]    [   4  ]    [   6  ]    [   2  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.54.1>
+<Z>[B] Lineup Changes    <C>Up to three changes in selection from basic order. Give shirt numbers of player to be picked, player<L.33.1>
+<Z>                       <C>to be replaced and game (2-9) from which change applies.<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+<L.9.1>
+<Z>[P] Pitching Changes    <C>Give shirt number of pitcher and changes to MAXBATS (MxB), MAXHITS (MxH), MAXEXTRA (MxE), FIRSTINN (FIn)<L.33.1>
+<Z>                        <C>and MINBATS (MnB). Please do not fill in parameters you are not changing.<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+<L.9.1>
+<Z>[S] Pitching Selections    <C>Pitching Selections for this week's games. A pitcher cannot be selected more than once. You must have<L.33.1>
+                           at least four pitchers in your starting rotation and four pitchers in your bullpen depth chart.<L.33.1>
+                           You do not have to select a setup and closing pitcher.<L.45.1>
+Starting Rotation: <T>[ 45 :      ]    [ 52 :      ]    [  9 :      ]    [ 10 :      ]    [ 19 :      ]    [  0 :      ]    <L.45.1>
+Bullpen Depth Chart:<T>[ 11 :      ]    [  4 :      ]    [ 12 :      ]    [ 74 :      ]    [  5 :      ]    [  0 :      ]    <L.45.1>
+Setup Pitcher: <T>[  0 :      ]    <L.45.1>
+Closer: <T>[  0 :      ]    <L.54.1>
+<Z>[T] Training    <C>Training & Bonus Skills (HIT, POW, SPD, FLD, ACC, CON, QUI or STA), Bonus & Key Players for each series. <L.45.1>
+Series 1 vs NM    [  QUI :            ]   [  HIT :            ]   [  Bonus 23 :         ]   [  Key <Z>11<C> :         ]<L.45.1>
+Series 2 at LA    [  QUI :            ]   [  HIT :            ]   [  Bonus  9 :         ]   [  Key <Z>66<C> :         ]<L.45.1>
+Series 3 vs CI    [  SPD :            ]   [  HIT :            ]   [  Bonus  3 :         ]   [  Key <Z>22<C> :         ]<L.45.1>
+<L.6.1>
+<Z>[X] Special Actions<L.48.1>
+<C>ACTION 1 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 2 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 3 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 4 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 5 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+<L.9.1>
+Codes are: ACCEPT, ACTIVATE, ADDFORM, ALBATTERS, ALLEADERS, ALPITCHERS, ALPLAYERS, BATTERS, BLOWINN, BLOWMARG, BUILDING, CANFULL,<L.33.1>
+CANOPP, COACH, FANS, LEADERS, LIST, LONGINN, LONGPIT, MAXLEAD, MERC, MINLEAD, MINORS, NEWPOS, NLBATTERS, NLLEADERS, NLPITCHERS, <L.33.1>
+NLPLAYERS, OFFER, PINCH1, PINCH2, PINCH3, PINCH4, PINCHDEF, PINCHINN, PITCHERS, PLATOON1, PLATOON2, PLATOON3, PLATOON4, PLAYERS, <L.33.1>
+PROMOTE, REHAB, RELEASE, RENAME, ROUNDUP, SCHEDULE, SCOUT, SETFULL, SETOPP, SIZE, STADIUM, STARTINN, STATS, SURFACE, SWAP, TRAINER<L.48.1>
+<Z>[Z] Free Agent Bid    <C>Give free agent number, shirt number of player to be replaced, amount bid for free agent and new shirt<L.33.1>
+<Z>                      <C>number and name for player signed. Bids are processed after special actions.<L.45.1>
+NUM [        ]   WAIVE [        ]   AMOUNT [        ]   SHIRT [        ]   NAME [                                          ]<L.54.1>
+<Z>[C] Payments<C>    Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty.  MLB6-AB tc= 6.7<L.48.1>
+<Z><C>AMOUNT ENCLOSED [ #      .      ]   Cheques made payable to: Ab Initio Games<L.45.1>
+Indicate any change of address in the space below.<D><E><DU>
+

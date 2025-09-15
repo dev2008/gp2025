@@ -1,0 +1,81 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: asmilnes@gmail.com
+Received: by 10.229.36.195 with SMTP id u3cs127833qcd;
+        Mon, 30 May 2011 06:20:55 -0700 (PDT)
+Received: by 10.216.136.151 with SMTP id w23mr2435659wei.86.1306761654096;
+        Mon, 30 May 2011 06:20:54 -0700 (PDT)
+Return-Path: <danny@pbmsports.com>
+Received: from moutng.kundenserver.de (moutng.kundenserver.de [212.227.126.171])
+        by mx.google.com with ESMTP id 73si8507665wem.136.2011.05.30.06.20.52;
+        Mon, 30 May 2011 06:20:52 -0700 (PDT)
+Received-SPF: neutral (google.com: 212.227.126.171 is neither permitted nor denied by best guess record for domain of danny@pbmsports.com) client-ip=212.227.126.171;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 212.227.126.171 is neither permitted nor denied by best guess record for domain of danny@pbmsports.com) smtp.mail=danny@pbmsports.com
+Received: from mtaout03-winn.ispmail.ntl.com (mtaout03-winn.ispmail.ntl.com [81.103.221.49])
+	by mx.kundenserver.de (node=mxeu3) with ESMTP (Nemesis)
+	id 0M92bZ-1QLIAD0VuX-00CQXo for alan@gameplan.org.uk; Mon, 30 May 2011 15:20:52 +0200
+Received: from know-smtpout-4.server.virginmedia.net ([62.254.123.1])
+          by mtaout03-winn.ispmail.ntl.com
+          (InterMail vM.7.08.04.00 201-2186-134-20080326) with ESMTP
+          id <20110530132051.QFTJ3152.mtaout03-winn.ispmail.ntl.com@know-smtpout-4.server.virginmedia.net>
+          for <alan@gameplan.org.uk>; Mon, 30 May 2011 14:20:51 +0100
+Received: from [80.3.78.209] (helo=Gromit)
+	by know-smtpout-4.server.virginmedia.net with esmtp (Exim 4.63)
+	(envelope-from <danny@pbmsports.com>)
+	id 1QR2On-0008Ii-8g
+	for alan@gameplan.org.uk; Mon, 30 May 2011 14:20:51 +0100
+From: "Danny McConnell" <danny@pbmsports.com>
+Subject: MLB8-AL, Turn 0
+To: alan@gameplan.org.uk
+Content-Type: text/plain
+Date: Mon, 30 May 2011 14:21:26 +0100
+Message-Id: <20110530132051.QFTJ3152.mtaout03-winn.ispmail.ntl.com@know-smtpout-4.server.virginmedia.net>
+X-Cloudmark-Analysis: v=1.1 cv=R50lirqlHffDPPkwUlkuVa99MrvKdVWo//yz83qex8g= c=1 sm=0 a=AnmFHKzuSg4A:10 a=FHEM_hz9AAAA:8 a=QLxD-Jkbyek1K8hbudIA:9 a=cOcyQGnCcvXC3hSma_wA:7 a=1wnTsARRRYYsLH_x:21 a=lMLitIXwGQLn8jWm:21 a=HpAAvcLHHh0Zw7uRqdWCyQ==:117
+
+alan@gameplan.org.uk
+0
+MLB8-AL, Turn 0
+<STARTREP>
+<P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8  AMERICAN LEAGUE ALL-STAR SQUAD  30/5/11<L.18.1>
+____________________________________________________________________________<C><ST.8><B><L.54.1>
+*** Must be returned before week 17 ***<L.54.1>
+Players Selected<L.54.1>
+<E>Pos      Team      Shirt      Name<L.54.1>
+C  OA 55 Ramon Hernandez<L.60.1>
+1B TO 26 Adam Lind<L.60.1>
+2B CW 16 Paul Konerko<L.60.1>
+3B NY 2  Derek Jeter<L.60.1>
+SS NY 36 Nick Johnson<L.60.1>
+LF SM 63 Doug Mientkiewicz<L.60.1>
+CF TR 37 Todd Zeile<L.60.1>
+RF NY 11 David Dellucci<L.60.1>
+DH TB 26 Jared Sandberg<L.60.1>
+PH (MIF) TB 40 Doug Waechter<L.60.1>
+PH (CIF) KC 34 Darrell May<L.60.1>
+PH (CAT) NY 20 Jorge Posada<L.60.1>
+PH (OF)  SM 44 Eric Byrnes<L.60.1>
+FLD MT 2  Luis Rivas<L.60.1>
+SP LG 75  Joe Saunders<L.60.1>
+BP1 MT 31 Rick Reed<L.60.1>
+BP2 TO 32 Roy Halladay<L.60.1>
+BP3 CL 52 C.C. Sabathia<L.60.1>
+BP4 KC 90 Eddie Guardardo<L.60.1>
+BP5 MT 52 Carlos Silva<L.60.1>
+BP6 CL 40 Billy Traber <L.60.1>
+Closer NY 35 Mike Mussina<L.60.1>
+Setup NY 51 Randy Johnson<L.60.1>
+PIT MT 3 Eric Milton<L.60.1>
+PIT BR 43 Alan Embree<L.60.1>
+<L.36.1>
+<B>Initial Batting Order<C>   (Give position in batting order, must be 1 to 9)<L.54.1>
+[  C:  6  ]   [ 1B:  9  ]   [ 2B:  7  ]   [ 3B:  2  ]   [ SS:  3  ]   [ LF:  5  ]   [ CF:  8  ]   [ RF:  1  ]   [ DH:  4  ]   <L.72.1>
+Give current team code, shirt number, and player name for each selection.<L.42.1>
+First fourteen selections must be hitters, first nine form initial batting lineup, plus four pinch hitters - utility middle<L.36.1>
+infielder, corner infielder, catcher & utility outfielder). The remaining hitter is inactive.<L.42.1>
+Last eleven selections must be pitchers: one starter, six bullpen pitchers, closer, setup pitcher and two inactive pitchers.<L.42.1>
+For Allstar Game team parameters are: PINCHDEF -99, PINCHINN 6, MINLEAD -2, MAXLEAD 9 and OPPHAND NO. <L.42.1>
+For starting pitchers: MAXBATS 18, MAXHITS 3, MAXEXTRA 1 and FIRSTINN 1. For all relief pitchers values are 9, 3, 1 and 1.<L.42.1>
+Players may be selected if currently inactive or injured. Fatigue, form and injuries are ignored for All-Star game.<L.42.1>
+All-Star game MUST be run BEFORE week 17 of the regular season.<L.42.1>
+<D><E><DU>
