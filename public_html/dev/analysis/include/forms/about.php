@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -14,7 +14,7 @@ If you are unsure about what you are allowed to do with this license, feel free 
 ?>
 
 <h1>About/upgrade</h1>
-<p>DaDaBIK&trade; is a product conceived and developed by Eugenio Tacchini<br>Copyright © 2001-2024 Eugenio Tacchini<br>Proudly ❤️ made in <a href="https://en.wikipedia.org/wiki/Emilia-Romagna" target="_blank">Emilia</a><br><a href="https://dadabik.com/" target="_blank">dadabik.com</a></p>
+<p>DaDaBIK&trade; is a product conceived and developed by Eugenio Tacchini<br>Copyright © 2001-2025 Eugenio Tacchini<br>Proudly ❤️ made in <a href="https://en.wikipedia.org/wiki/Emilia-Romagna" target="_blank">Emilia</a><br><a href="https://dadabik.com/" target="_blank">dadabik.com</a></p>
 
 <?php if ($orazio_edition === 1){
 

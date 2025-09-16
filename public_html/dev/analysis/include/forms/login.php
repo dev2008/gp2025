@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -50,7 +50,7 @@ if ($enable_ldap_authentication === 1) echo '<input type="checkbox" name="ldap_a
 
 ?>
 
-<input type="submit" class="btn btn-primary w-100" value="<?php echo ucfirst($login_messages_ar['login']); ?> "></td></tr>
+<input type="submit" class="btn btn-primary w-100" value="<?php echo ucfirst($login_messages_ar['login']); ?> "  id="form_login_btn"></td></tr>
 
 <?php
 echo '<tr><td colspan="2" align="right"><br>';
@@ -69,6 +69,19 @@ echo '</td></tr>';
 
 <?php
 ?>
+<?php if ($enable_google_authentication === 1){  ?>
+
+<tr><td colspan="2" align="center"><br><a href="login.php?function=start_google_login" style="text-decoration: none;">
+  <div style="display: inline-flex; align-items: center; background: white; border: 1px solid #ccc; padding: 10px 20px; border-radius: 4px; font-family: Roboto, sans-serif;">
+    <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google" style="width:20px; height:20px; margin-right:10px;">
+    <span style="color: #555;">Sign in with Google</span>
+  </div>
+</a>
+</td></tr>
+
+
+<?php }  ?>
+
 </table>
 
 </form>

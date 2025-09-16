@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -26,7 +26,7 @@ If you are unsure about what you are allowed to do with this license, feel free 
 <tr><td colspan="2" align="right" style="padding: 5px;">
 
 
-<input type="submit" class="btn btn-primary w-100" value="<?php echo ucfirst($normal_messages_ar['continue']); ?> "></td></tr>
+<input type="submit" class="btn btn-primary w-100" value="<?php echo ucfirst($normal_messages_ar['continue']); ?> " id="2fa_code_continue_btn"></td></tr>
 
 
 <?php

@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -49,7 +49,7 @@ $mysqldump_command_standard =  escapeshellarg($path_temp)."mysqldump -u YOURUSER
 
 <input type="hidden" name="execute_export_files" value="1">
 <input type="hidden" name="dont_add_header" value="1">
-<button class="btn btn-primary" type="submit">Export files</button> <a href="javascript:show_admin_help('Export files', 'All files and folders you have in the DaDaBIK root folder (the one containing index.php) of this app will be exported, even files unrelated to DaDaBIK that you may have copied there. <br><br>The only exception is the uploads folder, unless you check <i>Include the uploads folder</i>; the uploads folder can grow to a huge size and slow down the export process, consider this before including it in the export.<br><br>A few additional things you should know about the uploads folder: 
+<button class="btn btn-primary mb-2" type="submit">Export files</button> <a href="javascript:show_admin_help('Export files', 'All files and folders you have in the DaDaBIK root folder (the one containing index.php) of this app will be exported, even files unrelated to DaDaBIK that you may have copied there. <br><br>The only exception is the uploads folder, unless you check <i>Include the uploads folder</i>; the uploads folder can grow to a huge size and slow down the export process, consider this before including it in the export.<br><br>A few additional things you should know about the uploads folder: 
 <ul>
 <li>It\'s the folder where files uploaded for files fields are permanently stored.</li>
 <li>The export process uses <a href=\'https://en.wikipedia.org/wiki/Tar_(computing)\' target=\'_blank\'>Tar</a>; for some old versions of Tar, the exclusion of the uploads folder may not work.</li><li>The inclusion/exclusion option only works for the default /uploads folder: if you set a custom uploads folder outside of this DaDaBIK app root folder, such uploads folder is always excluded; if you set a custom uploads folder inside this DaDaBIK app root folder, such uploads folder is always included.</li></ul> ');"><img alt="Help" title="Help" border="0" src="images/help.png"></a><br>
@@ -63,7 +63,7 @@ $mysqldump_command_standard =  escapeshellarg($path_temp)."mysqldump -u YOURUSER
 
 <input type="hidden" name="execute_export_db" value="1">
 <input type="hidden" name="dont_add_header" value="1">
-<button class="btn btn-primary" type="submit">Export Database</button> <a href="javascript:show_admin_help('Export Database', 'An SQL dump of all the DaDaBIK internal tables (the ones whose name starts with <b><?php echo $prefix_internal_table; ?></b> e.g. <b><?php echo $prefix_internal_table; ?>forms, <?php echo $prefix_internal_table; ?>permissions</b>, ...), except the revision tables (the tables where DaDaBIK tracks all the changes to your data, if revisions are enabled) will be produced.<br><br>If you check <i>Inlcude all tables</i>, the entire DB <b><?php echo $db_name; ?></b> will be exported, including revision tables and non-DaDaBIK tables.<br><br><b>For tech-savvy users, these are the commands executed:</b><br><br>Standard command:<br><div style=\'color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;\'><?php echo str_replace("'", "\'", $mysqldump_command_standard); ?></div><br>Include all tables command:<br><div style=\'color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;\'><?php echo str_replace("'", "\'", $mysqldump_command_all_tables); ?>');"></div><img alt="Help" title="Help" border="0" src="images/help.png"></a><br>
+<button class="btn btn-primary mb-2" type="submit">Export Database</button> <a href="javascript:show_admin_help('Export Database', 'An SQL dump of all the DaDaBIK internal tables (the ones whose name starts with <b><?php echo $prefix_internal_table; ?></b> e.g. <b><?php echo $prefix_internal_table; ?>forms, <?php echo $prefix_internal_table; ?>permissions</b>, ...), except the revision tables (the tables where DaDaBIK tracks all the changes to your data, if revisions are enabled) will be produced.<br><br>If you check <i>Inlcude all tables</i>, the entire DB <b><?php echo $db_name; ?></b> will be exported, including revision tables and non-DaDaBIK tables.<br><br><b>For tech-savvy users, these are the commands executed:</b><br><br>Standard command:<br><div style=\'color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;\'><?php echo str_replace("'", "\'", $mysqldump_command_standard); ?></div><br>Include all tables command:<br><div style=\'color:black;background:white;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;\'><?php echo str_replace("'", "\'", $mysqldump_command_all_tables); ?>');"></div><img alt="Help" title="Help" border="0" src="images/help.png"></a><br>
 <input type="checkbox" value="1" name="include_all_tables" id="include_all_tables">Include all tables 
 
 

@@ -11,7 +11,7 @@ License: While this plugin is distributed under the GPL2 license, the software D
 // /*
 // ***********************************************************************************
 // DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-// Copyright (C) 2001-2024 Eugenio Tacchini
+// Copyright (C) 2001-2025 Eugenio Tacchini
 // 
 // This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 // 

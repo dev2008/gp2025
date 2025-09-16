@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -40,7 +40,7 @@ YOU SHOULD USE THIS FILE ONLY AS A DOCUMENTATION FILE, WHERE YOU CAN SEE ALL THE
 // required installation parameters: please specify at least the following parameters
 
 // your license serial number, you can find it in the email you received from mailer@fastspring.com, containing the download link
-// and having as a subject something like "Your DaDaBIK 12.3 Aveto Enterprise Delivery Information"
+// and having as a subject something like "Your DaDaBIK 13.1 Levanto Enterprise Delivery Information"
 // the serial number is 8 characters long
 $serial_number = '';
 
@@ -64,7 +64,7 @@ $pass = ''; // for sqlite this parameter is not needed
 // database schema (only needed for postgres, not needed for mysql and sqlite, if you don't know the schema, leave "public")
 $db_schema = 'public';
 
-// timezone, specify here your timezone (a list of available timezone here: http://php.net/manual/en/timezones.php)
+// timezone, specify here your timezone (You can find a list of available timezones here: http://php.net/manual/en/timezones.php)
 $timezone = 'Europe/Rome';
 
 
@@ -93,11 +93,11 @@ $site_url = '';
 
 $site_path = '';
 
-// chosose your graphic theme: 'classic', 'bluegray', 'black', 'blue', 'green'
-// option not available anymore in V 12.0
-//$graphic_theme = 'bluegray';
+// choose your graphic theme: 'classic', 'bluegray', 'black', 'blue', 'green'
+// option not available anymore from V 12.0
+$graphic_theme = 'bluegray';
 
-// chosose your results grid layout scrolling: 'site_overflow', 'grid_overflow' or 'grid_scroll'
+// choose your results grid layout scrolling: 'site_overflow', 'grid_overflow' or 'grid_scroll'
 // this affect the layout when your results grid is wider than your screen:
 // grid_scroll (default): an horizontal scrollbar appears just for the grid, the grid is independent
 // site_overflow (old 7.x DaDaBIK style): an horizontal scrollbar appears for the whole page, all the site layout is affected
@@ -150,21 +150,21 @@ $prefix_internal_table = 'dadabik_'; // you can safely leave this option as is, 
 
 
 /*
-DaDaBIK, during the installation, install in the application all the tables available in the database; add here the tables (if any) you want to exclude, one per line, for example if you want to exclude the tables "customers" and "countries" write:
+DaDaBIK, during the installation, installs in the application all the tables available in the database; add here the tables (if any) you want to exclude, one per line, for example if you want to exclude the tables "customers" and "countries" write:
 $tables_to_exclude[0]='customers';
 $tables_to_exclude[1]='countries';
-don't touch this parameter if you want to include all the tables. You can always uninstall tables later using teh admin interface.
+don't touch this parameter if you want to include all the tables. You can always uninstall tables later using the admin interface.
 If you are using Microsoft SQL Server on Azure, consider that you cauld have in your database tables that Azure use for internal purposes that you probably don't want in your application. An example is the table "database_firewall_rules"
 */
 
 $tables_to_exclude[0]='';
 
 /*
-DaDaBIK, during the installation, install in the application all the tables available in the database; add here the tables (if any) you want to exclude, one prefix per line, for example if you want to exclude all the tables that start with "wp_" and all the tables that start with "test_" write:
+DaDaBIK, during the installation, installs in the application all the tables available in the database; add here the tables (if any) you want to exclude, one prefix per line, for example if you want to exclude all the tables that start with "wp_" and all the tables that start with "test_" write:
 $prefixes_to_exclude[0]='wp_';
 $prefixes_to_exclude[1]='test_';
 
-don't touch this parameter if you want to include all the tables. You can always uninstall tables later using teh admin interface.
+don't touch this parameter if you want to include all the tables. You can always uninstall tables later using the admin interface.
 
 This parameter, in particular, is often used to easily install and use two or more different DaDaBIK applications using a shared database: for each apppplication you need a different $prefix_internal_table and you need to set, for $prefixes_to_exclude, all the prefixes used by the other applications.
 
@@ -178,7 +178,7 @@ $prefixes_to_exclude[0]='';
 
 // when $maintenance_mode is 1, non-administrator users can't access the application, $debug_mode and $display_sql will be automatically enabled and the page execution time will be printed in the page's footer
 // please note that the login page is still available and, for HTTP API, the tokens generation is still available
-// when maintenance_mode is 0, you can still set maintenance mode from the application itself (admin area -> status)
+// when maintenance_mode is 0, you can still set maintenance mode from the application itself (DEV Area -> status)
 $maintenance_mode = 0;
 
 // the message users will see when the application is maintenance mode
@@ -206,11 +206,6 @@ $default_language_missing_translation = 'english';
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-// enable the users authentication (0|1). If you set 1, you have to login to use DaDaBIK
-// by default DaDaBIK create an administrator user (username: root, password: your chosen password) and a normal user (username: alfonso, password: your chosen password).
-// if you disable the authentication and the "export to CSV" feature is enabled (see $export_to_csv_feature later), please consider that search engine robots, accessing the CSV export link, could consume an inordinate amount of processor time.
-$enable_authentication = 1;
-
 // If you use Two-Factor authentication, set the name of your app as you want to be displayed in the Authenticator app
 $two_factor_auth_app_name = '';
 
@@ -218,15 +213,19 @@ $two_factor_auth_app_name = '';
 // The easiest way to create a solid encryption key is to run locally the script gen_encryption_key.php
 $encryption_key = '';
 
-// fill this parameter if you set $enable_authentication = 1 but you still want to leave part of your application available to non-authenticated users. From the admin interface, create a group (for example "public") and a user belonging to that group (for example "public_user") and fill $username_public_user with the username of such user. A non-authenticated user will get the permissions that you granted to the group you have created.
-// if you leave $username_public_user empty (default setting) and $enable_authentication = 1, users MUST login to access your DaDaBIK application
-$username_public_user = '';
+// If Two-Factor Authentication (2FA) is enabled, this setting determines whether to display the secret key as text in addition to the QR code during the user's first login.
+// By default, this is set to 0 (disabled), meaning only the QR code is shown, which is more secure.
+// However, in certain scenarios (e.g., when scanning the QR code is not possible), enabling this option (set to 1) allows users to view and manually input the secret key in the Authentication App.
+$show_2fa_secret_code_text = 0;
 
 // enable user password modification (0|1). If enabled (1) , users can change their own password.
 $enable_user_password_modification = 1;
 
 // enable user self-registration (0|1). If enabled (1), users can create their own account, otherwise only administrators can create new users
 $enable_users_self_registration = 0;
+
+// enable by default 2fa after self-registration (0|1)
+$defult_2fa_self_registration = 0;
 
 // default group for self registration. If $enable_users_self_registration = 1, here you can set the id of the group the users belong, by default, when they register. When DaDaBIK is installed, there are only two groups: admin (having ID 1) and default (having ID 2)
 $default_group_user_self_registration = 2;
@@ -247,12 +246,12 @@ $accept_terms_privacy_checkbox_registration_form_required = [1,1,0];
 // If enabled (1), users can request a new, temporary, password that DaDaBIK sends via email. Please note that this random generated password doesn't need to meet the requirements you set if you enable password validation (see $enable_password_validation later), at the moment it's a 16-chars string composed by letters and numbers and it expires after five minutes.
 $enable_forgotten_password = 0;
 
-// If enabled (1), users after self registration needs to confirm the registration by clicking a link sent via email. Users registered by admins (Admin -> users), users coming from LDAP authentication and deafult users created by DaDaBIK during the installation are automatically confirmed. This parameter has been introduced in V. 11.1, if you upgrade your DaDaBIK installation from a version < 11.1, all existing users are confirmed.
+// If enabled (1), users after self registration need to confirm the registration by clicking a link sent via email. Users registered by admins (Admin -> users), users coming from LDAP or Google Authentication authentication and deafult users created by DaDaBIK during the installation are automatically confirmed. This parameter has been introduced in V. 11.1, if you upgrade your DaDaBIK installation from a version < 11.1, all existing users are confirmed.
 $enable_email_confirmation = 1;
 
 // number of times a user can type the wrong password before the account is blocked
 // the failed login counter, before reaching maximum allowed number, is reset to 0 when the user correctly access the application using the right password (even from another IP/computer)
-// If a user access a DaDaBIK application through a Wordpress authentication, this limit has no effect
+// If a user access a DaDaBIK application through Wordpress authentication, this limit has no effect
 // An admin user can re-enable a blocked user from the "edit" page of the user
 $number_failed_login_before_blocking = 10;
 
@@ -277,16 +276,17 @@ $enable_multiple_groups_permissions = 1;
 // enable password validation (0|1). Set it to 1 if you want to validate passwords according to rules, for example you want a password to contain at least one special character. If 1, when a new user is created or a user's password is changed through DaDaBIK, the password is validated using a validate_password($password) function that you must write in custom_functions.php; the function must return true or false. You also have to specify the error message in your language file (see /include/languages): add a sentence to the $normal_messages_ar array having key = 'password_not_valid'
 $enable_password_validation = 0;
 
-// always refresh permissions (0|1). DaDaBIK by default recompute the user permissions at each page load; we recommend to keep this default setting (1); if you set this parameter to 0, DaDaBIK computes the user permissions only when the user logs-in, this means that even if you (admin) edit permissions, the user will keep old permissions setting during all his/her session. If you have a lot of tables and/or fields and/or user groups, setting this value to 0 can speed up the page load. If $enable_granular_permissions is 0, $always_refresh_permissions has no effect.
+// always refresh permissions (0|1). DaDaBIK by default recomputes the user permissions at each page load; we recommend to keep this default setting (1); if you set this parameter to 0, DaDaBIK computes the user permissions only when the user logs-in, this means that even if you (admin) edit permissions, the user will keep old permissions setting during all his/her session. If you have a lot of tables and/or fields and/or user groups, setting this value to 0 can speed up the page load. If $enable_granular_permissions is 0, $always_refresh_permissions has no effect.
 $always_refresh_permissions = 1;
 
-// leave FALSE for better security in passowrd storage, change to TRUE for maximum application portability on old systems (see http://www.openwall.com/phpass/ for further details)
+// leave FALSE for better security in password storage, change to TRUE for maximum application portability on old systems (see http://www.openwall.com/phpass/ for further details)
+// starting from DaDaBIK 12.7, this parameter is no longer used for generating new password, it is only used to check old passwords.
 $generate_portable_password_hash = FALSE;
 
 // grant permissions after tables installation (0|1|2). By default, when you install a new table or add a new field to your DaDaBIK applications, all the related permissions are set to NO, leave 0 here if you want to keep this behaviour, 1 if you want to automatically set all the permissions to YES, 2 if you want to autmatically set all the permissions to YES only for the administrator group. If you are not using granular permissions, options 1 and 2 produce the same effect.
 $grant_permissions_after_table_installation = 0;
 
-// grant permissions to autoincrement fields after table installations. By default, DaDaBIK treats autoincremnt fields as normal fields, set to 0 if you don't want to grant permissions to autoincremnt fields. This is often useful because normally you don't want to see "ID" fields in your forms, especially in the insert forms (you want the value to be automatically generated and assigned). Of course you can alwasy remove the permissions (and hide a field from a form) later.
+// grant permissions to autoincrement fields after table installations. By default, DaDaBIK treats autoincremnt fields as normal fields, set to 0 if you don't want to grant permissions to autoincremnt fields. This is often useful because normally you don't want to see "ID" fields in your forms, especially in the insert forms (you want the value to be automatically generated and assigned). Of course you can always remove the permissions (and hide a field from a form) later.
 // this parameter is currently considered only with MySQL, with other DBMSs the autoincremnt fields are always treated as normal fields.
 $grant_permissions_autoincrement_after_table_installation = 0;
 
@@ -304,9 +304,12 @@ $grant_permissions_autoincrement_after_table_installation = 0;
 // Information about the user and group tables
 /*
 You should leave the following 10 parameters as they are, unless you want to use your own custom users and groups tables.
-If you change $users_table_name and/or $groups_table_name bere installing, DaDaBIK assumes the users and/or groups tables you specified already exists and it won't create them during the installation.
-If you use your own users table, consider that the password field $users_table_password_field must contain the hash of the password computed using phpass (see http://www.openwall.com/phpass/ for further details) and at the moment the field needs to have a length of at least  60 characters, but you can use your own hashing function customizing the functions check_password_hash() and create_password_hash() in general_functions.php. If you change the create_password_hash() function, this also affects the hashes of the tokens (used by HTTP APIs); please note that at the moment those hashes can be maximum 100 characters long.
-Also consider that DaDaBIK WON'T WORK properly if you use both LDAP authentication and your own custom users/groups table, if you decide to use your own custom users/groups table, $enable_ldap_authentication must be 0.
+
+If you change $users_table_name and/or $groups_table_name before installing, DaDaBIK assumes the users and/or groups tables you specified already exists and it won't create them during the installation.
+
+If you use your own users table, consider that the password field $users_table_password_field must contain the hash of the password computed using the password_hash() PHP function and at the moment the field needs to have a length of at least 60 characters, but you can use your own hashing function customizing check_password_hash() and create_password_hash() in /include/general_functions.php (when you upgrade DaDaBIK, however, general_functions.php will be overwritten so you'll need to edit it again). If you change the create_password_hash() function, this also affects the hashes of the tokens (used by HTTP APIs); please note that at the moment those hashes can be maximum 100 characters long.
+
+Also consider that DaDaBIK WON'T WORK properly if you use both LDAP authentication or Google authentication and your own custom users/groups table, if you decide to use your own custom users/groups table, $enable_ldap_authentication and $enable_google_authentication must be 0.
 The custom users and groups table is also not compatible with two-factor authentication (enable_2fa must be set to 0).
 
 */
@@ -333,7 +336,7 @@ id_confirmation_user VARCHAR(100) NULL UNIQUE
 id_confirmation_timestamp_user INT NULL
 force_password_change_user VARCHAR(3) NOT NULL DEFAULT 'no'
 enable_2fa_user VARCHAR(3)  NOT NULL DEFAULT 'no'
-Thier value is not important and won't be used, just add the fields.
+Their value is not important and won't be used, just add the fields.
 */
 
 // Enable the use of custom PHP pages in a DaDaBIK application (0|1)
@@ -350,10 +353,16 @@ $enable_custom_display_results_grid = 0;
 
 // Use the id_group of the user, instead of the username, to fill ID_user fields (0|1)
 // this also affects how the owner permissions work (id_group instead of username will be used to control read, delete, update)
-// please note that if you change this parameter for a running application that uses one or more ID_user field types, you will end up in an inconsistent situation where some records have the username of the user as oweer and some others the id_group
+// please note that if you change this parameter for a running application that uses one or more ID_user field types, you will end up in an inconsistent situation where some records have the username of the user as owner and some others the id_group
 $use_id_group_for_ownership = 0;
 
-// Enable create view (0|1): set to 1 to enable database views creation from DaDaBIK (admin interface -> Pages). Please note that when $enable_crate_view is set to 1, from admin -> Pages it is possible to create views incluing all the data the database user set for this application has privileges on, even data coming from other databases than the one is set in $db_name.
+/* Set here the list of tables/views you don't want to show in the left menu
+for example $menu_hidden_tables = ['customers','products'];
+to exclude the "customers" and "products" table
+This is a parameter you will rarely need, in fact you can control the permissions for a table from the DEV Area (Edit This App -> Permissions) and if you disable read permissions for a table, the table will not be displayed in the let manu. However, you may need to handle corner cases where the read permission is enabled but you don't want to see the table listed in the menu, these are the only cases where you need to set $menu_hidden_tables  */
+$menu_hidden_tables = [];
+
+// Enable create view (0|1): set to 1 to enable database views creation from DaDaBIK (admin interface -> Pages). Please note that when $enable_crate_view is set to 1, from admin -> Pages it is possible to create views incluing all the data the database user set for this application has privileges on, even data coming from other databases than the one that is set in $db_name.
 $enable_create_view = 0;
 
 // By default, the use of semicolon characters is not allowed for the SQL query you use to create a VIEW in the admin -> pages section. It's a security measure, if an attacker gets access to the admin section, the semicolon can be exploited to add malicious queries to the "create view" query (e.g. insert, delete, drop queries on all the data the database user set for this application has privileges on).
@@ -373,11 +382,11 @@ $show_logout_account_admin_box = 1;
 // If you set to 1, remember, when you write your own custom code, that you cannot execute a query containing multiple SQL statements
 $disable_mysql_multiple_statements = 1;
 
-// additional SQL security check (0|1). Check, for some of the SELECT queries DaDaBIK executes, for not expected strings such as ; DELETE INSERT UPDATE and others, strings that could represent an SQL injection attempt (0|1); You are strongly encouraged to leave this option set to 1, disable it only if you really know what you are doing.
+// additional SQL security check (0|1). Check, for some of the SELECT queries DaDaBIK executes, for unexpected strings such as ; DELETE INSERT UPDATE and others, strings that could represent an SQL injection attempt (0|1); You are strongly encouraged to leave this option set to 1, disable it only if you really know what you are doing.
 $sql_select_security_check = 1;
 
-// form configurator security check (0|1). For the parameters in form configurator involved in queries execution, such as "Lookup table name" or "Lookup table primary key field", DaDaBIK checks if they contain proper table and field names and if not, it throws an error. This is useful if for some reason their content has been maliciuosly modified to try an SQL injection attack. You are strongly encouraged to leave this option set to 1, disable it only if you really know what you are doing.
-// you might get error even if in form configurator you are referring to a table (for example as an items table or as a linked table) or a field that is not available anymore (you dropped it, you uninstall it or you disable it).
+// form configurator security check (0|1). For the parameters in form configurator involved in queries execution, such as "Lookup table name" or "Lookup table primary key field", DaDaBIK checks if they contain proper table and field names and if not, it throws an error. This is useful if for some reason their content has been maliciously modified to try an SQL injection attack. You are strongly encouraged to leave this option set to 1, disable it only if you really know what you are doing.
+// you might get error even if in form configurator you are referring to a table (for example as an items table or as a linked table) or a field that is not available anymore (you dropped it, you uninstalled it or you disabled it).
 $form_config_security_check = 1;
 
 // when enabled, before insert and update operations, for select_single, select_single_radio, select_multiple and select_multple_checkboxes fields DaDaBIK checks if the value proposed belongs to the set of options available.
@@ -394,6 +403,37 @@ $enable_data_tab_operations = 0;
 $check_innodb_engine = 1;
 
 
+
+
+// Google Authentication parameters
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// enable Google authentication (0|1); this feature allows users to self-register by signing in through Google. Once authenticated, DaDaBIK checks if the user's email address matches an existing user. If not, a new user is automatically created using basic information retrieved from the provider (email). After registration, the user becomes a regular DaDaBIK user, like any other. They will be able to log in to the DaDaBIK application through Google from that point onward.
+
+// This feature is currently in beta. Do not use it in production environments.
+
+// Please also note that DaDaBIK WON'T WORK properly if you use both google authentication and your own custom users/groups table (not the default one), if you decide to use your own custom users/groups table, $enable_google_authentication must be 0
+
+// Please read the manual (Google Authentication chapter) for additional details.
+
+$enable_google_authentication = 0;
+
+// Google default group: after registration, a user is created into the dadabik users table, here you can choose in which group you want to add them by default
+$google_default_id_group = '2';
+
+// before enabling this feature, you must create the credentials for your applicaiton from the google cloud console (https://console.cloud.google.com/apis/credentials):
+// Create Credentials > OAuth Client ID
+// Application Type: Web application
+// Authorized redirect URIs > Add URI (the URI to add is http://your-app-url/login.php?function=google_callback replace your-app-url with the base URL of your DaDaBIK app)
+// use the info provided by google to fill the following parameters in your config_custom.php file
+$google_client_id = '';
+$google_client_secret = '';
+$googole_redirect_uri = '';
+
+
+
+
 // LDAP parameters
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -401,7 +441,7 @@ $check_innodb_engine = 1;
 // enable LDAP authentication (0|1), if 1, an "LDAP authentication" checkbox will be displayed below the log-in form; you can avoid setting the other LDAP parameters if LDAP authentication is disabled; please note that in a DaDaBIK application usernames must be unique, you can't have two users having the same username, even if one is a regular DaDaBK user and the other an LDAP user; please also note that DaDaBIK WON'T WORK properly if you use both LDAP authentication and your own custom users/groups table (not the default one), if you decide to use your own custom users/groups table, $enable_ldap_authentication must be 0
 $enable_ldap_authentication = 0;
 
-// if set_ldap_authentication_as_default is 1 (and ldap authentation is enbaled), the "LDAP authentication" checkbox is checked by default
+// if set_ldap_authentication_as_default is 1 (and ldap authentation is enabled), the "LDAP authentication" checkbox is checked by default
 $set_ldap_authentication_as_default = 0;
 
 // LDAP host URI, e.g. 'ldap://ldap.yourdomain.net' or 'ldaps://ldap.yourdomain.net'
@@ -417,7 +457,7 @@ $ldap_binding_type = 'classic';
 
 $ldap_binding_prefix = ''; // e.g. if you set this parameter to 'mysubtree\\', $ldap_binding_type to 'ad' and the user fills the username field in the login form with 'paul', the binding will be done with: mysubtree\paul (and the password specified by the user); if $ldap_binding_type is 'classic', this parameter is not cosindered. If any character contained in $ldap_binding_prefix needs to be escaped, you have to provide the string already escaped
 
-// set these parameters if you want to use, for the initial binding/authentication, the credential of a specific user, otherwise DaDaBIK will use the user/password pair provided in the login form
+// set these parameters if you want to use, for the initial binding/authentication, the credentials of a specific user, otherwise DaDaBIK will use the user/password pair provided in the login form
 // when these parameters are set, an additional, second, bind is anyway executed to check the password of the user, according to user/password pair provided in the login form
 
 $ldap_service_account_username = '';
@@ -428,7 +468,7 @@ $ldap_service_account_password = '';
 // if $enable_ldap_escape_dn is 0, you should provide values correctly escaped
 $enable_ldap_escape_dn = 1;
 
-// enable the use of ldap_escape for filter (username of the user when usedas a filter for ldap_search)
+// enable the use of ldap_escape for filter (username of the user when used as a filter for ldap_search)
 // the details of the escaped function used are in ldap_apply_escape_if_enabled_filter() (file /include/general_functions.php)
 // if $enable_ldap_escape_filter is 0, you should provide values correctly escaped
 $enable_ldap_escape_filter = 1;
@@ -475,6 +515,19 @@ $enable_ldap_debug_mode = 0;
 
 
 
+// barcode and qrcode generation parameters
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// you can find the list of supported formats here: https://github.com/picqer/php-barcode-generator/tree/main?tab=readme-ov-file#accepted-barcode-types
+$barcode_format = 'TYPE_CODE_128';
+
+// choose svg or png for barcodes; if you need to produce PDFs containing barcodes, you must choose png. For qrcode PNG is always used.
+$barcode_image_format = 'png';
+
+// qrcode size (in px)
+$qrcode_size = 150;
+
 // deletion parameters
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -492,7 +545,7 @@ $ask_confirmation_delete = 1;
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-// enable the export app feature (0|1), available in the admin area; it produces a backup of your app (files + database)
+// enable the export app feature (0|1), available in the DEV Area; it produces a backup of your app (files + database)
 // it's available on MySQL only on Unix/Linux and uses the mysqldump program
 $enable_export_app = 0;
 
@@ -523,10 +576,10 @@ $use_sort_for_csv = 1;
 // CSV file creation time limit (in seconds), in order to use it uncomment the line below by removing // and set the number of seconds. This feature makes use of the set_time_limit() function and has no effect when PHP is running in safe mode
 //$csv_creation_time_limt = 30;
 
-// the name of a funciton (if any) to apply to labels before using them as CSV headers
+// the name of a function (if any) to apply to labels before using them as CSV headers
 // this parameter is normally empty, you might need it for example if you have labels containing "<br>", because you want to remove the "<br>" from the CSV headers
 // if your labels contain double quotes ("), this is automatically escaped (\") so you don't need to do it
-// after having set the name of the funciton here, you must write the function in /include/custom_functions.php
+// after having set the name of the function here, you must write the function in /include/custom_functions.php
 $csv_headers_formatting_function = ''; // the name, if any, should start with "dadabik_"
 
 
@@ -537,10 +590,10 @@ $csv_headers_formatting_function = ''; // the name, if any, should start with "d
 // the user also needs the insert permissions to execute the import procedure
 $import_from_csv_feature = 1;
 
-// after having uplaoded a file to import, you have a certain amount of time to complete the import operation (by default, 120 seconds), this is a security measure
+// after having uploaded a file to import, you have a certain amount of time to complete the import operation (by default, 120 seconds), this is a security measure
 $seconds_to_complete_import = 120;
 
-// formats allowed (csv, xlsx and ods can be enabeld)
+// formats allowed (csv, xlsx and ods can be enabled)
 $import_csv_allowed = 1;
 $import_xlsx_allowed = 1;
 $import_ods_allowed = 1;
@@ -554,8 +607,13 @@ $import_ods_allowed = 1;
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 // enable_import_csv_synch (0|1) when enabled, if during the import of a row DaDaBIK detects the same record is already available in the table, the existent record is updated instead of adding a new one.
-// the unique field of the table or the csv_check_uniqueness_fields array (if set) are used to detect duplications (see the documentation for furhter details)
+// the unique field of the table or the csv_check_uniqueness_fields array (if set) are used to detect duplications (see the documentation for further details)
 $enable_import_csv_synch = 0;
+
+
+// set here the number of seconds DaDaBIK has to wait before attempting to delete the uploaded CSV/XLS/ODS files (import)
+// by default, this is set to 0 and it is the recommended value, you may try a different value if deletion generates errors
+$seconds_before_delete_imported_csv_file = 0;
 
 
 // HTTP API parameters (HTTP API are available on DaDaBIK Platinum edition only).
@@ -607,6 +665,16 @@ $use_sort_for_pdf = 1;
 // PDF page format
 $pdf_page_format = 'A4';
 
+// assign custom PDF templates to tables
+// by default, for each table/view, you can export to PDF using any of the custom templates you have in the /templates folder
+// you can, however, optionally, assign one or more specific template to each table by setting the $table_pdf_templates array
+// in this example we assign to the table customers the customers_template_new template
+//
+// example:
+// $table_pdf_templates['customers']['template_names'][0] = 'customers_template_new';
+//
+// check the manual for additional info, including how to change the PDF button label
+
 // null handling parameters
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -642,8 +710,8 @@ $camera_capture_value = 'environment';
 
 // $upload_directory is the absolute path (e.g. '/users/john/dadabik/uploads/') of the directory where the files you upload with DaDaBIK (for file field types) are finally stored.
 // if you leave it blank, everything should work anyway: the default uploads folder will be used (it's the directory UPLOADS in the DaDaBIK root folder) and its absolute path automatically determined by DaDaBIK
-// however, you might want to set this paramtere anyway if you want to change the default upload folder (and you SHOULD DO THAT for SECURITY reasons, see the documentation, security chapter, for furhter details).
-// if you are installing DaDaBIK on MS Windows, the $upload_directory automatic guessing could not work correctly so, on Windows, you MUST set it.
+// however, you might want to set this parameter anyway if you want to change the default upload folder (and you SHOULD DO THAT for SECURITY reasons, see the documentation, security chapter, for furhter details).
+// if you are installing DaDaBIK on MS Windows, the $upload_directory automatic guessing may not work properly so, on Windows, you MUST set it.
 
 // how to properly set the $upload_directory
 // please put slash (/) at the end
@@ -652,7 +720,7 @@ $camera_capture_value = 'environment';
 // make sure your webserver can write in this folder and in the temporary upload folder used by PHP
 $upload_directory = '';
 
-// $upload_import_directory is the directory where the XLS/CSV/ODS files you want to import into a table are (normally, only temporarily) stored. Everything is explained for the previous parameter ($upload_directory) is also valid for this one
+// $upload_import_directory is the directory where the XLS/CSV/ODS files you want to import into a table are (normally, only temporarily) stored. Everything explained for the previous parameter ($upload_directory) is also valid for this one
 $upload_import_directory = '';
 
 // max allowed size for the uploaded files (in bytes)
@@ -787,9 +855,25 @@ $hide_quick_search = 0;
 // the only reason why you may want to set it to 1 is to load the results grid slightly faster
 $always_show_advanced_search_button = 0;
 
+// If Quick Search is disabled for all fields in a table, the OmniSearch form (a single-field, search-all textbox) will appear instead, allowing you to search across all compatible fields, using the "contains" operator.
+$enable_omnisearch_feature = 1;
+
+// OmniSearch can use, when performing the search, all the fields the user sees in the results grid ('grid', default option), all the fields the user sees in the advanced search form ('advanced_search') or all the fields the user sees in the details page ('details')
+$omnisearch_fields_to_include = 'grid';
+
+// by default, OmniSearch uses, when performing the search, the fields having the following field types: 'text','textarea','rich_editor','select_single','select_single_radio','select_multiple_menu','select_multiple_checkbox','id_user', 'generic_file','image_file','camera','date','date_time','insert_date_time','update_date_time', if combined with the following content type 'alphabetic','alphanumeric','url','email','phone','html'. Fields having content type 'numeric' are only used for select_single and select_single_radio lookup fields.  You can choose to exclude date and file fields by setting the following two parameters to 0.
+// if you use SQLite, please note that omnisearch currently does not support the date_format "literal_english"
+$include_date_fields_omnisearch = 1;
+$include_file_fields_omnisearch = 1;
+
 // since V 12.0, this parameter by default is set to 0. This means that DaDaBIK uses, to count the number of results of a quick or advanced search, a simple SELECT COUNT(*) for the first part of the query. If set to 1, DaDaBIK uses the same query used to show the results, i.e. also joining other tables (if you have lookup fields). We recommend to keep this parameter set to 0 unless you are experiencing issues.
 $use_long_select_query_for_count = 0;
 
+// cascade drop-down menus, by default, only work in insert and edit forms. If you set this parameter to 1, they will work in the advanced search form as well. They never work in quick search forms.
+$enable_cascade_advanced_search_form = 0;
+
+// show a "set default search filter" button in case, for the current table, a prepopulated search fields callback function is set
+$show_set_default_filter_button = 1;
 
 // data grid and details page parameters
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -804,10 +888,10 @@ $records_per_page_ar[3] = 100;
 // target window for details/edit, 'self' is the same window, 'blank' a new window; this works just for the standard data grid, not for template data grids
 $edit_target_window = 'self';
 
-// coloumn at which a text, textarea and select_single field will be wrapped in the results page, this value also determines the width of the coloumn in the results table (standard data grid) if $word_wrap_fix_width is 1
+// column at which a text, textarea and select_single field will be wrapped in the results page, this value also determines the width of the column in the results table (standard data grid) if $word_wrap_fix_width is 1
 $word_wrap_col = '25';
 
-// allow that $word_wrap_col value also determines the width of the coloumn in the results table (standard data grid) (0|1)
+// allow that $word_wrap_col value also determines the width of the column in the results table (standard data grid) (0|1)
 $word_wrap_fix_width = 0;
 
 // The results grid, for each row, shows edit, delete and details icons. By default, you can use Font Awesome and boxicons icons; if instead you want to use images (e.g. a custom png file) set this parameter to 'images'  ('font_icons','images')
@@ -821,9 +905,11 @@ $details_icon = 'bx bx-info-circle';
 $file_icon = 'fas fa-paperclip fa-lg';
 
 // colors of the icons (only if you are using font icons)
+/* delete, edit and details icons color is now set from admin > layout > basic settings
 $delete_icon_color = '#eb1515';
 $edit_icon_color = '#5067c1';
 $details_icon_color = '#4f84f3';
+*/
 $file_icon_color = 'gray';
 
 // enable results table row highlighting (0|1)
@@ -852,9 +938,16 @@ $enable_live_edit = 1;
 // (0|1) if live edit is enabled, a "double click to edit" message is displayed when the mouse is over a text, textarea, date or date_time field cell
 $show_double_click_message = 1;
 
-
 // show the hide/show quick filters link
 $show_hide_show_quick_filters_link = 1;
+
+// conditional rules (Show ONLY if and conditional functions) always apply to edit and insert forms
+// if this parameter is set to 1 (as it is by default) also apply to the details page, PDFs generated with the standard template and list view
+$use_conditional_rules_for_details_pdf = 1;
+
+// for fields having type TEXT and content NUMERIC, in the results grid, align right (instead of left) their value
+$align_right_numeric_values = 1;
+
 
 // report parameters
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -869,7 +962,7 @@ $enable_pivot_generation = 1;
 // max number of rows as a result of a pivot table generation
 $max_number_rows_pivot = 100;
 
-// enable advanced SQL reports (0|1); if you enable advanced SQL reports, users will be able to define the report using a custom SQL SELECT query. Please note that ANY SELECT query is allowed, regardless of the permissions you set in DaDaBIK -> Admin Area, so the user might have access to any data in your database or even in other databases, if database user used by this DaDaBIK application ($user, look at the beginning of the file) has the needed permissions
+// enable advanced SQL reports (0|1); if you enable advanced SQL reports, users will be able to define the report using a custom SQL SELECT query. Please note that ANY SELECT query is allowed, regardless of the permissions you set in DaDaBIK -> DEV Area, so the user might have access to any data in your database or even in other databases, if database user used by this DaDaBIK application ($user, look at the beginning of the file) has the needed permissions
 // Enabling this feature in combination with a non-empty $username_public_user can be dangerous (an unauthenticated user might have access to any data in your database or even in other databases).
 $enable_advanced_sql_report = 0;
 
@@ -928,6 +1021,9 @@ $date_separator = "-";
 $start_year = '';
 $end_year = '';
 
+// the theme for the flatpickr date picker, "default" or "dark". When you choose the dark DaDaBIK Theme from Admin > Layout, the flatpickr theme is set to "dark" regardless of this setting
+$date_picker_theme = 'default';
+
 // insertion parameters
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -972,8 +1068,11 @@ $show_back_button = 1;
 // in the edit form show, after SAVE and BACK buttons, a SAVE+BACK button
 $show_save_plus_back_button = 1;
 
-// in the deails form, show an "edit" button
-$show_edit_button_in_details = 0;
+// in the details form, show an "edit" button
+$show_edit_button_in_details = 1;
+
+// in the edit form, show a "delete" button
+$show_delete_button_in_edit = 1;
 
 // number of items a select_multiple_menu field should show
 $size_multiple_select = 3;
@@ -999,11 +1098,16 @@ $link_logo_home = 1;
 // according to our tests:
 // - it works well on Chrome and Firefox (only tested on MacOS but it should be the same on other OSs)
 // - on Safari, it seems it is "cached" by the browser: it works well the first time and then the browser doesn't warn the user anymore for the following times
-// - on iOS Safari, it dosn't work (the browser doesn't warn the user)
-// - when a form contains a select_multiple_menu field, the warning is displayed even if the user just clicks on a textbox (without chaning the data) and then leaves the form
+// - on iOS Safari, it doesn't work (the browser doesn't warn the user)
+// - when a form contains a select_multiple_menu field, the warning is displayed even if the user just clicks on a textbox (without changing the data) and then leaves the form
 $warn_unsaved_changes_edit_form = 0;
 $warn_unsaved_changes_insert_form = 0;
 
+// when a page is displayed by the public user, hide the header of the page (0|1)
+$hide_header_for_public_user = 0;
+
+// when a page is displayed by the public user, hide the fixed header and footer of the page for small screens (0|1)
+$hide_mobile_header_footer_for_public_user = 0;
 
 // menu settings
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -1120,7 +1224,7 @@ $db_name_beta = '';
 // You should leave the settings as they are
 
 // Settings for MySQL
-// list of avaliable data types, in case the "simple" data types option is chosen
+// list of available data types, in case the "simple" data types option is chosen
 $simple_field_types['mysql']['int'] = 'Integer number';
 $simple_field_types['mysql']['decimal(12,2)'] = 'Decimal number';
 $simple_field_types['mysql']['float'] = 'Float number';
@@ -1135,7 +1239,7 @@ $simple_field_types_variations['mysql']['int'][] = 'int(11)';
 
 
 // Settings for PostgreSQL
-// list of avaliable data types, in case the "simple" data types option is chosen
+// list of available data types, in case the "simple" data types option is chosen
 $simple_field_types['postgres']['integer'] = 'Integer number';
 $simple_field_types['postgres']['numeric'] = 'Decimal number';
 $simple_field_types['postgres']['real'] = 'Float number';
@@ -1147,7 +1251,7 @@ $simple_field_types['postgres']['time without time zone'] = 'Time';
 
 
 // Settings for MS SQL Server
-// list of avaliable data types, in case the "simple" data types option is chosen
+// list of available data types, in case the "simple" data types option is chosen
 $simple_field_types['sqlserver']['int'] = 'Integer number';
 $simple_field_types['sqlserver']['decimal (12,2)'] = 'Decimal number';
 $simple_field_types['sqlserver']['float'] = 'Float number';
@@ -1159,7 +1263,7 @@ $simple_field_types['sqlserver']['time'] = 'Time';
 
 // settings related to the auto-configurator feature
 /*
-DaDaBIK, using some rules, tries to guess the field types, labels field content types and other paramters you would set for a DaDaBIK application after its installation. The guess works according to some "signals"; for example, if a database field name contains the word "email", DaDaBIK set the content type of the field as email.
+DaDaBIK, using some rules, tries to guess the field types, labels field content types and other parameters you would set for a DaDaBIK application after its installation. The guess works according to some "signals"; for example, if a database field name contains the word "email", DaDaBIK set the content type of the field as email.
 You can influence the rules used by DaDaBIK changing the following parameters. You can safely leave the the settings as they are if you want to use the default rules
 */
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -1214,7 +1318,7 @@ $autoconf['select_single_fields']['postgres'] = array();
 
 // settings for SQLite
 // DB field types that dadabik considers as numeric
-$autoconf['numeric_fields']['sqlite'] = array('int','integer','tinyint','smallint','mediumint','bigint','unsigned big int','int2','int8','real','double','double precision','float','numeric','decimal'.'boolean');
+$autoconf['numeric_fields']['sqlite'] = array('int','integer','tinyint','smallint','mediumint','bigint','unsigned big int','int2','int8','real','double','double precision','float','numeric','decimal');
 
 // DB field types that dadabik considers as date
 $autoconf['date_fields']['sqlite'] = array('date');
@@ -1265,6 +1369,12 @@ $autoconf['url_words'] = array ('website');
 // words that DaDaBIK considers as a hint to guess the content of the field is image_file
 $autoconf['image_words'] = array ('image','picture');
 
+// words that DaDaBIK considers as a hint to guess the content of the field is generic_file (exact match)
+$autoconf['file_words_exact_match'] = array ('file');
+
+// words that DaDaBIK considers as a hint to guess the content of the field is generic_file
+$autoconf['file_words'] = array ('attachment');
+
 $autoconf['numeric_fields']['search_operators'] = 'is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between';
 $autoconf['date_fields']['search_operators'] = 'is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between';
 $autoconf['date_time_fields']['search_operators'] = 'is_equal/is_different/greater_than/less_than/greater_equal_than/less_equal_than/is_null/is_not_null/between';
@@ -1294,7 +1404,8 @@ $autoconf['default']['required_field'] = '0';
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-// some config paramters are now controlled from the admin area (at the moment, only the ones you find in the admin > layout tab). Set $dont_use_admin_config to 1 if you want to continue using config_custom.php to set such parameters
+// THIS PARAMETER IS NO LONGER SUPPORTED, YOU MUST LEAVE IT TO 0
+// some config parameters are now controlled from the DEV Area (at the moment, only the ones you find in the admin > layout tab). Set $dont_use_admin_config to 1 if you want to continue using config_custom.php to set such parameters
 $dont_use_admin_config = 0;
 
 // the name of the main file of DaDaBIK, you can safely leave this option as is unless you need to rename index.php to something else
@@ -1321,11 +1432,36 @@ $function_user_values = '';
 // by default, the function set with $function_user_values is applied just to text field types, set the following parameter to 1 if you want to apply it also to textarea and rich_editor text types
 $apply_function_user_values_to_textarea_richeditor = 0;
 
-// for a calculated field, its value is computed when a new record is inserted and re-computed at every update ("Save" on the edit form), even if the field is hidden from the form or disabled. If you set this parameter to 0, during an update the value of a calculated field is not re-computed if the field is hidden or disabled.
+// for a calculated field or a formula field, its value is computed when a new record is inserted and re-computed at every update ("Save" on the edit form), even if the field is hidden from the form or disabled. If you set this parameter to 0, during an update the value of a calculated or formula field is not re-computed if the field is hidden or disabled.
 $compute_calculated_fields_update_if_hidden_disabled = 1;
+
+// in forum configurator, for the formula parameter, enable autocompletion
+// by default i'ts enabled
+// for databases with a very very large number of tables and fields, autocompletion may shlow down the loading of the form configurator
+$enable_formula_field_autocompletion = 1;
 
 // function to use for generating IDs if a field type is "unique_ID", if you leave it blank the default DaDaBIK function will be used, if you want to use a custom function set the name here (the name must start with "dadabik_") and write the related function's code in custom_functions.php; the function must return the unique id value.
 $unique_ID_custom_function = '';
+
+// you can add an additional PDO connection string that will be added after the default one
+// in the file /include/db_functions_pdo.php, function connect_db(), you can see the default connection strings used 
+$additional_db_connection_string = '';
+
+/* you can add additional connection parameters (for example to establish an SSL connection) by setting an array for additional_db_connection_parameters
+e.g. 
+$additional_db_connection_parameters = array(
+    PDO::MYSQL_ATTR_SSL_CA => '/path/to/a.pem',
+    PDO::MYSQL_ATTR_SSL_CERT => '/path/to/b.pem',
+    PDO::MYSQL_ATTR_SSL_KEY => '/path/to/c.pem',
+);
+*/
+$additional_db_connection_parameters = '';
+
+// emoji used in the DEV Area for the "VIEW this app" button (empty string = no emoji) 
+$emoji_view_this_app_button = '🚀';
+
+// in DEV area, for code text boxes (e.g. the JS custom formatting function textarea), enable codemirror to get syntax highlighting
+$enable_codemirror = 1;
 
 // prefix of the NULL checkbox name
 $null_checkbox_prefix = 'null_value__';
@@ -1365,24 +1501,27 @@ $alias_prefix = '____'; // you can safely leave this option as is
 // how does DaDaBIK read the files uploaded: 'public_url' or 'php'; for security reason, you should keep this option set to "php" and keep the upload folder (see $upload_directory) protected from public access (see documentation)
 $file_access_mode = 'php';
 
-// The separator characther used in form configurator to separate values in  "option to include", "Linked fields", "Linked items table names" and "Items table foreign key field names" parameters. If you change this parameter after the installation, you will have to modify the charaters whereever you used it in the form configurator
+// The separator character used in form configurator to separate values in  "option to include", "Linked fields", "Linked items table names" and "Items table foreign key field names" parameters. If you change this parameter after the installation, you will have to modify the charaters whereever you used it in the form configurator
 // the lenght of the separator needs to be 1
 define('FORM_CONFIGURATOR_SEPARATOR', '~');
 
 // if 1, the custom formatting functions take in input, for select_single/select_multiple fields having more than one linked field, each linked field value singularly. This allows to have more control on the outupt. It should be set to 0 just for compatibility with DaDaBIK applications created with DaDaBIK < 7.1 (if you can't modify your formatting functions). (0|1)
 $pass_linked_fields_to_format_function_as_array = 1;
 
-// default function to be executed when you click on a menu item related to a page based on table/view. If you don't specify anything, by default the results grid is shown; alternatively, you can add an elmeent to the associative array $table_default_functions and specify 'show_search_form' or 'show_insert_form'
+// default function to be executed when you click on a menu item related to a page based on table/view. If you don't specify anything, by default the results grid is shown; alternatively, you can add an element to the associative array $table_default_functions and specify 'show_search_form' or 'show_insert_form'
 /* in this example
 $table_default_functions['customers'] = 'show_insert_form';
 for the table customers, the default function is show_insert_form
 */
 
-// minimum number of characters to type in a user-friendly searchable ajax drop-down menu before DaDaBIK starts querying the table to find the matching options
+// minimum number of characters to type in a search-as-you-type ajax drop-down menu before DaDaBIK starts querying the table to find the matching options
 $ajax_dropdown_minimum_input_length = 3;
 
-// check if table and field names, for the tables installed in DaDaBIK, contains not allowed characters. You are strongly encouraged to leave this option set to 1.
+// check if table and field names, for the tables installed in DaDaBIK, contains not allowed characters. It is highly recommended that you keep this option set to 1.
 $check_table_field_names = 1;
+
+// regex pattern for valid table and field names. It is highly recommended that you keep this option as it is.
+$valid_table_field_name_pattern= '/^[a-zA-Z0-9_\-]+$/';
 
 // DaDaBIK checks (mysql only) if the NO_BACKSLASH_ESCAPES sql mode is enabled, and produces an error in case it is. NO_BACKSLASH_ESCAPES is not compatible with DaDaBIK, you are strongly encouraged to leave this option set to 1.
 $check_sql_mode = 1;
@@ -1406,11 +1545,23 @@ $force_reload_css_js = 0;
 // you can leave it empty, fill it only if the CSV/Excel process asks you to do it
 $working_dir = '';
 
+// when you upgrade DaDaBIK using the up/up2 procedure, a temporary upgrades folder is created
+// by default, permissions assigned are 0755, it is recommended to keep the default value but you can change it here
+$permissions_upgrades_folder = 0755;
+
+// max upload size for uploaded logo (in bytes, default is 10k, 102400 bytes)
+$max_upload_file_size_logo = 102400;
+
+// set to 1 if you don't want to use tags in form configurator for the custom list of options and for the search operators
+$dont_tagify_form_config = 0;
+
 // don't change this parameter
 $dir_custom_php_files = 'custom_php_files';
 
 // don't change this parameter
 $dir_templates = 'templates';
+
+$add_delay_form_submission_during_ajax_calls = 1;
 
 
 // check data coming from insert/update forms to guess if all the data actually arrived (the PHP parameter post_max_size can limit the amount of data), you should always set this parameter to 1
@@ -1445,6 +1596,8 @@ $data_add_field_default_nullable = 0;
 $date_picker_type = 'flatpickr';
 
 $add_nosniff_header = 1;
+
+$add_nocache_header = 1;
 
 $enable_support_for_nested_master_details = 1;
 
@@ -1495,21 +1648,89 @@ if ($dbms_type === 'sqlserver'){
 
 $field_type_for_date = 'date_picker';
 
-$config_basic_settings_fields[] = 'logo_img';
-$config_basic_settings_fields[] = 'title_application';
-//$config_basic_settings_fields[] = 'graphic_theme';
-$config_basic_settings_fields[] = 'grid_layout_scrolling';
-$config_basic_settings_fields[] = 'results_grid_fixed_header';
-//$config_basic_settings_fields[] = 'menu_type';
-$config_basic_settings_fields[] = 'dont_show_menu_if_only_one_item';
-$config_basic_settings_fields[] = 'results_display_mode_menu';
-$config_basic_settings_fields[] = 'maxlength_grid';
 
-$config_basic_settings_field_options['graphic_theme'][] = 'classic';
+
+$config_basic_settings_fields[0] = 'logo_img';
+$config_basic_settings_fields[1] = 'logo_uploaded';
+$config_basic_settings_fields[2] = 'font';
+$config_basic_settings_fields[3] = 'left_menu_bgcolor';
+$config_basic_settings_fields[4] = 'standard_buttons_bgcolor';
+$config_basic_settings_fields[5] = 'custom_buttons_bgcolor';
+$config_basic_settings_fields[6] = 'danger_buttons_bgcolor';
+$config_basic_settings_fields[7] = 'left_menu_text_color';
+$config_basic_settings_fields[8] = 'standard_buttons_text_color';
+$config_basic_settings_fields[9] = 'custom_buttons_text_color';
+$config_basic_settings_fields[10] = 'results_grid_header_bgcolor';
+$config_basic_settings_fields[11] = 'title_application';
+//$config_basic_settings_fields[] = 'graphic_theme';
+$config_basic_settings_fields[12] = 'grid_layout_scrolling';
+$config_basic_settings_fields[13] = 'results_grid_fixed_header';
+//$config_basic_settings_fields[] = 'menu_type';
+$config_basic_settings_fields[14] = 'dont_show_menu_if_only_one_item';
+$config_basic_settings_fields[15] = 'results_display_mode_menu';
+$config_basic_settings_fields[16] = 'maxlength_grid';
+$config_basic_settings_fields[17] = 'theme';
+$config_basic_settings_fields[18] = 'hide_top_bar';
+$config_basic_settings_fields[19] = 'hide_menu';
+$config_basic_settings_fields[20] = 'top_bar_bgcolor';
+$config_basic_settings_fields[21] = 'edit_icon_color';
+$config_basic_settings_fields[22] = 'delete_icon_color';
+$config_basic_settings_fields[23] = 'details_icon_color';
+
+$config_basic_settings_field_categories[3] = 'theme_color';
+$config_basic_settings_field_categories[4] = 'theme_color';
+$config_basic_settings_field_categories[5] = 'theme_color';
+$config_basic_settings_field_categories[6] = 'theme_color';
+$config_basic_settings_field_categories[7] = 'theme_color';
+$config_basic_settings_field_categories[8] = 'theme_color';
+$config_basic_settings_field_categories[9] = 'theme_color';
+$config_basic_settings_field_categories[10] = 'theme_color';
+$config_basic_settings_field_categories[20] = 'theme_color';
+$config_basic_settings_field_categories[21] = 'theme_color';
+$config_basic_settings_field_categories[22] = 'theme_color';
+$config_basic_settings_field_categories[23] = 'theme_color';
+
+$config_basic_settings_field_labels[3] = 'Left Menu Bgcolor';
+$config_basic_settings_field_labels[4] = 'Standard Buttons';
+$config_basic_settings_field_labels[5] = 'Custom Buttons';
+$config_basic_settings_field_labels[6] = 'Danger Buttons';
+$config_basic_settings_field_labels[7] = 'Left Menu Text';
+$config_basic_settings_field_labels[8] = 'Standard Buttons Text';
+$config_basic_settings_field_labels[9] = 'Custom Buttons Text';
+$config_basic_settings_field_labels[10] = 'Results Grid Header';
+$config_basic_settings_field_labels[20] = 'Top Bar Bgcolor';
+$config_basic_settings_field_labels[21] = 'Edit icon';
+$config_basic_settings_field_labels[22] = 'Delete icon';
+$config_basic_settings_field_labels[23] = 'Details icon';
+
+$config_basic_settings_field_options['theme'][] = 'Default';
+$config_basic_settings_field_options['theme'][] = 'Default_Alternative';
+$config_basic_settings_field_options['theme'][] = 'Dark';
+$config_basic_settings_field_options['theme'][] = 'Dark_Light-Top';
+$config_basic_settings_field_options['theme'][] = 'Dashboard_Classic';
+$config_basic_settings_field_options['theme'][] = 'Dashboard_Bright';
+$config_basic_settings_field_options['theme'][] = 'Graphite_&_Smoke';
+$config_basic_settings_field_options['theme'][] = 'Stone_&_Teal';
+$config_basic_settings_field_options['theme'][] = 'Pine_&_Ash';
+$config_basic_settings_field_options['theme'][] = 'Terracotta_Glow';
+$config_basic_settings_field_options['theme'][] = 'Burnt_Sienna';
+$config_basic_settings_field_options['theme'][] = 'Slate_Blue';
+$config_basic_settings_field_options['theme'][] = 'Blue_Green';
+$config_basic_settings_field_options['theme'][] = 'Calm_Horizon';
+$config_basic_settings_field_options['theme'][] = 'Custom';
+
+$config_basic_settings_field_options['font'][] = 'manrope';
+$config_basic_settings_field_options['font'][] = 'open_sans';
+$config_basic_settings_field_options['font'][] = 'source_sans_3';
+$config_basic_settings_field_options['font'][] = 'montserrat';
+$config_basic_settings_field_options['font'][] = 'nunito';
+
+// deprecated, will be deleted
+/*$config_basic_settings_field_options['graphic_theme'][] = 'classic';
 $config_basic_settings_field_options['graphic_theme'][] = 'bluegray';
 $config_basic_settings_field_options['graphic_theme'][] = 'black';
 $config_basic_settings_field_options['graphic_theme'][] = 'blue';
-$config_basic_settings_field_options['graphic_theme'][] = 'green';
+$config_basic_settings_field_options['graphic_theme'][] = 'green';*/
 
 $config_basic_settings_field_options['grid_layout_scrolling'][] = 'site_overflow';
 $config_basic_settings_field_options['grid_layout_scrolling'][] = 'grid_overflow';
@@ -1522,7 +1743,19 @@ $config_basic_settings_field_options['results_display_mode_menu'][] = 'both';
 $config_basic_settings_field_options['results_display_mode_menu'][] = 'classic_grid';
 $config_basic_settings_field_options['results_display_mode_menu'][] = 'list';
 
+$allowed_field_types_omnisearch = ['text','textarea','rich_editor','select_single','select_single_radio','select_multiple_menu','select_multiple_checkbox','id_user', 'generic_file','image_file','camera','date','date_time','insert_date_time','update_date_time','barcode','qrcode'];
+
+$allowed_field_contents_omnisearch = ['alphabetic','alphanumeric','url','email','phone','html'];
+
 const DADABIK_TABLES = array('api_tokens','config','config_beta','failed_login','forms','forms_beta','forms_preview','groups','installation_tab','locked_records','logs','permission_options','permission_types','permissions','permissions_beta','static_pages','static_pages_beta','table_list','table_list_beta','unique_ids','users','pushes');
 
 // up2
 const COMPLETE_LANGUAGES_AR = array  ('english','catalan','chinese','croatian','czech','danish','dutch','estonian','finnish','french','german','hungarian','italian','norwegian','polish','portuguese','rumanian','russian','slovak','spanish','swedish','telugu','traditionalChinese');
+
+$enable_authentication = 1;
+
+$google_allowed_iss_ar[0] = 'https://accounts.google.com';
+$google_allowed_iss_ar[1] = 'accounts.google.com';
+
+$dadabik_config_version = '13.1';
+$dadabik_config_codename = 'Levanto';

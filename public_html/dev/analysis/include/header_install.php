@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -23,16 +23,16 @@ If you are unsure about what you are allowed to do with this license, feel free 
     <link rel="stylesheet" href="css/bootstrap_5.3.2.css">
 
 <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/styles_screen.css?c=<?php echo rand(1,1000); ?>" type="text/css">
+<link rel="stylesheet" href="css/styles_screen_12.7.css?c=<?php echo rand(1,1000); ?>" type="text/css">
 
     <title>Install/Upgrade DaDaBIK</title>
 
 
 
-    <script src="include/jquery/jquery.min.js"></script>
-<script src="include/jquery/jquery-ui-1.13.2/jquery-ui.min.js"></script>
-<script src="include/general_functions.js"></script>
-<link rel="stylesheet" href="include/jquery/jquery-ui-1.13.2/jquery-ui.min.css" type="text/css" media="screen">
+    <script src="include/jquery/jquery_3.7.1.min.js"></script>
+<script src="include/jquery/jquery-ui-1.14.1/jquery-ui.min.js"></script>
+<script src="include/general_functions_13.0.js"></script>
+<link rel="stylesheet" href="include/jquery/jquery-ui-1.14.1/jquery-ui.min.css" type="text/css" media="screen">
 
 <link rel="stylesheet" href="include/fontawesome5/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/fontawesome.css"> <!-- fontawesome4 -->
@@ -96,6 +96,7 @@ function check_installation_password(new_installation_password = installation_pa
         }
         document.getElementById('button_install').disabled = false;
         document.getElementById('install_wait_after_clicking').innerHTML = 'You can install, please WAIT after clicking, installation may take some time';
+        document.getElementById('install_wait_after_clicking').innerHTML = '';
     }
     else{
         if (show_installation_password === 0){

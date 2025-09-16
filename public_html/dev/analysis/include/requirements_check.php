@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -143,8 +143,8 @@ else{
         }
     
         echo '<p><strong>'.$dbms_type.' version:</strong> '.$dbms_version.' <strong>';
-    
-        if ( $dbms_version >= $min_dbms_version[$dbms_type] || $dbms_type === 'mysql' && strpos($dbms_version, 'MariaDB') !== false) { // mariadb is always ok
+        
+        if ( version_compare($dbms_version, $min_dbms_version[$dbms_type], '>=') === true || $dbms_type === 'mysql' && strpos($dbms_version, 'MariaDB') !== false) { // mariadb is always ok
             echo ' <span style="color:#007700">OK<span>';
         }
         else{
@@ -154,7 +154,7 @@ else{
         echo '</strong>';
 
     
-        echo '<p>For addtional requirement details (DB engine, encoding, ...) check the <strong>requirements</strong> chapter of the documentation.</p>';
+        echo '<p>For addtional recommended settings (DB engine, encoding, ...) check the <a href="https://dadabik.com/index.php?function=show_documentation#requirements" target="blank">requirements</a> chapter of the documentation.</p>';
     }
     
     echo '<p>If you are having troubles installing DaDaBIK, <a href="https://dadabik.com/index.php?function=show_contacts&install_troubles=1" target="_blank">CONTACT US</a>. During office hours we typically reply within one hour.';

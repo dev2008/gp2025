@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 	"details" => "Details",
 	"insert_as_new" => "Als neu einfügen",
 	"multiple_inserts" => "Mehrere Datensätze einfügen",
-	"change_table" => "Tabelle wechseln"
+	"change_table" => "Tabelle wechseln",
+	"search_includes_following_fields" => 'Die Suche schliesst folgende Felder ein:',
 );
 
 // normal messages
@@ -40,8 +41,11 @@ $normal_messages_ar = array (
 	"insert_item" => "Eintrag einfügen",
 	"show_all_records" => "Alle Datensätze zeigen",
 	"show_records" => "Daten ansehen",
-	"ldap_user_dont_update" => "Dieser Benutzer wurde von LDAP importiert: Du solltest nur seine Gruppe ändern, falls nötig.",
-	"remove_search_filter" => "Suchfilter entfernen",
+	"ldap_user_dont_update" => "Diese/r User/in wurde importiert (LDAP, Google z.B.): ihre/seine Gruppe ist die einzige Information, die du ändern solltest, falls nötig",
+	"leave_blank_keep_current_password" => "Leer lassen, um aktuelles Passwort zu behalten",
+	"users_will_be_forced_change_after_login_except_ldap" => "Falls ausgewählt, muss der/die User/in beim nächsten Login das Passwort ändern. Trifft nicht auf externe Authentifizierung zu (LDAP, Google z.B.)",
+	"deleting_group_also_delete_users" => "Beachten: beim Löschen der Gruppe werden ebenfalls alle User/innen entfernt.",
+	"set_default_search_filter" => "Standardsuchfilter festlegen",
 	"logout" => "Abmelden",
 	"top" => "Top",
 	"last_search_results" => "Letzte Suchergebnisse",
@@ -69,6 +73,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => "Die eingegebene/n URL/s ist/sind nicht gültig.",
 	"phone_not_valid" => "Die eingegebene/n Telefonnummer/n ist/sind nicht gültig.",
 	"date_not_valid" => "Du hast ungültige Datumsangaben eingetragen.",
+	"id_group_admin_by_non_admin_not_valid" => "Du kannst keine Administratoren anlegen oder bearbeiten, wenn du nicht selbst ein Admin bist",
 	"similar_records" => "Die Einträge unten ähneln demjenigen, den du einfügen möchtest. (Ich zeige max. ".$number_duplicated_records." Einträge; es könnte mehr geben).<br>Was möchten Sie tun?",
 	"similar_records_short" => "Die Einträge unten ähneln demjenigen, den du einfügen möchtest. (Ich zeige max. ".$number_duplicated_records." Einträge; es könnte mehr geben).",
 	"no_records_found" => "Keine Datensätze gefunden.",
@@ -104,6 +109,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "Ihr Profil wurde korrekt aktualisiert.",
 	"delete_result" => "Löschergebnis:",
 	"record_deleted" => "Datensatz korrekt gelöscht.",
+	"records_deleted" => "Einträge korrekt gelöscht.",
 	"duplication_possible" => "Duplizierung möglich","fields_max_length" => "Du hast zu viel Text in ein oder mehrere Feld/er eingegeben.",
 	"change_profile_url"  =>  "Zum Ändern deiner Profil-Daten besuche bitte diese Seite",
 	"current_upload" => "aktuelle Datei ",
@@ -190,6 +196,7 @@ $normal_messages_ar = array (
 'add_column' => 'Spalte hinzufügen', // add column in the pivot report
 'remove_this_column' => 'Spalte entfernen', // remove column in the pivot report
 'advanced_sql_report_instructions_pivot_part' => 'Um Pivot-Tabellen anzulegen, kannst du zusätzlich Alias benutzen (um Label anzugeben); du kannst auch mehr als eine verbundene Funktion verwenden, wie z.B. SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand',
+'advanced_sql_report_instructions_stat_card_part' => 'Für <b>Stat Cards</b> allerdings gibt es keine Aggregation; du musst nur ein Element auswählen. Beispiel: SELECT COUNT(*) FROM customers gibt die Anzahl der "customers" zurück.',
 'record_inserted_close_window' => "Das Objekt wurde korrekt eingefügt, du kannst dieses Fenster <a href='#' onclick='window.close();return false;'>schließen</a>.",
 
 'import' => 'Import',

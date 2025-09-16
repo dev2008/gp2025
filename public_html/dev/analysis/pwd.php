@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -58,10 +58,10 @@ if (file_exists('./include/languages/'.$language.'_custom_prepackaged_app.php'))
 	<title></title>
 		
 	<meta name="viewport" content="initial-scale=1.0"/>
-	<link rel="stylesheet" href="./css/styles_screen.css" type ="text/css" media="screen">
+	<link rel="stylesheet" href="./css/styles_screen_12.6.css" type ="text/css" media="screen">
 	
 	<link rel="stylesheet" href="css/fontawesome.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap_5.3.2.css">
 	
 	<style>
 	/* because styles_screen.css set to 0 only over 768px */
@@ -95,7 +95,7 @@ echo "<input type=\"submit\"  class=\"button_form\" name=\"\" value=\"".$login_m
 echo "</form>";
 if(isset($_POST['pwd'])){
 	
-	if (strlen_custom(unescape($_POST['pwd'])) > 72){
+	if (strlen(unescape($_POST['pwd'])) > 72){
 		echo 'Error';
 		exit();
 	} 

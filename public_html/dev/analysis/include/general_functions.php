@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -13,6 +13,10 @@ If you are unsure about what you are allowed to do with this license, feel free 
 */
 ?>
 <?php
+use BaconQrCode\Renderer\GDLibRenderer;
+use BaconQrCode\Writer;
+
+
 
 $use_unicode_sqlserver_transformations = 0;
 
@@ -47,15 +51,14 @@ function check_blank_dot_names($table_name = NULL, $only_tables = 0, $only_insta
 // check if the field names of a table or the table name contain blank spaces, dots or other not allowed charaters, if no table in input, check all the tables, if a field name in input, just check that field name
 {
     // PARTIAL CODE DUPLICATION WITH GET_VALID_FIELD_NAME and in db_synchro.php
-    // if you change the allowed characters, also change the error message wherever check_blank_dot_names is called
     
-	global $conn, $quote, $prefix_internal_table, $dbms_type, $alias_prefix, $null_checkbox_prefix, $select_type_select_suffix, $select_checkbox_prefix, $field_button_hint_container_id_prefix, $custom_button_ids_prefix;
+	global $conn, $quote, $prefix_internal_table, $dbms_type, $alias_prefix, $null_checkbox_prefix, $select_type_select_suffix, $select_checkbox_prefix, $field_button_hint_container_id_prefix, $custom_button_ids_prefix, $valid_table_field_name_pattern;
 	
 	$items_containing_blank = array();
 	
 	if (!is_null($field_name) ){
 	    // the same check is just after in this function
-	    if (strpos($field_name, ' ') !== false || strpos($field_name, '.') !== false || strpos($field_name, '\\') !== false || strpos($field_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($field_name, $quote) !== false || strpos($field_name, '"') !== false  || strpos($field_name, chr(0)) !== false  || strpos($field_name, $alias_prefix) !== false  || strpos($field_name, $null_checkbox_prefix) !== false   || strpos($field_name, $custom_button_ids_prefix) !== false  || strpos($field_name, $field_button_hint_container_id_prefix) !== false    || strpos($field_name, $select_checkbox_prefix) !== false  || strpos($field_name, $select_type_select_suffix) !== false || strpos($field_name, ';') !== false || $field_name === 'operator'  || strlen_custom($field_name) > 64){
+	    if (!preg_match($valid_table_field_name_pattern, $field_name) || strpos($field_name, ' ') !== false || strpos($field_name, '.') !== false || strpos($field_name, '\\') !== false || strpos($field_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($field_name, $quote) !== false || strpos($field_name, '"') !== false  || strpos($field_name, chr(0)) !== false  || strpos($field_name, $alias_prefix) !== false  || strpos($field_name, $null_checkbox_prefix) !== false   || strpos($field_name, $custom_button_ids_prefix) !== false  || strpos($field_name, $field_button_hint_container_id_prefix) !== false    || strpos($field_name, $select_checkbox_prefix) !== false  || strpos($field_name, $select_type_select_suffix) !== false || strpos($field_name, ';') !== false || $field_name === 'operator'  || strlen_custom($field_name) > 64){
             $items_containing_blank['fields']['field_names'][]=$field_name;
         }
 	}
@@ -86,8 +89,9 @@ function check_blank_dot_names($table_name = NULL, $only_tables = 0, $only_insta
         }
     
         foreach ($tables_names_ar as $table_name) {
-        
-            if (strpos($table_name, ' ') !== false || strpos($table_name, '.') !== false || strpos($table_name, '\\') !== false || strpos($table_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($table_name, $quote) !== false || strpos($table_name, '"') !== false || strpos($table_name, chr(0)) !== false || strpos($table_name, ';') !== false  || strlen_custom($table_name) > 64){
+			
+			// same check in orazio.php
+            if (!preg_match($valid_table_field_name_pattern, $table_name) || strpos($table_name, ' ') !== false || strpos($table_name, '.') !== false || strpos($table_name, '\\') !== false || strpos($table_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($table_name, $quote) !== false || strpos($table_name, '"') !== false || strpos($table_name, chr(0)) !== false || strpos($table_name, ';') !== false  || strlen_custom($table_name) > 64){
                 $items_containing_blank['tables'][] = $table_name;
             }
         
@@ -96,7 +100,7 @@ function check_blank_dot_names($table_name = NULL, $only_tables = 0, $only_insta
                 if ($only_installed === 1){
                     // the same check is just after and in db_synchro.php
                    foreach ($fields_list[$table_name] as $field_name){
-                        if (strpos($field_name, ' ') !== false || strpos($field_name, '.') !== false || strpos($field_name, '\\') !== false || strpos($field_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($field_name, $quote) !== false || strpos($field_name, '"') !== false  || strpos($field_name, chr(0)) !== false  || strpos($field_name, $alias_prefix) !== false  || strpos($field_name, $null_checkbox_prefix) !== false   || strpos($field_name, $custom_button_ids_prefix) !== false  || strpos($field_name, $field_button_hint_container_id_prefix) !== false    || strpos($field_name, $select_checkbox_prefix) !== false  || strpos($field_name, $select_type_select_suffix) !== false || strpos($field_name, ';') !== false || $field_name === 'operator'  || strlen_custom($field_name) > 64){
+                        if (!preg_match($valid_table_field_name_pattern, $field_name) || strpos($field_name, ' ') !== false || strpos($field_name, '.') !== false || strpos($field_name, '\\') !== false || strpos($field_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($field_name, $quote) !== false || strpos($field_name, '"') !== false  || strpos($field_name, chr(0)) !== false  || strpos($field_name, $alias_prefix) !== false  || strpos($field_name, $null_checkbox_prefix) !== false   || strpos($field_name, $custom_button_ids_prefix) !== false  || strpos($field_name, $field_button_hint_container_id_prefix) !== false    || strpos($field_name, $select_checkbox_prefix) !== false  || strpos($field_name, $select_type_select_suffix) !== false || strpos($field_name, ';') !== false || $field_name === 'operator'  || strlen_custom($field_name) > 64){
                             $items_containing_blank['fields']['field_names'][]=$table_name.'.'.$field_name;
                             $items_containing_blank['fields']['table_names'][]=$table_name;
                         }
@@ -107,7 +111,7 @@ function check_blank_dot_names($table_name = NULL, $only_tables = 0, $only_insta
                     $fields_ar =get_fields_list($table_name);
         
                     foreach($fields_ar as $field_name){
-                        if (strpos($field_name, ' ') !== false || strpos($field_name, '.') !== false || strpos($field_name, '\\') !== false || strpos($field_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($field_name, $quote) !== false || strpos($field_name, '"') !== false  || strpos($field_name, chr(0)) !== false  || strpos($field_name, $alias_prefix) !== false  || strpos($field_name, $null_checkbox_prefix) !== false    || strpos($field_name, $custom_button_ids_prefix) !== false  || strpos($field_name, $field_button_hint_container_id_prefix) !== false    || strpos($field_name, $select_checkbox_prefix) !== false  || strpos($field_name, $select_type_select_suffix) !== false || strpos($field_name, ';') !== false || $field_name === 'operator'  || strlen_custom($field_name) > 64){
+                        if (!preg_match($valid_table_field_name_pattern, $field_name) || strpos($field_name, ' ') !== false || strpos($field_name, '.') !== false || strpos($field_name, '\\') !== false || strpos($field_name, '\'') !== false || $dbms_type !== 'sqlite' && strpos($field_name, $quote) !== false || strpos($field_name, '"') !== false  || strpos($field_name, chr(0)) !== false  || strpos($field_name, $alias_prefix) !== false  || strpos($field_name, $null_checkbox_prefix) !== false    || strpos($field_name, $custom_button_ids_prefix) !== false  || strpos($field_name, $field_button_hint_container_id_prefix) !== false    || strpos($field_name, $select_checkbox_prefix) !== false  || strpos($field_name, $select_type_select_suffix) !== false || strpos($field_name, ';') !== false || $field_name === 'operator'  || strlen_custom($field_name) > 64){
                             $items_containing_blank['fields']['field_names'][]=$table_name.'.'.$field_name;
                             $items_containing_blank['fields']['table_names'][]=$table_name;
                         }
@@ -320,7 +324,7 @@ function format_date($date)
 			$date = $temp_ar[1].$date_separator.$temp_ar[2].$date_separator.$temp_ar[0];
 			break;
 		case "ISO_8601":
-			$date = $temp_2_ar[0].$date_separator.$temp_2_ar[1].$date_separator.$temp_2_ar[2].$time_part;
+			$date = $temp_ar[0].$date_separator.$temp_ar[1].$date_separator.$temp_ar[2];
 			break;
 	} // end switch
 	return $date;
@@ -725,13 +729,17 @@ function check_password_hash($password_clear, $password_hash)
 {
 	global $generate_portable_password_hash;
 
-	$t_hasher = new PasswordHash(8, $generate_portable_password_hash);
+	$info = password_get_info($password_hash);
+	
+	if ($info['algo'] !== 0 && $info['algo'] !== NULL) { // it is compatible with password_verify
 		
-	$check = $t_hasher->CheckPassword($password_clear, $password_hash);
-	
-	return $check;
-	
-	
+		return password_verify($password_clear, $password_hash);
+	} else {
+		// Fallback to old method (only for old hashes)
+		$t_hasher = new PasswordHash(8, $generate_portable_password_hash);
+		$check = $t_hasher->CheckPassword($password_clear, $password_hash);
+		return $check;
+	}
 } // end function check_password_hash
 
 function array_orderby()
@@ -756,20 +764,12 @@ function array_orderby()
     return array_pop($args);
 }
 
+// ****************************UP
 function create_password_hash($password_clear)
 {
-	global $generate_portable_password_hash;
 	
-	$t_hasher = new PasswordHash(8, $generate_portable_password_hash);
+	return password_hash($password_clear, PASSWORD_DEFAULT);
 
-	$password_encrypted = $t_hasher->HashPassword($password_clear);
-	if (strlen_custom($password_encrypted) < 20){
-		echo 'Error';
-		exit();
-	}
-	
-	return $password_encrypted;
-		
 } // end function create_password_hash
 
 function ldap_apply_escape_if_enabled_dn($string)
@@ -907,4 +907,80 @@ function file_get_contents_2($url, $timeout=3)
     }
 }*/
 
+
+function generate_barcode_id($table_name, $field_name, $unique_field, $last_inserted_ID )
+{
+	if (function_exists('generate_barcode_id_custom')){
+		return generate_barcode_id_custom($table_name, $field_name, $unique_field, $last_inserted_ID);
+	}
+	return $table_name.'_'.$last_inserted_ID;
+
+}
+
+function generate_barcode($text, $field_type){
+
+	global $barcode_format, $barcode_image_format, $qrcode_size;
+	
+
+	if (function_exists('generate_barcode_custom')){
+		return generate_barcode_custom($text, $field_type, $barcode_format, $barcode_image_format, $qrcode_size);
+	}
+
+	// convert $barcode_format (e.g. TYPE_CODE_128 to the corresponding class name e.g. Picqer\\Barcode\\Types\\TypeCode128 )
+	$class_name = str_replace('_', ' ', strtolower($barcode_format));
+    $class_name = ucwords($class_name);
+    $class_name = str_replace(' ', '', $class_name);
+	$class_name = "Picqer\\Barcode\\Types\\".$class_name;
+
+	require_once './vendor/autoload.php';
+	
+	if ($field_type === 'barcode'){
+		// Make Barcode object
+		$barcode = (new $class_name())->getBarcode($text);
+
+		switch($barcode_image_format){
+			case 'svg':
+				$renderer = new Picqer\Barcode\Renderers\SvgRenderer();
+				return $renderer->render($barcode);
+				break;
+			case 'png';
+				$renderer = new Picqer\Barcode\Renderers\PngRenderer();
+				return '<img src="data:image/png;base64,' . base64_encode($renderer->render($barcode, $barcode->getWidth() * 2)) . '">';
+				break;
+			default:
+				die('Wrong barcode image format');
+		}
+	}
+	elseif($field_type === 'qrcode'){
+		
+
+		$renderer = new GDLibRenderer($qrcode_size);
+		$writer = new Writer($renderer);
+
+		$data = $writer->writeString($text);
+		return '<img src="data:image/png;base64,'.base64_encode($data).'" alt="'.htmlspecialchars($text).'">';
+
+	}
+	else{
+		die('Wrong barcode field type');
+	}
+}
+
+function format_barcode_layout($table_name, $field_name, $field_type, $barcode_image, $barcode_text)
+{	
+	if (function_exists('format_barcode_layout_custom')){
+		return format_barcode_layout_custom($table_name, $field_name, $field_type, $barcode_image, $barcode_text);
+	}
+	
+	if ($field_type == 'barcode'){
+		return '<div style="text-align:center;">'.$barcode_image.'<br>'.$barcode_text.'</div>';
+	}
+	elseif ($field_type == 'qrcode'){
+		return $barcode_image;
+	}
+	else{
+		die('Wrong barcode field type');
+	}
+	
+}
 ?>

@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -33,7 +33,8 @@ $submit_buttons_ar = array (
 	"details" => "Dettagli",
 	"insert_as_new" => "Inserisci come nuovo",
 	"multiple_inserts" => "Inserimenti multipli",
-	"change_table" => "Cambia tabella"
+	"change_table" => "Cambia tabella",
+	"search_includes_following_fields" => 'La ricerca include i seguenti campi:',
 );
 
 // normal messages
@@ -43,8 +44,12 @@ $normal_messages_ar = array (
 	"insert_item" => "Inserisci item",
 	"show_all_records" => "Visualizza tutti i records",
 	"show_records" => "Mostra record",
-	"ldap_user_dont_update" => "Questo è un utente importato da LDAP: l'unica informazione che dovresti modificare (se necessario) è il suo gruppo.",
+	"ldap_user_dont_update" => "Questo è un utente importato (LDAP, Google, ...): l'unica informazione che dovresti modificare (se necessario) è il suo gruppo.",
+	"leave_blank_keep_current_password" => "Lascia in bianco per mantenere la password corrente",
+	"users_will_be_forced_change_after_login_except_ldap" => "Se selezioanto, l'utente dovrà modificare la password al prossimo login. Non viene applicato in caso di autenticazione esterna (es. LDAP, Google).",
+	"deleting_group_also_delete_users" => "Se viene cancellato un gruppo, vengono automaticamente cancellati anche tutti gli utenti appartenenti al gruppo stesso",
 	"remove_search_filter" => "rimuovi filtro di ricerca",
+	"set_default_search_filter" => "imposta filtro default",
 	"logout" => "Logout",
 	"top" => "Top",
 	"last_search_results" => "Risultati ultima ricerca",
@@ -71,6 +76,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => "Hai inserito uno o più URL non validi.",
 	"phone_not_valid" => "Hai inserito uno o piu' numeri di telefono non validi.<br>Devi utilizzare il formato \"+(codice nazionale)(prefisso)(numero)\" es. +390523599318, 00390523599318, 0523599318.",
 	"date_not_valid" => "Hai inserito una o più date non valide.",
+	"id_group_admin_by_non_admin_not_valid" => "Non puoi creare o modificare un utente admin se non sei admin",
 	"similar_records" => "I seguenti record sembrano simili a quello che vuoi inserire (mostro al massimo ".$number_duplicated_records." simili, potrebbero essercene di più).<br>Come vuoi procedere?",
 	"similar_records_short" => "I seguenti record sembrano simili a quello che vuoi inserire (mostro al massimo ".$number_duplicated_records." simili, potrebbero essercene di più).",
 	"no_records_found" => "Non è stato trovato nessun record.",
@@ -106,6 +112,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "Il tuo profilo è stato correttamente aggiornato.",
 	"delete_result" => "Risultato della cancellazione:",
 	"record_deleted" => "Il record è stato cancellato correttamente.",
+	"records_deleted" => "Il record - o i record - sono stati cancellati correttamente.",
 	"duplication_possible" => "E' possibile che si verifichi una duplicazione",
 	"fields_max_length" => "Hai inserito troppo testo in uno o più caratteri.",
 	"current_upload" => "File corrente",
@@ -131,7 +138,7 @@ $normal_messages_ar = array (
     "less_equal_than" => "<=",
     "between" => "intervallo",
     "between_and" => "a", // used for the between search operator: between .... AND .....
-	"export_to_csv" => "Esporta a CSV",
+	"export_to_csv" => "Esporta CSV",
 	"import" => "Importa",
 	"new_insert_executed" => "Nuovo inserimento eseguito",
 	"new_update_executed" => "Nuovo aggiornamento eseguito",
@@ -193,6 +200,7 @@ $normal_messages_ar = array (
 'add_column' => 'aggiungi colonna', // add column in the pivot report
 'remove_this_column' => 'rimuovi colonna', // remove column in the pivot report
 'advanced_sql_report_instructions_pivot_part' => 'Per la generazione di tabelle pivot, in aggiunta, puoi usare gli alias (per specificare la intestazione delle colonne della tabella) e puoi usare più di una funzione aggregata, per esempio: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand',
+'advanced_sql_report_instructions_stat_card_part' => 'Per le <b>stat cards</b>, invece, non c\'è aggregazione; devi selezionare un solo elemento. Per esempio, questo conta il numero totale dei clienti: SELECT COUNT(*) FROM customers.',
 
 "record_inserted_close_window" => "Il record è stato inserito correttamente, puoi <a href='#' onclick='window.close();return false;'>chiudere</a> questa finestra.",
 
@@ -350,7 +358,7 @@ $login_messages_ar['if_email_is_user_temporary_password_sent'] = 'Se questa emai
 // email subject
 $login_messages_ar['your_temporary_password'] = 'La tua password temporanea';
 // email body
-$login_messages_ar['temporary_password_email_content_part_1'] = "Qualcuno (probabilmente tu) ha richiesto una nuova password per accedere a ".$site_url_to_display."\n\nSe se stato tu a richiederla, ecco la tua nuova password temporanea (valida solo per cinque minuti). Considera che l'email non è un canale sicuro per la comunicazione di  password quindi cambia la tua password principale immediatamente dopo avere eseguito il login con quella temporanea e non usare mai, come tua password principale, una della password temporanee che ti abbiamo inviato.";
+$login_messages_ar['temporary_password_email_content_part_1'] = "Qualcuno (probabilmente tu) ha richiesto una nuova password per accedere a ".$site_url_to_display."\n\nSe sei stato tu a richiederla, ecco la tua nuova password temporanea (valida solo per cinque minuti). Considera che l'email non è un canale sicuro per la comunicazione di  password quindi cambia la tua password principale immediatamente dopo avere eseguito il login con quella temporanea e non usare mai, come tua password principale, una della password temporanee che ti abbiamo inviato.";
 $login_messages_ar['temporary_password_email_content_part_2'] = "Se non riesci ad accedere al tuo account utilizzando questa nuova password temporanea, significa che qualcuno ha avuto accesso al tuo account prima di te, ti invitiamo a contattatare l'amministratore di sistema.\n\nSe NON hai richiesto la nuova password, significa che qualcuno potrebbe aver tentato di accedere al tuo account: ti invitiamo ad effettuare il login il prima possibile utilizzando la tua VECCHIA password (questo rende invalida la password temporanea) e a contattare l'amministratore di sistema. Se non riesci ad eseguire il login utilizzando la tua vecchia password, significa che qualcuno ha probabilmente già avuto accesso al tuo account, ti invitiamo a contattare l'amministratore di sistema.";
 
 $login_messages_ar['intro_2fa_secret_page'] = '<h2>Importante: questa pagina, per ragioni di sicurezza, verrà visualizzata solo una volta.</h2><p>Si prega di seguire le seguenti istruzioni prima di abbandonare questa pagina, non sarà infatti possibile accedere nuovamente a queste informazioni.</p><p><b>Scarica un\'applicazione di autenticazione:</b> Visita il tuo app store (Google Play/App Store) e scarica un\'app di autenticazione, come  Google Authenticator o Authy.<br><br><b>Scansione il codice QR:</b> Utilizza l\'app per scansionare il codice QR visualizzato qui sotto. Questo collegherà il tuo account all\'app di autenticazione.<br><br><b>Futuri login:</b> La prossima volta che effettuerai il log in, il sistema ti chiederà un codice di verifica generato dalla tua app di autenticzione.</p>';
