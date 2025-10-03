@@ -3,6 +3,8 @@
 if(!defined('custom_page_from_inclusion')) { die(); }
 require_once 'g_functions.php';
 require_once 'mydatabase.php';
+#setup_output_stream();
+#streaming_debug_info();
 
 $time_start = microtime(true);
 $str="<br /><div class='nz-card'>";

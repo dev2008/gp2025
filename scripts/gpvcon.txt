@@ -1,0 +1,261 @@
+I need to extract data from an uploaded text file and insert it into a table in my database, this will be the first of a number of exercises to extract data. I suggest a control page (controlfootball.php) which handles the selection of the file and then calls modules in order - this module will be leaguereport.php
+
+1) I am using the Dadabik framework so that handles the page scaffolding - we get a canvas we can use but headers have been sent, the html page is already fromatted etc.
+
+2) w3.css is available to us for layout.
+
+3) Dadabik manual 
+
+To avoid conflicts with the DaDaBIK engine, you must use the prefix _cp_ (custom pages) to name your variables, functions and classes, for example:
+
+If in your code you need a variable $test name the variables $_cp_test instead.
+If in your code you need a session variable $_SESSION['test'] name it $_SESSION['_cp_test'] instead
+The same rule applies to $_POST, $_GET and $_COOKIES so if you create a form that posts values using POST, a field first_name must be named _cp_first_name instead and the value will be then available in $_POST['_cp_first_name'].
+
+For your local variables (variables having local scope in your functions), you don't need to follow the _cp_ naming rules.
+
+YOU ARE RESPONSIBLE of following the above rules if you want to avoid conflicts and unexpected behaviours by the DaDaBIK engine, currently there isn't any check on the variable names you use. Also, please make sure that your database field names don't start with _cp_, because this could also lead to conflict.
+
+You can, however, READ all the DaDaBIK variables you can access in your scope, in particular you will find useful the following ones:
+$_SESSION['logged_user_infos_ar']["id_user"] -> the ID of the logged user
+$_SESSION['logged_user_infos_ar']["username_user"] -> the username of the logged user
+$_SESSION['logged_user_infos_ar']["id_group"] -> the group ID of the logged user
+
+
+$conn -> the PDO connection link with the Database
+
+All your custom pages need to start with the following line:
+
+if(!defined('custom_page_from_inclusion')) { die(); }
+
+this prevents your page from being called directly, bypassing the DaDaBIK authentication system
+
+In custom PHP pages, $_POST, $_GET and $_COOKIES are not "escaped" for your queries (so a string POSTed as "tes't" will remain "tes't", regardless of your magic_quotes_gpc settings), we suggest to use prepared statements which don't require explicit escapinng for field values.
+
+If you use custom code in other situations (custom functions, hooks, .... ), however, $_POST, $_GET and $_COOKIES are always escaped by DaDaBIK.
+
+4) To emphasise - sql should be PDO using the $conn object
+
+5) The file to be processed needs to be chosen by the user from a list generated from this query:-
+SELECT `upload_id`, `filename`, `league`, `season`, `week`, `mytimestamp`, `processed` 
+FROM `g_uploads` 
+WHERE `filename` LIKE '%NFL%' OR `filename` LIKE '%NCAA%' 
+
+6) The table that needs to be updated is:-
+
+CREATE TABLE `f_games` (
+  `id_game` varchar(45) NOT NULL,
+  `league` varchar(8) DEFAULT NULL,
+  `season` int(11) DEFAULT NULL,
+  `week` int(11) DEFAULT NULL,
+  `team` varchar(45) DEFAULT NULL,
+  `franchise` varchar(8) DEFAULT NULL,
+  `coach` varchar(45) DEFAULT NULL,
+  `qb` varchar(4) DEFAULT NULL,
+  `safe` varchar(4) DEFAULT NULL,
+  `q1` int(11) DEFAULT NULL,
+  `q2` int(11) DEFAULT NULL,
+  `q3` int(11) DEFAULT NULL,
+  `q4` int(11) DEFAULT NULL,
+  `ot` int(11) DEFAULT NULL,
+  `score` int(11) DEFAULT NULL,
+  `fga` int(11) DEFAULT NULL,
+  `fgg` int(11) DEFAULT NULL,
+  `epa` int(11) DEFAULT NULL,
+  `epg` int(11) DEFAULT NULL,
+  `cva` int(11) DEFAULT NULL,
+  `cvg` int(11) DEFAULT NULL,
+  `punts` int(11) DEFAULT NULL,
+  `thirdcon` int(11) DEFAULT NULL,
+  `thirddowns` int(11) DEFAULT NULL,
+  `fourthcon` int(11) DEFAULT NULL,
+  `fourthdowns` int(11) DEFAULT NULL,
+  `firstd` int(11) DEFAULT NULL,
+  `passcmp` int(11) DEFAULT NULL,
+  `passatt` int(11) DEFAULT NULL,
+  `passyds` int(11) DEFAULT NULL,
+  `passlng` int(11) DEFAULT NULL,
+  `passlngtd` varchar(1) DEFAULT NULL,
+  `passtd` int(11) DEFAULT NULL,
+  `passpct` int(11) DEFAULT NULL,
+  `interception` int(11) DEFAULT NULL,
+  `hrd` int(11) DEFAULT NULL,
+  `skd` int(11) DEFAULT NULL,
+  `rush` int(11) DEFAULT NULL,
+  `rushyds` int(11) DEFAULT NULL,
+  `rushlng` int(11) DEFAULT NULL,
+  `rushlngtd` varchar(1) DEFAULT NULL,
+  `rushtd` int(11) DEFAULT NULL,
+  `fum` int(11) DEFAULT NULL,
+  `qbatt` int(11) DEFAULT NULL,
+  `qbyds` int(11) DEFAULT NULL,
+  `kr` int(11) DEFAULT NULL,
+  `kryds` int(11) DEFAULT NULL,
+  `krtd` int(11) DEFAULT NULL,
+  `pr` int(11) DEFAULT NULL,
+  `pryds` int(11) DEFAULT NULL,
+  `prtd` int(11) DEFAULT NULL,
+  `form1` varchar(4) DEFAULT NULL,
+  `form2` varchar(4) DEFAULT NULL,
+  `run1` varchar(4) DEFAULT NULL,
+  `run2` varchar(4) DEFAULT NULL,
+  `pass1` varchar(4) DEFAULT NULL,
+  `pass2` varchar(4) DEFAULT NULL,
+  `def1` varchar(4) DEFAULT NULL,
+  `def2` varchar(4) DEFAULT NULL,
+  `homeaway` int(11) DEFAULT NULL,
+  `gametype` int(11) DEFAULT NULL,
+  `opp_team` varchar(45) DEFAULT NULL,
+  `opp_franchise` varchar(8) DEFAULT NULL,
+  `opp_coach` varchar(45) DEFAULT NULL,
+  `opp_qb` varchar(4) DEFAULT NULL,
+  `opp_safe` varchar(4) DEFAULT NULL,
+  `opp_q1` int(11) DEFAULT NULL,
+  `opp_q2` int(11) DEFAULT NULL,
+  `opp_q3` int(11) DEFAULT NULL,
+  `opp_q4` int(11) DEFAULT NULL,
+  `opp_ot` int(11) DEFAULT NULL,
+  `opp_score` int(11) DEFAULT NULL,
+  `opp_fga` int(11) DEFAULT NULL,
+  `opp_fgg` int(11) DEFAULT NULL,
+  `opp_epa` int(11) DEFAULT NULL,
+  `opp_epg` int(11) DEFAULT NULL,
+  `opp_cva` int(11) DEFAULT NULL,
+  `opp_cvg` int(11) DEFAULT NULL,
+  `opp_punts` int(11) DEFAULT NULL,
+  `opp_thirdcon` int(11) DEFAULT NULL,
+  `opp_thirddowns` int(11) DEFAULT NULL,
+  `opp_fourthcon` int(11) DEFAULT NULL,
+  `opp_fourthdowns` int(11) DEFAULT NULL,
+  `opp_firstd` int(11) DEFAULT NULL,
+  `opp_passcmp` int(11) DEFAULT NULL,
+  `opp_passatt` int(11) DEFAULT NULL,
+  `opp_passyds` int(11) DEFAULT NULL,
+  `opp_passlng` int(11) DEFAULT NULL,
+  `opp_passlngtd` varchar(1) DEFAULT NULL,
+  `opp_passtd` int(11) DEFAULT NULL,
+  `opp_passpct` int(11) DEFAULT NULL,
+  `opp_interception` int(11) DEFAULT NULL,
+  `opp_hrd` int(11) DEFAULT NULL,
+  `opp_skd` int(11) DEFAULT NULL,
+  `opp_rush` int(11) DEFAULT NULL,
+  `opp_rushyds` int(11) DEFAULT NULL,
+  `opp_rushlng` int(11) DEFAULT NULL,
+  `opp_rushlngtd` varchar(1) DEFAULT NULL,
+  `opp_rushtd` int(11) DEFAULT NULL,
+  `opp_fum` int(11) DEFAULT NULL,
+  `opp_qbatt` int(11) DEFAULT NULL,
+  `opp_qbyds` int(11) DEFAULT NULL,
+  `opp_kr` int(11) DEFAULT NULL,
+  `opp_kryds` int(11) DEFAULT NULL,
+  `opp_krtd` int(11) DEFAULT NULL,
+  `opp_pr` int(11) DEFAULT NULL,
+  `opp_pryds` int(11) DEFAULT NULL,
+  `opp_prtd` int(11) DEFAULT NULL,
+  `opp_form1` varchar(4) DEFAULT NULL,
+  `opp_form2` varchar(4) DEFAULT NULL,
+  `opp_run1` varchar(4) DEFAULT NULL,
+  `opp_run2` varchar(4) DEFAULT NULL,
+  `opp_pass1` varchar(4) DEFAULT NULL,
+  `opp_pass2` varchar(4) DEFAULT NULL,
+  `opp_def1` varchar(4) DEFAULT NULL,
+  `opp_def2` varchar(4) DEFAULT NULL,
+  `win` int(11) DEFAULT NULL,
+  `lose` int(11) DEFAULT NULL,
+  `tie` int(11) DEFAULT NULL,
+  `creation_time` timestamp NOT NULL DEFAULT current_timestamp(),
+  `modification_time` datetime DEFAULT NULL ON UPDATE current_timestamp(),
+  `modification_by` varchar(30) DEFAULT 'AlanM',
+  `modification_from` varchar(30) DEFAULT 'MintVM',
+  PRIMARY KEY (`id_game`),
+  KEY `league` (`league`),
+  KEY `season` (`season`),
+  KEY `week` (`week`),
+  KEY `franchise` (`franchise`),
+  KEY `homeaway` (`homeaway`),
+  KEY `gametype` (`gametype`),
+  KEY `coach` (`coach`),
+  KEY `i_gameweeks` (`league`,`season`,`week`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+7) I have attached the file NFLZZ-PE_s2033_w14_vs_Cardinals.txt as an example of the file to be processed.
+
+8) This is a simulated game of American Football.
+
+9) The information to be processed is in the section beginning <P.70><BK.League Report><L>
+
+10) The section ends with <E><P> and is followed by a section marked as <B><BK.Standings><L>
+
+11) The League report consists of reports from 12 games between 2 teams.
+
+12) Each set of games begins with <Z>
+
+13) Each set of games has 6 lines:-
+Line 1 - Teams and Score
+Line 2 - Misc game data
+Line 3 - Passing stats
+Line 4 - Rushing stats
+Line 5 - Special Teams stats
+Line 6 - Play Calls
+
+14) The first half of each line is the road team and the 2nd half the home team, separated by <T>
+
+15) For each game two database entries will be required - one for the road team and one for the home basically mirrors of each other
+
+localhost:3306/dev-gp/f_games/		http://app84.local/phpmyadmin/index.php?route=/table/sql&db=dev-gp&table=f_games
+
+   Showing rows 0 -  1 (2 total, Query took 0.0004 seconds.)
+
+
+SELECT `id_game`, `league`, `season`, `week`, `team` FROM `f_games` WHERE `league`='NFLZZ' AND `season`=2033 AND `week`=14 AND (`team` like 'Buff%' OR `team` like 'New En%' );
+
+
+id_game	league	season	week	team	
+NFLZZ203314BuffaloBills	NFLZZ	2033	14	Buffalo Bills	
+NFLZZ203314NewEnglandPatriots	NFLZZ	2033	14	New England Patriots	
+
+16) The id_game is generated by concentating league, season, week and team
+
+17) Certain fields have been split in two these are Pass Lg (long) and Rush Lg so that the numeric value and t (for td yes or no) are stored separetely 
+
+localhost:3306/dev-gp/f_games/		http://app84.local/phpmyadmin/index.php?route=/table/sql&db=dev-gp&table=f_games
+
+   Showing rows 0 -  1 (2 total, Query took 0.0025 seconds.)
+
+
+SELECT `id_game`,`passyds`, `passlng`,`rushlng`, `rushlngtd`,`opp_passlng`, `opp_passlngtd`, `opp_rushlng`, `opp_rushlngtd` 
+FROM `f_games` WHERE `league`='NFLZZ' AND `season`=2033 AND `week`=14 AND (`team` like 'Buff%' OR `team` like 'New En%' );
+
+
+id_game	passyds	passlng	rushlng	rushlngtd	opp_passlng	opp_passlngtd	opp_rushlng	opp_rushlngtd	
+NFLAR203314BuffaloBills	436	66	13		30		13		
+NFLAR203314NewEnglandPatriots	165	30	13		66	Y	13		
+
+18) On the Calls line you will normally get 2 FM (Formations), 2 Run, 2 Pass, 2 Def for each time but there could be 0,1 or 2 for each section 
+
+19) On completion of the processing we need to update g_uploads - `league`, `season`, `week`, with values extracted from the file and set `processed` to 700 
+
+20) Here is the data for the first game in the example
+
+
+localhost:3306/dev-gp/f_games/		http://app84.local/phpmyadmin/index.php?route=/table/sql&db=dev-gp&table=f_games
+
+   Showing rows 0 -  1 (2 total, Query took 0.0019 seconds.)
+
+
+SELECT * FROM `f_games` WHERE `league`='NFLZZ' AND `season`=2033 AND `week`=14 AND (`team` like 'Buff%' OR `team` like 'New En%' );
+
+
+id_game	league	season	week	team	franchise	coach	qb	safe	q1	q2	q3	q4	ot	score	fga	fgg	epa	epg	cva	cvg	punts	thirdcon	thirddowns	fourthcon	fourthdowns	firstd	passcmp	passatt	passyds	passlng	passlngtd	passtd	passpct	interception	hrd	skd	rush	rushyds	rushlng	rushlngtd	rushtd	fum	qbatt	qbyds	kr	kryds	krtd	pr	pryds	prtd	form1	form2	run1	run2	pass1	pass2	def1	def2	homeaway	gametype	opp_team	opp_franchise	opp_coach	opp_qb	opp_safe	opp_q1	opp_q2	opp_q3	opp_q4	opp_ot	opp_score	opp_fga	opp_fgg	opp_epa	opp_epg	opp_cva	opp_cvg	opp_punts	opp_thirdcon	opp_thirddowns	opp_fourthcon	opp_fourthdowns	opp_firstd	opp_passcmp	opp_passatt	opp_passyds	opp_passlng	opp_passlngtd	opp_passtd	opp_passpct	opp_interception	opp_hrd	opp_skd	opp_rush	opp_rushyds	opp_rushlng	opp_rushlngtd	opp_rushtd	opp_fum	opp_qbatt	opp_qbyds	opp_kr	opp_kryds	opp_krtd	opp_pr	opp_pryds	opp_prtd	opp_form1	opp_form2	opp_run1	opp_run2	opp_pass1	opp_pass2	opp_def1	opp_def2	win	lose	tie	creation_time	modification_time	modification_by	modification_from	
+NFLZZ203314BuffaloBills	NFLZZ	2033	14	Buffalo Bills	2001	Alan Baylis			10	3	14	19	0	46	4	3	5	5	0	0	2	5	12	0	0	27	22	34	436	66	Y	4	65	0	2	1	26	129	13		1	0	2	17	2	11	0	5	83	0	S	J	DW	QR	DP	DL	RD	ND	0	24	New England Patriots	2002	Paul Lancaster		S	7	3	0	7	0	17	2	1	2	2	0	0	5	4	12	0	1	17	14	27	165	30		2	52	0	2	3	31	164	13		0	0	1	0	5	150	0	0	0	0	C	A	PW	RN	FI	LL	ZS	ES	1	0	0	2025-09-30 17:07:01	2025-09-30 18:09:35	asm	asm	
+NFLZZ203314NewEnglandPatriots	NFLZZ	2033	14	New England Patriots	2002	Paul Lancaster		S	7	3	0	7	0	17	2	1	2	2	0	0	5	4	12	0	1	17	14	27	165	30		2	52	0	2	3	31	164	13		0	0	1	0	5	150	0	0	0	0	C	A	PW	RN	FI	LL	ZS	ES	1	24	Buffalo Bills	2001	Alan Baylis			10	3	14	19	0	46	4	3	5	5	0	0	2	5	12	0	0	27	22	34	436	66	Y	4	65	0	2	1	26	129	13		1	0	2	17	2	11	0	5	83	0	S	J	DW	QR	DP	DL	RD	ND	0	1	0	2025-09-30 17:07:01	2025-09-30 18:09:35	asm	asm	
+
+
+<Z>Buffalo Bills (Alan Baylis)  10 3 14 19 (46)<T>New England Patriots (Paul Lancaster) S  7 3 0 7 (17)<C><L.31.1>
+FG 4/3, EP 5/5, CP 0/0, Punt 2, 3rd 5/12, 4th 0/0, 1st 27<T>FG 2/1, EP 2/2, CP 0/0, Punt 5, 3rd 4/12, 4th 0/1, 1st 17<L.31.1>
+Pass 22 for 34, 436 yds, Lg t66, 4 TD, 65%, In 0, Hrd 2, Skd 1<T>Pass 14 for 27, 165 yds, Lg 30, 2 TD, 52%, In 0, Hrd 2, Skd 3<L.31.1>
+Rush 26 for 129 yds, Lg 13, 1 TD, avg 5.0, Fm 0, QB 2 for 17 yds<T>Rush 31 for 164 yds, Lg 13, avg 5.3, Fm 0, QB 1 for 0 yds<L.31.1>
+KR 2 for 11 yds, PR 5 for 83 yds, FumR 0 for 0 yds<T>KR 5 for 150 yds, PR 0 for 0 yds, FumR 0 for 0 yds<L.31.1>
+Calls Fm S J, Run DW QR, Pass DP DL, Def RD ND<T>Calls Fm C A, Run PW RN, Pass FI LL, Def ZS ES<L.40.1>
+
+21) To comply with our style guide everything should be in php - no jumping in and out of html, echo html as needed.
