@@ -196,20 +196,14 @@ function _cp_process_league_report(PDO $conn, $upload_id, $files_dir) {
             // Mirror into two row payloads
             $rowRoad = _cp_build_row($_cp_league, $_cp_season, $_cp_week, $parsedRoad, $parsedHome, 0, $franchiseMap);
             $rowHome = _cp_build_row($_cp_league, $_cp_season, $_cp_week, $parsedHome, $parsedRoad, 1, $franchiseMap);
-			// Nice labels for output
-			$roadId   = $rowRoad['id_game'] ?? null;
-			$homeId   = $rowHome['id_game'] ?? null;
-			$roadTeam = $rowRoad['team']    ?? ($parsedRoad['team'] ?? 'Road');
-			$homeTeam = $rowHome['team']    ?? ($parsedHome['team'] ?? 'Home');
 
-			if (_CP_DEBUG) {
-				// technical detail in debug
-				echo 'Upserting: '.htmlspecialchars((string)$roadId).' & '.htmlspecialchars((string)$homeId).'<br>';
-			} else {
-				// friendlier in normal mode
-				echo 'Processing: '.htmlspecialchars($roadTeam).' @ '.htmlspecialchars($homeTeam).'<br>';
-			}
-
+			// ---- Friendly output labels ----
+			$roadTeam = $rowRoad['team'] ?? ($parsedRoad['team'] ?? 'Road');
+			$homeTeam = $rowHome['team'] ?? ($parsedHome['team'] ?? 'Home');
+			$roadId   = $rowRoad['id_game'] ?? '';
+			$homeId   = $rowHome['id_game'] ?? '';
+			
+			_cp_log_processing($roadTeam, $homeTeam, $roadId, $homeId);
 
 	// Upsert Road
 	$paramsRoad = _cp_bind_params($rowRoad, $sql);
@@ -254,9 +248,6 @@ if (!empty($missingR)) {
 if (_CP_DEBUG) {
     echo "Tokens (road): need ".count($needR).", have ".count($haveR)."<br>";
     echo "Tokens (home): need ".count($needH).", have ".count($haveH)."<br>";
-    echo "Upserting: $roadId & $homeId<br>";
-} else {
-    echo "Processing: $roadId vs $homeId<br>";
 }
 
 
@@ -584,6 +575,4 @@ if (!function_exists('_cp_param_diff')) {
         return [$missing, $extra, $need, $have];
     }
 }
-
-
 

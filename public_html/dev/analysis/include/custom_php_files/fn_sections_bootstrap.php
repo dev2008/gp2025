@@ -1,8 +1,32 @@
 <?php
 if(!defined('custom_page_from_inclusion')) { die(); }
 
-// Set this to true to enable verbose debug output across all modules
-define('_CP_DEBUG', false);
+// before: define('_CP_DEBUG', false);
+if (!defined('_CP_DEBUG')) {
+    define('_CP_DEBUG', false);
+    #define('_CP_DEBUG', true);
+}
+
+
+// Stubs should NOT mark processed by default.
+// Flip to true only when a stub becomes a real implementation.
+define('_CP_ALLOW_STUBS_SET_FLAG', false);
+
+if (!function_exists('_cp_log_processing')) {
+    function _cp_log_processing(string $roadTeam, string $homeTeam, string $roadId = '', string $homeId = ''): void {
+        if (defined('_CP_DEBUG') && _CP_DEBUG) {
+            echo 'Processing (debug): '
+                .htmlspecialchars($roadId).' vs '
+                .htmlspecialchars($homeId).'<br>';
+        } else {
+            echo 'Processing: '
+                .htmlspecialchars($roadTeam).' @ '
+                .htmlspecialchars($homeTeam).'<br>';
+        }
+    }
+}
+
+
 
 /** -------- Bitmask flags -------- */
 define('_CP_FLAG_LEAGUE',     1);   // League Report

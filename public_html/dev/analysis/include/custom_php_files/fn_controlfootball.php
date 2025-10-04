@@ -20,12 +20,18 @@ $_cp_upload_id  = isset($_POST['_cp_upload_id']) ? (int)$_POST['_cp_upload_id'] 
 $_cp_files_dir  = isset($upload_directory) ? $upload_directory : null;
 
 // Force checkboxes
+$_cp_force_league    =  !empty($_POST['_cp_force_league']);
 $_cp_force_team       = !empty($_POST['_cp_force_team']);
 $_cp_force_roster     = !empty($_POST['_cp_force_roster']);
 $_cp_force_pbp        = !empty($_POST['_cp_force_pbp']);
 $_cp_force_h2h        = !empty($_POST['_cp_force_h2h']);
 $_cp_force_standings  = !empty($_POST['_cp_force_standings']);
 $_cp_force_scout      = !empty($_POST['_cp_force_scout']);
+
+// near the top of fn_controlfootball.php, after reading POST:
+if (!empty($_POST['_cp_debug']) && !defined('_CP_DEBUG')) {
+    define('_CP_DEBUG', true);
+}
 
 // UI helper
 function _cp_flag_badge($on) {
@@ -45,7 +51,7 @@ if ($_cp_action === 'process' && $_cp_upload_id > 0) {
 
     // Section registry: flag, file, function, label, force var
     $sections = [
-        ['flag'=>_CP_FLAG_LEAGUE,     'file'=>'fn_leaguereport.php',   'func'=>'_cp_process_league_report',   'label'=>'League Report',   'force'=>false], // league force typically not offered
+		['flag'=>_CP_FLAG_LEAGUE, 	  'file'=>'fn_leaguereport.php',   'func'=>'_cp_process_league_report',   'label'=>'League Report',   'force'=>$_cp_force_league],
         ['flag'=>_CP_FLAG_TEAM,       'file'=>'fn_teamreport.php',     'func'=>'_cp_process_team_report',     'label'=>'Team Report',     'force'=>$_cp_force_team],
         ['flag'=>_CP_FLAG_ROSTER,     'file'=>'fn_roster.php',         'func'=>'_cp_process_roster',          'label'=>'Roster',          'force'=>$_cp_force_roster],
         ['flag'=>_CP_FLAG_PBP,        'file'=>'fn_playbyplay.php',     'func'=>'_cp_process_play_by_play',    'label'=>'Play by Play',    'force'=>$_cp_force_pbp],
@@ -87,16 +93,17 @@ if ($_cp_action === 'process' && $_cp_upload_id > 0) {
         // Optionally clear bits for forced re-run (except League)
 		$clearStmt = $conn->prepare("UPDATE g_uploads SET processed = COALESCE(processed,0) & ~:flag WHERE upload_id=:id LIMIT 1");
 		foreach ($sections as $s) {
-			if (!empty($s['force']) && $s['flag'] !== _CP_FLAG_LEAGUE) {
+		if (!empty($s['force'])) {
 				$clearStmt->execute([':flag'=>$s['flag'], ':id'=>$_cp_upload_id]);
 				$_cp_summary['forced'][] = $s['label'];
 			}
 		}
         // refresh mask if any forced
-        if ($_cp_force_team || $_cp_force_roster || $_cp_force_pbp || $_cp_force_h2h || $_cp_force_standings || $_cp_force_scout) {
-            $st->execute([':id'=>$_cp_upload_id]);
-            $processed = (int)$st->fetchColumn();
-        }
+		if ($_cp_force_league || $_cp_force_team || $_cp_force_roster || $_cp_force_pbp || $_cp_force_h2h || $_cp_force_standings || $_cp_force_scout) {
+			$st->execute([':id'=>$_cp_upload_id]);
+			$processed = (int)$st->fetchColumn();
+		}
+
 
         // Run steps (skip if bit already set and not forced)
 		foreach ($sections as $s) {
@@ -109,7 +116,10 @@ if ($_cp_action === 'process' && $_cp_upload_id > 0) {
 				continue;
 			}
 
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — '.$label.'…</div>';
+			$forcedNote = !empty($s['force']) ? ' (forced)' : '';
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — '
+				. htmlspecialchars($label) . $forcedNote . '…</div>';
+
 
 			$path = __DIR__ . '/' . $s['file'];
 			if (!is_file($path)) {
@@ -266,6 +276,7 @@ try {
     // Force rerun options
     echo '<div class="w3-section">';
     echo '<div><b>Force rerun (optional)</b></div>';
+    echo '<label><input class="w3-check" type="checkbox" name="_cp_force_league"> League Report</label><br>';
     echo '<label><input class="w3-check" type="checkbox" name="_cp_force_team"> Team Report</label><br>';
     echo '<label><input class="w3-check" type="checkbox" name="_cp_force_roster"> Roster</label><br>';
     echo '<label><input class="w3-check" type="checkbox" name="_cp_force_pbp"> Play by Play</label><br>';

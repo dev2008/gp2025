@@ -13,6 +13,9 @@ function _cp_process_roster(PDO $conn, int $upload_id, string $files_dir) : void
     // TODO: parse & write…
 
     [$league, $season, $week] = _cp_parse_lsw_from_filename($filename);
-    _cp_mark_processed_flag($conn, $upload_id, _CP_FLAG_ROSTER, $league, $season, $week);
+	if (_CP_ALLOW_STUBS_SET_FLAG) {
+		_cp_mark_processed_flag($conn, $upload_id, _CP_FLAG_TEAM, $league, $season, $week);
+	}
+
     echo '<div class="w3-panel w3-pale-green w3-border">Roster processed.</div></div>';
 }
