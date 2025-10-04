@@ -36,7 +36,65 @@ if ($_cp_action === 'process' && $_cp_upload_id > 0) {
     echo '<div class="w3-panel w3-pale-blue w3-border">Processing upload_id '
         .(int)$_cp_upload_id.' …</div>';
 
-    _cp_process_league_report($conn, $_cp_upload_id, $_cp_files_dir);
+		// After loading _cp_process_league_report and fn_sections.php…
+		require_once __DIR__ . '/fn_sections.php';
+
+		// Get current processed bitmask
+		$st = $conn->prepare("SELECT processed FROM g_uploads WHERE upload_id=:id LIMIT 1");
+		$st->execute([':id'=>$_cp_upload_id]);
+		$processed = (int)$st->fetchColumn();  // NULL -> 0 automatically when cast
+
+		// If League Report isn’t done yet, run it (sets bit 1 internally if you modify that module)
+		if (!_cp_has_flag($processed, _CP_FLAG_LEAGUE)) {
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — League Report…</div>';
+			_cp_process_league_report($conn, $_cp_upload_id, $_cp_files_dir);
+
+			// refresh the mask after each step
+			$st->execute([':id'=>$_cp_upload_id]);
+			$processed = (int)$st->fetchColumn();
+		}
+
+		// Team Report
+		if (!_cp_has_flag($processed, _CP_FLAG_TEAM)) {
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Team Report…</div>';
+			_cp_process_team_report($conn, $_cp_upload_id, $_cp_files_dir);
+			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
+		}
+
+		// Roster
+		if (!_cp_has_flag($processed, _CP_FLAG_ROSTER)) {
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Roster…</div>';
+			_cp_process_roster($conn, $_cp_upload_id, $_cp_files_dir);
+			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
+		}
+
+		// Play by Play
+		if (!_cp_has_flag($processed, _CP_FLAG_PBP)) {
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Play by Play…</div>';
+			_cp_process_play_by_play($conn, $_cp_upload_id, $_cp_files_dir);
+			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
+		}
+
+		// Head to Head
+		if (!_cp_has_flag($processed, _CP_FLAG_H2H)) {
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Head to Head…</div>';
+			_cp_process_head_to_head($conn, $_cp_upload_id, $_cp_files_dir);
+			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
+		}
+
+		// Standings
+		if (!_cp_has_flag($processed, _CP_FLAG_STANDINGS)) {
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Standings…</div>';
+			_cp_process_standings($conn, $_cp_upload_id, $_cp_files_dir);
+			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
+		}
+
+		// Scouting Report
+		if (!_cp_has_flag($processed, _CP_FLAG_SCOUT)) {
+			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Scouting Report…</div>';
+			_cp_process_scouting_report($conn, $_cp_upload_id, $_cp_files_dir);
+			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
+		}
     echo '</div>';
     return;
 }
@@ -48,7 +106,7 @@ try {
     $sql = "
         SELECT `upload_id`, `filename`, `league`, `season`, `week`, `mytimestamp`, `processed`
         FROM `g_uploads`
-        WHERE `filename` LIKE '%NFL%' OR `filename` LIKE '%NCAA%'
+        WHERE (`filename` LIKE '%NFL%' OR `filename` LIKE '%NCAA%') AND  `processed` <>999
         ORDER BY `mytimestamp` DESC, `upload_id` DESC
         LIMIT 200
     ";

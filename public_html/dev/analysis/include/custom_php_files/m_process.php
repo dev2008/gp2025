@@ -124,8 +124,11 @@ while($x < $number_of_rows) {
 		$_cp_array[$x]['a_negative']=1;
 
 	}
+
+#Any loss or turnover
+#TODO - GPM
 	
-		#Negative
+	#Negative
 	if ($_cp_array[$x]['a_yards']<1 AND "P"<>$_cp_array[$x]['a_form'] AND "F"<>$_cp_array[$x]['a_form'] AND "X"<>$_cp_array[$x]['a_form']){
 	$_cp_array[$x]['a_negative']=1;
 }

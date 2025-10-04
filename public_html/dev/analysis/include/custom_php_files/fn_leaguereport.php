@@ -247,43 +247,30 @@ if (!empty($missingR)) {
 
         }
 
-        // Update g_uploads league/season/week + processed
-        if ($_cp_league !== null && $_cp_season !== null && $_cp_week !== null) {
-            $st2 = $conn->prepare("
-                UPDATE `g_uploads`
-                   SET `league`=:l, `season`=:s, `week`=:w, `processed`=700
-                 WHERE `upload_id`=:id
-                LIMIT 1
-            ");
-            $st2->execute([
-                ':l' => $_cp_league,
-                ':s' => $_cp_season,
-                ':w' => $_cp_week,
-                ':id'=> $upload_id
-            ]);
-        } else {
-            // still mark processed even if filename parse failed
-            $st3 = $conn->prepare("UPDATE `g_uploads` SET `processed`=700 WHERE `upload_id`=:id LIMIT 1");
-            $st3->execute([':id'=>$upload_id]);
-            $warnings[] = "League/Season/Week not parsed from filename; only processed flag updated.";
-        }
+		// Update g_uploads league/season/week + set LEAGUE bit
+		[$__lg, $__sn, $__wk] = _cp_parse_lsw_from_filename($_cp_filename); // same helper style as sections
+		if ($__lg !== null && $__sn !== null && $__wk !== null) {
+			_cp_mark_processed_flag($conn, $upload_id, _CP_FLAG_LEAGUE, $__lg, $__sn, $__wk);
+		} else {
+			_cp_mark_processed_flag($conn, $upload_id, _CP_FLAG_LEAGUE);
+			$warnings[] = "League/Season/Week not parsed from filename; only processed bit updated.";
+		}
+				$conn->commit();
+			} catch (Exception $e) {
+				$conn->rollBack();
+				echo '<div class="w3-panel w3-red"><b>Processing error:</b> '.htmlspecialchars($e->getMessage()).'</div></div>';
+				return;
+			}
 
-        $conn->commit();
-    } catch (Exception $e) {
-        $conn->rollBack();
-        echo '<div class="w3-panel w3-red"><b>Processing error:</b> '.htmlspecialchars($e->getMessage()).'</div></div>';
-        return;
-    }
-
-    // Report
-    echo '<div class="w3-panel w3-green"><b>Done.</b> Games processed: '.count($games).'.</div>';
-    if ($warnings) {
-        echo '<div class="w3-panel w3-pale-yellow w3-border"><b>Warnings:</b><ul class="w3-ul">';
-        foreach ($warnings as $w) echo '<li>'.htmlspecialchars($w).'</li>';
-        echo '</ul></div>';
-    }
-    echo '</div>';
-}
+			// Report
+			echo '<div class="w3-panel w3-green"><b>Done.</b> Games processed: '.count($games).'.</div>';
+			if ($warnings) {
+				echo '<div class="w3-panel w3-pale-yellow w3-border"><b>Warnings:</b><ul class="w3-ul">';
+				foreach ($warnings as $w) echo '<li>'.htmlspecialchars($w).'</li>';
+				echo '</ul></div>';
+			}
+			echo '</div>';
+		}
 
 /** Helpers *************************************************************/
 
