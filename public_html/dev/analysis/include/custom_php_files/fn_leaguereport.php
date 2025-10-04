@@ -256,6 +256,11 @@ if (!empty($missingR)) {
 			$warnings[] = "League/Season/Week not parsed from filename; only processed bit updated.";
 		}
 				$conn->commit();
+				// After commit:
+				require_once __DIR__ . '/fn_sections_bootstrap.php';
+				[$__lg, $__sn, $__wk] = _cp_parse_lsw_from_filename($_cp_filename);
+				_cp_mark_processed_flag($conn, $upload_id, _CP_FLAG_LEAGUE, $__lg, $__sn, $__wk);
+
 			} catch (Exception $e) {
 				$conn->rollBack();
 				echo '<div class="w3-panel w3-red"><b>Processing error:</b> '.htmlspecialchars($e->getMessage()).'</div></div>';

@@ -36,65 +36,50 @@ if ($_cp_action === 'process' && $_cp_upload_id > 0) {
     echo '<div class="w3-panel w3-pale-blue w3-border">Processing upload_id '
         .(int)$_cp_upload_id.' …</div>';
 
-		// After loading _cp_process_league_report and fn_sections.php…
-		require_once __DIR__ . '/fn_sections.php';
+require_once __DIR__ . '/fn_sections_bootstrap.php';
 
-		// Get current processed bitmask
-		$st = $conn->prepare("SELECT processed FROM g_uploads WHERE upload_id=:id LIMIT 1");
-		$st->execute([':id'=>$_cp_upload_id]);
-		$processed = (int)$st->fetchColumn();  // NULL -> 0 automatically when cast
+$sections = [
+    ['flag'=>_CP_FLAG_LEAGUE,     'file'=>'fn_leaguereport.php',   'func'=>'_cp_process_league_report', 'label'=>'League Report'],
+    ['flag'=>_CP_FLAG_TEAM,       'file'=>'fn_teamreport.php',     'func'=>'_cp_process_team_report',   'label'=>'Team Report'],
+    ['flag'=>_CP_FLAG_ROSTER,     'file'=>'fn_roster.php',         'func'=>'_cp_process_roster',        'label'=>'Roster'],
+    ['flag'=>_CP_FLAG_PBP,        'file'=>'fn_playbyplay.php',     'func'=>'_cp_process_play_by_play',  'label'=>'Play by Play'],
+    ['flag'=>_CP_FLAG_H2H,        'file'=>'fn_headtohead.php',     'func'=>'_cp_process_head_to_head',  'label'=>'Head to Head'],
+    ['flag'=>_CP_FLAG_STANDINGS,  'file'=>'fn_standings.php',      'func'=>'_cp_process_standings',     'label'=>'Standings'],
+    ['flag'=>_CP_FLAG_SCOUT,      'file'=>'fn_scouting.php',       'func'=>'_cp_process_scouting_report','label'=>'Scouting Report'],
+];
 
-		// If League Report isn’t done yet, run it (sets bit 1 internally if you modify that module)
-		if (!_cp_has_flag($processed, _CP_FLAG_LEAGUE)) {
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — League Report…</div>';
-			_cp_process_league_report($conn, $_cp_upload_id, $_cp_files_dir);
+// get current mask
+$st = $conn->prepare("SELECT processed FROM g_uploads WHERE upload_id=:id LIMIT 1");
+$st->execute([':id'=>$_cp_upload_id]);
+$processed = (int)$st->fetchColumn();
 
-			// refresh the mask after each step
-			$st->execute([':id'=>$_cp_upload_id]);
-			$processed = (int)$st->fetchColumn();
-		}
+foreach ($sections as $s) {
+    if (_cp_has_flag($processed, $s['flag'])) {
+        echo '<div class="w3-panel w3-pale-green w3-border">Skip — '.$s['label'].' (already done)</div>';
+        continue;
+    }
+    echo '<div class="w3-panel w3-pale-blue w3-border">Step — '.$s['label'].'…</div>';
 
-		// Team Report
-		if (!_cp_has_flag($processed, _CP_FLAG_TEAM)) {
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Team Report…</div>';
-			_cp_process_team_report($conn, $_cp_upload_id, $_cp_files_dir);
-			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
-		}
+    // include processor file
+    $path = __DIR__ . '/' . $s['file'];
+    if (!is_file($path)) {
+        echo '<div class="w3-panel w3-amber w3-border">Missing processor file: '.htmlspecialchars($s['file']).'</div>';
+        continue;
+    }
+    require_once $path;
 
-		// Roster
-		if (!_cp_has_flag($processed, _CP_FLAG_ROSTER)) {
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Roster…</div>';
-			_cp_process_roster($conn, $_cp_upload_id, $_cp_files_dir);
-			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
-		}
+    if (!function_exists($s['func'])) {
+        echo '<div class="w3-panel w3-amber w3-border">Missing function '.$s['func'].' in '.$s['file'].'</div>';
+        continue;
+    }
 
-		// Play by Play
-		if (!_cp_has_flag($processed, _CP_FLAG_PBP)) {
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Play by Play…</div>';
-			_cp_process_play_by_play($conn, $_cp_upload_id, $_cp_files_dir);
-			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
-		}
+    // run the step
+    call_user_func($s['func'], $conn, $_cp_upload_id, $_cp_files_dir);
 
-		// Head to Head
-		if (!_cp_has_flag($processed, _CP_FLAG_H2H)) {
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Head to Head…</div>';
-			_cp_process_head_to_head($conn, $_cp_upload_id, $_cp_files_dir);
-			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
-		}
-
-		// Standings
-		if (!_cp_has_flag($processed, _CP_FLAG_STANDINGS)) {
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Standings…</div>';
-			_cp_process_standings($conn, $_cp_upload_id, $_cp_files_dir);
-			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
-		}
-
-		// Scouting Report
-		if (!_cp_has_flag($processed, _CP_FLAG_SCOUT)) {
-			echo '<div class="w3-panel w3-pale-blue w3-border">Step — Scouting Report…</div>';
-			_cp_process_scouting_report($conn, $_cp_upload_id, $_cp_files_dir);
-			$st->execute([':id'=>$_cp_upload_id]); $processed = (int)$st->fetchColumn();
-		}
+    // refresh mask (in case the step set its flag)
+    $st->execute([':id'=>$_cp_upload_id]);
+    $processed = (int)$st->fetchColumn();
+}
     echo '</div>';
     return;
 }
