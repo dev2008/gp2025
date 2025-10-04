@@ -196,6 +196,19 @@ function _cp_process_league_report(PDO $conn, $upload_id, $files_dir) {
             // Mirror into two row payloads
             $rowRoad = _cp_build_row($_cp_league, $_cp_season, $_cp_week, $parsedRoad, $parsedHome, 0, $franchiseMap);
             $rowHome = _cp_build_row($_cp_league, $_cp_season, $_cp_week, $parsedHome, $parsedRoad, 1, $franchiseMap);
+			// Nice labels for output
+			$roadId   = $rowRoad['id_game'] ?? null;
+			$homeId   = $rowHome['id_game'] ?? null;
+			$roadTeam = $rowRoad['team']    ?? ($parsedRoad['team'] ?? 'Road');
+			$homeTeam = $rowHome['team']    ?? ($parsedHome['team'] ?? 'Home');
+
+			if (_CP_DEBUG) {
+				// technical detail in debug
+				echo 'Upserting: '.htmlspecialchars((string)$roadId).' & '.htmlspecialchars((string)$homeId).'<br>';
+			} else {
+				// friendlier in normal mode
+				echo 'Processing: '.htmlspecialchars($roadTeam).' @ '.htmlspecialchars($homeTeam).'<br>';
+			}
 
 
 	// Upsert Road
@@ -207,8 +220,7 @@ function _cp_process_league_report(PDO $conn, $upload_id, $files_dir) {
 		return; // stop here to fix placeholder names
 	}
 	list($missingR, $extraR, $needR, $haveR) = _cp_param_diff($sql, $paramsRoad);
-	echo '<div class="w3-small w3-text-grey">'
-    .'Tokens (road): need '.count($needR).', have '.count($haveR).'</div>';
+
 
 if (!empty($missingR)) {
     echo '<div class="w3-panel w3-red"><b>Missing params (road):</b> '
@@ -228,8 +240,6 @@ if (!empty($missingR)) {
 		return;
 	}
 	list($missingH, $extraH, $needH, $haveH) = _cp_param_diff($sql, $paramsHome);
-	echo '<div class="w3-small w3-text-grey">'
-		.'Tokens (home): need '.count($needH).', have '.count($haveH).'</div>';
 
 	if (!empty($missingH)) {
 		echo '<div class="w3-panel w3-red"><b>Missing params (home):</b> '
@@ -240,9 +250,15 @@ if (!empty($missingR)) {
 	$up->execute($paramsHome);
 	$inserted += (int)$up->rowCount();
 	
-	echo '<div class="w3-small w3-text-grey">Upserting: '
-   . htmlspecialchars($rowRoad['id_game']) . ' & '
-   . htmlspecialchars($rowHome['id_game']) . '</div>';
+
+if (_CP_DEBUG) {
+    echo "Tokens (road): need ".count($needR).", have ".count($haveR)."<br>";
+    echo "Tokens (home): need ".count($needH).", have ".count($haveH)."<br>";
+    echo "Upserting: $roadId & $homeId<br>";
+} else {
+    echo "Processing: $roadId vs $homeId<br>";
+}
+
 
 
         }
@@ -266,6 +282,29 @@ if (!empty($missingR)) {
 				echo '<div class="w3-panel w3-red"><b>Processing error:</b> '.htmlspecialchars($e->getMessage()).'</div></div>';
 				return;
 			}
+			// ---- Build League Report stats ----
+			// actual rows = 2 rows per game successfully processed
+			$actual_rows = count($games) * 2;
+
+			// expected rows based on league prefix (from filename parse or filename itself)
+			$league_hint = $_cp_league ?: (preg_match('/^([A-Za-z]+)/', $_cp_filename, $mm) ? strtoupper($mm[1]) : null);
+			$expected_rows = null;
+			if ($league_hint !== null) {
+				if (stripos($league_hint, 'NFL') === 0) {
+					$expected_rows = 24;
+				} elseif (stripos($league_hint, 'NCAA') === 0) {
+					$expected_rows = 12;
+				}
+			}
+			$ok = ($expected_rows === null) ? true : ($actual_rows === $expected_rows);
+
+			// (normal UI already echoes "Done.", keep that; just also return stats)
+			return ['stats' => [
+				'actual_rows'   => $actual_rows,
+				'expected_rows' => $expected_rows,
+				'ok'            => $ok,
+			]];
+
 
 			// Report
 			echo '<div class="w3-panel w3-green"><b>Done.</b> Games processed: '.count($games).'.</div>';

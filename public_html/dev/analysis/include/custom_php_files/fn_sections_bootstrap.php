@@ -1,6 +1,9 @@
 <?php
 if(!defined('custom_page_from_inclusion')) { die(); }
 
+// Set this to true to enable verbose debug output across all modules
+define('_CP_DEBUG', false);
+
 /** -------- Bitmask flags -------- */
 define('_CP_FLAG_LEAGUE',     1);   // League Report
 define('_CP_FLAG_TEAM',       2);   // Team Report
