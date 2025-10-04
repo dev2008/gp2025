@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -13,12 +13,13 @@ If you are unsure about what you are allowed to do with this license, feel free 
 */
 ?>
 <?php
+// shares some core with build_csv, build_json, get_calendar_field_value, build_results_table
 function build_details_table($fields_labels_ar, $res_details, $table_name, $is_items_table, $just_inserted, $master_table_name, $master_table_function, $master_table_where_field, $master_table_where_value, $where_field, $where_value, $output = 'web_details', $row_already_fetched = 0, $return_field_values_instead_of_table = 0, $enable_edit = 0, $show_revisions = 0, $onlyform = 0, $from_back_edit_details_insert_delete_items_table = 0)
 // goal: build an html table with details of a record
 // input: $fields_labels_ar $res_details the recordset result of the query, $row_already_fetched is 1 when called from build_results_table, in this case $res_details is not a rcordset but an already fetched row. $output can be web_details (normal details page), email, web_results (results grid responsive version) or PDF
 // ouptut: $details_table, the html table
 {
-	global $conn, $quote, $alias_prefix, $prefix_internal_table, $submit_buttons_ar, $normal_messages_ar, $dadabik_main_file, $show_top_buttons, $separator_display_select_multiple, $separator_display_linked_field, $function_link_to_record, $site_url, $export_to_pdf_feature, $dir_templates, $enable_edit, $show_edit_button_in_details, $custom_button_ids_prefix, $from_form_configurator_preview;
+	global $conn, $quote, $alias_prefix, $prefix_internal_table, $submit_buttons_ar, $normal_messages_ar, $dadabik_main_file, $show_top_buttons, $separator_display_select_multiple, $separator_display_linked_field, $function_link_to_record, $site_url, $export_to_pdf_feature, $dir_templates, $enable_edit, $show_edit_button_in_details, $custom_button_ids_prefix, $from_form_configurator_preview, $use_conditional_rules_for_details_pdf,$table_pdf_templates;
 	
 
 	// build the table
@@ -41,30 +42,79 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
 	if ( $export_to_pdf_feature == 1) {
 	
 		$files = scandir('./'.$dir_templates);
+
+		$templates_cnt = 0;
+		$assigned_templates_cnt = 0;
+		$value_pdf_template_no_menu = '';
+		$label_pdf_button_no_menu = 'PDF';
 	
-		$templates_menu = '<select name="pdf_template" class="form-select" id="pdf_template" style="visibility:hidden;display:inline-block;"><option value="" disabled selected>'.$normal_messages_ar['choose_pdf_template'].'</option><option value="">'.$normal_messages_ar['no_pdf_template'].'</option>';
-		$templates_menu_2 = '<select name="pdf_template" class="form-select" id="pdf_template_2" style="visibility:hidden;display:inline-block;"><option value="" disabled selected>'.$normal_messages_ar['choose_pdf_template'].'</option><option value="">'.$normal_messages_ar['no_pdf_template'].'</option>';
+		$templates_menu = '<select name="pdf_template" class="form-select" id="pdf_template" style="visibility:hidden;display:inline-block;"><option value="" disabled selected>'.$normal_messages_ar['choose_pdf_template'].'</option>';
+		$templates_menu_2 = '<select name="pdf_template" class="form-select" id="pdf_template_2" style="visibility:hidden;display:inline-block;"><option value="" disabled selected>'.$normal_messages_ar['choose_pdf_template'].'</option>';
+
+		if (!isset($table_pdf_templates[$table_name])){
+			$templates_menu .= '<option value="">'.$normal_messages_ar['no_pdf_template'].'</option>';
+			$templates_menu_2 .= '<option value="">'.$normal_messages_ar['no_pdf_template'].'</option>';
+		}
 		
 		foreach($files as $file){ 
 			// it's ok to not use _custom here
 			if (substr($file, -5) === '.html'){
 				$file_without_html = substr($file, 0, -5);
 				if ($file_without_html !== 'default_footer_no_template' && $file_without_html !== 'default_header_no_template' && substr($file, -11) !== 'header.html' && substr($file, -11) !== 'footer.html'){
-					$templates_menu .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
-					$templates_menu_2 .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+
+					if (!isset($table_pdf_templates[$table_name])){
+						$templates_menu .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+						$templates_menu_2 .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+						$templates_cnt++;
+					}
+					else{
+						$template_key = array_search($file_without_html, $table_pdf_templates[$table_name]['template_names']);
+
+						if($template_key !== false){
+							$templates_menu .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+							$templates_menu_2 .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+							$templates_cnt++;
+							$assigned_templates_cnt++;
+							$value_pdf_template_no_menu = $file_without_html;
+							if (isset($table_pdf_templates[$table_name]['button_labels'][$template_key])){
+								$label_pdf_button_no_menu = $normal_messages_ar[$table_pdf_templates[$table_name]['button_labels'][$template_key]];
+							}
+							
+						}
+					}
 				}
 			}
 			
             if (substr($file, -4) === '.php' && substr($file, -10) !== 'header.php' && substr($file, -10) !== 'footer.php' && substr($file, -13) !== '_settings.php'){
                 $file_without_html = substr($file, 0, -4);
                 if ($file_without_html !== 'default_footer_no_template' && $file_without_html !== 'default_header_no_template'){
-                    $templates_menu .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
-                    $templates_menu_2 .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+                    if (!isset($table_pdf_templates[$table_name])){
+						$templates_menu .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+						$templates_menu_2 .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+						$templates_cnt++;
+					}
+					else{
+						$template_key = array_search($file_without_html, $table_pdf_templates[$table_name]['template_names']);
+
+						if($template_key !== false){
+							$templates_menu .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+							$templates_menu_2 .= '<option value="'.htmlspecialchars($file_without_html).'">'.htmlspecialchars($file_without_html).'</option>';
+							$templates_cnt++;
+							$assigned_templates_cnt++;
+							$value_pdf_template_no_menu = $file_without_html;
+							if (isset($table_pdf_templates[$table_name]['button_labels'][$template_key])){
+								$label_pdf_button_no_menu = $normal_messages_ar[$table_pdf_templates[$table_name]['button_labels'][$template_key]];
+							}
+							
+						}
+					}
                 }
             }
 		}
 		$templates_menu .= '</select>';
 		$templates_menu_2 .= '</select>';
+
+
 	}
 
 	
@@ -117,14 +167,20 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
             
                 }
             
-                $details_table .= '\'">';
+                $details_table .= '\'" id="details_page_edit_top_btn">';
         
             }
 			
 			
 			if ( $export_to_pdf_feature == 1) {
-			
-				$details_table .= '&nbsp;&nbsp;&nbsp;<input type="button" class="button_form btn btn-primary" value="PDF" id="pdf_button" onclick=" document.getElementById(\'pdf_template\').style.visibility = \'visible\';document.getElementById(\'pdf_button\').style.display = \'none\'; document.getElementById(\'produce_pdf_button\').style.visibility = \'visible\';">'.$templates_menu.' <input type="submit" id="produce_pdf_button" value="'.$normal_messages_ar['produce_pdf'].'" style="visibility:hidden;display:inline-block;" class="btn btn-primary ">';
+
+				if ($templates_cnt === 0 || $assigned_templates_cnt === 1 ){
+
+					$details_table .= '&nbsp;&nbsp;&nbsp;<input type="hidden" name="pdf_template" value="'.htmlspecialchars($value_pdf_template_no_menu).'"><button type="submit" id="produce_pdf_button" class="btn btn-primary btn-sm"><li class="fa fa-file-pdf-o fa-lg"></li>&nbsp;&nbsp;'.htmlspecialchars($label_pdf_button_no_menu).'</button>';
+				}
+				else{
+					$details_table .= '&nbsp;&nbsp;&nbsp;<input type="button" class="button_form btn btn-primary" value="PDF" id="pdf_button" onclick=" document.getElementById(\'pdf_template\').style.visibility = \'visible\';document.getElementById(\'pdf_button\').style.display = \'none\'; document.getElementById(\'produce_pdf_button\').style.visibility = \'visible\';">'.$templates_menu.' <input type="submit" id="produce_pdf_button" value="'.$normal_messages_ar['produce_pdf'].'" style="visibility:hidden;display:inline-block;" class="btn btn-primary ">';
+				}
 			}
 			$details_table .= '</form>';
 			
@@ -155,13 +211,53 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
 	
 	$count_temp = count($fields_labels_ar);
 	for ($i=0; $i<$count_temp; $i++){
+
+		// set to 1 if, for a conditional rule, the field must be hidden
+		$hide_field_conditional = 0;
+
+		if ($use_conditional_rules_for_details_pdf === 1){
+		
+			// code partially duplicated in front_logic get_required_fields
+			if ( $fields_labels_ar[$i]["custom_required_function_field"] !== ''){
+
+				$required_show_infos = call_user_func($fields_labels_ar[$i]["custom_required_function_field"], $details_row, 'form');
+				
+				if (is_array($required_show_infos)){
+					$required_show_infos_2 = $required_show_infos['show'];
+				}
+				else{
+					if (isset($required_show_infos_2)){ // otherwise I may get the value from a previous item
+						unset($required_show_infos_2);
+					}
+				}
+				
+				if (isset($required_show_infos_2)){
+					if ($required_show_infos_2 === false){
+						$hide_field_conditional = 1;
+					}
+					elseif($required_show_infos_2 !== true){
+						die('Error: custom required function return unexpected value.');
+					}
+				}
+			}
+			elseif($fields_labels_ar[$i]["show_if_field_field"] !== ''){ // simplified boolean
+				
+				$field_cond = $fields_labels_ar[$i]["show_if_field_field"];
+				$value_cond = $fields_labels_ar[$i]["show_if_value_field"];
+			
+				$hide_field_conditional = 1;
+
+				if (get_nocode_conditional_field_display($details_row[$field_cond], $fields_labels_ar[$i]["show_if_operator_field"], $value_cond) === 1){
+					$hide_field_conditional = 0;
+				}
+			}
+		}
 	
 		$lookup_link = '';
-		
 		$content_field_temp = '';
 	
 		$c_multiple = 0;
-		if ($fields_labels_ar[$i][$presence_field_to_check] == "1"){
+		if ($fields_labels_ar[$i][$presence_field_to_check] == "1" && $hide_field_conditional === 0){
 			$field_name_temp = $fields_labels_ar[$i]["name_field"];
 			
 			if ($output === 'web_details' || $output === 'PDF'){
@@ -401,7 +497,7 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
 						$field_to_pass = $field_to_display;
 					}
 					
-					$field_to_display = get_field_correct_displaying($field_to_pass, $linked_field_type, $linked_field_content, $linked_field_separator, $display_mode, $fields_labels_ar[$i], 0, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions);
+					$field_to_display = get_field_correct_displaying($field_to_pass, $linked_field_type, $linked_field_content, $linked_field_separator, $display_mode, $fields_labels_ar[$i], 0, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions, $details_row);
 
 					$details_table .= $field_to_display;
 					
@@ -438,12 +534,12 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
 	
 							reset($fields_labels_linked_field_ar);
 							
-							$field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $linked_field_type, $linked_field_content, $linked_field_separator, $display_mode, $fields_labels_linked_field_ar[$key_linked], 0, $primary_key_field_field, $details_row[$field_name_temp], $is_items_table, $master_table_name, $table_name, $show_revisions); // get the correct display mode for the field
+							$field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $linked_field_type, $linked_field_content, $linked_field_separator, $display_mode, $fields_labels_linked_field_ar[$key_linked], 0, $primary_key_field_field, $details_row[$field_name_temp], $is_items_table, $master_table_name, $table_name, $show_revisions, $details_row); // get the correct display mode for the field
 							
 							
 						} // end if
 						else {
-							$field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $fields_labels_ar[$i]["type_field"], $fields_labels_ar[$i]["content_field"], $fields_labels_ar[$i]["separator_field"], $display_mode, $fields_labels_ar[$i], 0, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions); // get the correct display mode for the field
+							$field_to_display = get_field_correct_displaying($field_values_ar[$x][$j], $fields_labels_ar[$i]["type_field"], $fields_labels_ar[$i]["content_field"], $fields_labels_ar[$i]["separator_field"], $display_mode, $fields_labels_ar[$i], 0, $where_field, $where_value, $is_items_table, $master_table_name, $table_name, $show_revisions, $details_row); // get the correct display mode for the field
 						} // end else
 	
 						//$details_table .= $field_to_display."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // at the field value to the table
@@ -476,7 +572,6 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
 				$details_table .= "</span>";
 			}
 			
-			
 			if ($output === 'web_details'){
 			
 				$buttons_html = '';
@@ -503,10 +598,7 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
 				} 
 			
 				$details_table .= '<span class="form_input_element_button">'.$buttons_html.'</span>';
-			}
-			
-			
-				
+			}	
 			// end enterprise
 			// end pro
 			
@@ -569,17 +661,21 @@ function build_details_table($fields_labels_ar, $res_details, $table_name, $is_i
             
             }
             
-            $details_table .= '\'">';
+            $details_table .= '\'" id="details_page_edit_bottom_btn">';
 		
 		}
 
 			
 		if ( $export_to_pdf_feature == 1) {
 		
-			$details_table .= '&nbsp;&nbsp;&nbsp;<input type="button" class="button_form btn btn-primary " value="PDF" id="pdf_button_2" onclick=" document.getElementById(\'pdf_template_2\').style.visibility = \'visible\';document.getElementById(\'pdf_button_2\').style.display = \'none\'; document.getElementById(\'produce_pdf_button_2\').style.visibility = \'visible\';">'.$templates_menu_2.' <input type="submit" id="produce_pdf_button_2" value="'.$normal_messages_ar['produce_pdf'].'" style="visibility:hidden;display:inline-block;"  class="btn btn-primary ">';
+			if ($templates_cnt === 0 || $assigned_templates_cnt === 1 ){
+
+				$details_table .= '&nbsp;&nbsp;&nbsp;<input type="hidden" name="pdf_template" value="'.htmlspecialchars($value_pdf_template_no_menu).'"><button type="submit" id="produce_pdf_button_2" class="btn btn-primary btn-sm"><li class="fa fa-file-pdf-o fa-lg"></li>&nbsp;&nbsp;'.htmlspecialchars($label_pdf_button_no_menu).'</button>';
+			}
+			else{
+				$details_table .= '&nbsp;&nbsp;&nbsp;<input type="button" class="button_form btn btn-primary " value="PDF" id="pdf_button_2" onclick=" document.getElementById(\'pdf_template_2\').style.visibility = \'visible\';document.getElementById(\'pdf_button_2\').style.display = \'none\'; document.getElementById(\'produce_pdf_button_2\').style.visibility = \'visible\';">'.$templates_menu_2.' <input type="submit" id="produce_pdf_button_2" value="'.$normal_messages_ar['produce_pdf'].'" style="visibility:hidden;display:inline-block;"  class="btn btn-primary ">';
+			}
 		}
-		
-		
 
 			
 		$details_table .= '</form>';

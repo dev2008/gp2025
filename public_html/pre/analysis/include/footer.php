@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -53,7 +53,7 @@ if ($page_name === 'main'){
     }
 }
 ?>
-<br><br>
+<?= $br_before_powered ?>
 <div class="powered_by_dadabik" align="<?php echo $powered_alignment; ?>">Powered by: <a target="_blank" href="https://dadabik.com/" rel="nofollow">DaDaBIK</a>, the Low-code Development Platform</a>
 <?php
 if ($spaces === 1){

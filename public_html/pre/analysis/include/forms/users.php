@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -14,4 +14,5 @@ If you are unsure about what you are allowed to do with this license, feel free 
 ?>
 <h1  >Users and Groups</h1>
 
-<p>If you are logged in as an admin user, you can view and manage Users and Groups directly from the <a href="<?php echo $dadabik_main_file; ?>?function=search&tablename=<?php echo $users_table_name; ?>">front-end</a> of the application.</p>
+<p>User and group management is available from within <a href="<?php echo $dadabik_main_file; ?>?function=search&tablename=<?php echo $users_table_name; ?>">the application you're building</a>. You can access it directly through the admin > Users / Groups links in your app's menu, based on the permissions assigned.
+

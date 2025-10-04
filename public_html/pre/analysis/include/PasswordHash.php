@@ -2,7 +2,7 @@
 #
 # Portable PHP password hashing framework.
 #
-# Version 0.5 / custom version by Eugenio Tacchini, changed strlen, strpos and substr functions to strlen_custom, strpos_custom and substr_custom (look at /include/functions.php to see the new functions.
+# Version 0.5
 #
 # Written by Solar Designer <solar at openwall.com> in 2004-2006 and placed in
 # the public domain.  Revised in subsequent years, still public domain.
@@ -59,14 +59,14 @@ class PasswordHash {
 			fclose($fh);
 		}
 
-		if (strlen_custom($output) < $count) {
+		if (strlen($output) < $count) {
 			$output = '';
 			for ($i = 0; $i < $count; $i += 16) {
 				$this->random_state =
 				    md5(microtime() . $this->random_state);
 				$output .= md5($this->random_state, TRUE);
 			}
-			$output = substr_custom($output, 0, $count);
+			$output = substr($output, 0, $count);
 		}
 
 		return $output;
@@ -108,22 +108,22 @@ class PasswordHash {
 	function crypt_private($password, $setting)
 	{
 		$output = '*0';
-		if (substr_custom($setting, 0, 2) === $output)
+		if (substr($setting, 0, 2) === $output)
 			$output = '*1';
 
-		$id = substr_custom($setting, 0, 3);
+		$id = substr($setting, 0, 3);
 		# We use "$P$", phpBB3 uses "$H$" for the same thing
 		if ($id !== '$P$' && $id !== '$H$')
 			return $output;
 
-		$count_log2 = strpos_custom($this->itoa64, $setting[3]);
+		$count_log2 = strpos($this->itoa64, $setting[3]);
 		if ($count_log2 < 7 || $count_log2 > 30)
 			return $output;
 
 		$count = 1 << $count_log2;
 
-		$salt = substr_custom($setting, 4, 8);
-		if (strlen_custom($salt) !== 8)
+		$salt = substr($setting, 4, 8);
+		if (strlen($salt) !== 8)
 			return $output;
 
 		# We were kind of forced to use MD5 here since it's the only
@@ -137,7 +137,7 @@ class PasswordHash {
 			$hash = md5($hash . $password, TRUE);
 		} while (--$count);
 
-		$output = substr_custom($setting, 0, 12);
+		$output = substr($setting, 0, 12);
 		$output .= $this->encode64($hash, 16);
 
 		return $output;
@@ -192,16 +192,16 @@ class PasswordHash {
 			$random = $this->get_random_bytes(16);
 			$hash =
 			    crypt($password, $this->gensalt_blowfish($random));
-			if (strlen_custom($hash) === 60)
+			if (strlen($hash) === 60)
 				return $hash;
 		}
 
-		if (strlen_custom($random) < 6)
+		if (strlen($random) < 6)
 			$random = $this->get_random_bytes(6);
 		$hash =
 		    $this->crypt_private($password,
 		    $this->gensalt_private($random));
-		if (strlen_custom($hash) === 34)
+		if (strlen($hash) === 34)
 			return $hash;
 
 		# Returning '*' on error is safe here, but would _not_ be safe

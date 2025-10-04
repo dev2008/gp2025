@@ -32,7 +32,8 @@ $submit_buttons_ar = array (
 	"details" => 'Részletek',
 	"insert_as_new" => 'Beillesztés újként',
 	"multiple_inserts" => 'Többszörös beillesztés',
-	"change_table" => 'Tábla hozzáadása'
+	"change_table" => 'Tábla hozzáadása',
+	"search_includes_following_fields" => 'A keresés a következő mezőket érinti:',
 );
 
 // normal messages
@@ -42,8 +43,12 @@ $normal_messages_ar = array (
 	"insert_item" => 'Új bejegyzés hozzáasáaa',
 	"show_all_records" => 'Összes bejegyzés megjelenítése',
 	"show_records" => 'Bejegyzések megjelenítése',
-	"ldap_user_dont_update" => 'Ez egy importált LDAP felhasználó: csak a csoportja az egyedüli dolog, amit meg kell változtatni, ha szükséges.',
+	"ldap_user_dont_update" => 'Ez egy importált felhasználó (LDAP, Google, ...): csak a csoportja az egyedüli dolog, amit meg kell változtatni, ha szükséges.',
+	"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 	"remove_search_filter" => 'Keresési szűrő kikapcsolása',
+	"set_default_search_filter" => "set default search filter", // to change 
 	"logout" => 'Kijelentkezés',
 	"top" => 'Tetejére',
 	"last_search_results" => 'Legutóbbi keresés eredménye',
@@ -70,6 +75,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => 'Az URL(ek), amely(ek)et megadott, helytelen(ek).',
 	"phone_not_valid" => 'A telefonszám(ok), amely(ek)et megadott, helytelen(ek).<br>Használja az alábbi formátumot: \"+(ország kód)(területi kód)(telefonszám)\" pl. +36301234567, 0036301234567, 301234567.',
 	"date_not_valid" => 'Egy, vagy több megadott dátum helytelen formátumú.',
+	"id_group_admin_by_non_admin_not_valid" => "Nem hozhat létre és nem szerkeszthet adminisztrátor felhasználót, ha nem adminisztrátor",
 	"similar_records" => "Az alábbi bejegyzések elég hasonlónak tűnnek ahhoz, amit be akar illeszteni (maximum ".$number_duplicated_records." bejegyzés szerepel a listán, de lehet ennél több is).<br>Mi legyen?",
 	"similar_records_short" => "Az alábbi bejegyzések elég hasonlónak tűnnek ahhoz, amit be akar illeszteni (maximum ".$number_duplicated_records." bejegyzés szerepel a listán, de lehet ennél több is).",
 	"no_records_found" => 'Nincs megfelelő bejegyzés.',
@@ -105,6 +111,7 @@ $normal_messages_ar = array (
 	"profile_updated" => 'Profil sikeresen frissítve.',
 	"delete_result" => 'Törlés eredménye:',
 	"record_deleted" => 'Bejegyzés sikeresen törölve.',
+	"records_deleted" => "A bejegyzés(ek) sikeresen eltávolításra került(ek).",
 	"duplication_possible" => 'Ismételt előfordulás megengedett',
 	"fields_max_length" => 'Túl sok adatot vitt be valamelyik beviteli mezőbe.',
 	"current_upload" => 'Aktuális feltöltendő fájl',
@@ -192,6 +199,8 @@ $normal_messages_ar = array (
 'add_column' => 'oszlop hozzáadása',
 'remove_this_column' => 'oszlop eltávolítása',
 'advanced_sql_report_instructions_pivot_part' => 'A Pivot Tábla létrehozáshoz továbbá használható álnév/alias is (címke/label magadásához) és használhat két összegyűjtott/aggregate függvényt, például: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand',
+'advanced_sql_report_instructions_stat_card_part' => '<b>Adat kártyák</b> esetén ellenben nincs összesítés; ki kell választani
+egy konkrét bejegyzést. Például ez összeszámolja a vásárlók számát: SELECT COUNT(*) FROM customers.',
 "record_inserted_close_window" => "A bejegyzés rendben hozzáadásra került, most már <a href='#' onclick='window.close();return false;'>becsukhatja</a> ezt az ablakot.",
 
 "import" => "Importálás",

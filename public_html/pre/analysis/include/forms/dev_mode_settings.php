@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -79,7 +79,7 @@ echo '<span id="confirmation_message_container"><div class="msg_error" id="alert
 } ?>
 
 <h2>Settings</h2>
-<p>In <b>LIVE</b> Dev Mode, all the changes you make here in the admin area or in your custom code files are immediately available to the users of your application.<br><br>In <b>BETA</b> Dev Mode, most of the changes are only visible to admins (and other trusted tester users, if you want), until you decide to publish and make them available to everyone.</p>
+<p>In <b>LIVE</b> Dev Mode, all the changes you make here in the DEV Area or in your custom code files are immediately available to the users of your application.<br><br>In <b>BETA</b> Dev Mode, most of the changes are only visible to admins (and other trusted tester users, if you want), until you decide to publish and make them available to everyone.</p>
 <p>If you are new to DaDaBIK, <strong>we suggest to stay in LIVE mode to practice</strong>.<br>The BETA mode is very powerful but if you don't know how to use it you can lose your work. Be sure to read <a href="javascript:show_admin_help('Beta Vs. Live Mode', 'The DaDaBIK manual contains a chapter dedicated to the BETA development mode. This is a <a target=\'_blank\' href=\'https://dadabik.com/index.php?function=show_documentation#beta_dev_mode\'>a link</a> to the online version of the chapter; if you are not using the latest DaDaBIK version, you should read the documentation included in the packged you downloaded.<br><br>');">the documentation</a>  before using it, that may differ.</p>
 
 <form id="change_dev_mode_form">

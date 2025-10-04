@@ -3,12 +3,19 @@
 function show_hide_report_options(report_type)
 {
 
-
 	if (report_type == 'pie' || report_type == 'doughnut'){
 		$("#pie_options").show();
 	}
 	else{
 		$("#pie_options").hide();
+
+	}
+	
+	if (report_type == 'stat_card'){
+		$(".stat_card_incompatible_options").hide();
+	}
+	else{
+		$(".stat_card_incompatible_options").show();
 
 	}
 	
@@ -34,12 +41,7 @@ function show_hide_report_value_field_option(group_by_operator, index_operator)
 	}
 }
 
-
-
-
 $( document ).ready(function() {
-
-	
 
 	<?php if (isset($report_type) ) { ?>
 
@@ -208,11 +210,13 @@ echo $remove_search_filter_link;
 <option value="line" <?php if (isset($report_type) && $report_type == 'line') { echo 'selected'; }?>><?php echo $normal_messages_ar['line_chart']; ?></option>
 <option value="pie" <?php if (isset($report_type) && $report_type == 'pie') { echo 'selected'; }?>><?php echo $normal_messages_ar['pie_chart']; ?></option>
 <option value="doughnut" <?php if (isset($report_type) && $report_type == 'doughnut') { echo 'selected'; }?>><?php echo $normal_messages_ar['doughnut_chart']; ?></option>
+<option value="stat_card" <?php if (isset($report_type) && $report_type == 'stat_card') { echo 'selected'; }?>>Stat card</option>
 </select>  </div> &nbsp;&nbsp;&nbsp;
 <!--
 </td><td>
 -->
- <input style="display:inline-block" type="text" size="3" name="width_chart" value="<?php echo isset($_GET['width_chart']) ? $_GET['width_chart'] : 400; ?>"> x
+<?php if ($function === 'generate_report' ){ ?>
+ <span id="chart_dimension_container" class="stat_card_incompatible_options"><input style="display:inline-block" type="text" size="3" name="width_chart" value="<?php echo isset($_GET['width_chart']) ? $_GET['width_chart'] : 400; ?>"> x
  <!--
  </td><td>&nbsp;x&nbsp;</td></td>
 <td><td>
@@ -224,6 +228,8 @@ echo $remove_search_filter_link;
 -->
 
 &nbsp;px&nbsp;&nbsp;&nbsp;
+</span>
+<?php } ?>
 
 <!--
 </td>
@@ -247,7 +253,9 @@ echo $remove_search_filter_link;
 
 
 
-<div><?php
+<div>
+<span id="group_by_container" class="stat_card_incompatible_options"><?php
+
 
 echo $normal_messages_ar['group_data_by'];
 
@@ -301,7 +309,7 @@ foreach($group_by_fields_ar as $key => $value){
 
 ?>
 </select></div>
-
+</span>
 &nbsp;
 
 <?php
@@ -312,8 +320,8 @@ if ($function === 'generate_pivot'){
 
 echo $normal_messages_ar['show'];
 
-if ($function === 'generate_report'){
-    echo ' ('.$normal_messages_ar['y_axis'].'): ';
+if ($function === 'generate_report' ){ 
+    echo ' <span class="stat_card_incompatible_options">('.$normal_messages_ar['y_axis'].')</span>: ';
 }
 else{
     echo ':<br>';
@@ -364,7 +372,7 @@ foreach($report_value_fields_ar as $key => $value){
 <?php
 if ($function === 'generate_pivot'){ // show the other columns only for pivot
 ?>
-<a class="add_remove_column" data-targetid="2" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a> <br>
+<a class="add_remove_column btn btn-xs btn-primary" data-targetid="2" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a> <br>
 
 
 
@@ -419,7 +427,10 @@ foreach($report_value_fields_ar as $key => $value){
 }
 ?>
 </select></div>
-<a class="add_remove_column" data-targetid="3" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a>&nbsp;&nbsp;&nbsp;<a class="add_remove_column" data-targetid="2" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
+<a class="add_remove_column btn btn-xs btn-primary" data-targetid="3" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a>&nbsp;&nbsp;&nbsp;<a class="add_remove_column btn btn-xs btn-outline-primary" data-targetid="2" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
+
+
+
 
 </div>
 
@@ -480,7 +491,7 @@ foreach($report_value_fields_ar as $key => $value){
 }
 ?>
 </select></div>
-<a class="add_remove_column" data-targetid="4" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a>&nbsp;&nbsp;&nbsp;<a class="add_remove_column" data-targetid="3" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
+<a class="add_remove_column btn btn-xs btn-primary" data-targetid="4" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a>&nbsp;&nbsp;&nbsp;<a class="add_remove_column btn btn-xs btn-outline-primary" data-targetid="3" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
 
 </div>
 
@@ -541,7 +552,7 @@ foreach($report_value_fields_ar as $key => $value){
 }
 ?>
 </select></div>
-<a class="add_remove_column" data-targetid="5" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a>&nbsp;&nbsp;&nbsp;<a class="add_remove_column" data-targetid="4" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
+<a class="add_remove_column btn btn-xs btn-primary" data-targetid="5" data-function="add" href=""><?php echo ucfirst($normal_messages_ar['add_column']); ?></a>&nbsp;&nbsp;&nbsp;<a class="add_remove_column btn btn-xs btn-outline-primary" data-targetid="4" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
 
 </div>
 
@@ -603,7 +614,7 @@ foreach($report_value_fields_ar as $key => $value){
 }
 ?>
 </select></div>
- <a class="add_remove_column" data-targetid="5" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
+ <a class="add_remove_column btn btn-xs btn-outline-primary" data-targetid="5" data-function="remove" href=""><?php echo ucfirst($normal_messages_ar['remove_this_column']); ?></a> <br>
 
 </div>
 
@@ -616,7 +627,8 @@ foreach($report_value_fields_ar as $key => $value){
  <?php } ?>
 </div>
 <br/>
-<input class="button_form btn btn-primary"  type="submit" value="<?php echo $normal_messages_ar[$submit_label]; ?>"> <a class="btn btn-outline-primary" href="<?php echo $dadabik_main_file; ?>?function=search&tablename=<?php echo urlencode($table_name); ?>"> <?php echo $submit_buttons_ar['go_back']; ?></a>
+<br/>
+<input class="button_form btn btn-primary"  type="submit" value="<?php echo $normal_messages_ar[$submit_label]; ?>"  id="form_generate_chart_pivot_btn"> <a class="btn btn-outline-primary" href="<?php echo $dadabik_main_file; ?>?function=search&tablename=<?php echo urlencode($table_name); ?>"> <?php echo $submit_buttons_ar['go_back']; ?></a>
 
 </div>
 
@@ -626,13 +638,13 @@ foreach($report_value_fields_ar as $key => $value){
 
 <div id="advanced_report_parameters" <?php if (!isset($_GET['report_input_type']) || $_GET['report_input_type'] === 'simple') echo 'style="display:none;"'; ?>>
 
-<?php echo $normal_messages_ar['type_your_custom_sql_query_here']; ?>  <?php if (isset($_SESSION['filters_ar_'.$table_name])){ echo $normal_messages_ar['current_search_filter_is_not_used'];} ?>  <a href="javascript:show_admin_help('', '<?php echo $normal_messages_ar['advanced_sql_report_instructions_first_part'].$normal_messages_ar['advanced_sql_report_instructions_query_part'].$normal_messages_ar['advanced_sql_report_instructions_second_part']; ?> <br><br><?php echo $normal_messages_ar['advanced_sql_report_instructions_pivot_part']; ?>');"><img alt="Help" title="Help" border="0" src="images/help.png" /></a><br/>
+<?php echo $normal_messages_ar['type_your_custom_sql_query_here']; ?>  <?php if (isset($_SESSION['filters_ar_'.$table_name]) || isset($_SESSION['search_all_filter_'.$table_name])){ echo $normal_messages_ar['current_search_filter_is_not_used'];} ?>  <a href="javascript:show_admin_help('', '<?php echo $normal_messages_ar['advanced_sql_report_instructions_first_part'].$normal_messages_ar['advanced_sql_report_instructions_query_part'].$normal_messages_ar['advanced_sql_report_instructions_second_part']; ?><br><br><?php echo $normal_messages_ar['advanced_sql_report_instructions_stat_card_part']; ?> <br><br><?php echo $normal_messages_ar['advanced_sql_report_instructions_pivot_part']; ?>');"><i class="far fa-question-circle fa-lg"></i></a><br/>
 
 
 <?php if ($enable_advanced_sql_report === 1){ ?>
 
 <textarea rows="5" cols="100" name="sql_report" placeholder="SELECT ... "><?php if (isset($_GET['sql_report'])) echo $_GET['sql_report']; ?></textarea><br/>
-<input class="button_form btn btn-primary"  type="submit" value="<?php echo $normal_messages_ar[$submit_label]; ?> ">  <a class="btn btn-outline-primary" href="<?php echo $dadabik_main_file; ?>?function=search&tablename=<?php echo urlencode($table_name); ?>"> <?php echo $submit_buttons_ar['go_back']; ?></a>
+<input class="button_form btn btn-primary"  type="submit" value="<?php echo $normal_messages_ar[$submit_label]; ?> "  id="form_generate_chart_pivot_btn">  <a class="btn btn-outline-primary" href="<?php echo $dadabik_main_file; ?>?function=search&tablename=<?php echo urlencode($table_name); ?>"> <?php echo $submit_buttons_ar['go_back']; ?></a>
 <br/><br/>
 
 

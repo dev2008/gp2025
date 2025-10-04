@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 	"details" => "Detaljer",
 	"insert_as_new" => "Insert as new", // to change
 	"multiple_inserts" => "Multiple inserts", // to change
-	"change_table" => "Ändra tabell"
+	"change_table" => "Ändra tabell",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -40,8 +41,12 @@ $normal_messages_ar = array (
 	"insert_item" => "Insert item", // to change
 	"show_all_records" => "Visa alla poster",
 	"show_records" => "Show items", // to change
-	"ldap_user_dont_update" => "This is an imported LDAP user: his group is the only information which you should change, if needed.", // to change
+	"ldap_user_dont_update" => "This is an imported user (LDAP, Google, ...): his group is the only information which you should change, if needed.", // to change
+	"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 	"remove_search_filter" => "remove search filter", // to change
+	"set_default_search_filter" => "set default search filter", // to change 
 	"logout" => "Logout",
 	"top" => "Top",
 	"last_search_results" => "Senaste sökningen",
@@ -68,6 +73,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => "Den infogade url är oglitig.",
 	"phone_not_valid" => "Det infogade telefonnumret är ogiltigt.<br>Använd formatet \"+(landskod)(riktnummer)(nummer)\" formatet d.v.s +390523599318, 00390523599318, +0523599318.",
 	"date_not_valid" => "Du har infogat ett ogiltigt datum.",
+	"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin", // to change
 	"similar_records" => "Dataposterna nedanför liknar den du vill infoga (I'll show max ".$number_duplicated_records." similar items, there could be more).<br>Vad vill du göra?", // to change
 	"similar_records_short" => "Dataposterna nedanför liknar den du vill infoga (I'll show max ".$number_duplicated_records." similar items, there could be more).", // to change
 	"no_records_found" => "Hittar inga dataposter.",
@@ -104,6 +110,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "Din profil har uppdaterats.",
 	"delete_result" => "Radera resultatet:",
 	"record_deleted" => "Datapost raderad.",
+	"records_deleted" => "Item(s) correctly deleted.", // to change
 	"duplication_possible" => "En möjlig dubblering",
 	"fields_max_length" => "För mycket text i något fält.",
 	"current_upload" => "Aktuell fil",
@@ -190,6 +197,7 @@ $normal_messages_ar = array (
 'add_column' => 'add column', // add column in the pivot report // to change
 'remove_this_column' => 'remove this column', // remove column in the pivot report // to change
 'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand', // to change
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "The item has been correctly inserted, you can <a href='#' onclick='window.close();return false;'>close</a> this window.", // to change
 
 "import" => "Import", // to change

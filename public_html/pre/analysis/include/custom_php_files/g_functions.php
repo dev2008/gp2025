@@ -2,6 +2,109 @@
 // don't delete this line, this must be the first line of your code
 if(!defined('custom_page_from_inclusion')) { die(); }
 
+/**
+ * g_functions.php — streaming-safe utilities for PHP 8.4+
+ *
+ * Include this file once, then call setup_output_stream() ONLY on pages
+ * where you want incremental output. Use output() to push chunks.
+ */
+
+if (!function_exists('setup_output_stream')) {
+    /**
+     * One-time streaming setup. Call near the top of a script BEFORE any output.
+     *
+     * @param array $opts Optional settings:
+     *  - content_type: string|null  Content-Type header to send (default text/html)
+     *  - send_priming_whitespace: bool  Emit >1KB so browsers render immediately (default true)
+     *  - prime_bytes: int  Number of bytes to send for priming (default 2048)
+     */
+    function setup_output_stream(array $opts = []): void
+    {
+        static $initialized = false;
+        if ($initialized) { return; }
+        $initialized = true;
+
+        $defaults = [
+            'content_type' => 'text/html; charset=UTF-8',
+            'send_priming_whitespace' => true,
+            'prime_bytes' => 2048,
+        ];
+        $o = $opts + $defaults;
+
+        // --- Server/runtime buffering controls ---
+        @ini_set('zlib.output_compression', '0');   // avoid gzip buffering
+        @ini_set('output_buffering', 'off');        
+        if (function_exists('apache_setenv')) {
+            @apache_setenv('no-gzip', '1');         // Apache: no gzip
+        }
+
+        // --- Response headers (only if not sent yet) ---
+        if (!headers_sent()) {
+            if (!empty($o['content_type'])) {
+                header('Content-Type: ' . $o['content_type']);
+            }
+            header('Cache-Control: no-cache, no-store, must-revalidate');
+            header('Pragma: no-cache');
+            header('Expires: 0');
+            header('X-Accel-Buffering: no');        // NGINX: disable buffering
+        }
+
+        // --- Clear ANY existing output buffers so flush() reaches client ---
+        while (ob_get_level() > 0) {
+            @ob_end_flush();
+        }
+
+        // --- Make PHP flush after each echo ---
+        if (function_exists('ob_implicit_flush')) {
+            @ob_implicit_flush(true);
+        }
+
+        // --- Prime the HTTP pipe so browsers paint immediately ---
+        if (!headers_sent() && !empty($o['send_priming_whitespace'])) {
+            echo str_repeat(' ', (int)$o['prime_bytes']), "\n";
+        } else {
+            echo "\n"; // ensure something is sent
+        }
+        if (function_exists('ob_flush')) { @ob_flush(); }
+        @flush();
+    }
+
+    /**
+     * Stream a chunk of HTML (or text) to the client immediately.
+     */
+    function outputnew(string $html, bool $append_newline = false): void
+    {
+        echo $html, ($append_newline ? "\n" : "");
+        if (function_exists('ob_flush')) { @ob_flush(); }
+        @flush();
+    }
+
+    /**
+     * Utility: force-close all output buffers. Rarely needed directly.
+     */
+    function stop_all_output_buffers(): void
+    {
+        while (ob_get_level() > 0) {
+            @ob_end_flush();
+        }
+    }
+
+    /**
+     * Utility: quick diagnostics to help debug buffering issues.
+     */
+    function streaming_debug_info(): array
+    {
+        return [
+            'headers_sent' => headers_sent(),
+            'ob_level' => ob_get_level(),
+            'zlib.output_compression' => ini_get('zlib.output_compression'),
+            'output_buffering' => ini_get('output_buffering'),
+        ];
+    }
+}
+
+
+
 //Define colours
 $mycolour1="w3-pale-yellow";
 $mycolour2="w3-cyan";
@@ -64,6 +167,7 @@ function getDir4TxtR($directory) {
     closedir($handle);
   }
 }
+
 
 function output($str) {
     echo $str;

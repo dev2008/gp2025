@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -18,7 +18,7 @@ $use_unicode_sqlserver_transformations = 0;
 
 function connect_db($server, $user, $password, $name_db, $exit_on_error = 1)
 {
-	global $debug_mode, $dbms_type, $db_schema, $sqlserver_conn_additional_attributes, $disable_mysql_multiple_statements, $page_name, $trigger_fatal_error_db_operations;
+	global $debug_mode, $dbms_type, $db_schema, $sqlserver_conn_additional_attributes, $disable_mysql_multiple_statements, $page_name, $trigger_fatal_error_db_operations, $additional_db_connection_string, $additional_db_connection_parameters;
 	
 		try {
 			
@@ -37,7 +37,13 @@ function connect_db($server, $user, $password, $name_db, $exit_on_error = 1)
 			switch ($dbms_type){
 				
 				case 'sqlite':
-					$conn = new PDO($dbms_type.":".$name_db, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+					$array_parameters = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+
+					if (isset($additional_db_connection_parameters) && is_array($additional_db_connection_parameters)) {
+						$array_parameters = $array_parameters + $additional_db_connection_parameters;
+					}
+
+					$conn = new PDO($dbms_type.":".$name_db.$additional_db_connection_string, $user, $password, $array_parameters);
 					break;
 				case 'mysql':
 					
@@ -49,22 +55,32 @@ function connect_db($server, $user, $password, $name_db, $exit_on_error = 1)
 					else{
 					    $array_parameters = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 					}
+
+					if (isset($additional_db_connection_parameters) && is_array($additional_db_connection_parameters)) {
+						$array_parameters = $array_parameters + $additional_db_connection_parameters;
+					}
 					
 					if ($page_name === 'install' || $page_name === 'check_requirements' ){
-					    $conn = new PDO('mysql:host='.$server.$port_string, $user, $password, $array_parameters);
+					    $conn = new PDO('mysql:host='.$server.$port_string.$additional_db_connection_string, $user, $password, $array_parameters);
 					    $res = execute_db("CREATE DATABASE IF NOT EXISTS `".$name_db.'` character set utf8mb4 collate utf8mb4_unicode_ci', $conn); // I can't use $quote because in check_Requirements common_start is not included
-					    $conn = new PDO('mysql:host='.$server.$port_string.';dbname='.$name_db, $user, $password, $array_parameters);
+					    $conn = new PDO('mysql:host='.$server.$port_string.';dbname='.$name_db.$additional_db_connection_string, $user, $password, $array_parameters);
 					}
 					else{
-					    $conn = new PDO('mysql:host='.$server.$port_string.';dbname='.$name_db, $user, $password, $array_parameters);
+					    $conn = new PDO('mysql:host='.$server.$port_string.';dbname='.$name_db.$additional_db_connection_string, $user, $password, $array_parameters);
 					}
 					
-					$res = execute_db("SET NAMES 'UTF8'", $conn);
+					$res = execute_db("SET NAMES 'utf8mb4'", $conn);
 					
 					break;
 				case 'sqlserver':
+
+					$array_parameters = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+
+					if (isset($additional_db_connection_parameters) && is_array($additional_db_connection_parameters)) {
+						$array_parameters = $array_parameters + $additional_db_connection_parameters;
+					}
 					
-					$conn = new PDO('sqlsrv:Server='.$server.$port_string.';Database='.$name_db, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ));
+					$conn = new PDO('sqlsrv:Server='.$server.$port_string.';Database='.$name_db.$additional_db_connection_string, $user, $password, $array_parameters);
 					
 					foreach($sqlserver_conn_additional_attributes as $key => $value){
 					    $conn->setAttribute( $key , $value);
@@ -72,8 +88,14 @@ function connect_db($server, $user, $password, $name_db, $exit_on_error = 1)
 					
 					break;
 				case 'postgres':
+
+					$array_parameters = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+
+					if (isset($additional_db_connection_parameters) && is_array($additional_db_connection_parameters)) {
+						$array_parameters = $array_parameters + $additional_db_connection_parameters;
+					}
 					
-					$conn = new PDO('pgsql:dbname='.$name_db.$port_string.';host='.$server, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+					$conn = new PDO('pgsql:dbname='.$name_db.$port_string.';host='.$server.$additional_db_connection_string, $user, $password, $array_parameters);
 					
 					$res = execute_db("SET NAMES 'UTF8'", $conn);
 					
@@ -556,6 +578,29 @@ function fetch_row_db(&$rs, $only_associative = 0)
 	
 }
 
+function fetch_all_db(&$rs, $only_associative = 0)
+{
+    global $trigger_fatal_error_db_operations;
+	try {
+	    if ($only_associative === 1){
+		    return $rs->fetchAll(PDO::FETCH_ASSOC);
+		}
+		else{
+		    return $rs->fetchAll();
+		}
+		
+    }
+    catch(PDOException $e){
+    	echo '<p><b>[08] Error:</b> during record fetching all.';
+    	
+    	if ($trigger_fatal_error_db_operations === 1){
+            trigger_error('fetching all error', E_USER_ERROR);
+        }
+    	exit();
+    }
+	
+}
+
 
 function get_num_rows_db($input, $use_sql=0)
 {
@@ -770,6 +815,39 @@ function get_unique_field_db($table_name, $directly_from_db = 0, $fallback_to_db
 	
 } // end function get_unique_field_db
 
+function get_total_rows()
+{
+	// goal: get an approximate number of rows in the db, considering all the tables 
+
+	switch ($dbms_type){
+		case 'mysql':
+			$sql = "SELECT SUM(TABLE_ROWS) AS total_rows FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA=SCHEMA()";
+			break;
+		case 'sqlite':
+			echo 'Error';
+			exit;
+			break;
+		case 'postgres':
+			echo 'Error';
+			exit;
+			break;
+		case 'sqlserver':
+			echo 'Error';
+			exit;
+			break;
+		default:
+			echo 'Error';
+			exit;
+	}
+
+	$res = execute_db($sql, $conn);
+
+	$row = fetch_row_db($res);
+
+	return $row[0];
+
+}
+
 function get_tables_list($get_additional_info = 0)
 // goal: get a list of the tables available in the current database
 // input:
@@ -818,7 +896,8 @@ function get_tables_list($get_additional_info = 0)
             else{
                 
                 $tables_ar[$c]['name'] = $row['name'];
-                if ($row['type'] === 'BASE TABLE'){ // for mysql and sqlserver
+                if ($row['type'] === 'BASE TABLE' || $row['type'] === 'SYSTEM VERSIONED' && $dbms_type == 'mysql'  ){
+				//if ($row['type'] === 'BASE TABLE'){ // for mysql and sqlserver
                     $row_temp = 'table';
                 }
                 else{
@@ -833,7 +912,7 @@ function get_tables_list($get_additional_info = 0)
 	return $tables_ar;
 }
 
-function get_fields_list($table_name, $add_additional_info = false, $add_fields_labels_info = false)
+function get_fields_list($table_name, $add_additional_info = false, $add_fields_labels_info = false, $return_on_non_existing_table = false)
 // goal: get a list of the fields available in a table
 // input:
 // output: $fields_ar, an array containing all the field names
@@ -842,7 +921,12 @@ function get_fields_list($table_name, $add_additional_info = false, $add_fields_
 	$fields_ar = array();
 	
 	if (table_exists($table_name) === false){
-	    die ('Unexpected table name: '.$table_name);
+		if ($return_on_non_existing_table === false){
+	    	die ('Unexpected table name: '.$table_name);
+		}
+		else{
+			return 'non_existing_table';
+		}
 	}
 	
 	switch ($dbms_type){

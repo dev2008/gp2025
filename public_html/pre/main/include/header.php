@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -39,45 +39,188 @@ switch($grid_layout_scrolling)
 
 <?php } ?>
 <?php if ($page_name === 'main' || $page_name === 'login'){ ?>
-<link rel="stylesheet" href="css/styles_screen.css<?php if ( $force_reload_css_js === 1){ echo '?v='.rand(1,10000);} ?>" type="text/css">
+<link rel="stylesheet" href="css/styles_screen_12.7.css<?php if ( $force_reload_css_js === 1){ echo '?v='.rand(1,10000);} ?>" type="text/css">
 <?php if ($menu_type === 'drop_down_menu' || isset($menu_items_ar) && count($menu_items_ar) <= 1 && $dont_show_menu_if_only_one_item === 1){ ?>
-<link rel="stylesheet" href="css/styles_screen_drop_down_menu.css" type="text/css">
+<link rel="stylesheet" href="css/styles_screen_drop_down_menu_12.6.css" type="text/css">
 <?php } ?>
 <?php } else{ ?>
-<link rel="stylesheet" href="css/styles_screen_old.css<?php if ( $force_reload_css_js === 1){ echo '?v='.rand(1,10000);} ?>" type="text/css" media="screen">
+<link rel="stylesheet" href="css/styles_screen_old_13.0.css<?php if ( $force_reload_css_js === 1){ echo '?v='.rand(1,10000);} ?>" type="text/css" media="screen">
 <?php } ?>
 <link href='include/boxicons/css/boxicons.min.css' rel='stylesheet'>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="Generator" content="DaDaBIK 12.3 Aveto - http://dadabik.com/">
+<meta name="Generator" content="DaDaBIK <?= $dadabik_config_version ?> <?= $dadabik_config_codename ?> - http://dadabik.com/">
 <meta name="viewport" content="initial-scale=1.0"/>
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 
+
+<?php if ($page_name === 'main' || $page_name === 'login' || $page_name === 'datagrid_configurator'){ ?>
 <!-- Web font -->
-<link rel="preload" href="include/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" media="screen" href="include/fonts/fonts.css">
+<link rel="preload" href="include/fonts/<?= $config['font'] ?>/<?= $config['font'] ?>.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" media="screen" href="include/fonts/<?= $config['font'] ?>/fonts.css">
+<?php } ?>
 
-<script language="javascript" type="text/javascript" src="include/tinymce/tinymce.min.js"></script>
+<script language="javascript" type="text/javascript" src="include/tinymce_6.8.6/tinymce.min.js"></script>
 
-<script src="include/jquery/jquery.min.js"></script>
-<script src="include/jquery/jquery-ui-1.13.2/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="include/jquery/jquery-ui-1.13.2/jquery-ui.min.css" type="text/css" media="screen">
-<script src="include/FileUploader.js"></script>
+<script src="include/tagify_4.35.3/tagify.js"></script>
+<script src="include/tagify_4.35.3/tagify.polyfills.min.js"></script>
+<link href="include/tagify_4.35.3/tagify.css" rel="stylesheet" type="text/css" />
+
+
+<script src="include/jquery/jquery_3.7.1.min.js"></script>
+<script src="include/jquery/jquery-ui-1.14.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="include/jquery/jquery-ui-1.14.1/jquery-ui.min.css" type="text/css" media="screen">
+<script src="include/FileUploader_12.6.js"></script>
+
+<?php if ($page_name === 'admin' || $page_name === 'interface_configurator'){ ?>
+<script src="include/Sortable_1.15.6.min.js"></script>
+<?php } ?>
+
 <script>
+if (!document.cookie.includes("is_mobile=")) {
+    const isMobile = window.innerWidth <= 768;
+    document.cookie = `is_mobile=${isMobile}; path=/`;
+}
+<?php if ($page_name === 'login'){ ?>
+
+// remove localstorage data about calendar start dates
+// I should do it only when logout (or successful login), but they have problematic redirects
+const sitePath = '<?=$site_path; ?>';
+const keyPrefix = 'dadabik_' + sitePath.replace(/\//g, '_');
+const localstorage_key = keyPrefix + '_calendar_start_dates';
+localStorage.removeItem(localstorage_key);
+console.log(0);
+
+
+<?php } ?>
+
+
 <?php if ($page_name === 'main'){ ?>
 var msg_generic_upload_error = '<?php echo $normal_messages_ar["generic_upload_error"]; ?>';
 var msg_file_uploaded_file_will_replace = '<?php echo $normal_messages_ar["file_uploaded_file_will_replace"]; ?>';
 <?php } ?>
+<?php if ($page_name === 'datagrid_configurator' && isset($function) && $function === 'show_basic_settings'){ ?>
+var msg_generic_upload_error = 'Upload error';
+var msg_file_uploaded_file_will_replace = 'File uploaded! The file will replace the current logo (if any) after saving the form.';
+
+// theme color input fields
+const input_field_names = [
+<?php
+foreach ($config_basic_settings_fields as $key => $value){
+    if (isset($config_basic_settings_field_categories[$key]) && $config_basic_settings_field_categories[$key] === 'theme_color'){
+        echo "'".$value."',";
+    }
+}
+?>
+];
+
+$(document).ready(function() {
+
+    // add event listener for each theme color field related to the custom theme (for the others, we don't need, since they are readonly)
+    input_field_names.forEach(input_field_name => {
+        const input_field = document.getElementById(input_field_name + '_custom');
+        const color_picker = document.getElementById(input_field_name + '_picker_custom');
+        
+        // Update the text input when the picker changes
+        color_picker.addEventListener('input', function() {
+            input_field.value = this.value;
+        });
+
+        // Update the picker when the text input changes
+        input_field.addEventListener('input', function() {
+            color_picker.value = this.value;
+        });
+        
+    });
+
+});
+
+
+function change_font_preview(font)
+{
+    
+    const font_url = `include/fonts/${font}/${font}.woff2`;
+
+    // Remove any previously added font-face style
+    $('#font_face_style').remove();
+
+    // Create a new @font-face rule
+    const font_face_rule = `
+        @font-face {
+            font-family: '${font}';
+            src: url('${font_url}') format('woff2');
+        }
+    `;
+
+    // Append the new @font-face rule to the document
+    $('<style>', {
+        id: 'font_face_style',
+        text: font_face_rule
+    }).appendTo('head');
+
+    // Apply the selected font to the preview text
+    $('#font_preview').css('font-family', font);
+    $('#font_preview_font_name').html('<b>' + font.replace(/_/g, ' ') + '</b>');
+}
+
+// change color values when a theme is selected 
+function change_theme_color_hexs(theme){
+    
+    fetch('themes/' + theme + '/colors.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Bad network response change_theme_color_hexs " + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+
+<?php
+foreach ($config_basic_settings_fields as $key => $value){
+    if (isset($config_basic_settings_field_categories[$key]) && $config_basic_settings_field_categories[$key] === 'theme_color'){
+        echo 'var field_name = "'.$value.'"';
+?>      
+            
+        if (theme === 'Custom'){ // just show the DIV, don't update values
+            $('.theme_color_selectors_wrapper').css("display", "block");
+            $('.theme_color_readonly_wrapper').css("display", "none");
+
+        }
+        else{
+            $('.theme_color_selectors_wrapper').css("display", "none");
+            $('.theme_color_readonly_wrapper').css("display", "block");
+            $("#" + field_name).val(data[field_name]);
+            $("#" + field_name + '_picker').val(data[field_name]);  
+        }
+        
+<?php
+    }
+}
+?>
+        })
+        .catch(error => {
+            console.error("Error fetching JSON:", error);
+        });
+}
 </script>
-<script type="application/javascript" src="include/FileUploaderFactory.js"></script>
+
+
+
+
+<?php } ?>
+</script>
+<script type="application/javascript" src="include/FileUploaderFactory_12.6.js"></script>
 <?php if ($page_name === 'main'){ ?>
 <?php if ($date_picker_type === 'flatpickr'){ ?>
-<link rel="stylesheet" href="include/flatpickr/flatpickr.min.css">
-<script src="include/flatpickr/flatpickr.js"></script>
-<script src="include/flatpickr/l10n/<?php echo $languages_flatpickr_codes[$language]; ?>.js"></script>
+<link rel="stylesheet" href="include/flatpickr_4.6.13/flatpickr.min.css">
+<?php if ($date_picker_theme === 'dark') { ?>
+<link rel="stylesheet" type="text/css" href="include/flatpickr_4.6.13/dark.css">
+<?php } ?>
+<script src="include/flatpickr_4.6.13/flatpickr.js"></script>
+<script src="include/flatpickr_4.6.13/l10n/<?php echo $languages_flatpickr_codes[$language]; ?>.js"></script>
 <?php } else{ ?>
 <script src="include/date_picker/jquery-ui-timepicker-addon.js"></script>
 <link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css" type="text/css" media="screen">
@@ -89,18 +232,44 @@ var msg_file_uploaded_file_will_replace = '<?php echo $normal_messages_ar["file_
 
 
 <!-- select2 -->
-<link href="css/select2/select2.min.css" rel="stylesheet" />
-<script src="include/select2/select2.min.js"></script>
-<script src="include/LiveEditing.js<?php if ( $force_reload_css_js === 1){ echo '?v='.rand(1,10000);} ?>"></script>
+<link href="css/select2/select2_4.0.13.min.css" rel="stylesheet" />
+<script src="include/select2/select2_4.0.13.min.js"></script>
+<script src="include/LiveEditing_12.6.js<?php if ( $force_reload_css_js === 1){ echo '?v='.rand(1,10000);} ?>"></script>
 <?php
 if ($page_name === 'main' || $page_name === 'login'){
-    // dev
+
+    // If the theme is Default, the standard CSS file is used, without additional internal style.
+    // Otherwise, we parse the CSS Theme Template according to the colors defined in the colors.json file for the theme seleced. If the theme is Custom, we parse the Template according to the user's custom defined colors. This logic is implemented by parse_css_theme_template()  
+    if($config['theme'] !== 'Default'){
+        $css_theme = parse_css_theme_template();
+        echo '<style>'.$css_theme.'</style>';
+
+        if($config['theme'] === 'Dark' || $config['theme'] === 'Dark_Light-Top'){ // additional CSS rules just for the dark theme
+            echo '<link href="css/dark_theme_12.7.css';
+
+            if ( $force_reload_css_js === 1){
+                echo '?v='.rand(1,10000);
+            }
+            
+            echo '" rel="stylesheet" />';
+            if($config['theme'] === 'Dark'){
+                echo '<style>#language_button, #account_button{color: #cfcfcf!important;}</style>';
+            }
+        }        
+    } 
+    
 	echo '<link rel="stylesheet" href="css/styles_screen_custom.css';
 	if ( $force_reload_css_js === 1){
 	    echo '?v='.rand(1,10000);
 	}
 	echo '" type="text/css" media="screen">';
 	echo "<style>\n".$config['custom_css']."\n</style>";
+
+    if ($config['font'] !== 'manrope'){
+        echo "<style>\nbody,input,textarea,.main-menu{font-family: '".ucwords(str_replace('_', ' ', $config['font']))."',Arial, sans-serif;}\n</style>"; 
+    }
+
+
 
 }
 ?>
@@ -119,6 +288,9 @@ tinyMCE.init({
 
 <?php if ($page_name === 'tables_inclusion'){ ?>
 	min_height: 600,
+    content_css: [
+                'css/bootstrap_5.3.2.css'
+            ],
 <?php } ?>
 
 <?php if ($page_name === 'main' && isset($function) && ( ($function == 'insert' || $function == 'show_insert_form') && $warn_unsaved_changes_insert_form === 1 || ($function == 'edit' || $function == 'update') && $warn_unsaved_changes_edit_form === 1)){ ?>
@@ -145,7 +317,7 @@ tinyMCE.init({
 <script>
 var js_select_type_select_suffix = '<?php echo $select_type_select_suffix; ?>';
 </script>
-<script src="include/general_functions.js"></script>
+<script src="include/general_functions_13.0.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -156,6 +328,16 @@ var dadabik_main_form_submission_enabled = true;
 $('#dadabik_main_form').on('submit', function(e){
 if (dadabik_main_form_submission_enabled === true){
     dadabik_main_form_submission_enabled = false;
+}
+else{
+    e.preventDefault();
+}
+});
+
+var dadabik_duplication_form_submission_enabled = true;
+$('#dadabik_duplication_form').on('submit', function(e){
+if (dadabik_duplication_form_submission_enabled === true){
+    dadabik_duplication_form_submission_enabled = false;
 }
 else{
     e.preventDefault();
@@ -233,9 +415,31 @@ else{
 <?php } ?>
     $.widget.bridge('uitooltip', $.ui.tooltip); // to avoid conflicts with bootstrap tooltip
     $(document).uitooltip({show: null});
+
+<?php if ( $page_name === 'datagrid_configurator'){ ?>
      $('[data-dadabik-uploader]').each(function () {
-        dadabikUploader($(this), $('#uploader-dadabik-form-template'));
+        dadabikUploader($(this), $('#uploader-dadabik-form-template'), 'api.php?function=upload_logo');
     })
+
+    function show_hide_calendar_fields() {
+        const selected_valude = $('input[name="record_list_layout"]:checked').val();
+        if (selected_valude === 'calendar') {
+            $('#calendar_fields_container').show();
+        } else {
+            $('#calendar_fields_container').hide();
+        }
+    }
+    $('input[name="record_list_layout"]').on('change', show_hide_calendar_fields);
+
+    // Initial check on page load
+    show_hide_calendar_fields();
+
+
+<?php }else{ ?>
+     $('[data-dadabik-uploader]').each(function () {
+        dadabikUploader($(this), $('#uploader-dadabik-form-template'), 'api_fe.php?function=upload_file');
+    })
+<?php } ?>
 
     $(function () {
         $('li.has-sub-menu > a').on("click", function (e) {
@@ -288,24 +492,27 @@ else{
 		e.preventDefault()
 	});
 
+
+
 	// adjust diabled attribute for template_table when the page is loaded
 	if ($('#enable_template_table_checkbox').is(':checked')){
-		$('#template_table').prop('disabled', false);
+		$('#template_table').prop('readonly', false);
+        
 	}
 	else{
-		$('#template_table').prop('disabled', true);
+		$('#template_table').prop('readonly', true);
 	}
 	// adjust it again when the user click on the enable checkbox
 	$("#enable_template_table_checkbox").click(function(e) {
 		if ($('#enable_template_table_checkbox').is(':checked')){
-			$('#template_table').prop('disabled', false);
+			$('#template_table').prop('readonly', false);
 		}
 		else{
-			$('#template_table').prop('disabled', true);
+			$('#template_table').prop('readonly', true);
 
 		}
 	});
-
+    
 <?php if ($page_name === 'main'){ ?>
     // pivot table, [add another column] / [remove this column] links
 	$('.add_remove_column').on("click", function (e) {
@@ -425,95 +632,188 @@ else{
 
 <?php } ?>
 
+// DEV AREA, permissions manager, after having selected table and group
+<?php if ($page_name === 'permissions_manager' && $function === 'configure' && isset($object)  && isset($subject)){ ?>
 
+
+
+$(document).ready(function() {
+    updateValueInput();
+})
+
+<?php } ?>
+
+<?php if ($page_name === 'interface_configurator' && $enable_formula_field_autocompletion === 1){ ?>
+
+    var available_tokens = <?= get_available_formula_tokens($installed_tables_ar, $table_name) ?>;
+    var current_suggestions = []; // Array to store current suggestions
+
+    // Extract the current token based on the cursor position
+    function extract_current_token(input_element) {
+        var cursor_position = input_element.selectionStart; // Get the cursor position
+        var text_before_cursor = input_element.value.substring(0, cursor_position); // Text before the cursor
+        var tokens = text_before_cursor.split(/\s+/); // Split by spaces
+        return tokens.pop(); // Get the token where the cursor is
+    }
+
+    $("#formula_field").autocomplete({
+        source: function(request, response) {
+            var term = extract_current_token(this.element[0]); // Get the current token based on the cursor position
+
+            // Show suggestions only if the term has at least one character
+            if (term.length > 0) {
+                var suggestions = $.grep(available_tokens, function(value) {
+                    return value.toLowerCase().indexOf(term.toLowerCase()) === 0;
+                });
+                current_suggestions = suggestions; // Store the current suggestions
+                response(suggestions);
+            } else {
+                response([]); // Empty response if no term
+            }
+        },
+        focus: function() {
+            // Prevent the value from being inserted on focus
+            return false;
+        },
+        select: function(event, ui) {
+            var input_element = this;
+            var cursor_position = input_element.selectionStart; // Get the cursor position
+            var text_before_cursor = input_element.value.substring(0, cursor_position); // Text before cursor
+            var text_after_cursor = input_element.value.substring(cursor_position); // Text after cursor
+            var tokens = text_before_cursor.split(/\s+/);
+            tokens.pop(); // Remove the current token before the cursor
+            tokens.push(ui.item.value); // Add the selected suggestion
+            tokens.push(""); // add a new, empty, token
+
+            // Save current cursor position relative to the inserted text
+            var new_cursor_position = tokens.join(" ").length; // The new cursor position after the insertion
+
+            // Update the input value
+            input_element.value = tokens.join(" ") + text_after_cursor; 
+
+            input_element.setSelectionRange(new_cursor_position, new_cursor_position);
+
+            return false; // Prevent default behavior
+        }
+    });
+
+    // Add Tab key functionality to autocomplete current token
+    $("#formula_field").on("keydown", function(event) {
+        if (event.key === "Tab" && $(this).autocomplete("widget").is(":visible")) {
+            event.preventDefault(); // Prevent default Tab behavior
+            var term = extract_current_token(this); // Get the current token based on the cursor position
+
+            // Use the first suggestion from the stored current suggestions
+            if (current_suggestions.length > 0) {
+                var selected_item = current_suggestions[0]; // Get the first suggestion
+                var cursor_position = this.selectionStart; // Get the cursor position
+                var text_before_cursor = this.value.substring(0, cursor_position); // Text before the cursor
+                var text_after_cursor = this.value.substring(cursor_position); // Text after cursor
+                var tokens = text_before_cursor.split(/\s+/);
+                tokens.pop(); // Remove the current token
+                tokens.push(selected_item); // Add the selected suggestion
+                tokens.push(""); 
+
+                // Save current cursor position relative to the inserted text
+                var new_cursor_position = tokens.join(" ").length; // The new cursor position after the insertion
+
+                // Update the input value
+                this.value = tokens.join(" ") + text_after_cursor; 
+
+                this.setSelectionRange(new_cursor_position, new_cursor_position);
+            }
+        }
+    });
+    
+<?php } ?>
 
 <?php if ($page_name === 'interface_configurator'){ ?>
 
-	$("#add_linked_field_link").click(function(e) {
+$("#add_linked_field_link").click(function(e) {
 
-		// increment the hidden number_linked_fields and add a new listbox
-		var current_number_linked_fields = Number($("#number_linked_fields").val());
+// increment the hidden number_linked_fields and add a new listbox
+var current_number_linked_fields = Number($("#number_linked_fields").val());
 
-		var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
+var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
 
-		// get the value of the last linked fields listbox (we need it to copy and paste it)
-		var last_linked_fields_select_content = $("#linked_fields_field_"+ (current_number_linked_fields-1)).html();
+// get the value of the last linked fields listbox (we need it to copy and paste it)
+var last_linked_fields_select_content = $("#linked_fields_field_"+ (current_number_linked_fields-1)).html();
 
-		// increment the hidden number_linked_fields
-		$("#number_linked_fields").val( current_number_linked_fields+1  );
+// increment the hidden number_linked_fields
+$("#number_linked_fields").val( current_number_linked_fields+1  );
 
-		// paste the copied listbox
-		$("#linked_fields_field_container").append(' <select id="linked_fields_field_'+current_number_linked_fields+'" name="linked_fields_field_'+field_position+'_'+current_number_linked_fields+'" >'+last_linked_fields_select_content+'</select>');
+// paste the copied listbox
+$("#linked_fields_field_container").append(' <select id="linked_fields_field_'+current_number_linked_fields+'" name="linked_fields_field_'+field_position+'_'+current_number_linked_fields+'" >'+last_linked_fields_select_content+'</select>');
 
-		e.preventDefault();
-	});
+e.preventDefault();
+});
 
-	$("#remove_linked_field_link").click(function(e) {
+$("#remove_linked_field_link").click(function(e) {
 
-		// decrement the hidden number_linked_fields and remove the last linked fields listbox
-		var current_number_linked_fields = Number($("#number_linked_fields").val());
+// decrement the hidden number_linked_fields and remove the last linked fields listbox
+var current_number_linked_fields = Number($("#number_linked_fields").val());
 
-		if (current_number_linked_fields !== 1){
+if (current_number_linked_fields !== 1){
 
-			var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
+var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
 
-			// remove the last linked fields listbox
-			$("#linked_fields_field_"+ (current_number_linked_fields-1)).remove();
+// remove the last linked fields listbox
+$("#linked_fields_field_"+ (current_number_linked_fields-1)).remove();
 
-			// decrement the hidden number_linked_fields
-			$("#number_linked_fields").val( current_number_linked_fields-1  );
+// decrement the hidden number_linked_fields
+$("#number_linked_fields").val( current_number_linked_fields-1  );
 
-		}
+}
 
-		e.preventDefault();
-	});
+e.preventDefault();
+});
 
-	$("#add_master_details").click(function(e) {
+$("#add_master_details").click(function(e) {
 
-		// increment the hidden number_master_details and add a new listbox
-		var current_number_master_details = Number($("#number_master_details").val());
+// increment the hidden number_master_details and add a new listbox
+var current_number_master_details = Number($("#number_master_details").val());
 
-		var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
+var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
 
-		// get the value of the last listboxes (we need it to copy and paste it)
-		var last_items_table_fk_field_names_select_content = $("#items_table_fk_field_names_field_"+ (current_number_master_details-1)).html();
-		var last_items_table_names_field_select_content = $("#items_table_names_field_"+ (current_number_master_details-1)).html();
+// get the value of the last listboxes (we need it to copy and paste it)
+var last_items_table_fk_field_names_select_content = $("#items_table_fk_field_names_field_"+ (current_number_master_details-1)).html();
+var last_items_table_names_field_select_content = $("#items_table_names_field_"+ (current_number_master_details-1)).html();
 
-		// increment the hidden number_master_details
-		$("#number_master_details").val( current_number_master_details+1  );
+// increment the hidden number_master_details
+$("#number_master_details").val( current_number_master_details+1  );
 
-		// paste the copied listbox
-		$("#items_table_fk_field_names_field_container").append(' <select id="items_table_fk_field_names_field_'+current_number_master_details+'" name="items_table_fk_field_names_field_'+field_position+'_'+current_number_master_details+'" >'+last_items_table_fk_field_names_select_content+'</select>');
+// paste the copied listbox
+$("#items_table_fk_field_names_field_container").append(' <select id="items_table_fk_field_names_field_'+current_number_master_details+'" name="items_table_fk_field_names_field_'+field_position+'_'+current_number_master_details+'" >'+last_items_table_fk_field_names_select_content+'</select>');
 
-		$("#items_table_names_field_container").append(' <select id="items_table_names_field_'+current_number_master_details+'" name="items_table_names_field_'+field_position+'_'+current_number_master_details+'"  onchange="refresh_items_table_fk_field_names(this.value, '+current_number_master_details+')">'+last_items_table_names_field_select_content+'</select>');
+$("#items_table_names_field_container").append(' <select id="items_table_names_field_'+current_number_master_details+'" name="items_table_names_field_'+field_position+'_'+current_number_master_details+'"  onchange="refresh_items_table_fk_field_names(this.value, '+current_number_master_details+')">'+last_items_table_names_field_select_content+'</select>');
 
-		var items_table_names_field_width = ($('#items_table_names_field_'+current_number_master_details).css("width"));
+var items_table_names_field_width = ($('#items_table_names_field_'+current_number_master_details).css("width"));
 
-		$('#items_table_fk_field_names_field_'+current_number_master_details).css("width", items_table_names_field_width);
+$('#items_table_fk_field_names_field_'+current_number_master_details).css("width", items_table_names_field_width);
 
-		e.preventDefault();
-	});
+e.preventDefault();
+});
 
-	$("#remove_master_details").click(function(e) {
+$("#remove_master_details").click(function(e) {
 
-		// decrement the hidden number_master_details and remove the last linked fields listbox
-		var current_number_master_details = Number($("#number_master_details").val());
+// decrement the hidden number_master_details and remove the last linked fields listbox
+var current_number_master_details = Number($("#number_master_details").val());
 
-		if (current_number_master_details !== 1){
+if (current_number_master_details !== 1){
 
-			var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
+var field_position = $("#field_position").val(); // from hidden field that stores the value of the field_position in the table (0, 1, 2, ...)
 
-			// remove the last listbox
-			$("#items_table_fk_field_names_field_"+ (current_number_master_details-1)).remove();
-			$("#items_table_names_field_"+ (current_number_master_details-1)).remove();
+// remove the last listbox
+$("#items_table_fk_field_names_field_"+ (current_number_master_details-1)).remove();
+$("#items_table_names_field_"+ (current_number_master_details-1)).remove();
 
-			// decrement the hidden number_master_details
-			$("#number_master_details").val( current_number_master_details-1  );
+// decrement the hidden number_master_details
+$("#number_master_details").val( current_number_master_details-1  );
 
-		}
+}
 
-		e.preventDefault();
-	});
+e.preventDefault();
+});
 
 <?php } ?>
 
@@ -1359,13 +1659,94 @@ $('form[id="set_beta_users_form"]').submit(function(e) {
 
 <?php } // end if page === 'admin'?>
 
+<?php
+if ($page_name === 'permissions_manager'){
+?>
+
+    
+    
+
+    // PUBLIC USER, SAVE
+	$('form[id="public_user_form"]').submit(function(e) {
+
+	    enable_disable_loader('enable');
+
+	    username_public_user =  $(this).find('select[name="username_public_user"] option:selected').val();
+
+        hide_top_bar_public_user = $(this).find('input[name="hide_top_bar_public_user"]:checked').val();
+        hide_advanced_features_public_user = $(this).find('input[name="hide_advanced_features_public_user"]:checked').val();
+        hide_menu_public_user = $(this).find('input[name="hide_menu_public_user"]:checked').val();
+
+	    id_form = this.id;
+
+		var error = '';
+
+		// here the PHP code to check errors, if any
+<?php if (false && $enable_data_tab_operations === 0){ ?>
+		error = '<?php echo $error_data_disabled; ?>';
+<?php } ?>
+
+		if (error !== ''){
+			 window.scrollTo(0,0);
+			 $('#confirmation_message_container').html('<div class="msg_error" id="error_message"><p>'+error+'<br/><br/><a href="javascript:{}" id="error_message_close_link">Ok, close</a></p></div>');
+			 enable_disable_loader('disable');
+		}
+		else{
+
+            $('#confirmation_message_container').html('');
+
+
+            $.ajax({
+                url: "api.php?function=save_public_user",
+
+                data: ({
+                    username_public_user: username_public_user,
+                    hide_top_bar_public_user: hide_top_bar_public_user,
+                    hide_advanced_features_public_user: hide_advanced_features_public_user,
+                    hide_menu_public_user: hide_menu_public_user
+                }),
+
+                type: "POST",
+                dataType: "json",
+                success: function(data){
+
+                    enable_disable_loader('disable');
+
+
+                    if (data.status === 'ok'){
+                        if (data.result !== 'done'){
+                            alert('unexpected error save_public_user.submit - ' + data.result+ ' - '+data.error_message);
+                        }
+                        else{
+                            $("body").addClass("showing_confirmation_message");
+                            window.setTimeout( remove_showing_confirmation_message_class, 1000);
+                        }
+                    }
+                    else{
+                        alert('unexpected error save_public_user.submit status not OK');
+                    }
+
+                },
+                error: function(data, status, e){
+                    enable_disable_loader('disable');
+                    alert('unexpected error save_public_user.submit ajax error'+JSON.stringify(data));
+                }
+            });
+
+		}
+		e.preventDefault(); // avoid to execute the actual submit of the form.
+	});
+
+
+
+<?php } // end if page === 'permissions_manager'?>
 
 
 <?php
 if ($page_name === 'datagrid_configurator'){
 ?>
 
-
+    
     // LAYOUT BASIC SETTINGS, SAVE
 	$('form[id="basic_settings_form"]').submit(function(e) {
 
@@ -1374,18 +1755,39 @@ if ($page_name === 'datagrid_configurator'){
 
 
 	    logo_img =  $(this).find('input[name="logo_img"]').val();
+
+        // set to false if the delete checkbox is not there
+        delete_logo_uploaded = $(this).find('input[name="delete_logo_uploaded"]').length ? $(this).find('input[name="delete_logo_uploaded"]').is(':checked') : false;
+
+        // convert true / false to 1 / 0
+        delete_logo_uploaded = delete_logo_uploaded ? 1 : 0;
+
+        font =  $(this).find('select[name="font"] option:selected').val();
+
         title_application =  $(this).find('input[name="title_application"]').val();
-        graphic_theme =  $(this).find('select[name="graphic_theme"] option:selected').val();
+        theme =  $(this).find('select[name="theme"] option:selected').val();
         grid_layout_scrolling =  $(this).find('select[name="grid_layout_scrolling"] option:selected').val();
         menu_type =  $(this).find('select[name="menu_type"] option:selected').val();
         results_grid_fixed_header = $(this).find('input[name="results_grid_fixed_header"]:checked').val();
-        graphic_theme =  $(this).find('select[name="graphic_theme"] option:selected').val();
         dont_show_menu_if_only_one_item = $(this).find('input[name="dont_show_menu_if_only_one_item"]:checked').val();
         results_display_mode_menu =  $(this).find('select[name="results_display_mode_menu"] option:selected').val();
 	    maxlength_grid =  $(this).find('input[name="maxlength_grid"]').val();
+        hide_menu = $(this).find('input[name="hide_menu"]:checked').val();
+        hide_top_bar = $(this).find('input[name="hide_top_bar"]:checked').val();
 
 
-
+	    left_menu_bgcolor =  $(this).find('input[name="left_menu_bgcolor"]').val();
+	    left_menu_text_color =  $(this).find('input[name="left_menu_text_color"]').val();
+	    standard_buttons_bgcolor =  $(this).find('input[name="standard_buttons_bgcolor"]').val();
+	    standard_buttons_text_color =  $(this).find('input[name="standard_buttons_text_color"]').val();
+	    custom_buttons_bgcolor =  $(this).find('input[name="custom_buttons_bgcolor"]').val();
+	    custom_buttons_text_color =  $(this).find('input[name="custom_buttons_text_color"]').val();
+	    danger_buttons_bgcolor =  $(this).find('input[name="danger_buttons_bgcolor"]').val();
+	    results_grid_header_bgcolor =  $(this).find('input[name="results_grid_header_bgcolor"]').val();
+	    top_bar_bgcolor =  $(this).find('input[name="top_bar_bgcolor"]').val();
+	    edit_icon_color =  $(this).find('input[name="edit_icon_color"]').val();
+	    delete_icon_color =  $(this).find('input[name="delete_icon_color"]').val();
+	    details_icon_color =  $(this).find('input[name="details_icon_color"]').val();
 
 	    id_form = this.id;
 
@@ -1408,23 +1810,34 @@ if ($page_name === 'datagrid_configurator'){
 
             $.ajax({
                 url: "api.php?function=save_basic_settings",
-
-
-
-
+                
                 data: ({
                 logo_img: logo_img,
+                delete_logo_uploaded: delete_logo_uploaded,
+                font: font,
                 title_application: title_application,
-                graphic_theme: graphic_theme,
+                theme: theme,
                 grid_layout_scrolling: grid_layout_scrolling,
                 results_grid_fixed_header: results_grid_fixed_header,
                 menu_type: menu_type,
                 dont_show_menu_if_only_one_item: dont_show_menu_if_only_one_item,
                 results_display_mode_menu: results_display_mode_menu,
-                maxlength_grid: maxlength_grid
+                maxlength_grid: maxlength_grid,
+                left_menu_bgcolor: left_menu_bgcolor,
+                left_menu_text_color: left_menu_text_color,
+                standard_buttons_bgcolor: standard_buttons_bgcolor,
+                standard_buttons_text_color: standard_buttons_text_color,
+                custom_buttons_bgcolor: custom_buttons_bgcolor,
+                custom_buttons_text_color: custom_buttons_text_color,
+                danger_buttons_bgcolor: danger_buttons_bgcolor,
+                results_grid_header_bgcolor: results_grid_header_bgcolor,
+                hide_menu: hide_menu,
+                hide_top_bar: hide_top_bar,
+                top_bar_bgcolor: top_bar_bgcolor,
+                edit_icon_color: edit_icon_color,
+                delete_icon_color: delete_icon_color,
+                details_icon_color: details_icon_color
                 }),
-
-
 
                 type: "POST",
                 dataType: "json",
@@ -1439,6 +1852,16 @@ if ($page_name === 'datagrid_configurator'){
                         }
                         else{
                             $("body").addClass("showing_confirmation_message");
+
+                            if (data.logo_uploaded != ''){
+                                
+                                $("#logo_uploaded_preview").html('<img src="data:image/png;base64,' +  data.logo_uploaded + '" width="50"><br><input type="checkbox" name="delete_logo_uploaded" value="1"> Delete current uploaded logo');
+                            }
+                            else if (delete_logo_uploaded == 1){
+                                $("#logo_uploaded_preview").html('');
+                                
+                            }
+                   
                             window.setTimeout( remove_showing_confirmation_message_class, 1000);
                         }
                     }
@@ -1995,6 +2418,39 @@ if (isset($table_name)){
 
 // modreq
 <?php if ($page_name === 'main' && isset($function) && ($function == 'insert' || $function == 'show_insert_form' || $function == 'edit' || $function == 'update')){ ?>
+    
+    var ajax_call_in_progress = false;
+
+    function delay_form_submission(){
+        
+<?php if ($add_delay_form_submission_during_ajax_calls === 1){ ?> 
+        $('#dadabik_main_form').on('submit', function (e) {
+
+        e.preventDefault();  // Prevent immediate form submission
+
+        // Check if an AJAX call is in progress
+        if (ajax_call_in_progress) {
+            console.log("Form submission is delayed, please wait for the AJAX call to finish.");
+            
+            // Keep checking if the AJAX call has finished
+            var checkInterval = setInterval(function () {
+                if (!ajax_call_in_progress) {
+                    clearInterval(checkInterval);
+                    
+                    $('#dadabik_main_form')[0].submit(); // Submit the form
+                    console.log("Form submitted after AJAX call finished.");
+                }
+            }, 5); // Check every 5ms
+        } else {
+            // If no AJAX call is in progress, submit the form immediately
+            $('#dadabik_main_form')[0].submit();
+        }
+        });
+<?php } ?>
+    }
+        
+
+    
 	function set_required(){
 		var c_temp = 0;
 		var field_names = [];
@@ -2019,6 +2475,8 @@ if (isset($table_name)){
             }
 		});
 		if (at_least_one_field === 1){
+        ajax_call_in_progress = true; // Disable form submission
+        delay_form_submission();
 		$.ajax({
 			url: "index.php?function=get_required_fields&tablename=<?php echo $table_name; ?>&api_call=1",
 			data: ({
@@ -2085,9 +2543,11 @@ if (isset($table_name)){
 				else{
 					alert('unexpected error function get_required_fields code 1');
 				}
+                ajax_call_in_progress = false;
 			},
 			error: function(data, status, e){
 				alert('unexpected error function get_required_fields code 2');
+                ajax_call_in_progress = false;
 			}
 		});
 		}
@@ -2120,8 +2580,17 @@ if (isset($table_name)){
             }
 		});
 	    if (at_least_one_field === 1){
+            ajax_call_in_progress = true; // Disable form submission
+            delay_form_submission();
 		$.ajax({
-			url: "index.php?function=get_calculated_field_values&tablename=<?php echo $table_name; ?>&api_call=1",
+            <?php if ($function == 'edit' || $function == 'update'){ ?>
+			
+            url: "index.php?function=get_calculated_field_values&tablename=<?php echo $table_name; ?>&where_field=<?php echo urlencode($where_field); ?>&where_value=<?php echo urlencode($where_value); ?>&api_call=1",
+
+            <?php } else{ ?>
+                url: "index.php?function=get_calculated_field_values&tablename=<?php echo $table_name; ?>&api_call=1",
+
+            <?php } ?>
 			data: ({
 
 			current_function: '<?php echo $function; ?>',
@@ -2157,9 +2626,13 @@ if (isset($table_name)){
 				else{
 					alert('unexpected error function get_calculated_field_values code 1');
 				}
+                ajax_call_in_progress = false;
+                
 			},
 			error: function(data, status, e){
 				alert('unexpected error function get_calculated_field_values code 2');
+
+                ajax_call_in_progress = false;
 			}
 		});
 		}
@@ -2221,8 +2694,94 @@ $('input[id^="date_picker"],input[id^="quick_search_date_picker"]').datepicker({
 </script>
 
 <?php if ($page_name === 'interface_configurator'){ ?>
-<script language="Javascript" src="include/hide_show_interface_configurator_fields.js"></script>
-<script language="Javascript" src="include/split/split.min.js"></script>
+<script language="Javascript" src="include/hide_show_interface_configurator_fields_12.6.js"></script>
+<script language="Javascript" src="include/split/split_1.6.0.min.js"></script>
+
+<?php if ($dont_tagify_form_config === 0){ ?>
+
+<script>
+
+$(document).ready(function() {
+
+    var input = document.getElementById('select_options_field');
+
+    var tagify = new Tagify(input, {
+        delimiters: '\n',
+        originalInputValueFormat: valuesArr => `~${valuesArr.map(item => item.value).join('~')}~` // this is the format returned and submitted, tags "photo" and "electronics" become a "~photo~electronic~" string
+    });
+
+    // handle the translation from the db value (e.g. "~photo~electronic~") to the tags
+    // Get the value from the input (e.g., "~photo~electronic~")
+    var savedValue = input.value.trim();
+
+    if (savedValue) {
+        // Remove the leading and trailing tildes, then split by tilde to get individual tags
+        var tags = savedValue.slice(1, -1).split('~').map(tag => ({ value: tag }));
+
+        // Add the tags
+        tagify.removeAllTags();
+        tagify.addTags(tags);
+    }
+
+    var input = document.getElementById('select_type_field');
+
+    var tagify_2 = new Tagify(input, {
+        delimiters: '\n',
+        whitelist : ['is_equal','is_different','contains','doesnt_contain','starts_with','ends_with','greater_than','less_than','greater_equal_than','less_equal_than','is_null','is_not_null','is_empty','is_not_empty','between'],
+        originalInputValueFormat: valuesArr => `${valuesArr.map(item => item.value).join('/')}` // this is the format returned and submitted, tags "photo" and "electronics" become a "~photo~electronic~" stgring
+    });
+
+    // handle the translation from the db value (e.g. "~photo~electronic~") to the tags
+    // Get the value from the input (e.g., "~photo~electronic~")
+    var savedValue = input.value.trim();
+
+    if (savedValue) {
+        // Remove the leading and trailing tildes, then split by tilde to get individual tags
+        var tags = savedValue.split('/').map(tag => ({ value: tag }));
+
+        // Add the tags
+        tagify_2.removeAllTags();
+        tagify_2.addTags(tags);
+    }
+
+    // The enter key is used to insert a tag, but if we are not in the middle of inserting something, Enter should submit the form
+    var main_form = document.getElementById('form_configurator_form');
+
+    tagify_2.on('keydown', onTagifyKeyDown)
+
+    function onTagifyKeyDown(e){
+        if( e.detail.event.key== 'Enter' && !tagify_2.state.inputText && !tagify_2.state.editing ){
+            setTimeout(() => main_form.submit())
+        }
+    }
+
+    // let's use sortable.js to allow tags drag and drop
+    var elements = document.getElementsByClassName('tagify');
+    
+    var sortable = Sortable.create(elements[0],{
+        draggable: "."+tagify.settings.classNames.tag,
+        onEnd: function (evt) {
+            tagify.updateValueByDOMTags();
+        }
+    });
+
+    // we may have two tagify fields
+    if (elements[1]){
+
+        var sortable_2 = Sortable.create(elements[1],{
+            draggable: "."+tagify_2.settings.classNames.tag,
+            onEnd: function (evt) {
+                tagify_2.updateValueByDOMTags();
+            }
+        });
+    }
+    
+
+    
+});
+</script>
+
+<?php } ?>
 <script>
 
 var timer;
@@ -2413,8 +2972,16 @@ $(document).ready(function() {
 
 </script>
 <?php } ?>
+<?php if ($page_name === 'interface_configurator' || $page_name == 'datagrid_configurator' || $page_name == 'data'){ ?>
+
+<link rel="stylesheet" href="include/codemirror-5.65.19/codemirror.min.css">
+<script src="include/codemirror-5.65.19/codemirror.min.js"></script>
+<script src="include/codemirror-5.65.19/javascript.min.js"></script>
+<script src="include/codemirror-5.65.19/sql.min.js"></script>
+<?php } ?>
+
 <script>
-<?php if ($page_name === 'main' && isset($function) && ($function == 'insert' || $function == 'show_insert_form' || $function == 'edit' || $function == 'update')){ ?>
+<?php if ($page_name === 'main' && isset($function) && ($function == 'insert' || $function == 'show_insert_form' || $function == 'edit' || $function == 'update' || $function == 'show_search_form')){ ?>
 
 
 function refresh_cascade_children(field_name, field_value, _POST_2, details_row, form_type, disabled_attribute, set_field_default_value, default_value_field_name, default_value, show_edit_form_after_error, show_insert_form_after_error, user_group_name)
@@ -2491,7 +3058,90 @@ function refresh_cascade_children(field_name, field_value, _POST_2, details_row,
 }
 <?php } ?>
 
-<?php if ($page_name === 'interface_configurator'){ ?>
+<?php if ($page_name === 'interface_configurator' || $page_name === 'datagrid_configurator' || $page_name === 'data'){ ?>
+
+<?php if ($enable_codemirror === 1){ ?>
+    
+$(document).ready(function() {
+
+    const jsField = document.getElementById("js_custom_formatting_function_field");
+    if (jsField) {
+        editor = CodeMirror.fromTextArea(jsField, {
+            lineNumbers: true,
+            mode: "javascript",
+            theme: "default",
+            indentUnit: 2,
+            lineWrapping: true
+        });
+        document.querySelector('form').addEventListener('submit', function () {
+            editor.save();
+
+        });
+        
+    }
+
+    const sqlField = document.getElementById("sql_create_view");
+    if (sqlField) {
+        editor = CodeMirror.fromTextArea(sqlField, {
+            lineNumbers: true,
+            mode: "sql",
+            theme: "default",
+            lineWrapping: true
+        });
+        document.getElementById('sql_create_view_form').addEventListener('submit', function () {
+            editor.save(); // Syncs editor content back to the textarea
+        });
+    }
+
+    const templateField = document.getElementById("template_table");
+    if (templateField) {
+        editor = CodeMirror.fromTextArea(templateField, {
+            lineNumbers: true,
+            mode: "javascript",
+            theme: "default",
+            indentUnit: 2,
+            lineWrapping: true
+        });
+        document.getElementById('datagrid_template_form').addEventListener('submit', function () {
+            editor.save(); // Syncs editor content back to the textarea
+        });
+
+        const checkbox = document.getElementById("enable_template_table_checkbox");
+        if (checkbox) {
+            if (checkbox.checked === false){
+                editor.setOption("readOnly", true);
+                editor.getWrapperElement().classList.toggle("CodeMirror-disabled", true);
+            }
+            checkbox.addEventListener("change", function () {
+                const enabled = this.checked;
+                editor.setOption("readOnly", !enabled);
+                editor.getWrapperElement().classList.toggle("CodeMirror-disabled", !enabled);
+            });
+        }
+    }
+
+    const custom_css = document.getElementById("custom_css");
+    if (custom_css) {
+        editor = CodeMirror.fromTextArea(custom_css, {
+            lineNumbers: true,
+            mode: "javascript",
+            theme: "default",
+            indentUnit: 2,
+            lineWrapping: true
+        });
+
+        const cssSaveBtn = document.getElementById("save_css_button");
+        if (cssSaveBtn) {
+            cssSaveBtn.addEventListener('click', function () {
+            editor.save(); // Aggiorna il contenuto della textarea prima della chiamata AJAX
+            });
+        }
+    }
+    
+});
+
+<?php } // end if($enable_codemirror === 1)  ?>
+
 
 function hide_show_show_if_value_field(field)
 {
@@ -2759,7 +3409,7 @@ payload.field = $tableCell.attr('data-field');
 //payload.text = $tableCell.attr('data-text');
 payload.type = $tableCell.attr('data-type');
 payload.dataSource = $tableCell.attr('data-source');
-payload.newValue = $tableCell.find('textarea').val() || $tableCell.find('input').val() || null;
+payload.newValue = $tableCell.find('textarea').val() || $tableCell.find('input').val() || $tableCell.find('select').val() || null;
 
 
 return new Promise((resolve, reject) => {
@@ -2865,15 +3515,16 @@ if (  isset($modal_mode) && $modal_mode === 1){
         padding: 10px;
     }
     .form-configurator-title-label {
-        background: #555;
-        color: white;
+        background: #e5e7eb;
+        color: black;
         font-size: 20px;
         padding: 10px 15px;
         font-weight: bold;
+        border-bottom: 1px solid #d1d5db;
     }
     #form-settings-panel {
         margin-top: 15px;
-        border: 2px solid #555;
+        border: 2px solid #e5e7eb;
     }
     #left-panel input:not([type=checkbox]):not([type=radio]),
     #left-panel select,
@@ -2910,7 +3561,7 @@ if (  isset($modal_mode) && $modal_mode === 1){
 
     .gutter.gutter-horizontal {
         cursor: ew-resize;
-        background: #555;
+        background: #e5e7eb;
     }
 </style>
 <?php } ?>
@@ -2927,16 +3578,6 @@ if (user_agent.indexOf('MSIE ') > 0 || user_agent.indexOf('Trident/') > 0){
 <?php } ?>
 
 </head>
-
-<!-- Google Analytics tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQY87RT9YZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LQY87RT9YZ');
-</script>
 
 <body
 <?php
@@ -2985,7 +3626,7 @@ if (isset($show_maintenance_header) && $show_maintenance_header === 1){
 <?php
 if ($page_name === 'main'){
 ?>
-<div class="fixed-header">
+<div class="fixed-header" style="<?= $display_style_mobile_header_footer ?>">
 	<div class="row">
 		<div class="col-xs-8">
 			<!--<img class="logo img-responsive" src="images/logo_alpha.png">-->
@@ -3008,7 +3649,7 @@ if ($page_name === 'main'){
 			 <?php } ?>
 		</div>
 		<div class="col-xs-4 right">
-			<a href="#" data-mobile-menu-toggle>
+			<a href="#" data-mobile-menu-toggle style="<?= $display_style_menu ?>">
 				<i class="fa fa-bars fa-2x"></i>
 			</a>
 		</div>
@@ -3017,14 +3658,14 @@ if ($page_name === 'main'){
 
 <?php if ($enable_authentication === 1){ ?>
 <?php if ($show_logout_account_admin_box === 1){ ?>
-<div class="fixed-footer">
-<?php if ($username_public_user !== '' && $username_public_user === $current_user){ ?>
-<a href="login.php?function=show_login_form" class="btn  btn-primary" title="Login"><i class="fa fa-sign-in"></i> Login</a>
+<div class="fixed-footer" style="<?= $display_style_mobile_header_footer ?>">
+<?php if ($config['username_public_user'] !== '' && $config['username_public_user'] === $current_user){ ?>
+<a href="login.php?function=show_login_form" class="btn  btn-primary" title="Login" id="mobile_login_btn"><i class="fa fa-sign-in"></i> Login</a>
 <?php } else{ ?>
 <?php if ($enable_user_password_modification === 1 && !is_ldap_user($_SESSION['logged_user_infos_ar']['id_user'])){ ?>
-	<a href="index.php?function=edit_account" class="btn  btn-primary" title="Your account"><i class="fa fa-user"></i> Your account</a>
+	<a href="index.php?function=edit_account" class="btn  btn-primary" title="Your account" id="mobile_your_account_btn"><i class="fa fa-user"></i> Your account</a>
 <?php } ?>
-	<a href="login.php?function=logout" title="Logout" class="btn  btn-danger"><i class="fa fa-sign-out"></i> Logout</a>
+	<a href="login.php?function=logout" title="Logout" class="btn  btn-danger" id="mobile_logout_btn"><i class="fa fa-sign-out"></i> Logout</a>
 <?php } ?>
 </div>
 <?php } ?>
@@ -3044,7 +3685,7 @@ else{
 	$class_temp = 'table_interface_container_login';
 }
 ?>
-<table  class="<?php echo $class_temp; ?>" align="center">
+<table  class="<?php echo $class_temp; ?>" align="center" cellpadding=0>
 
 <?php
 if ($page_name === 'main' || $page_name === 'login') {
@@ -3054,13 +3695,13 @@ if ($page_name === 'main' || $page_name === 'login') {
 		//echo '<tr class="table_interface_container_tr_logo_login"><td><img id="dadabik_logo" style="max-width: 100%;height: auto;" src="'.$logo_img.'">';
 
         echo '<tr class="table_interface_container_tr_logo_login"><td><div class="navbar-brand justify-content-center page-sidebar-compact-hidden flex-shrink-0 text-white px-sm-3 py-3 me-0">
-        <img src="'.$logo_img.'">
+        <img src="'.$src_logo.'">
       </div>';
 
 
 	}
 	if ($page_name === 'main'){
-        echo '<tr class="table_interface_container_tr_logo"><td>';
+        echo '<tr class="table_interface_container_tr_logo" style="'. $display_style_header. '"><td>';
 	    if ($link_logo_home === 1){
 	        //echo '<tr class="table_interface_container_tr_logo"><td><a href="index.php"><img id="dadabik_logo" style="max-width: 100%;height: auto;" src="'.$logo_img.'"></a>';
 	    }
@@ -3082,10 +3723,10 @@ if ($page_name === 'main' || $page_name === 'login') {
 
 <?php
 if ($link_logo_home === 1){
-    echo '<a href="index.php"><img id="dadabik_logo" style="max-height: 100%; width: auto; margin: 8px;" src="'.$logo_img.'"></a>';
+    echo '<a href="index.php"><img id="dadabik_logo" style="max-height: 100%; width: auto; margin: 8px;" src="'.$src_logo.'"></a>';
 }
 else{
-    echo '<img id="dadabik_logo" style="max-height: 100%; width: auto; margin: 8px;" src="'.$logo_img.'">';
+    echo '<img id="dadabik_logo" style="max-height: 100%; width: auto; margin: 8px;" src="'.$src_logo.'">';
     
 }
 ?>
@@ -3094,16 +3735,14 @@ else{
     <div class="d-flex align-items-center justify-content-end w-100">
 
 
-<?php if ($orazio_edition === 1){ ?>
+<?php if ($orazio_edition === 1 && (!isset($config['username_public_user']) || $config['username_public_user'] !== $current_user)){ ?>
 
     <table style="display:inline;" ><tr align="right"><td><a class="btn btn-sm btn-primary" href="admin.php">Edit this app</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-sm btn-danger" href="index.php?function=deploy">Publish & Deploy this App</a>&nbsp;&nbsp;&nbsp;<a target="_blank" title="Ask a question, we'll get in touch very soon" class="btn btn-sm btn-secondary" href="/contacts" title="Ask a question">Questions? Contact us</a> </td></tr></table>&nbsp;&nbsp;
 
 
 
 <?php } ?>
-
-          <!-- Mode switch visible on screens > 991px wide (lg breakpoint) -->
-          <div class="d-none d-lg-flex align-items-center">
+          <div class="d-flex align-items-center">
             
             <!--<span class="fs-sm me-3 text-grey">You are currently in <strong>live</strong> mode. Change the mode:</span>--> 
              
@@ -3121,14 +3760,13 @@ else{
           </div>
 
           <?php } ?>
-
         
           <!-- Language dropdown -->
           <div class="dropdown nav ms-3">
           <?php
         if (count($languages_ar) > 1){
         ?>
-            <button type="button" class="nav-link text-dark py-0 px-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button id="language_button" type="button" class="nav-link text-dark py-0 px-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="bx bx-globe fs-xl opacity-60 me-1"></i>
               <?= ucfirst($language); ?>
             </button>
@@ -3155,7 +3793,7 @@ $show_current_user = 0;
 $show_your_account = 0;
 if ($enable_authentication === 1){
     if ($show_logout_account_admin_box === 1){
-        if ($username_public_user !== '' && $username_public_user === $current_user){
+        if ($config['username_public_user'] !== '' && $config['username_public_user'] === $current_user){
             $show_login_link = 1;
         }
         else{
@@ -3168,21 +3806,26 @@ if ($enable_authentication === 1){
         }
     }
 }
+$current_user_to_display = '';
+if ($show_current_user ===1 ){
+    $current_user_to_display = $current_user;
+    if (isset($_SESSION['google_logged_user']['first_name'])){
+        $current_user_to_display = $_SESSION['google_logged_user']['first_name'];
+    }
+}
 ?>
 
 
             <!-- User account dropdown -->
           <div class="dropdown nav ms-3">
-<?php if ($show_current_user ===1 ){ ?>
-            <button type="button" class="nav-link text-dark p-0 fw-bold" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            <button type="button" id="account_button" class="nav-link text-dark p-0 fw-bold" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               <!-- <span class="position-relative bg-primary bg-opacity-25 rounded-circle p-4 me-2">
 
                 <span class="position-absolute top-50 start-50 translate-middle text-dark fs-lg" ><?= ucfirst(substr($current_user,0,1)) ?></span>
               </span> -->
-              <?= $current_user ?>
+              <?= $current_user_to_display ?>
               <i class="bx bx-dots-vertical-rounded fs-xl opacity-60 ms-1"></i>
             </button>&nbsp;&nbsp;&nbsp;
-<?php } ?>
 
 <ul class="dropdown-menu dropdown-menu-end my-2">
 <?php if ($show_your_account ===1 ){ ?>
@@ -3245,7 +3888,7 @@ if ($orazio_edition === 0){
 
        
 <?php
-
+        /*
 		if (false && $enable_authentication === 1){ // old box
 			if ($show_logout_account_admin_box === 1){
 			echo '<div class="app-info pull-right text-center"><div class="user-info">';
@@ -3281,6 +3924,7 @@ if ($orazio_edition === 0){
 			}
 
 		}
+        */
 		if ($page_name === 'main'){
 		    if (isset($hooks['custom_header_1'])){
                 if ( substr($hooks['custom_header_1'],0,8) === 'dadabik_'){
@@ -3304,7 +3948,7 @@ elseif ($page_name === 'admin' || $page_name === 'interface_configurator' || $pa
 	    echo '<img src="images/logo_appify.svg" width="300">';
 
 	}
-	echo '</td><td align="right" style="padding-right: 20px;padding-bottom:8px"> <font size="6">ADMIN AREA</font>&nbsp;<br/>';
+	echo '</td><td align="right" style="padding-right: 20px;padding-bottom:8px"> <font size="6">DEV AREA</font>&nbsp;<br/>';
 
 	if ($enable_authentication === 1){
 
@@ -3371,6 +4015,7 @@ if ($orazio_edition === 0){
 		}
 
 	}
+    
 	if ($orazio_edition === 0){
 	if ($_SESSION['check_update'] === 1){
         echo ' <font color="red">(New version available!)</font>';
@@ -3378,7 +4023,7 @@ if ($orazio_edition === 0){
 
 
 
-	echo ' | <a class="top_link_admin" href="'.$dadabik_main_file.'?function=search&tablename='.urlencode($table_name).'">Exit admin</a> | <a class="top_link_admin" href="'.$site_url.'login.php?function=logout">Logout</a>';
+	echo ' | <a class="top_link_admin" href="'.$site_url.'login.php?function=logout">Logout</a>';
 	}
 
 
@@ -3674,10 +4319,12 @@ else{
 <?php } ?>
 
 <?php
+/*
+ */
 ?>
-<?php if ($orazio_edition === 1){
+<?php if (true || $orazio_edition === 1){
 
-    echo '<td >&nbsp;&nbsp;&nbsp;<a title="Exit the admin area and view the app you are building" class="bottom_menu_active"  style="color:red;font-size:24px;"  href="index.php">&nbsp;&nbsp;VIEW this app&nbsp;&nbsp;</a></td>';
+    echo '<td >&nbsp;&nbsp;&nbsp;<a title="Exit the DEV Area and view the app you are building" class="view-app-button" href="'.$dadabik_main_file.'?function=search&tablename='.urlencode($table_name).'">&nbsp;&nbsp;'.$emoji_view_this_app_button.' VIEW this app&nbsp;&nbsp;</a></td>';
 } ?>
 
 
@@ -3685,7 +4332,7 @@ else{
 
 if ($_SESSION['dev_mode'] == 'live'){
     $bgcolor_temp = '#b3c150';
-    $bgcolor_temp = '#848792';
+    $bgcolor_temp = '#4B5563';
     $button_class = 'btn-success';
 }
 else{
@@ -3756,6 +4403,18 @@ else{
 ?>
 
 <td ><a class="<?php echo $class_temp; ?>" href="permissions_manager.php?function=show_user_permissions&tablename=<?php echo urlencode($table_name); ?>">&nbsp;&nbsp;<?php echo 'Show user permissions'; ?>&nbsp;&nbsp;</a></td>
+
+<?php
+if ($page_name === 'permissions_manager' && $function === 'show_public_user'){
+	$class_temp = 'bottom_menu_active';
+}
+else{
+	$class_temp = 'bottom_menu';
+}
+?>
+
+<td ><a class="<?php echo $class_temp; ?>" href="permissions_manager.php?function=show_public_user&tablename=<?php echo urlencode($table_name); ?>">&nbsp;&nbsp;<?php echo 'Public access'; ?>&nbsp;&nbsp;</a></td>
+
 <td style="width:100%"></td>
 </tr>
 </table>
@@ -3865,7 +4524,7 @@ else{
 	$class_temp = 'bottom_menu';
 }
 ?>
-<td ><a class="<?php echo $class_temp; ?>" href="datagrid_configurator.php?function=show_datagrid_templates&tablename=<?php echo urlencode($table_name); ?>">&nbsp;&nbsp;<?php echo 'Datagrid Templates'; ?>&nbsp;&nbsp;</a></td>
+<td ><a class="<?php echo $class_temp; ?>" href="datagrid_configurator.php?function=show_datagrid_templates&tablename=<?php echo urlencode($table_name); ?>">&nbsp;&nbsp;<?php echo 'Record List Layout'; ?>&nbsp;&nbsp;</a></td>
 
 <?php
 if ($page_name === 'datagrid_configurator' && $function === 'show_layout_hooks'){
@@ -3956,7 +4615,7 @@ if (!isset($modal_mode) || $modal_mode === 0){
         $collapsed_class_text = ' collapsed';
     }
 
-	echo '<td class="td_left_menu'.$collapsed_class_text.'" id="td_left_menu">';
+	echo '<td class="td_left_menu'.$collapsed_class_text.'" id="td_left_menu" style="'.$display_style_menu.'">';
 	echo '<div class="main-menu-container">';
 
 	echo $menu_left_side;

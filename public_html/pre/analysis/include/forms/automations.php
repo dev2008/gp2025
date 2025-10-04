@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -73,7 +73,7 @@ if ($enable_update_notice_email_sending === 1){
 
 <p>DaDaBIK currently supports <strong>before insert</strong>, <strong>after insert</strong>, <strong>before update</strong>, <strong>after update</strong> and <strong>after delete</strong> hooks for each table/view; this means that for each table/view you can enrich the DaDaBIK workflow with your own code.
 
-<p>You are not limited to email sending, you can do whatever you need, for example you can execute additional operations on the database or call an external API.  
+<p>You are not limited to email sending, you can do whatever you need, for example you can execute additional operations on the database or call an external API. <a target="_blank" href="https://dadabik.com/index.php?function=show_documentation#low_coding_hooks">Check the manual</a> for additional information.
 
 <h3>These are the operational hooks currently set</h3>
 
@@ -137,7 +137,7 @@ if ($cnt === 0){
 <div style="padding: 10px 15px;">
 
 <p>DaDaBIK, by default, creates in your pages all the CRUD buttons you need to INSERT, SEARCH, EDIT, DELETE data, to produce Chart and Pivot reports and to execute all the IMPORT/EXPORT operations. However, you may need additional buttons to execute specific operations or implement your workflows. 
-<p><b>Custom buttons</b> are buttons that you can add to various parts of your application, which trigger the execution of custom PHP/Javascript code. For example you could add a button on the top of a <i>customers</i> form that changes the value of a field or call an external API using Javascript or send a PDF version of the page to an email address using PHP.
+<p><b>Custom buttons</b> are buttons that you can add to various parts of your application, which trigger the execution of custom PHP/Javascript code. For example you could add a button on the top of a <i>customers</i> form that changes the value of a field or call an external API using Javascript or send a PDF version of the page to an email address using PHP. <a target="_blank" href="https://dadabik.com/index.php?function=show_documentation#low_coding_buttons">Check the manual</a> for additional information.
 
 <h3>These are the custom buttons currently set</h3>
 
@@ -181,8 +181,16 @@ else{
 ?>
 
 <p>For more details about automations, <a href="https://dadabik.com/index.php?function=show_documentation" target="_blank">check the Hooks chapter and the Custom Buttons chapter </a> of the documentation.
-<p>You can see <i>email automations</i> and <i>operational hooks</i> in action in the <i>email alert</i> and <i>operational hooks</i> chapters of this tutorial:<br><br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4SnsMUxHZiM?start=6158" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>You can see <i>custom buttons</i> in action in the corresponding chapter of this tutorial:<br><br>
+
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JxmuWePr2JQ?si=tNuWeF-Kvlon7uAh&amp;start=8933" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<p>You can see <i>operational hooks</i> in action in the corresponding  chapters of this tutorial:<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JxmuWePr2JQ?si=lMxXBssvggtmpYEJ&amp;start=11149" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 

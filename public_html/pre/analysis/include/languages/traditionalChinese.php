@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) http://www.dadabik.org/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -33,7 +33,8 @@ $submit_buttons_ar = array (
 	"details" => "細項內容",
 	"insert_as_new" => "插入為新一筆", 
 	"multiple_inserts" => "多筆新增", 
-	"change_table" => "調整表格"
+	"change_table" => "調整表格",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -43,7 +44,10 @@ $normal_messages_ar = array (
 "insert_item" => "新增項",
 "show_all_records" => "顯示所有記錄",
 "show_records" => "顯示記錄",
-"ldap_user_dont_update" => "這是一個導入的 LDAP 用戶: 在需要時唯一能改的是群組的項目",
+"ldap_user_dont_update" => "This is an imported user (LDAP, Google, ...): his/her group is the only information you should change, if needed.", // to change
+"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 "remove_search_filter" => "解除搜尋條件",
 "logout" => "登出",
 "top" => "頂部",
@@ -71,6 +75,7 @@ $normal_messages_ar = array (
 "url_not_valid" => "無效的網址",
 "phone_not_valid" => "無效的電話（請標註區域號 e.g. +390523599318, 00390523599318, 0523599318.", 
 "date_not_valid" => "無效日期",
+"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin", // to change
 "similar_records" => "下一筆資訊似乎相近於您要新增的 (您想顯示 最大的重覆筆數? ".$number_duplicated_records." 還是可能有更多的相近筆數？<br>哪一個是您想做的?", // to change
 "similar_records_short" => "下一筆資訊似乎相近於您要新增的 (您想顯示 最大的重覆筆數? ".$number_duplicated_records." 還是可能有更多的相近筆數？", // to change
 "no_records_found" => "無記錄",
@@ -106,6 +111,7 @@ $normal_messages_ar = array (
 "profile_updated" => "文件更新成功",
 "delete_result" => "删除结果:",
 "record_deleted" => "成功删除",
+"records_deleted" => "Item(s) correctly deleted.", // to change
 "duplication_possible" => "存在的副本",
 "fields_max_length" => "欄位最大長度",
 "current_upload" => "此次上傳",
@@ -193,6 +199,7 @@ $normal_messages_ar = array (
 'add_column' => '新增樞紐分析欄位', 
 'remove_this_column' => '移除樞紐分析欄位', 
 'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand', // to change
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "新增成功, 可以使用 <a href='#' onclick='window.close();return false;'>關閉</a> 本視窗.",
 
 "import" => "匯入", 
@@ -221,7 +228,8 @@ $normal_messages_ar = array (
 'it_seems_you_uploaded_other_files_cancelled' => ' 似乎你已經在他處想上傳一些檔案但未完成上傳程序，那些上傳將被取消.', 
 'number_uploaded_files' => '上傳檔案數: ', 
 'file_uploaded_file_will_replace' => '上傳完成! 儲存表單時，新檔案將取代原有檔案(如果有的話) ',
-'generic_upload_error' => '上傳出現一般性錯誤! '// to change
+'generic_upload_error' => '上傳出現一般性錯誤! ',// to change,
+'collapse_sidebar' => 'Collapse sidebar',
 
 );	
 $normal_messages_ar['months_short'][1] = '1月';

@@ -270,7 +270,7 @@ class ddb_api {
         }
     
         if ($num_rows !== 1){
-            echo 'Unexpected error, more than one records having same ID';
+            echo 'Unexpected error, more than one records having same ID'.$table_name.$id_field.$id_value;
             exit;
         }
     

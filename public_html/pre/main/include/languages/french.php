@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 	"details" => "Détails",
 	"insert_as_new" => "Insérer comme nouveau",
 	"multiple_inserts" => "Insertions multiples",
-	"change_table" => "Changer de table"
+	"change_table" => "Changer de table",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -40,8 +41,12 @@ $normal_messages_ar = array (
 	"insert_item" => "Insérer un élément",
 	"show_all_records" => "Montrer tous les enregistrements",
 	"show_records" => "Afficher",
-	"ldap_user_dont_update" => "C'est un utilisateur importé par LDAP : son groupe est la seule information que vous pouvez modifier si nécessaire.",
+	"ldap_user_dont_update" => "C'est un utilisateur importé (LDAP, Google, ...) : son groupe est la seule information que vous pouvez modifier si nécessaire.",
+	"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 	"remove_search_filter" => "supprimer le filtre de recherche",
+	"set_default_search_filter" => "set default search filter", // to change 
 	"logout" => "Se déconnecter",
 	"top" => "Haut",
 	"last_search_results" => "Résultats de la dernière recherche",
@@ -68,6 +73,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => "Le(s) URL insérée(s) ne sont pas valides.",
 	"phone_not_valid" => "Numéro de téléphone non valide.",
 	"date_not_valid" => "Date(s) non valide(s)",
+	"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin", // to change
 	"similar_records" => "Les enregistrements ci-dessous semblent être identiques à celui que vous voulez inséré (I'll show max ".$number_duplicated_records." similar items, there could be more).<br>Que voulez-vous faire ? ",  // to change
 	"similar_records_short" => "Les enregistrements ci-dessous semblent être identiques à celui que vous voulez inséré (I'll show max ".$number_duplicated_records." similar items, there could be more).",  // to change
 	"no_records_found" => "Pas d'enregistrement trouvé.",
@@ -103,6 +109,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "Votre profil a correctement été mis à jour.",
 	"delete_result" => "Effacer le résultat : ",
 	"record_deleted" => "Enregistrement correctement effacé.",
+	"records_deleted" => "Item(s) correctly deleted.", // to change
 	"duplication_possible" => "Duplication possible",
 	"fields_max_length" => "Vous avez inséré trop de texte dans un ou plusieurs champs.",
 	"current_upload" => "Fichier en cours",
@@ -189,6 +196,7 @@ $normal_messages_ar = array (
 'add_column' => 'ajouter une colonne', // add column in the pivot report // to change
 'remove_this_column' => 'supprimer cette colonne', // remove column in the pivot report // to change
 'advanced_sql_report_instructions_pivot_part' => 'Pour la génération de tableaux Pivot, vous pouvez en outre utiliser des alias (pour spécifier les étiquettes) et vous pouvez utiliser plusieurs fonctions d\'agrégation, par exemple : SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand', // to change
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "L'élément a été correctement inséré, vous pouvez <a href='#' onclick='window.close();return false;'>fermer</a> cette fenêtre.", // to change
 
 "import" => "Importer", // to change

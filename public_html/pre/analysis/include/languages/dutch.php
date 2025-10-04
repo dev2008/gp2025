@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
     "details" => "Details",
     "insert_as_new" => "Als nieuw invoegen",
     "multiple_inserts" => "Meerdere invoegen",
-    "change_table" => "Verander tabel"
+    "change_table" => "Verander tabel",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -40,8 +41,12 @@ $normal_messages_ar = array (
     "insert_item" => "Item invoegen",
     "show_all_records" => "Toon alle records",
     "show_records" => "Toon records",
-    "ldap_user_dont_update" => "Dit is een LDAP geïmporteerde gebruiker: enkel de groep moet veranderd worden, indien nodig.",
+    "ldap_user_dont_update" => "Dit is een geïmporteerde gebruiker (LDAP, Google, ...): enkel de groep moet veranderd worden, indien nodig.",
+	"leave_blank_keep_current_password" => "Leeg laten om het huidige paswoord te behouden",
+	"users_will_be_forced_change_after_login_except_ldap" => "Indien ingeschakeld zal de gebruiker een nieuw paswoord moeten instellen bij de volgende login. Dit geldt niet voor externe authenticatie (bv. LDAP, Google)",
+	"deleting_group_also_delete_users" => "Opgelet: bij het verwijderen van een groep zullen alle gebruikers ook verwijderd worden",
     "remove_search_filter" => "Wis zoekfilter",
+	"set_default_search_filter" => "instellen van het standaard zoekfilter",
     "logout" => "Log uit",
     "top" => "Top",
     "last_search_results" => "Laatste zoekresultaten",
@@ -70,6 +75,7 @@ $normal_messages_ar = array (
     "similar_records" => "Onderstaande records gelijken sterk op de toe te voegen record  (max ".$number_duplicated_records." gelijkaardige items getoond, mogelijk meerdere.).<br>Wat wilt U doen?",
     "similar_records_short" => "Onderstaande records gelijken sterk op de toe te voegen record  (max ".$number_duplicated_records." gelijkaardige items getoond, mogelijk meerdere.)",
     "date_not_valid" => "Ongeldige datum.",
+	"id_group_admin_by_non_admin_not_valid" => "U kunt geen admin maken of wijzigen als u zelf geen admin bent",
     "no_records_found" => "Geen records gevonden.",
     "records_found" => "records gevonden",
     "number_records" => "Aantal records: ",
@@ -103,6 +109,7 @@ $normal_messages_ar = array (
     "profile_updated" => "Uw profiel is correct geüpdatet.",
     "delete_result" => "Wis resultaat:",
     "record_deleted" => "Record correct verwijderd.",
+	"records_deleted" => "Item(s) correctly deleted.", // to change
     "duplication_possible" => "Duplicatie is mogelijk",
     "fields_max_length" => "Teveel tekst in 1 of meerdere velden.",
     "you are_going_unsubscribe" => "U zal verwijderd worden van de mailinglijst. Verder gaan ?",
@@ -193,6 +200,7 @@ $normal_messages_ar = array (
     "add_column" => "voeg kolom toe",
     "remove_this_column" => "verwijder deze kolom",
     "advanced_sql_report_instructions_pivot_part" => "Voor draaitabellen kunt u aliassen gebruiken(om labels te specificeren) en u kunt meer dan 1 aggregatie gebruiken, voorbeeld: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand",
+    'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 
     "record_inserted_close_window" => "Het item werd correct ingevoegd, u kunt dit venster sluiten <a href='#' onclick='window.close();return false;'>close</a>.",
     "import" => "Importeer",

@@ -1,5 +1,13 @@
 
-<script src="./include/chart.min.js"></script>
+<script src="./include/chart_4.5.0.min.js"></script>
+<script>
+const chartTextColor = getComputedStyle(document.documentElement).getPropertyValue('--chart-text-color').trim();
+
+if (chartTextColor) {
+  Chart.defaults.color = chartTextColor;
+}
+</script>
+
 <script src="./include/palette.js"></script>
 
 <!--<span id="chart">-->
@@ -30,7 +38,6 @@
 <script>
 // Get the context of the canvas element we want to select
 var ctx = document.getElementById("myChart").getContext("2d");
-
 var data = <?php echo json_encode($data); ?>;
 
 var options = 
@@ -124,8 +131,3 @@ var myChart = new Chart(ctx, {
 <?php } ?>
 
 </script>
-
-<?php
-
-
-?>

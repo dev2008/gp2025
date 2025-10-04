@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 	"details" => "Detalls",
 	"insert_as_new" => "Insert as new", // to change
 	"multiple_inserts" => "Multiple inserts", // to change
-	"change_table" => "Canviar de taula"
+	"change_table" => "Canviar de taula",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -40,8 +41,12 @@ $normal_messages_ar = array (
 	"insert_item" => "Insereix element",
 	"show_all_records" => "Mostrar totes les fitxes",
 	"show_records" => "Mostrar fitxes",
-	"ldap_user_dont_update" => "Aquest és un usuari importat de LDAP: només hauries de canviar-ne el grup, si és necessari.",
+	"ldap_user_dont_update" => "Aquest és un usuari importat de LDAP/Google/...: només hauries de canviar-ne el grup, si és necessari.",
+	"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 	"remove_search_filter" => "elimina el filtre de cerca",
+	"set_default_search_filter" => "set default search filter", // to change 
 	"logout" => "Sortir",
 	"top" => "Dalt",
 	"last_search_results" => "Darrers resultats de la cerca",
@@ -68,6 +73,7 @@ $normal_messages_ar = array (
 	"url_not_valid" => "L'adreça de plana web entrada no és correcta.",
 	"phone_not_valid" => "El número de telèfon entrat no és correcte.<br>Si us plau, useu el format \"+(codi país)(codi àrea)(número)\" per exemple +34971855141, 0034971855141, 971855141, 971855141.",
 	"date_not_valid" => "Una data entrada no és correcta.",
+	"id_group_admin_by_non_admin_not_valid" => "You can't create or edit an admin user if you are not admin", // to change
 	"similar_records" => "Les fitxes de sota s'assemblen molt a la que has entrat  (I'll show max ".$number_duplicated_records." similar items, there could be more).<br>Què vols fer?", // to change
 	"similar_records_short" => "Les fitxes de sota s'assemblen molt a la que has entrat  (I'll show max ".$number_duplicated_records." similar items, there could be more).", // to change
 	"no_records_found" => "Cap fitxa trobada.",
@@ -103,6 +109,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "El teu perfil està actualitzat.",
 	"delete_result" => "Resultat de l'eliminació:",
 	"record_deleted" => "Fitxa esborrada correctament.",
+	"records_deleted" => "Item(s) correctly deleted.", // to change
 	"duplication_possible" => "La duplicació està permesa",
 	"fields_max_length" => "Has entrat massa text en un o més camps.",
 	"current_upload" => "Arxiu actual",
@@ -190,6 +197,7 @@ $normal_messages_ar = array (
 'add_column' => 'add column', // add column in the pivot report // to change
 'remove_this_column' => 'remove this column', // remove column in the pivot report // to change
 'advanced_sql_report_instructions_pivot_part' => 'For Pivot Table generation, in addtion, you can use alias (to specify labels) and you can use more than one aggreagete functions, for example: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand', // to change
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "The item has been correctly inserted, you can <a href='#' onclick='window.close();return false;'>close</a> this window.", // to change
 
 "import" => "Import", // to change

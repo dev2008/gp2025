@@ -2,7 +2,7 @@
 /*
 ***********************************************************************************
 DaDaBIK (DaDaBIK is a DataBase Interfaces Kreator) https://dadabik.com/
-Copyright (C) 2001-2024 Eugenio Tacchini
+Copyright (C) 2001-2025 Eugenio Tacchini
 
 This program is distributed "as is" and WITHOUT ANY WARRANTY, either expressed or implied, without even the implied warranties of merchantability or fitness for a particular purpose.
 
@@ -41,11 +41,13 @@ function create_internal_table($table_internal_name, $only_beta_for_updgrade = 0
 	show_if_field_field varchar(255) DEFAULT '' NOT NULL,
 	show_if_operator_field varchar(15) DEFAULT '' NOT NULL,
 	show_if_value_field varchar(50) DEFAULT '' NOT NULL,
-	calculated_function_field varchar(500) default '' NOT NULL,
-	custom_validation_function_field varchar(500) default '' NOT NULL,
-	custom_formatting_function_field varchar(500) default '' NOT NULL,
-	custom_csv_formatting_function_field varchar(500) default '' NOT NULL,
-	custom_required_function_field varchar(500) default '' NOT NULL,
+	formula_field varchar(255) DEFAULT '' NOT NULL,
+	calculated_function_field varchar(255) default '' NOT NULL,
+	custom_validation_function_field varchar(255) default '' NOT NULL,
+	custom_formatting_function_field varchar(255) default '' NOT NULL,
+	js_custom_formatting_function_field varchar(800) default '' NOT NULL,
+	custom_csv_formatting_function_field varchar(255) default '' NOT NULL,
+	custom_required_function_field varchar(255) default '' NOT NULL,
 	js_event_functions_field varchar(500) default '' NOT NULL,
 	content_field varchar(50) DEFAULT 'alphanumeric' NOT NULL,
 	present_search_form_field varchar(1) DEFAULT '1' NOT NULL,
@@ -153,7 +155,16 @@ function create_table_list_table($only_beta_for_updgrade = 0)
 		order_by_table VARCHAR(500) NOT NULL DEFAULT '',
 		order_type_table VARCHAR(4) NOT NULL DEFAULT '',
 		pk_field_table varchar(500) NOT NULL default '',
-		icon_table varchar(255) NOT NULL default ''";
+		icon_table varchar(255) NOT NULL default '',
+		
+	heading_before_table TEXT NULL,
+	heading_after_table TEXT NULL,
+	calendar_id_field_table varchar(255) default '' NOT NULL,
+	calendar_title_field_table varchar(255) default '' NOT NULL,
+	calendar_description_field_table varchar(255) default '' NOT NULL,
+	calendar_start_date_time_field_table varchar(255) default '' NOT NULL,
+	calendar_end_date_time_field_table varchar(255) default '' NOT NULL,
+	record_list_layout varchar(50) default 'grid_list' NOT NULL";
 		
 		/*
 		if ($dbms_type === 'postgres'){
@@ -195,7 +206,7 @@ function create_table_list_table($only_beta_for_updgrade = 0)
 
 } // end function create_table_list_table
 
-function create_users_table($installation_password)
+function create_users_table($installation_password, $for_orazio = 0)
 // goal: drop (if present) the old users table and create the new one.
 {
 	global $conn, $users_table_name, $quote, $dbms_type, $generate_portable_password_hash, $autoincrement_word, $date_time_word;
@@ -257,6 +268,13 @@ function create_users_table($installation_password)
 	//$t_hasher = new PasswordHash(8, $generate_portable_password_hash);
 	//$encrypted = $t_hasher->HashPassword('letizia');
 	//$encrypted = create_password_hash('letizia');
+
+	
+
+	if (strlen($installation_password) > 72){
+		echo 'Error, password too long';
+		exit();
+	} 
 	
 	$encrypted = create_password_hash($installation_password);
 	if (strlen_custom($encrypted) < 20){
@@ -275,11 +293,16 @@ function create_users_table($installation_password)
 
 	//$sql = "INSERT INTO ".$quote.$users_table_name.$quote." (id_group, username_user, password_user, authentication_type_user, confirmed_timestamp_user) VALUES (2, 'alfonso', '".$encrypted."', 'dadabik', '".time()."')";
 	//$res_table = execute_db($sql, $conn);
+
+	if ($for_orazio === 0){
+		$sql = "INSERT INTO ".$quote.$users_table_name.$quote." (id_group, username_user, password_user, authentication_type_user, confirmed_timestamp_user) VALUES (2, 'alfonso', :encrypted, 'dadabik', '".time()."')";
+		$res_prepare = prepare_db($conn, $sql);
+		$res_bind = bind_param_db($res_prepare, ':encrypted', $encrypted);
+		$res = execute_prepared_db($res_prepare,0);
+
+	}
 	
-	$sql = "INSERT INTO ".$quote.$users_table_name.$quote." (id_group, username_user, password_user, authentication_type_user, confirmed_timestamp_user) VALUES (2, 'alfonso', :encrypted, 'dadabik', '".time()."')";
-	$res_prepare = prepare_db($conn, $sql);
-	$res_bind = bind_param_db($res_prepare, ':encrypted', $encrypted);
-	$res = execute_prepared_db($res_prepare,0);
+	
 	
 } // end function create_users_table
 
@@ -320,7 +343,7 @@ function create_groups_table()
 function create_config_table($data_types = 'simple', $install_enable_tables_on_creation = 'no', $only_beta_for_updgrade = 0)
 // ****************************UP
 {
-    global $conn, $prefix_internal_table, $quote, $dbms_type, $autoincrement_word;
+    global $conn, $prefix_internal_table, $quote, $dbms_type, $autoincrement_word, $mediumtext_word;
 	
 	if ($only_beta_for_updgrade === 0){
 	    drop_table_db($conn, $prefix_internal_table.'config');
@@ -329,7 +352,7 @@ function create_config_table($data_types = 'simple', $install_enable_tables_on_c
 	
 	$fields = "
 	name_config varchar(100) NOT NULL PRIMARY KEY,
-	value_config text NOT NULL";
+	value_config ".$mediumtext_word." NOT NULL";
 	$fields .= ")";
 	
 	if ($dbms_type === 'mysql'){
@@ -347,13 +370,34 @@ function create_config_table($data_types = 'simple', $install_enable_tables_on_c
     
         $sql_part_2 = "(name_config, value_config) VALUES ('data_types', '".$data_types."'), ('install_enable_tables_on_creation', '".$install_enable_tables_on_creation."'),('dont_show_menu_if_only_one_item', '0'),('graphic_theme', 'bluegray'),('grid_layout_scrolling', 'grid_scroll'),
     ('logo_img', 'images/logo.png'),
+	('logo_uploaded', ''),
+	('font', 'manrope'),
+	('theme', 'Default'),
+	('left_menu_bgcolor', '#0B0F1A'),
+	('left_menu_text_color', '#FFFFFF'),
+	('standard_buttons_bgcolor', '#5268BE'),
+	('standard_buttons_text_color', '#ffffff'),
+	('custom_buttons_bgcolor', '#6C757D'),
+	('custom_buttons_text_color', '#ffffff'),
+	('danger_buttons_bgcolor', '#DF3445'),
+	('results_grid_header_bgcolor', '#EEEEEE'),
     ('menu_type', 'left_side_menu'),
     ('results_display_mode_menu', 'both'),
     ('results_grid_fixed_header', '0'),
     ('title_application', 'DaDaBIK no-code low-code platform and database front-end - dadabik.com'),
     ('custom_css', ''),
-    ('maxlength_grid', '0')";
-        
+    ('maxlength_grid', '0'),
+    ('hide_top_bar', '0'),
+    ('hide_menu', '0'),
+    ('top_bar_bgcolor', '#ffffff'),
+    ('edit_icon_color', '#5067c1'),
+    ('delete_icon_color', '#eb1515'),
+    ('details_icon_color', '#4f84f3'),
+    ('username_public_user', ''),
+    ('hide_advanced_features_public_user', '0'),
+    ('hide_top_bar_public_user', '0'),
+    ('hide_menu_public_user', '0')";
+	
         $res = execute_db($sql_part_1_prod.$sql_part_2, $conn);
         $res = execute_db($sql_part_1_beta.$sql_part_2, $conn);
     }
@@ -414,6 +458,38 @@ function create_unique_ids_table()
 	
 
 } // end function create_unique_ids_table
+
+function create_row_level_filters_table()
+{
+	global $conn, $dbms_type, $prefix_internal_table, $autoincrement_word;
+	
+	drop_table_db($conn, $prefix_internal_table.'row_level_filters');
+	drop_table_db($conn, $prefix_internal_table.'row_level_filters_beta');
+
+	$fields = "
+	id_row_level_filter ".$autoincrement_word.",
+	id_group integer NOT NULL,
+	table_row_level_filter varchar(255) DEFAULT '' NOT NULL,
+	field_row_level_filter varchar(255) DEFAULT '' NOT NULL,
+	operator_row_level_filter varchar(50) DEFAULT '' NOT NULL,
+	type_value_row_level_filter varchar(50) DEFAULT '' NOT NULL,
+	value_row_level_filter varchar(500) DEFAULT '' NOT NULL";
+
+// IF YOU ADD OR REMOVE FIELDS FROM HERE, YOU MUST MODIFY THE TWO INSERT QUERY IN INTERNAL_TABLE_MANAGER.PHP
+
+	if ($dbms_type === 'postgres'){
+		$fields .= ",
+		PRIMARY KEY (\"id_row_level_filter\")";
+	}
+	
+	$fields .= ")
+	";
+
+	create_table_db($conn, $prefix_internal_table.'row_level_filters', $fields);
+	create_table_db($conn, $prefix_internal_table.'row_level_filters_beta', $fields);
+
+	
+}
 
 function create_permissions_tables($only_beta_for_updgrade = 0)
 // goal: drop (if present) the old users table and create the new one.

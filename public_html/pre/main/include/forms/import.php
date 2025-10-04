@@ -28,7 +28,7 @@
         
         <br><p><input type="file" class="form-control-file" name="source_file">
         <br>
-        <input type="submit" class="btn btn-primary" value="<?php echo $normal_messages_ar['load_file']; ?>">
+        <input type="submit" class="btn btn-primary" value="<?php echo $normal_messages_ar['load_file']; ?>"  id="upload_file_btn">
 
 <?php
 

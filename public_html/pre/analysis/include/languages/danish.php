@@ -30,7 +30,8 @@ $submit_buttons_ar = array (
 	"details" => "Detaljer",
 	"insert_as_new" => "Indsæt som ny",
 	"multiple_inserts" => "Flere indsættelser",
-	"change_table" => "Skift tabel"
+	"change_table" => "Skift tabel",
+	"search_includes_following_fields" => 'The search includes the following fields:', // to change
 );
 
 // normal messages
@@ -40,8 +41,12 @@ $normal_messages_ar = array (
 	"insert_item" => "Dan ny post",
 	"show_all_records" => "Vis alle poster",
 	"show_records" => "Vis poster",
-	"ldap_user_dont_update" => "Dette er en importeret LDAP bruger: Du kan kun ændre den gruppe han tilhører.",
+	"ldap_user_dont_update" => "Dette er en importeret bruger (LDAP, Google, ...): Du kan kun ændre den gruppe han tilhører.",
+	"leave_blank_keep_current_password" => "Leave it blank to keep the current password", // to change
+	"users_will_be_forced_change_after_login_except_ldap" => "If enabled, this user will be required to set a new password after their next login. Not applied to external authentication (e.g., LDAP, Google).", // to change
+	"deleting_group_also_delete_users" => "Please note that deleting a group will also remove all of its users", // to change
 	"remove_search_filter" => "fjern søgefilter",
+	"set_default_search_filter" => "set default search filter", // to change 
 	"logout" => "Logud",
 	"top" => "Top",
 	"last_search_results" => "Sidste søge resultater",
@@ -103,6 +108,7 @@ $normal_messages_ar = array (
 	"profile_updated" => "Din profil er korrekt opdateret.",
 	"delete_result" => "Slet resultat:",
 	"record_deleted" => "Post slettet.",
+	"records_deleted" => "Item(s) correctly deleted.", // to change
 	"duplication_possible" => "Dublering er muligt",
 	"fields_max_length" => "Du har skrevet for meget tekst i et eller flere felter.",
 	"current_upload" => "Aktuel fil",
@@ -189,6 +195,7 @@ $normal_messages_ar = array (
 'add_column' => 'tilføj kolonner',
 'remove_this_column' => 'fjern kolonner ',
 'advanced_sql_report_instructions_pivot_part' => 'Til at danne pivot tabellen kan du bruge alias (til at angive lables) og du kan bruge mere end en aggregerings funktion f.eks.: SELECT brand AS ProductBrand, count(*) As Number, AVG(price_product) AS AvgPrice FROM products GROUP BY brand',
+'advanced_sql_report_instructions_stat_card_part' => 'For <b>stat cards</b>, instead, there is no aggregation; you must select only one element. For example, this counts the number of customers: SELECT COUNT(*) FROM customers.', // to change
 "record_inserted_close_window" => "The item has been correctly inserted, you can <a href='#' onclick='window.close();return false;'>close</a> this window.", // to change
 
 "import" => "Import", // to change
