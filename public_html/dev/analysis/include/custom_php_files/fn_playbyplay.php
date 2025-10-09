@@ -3,23 +3,29 @@ if(!defined('custom_page_from_inclusion')) { die(); }
 require_once 'f_functions.php';
 
 /**
- * fn_playbyplay.php — RESET VERSION (stable build)
+ * fn_playbyplay.php — PBP import with look-ahead yardage and P/F/KO insertion
  *
  * - Parse from “1st Quarter” to “<E><ST.66><L>”
- * - Insert only lines that match the full pattern and have formation not P/F
- * - Skip KO/KR lines entirely
- * - Yardage rule: if a_poss is blank => (prev_field - this_field), else 999
- * - Penalty => a_penalty=1 and a_yards=0
- * - Present editable grid for a_yards=999; on save update and call nz_pbp()
+ * - Insert plays matching the full pattern (including P/F), and KO lines
+ * - KO rows: form=X, ocall=KO, dcall=KR, yards=0
+ * - P/F rows: yards=0
+ * - Yardage rule (current → next):
+ *     For each NORMAL play (any formation including P/F present in feed),
+ *     look ahead to next matched play; if next is KO skip yard calc; if next shows
+ *     same offense (or doesn’t show poss) use (current_field - next_field) as yards.
+ *   This ensures the yards belong to the CURRENT row, and works when the next play
+ *   is a P or F formation.
+ * - Penalty ⇒ a_penalty=1 and a_yards=0
+ * - Editor to fix rows with a_yards=999, then call nz_pbp()
  */
 
 if (!defined('_CP_PBP_SOFT_DEBUG')) define('_CP_PBP_SOFT_DEBUG', false);
 
-/** Entry point used by the control page */
+/** Entry used by control page */
 function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) {
     echo '<div class="w3-container"><div class="w3-small w3-text-grey">Play by Play</div>';
 
-    // --- Handle POST back from the a_yards=999 editor
+    // --- Handle POST from 999 editor
     if (!empty($_POST['_cp_pbp_save']) && isset($_POST['_cp_edit']) && is_array($_POST['_cp_edit'])) {
         _cp_pbp_handle_save($conn, $_POST['_cp_edit']);
         _cp_pbp_call_nz($conn, $upload_id);
@@ -40,7 +46,7 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
     $raw = file_get_contents($fullpath);
     if ($raw === false || $raw === '') { echo '<div class="w3-panel w3-red">File empty.</div></div>'; return null; }
 
-    // --- Header extraction (league / season / week / level)
+    // --- Header (league/season/week/level)
     $hdrLeague = null; $hdrSeason = null; $hdrWeek = null; $hdrLevel = 'Advanced';
     if (preg_match('/GAMEPLAN\s*\((?P<level>[^)]+)\)\s+League\s+(?P<league>[A-Z0-9]+)\s+Season\s+(?P<season>\d{4})\s+Week\s+(?P<week>\d{1,2})/i', $raw, $hm)) {
         $hdrLeague = strtoupper($hm['league']);
@@ -48,7 +54,6 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
         $hdrWeek   = (int)$hm['week'];
         $hdrLevel  = trim($hm['level']);
     } else {
-        // Fallback to filename pattern
         if (preg_match('/^(?P<league>[A-Z0-9]+)-[A-Z]+_s(?P<season>\d{4})_w(?P<week>\d{1,2})_/i', $filename, $fm)) {
             $hdrLeague = strtoupper($fm['league']);
             $hdrSeason = (int)$fm['season'];
@@ -58,7 +63,7 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
     if (preg_match('/^NCAA6/i', (string)$hdrLeague)) $hdrLevel = 'Basic';
     $a_type = (stripos((string)$hdrLeague, 'NCAA') === 0) ? 'College' : 'Pro';
 
-    // --- Slice region from “1st Quarter” to end marker
+    // --- Slice “1st Quarter”..end marker
     $startPos = _cp_pbp_pos_first_quarter($raw);
     if ($startPos === null) { echo '<div class="w3-panel w3-amber">Could not find "1st Quarter".</div></div>'; return null; }
     $endPos = strpos($raw, '<E><ST.66><L>', $startPos);
@@ -70,22 +75,26 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
     // --- Patterns
     $formationSet = '(?:A|B|C|D|E|F|G|H|I|J|K|L|O|P|S|T|U|W|X|Z)';
     $re_play = '/^\s*'
-        .'(?:(\d{1,2}):(\d{2}))\s+'                // 1,2 minutes:seconds
-        .'([A-Z]{2})?\s*'                          // 3 poss (optional)
-        .'(\d{1,2})\s+'                             // 4 field
-        .'(1st|2nd|3rd|4th)\s+and\s+(\d{1,2}|goal)\s+' // 5 down, 6 distance
-        .'(' . $formationSet . ')\s+'              // 7 form
-        .'([A-Z]{2})\s+'                           // 8 ocall
-        .'([A-Z]{2})\s+'                           // 9 dcall
-        .'(.+?)\s*$'                               // 10 text
+        .'(?:(\d{1,2}):(\d{2}))\s+'                    // 1,2 mm:ss
+        .'([A-Z]{2})?\s*'                              // 3 poss (optional)
+        .'(\d{1,2})\s+'                                 // 4 field
+        .'(1st|2nd|3rd|4th)\s+and\s+(\d{1,2}|goal)\s+'  // 5 down, 6 dist
+        .'(' . $formationSet . ')\s+'                  // 7 form
+        .'([A-Z]{2})\s+'                               // 8 ocall
+        .'([A-Z]{2})\s+'                               // 9 dcall
+        .'(.+?)\s*$'                                   // 10 text
         .'/i';
 
-    $re_ko   = '/^\s*(\d{1,2}):(\d{2})\s+[A-Z]{0,2}\s*KO\s+KR\b/i';
+    $re_ko = '/^\s*'
+        .'(?:(\d{1,2}):(\d{2}))\s+'                    // 1,2 mm:ss
+        .'([A-Z]{2})?\s*'                              // 3 poss (optional)
+        .'KO\s+KR\b'                                   // kickoff marker
+        .'(.*)$'                                       // 4 tail text (optional)
+        .'/i';
 
-    // --- Track two teams from poss field
-    $teamSeen = [];
-    $prev_off = '';
-    $prev_field = null;
+    // --- Track teams via offense
+    $teamSeen = [];     // up to two initials
+    $prev_off = '';     // last known offense
 
     // --- Insert statement
     $sqlIns = "
@@ -120,10 +129,80 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
         $line = trim($lines[$i]);
         if ($line === '') continue;
         if (strpos($line, '<E><ST.66><L>') !== false) break; // end of game
-        if (preg_match($re_ko, $line)) continue;             // skip kickoffs entirely
-        if (!preg_match($re_play, $line, $m)) continue;      // only accept full matches
 
-        // Extract fields
+        // --- Kickoff line: insert with yards=0
+        if (preg_match($re_ko, $line, $k)) {
+            $minutes = (int)$k[1];
+            $seconds = (int)$k[2];
+            $possRaw = isset($k[3]) ? strtoupper($k[3]) : '';
+            $text = trim(preg_replace('/<[^>]*>/', '', (string)($k[4] ?? '')));
+            $a_poss = $possRaw;
+            if ($a_poss !== '') { $a_off = $a_poss; $prev_off = $a_off; } else { $a_off = $prev_off; }
+            if ($a_off && !in_array($a_off, $teamSeen, true)) $teamSeen[] = $a_off;
+            $a_def = '';
+            if (count($teamSeen) === 2) {
+                $a_def = ($teamSeen[0] === $a_off) ? $teamSeen[1] : $teamSeen[0];
+            }
+
+            $params = [
+                'a_type'   => (stripos((string)$hdrLeague, 'NCAA') === 0) ? 'College' : 'Pro',
+                'a_level'  => $hdrLevel ?: 'Advanced',
+                'a_league' => $hdrLeague ?: '',
+                'a_season' => $hdrSeason ?: 0,
+                'a_week'   => $hdrWeek ?: 0,
+
+                'a_minutes'=> $minutes,
+                'a_seconds'=> $seconds,
+                'a_poss'   => $a_poss,
+                'a_off'    => $a_off ?: '',
+                'a_def'    => $a_def ?: '',
+
+                'a_field'  => 0,
+                'a_down'   => 0,
+                'a_distance'=> 0,
+                'a_form'   => 'X',     // not to collide with real formation
+                'a_ocall'  => 'KO',
+                'a_dcall'  => 'KR',
+
+                'a_yards'  => 0,
+
+                'a_team1'  => $teamSeen[0] ?? '',
+                'a_team2'  => $teamSeen[1] ?? '',
+                'a_text'   => mb_substr($text, 0, 1024, 'UTF-8'),
+
+                'a_td'     => 0,
+                'a_first'  => 0,
+                'a_fumble' => 0,
+                'a_intercept'=> 0,
+                'a_penalty'=> 0,
+                'a_sack'   => 0,
+                'a_hurry'  => 0,
+                'a_blitzpickup'   => 0,
+                'a_blitznopickup' => 0,
+                'a_safety' => 0,
+
+                'a_security'  => isset($_SESSION['logged_user_infos_ar']['username_user'])
+                                 ? mb_substr((string)$_SESSION['logged_user_infos_ar']['username_user'],0,255,'UTF-8')
+                                 : null,
+                'a_incomplete'=> 0,
+                'a_peno'      => 0,
+                'a_pend'      => 0,
+                'a_bado'      => null,
+                'a_twodowns'  => null,
+                'a_situationno'=> null,
+                'a_negative'  => 0,
+                'a_playtype'  => null,
+                'n_offcoach'  => null,
+                'n_defcoach'  => null,
+            ];
+            $ins->execute(_cp_pbp_bind($params));
+            $rowsInserted++;
+            continue;
+        }
+
+        // --- Normal play
+        if (!preg_match($re_play, $line, $m)) continue;
+
         $minutes = (int)$m[1];
         $seconds = (int)$m[2];
         $possRaw = isset($m[3]) ? strtoupper($m[3]) : '';
@@ -140,18 +219,9 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
         $ocall = strtoupper($m[8]);
         $dcall = strtoupper($m[9]);
 
-        // Skip formations P and F (punt & field-goal pages) unless you decide later to include “fake”
-        if ($form === 'P' || $form === 'F') {
-            $prev_field = $field;
-            if ($possRaw !== '') $prev_off = $possRaw;
-            if ($possRaw && !in_array($possRaw, $teamSeen, true)) $teamSeen[] = $possRaw;
-            continue;
-        }
-
         // Play text (strip markup)
         $text = trim(preg_replace('/<[^>]*>/', '', $m[10]));
-
-        // Append next line if it’s plain text (not a new play/KO or tag), to capture wrap lines
+        // One-line wrap continuation
         if ($i+1 < $N) {
             $next = trim($lines[$i+1]);
             if ($next !== '' && !preg_match($re_play, $next) && !preg_match($re_ko, $next) && $next[0] !== '<') {
@@ -160,28 +230,52 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
             }
         }
 
-        // Team sides
-        $a_poss = $possRaw;                 // leave a_poss as-is (often blank)
-        if ($a_poss !== '') {               // Off follows poss if present
-            $a_off = $a_poss;
-            $prev_off = $a_off;
-        } else {
-            $a_off = $prev_off;
-        }
+        // Possession/off/def
+        $a_poss = $possRaw;  // keep as-is
+        if ($a_poss !== '') { $a_off = $a_poss; $prev_off = $a_off; } else { $a_off = $prev_off; }
         if ($a_off && !in_array($a_off, $teamSeen, true)) $teamSeen[] = $a_off;
-
         $a_def = '';
         if (count($teamSeen) === 2) {
             $a_def = ($teamSeen[0] === $a_off) ? $teamSeen[1] : $teamSeen[0];
         }
 
-        // Yardage rule:
-        // - If a_poss is blank => yards = prev_field - this_field
-        // - Otherwise 999 (to be hand-edited later)
-        $yards = 999;
-        if ($a_poss === '' && $prev_field !== null) {
-            $yards = (int)$prev_field - (int)$field;
+        // ===== Yardage (current → next) =====
+        // If this is P or F, we will insert with yards=0. Still, we allow a previous play to
+        // compute its yards using our field (because we don't skip P/F).
+        $yards       = 999;
+        if ($form === 'P' || $form === 'F') {
+            $yards = 0;
+        } else {
+            $nextField   = null;
+            $nextPossRaw = null;
+
+            for ($j = $i + 1; $j < $N; $j++) {
+                $ln = trim($lines[$j]);
+                if ($ln === '') continue;
+                if (strpos($ln, '<E><ST.66><L>') !== false) break;
+                if ($ln[0] === '<') continue;               // tags/summaries
+                if (preg_match($re_ko, $ln)) {              // KO is a boundary; don't derive across
+                    break;
+                }
+                if (preg_match($re_play, $ln, $m2)) {
+                    $nextField   = (int)$m2[4];
+                    $nextPossRaw = isset($m2[3]) ? strtoupper($m2[3]) : '';
+                    break; // NOTE: we accept P/F as next play and use its field
+                }
+                // plain text: ignore for yard calc
+            }
+
+            $canUseNext = false;
+            if ($nextField !== null) {
+                if ($nextPossRaw === '' || $nextPossRaw === $a_off || $a_off === '') {
+                    $canUseNext = true;
+                }
+            }
+            if ($canUseNext) {
+                $yards = (int)$field - (int)$nextField; // positive when advancing
+            }
         }
+        // ====================================
 
         // Flags & derived
         $flags = _cp_pbp_simple_flags($text);
@@ -191,7 +285,7 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
         $a_first = ($distance > 0 && $yards >= $distance) ? 1 : 0;
         $a_td    = ((int)$field === (int)$yards) ? 1 : 0;
 
-        // Bind & insert (cast ints to satisfy strict mode)
+        // Insert
         $params = [
             'a_type'   => $a_type,
             'a_level'  => $hdrLevel ?: 'Advanced',
@@ -216,7 +310,6 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
 
             'a_team1'  => $teamSeen[0] ?? '',
             'a_team2'  => $teamSeen[1] ?? '',
-
             'a_text'   => mb_substr($text, 0, 1024, 'UTF-8'),
 
             'a_td'     => (int)$a_td,
@@ -247,10 +340,6 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
 
         $ins->execute(_cp_pbp_bind($params));
         $rowsInserted++;
-
-        // Update context for next line
-        $prev_field = $field;
-        if ($possRaw !== '') $prev_off = $possRaw;
     }
 
 	echo "<p>Finished import</p>";
@@ -259,7 +348,7 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
 
     echo '<div class="w3-small">Inserted rows: '.(int)$rowsInserted.'</div>';
 
-    // Mark processed bit for PBP (bitmask flag)
+    // Mark processed bit for PBP
     if (defined('_CP_FLAG_PBP')) {
         try {
             $u = $conn->prepare("UPDATE g_uploads SET processed = COALESCE(processed,0) | :flag WHERE upload_id=:id LIMIT 1");
@@ -269,14 +358,14 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
         }
     }
 
-    // Render the 999 editor
+    // Show 999 editor
     if ($hdrLeague && $hdrSeason && $hdrWeek) {
         _cp_pbp_render_editable_999($conn, $hdrLeague, $hdrSeason, $hdrWeek);
     } else {
         echo '<div class="w3-panel w3-amber">Missing league/season/week; cannot show 999 editor.</div>';
     }
 
-    echo '</div>'; // container
+    echo '</div>';
     return ['stats'=>['rows'=>$rowsInserted]];
 }
 
@@ -315,7 +404,7 @@ function _cp_pbp_simple_flags(string $text): array {
     ];
 }
 
-/** Render grid for a_yards = 999 and allow edit */
+/** Editor for a_yards=999 */
 function _cp_pbp_render_editable_999(PDO $conn, string $league, int $season, int $week): void {
     $q = $conn->prepare("SELECT a_id,a_minutes,a_seconds,a_poss,a_off,a_def,a_field,a_down,
         a_distance,a_form,a_ocall,a_dcall,a_yards,a_text
@@ -359,7 +448,7 @@ function _cp_pbp_render_editable_999(PDO $conn, string $league, int $season, int
     echo '</form>';
 }
 
-/** Handle posted edits from the 999 grid */
+/** Save edits from 999 grid */
 function _cp_pbp_handle_save(PDO $conn, array $edit): void {
     $sql = "UPDATE n_playbyplay SET
                 a_minutes=:a_minutes,
@@ -402,11 +491,8 @@ function _cp_pbp_handle_save(PDO $conn, array $edit): void {
     }
 }
 
-/** Call nz_pbp if available */
+/** Try calling nz_pbp() after manual corrections */
 function _cp_pbp_call_nz(PDO $conn, int $upload_id): void {
-    // Try to recover league/season/week from any row we just edited/inserted for this upload.
-    // Simpler: read them from the last non-null in n_playbyplay for latest week of this league from upload header.
-    // We’ll re-derive from g_uploads filename if needed.
     try {
         $st = $conn->prepare("SELECT filename FROM g_uploads WHERE upload_id=:id LIMIT 1");
         $st->execute([':id'=>$upload_id]);
@@ -421,6 +507,6 @@ function _cp_pbp_call_nz(PDO $conn, int $upload_id): void {
             nz_pbp($league, $season, $week);
         }
     } catch (Throwable $e) {
-        // Soft-fail silently; this step is optional
+        // soft-fail
     }
 }

@@ -54,10 +54,43 @@ function nz_999($_cp_yards) {
 
     $res = execute_prepared_db($stmt, 0);
 
+	//TDs
+    $sql = "UPDATE `n_playbyplay`
+            SET `a_yards` = `a_field`, `a_intercept` = :yards, `a_td` = 0
+            WHERE `a_text` LIKE '%touchdown%'";
+
+    $stmt = prepare_db($conn, $sql);
+
+    bind_param_db($stmt, ':yards', (int)$_cp_yards, PDO::PARAM_INT);
+
+    $res = execute_prepared_db($stmt, 0);
+
+	//Fumbles
+    $sql = "UPDATE `n_playbyplay`
+            SET `a_yards` = :yards, `a_fumble` = 1, `a_td` = 0
+            WHERE `a_text` LIKE '%fumble%'";
+
+    $stmt = prepare_db($conn, $sql);
+
+    bind_param_db($stmt, ':yards', (int)$_cp_yards, PDO::PARAM_INT);
+
+    $res = execute_prepared_db($stmt, 0);
+
 	//Interceptions
     $sql = "UPDATE `n_playbyplay`
-            SET `a_yards` = :yards, `a_intercept` = 1
+            SET `a_yards` = :yards, `a_intercept` = 1, `a_td` = 0
             WHERE `a_text` LIKE '%intercept%'";
+
+    $stmt = prepare_db($conn, $sql);
+
+    bind_param_db($stmt, ':yards', (int)$_cp_yards, PDO::PARAM_INT);
+
+    $res = execute_prepared_db($stmt, 0);
+
+	//Safeties
+    $sql = "UPDATE `n_playbyplay`
+            SET `a_yards` = :yards, `a_safety` = 1, `a_td` = 0
+            WHERE `a_text` LIKE '%safety%'";
 
     $stmt = prepare_db($conn, $sql);
 
