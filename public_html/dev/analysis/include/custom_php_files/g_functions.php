@@ -177,11 +177,7 @@ function output($str) {
     ob_start();
 }
 
-function nz_pbp($league,$season,$week) {
-	echo "<p>";
-    echo $league,$season,$week;
-	echo "</p>p>";
-}
+
 
 /**
  * 
