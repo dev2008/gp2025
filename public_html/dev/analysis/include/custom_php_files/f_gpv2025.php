@@ -60,8 +60,8 @@ $w3out = function(string $html) use ($render_card) {
 $render_header('GPVCon online', 'League Records and Bowl Games');
 
 //Fix Washington Name
-$str="<h3>Fixing Washington name</h3>";
-output($str);
+#$str="<h3>Fixing Washington name</h3>";
+#output($str);
 $_cp_sql2 = "UPDATE `f_games` SET `team`='Washington Redskins' WHERE `team` LIKE 'Washington%'";
 $result = $conn->prepare($_cp_sql2); 
 $result->execute(); 
@@ -79,8 +79,8 @@ $result = $conn->prepare($_cp_sql2);
 $result->execute(); 
 
 //Update Gametypes
-$str="<h3>Updating Gametypes</h3>";
-output($str);
+#$str="<h3>Updating Gametypes</h3>";
+#output($str);
 
 $_cp_sql = "UPDATE `f_games`
 SET `gametype` =20
@@ -153,12 +153,10 @@ $i=0;
 $result = $conn->prepare($_cp_sql);
 $result->execute();
 $number_of_rows = $result->rowCount() ;
-$str="<p>$number_of_rows Silver Bowl games converted </p>";
+##$str="<p>$number_of_rows Silver Bowl games converted </p>";
 
 
 //Now process Franchises
-$str="<h3>Finding first unallocated Franchise</h3>";
-output($str);
 $_cp_sql2 = "SELECT MIN(`season`) FROM `f_games` WHERE `franchise` = '' OR `franchise` is null OR LENGTH(`franchise`)=0";
 
 $result = $conn->prepare($_cp_sql2); 
@@ -167,18 +165,18 @@ $number_of_rows = $result->rowCount();
    while($row = fetch_row_db($result)){
 			$_cp_myseason = $row[0];
 			if (1==$debug_mode) {
-				$str="<p>Season - $_cp_myseason</p>";
-				#output($str);	
+#				#$str="<p>Season - $_cp_myseason</p>";
+				##output($str);	
 			}	
    }  
  
 
 if (is_null($_cp_myseason)) {	
-	$str="<h3>All Franchises allocated!</h3>";
-	output($str);	
+	#$str="<h3>All Franchises allocated!</h3>";
+	#output($str);	
 	} else {
-	$str="<h3>Allocating Franchises</h3>";
-	output($str);
+	#$str="<h3>Allocating Franchises</h3>";
+	#output($str);
 	#Find league matching season with no franchise
 	try {
 		$_cp_sql2 = "SELECT `league` FROM `f_games` WHERE `season`= $_cp_myseason AND (`franchise` = '' OR `franchise` is null OR LENGTH(`franchise`)=0)";
@@ -188,11 +186,11 @@ if (is_null($_cp_myseason)) {
 		$number_of_rows = $result->rowCount();
 		while ($row = fetch_row_db($result)) {
 			$_cp_myleague = $row[0];
-			#$str="<p>$row[0] - $row[1]</p>";
+			##$str="<p>$row[0] - $row[1]</p>";
 		}
 
 
-		#$str="<p>Rows - $number_of_rows $_cp_myleague $_cp_myseason</p>";
+		##$str="<p>Rows - $number_of_rows $_cp_myleague $_cp_myseason</p>";
 
 		#if ($number_of_rows > 0 ) {
 		if (!empty($_cp_myleague)) {
@@ -204,20 +202,20 @@ if (is_null($_cp_myseason)) {
 			}
 
 			#Print results
-			$str="<p><h3>No Franchises found for $_cp_myleague s$_cp_myseason w$_cp_myweek.</h3></p>";
-			output($str);
+#			#$str="<p><h3>No Franchises found for $_cp_myleague s$_cp_myseason w$_cp_myweek.</h3></p>";
+			#output($str);
 
 			#Now we have found the first week to process loop through it and match Teams to Franchises
-			$str="<h3>Updating Franchises ......</h3>";
-			output($str);
+			#$str="<h3>Updating Franchises ......</h3>";
+			#output($str);
 			#Set Pro or College
 			$_cp_mysub=substr($_cp_myleague,0,2);
 			if ('NF'==$_cp_mysub) {
 				$_cp_myfranchises='fp_franchises';
-				$str="<p>Set Franchise to Pro - ".$_cp_mysub.".</p>";
+#				#$str="<p>Set Franchise to Pro - ".$_cp_mysub.".</p>";
 			} else {
 				$_cp_myfranchises='fc_franchises';
-				$str="<p>Set Franchise to College - ".$_cp_mysub.".</p>";
+#				#$str="<p>Set Franchise to College - ".$_cp_mysub.".</p>";
 			};
 
 			//Now do the update
@@ -229,12 +227,12 @@ if (is_null($_cp_myseason)) {
 				$_cp_mygameid=$row[0];
 				$_cp_myteam=$row[4];
 				$_cp_sql1 = "SELECT `franchise` FROM `$_cp_myfranchises` WHERE `league`='$_cp_myleague' AND `team`='$_cp_myteam'";
-				#$str="<p>$_cp_sql1</p>";
+				##$str="<p>$_cp_sql1</p>";
 				$res1 = execute_db($_cp_sql1, $conn);
 				while ($row = fetch_row_db($res1)) {
 					$_cp_myfranchise=$row[0];
 					$_cp_sql2="UPDATE `f_games` SET `franchise`= $_cp_myfranchise, modification_time=NOW() WHERE `id_game` ='$_cp_mygameid' ";
-					#$str="<p>$_cp_sql2</p>";
+					##$str="<p>$_cp_sql2</p>";
 					$res2 = execute_db($_cp_sql2, $conn);
 				}
 			}
@@ -251,12 +249,12 @@ if (is_null($_cp_myseason)) {
 
 			switch ($_cp_myunmatched) {
 				case 0:
-					$str="<p><h3>All Franchises allocated for $_cp_myleague s$_cp_myseason w$_cp_myweek.</h3></p>";
-					output($str);
+					#$str="<p><h3>All Franchises allocated for $_cp_myleague s$_cp_myseason w$_cp_myweek.</h3></p>";
+					#output($str);
 				break;
 				case 1:
-					$str="<p><h3>1 Franchise moved!</h3></p>";
-					output($str);
+					#$str="<p><h3>1 Franchise moved!</h3></p>";
+					#output($str);
 					if ('fp_franchises'==$_cp_myfranchises){
 						require_once 'fp_movefranchise.php';	
 					} else {
@@ -265,26 +263,26 @@ if (is_null($_cp_myseason)) {
 					
 				break;				
 				default:
-					$str="<p><h3>$_cp_myunmatched Franchises moved!</h3></p>";
+					#$str="<p><h3>$_cp_myunmatched Franchises moved!</h3></p>";
 					$str.="<p><h3>Currently we only support single Franchise moves!</h3></p>";
-					output($str);
+					#output($str);
 					break;
 			}
 
 
 			#End of overall loop
 		} else {
-			$str="<p><h3>All Franchises allocated in database.</h3></p>";
-			output($str);
+			#$str="<p><h3>All Franchises allocated in database.</h3></p>";
+			#output($str);
 		}
 	} catch (PDOException $e) {
-		$str="<p>SQL - $_cp_sql2</p>";
+		#$str="<p>SQL - $_cp_sql2</p>";
 		$str.="DataBase Error:<br>".$e->getMessage();
-		output($str);
+		#output($str);
 	} catch (Exception $e) {
-		$str="<p>SQL - $_cp_sql2</p>";
+		#$str="<p>SQL - $_cp_sql2</p>";
 		$str.="General Error:<br>".$e->getMessage();
-		output($str);
+		#output($str);
 	}
 }
 
@@ -294,14 +292,14 @@ $_cp_sql = "SELECT Distinct League FROM `f_games` ORDER BY `League` ASC";
 $result = $conn->prepare($_cp_sql); 
 $result->execute(); 
 $number_of_rows = $result->rowCount() ; 
-$str="<h3>Found $number_of_rows leagues</h3>";
-output($str);
+#$str="<h3>Found $number_of_rows leagues</h3>";
+#output($str);
 $j=0;
 //This is the main League loop
 while($row = fetch_row_db($result)){
 	$_cp_myleague = $row[0];
-	#$str="<p>League is $_cp_myleague</p>";
-	#output($str);	
+	##$str="<p>League is $_cp_myleague</p>";
+	##output($str);	
 
 	//Start Season Loop
 	//Loop through each Season for this League
@@ -310,13 +308,13 @@ while($row = fetch_row_db($result)){
 	$result2->execute(); 
 	$number_of_rows2 = $result2->rowCount() ; 
 	$j=$j+$number_of_rows2;
-	#$str="<h3>Found $number_of_rows records</h3>";
-	#output($str);
-	$str="<h3>Looping through $number_of_rows2 $_cp_myleague Seasons.</h3>";
+	##$str="<h3>Found $number_of_rows records</h3>";
+	##output($str);
+	#$str="<h3>Looping through $number_of_rows2 $_cp_myleague Seasons.</h3>";
 	$myseasons=$number_of_rows;
 	$myprocessedseasons=0;
 	$mycount=0;
-	output($str);
+	#output($str);
 	while($row = fetch_row_db($result2)){
 		$_cp_myseason = $row[0];
 		
@@ -326,8 +324,8 @@ while($row = fetch_row_db($result)){
 			$result3 = $conn->prepare($_cp_sql); 
 			$result3->execute(); 
 			$number_of_rows = $result3->rowCount() ; 
-			#$str="$_cp_sql";
-			#output($str);
+			##$str="$_cp_sql";
+			##output($str);
 			//Loop through results
 			while($row = fetch_row_db($result3)){
 				$_cp_myweek = $row[0];
@@ -397,13 +395,13 @@ while($row = fetch_row_db($result)){
 }
 
 //Fix Tampa Bay
-$str="<h3>Fixing Tampa Bay bug</h3>";
-output($str);
+#$str="<h3>Fixing Tampa Bay bug</h3>";
+#output($str);
 $_cp_sql = "UPDATE `f_games` SET `opp_team` = 'Tampa Bay Buccs' WHERE `opp_team` LIKE 'Tampa Bay Buccaneers'";
 $result0 = $conn->prepare($_cp_sql); 
 $result0->execute(); 
-$str="<h3>Setting game types.</h3>";
-output($str);
+#$str="<h3>Setting game types.</h3>";
+#output($str);
 
 //ensure correct gametypes
 $_cp_sql2 = "	UPDATE `f_games` 
@@ -446,8 +444,8 @@ $_cp_sql2 = "	UPDATE `f_games`
 $res2 = execute_db($_cp_sql2, $conn);
 $result = $conn->prepare($_cp_sql2); 
 $result->execute(); 
-#$str="<h3>Set game type to Rose Bowl</h3>";
-#output($str);
+##$str="<h3>Set game type to Rose Bowl</h3>";
+##output($str);
 
 //PDO Example with row count
 $_cp_sql2 = "	UPDATE `f_games` 
@@ -457,8 +455,8 @@ $_cp_sql2 = "	UPDATE `f_games`
 $res2 = execute_db($_cp_sql2, $conn);
 $result = $conn->prepare($_cp_sql2); 
 $result->execute(); 
-#$str="<h3>Set game type to Cotton Bowl</h3>";
-#output($str);
+##$str="<h3>Set game type to Cotton Bowl</h3>";
+##output($str);
 
 //PDO Example with row count
 $_cp_sql2 = "	UPDATE `f_games` 
@@ -468,8 +466,8 @@ $_cp_sql2 = "	UPDATE `f_games`
 $res2 = execute_db($_cp_sql2, $conn);
 $result = $conn->prepare($_cp_sql2); 
 $result->execute(); 
-#$str="<h3>Set game type to Hawaii Bowl</h3>";
-#output($str);
+##$str="<h3>Set game type to Hawaii Bowl</h3>";
+##output($str);
 
 
 //PDO Example with row count
@@ -480,8 +478,8 @@ $_cp_sql2 = "	UPDATE `f_games`
 $res2 = execute_db($_cp_sql2, $conn);
 $result = $conn->prepare($_cp_sql2); 
 $result->execute(); 
-#$str="<h3>Set game type to NC Playoffs</h3>";
-#output($str);
+##$str="<h3>Set game type to NC Playoffs</h3>";
+##output($str);
 
 
 //PDO Example with row count
@@ -492,7 +490,7 @@ $_cp_sql2 = "	UPDATE `f_games`
 $res2 = execute_db($_cp_sql2, $conn);
 $result = $conn->prepare($_cp_sql2); 
 $result->execute(); 
-#$str="<h3>Set game type to Cotton Bowl playoffs</h3>";
+##$str="<h3>Set game type to Cotton Bowl playoffs</h3>";
 #output($str);
 
 //PDO Example with row count
@@ -504,17 +502,17 @@ $res2 = execute_db($_cp_sql2, $conn);
 $result = $conn->prepare($_cp_sql2); 
 $result->execute(); 
 
-$str="<h3>All game types set to correct values.</h3>";
-output($str);
+#$str="<h3>All game types set to correct values.</h3>";
+#output($str);
 
 //Temporary fix for completed seasons
 $_cp_sql = "SELECT Distinct `id_game` FROM `f_games` WHERE `week`<90 AND `season` > 2020 ";
 $result = $conn->prepare($_cp_sql); 
 $result->execute(); 
 $number_of_rows = number_format($result->rowCount() ); 
-#$str="<h3>Temporary fix for completed seasons</h3>";
-$str="<h3>Assigning results to $number_of_rows records</h3>";
-output($str);
+##$str="<h3>Temporary fix for completed seasons</h3>";
+#$str="<h3>Assigning results to $number_of_rows records</h3>";
+#output($str);
 $mycount=0;	
 
 //Loop through results
@@ -534,7 +532,7 @@ $mycount=0;
 $str='Processed ';
 $str.=number_format($mycount);
 $str.=' records.<br>';
-output($str);
+#output($str);
 				
 //PDO Example with row count
 $_cp_sql = "SELECT SUM(`win`),SUM(`lose`),SUM(`tie`) FROM `f_games` WHERE `week`<90";
@@ -547,11 +545,11 @@ while($row = fetch_row_db($result4)){
 	$losses=number_format($row[1]);
 	$ties=number_format($row[2]);
 	$str= "<h3>Found: wins -  $wins / losses - $losses / ties - $ties</h3>";
-	output($str);
+	#output($str);
    }
 
 $str= "<h3>Cross checking $wins records.</h3>";
-output($str);
+#output($str);
 
 //Loop through all games and extract details
 $_cp_sql = "SELECT `id_game`,`league`, `season`, `week`, `team`, `franchise`, `coach` 
@@ -606,7 +604,7 @@ try {
         // Output the SQL query and no match message
         $str = "<h3 class='w3-red'>No match found for <em>$_cp_myid ($_cp_myleague $_cp_myseason $_cp_myweek $_cp_myteam)</em></h3>";
         $str .= "<p>SQL Query: <code>" . htmlspecialchars($sql_with_params) . "</code></p>";
-        output($str);
+        #output($str);
     }
 } catch (PDOException $e) {
     // Log or handle the error
@@ -621,7 +619,7 @@ try {
 $str='Checked ';
 $str.=number_format($mycount2);
 $str.=' records.<br><hr>';
-output($str);
+#output($str);
 
 echo "<div class='w3-red'>";
 //check Wild Card records
@@ -638,7 +636,7 @@ while($row = fetch_row_db($result4)){
 	$league=$row[0];
 	$season=$row[1];
 	$str= "<h2>No Wild Card games found for $league s$season w17</h2>";
-	output($str);
+	#output($str);
    }
 
 //Check Divisional records
@@ -655,7 +653,7 @@ while($row = fetch_row_db($result4)){
 	$league=$row[0];
 	$season=$row[1];
 	$str= "<h2>No Divisional Round games found for $league s$season w18</h2>";
-	output($str);
+	#output($str);
    }
 
 //Check Championship records
@@ -672,7 +670,7 @@ while($row = fetch_row_db($result4)){
 	$league=$row[0];
 	$season=$row[1];
 	$str= "<h2>No Championship Games found for $league s$season w19</h2>";
-	output($str);
+	#output($str);
    }
 
 //Check Superbowl records
@@ -689,7 +687,7 @@ while($row = fetch_row_db($result4)){
 	$league=$row[0];
 	$season=$row[1];
 	$str= "<h2>No Superbowl found for $league s$season w20</h2>";
-	output($str);
+	#output($str);
    }
 
 //Check College Playoff records
@@ -706,7 +704,7 @@ while($row = fetch_row_db($result4)){
 	$league=$row[0];
 	$season=$row[1];
 	$str= "<h2>No Playoff games found for $league s$season w12</h2>";
-	output($str);
+	#output($str);
    }
 
 //Check College Bowl records
@@ -723,18 +721,18 @@ while($row = fetch_row_db($result4)){
 	$league=$row[0];
 	$season=$row[1];
 	$str= "<h2>No Bowl games found for $league s$season w13</h2>";
-	output($str);
+	#output($str);
    }
 
 echo "</div>";
 
 
 //Text for middle box
-$str="<h2>Started update process</h3>";
-output($str);
+##$str="<h2>Started update process</h3>";
+#output($str);
 //Reset all records
-$str="<h2>Resetting all Pro records</h3>";
-output($str);
+#$str="<h2>Resetting all Pro records</h3>";
+#output($str);
 $_cp_sql = "UPDATE `fp_franchises` SET `Winner`=0,`Runnerup`=0,`ChampionshipW`=0,`ChampionshipL`=0,`DivisionW`=0,`Wildcard`=0, `WinnerYears`='', `DivisionYears`='',ConferenceYears='',WildcardYears=''  WHERE `ftype`='Pro'";
 $res = execute_db($_cp_sql, $conn);
 //Reset Pro Games
@@ -783,8 +781,8 @@ $res = execute_db($_cp_sql, $conn);
 				
 				$res2 = execute_db($_cp_sql2, $conn);
 				$number_of_rows = number_format($res2->rowCount() ); 
-				$str="<h2>Looping through $number_of_rows seasons</h3>";
-				output($str);
+				#$str="<h2>Looping through $number_of_rows seasons</h3>";
+				#output($str);
 				while($row2 = fetch_row_db($res2)){
 					$_cp_myseason=$row2[0];
 					$mycount++;	
@@ -871,7 +869,7 @@ $res = execute_db($_cp_sql, $conn);
 $str='Processed ';
 $str.=$mycount;
 $str.=' Seasons.';
-output($str);        
+#output($str);        
  
  
 //Populate Bowls Table
@@ -918,12 +916,12 @@ $res16 = execute_db($_cp_sql16, $conn);
 }        
 
 
-$str="</div>";
-output($str);
+#$str="</div>";
+#output($str);
 
 
-$str="<h2>About to process some records</h3>";
-output($str);
+##$str="<h2>About to process some records</h3>";
+##output($str);
 //Reset all records, this won't be needed once all done then update will only look for unprocessed seasons
 $_cp_sql = "TRUNCATE `fp_seasons`";
 $res = execute_db($_cp_sql, $conn);
@@ -943,8 +941,8 @@ $res = execute_db($_cp_sql, $conn);
 				ORDER BY  `season`";
 				$res2 = execute_db($_cp_sql2, $conn);
 				$number_of_rows = number_format($res2->rowCount() ); 
-				$str="<h2>Found $number_of_rows seasons</h2>";
-				output($str);
+				#$str="<h2>Found $number_of_rows seasons</h2>";
+				#output($str);
 				$j=0;
 				while($row2 = fetch_row_db($res2)){
 					$_cp_myseason=$row2[0];
@@ -976,7 +974,7 @@ $res = execute_db($_cp_sql, $conn);
 		$str=' Processed ';
 		$str.=$j;
 		$str.=' Pro Seasons.';
-		output($str);
+		#output($str);
 		
 //Find Season Coaches
 $_cp_sql77 = "SELECT b.`league`,a.`franchise`, a.`season` 
@@ -986,8 +984,8 @@ $_cp_sql77 = "SELECT b.`league`,a.`franchise`, a.`season`
 				ORDER BY b.`league` ASC, a.`franchise` ASC, a.`season` ASC;";
 $res77 = execute_db($_cp_sql77, $conn);
 				$number_of_rows77 = number_format($res77->rowCount() ); 
-				$str="<h2>Found $number_of_rows77 Coach seasons</h2>";
-				output($str);
+				#$str="<h2>Found $number_of_rows77 Coach seasons</h2>";
+				#output($str);
 					$j=0;	
 					while($row77 = fetch_row_db($res77)){
 					$j++;
@@ -1010,7 +1008,7 @@ $res77 = execute_db($_cp_sql77, $conn);
 					$str='Processed ';
 					$str.=$j;
 					$str.=' Coach Seasons.';
-					output($str);
+					#output($str);
 					
 //Find missing Coaches
 $_cp_sql80 = "SELECT `franchise`, `season` 
@@ -1019,8 +1017,8 @@ $_cp_sql80 = "SELECT `franchise`, `season`
 				ORDER BY `franchise`, `season` ;";
 $res80 = execute_db($_cp_sql80, $conn);
 						$number_of_rows80 = number_format($res80->rowCount() ); 
-						$str="<h2>Found $number_of_rows80 missing coach seasons</h2>";
-						output($str);
+						#$str="<h2>Found $number_of_rows80 missing coach seasons</h2>";
+						#output($str);
 						$j=0;
 					while($row80 = fetch_row_db($res80)){
 
@@ -1042,7 +1040,7 @@ $res80 = execute_db($_cp_sql80, $conn);
 					$str='Processed ';
 					$str.=$j;
 					$str.=' missing Coach Seasons.';
-					output($str);
+					#output($str);
 
 $_cp_sql80 = "SELECT `franchise`, `season` 
 				FROM `fp_seasons` 
@@ -1050,7 +1048,7 @@ $_cp_sql80 = "SELECT `franchise`, `season`
 				ORDER BY `franchise`, `season` ;";
 $res80 = execute_db($_cp_sql80, $conn);
 						$number_of_rows80b = number_format($res80->rowCount() ); 
-						$str="<h2>Found $number_of_rows80b missing coach seasons</h2>";
+						#$str="<h2>Found $number_of_rows80b missing coach seasons</h2>";
 						echo "<br />$str";
 						$j=0;
 					while($row80 = fetch_row_db($res80)){
@@ -1074,7 +1072,7 @@ $res80 = execute_db($_cp_sql80, $conn);
 					$str='Processed ';
 					$str.=$j;
 					$str.=' missing Coach Seasons.';
-					output($str);				
+					#output($str);				
 
 //Retrieve all Pro Leagues
 $_cp_sql = "SELECT DISTINCT `franchise` 
@@ -1110,8 +1108,8 @@ ORDER BY `league` ASC, `coach` ASC";
 $result = $conn->prepare($_cp_sql); 
 $result->execute(); 
 				$number_of_rowsX = number_format($result->rowCount() ); 
-				$str="<h2>Found $number_of_rowsX coaches</h3>";
-				output($str);
+				#$str="<h2>Found $number_of_rowsX coaches</h3>";
+				#output($str);
 		$i=1;
 		$k=0;
         while($row = fetch_row_db($result)){
@@ -1120,7 +1118,7 @@ $result->execute();
 						$str='Processed ';
 						$str.=$k;
 						$str.=' Coaches / ';
-						output($str);
+						#output($str);
 					}
 				$_cp_myleague=$row[0];
 				$_cp_mycoach=$row[1];
@@ -1248,7 +1246,7 @@ $result->execute();
 $str='Processed ';
 $str.=$k;
 $str.=' Coaches.';
-output($str);
+#output($str);
 
 //Update Team and Coach Names
 $_cp_sql = "SELECT DISTINCT `league` 
@@ -1280,8 +1278,8 @@ $res = execute_db($_cp_sql, $conn);
 						";
 						$res4 = execute_db($_cp_sql4, $conn);
 						$number_of_rows4 = number_format($res4->rowCount() ); 
-						$str="<h4>Found $number_of_rows4 teams</h4>";
-						output($str);
+						#$str="<h4>Found $number_of_rows4 teams</h4>";
+						#output($str);
 						$l=0;
 						while($row4 = fetch_row_db($res4)){
 							$l++;
@@ -1316,10 +1314,10 @@ $str='Processed ';
 $str.=$l;
 $str.=' Teams.';
 $str.="<br>";
-output($str);
+#output($str);
 
-$str="<h2>About to truncate existing tables</h3>";
-output($str);
+#$str="<h2>About to truncate existing tables</h3>";
+#output($str);
 //Reset all records, this won't be needed once all done then update will only look for unprocessed seasons
 $_cp_sql = "TRUNCATE `fc_seasons`";
 $res = execute_db($_cp_sql, $conn);
@@ -1334,8 +1332,8 @@ SET PerfectYears='',Perfect=0, ConferenceYears='',ConfWins=0,CicYears='',CicWins
 WHERE 1";
 $res = execute_db($_cp_sql, $conn);
 $number_of_rows = number_format($res->rowCount() ); 
-$str="<h2>Calculating College Seasons</h3>";
-output($str);
+#$str="<h2>Calculating College Seasons</h3>";
+#output($str);
 $_cp_sql = "SELECT DISTINCT `league` 
 FROM `fc_franchises` 
 WHERE `ftype` = 'College'
@@ -1380,8 +1378,8 @@ $_cp_sql77 = "SELECT b.`league`,a.`franchise`, a.`season`
 				ORDER BY b.`league` ASC, a.`franchise` ASC, a.`season` ASC;";
 $res77 = execute_db($_cp_sql77, $conn);
 				$number_of_rows77 = number_format($res77->rowCount() ); 
-				$str="<h2>Found $number_of_rows77 Coach seasons</h2>";
-				output($str);
+				#$str="<h2>Found $number_of_rows77 Coach seasons</h2>";
+				#output($str);
 					$j=0;	
 					while($row77 = fetch_row_db($res77)){
 
@@ -1405,7 +1403,7 @@ $res77 = execute_db($_cp_sql77, $conn);
 					$str='Processed ';
 					$str.=$j;
 					$str.=' Coach Seasons.';
-					output($str);
+					#output($str);
 					
 //Find missing Coaches
 $_cp_sql80 = "SELECT `franchise`, `season` 
@@ -1414,8 +1412,8 @@ $_cp_sql80 = "SELECT `franchise`, `season`
 				ORDER BY `franchise`, `season` ;";
 $res80 = execute_db($_cp_sql80, $conn);
 						$number_of_rows80 = number_format($res80->rowCount() ); 
-						$str="<h2>Found $number_of_rows80 missing coach seasons</h2>";
-						output($str);
+						#$str="<h2>Found $number_of_rows80 missing coach seasons</h2>";
+						#output($str);
 						$j=0;
 					while($row80 = fetch_row_db($res80)){
 					$j++;
@@ -1436,7 +1434,7 @@ $res80 = execute_db($_cp_sql80, $conn);
 					$str='Processed ';
 					$str.=$j;
 					$str.=' missing Coach Seasons.';
-					output($str);
+					#output($str);
 
 //Find missing Coaches
 $_cp_sql80 = "SELECT `franchise`, `season` 
@@ -1445,8 +1443,8 @@ $_cp_sql80 = "SELECT `franchise`, `season`
 				ORDER BY `franchise`, `season` ;";
 $res80 = execute_db($_cp_sql80, $conn);
 						$number_of_rows80 = number_format($res80->rowCount() ); 
-						$str="<h2>Found $number_of_rows80 missing coach seasons</h2>";
-						output($str);
+						#$str="<h2>Found $number_of_rows80 missing coach seasons</h2>";
+						#output($str);
 						$j=0;
 					while($row80 = fetch_row_db($res80)){
 					$j++;
@@ -1467,7 +1465,7 @@ $res80 = execute_db($_cp_sql80, $conn);
 					$str='Processed ';
 					$str.=$j;
 					$str.=' missing Coach Seasons.';
-					output($str);
+					#output($str);
 
 
 
@@ -1477,7 +1475,7 @@ $_cp_sql80 = "SELECT `franchise`, `season`
 				ORDER BY `franchise`, `season` ;";
 $res80 = execute_db($_cp_sql80, $conn);
 						$number_of_rows80b = number_format($res80->rowCount() ); 
-						$str="<h2>Found $number_of_rows80b missing coach seasons</h2>";
+						#$str="<h2>Found $number_of_rows80b missing coach seasons</h2>";
 						echo "<br />$str";
 						$j=0;
 					while($row80 = fetch_row_db($res80)){
@@ -1486,7 +1484,7 @@ $res80 = execute_db($_cp_sql80, $conn);
 							$str=' / Processed ';
 							$str.=$j;
 							$str.=' missing Coach Seasons ';
-							output($str);
+							#output($str);
 						}
 
 						$mycoach='';
@@ -1506,15 +1504,15 @@ $res80 = execute_db($_cp_sql80, $conn);
 					$str='Processed ';
 					$str.=$j;
 					$str.=' missing Coach Seasons.';
-					output($str);				
+					#output($str);				
 
 //End of Coaches for Seasons
 
 $_cp_sql10 = "UPDATE `fc_seasons` SET `complete`=1 WHERE `season` IN (SELECT `season`FROM `f_games` WHERE `week`=13)";
 $res10 = execute_db($_cp_sql10, $conn);
 
-$str="<h2>Calculating Team records</>";
-output($str);
+#$str="<h2>Calculating Team records</>";
+#output($str);
 $_cp_sql = "SELECT DISTINCT `franchise` 
 FROM `fc_franchises` 
 WHERE `ftype` = 'College'
@@ -1534,8 +1532,8 @@ $res = execute_db($_cp_sql, $conn);
 				}
 }
 
-$str="<h2>Finding perfect Seasons</h3>";
-output($str);
+#$str="<h2>Finding perfect Seasons</h3>";
+#output($str);
 $_cp_sql = "SELECT DISTINCT `franchise`,`season` 
 FROM `fc_seasons` 
 WHERE `won`=11 AND `complete`=1
@@ -1565,8 +1563,8 @@ $res = execute_db($_cp_sql, $conn);
 		}	
 
 
-$str="<h2>Calculating Conference records</h3>";
-output($str);
+#$str="<h2>Calculating Conference records</h3>";
+#output($str);
 $_cp_sql = "INSERT INTO `fc_confgames`
 			SELECT CONCAT (a.`league`,'-',a.`season`,'-',a.`franchise`) AS `id`,a.`league`,a.`season`,a.`franchise`, b.`conference` as `myconf`,
 			sum(a.`win`) AS `wins`, SUM(a.`lose`) AS `losses`, SUM(a.`tie`) as `ties` , SUM(a.`score`) as `pfor`, SUM(a.`opp_score`) as `pagn`,
@@ -1611,8 +1609,8 @@ $res = execute_db($_cp_sql, $conn);
 			}			 
 }
 
-$str="<h2>Updating Team and Coach names</h3>";
-output($str);
+#$str="<h2>Updating Team and Coach names</h3>";
+#output($str);
 $_cp_sql = "SELECT DISTINCT `league` 
 FROM `fc_franchises` 
 WHERE `ftype` = 'College'
@@ -1669,8 +1667,8 @@ $res = execute_db($_cp_sql, $conn);
 					}
 				}
 
-$str="<h2>Calculating Commander in Chief records</h3>";
-output($str);
+#$str="<h2>Calculating Commander in Chief records</h3>";
+#output($str);
 $_cp_sql = "INSERT INTO `fc_cicgames`
 			SELECT CONCAT (a.`league`,'-',a.`season`,'-',a.`franchise`) AS `id`,a.`league`,a.`season`,a.`franchise`, 
 			sum(a.`win`) AS `wins`, SUM(a.`lose`) AS `losses`, SUM(a.`tie`) as `ties` , SUM(a.`score`) as `pfor`, SUM(a.`opp_score`) as `pagn`,
@@ -1715,8 +1713,8 @@ $res = execute_db($_cp_sql, $conn);
 			}			 
 }
 
-$str="<h2>Calculating Rivalry records</h3>";
-output($str);
+#$str="<h2>Calculating Rivalry records</h3>";
+#output($str);
 $_cp_sql = "INSERT INTO `fc_rivalrygames`
 			SELECT CONCAT (a.`league`,'-',a.`season`,'-',a.`franchise`) AS `id`,a.`league`,a.`season`,a.`franchise`, 
 			sum(a.`win`) AS `wins`, SUM(a.`lose`) AS `losses`, SUM(a.`tie`) as `ties` , SUM(a.`score`) as `pfor`, SUM(a.`opp_score`) as `pagn`,
@@ -1762,9 +1760,8 @@ $res = execute_db($_cp_sql, $conn);
 }
 
 //Bowl games sorted so proceed
-$str="<div class='w3-container w3-teal'>\n";
-$str.="<h2>Resetting records.</h3>\n";
-output($str);
+#$str="<h2>Resetting records.</h3>\n";
+#output($str);
 //Reset all records
 $_cp_sql = "UPDATE `fc_franchises` 
 SET `WinnerYears`='', `RunnerupYears`='',`ConferenceYears`='',`RoseYears`='',`CottonYears`='',`OrangeYears`='',`HawaiiYears`='',`MotorYears`='',`ConfWins`=0,`G_Winner`=0, `G_Runnerup`=0, `GC_Winner`=0, `GC_Runnerup`=0, `S_Winner`=0, `S_Runnerup`=0, `SC_Winner`=0, `SC_Runnerup`=0, `B_Winner`=0, `B_Runnerup`=0, `BC_Winner`=0, `BC_Runnerup`=0 WHERE 1";
@@ -1801,8 +1798,8 @@ $_cp_sql = "INSERT INTO fc_vgames
 $result = $conn->prepare($_cp_sql); 
 $result->execute(); 
 
-$str="<h2>Processing Bowl wins and losses.</h3>\n";	
-output($str);
+#$str="<h2>Processing Bowl wins and losses.</h3>\n";	
+#output($str);
 //Retireve all College Leagues
 $_cp_sql = "SELECT DISTINCT `league` 
 FROM `fc_franchises` 
@@ -2046,8 +2043,8 @@ $result = $conn->prepare($_cp_sql);
 $result->execute(); 
 //End of Table
 
-$str="<h2>Processing Coaches.</h3>\n";
-output($str);
+#$str="<h2>Processing Coaches.</h3>\n";
+#output($str);
 
 $totgwins=0;
 $totglosses=0;
@@ -2268,12 +2265,23 @@ $totrswins=number_format($totrswins);
 $totrslosses=number_format($totrslosses);
 
 
-$str="<h2>National Championship Games (including playoffs): $totgwins - $totglosses</h3>\n";
+#$str="<h2>National Championship Games (including playoffs): $totgwins - $totglosses</h3>\n";
 $str.="<h2>All Bowls (including playoffs): $totbwins - $totblosses</h3>\n";
 $str.="<h2>Regular Season: $totrswins - $totrslosses</h3>\n";
 $str.="</div>\n";
 $str.="<br />";
 $str.="</div>\n";
-output($str);
+#output($str);
 
-$render_header('GPVCon online', 'Finished processing GPVCon Updates');
+/* ---------------------------
+   Footer stats
+---------------------------- */
+$time_end = microtime(true);
+$time = $time_end - $time_start;
+
+ob_start();
+$render_kv([
+  ['Elapsed time (s)', round($time, 2), 'w3-black'],
+]);
+$render_card('Summary', ob_get_clean(), 'w3-pale-yellow');
+
