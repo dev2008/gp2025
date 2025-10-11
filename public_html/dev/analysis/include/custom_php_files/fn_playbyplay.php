@@ -28,7 +28,6 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
     // --- Handle POST from 999 editor
     if (!empty($_POST['_cp_pbp_save']) && isset($_POST['_cp_edit']) && is_array($_POST['_cp_edit'])) {
         _cp_pbp_handle_save($conn, $_POST['_cp_edit']);
-        _cp_pbp_call_nz($conn, $upload_id);
         echo '<div class="w3-panel w3-green">Edits saved and nz_pbp() executed (if available).</div>';
         echo '</div>';
         return;
@@ -342,9 +341,9 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
         $rowsInserted++;
     }
 
-	echo "<p>Finished import</p>";
+	echo "<p>Finished import; ";
 	nz_999(0);
-	echo "<p>Finished function</p>";
+	echo "Finished function</p>";
 
     echo '<div class="w3-small">Inserted rows: '.(int)$rowsInserted.'</div>';
 
@@ -358,16 +357,20 @@ function _cp_process_play_by_play(PDO $conn, int $upload_id, string $files_dir) 
         }
     }
 
+/*
     // Show 999 editor
     if ($hdrLeague && $hdrSeason && $hdrWeek) {
         _cp_pbp_render_editable_999($conn, $hdrLeague, $hdrSeason, $hdrWeek);
     } else {
         echo '<div class="w3-panel w3-amber">Missing league/season/week; cannot show 999 editor.</div>';
     }
-
+*/
     echo '</div>';
     return ['stats'=>['rows'=>$rowsInserted]];
+
 }
+
+
 
 /* ======================= Helpers ======================= */
 
@@ -415,7 +418,7 @@ function _cp_pbp_render_editable_999(PDO $conn, string $league, int $season, int
     $rows = $q->fetchAll(PDO::FETCH_ASSOC);
 
     echo '<h4 class="w3-margin-top">Plays requiring yard fixes (a_yards = 999)</h4>';
-    if (!$rows) { echo '<div class="w3-panel w3-pale-green">No rows to fix.</div>'; return; }
+    if (!$rows) { echo '<div class="w3-panel w3-pale-green">No rows to fix.</div>'; nz_pbp(); return; }
 
     echo '<form method="post" class="w3-margin-top">';
     echo '<input type="hidden" name="_cp_pbp_save" value="1">';
@@ -491,22 +494,6 @@ function _cp_pbp_handle_save(PDO $conn, array $edit): void {
     }
 }
 
-/** Try calling nz_pbp() after manual corrections */
-function _cp_pbp_call_nz(PDO $conn, int $upload_id): void {
-    try {
-        $st = $conn->prepare("SELECT filename FROM g_uploads WHERE upload_id=:id LIMIT 1");
-        $st->execute([':id'=>$upload_id]);
-        $fn = (string)$st->fetchColumn();
-        $league = null; $season = null; $week = null;
-        if ($fn && preg_match('/^(?P<league>[A-Z0-9]+)-[A-Z]+_s(?P<season>\d{4})_w(?P<week>\d{1,2})_/i', $fn, $m)) {
-            $league = strtoupper($m['league']); $season = (int)$m['season']; $week = (int)$m['week'];
-        }
 
-        @require_once __DIR__ . '/g_functions.php';
-        if (function_exists('nz_pbp') && $league && $season && $week) {
-            nz_pbp($league, $season, $week);
-        }
-    } catch (Throwable $e) {
-        // soft-fail
-    }
-}
+
+

@@ -1,6 +1,12 @@
 <?php
 if(!defined('custom_page_from_inclusion')) { die(); }
-
+if (defined('_CP_DEBUG')) {
+    echo '<p style="color:red">_CP_DEBUG was already defined (value: '
+         . var_export(_CP_DEBUG, true)
+         . ')</p>';
+    debug_print_backtrace();
+    exit;
+}
 /**
  * fn_controlfootball.php
  * Admin batch runner for League Report imports & related sections
@@ -30,7 +36,7 @@ $_cp_force_scout      = !empty($_POST['_cp_force_scout']);
 
 // near the top of fn_controlfootball.php, after reading POST:
 if (!empty($_POST['_cp_debug']) && !defined('_CP_DEBUG')) {
-    define('_CP_DEBUG', true);
+    define('_CP_DEBUG', false);
 }
 
 // UI helper
@@ -238,8 +244,8 @@ try {
     $sql = "
         SELECT `upload_id`, `filename`, `league`, `season`, `week`, `mytimestamp`, `processed`
         FROM `g_uploads`
-        WHERE `filename` LIKE '%NFL%' OR `filename` LIKE '%NCAA%'
-        ORDER BY `mytimestamp` DESC, `upload_id` DESC
+        WHERE (`filename` LIKE '%NFL%' OR `filename` LIKE '%NCAA%') and `processed`=0
+        ORDER BY `upload_id` ASC
         LIMIT 300
     ";
     $st = $conn->prepare($sql);
@@ -274,6 +280,7 @@ try {
     echo '</div>';
 
     // Force rerun options
+    /*
     echo '<div class="w3-section">';
     echo '<div><b>Force rerun (optional)</b></div>';
     echo '<label><input class="w3-check" type="checkbox" name="_cp_force_league"> League Report</label><br>';
@@ -284,7 +291,8 @@ try {
     echo '<label><input class="w3-check" type="checkbox" name="_cp_force_standings"> Standings</label><br>';
     echo '<label><input class="w3-check" type="checkbox" name="_cp_force_scout"> Scouting Report</label>';
     echo '</div>';
-
+	*/
+	
     echo '<div class="w3-margin-top">';
     echo '<button class="w3-button w3-blue">Process Selected Upload</button>';
     echo '</div>';

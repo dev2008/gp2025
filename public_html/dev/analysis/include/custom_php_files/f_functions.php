@@ -1,11 +1,6 @@
 <?php
 
-function nz_pbp($league,$season,$week) {
-	echo "<p>";
-    echo $league,$season,$week;
-	echo "</p>p>";
-}
-
+//Resolves plays script couldn't work out
 function nz_999($_cp_yards) {
     echo "<p>999</p>";
     global $conn;
@@ -99,7 +94,6 @@ function nz_999($_cp_yards) {
     $res = execute_prepared_db($stmt, 0);
 
 }
-
 
 
 ?>

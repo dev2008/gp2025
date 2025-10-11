@@ -11,6 +11,8 @@ if(!defined('custom_page_from_inclusion')) { die(); }
 
 function _cp_process_league_report(PDO $conn, $upload_id, $files_dir) {
     echo '<div class="w3-card w3-padding w3-white">';
+	#echo "<p>Debug is " . var_export(_CP_DEBUG, true) . "</p>";
+
 
     // --- Load selected upload row
     try {

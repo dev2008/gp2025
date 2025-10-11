@@ -4,7 +4,7 @@ if(!defined('custom_page_from_inclusion')) { die(); }
 // before: define('_CP_DEBUG', false);
 if (!defined('_CP_DEBUG')) {
     #define('_CP_DEBUG', false);
-    define('_CP_DEBUG', true);
+    define('_CP_DEBUG', false);
 }
 
 
