@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect forum.* and test.* to homepage, dropping path AND query
+RewriteCond %{HTTP_HOST} ^(forum|test)\.gameplan\.org\.uk$ [NC]
+RewriteRule ^ https://www.gameplan.org.uk/ [R=301,L,QSD]
