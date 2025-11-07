@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-$envLoader = __DIR__ . '/custom_php_files/env_loader.php';
+$envLoader = dirname(__FILE__, 1) . '/custom_php_files/env_loader.php';
 if (!is_readable($envLoader)) {
     throw new RuntimeException("Env loader missing at $envLoader");
 }

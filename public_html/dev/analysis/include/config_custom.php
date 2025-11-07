@@ -1,48 +1,24 @@
 <?php
-//Dev
+declare(strict_types=1);
 
-$host = 'localhost';
-$db_name = 'dev-gp';
-$user = 'dev-gp';
-$pass = 'EgpsSmr@m@LaarWd1eWtH2hde';
-$title_application = '*DEV* Gameplan Analysis *DEV*';
-$enable_sql_logging = 0;
-$enable_access_logging = 0;
-$maintenance_mode = 0;
-$debug_mode = 1;
-$enable_uploads = 1;
-$upload_directory = '/var/www/app84/public/gp2025/public_html/dev/uploads/';
+$envLoader = dirname(__FILE__,1) . '/custom_php_files/env_loader.php';
+require_once $envLoader;
+Env::load();
 
+$host     = Env::get('DB_HOST','localhost');
+$db_name  = Env::get('DB_NAME','');
+$user     = Env::get('DB_USER','');
+$pass     = Env::get('DB_PASS','');
+$title_application = Env::get('TITLE_APP','Gameplan Analysis');
 
-//Pre
-/*
-$host = 'localhost';
-$db_name = 'pre-gp';
-$user = 'pre-gp';
-$pass = '4s2u0s2pne!bbynrdhetrasK#';
-$title_application = '*PRE* Gameplan Analysis *PRE*';
-$enable_sql_logging = 0;
-$enable_access_logging = 0;
-$maintenance_mode = 0;
-$debug_mode = 1;
-$enable_uploads = 1;
-$upload_directory = '/var/www/html/GP/analysis/uploads/pre/';
-*/
-
-//Server
-/*
-$host = 'sdb-78.hosting.stackcp.net';
-$db_name = 'gplan8-35303737a645';
-$user = 'gplan8-35303737a645';
-$pass = 'hnebllfgibsb0n0irghsalEe';
-$title_application = 'Gameplan Analysis';
-$enable_sql_logging = 0;
-$enable_access_logging = 0;
-$maintenance_mode = 0;
-$debug_mode = 0;
-$enable_uploads = 1;
-$upload_directory = '/home/sites/27a/8/826366cb9c/public_html/web/uploads';
-*/
+$enable_sql_logging    = Env::int('SQL_LOG',0);
+$enable_access_logging = Env::int('ACCESS_LOG',0);
+$maintenance_mode      = Env::int('MAINTENANCE_MODE',0);
+$debug_mode            = Env::int('DEBUG_MODE',0);
+$enable_uploads        = Env::int('ENABLE_UPLOADS',1);
+$upload_directory      = Env::get('UPLOAD_DIR', __DIR__.'/uploads/');
+$timezone              = Env::get('TIMEZONE','Europe/London');
+$dadabik_session_name  = Env::get('DADABIK_SESSION_NAME','gpspn2023analysis31a');
 
 //Settings
 $serial_number = '572FE7DD';
