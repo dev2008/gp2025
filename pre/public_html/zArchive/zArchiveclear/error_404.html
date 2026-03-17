@@ -1,0 +1,1457 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 9]>
+<html class="lte-ie9"<![endif]-->
+<!--[if gt IE 9]><!-->
+<html
+
+><!--<![endif]-->
+<head>
+<title>Gameplan Sports Network</title>
+<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/styles_screen.css" type="text/css">
+
+<!--<link rel="stylesheet" href="css/styles_screen.css?c=456" type="text/css" media="print">
+<link rel="stylesheet" href="css/styles_print.css" type="text/css" media="print">-->
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Generator" content="DaDaBIK 10 Manarola - http://dadabik.com/">
+<meta name="viewport" content="initial-scale=1.0"/>
+<script language="javascript" type="text/javascript" src="include/tinymce/tinymce.min.js"></script>
+  
+<script src="include/jquery/jquery-1.9.1.min.js"></script>
+
+<script src="include/jquery/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="include/jquery/jquery-ui-1.12.1/jquery-ui.min.css" type="text/css" media="screen">
+<!--
+<script src="include/date_picker/jquery-ui-1.10.1.custom.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui-1.10.1.custom.min.css" type="text/css" media="screen">
+-->
+<script src="include/date_picker/jquery-ui-timepicker-addon.js"></script>
+<link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css" type="text/css" media="screen">
+
+
+<link rel="stylesheet" href="css/fontawesome.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- chosen -->
+<!--<link rel="stylesheet" href="css/chosen/chosen.css">
+<script src="include/chosen/chosen.jquery.min.js" type="text/javascript"></script>-->
+
+<!-- select2 -->
+<link href="css/select2/select2.min.css" rel="stylesheet" />
+<script src="include/select2/select2.min.js"></script>
+  
+
+
+
+<link rel="stylesheet" href="css/theme_blue.css"><link rel="stylesheet" href="css/styles_screen_custom.css" type="text/css" media="screen">
+
+<script language="javascript" type="text/javascript">
+tinyMCE.init({
+	mode : "specific_textareas",
+	editor_selector : "rich_editor",
+	branding: false,
+	plugins: [
+		"advlist autolink lists link image charmap print preview anchor",
+		"searchreplace visualblocks code fullscreen",
+		"insertdatetime media table contextmenu paste"
+	]
+});
+</script>
+
+
+
+<script src="include/custom_functions.js"></script>
+
+
+<script>
+function uncheck_other_homepage_checkboxes(index){
+
+	if ( $("#is_homepage_static_page_"+index).is(':checked') === true ){
+		for (i=1;i<=Number($("#number_items").val());i++){
+			if ( i != index){
+				$("#is_homepage_static_page_"+i).prop('checked', false);
+			}
+		}
+	}
+}
+function enable_disable_loader(action)
+{
+	if (action === 'enable'){
+		 $("body").addClass("loading"); 
+	}
+	else if(action === 'disable'){
+		 $("body").removeClass("loading"); 
+	}
+}
+function enable_disable_loader_form_preview(action)
+{
+	if (action === 'enable'){
+		 //$("body").addClass("loading"); 
+	}
+	else if(action === 'disable'){
+		 //$("body").removeClass("loading"); 
+	}
+}
+
+function remove_showing_confirmation_message_class()
+{
+	 $("body").removeClass("showing_confirmation_message");
+}
+
+
+$(document).ready(function() {
+
+
+$(function () {
+	$('li.has-sub-menu > a').on("click", function (e) {
+		e.preventDefault();
+		var $listItem = $(this).parents("li:first");
+		$listItem.toggleClass("sub-menu-opened");
+		$listItem.toggleClass("selected");
+	});
+
+	$('[data-mobile-menu-toggle]').on("click", function () {
+		$('.main-menu-container').toggleClass("menu-mobile-opened");
+	});
+});
+		
+   
+//$("#menu").eosMenu();
+
+//$( ".eos-item-selected" ).css('display', 'none');
+
+	
+	$('#confirmation_message_container').on('click', '#error_message_close_link', function (e) {
+		$("#error_message").css('display', 'none');
+		e.preventDefault()
+	});
+	$('#confirmation_message_container').on('click', '#confirmation_message_close_link', function (e) {
+		$("#confirmation_message").css('display', 'none');
+		e.preventDefault()
+	});
+	$('#confirmation_message_container').on('click', '#alert_message_close_link', function (e) {
+		$("#alert_message").css('display', 'none');
+		e.preventDefault()
+	});
+	$('#confirmation_message_container_2').on('click', '#confirmation_message_2_close_link', function (e) {
+		$("#confirmation_message_2").css('display', 'none');
+		e.preventDefault()
+	});
+	
+	// adjust diabled attribute for template_table when the page is loaded
+	if ($('#enable_template_table_checkbox').is(':checked')){
+		$('#template_table').prop('disabled', false);
+	}
+	else{
+		$('#template_table').prop('disabled', true);
+		
+	}
+	
+	// adjust it again when the user click on the enable checkbox
+	$("#enable_template_table_checkbox").click(function(e) {
+	
+		if ($('#enable_template_table_checkbox').is(':checked')){
+			$('#template_table').prop('disabled', false);
+		}
+		else{
+			$('#template_table').prop('disabled', true);
+			
+		}
+	});
+	
+	/*$("#date_function").on('change', function() {
+		alert(0);
+		show_hide_date_functions_select();
+	});*/
+
+    // pivot table, [add another column] / [remove this column] links
+	$('.add_remove_column').on("click", function (e) {
+        
+        // each link contains a target id and a function
+	    //id_field_container = '#container_'+(this.id);
+	    
+	    id_container = $(this).data('targetid');
+	    function_to_execute = $(this).data('function');
+	    
+	    // show / hide the container div and enable/disable the first input field (the second is not important)
+	    
+	    field_name_temp = 'group_by_operator_'+id_container;
+	    //field_name_temp_2 = 'report_value_field_'+id_container;
+	    
+	    if (function_to_execute === 'add'){
+	        $('#column_container_'+id_container).show();
+	        $("[name="+field_name_temp+"]").attr("disabled", false);
+	        //$("[name="+field_name_temp_2+"]").attr("disabled", false);
+	    }
+	    else if(function_to_execute === 'remove'){
+	        $('#column_container_'+id_container).hide();
+	        $("[name="+field_name_temp+"]").attr("disabled", true);
+	        //$("[name="+field_name_temp_2+"]").attr("disabled", true);
+	    
+	    }
+	    
+	    e.preventDefault();
+	});
+	    
+
+	
+	$("#craete_new_view_link").click(function(e) {
+		
+		if ($("#create_new_view_form").css('display') === 'block'){
+			$("#create_new_view_form").css('display', 'none');
+		}
+		else{
+			$("#create_new_view_form").css('display', 'block');
+
+		}
+		e.preventDefault();
+	});
+	
+	///////////////////////////////////////////////////////////////////////////////
+	// DELETE FIELD
+	$(document).on('click', ".delete_field_button", function (e) {
+	    
+	    id_field_container = '#container_'+(this.id);
+	    tablename_field_deletion = $(id_field_container).data('tablename');
+	    fieldname_field_deletion = $(id_field_container).data('fieldname');
+	    
+	    reload_page = 0;
+	    
+	    var error = '';
+    
+         // here the code to check errors, if any
+	
+    
+        if (error !== ''){
+             window.scrollTo(0,0);
+             $('#confirmation_message_container').html('<div class="msg_error" id="error_message"><p>'+error+'<br/><br/><a href="javascript:{}" id="error_message_close_link">Ok, close</a></p></div>');
+             enable_disable_loader('disable');
+        }
+        else{
+	    
+            if(typeof fieldname_field_deletion === 'undefined'){ // the field has been added without saving, you don't have the fieldname yet, just remove it
+                if (confirm("Are you sure you want to DELETE this field?\n\nIf you have added / modified fields, save your changes before deleting this field, otherwise the changes will be lost.")){
+                    $(id_field_container).remove();
+                    // same code after
+                    // need to reload the page otherwise there is a hole in the indexes
+                    // don't like this solution, tofix
+                    // window.location.href + return false was the only working solution for chrome
+                    window.location.href = 'data.php?tablename=' + encodeURI(tablename_field_deletion) + '#anchor_' + encodeURI(tablename_field_deletion);
+                    return false;
+                    // also need to reload otherwise the browser just move to the anchor without loading the page
+                    window.location.reload(true);
+                }
+            }
+            else{
+                enable_disable_loader('enable');
+	        
+            
+                if (!confirm("Are you sure you want to DELETE this field? All the related data and DaDaBIK configuration/permissions about the field "+fieldname_field_deletion+" (table "+tablename_field_deletion+") will be erased.\n\nIf you have added / modified fields, save your changes before deleting this field, otherwise the changes will be lost.")){
+                    enable_disable_loader('disable');   
+                }
+                else{
+        
+                    $('#confirmation_message_container').html('');
+                    $.ajax({
+                        url: "api.php?function=delete_field",
+                        data: ({
+                        tablename_field_deletion: tablename_field_deletion,
+                        fieldname_field_deletion: fieldname_field_deletion
+                        }),
+        
+                        type: "POST",
+                        dataType: "json",
+                        success: function(data){
+        
+                            enable_disable_loader('disable');
+
+                            if (data.status === 'ok'){
+                                if (data.result !== 'done'){
+                                    alert('unexpected error delete_field.submit - ' + data.result+ ' - '+data.error_message);
+                                }
+                                else{
+                                     $("body").addClass("showing_confirmation_message");
+                                     window.setTimeout( remove_showing_confirmation_message_class, 1000); 
+                                
+                                    $(id_field_container).remove();
+                                    
+                                    // same code before
+                                    // need to reload the page otherwise there is a hole in the indexes
+                                    // don't like this solution, tofix
+                                    // window.location.href + return false was the only working solution for chrome
+                                    window.location.href = 'data.php?tablename=' + encodeURI(tablename_field_deletion) + '#anchor_' + encodeURI(tablename_field_deletion);
+                                    return false;
+    
+                                    // also need to reload otherwise the browser just move to the anchor without loading the page
+                                    window.location.reload(true);
+                                }
+                            }
+                            else{
+                                alert('unexpected error delete_field.submit status not OK');
+                            }
+                        },
+                        error: function(data, status, e){
+                            enable_disable_loader('disable');
+                            alert('unexpected error delete_field.submit ajax error'+JSON.stringify(data));
+                        }
+                    });
+                }
+            }
+        }
+
+		e.preventDefault(); // avoid to execute the actual submit of the form.
+	});
+
+	
+	
+	
+	
+	
+	$('[id^="sel_chk__"]').click(function(){
+	    
+	    where_value = this.id.substr(9);
+table_name = "fp_bowlgames";	
+        if (this.checked === true){
+             type = 'check';
+        }
+        else{
+             type = 'uncheck';
+        }
+	    
+	    var error = '';
+	    
+        // here the code to check errors, if any
+	
+    
+        if (error !== ''){
+             window.scrollTo(0,0);
+             $('#confirmation_message_container').html('<div class="msg_error" id="error_message"><p>'+error+'<br/><br/><a href="javascript:{}" id="error_message_close_link">Ok, close</a></p></div>');
+             enable_disable_loader('disable');
+        }
+        else{
+           $('#confirmation_message_container').html('');
+            $.ajax({
+                url: "api.php?function=check_uncheck_row",
+
+                data: ({
+                    where_value: where_value,
+                    table_name: table_name,
+                    type: type,
+                } ),
+    
+                type: "POST",
+                dataType: "json",
+                success: function(data){
+    
+                    enable_disable_loader('disable');
+
+                    if (data.status === 'ok'){
+                        if (data.result !== 'done'){
+                            alert('unexpected error check_uncheck_row - ' + data.result+ ' - '+data.error_message);
+                        }
+                        else{
+                             // don't need the confirmation
+                             //$("body").addClass("showing_confirmation_message");
+                             //window.setTimeout( remove_showing_confirmation_message_class, 1000); 
+                             
+                             $("#checked_ids_counter_container").html(data.counter);
+                             
+                             if (data.counter === 0){
+                                $("#checked_ids_container").hide();
+                             }
+                             else{
+                                $("#checked_ids_container").show();
+                            }
+                        }
+                    }
+                    else{
+                        alert('unexpected error check_uncheck_row status not OK');
+                    }
+                },
+                error: function(data, status, e){
+                    enable_disable_loader('disable');
+                    alert('unexpected error check_uncheck_row ajax error'+JSON.stringify(data));
+                }
+            });
+        }
+	});
+	
+	$('#uncheck_all_link').click(function(event){
+	    
+table_name = "fp_bowlgames";	
+
+	    var error = '';
+    
+        // here the code to check errors, if any
+	
+    
+        if (error !== ''){
+             window.scrollTo(0,0);
+             $('#confirmation_message_container').html('<div class="msg_error" id="error_message"><p>'+error+'<br/><br/><a href="javascript:{}" id="error_message_close_link">Ok, close</a></p></div>');
+             enable_disable_loader('disable');
+        }
+        else{
+           $('#confirmation_message_container').html('');
+            $.ajax({
+                url: "api.php?function=check_uncheck_row",
+
+                data: ({
+                    table_name: table_name,
+                    type: 'uncheck_all',
+                } ),
+    
+                type: "POST",
+                dataType: "json",
+                success: function(data){
+    
+                    enable_disable_loader('disable');
+
+                    if (data.status === 'ok'){
+                        if (data.result !== 'done'){
+                            alert('unexpected error check_uncheck_row - ' + data.result+ ' - '+data.error_message);
+                        }
+                        else{
+                             $("body").addClass("showing_confirmation_message");
+                             window.setTimeout( remove_showing_confirmation_message_class, 1000);
+                             
+                             $("#checked_ids_counter_container").html(data.counter);
+                             
+                             $("#checked_ids_container").hide();
+                             
+                             $('input[id^="sel_chk__"]').prop( "checked", false );
+                             
+                        }
+                    }
+                    else{
+                        alert('unexpected error check_uncheck_row status not OK');
+                    }
+                },
+                error: function(data, status, e){
+                    enable_disable_loader('disable');
+                    alert('unexpected error check_uncheck_row ajax error'+JSON.stringify(data));
+                }
+            });
+            
+        }
+	    event.preventDefault();
+	});
+	
+	
+	$("#include_tables_form").submit(function(e) {
+		var field_names_to_update = [];
+		var field_values_to_update  = [];
+		var where_values  = [];
+		
+		enable_disable_loader('enable');
+		
+		var number_items = $('#number_items').val();
+		
+		var pages_to_show = $('#pages_to_show').val()
+		
+		var error = '';
+		
+		if (pages_to_show === 'custom_pages'){
+		
+			var tablename_to_update = 'zdk_static_pages';
+			
+			for (i=0;i<number_items;i++){
+				field_names_to_update[i] = [];
+				field_values_to_update[i] = [];
+				field_names_to_update[i][0] = 'link_static_page';
+				field_values_to_update[i][0] =  $('#link_static_page_'+(i+1)).val();
+				
+				field_names_to_update[i][1] = 'enabled_static_page';
+				if ($('#enabled_static_page_'+(i+1)).is(':checked')){
+					field_values_to_update[i][1] =  '1';
+				}
+				else{
+					field_values_to_update[i][1] =  '0';
+				}
+				
+				field_names_to_update[i][2] = 'file_static_page';
+				field_values_to_update[i][2] =  $('#file_static_page_'+(i+1)).val();
+			
+				field_names_to_update[i][3] = 'content_static_page';
+				field_values_to_update[i][3] = tinyMCE.get('content_static_page_'+(i+1)).getContent();
+							
+				field_names_to_update[i][4] = 'menu_parent_page';
+				field_values_to_update[i][4] =  $('#menu_parent_page_'+(i+1)).val();
+			
+				field_names_to_update[i][5] = 'is_homepage_static_page';
+			
+				if ($('#is_homepage_static_page_'+(i+1)).is(':checked')){
+					field_values_to_update[i][5] =  'y';
+				}
+				else{
+					field_values_to_update[i][5] =  'n';
+				}
+				
+				field_names_to_update[i][6] = 'type_static_page';
+				field_values_to_update[i][6] =  $('#type_static_page_'+(i+1)).val();
+							
+				field_names_to_update[i][7] = 'menu_order_static_page';
+				field_values_to_update[i][7] =  $('#menu_order_static_page_'+(i+1)).val();
+							
+				field_names_to_update[i][8] = 'href_link_static_page';
+				field_values_to_update[i][8] =  $('#href_link_static_page_'+(i+1)).val();
+				
+				field_names_to_update[i][9] = 'separator_before_static_page';
+				if ($('#separator_before_static_page_'+(i+1)).is(':checked')){
+					field_values_to_update[i][9] =  'y';
+				}
+				else{
+					field_values_to_update[i][9] =  'n';
+				}
+
+
+				
+				if (field_values_to_update[i][6] === 'PHP' &&  field_values_to_update[i][2] === '') {
+					error = 'If you choose PHP as <i>type</i>, you need to specify a PHP source file as well.';
+					break;
+				}
+				else if (field_values_to_update[i][6] === 'html' &&  field_values_to_update[i][3] === '') {
+					error = 'If you choose HTML as <i>type</i>, you need to specify the HTML content as well.';
+					break;
+				}
+				else if (field_values_to_update[i][6] === 'link' &&  field_values_to_update[i][8] === '') {
+					error = 'If you choose link as <i>type</i>, you need to specify the href link as well.';
+					break;
+				}
+				
+				
+
+				
+				
+				
+				where_values[i] = $('#id_static_page_'+(i+1)).val();
+			}
+		}
+		else{
+			var tablename_to_update =  'zdk_table_list';
+
+			for (i=0;i<number_items;i++){
+				field_names_to_update[i] = [];
+				field_values_to_update[i] = [];
+				field_names_to_update[i][0] = 'alias_table';
+				field_values_to_update[i][0] =  $('#alias_table_'+(i+1)).val();
+			
+				field_names_to_update[i][1] = 'pk_field_table';
+				field_values_to_update[i][1] =  $('#pk_field_table_'+(i+1)).val();
+				field_names_to_update[i][2] = 'menu_parent_table';
+				field_values_to_update[i][2] =  $('#menu_parent_table_'+(i+1)).val();
+			
+				field_names_to_update[i][3] = 'allowed_table';
+			
+				if ($('#allowed_table_'+(i+1)).is(':checked')){
+					field_values_to_update[i][3] =  '1';
+				}
+				else{
+					field_values_to_update[i][3] =  '0';
+				}
+			
+				field_names_to_update[i][4] = 'menu_order_table';
+				field_values_to_update[i][4] =  $('#menu_order_table_'+(i+1)).val();
+				
+				field_names_to_update[i][5] = 'separator_before_table';
+				if ($('#separator_before_table_'+(i+1)).is(':checked')){
+					field_values_to_update[i][5] =  'y';
+				}
+				else{
+					field_values_to_update[i][5] =  'n';
+				}
+				
+				field_names_to_update[i][6] = 'enable_revision_table';
+			
+				if ($('#enable_revision_table_'+(i+1)).is(':checked')){
+					field_values_to_update[i][6] =  '1';
+				}
+				else{
+					field_values_to_update[i][6] =  '0';
+				}
+				
+				field_names_to_update[i][7] = 'order_by_table';
+				field_values_to_update[i][7] =  $('#order_by_table_'+(i+1)).val();
+				
+				field_names_to_update[i][8] = 'order_type_table';
+				field_values_to_update[i][8] =  $('#order_type_table_'+(i+1)).val();
+			
+			
+				where_values[i] = $('#name_table_'+(i+1)).val();
+			}
+		}
+		if (error !== ''){
+			 window.scrollTo(0,0);
+			 $('#confirmation_message_container').html('<div class="msg_error" id="error_message"><p>'+error+'<br/><br/><a href="javascript:{}" id="error_message_close_link">Ok, close</a></p></div>');
+			 enable_disable_loader('disable');
+		}
+		else{
+			$('#confirmation_message_container').html('');
+			$.ajax({
+				url: "api.php?function=update_records",
+		
+				data: ({
+				where_values: where_values,
+				field_names_to_update: field_names_to_update,
+				field_values_to_update: field_values_to_update,
+				tablename_to_update : tablename_to_update,
+	
+				} ),
+			
+				type: "POST",
+				dataType: "json",
+				success: function(data){
+			
+					enable_disable_loader('disable');
+	
+					if (data.status === 'ok'){
+						if (data.result !== 'done'){
+							alert('unexpected error include_tables_form.submit - ' + data.result+ ' - '+data.error_message);
+						}
+						else{
+							 $("body").addClass("showing_confirmation_message");
+							 window.setTimeout( remove_showing_confirmation_message_class, 1000); 
+						}
+					}
+					else{
+						alert('unexpected error include_tables_form.submit status not OK');
+					}
+				},
+				error: function(data, status, e){
+					enable_disable_loader('disable');
+					alert('unexpected error include_tables_form.submit ajax error'+JSON.stringify(data));
+				}
+			});
+		}
+
+		e.preventDefault(); // avoid to execute the actual submit of the form.
+	});
+
+
+// modreq
+// fine modreq
+
+
+$('input[id^="date_picker"]').datepicker({
+     yearRange: '1989:2030',
+    dateFormat: 'yy-mm-dd',
+    changeMonth: true,
+     changeYear: true
+});
+
+     $('input[id^="date_time_picker"]').datetimepicker({
+    dateFormat: 'yy-mm-dd',
+     yearRange: '1989:2030',
+    changeMonth: true,
+     changeYear: true,
+	showSecond: true,
+	timeFormat: 'HH:mm:ss'
+});
+
+
+     
+});
+</script>
+
+<script language="Javascript">
+function show_admin_help_old(title, content)
+{
+    if (document.all) {
+        topoffset=document.body.scrollTop;
+        leftoffset=document.body.scrollLeft;
+        WIDTH=document.body.clientWidth;
+        HEIGHT=document.body.clientHeight;
+    } else {
+        topoffset=pageYOffset;
+        leftoffset=pageXOffset;
+        WIDTH=window.innerWidth;
+        HEIGHT=window.innerHeight;
+    }
+
+    newtop=((HEIGHT-200)/2)+topoffset;
+    
+    if (document.all) {
+        newleft=150;
+    } else {
+        newleft=((WIDTH-400)/2)+leftoffset;
+    }
+
+    document.getElementById('div_help').style.left=newleft;
+    document.getElementById('div_help').style.top=newtop;
+
+    document.getElementById('div_help_content_title').innerHTML = '<div align="right""><a href="javascript:hide_help();" style="text-decoration:none;color:#ff7700">[X]&nbsp;&nbsp;&nbsp;</a></div>'+title;
+    document.getElementById('div_help_content_text').innerHTML = content;
+    document.getElementById('div_help').style.display = 'block';
+}
+
+
+function show_admin_help(title, content)
+{
+	document.getElementById('dialog').innerHTML = content;
+	
+	
+	$( "#dialog" ).dialog({
+	  width: 500,
+	  modal: true
+	});
+    
+    $('#dialog').dialog('option', 'title', title);
+}
+
+function show_admin_help_resize(title, content, width)
+{
+	document.getElementById('dialog').innerHTML = content;
+	
+	
+	$( "#dialog" ).dialog({
+	  width: width,
+	  modal: true,
+	  close: function( event, ui ) {$('#dialog').children('iframe').attr('src', '');} // to stop youtube videos
+	});
+    
+    $('#dialog').dialog('option', 'title', title);
+}
+
+
+function hide_help()
+{
+    document.getElementById('div_help').style.display = 'none';
+    document.getElementById('div_help_content_title').innerHTML = "";
+    document.getElementById('div_help_content_text').innerHTML = "";
+    
+    
+}
+
+function show_frontend_help(title, content)
+{
+    if (document.all) {
+        topoffset=document.body.scrollTop;
+        leftoffset=document.body.scrollLeft;
+        WIDTH=document.body.clientWidth;
+        HEIGHT=document.body.clientHeight;
+    } else {
+        topoffset=pageYOffset;
+        leftoffset=pageXOffset;
+        WIDTH=window.innerWidth;
+        HEIGHT=window.innerHeight;
+    }
+
+    newtop=((HEIGHT-200)/2)+topoffset;
+    
+    if (document.all) {
+        newleft=150;
+    } else {
+        newleft=((WIDTH-400)/2)+leftoffset;
+    }
+
+    document.getElementById('div_help_frontend').style.left=newleft;
+    document.getElementById('div_help_frontend').style.top=newtop;
+
+    document.getElementById('div_help_frontend_content_title').innerHTML = '<div align="right""><a href="javascript:hide_frontend_help();" style="text-decoration:none;color:#ff7700">[X]&nbsp;&nbsp;&nbsp;</a></div>'+title;
+    document.getElementById('div_help_frontend_content_text').innerHTML = content;
+    document.getElementById('div_help_frontend').style.display = 'block';
+}
+
+function hide_frontend_help()
+{
+    document.getElementById('div_help_frontend').style.display = 'none';
+    document.getElementById('div_help_frontend_content_title').innerHTML = "";
+    document.getElementById('div_help_frontend_content_text').innerHTML = "";
+}
+
+function show_template_instructions(title)
+{
+	$("#dialog").load('include/forms/template_help_content.html').dialog({ width: 500,modal:true}); 
+    $('#dialog').dialog('option', 'title', title);
+}
+
+/*
+function show_template_instructions_old(title)
+{
+    if (document.all) {
+        topoffset=document.body.scrollTop;
+        leftoffset=document.body.scrollLeft;
+        WIDTH=document.body.clientWidth;
+        HEIGHT=document.body.clientHeight;
+    } else {
+        topoffset=pageYOffset;
+        leftoffset=pageXOffset;
+        WIDTH=window.innerWidth;
+        HEIGHT=window.innerHeight;
+    }
+
+    newtop=((HEIGHT-200)/2)+topoffset;
+    
+    if (document.all) {
+        newleft=150;
+    } else {
+        newleft=((WIDTH-400)/2)+leftoffset;
+    }
+
+    document.getElementById('div_template_instructions').style.left=newleft;
+    document.getElementById('div_template_instructions').style.top=newtop;
+
+    document.getElementById('div_template_instructions_content_title').innerHTML = '<div align="right"><a href="javascript:hide_template_instructions();" style="text-decoration:none;color:#ff7700">[X]&nbsp;&nbsp;&nbsp;</a></div>'+title;
+    document.getElementById('div_template_instructions_content_text').style.display = 'block';
+    document.getElementById('div_template_instructions').style.display = 'block';
+}
+
+function hide_template_instructions_old()
+{
+    document.getElementById('div_template_instructions').style.display = 'none';
+    //document.getElementById('div_template_instructions_content_title').innerHTML = "";
+    //document.getElementById('div_template_instructions_content_text').innerHTML = "";
+}
+*/
+
+function show_hide_date_functions_select(){
+
+	var type=$('option:selected', $('#group_by_field')).attr('field_type');
+	
+	
+	if ( type == 'date' || type == 'date_time' || type == 'update_date_time' || type == 'insert_date_time'){
+		$('#date_functions_container').css('display', 'inline-block');
+	}
+	else {
+		$('#date_functions_container').css('display', 'none')
+	};
+
+}
+
+
+</script>
+
+
+
+<script language="Javascript">
+//opens a js popup with customizable options. Popup will close and open
+//again upon call from pwd-generator link
+var mywindow;
+function generic_js_popup(url,name,w,h){
+	if (mywindow!=null && !mywindow.closed){
+	mywindow.close();
+	}
+var options;
+options = "resizable=yes,toolbar=0,status=1,menubar=0,scrollbars=yes, width=" + w + ",height=" + h + ",left="+(screen.width-w)/2+",top="+(screen.height-h)/6; 
+mywindow = window.open(url,name,options);
+mywindow.focus();
+}
+
+function enable_disable_input_box_insert_edit_form(null_checkbox_prefix, year_field_suffix, month_field_suffix, day_field_suffix, hours_field_suffix, minutes_field_suffix, seconds_field_suffix)
+// goal: set the status (disabled|enabled) of each input element of the insert|edit form, depending on the status (checked|not checked) of the corresponding null value checkbox (if it exists)
+// input: null_checkbox_prefix, year_field_suffix, month_field_suffix, day_field_suffix
+{
+	var count = document.getElementById('dadabik_main_form').length;
+	var null_checkbox_prefix_length = null_checkbox_prefix.length;
+
+	// for each element of the form
+	for (i=0;i<count;i++)
+	{
+		// if the element is a null value checkbox element
+		if (document.getElementById('dadabik_main_form').elements[i].name.substr(0,null_checkbox_prefix_length) == null_checkbox_prefix && document.getElementById('dadabik_main_form').elements[i].disabled === false){
+		
+			// check if the field is a datetime field type
+
+			var hours_field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(null_checkbox_prefix_length) + hours_field_suffix;
+				
+			var b = new Array;
+			b = document.getElementsByName(hours_field_name);
+
+			// check if the field is a date field type
+
+			var year_field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(null_checkbox_prefix_length) + year_field_suffix;
+				
+			var a = new Array;
+			a = document.getElementsByName(year_field_name);
+			
+			var field_type_is_date = 0;
+			var field_type_is_date_time = 0;
+			
+
+			if (b[0]){ // if the relative hours field exists
+				field_type_is_date_time = 1;
+			} // end if
+			else if (a[0]){ // if the relative year field exists
+				field_type_is_date = 1;
+			} // end if
+			
+
+			if (field_type_is_date == 1 || field_type_is_date_time == 1){
+				// get the name of the relative input controls
+
+				var month_field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(null_checkbox_prefix_length) + month_field_suffix;
+
+				var day_field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(null_checkbox_prefix_length) + day_field_suffix;
+				
+				if (field_type_is_date_time == 1){
+
+					var minutes_field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(null_checkbox_prefix_length) + minutes_field_suffix;
+
+					var seconds_field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(null_checkbox_prefix_length) + seconds_field_suffix;
+				}
+
+				// and set the relative input controls enabled/disabled depending on the null value checkbox status (checked|not checked)
+				var a = new Array;
+				a = document.getElementsByName(year_field_name);
+				
+				var b = new Array;
+				b = document.getElementsByName(month_field_name);
+
+				var c = new Array;
+				c = document.getElementsByName(day_field_name);
+				
+				if (field_type_is_date_time == 1){
+				
+				var d = new Array;
+				d = document.getElementsByName(hours_field_name);
+				
+				var e = new Array;
+				e = document.getElementsByName(minutes_field_name);
+
+				var f = new Array;
+				f = document.getElementsByName(seconds_field_name);
+				
+				}
+				
+
+				if (document.getElementById('dadabik_main_form').elements[i].checked == true){
+					a[0].disabled = true;
+					b[0].disabled = true;
+					c[0].disabled = true;
+					
+					if (field_type_is_date_time == 1){
+					
+						d[0].disabled = true;
+						e[0].disabled = true;
+						f[0].disabled = true;
+					
+					}
+
+
+				} // end if
+				else{
+					a[0].disabled = false;
+					b[0].disabled = false;
+					c[0].disabled = false;
+					
+					if (field_type_is_date_time == 1){
+						d[0].disabled = false;
+						e[0].disabled = false;
+						f[0].disabled = false;
+					
+					}
+
+				} // end else
+			} // end if
+			else {
+				// get the name of the relative input control
+				var field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(null_checkbox_prefix_length);
+
+				// and set the relative input control enabled/disabled depending on the null value checkbox status (checked|not checked)
+				var a = new Array;
+				a = document.getElementsByName(field_name);
+
+				if (document.getElementById('dadabik_main_form').elements[i].checked == true){
+					a[0].disabled = true;
+				} // end if
+				else{
+					a[0].disabled = false;
+				} // end else
+			} // end else
+		} // end if
+	} // end for
+} // end function
+
+
+
+function enable_disable_input_box_search_form(field_name, select_type_select_suffix, year_field_suffix, month_field_suffix, day_field_suffix, hours_field_suffix, minutes_field_suffix, seconds_field_suffix)
+// goal: set the status (disabled|enabled) of an input element of the search form, depending on the status of the corresponding select_type_select field
+// input: field_name, select_type_select_suffix, year_field_suffix, month_field_suffix, day_field_suffix
+{
+	
+	// check if the field is a date field type
+
+	var year_field_name = field_name + year_field_suffix;
+	var hours_field_name = field_name + hours_field_suffix;
+	
+	// check if the field is a datetime field type
+		
+	var b = new Array;
+	b = document.getElementsByName(hours_field_name);
+
+	// check if the field is a date field type
+		
+	var a = new Array;
+	a = document.getElementsByName(year_field_name);
+	
+	var field_type_is_date = 0;
+	var field_type_is_date_time = 0;
+	
+
+	if (b[0]){ // if the relative hours field exists
+		field_type_is_date_time = 1;
+	} // end if
+	else if (a[0]){ // if the relative year field exists
+		field_type_is_date = 1;
+	} // end if
+	
+
+	if (field_type_is_date == 1 || field_type_is_date_time == 1){
+		// get the name of the relative input controls
+
+		var month_field_name = field_name + month_field_suffix;
+
+		var day_field_name = field_name + day_field_suffix;
+				
+		if (field_type_is_date_time == 1){
+
+			var minutes_field_name = field_name + minutes_field_suffix;
+
+			var seconds_field_name = field_name + seconds_field_suffix;
+		}
+
+		// and set the relative input controls enabled/disabled depending on the null value checkbox status (checked|not checked)
+		var a = new Array;
+		a = document.getElementsByName(year_field_name);
+
+		var b = new Array;
+		b = document.getElementsByName(month_field_name);
+
+		var c = new Array;
+		c = document.getElementsByName(day_field_name);
+		
+		
+				
+		if (field_type_is_date_time == 1){
+				
+				var d = new Array;
+				d = document.getElementsByName(hours_field_name);
+				
+				var e = new Array;
+				e = document.getElementsByName(minutes_field_name);
+
+				var f = new Array;
+				f = document.getElementsByName(seconds_field_name);
+				
+		}
+
+		var g = new Array;
+		g = document.getElementsByName(field_name+select_type_select_suffix);
+
+		if (g[0].value == 'is_null'){
+			a[0].disabled = true;
+			b[0].disabled = true;
+			c[0].disabled = true;
+					
+					if (field_type_is_date_time == 1){
+					
+						d[0].disabled = true;
+						e[0].disabled = true;
+						f[0].disabled = true;
+					
+					}
+		} // end if
+		else{
+			a[0].disabled = false;
+			b[0].disabled = false;
+			c[0].disabled = false;
+					
+					if (field_type_is_date_time == 1){
+					
+						d[0].disabled = false;
+						e[0].disabled = false;
+						f[0].disabled = false;
+					
+					}
+		} // end else
+	} // end if
+	else{
+		// set the relative input control enabled/disabled depending on the null value checkbox status (checked|not checked)
+		var a = new Array;
+		a = document.getElementsByName(field_name);
+
+		var b = new Array;
+		b = document.getElementsByName(field_name+select_type_select_suffix);
+
+		if (b[0].value == 'is_null' || b[0].value == 'is_empty' || b[0].value == 'is_not_null' || b[0].value == 'is_not_empty'){
+			a[0].disabled = true;
+		} // end if
+		else{
+			a[0].disabled = false;
+		} // end else
+	} // end else
+
+} // end function
+
+function getRadioValue(theRadioGroup)
+{
+    var elements = document.getElementsByName(theRadioGroup);
+    for (var i = 0, l = elements.length; i < l; i++)
+    {
+        if (elements[i].checked)
+        {
+            return elements[i].value;
+        }
+    }
+}
+
+function show_hide_text_other(field_type)
+// goal: show/hide the textbox close to select_single fields according to the "other" field selected or not
+{
+	
+	var other_textbox_div_suffix =  '_other____';
+	
+	var count = document.getElementById('dadabik_main_form').length;
+	var other_textbox_div_suffix_length = other_textbox_div_suffix.length;
+
+	// for each element of the form
+	for (i=0;i<count;i++)
+	{
+		
+		
+		var field_name_length = document.getElementById('dadabik_main_form').elements[i].name.length;
+	
+		
+	
+		// if the field is a other text field
+		if (document.getElementById('dadabik_main_form').elements[i].name.substr(field_name_length-other_textbox_div_suffix_length) == other_textbox_div_suffix){
+	
+		
+			// get the name of the relative input control
+			var field_name = document.getElementById('dadabik_main_form').elements[i].name.substr(0, field_name_length-other_textbox_div_suffix_length);
+		
+		
+			// and set the relative input control enabled/disabled depending on the null value checkbox status (checked|not checked)
+			var a = new Array;
+			a = document.getElementsByName(field_name);
+						
+			var div_name = 'other_textbox_'+field_name;
+			
+			if (field_type == 'select_single'){
+				var value_to_check = a[0].value;
+			}
+			else if(field_type === 'select_single_radio'){
+				var value_to_check = getRadioValue(field_name);
+			}
+			
+			if (value_to_check == '......'){
+			
+				 //document.getElementById(div_name).style.visibility = 'visible';
+				 document.getElementById(div_name).style.display = 'block';
+			} // end if
+			else{
+			
+				 //document.getElementById(div_name).style.visibility = 'hidden';
+				 document.getElementById(div_name).style.display = 'none';
+			}
+			
+		} // end if
+		
+	} // end for
+} // end function
+
+
+function show_hide_text_between()
+// goal: show/hide an additional textbox according to the between field
+{
+
+	
+	var other_textbox_div_suffix =  '_between____';
+	
+	execute_show_hide = 0;
+	if ( document.getElementById('dadabik_main_form')){ // from search form
+	    form_name = 'dadabik_main_form';
+	    execute_show_hide = 1;
+	}
+	else if( document.getElementById('dadabik_quick_search_form')) { // from quick search form
+	    form_name = 'dadabik_quick_search_form';
+	    execute_show_hide = 1
+	}
+	
+	if (execute_show_hide == 1) {
+        var count = document.getElementById(form_name).length;
+    
+        var other_textbox_div_suffix_length = other_textbox_div_suffix.length;
+
+        // for each element of the form
+        for (i=0;i<count;i++)
+        {
+        
+            //alert(document.getElementById(form_name).elements[i].name);
+        
+            var field_name_length = document.getElementById(form_name).elements[i].name.length;
+    
+        
+    
+            // if the field is a other text field
+            if (document.getElementById(form_name).elements[i].name.substr(field_name_length-other_textbox_div_suffix_length) == other_textbox_div_suffix){
+        
+            
+                // get the name of the main field
+                var field_name = document.getElementById(form_name).elements[i].name.substr(0, field_name_length-other_textbox_div_suffix_length);
+        
+        
+                // and set the relative input control enabled/disabled depending on the null value checkbox status (checked|not checked)
+                var a = new Array;
+                a = document.getElementsByName(field_name+'__select_type');
+                        
+                var div_name = 'between_textbox_'+field_name;
+                var value_to_check = a[0].value;
+            
+                if (value_to_check == 'between'){
+            
+                     //document.getElementById(div_name).style.visibility = 'visible';
+                     document.getElementById(div_name).style.display = 'block';
+                } // end if
+                else{
+            
+                     //document.getElementById(div_name).style.visibility = 'hidden';
+                     document.getElementById(div_name).style.display = 'none';
+                }
+            
+            } // end if
+        
+        } // end for
+    }
+} // end function
+
+function execute_custom_function(url)
+{
+    enable_disable_loader('enable');
+    
+    $.ajax({
+        url: url,
+
+        data: ({}),
+    
+        type: "POST",
+        dataType: "json",
+        success: function(data){
+    
+            enable_disable_loader('disable');
+
+            if (data.status === 'ok'){
+                 $("body").addClass("showing_confirmation_message");
+                 window.setTimeout( remove_showing_confirmation_message_class, 1000); 
+            }
+            else{
+                alert('unexpected error custom function ajax status not OK');
+            }
+        },
+        error: function(data, status, e){
+            enable_disable_loader('disable');
+            alert('unexpected error custom function ajax call: '+JSON.stringify(data));
+        }
+    });
+}
+
+</script>
+
+
+
+</head>
+
+<body
+
+
+
+>
+
+<div id="dialog" title=""></div>
+
+<div id="div_help" style="width: 600px">
+<div id="div_help_content">
+<div id="div_help_content_title"></div>
+<div id="div_help_content_text"></div>
+</div>
+</div>
+
+<div id="div_help_frontend" style="width: 600px;z-index: 1">
+<div id="div_help_frontend_content">
+<div id="div_help_frontend_content_title"></div>
+<div id="div_help_frontend_content_text"></div>
+</div>
+</div>
+
+<div class="fixed-header">
+	<div class="row">
+		<div class="col-xs-8">
+			<!--<img class="logo img-responsive" src="images/logo_alpha.png">-->
+			
+						
+			
+		</div>
+		
+		<div class="col-xs-4 right">
+			<a href="#" data-mobile-menu-toggle>
+				<i class="fa fa-bars fa-2x"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="fixed-footer">
+
+
+
+<a href="login.php?function=show_login_form" class="btn  btn-primary" title="Login"><i class="fa fa-sign-in"></i> Login</a>
+
+
+
+</div>
+
+
+<table  class="main_table">
+<tr>
+<td class="main_table_td">
+<!--<h1 class="onlyscreen" align="center">DaDaBIK</h1>-->
+
+
+<table  class="table_interface_container" align="center">
+
+<tr class="table_interface_container_tr_logo"><td><img style="max-width: 100%;height: auto;" src="images/gameplan.jpg"><div class="app-info pull-right text-center"><div class="user-info"> <a class="btn btn-xm btn-primary" href="login.php?function=show_login_form" title="Logout"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a><br></div></div>
+</td>
+</tr>
+
+
+<tr class="table_interface_container_tr_top_menu" >
+<td>
+	<!--[if !lte IE 9]><!-->
+	<table  class="table_interface_container_table_top_menu" >
+	<!--<![endif]-->
+	
+	<!--[if lte IE 9]>
+	<table class="table_interface_container_table_top_menu_ie9">
+	<![endif]-->
+	
+	<tr>
+	
+	<!--<td><a href="#" class="fa fa-bars fa-lg eos-pull-right" aria-hidden="true"></a></td>-->
+	
+		
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ <!--<td ><a class="bottom_menu" href="?function=search&tablename=fp_bowlgames">&nbsp;&nbsp;Show items&nbsp;&nbsp;</a></td>-->
+ 
+ 
+ 
+ 
+ <!--</td><td ><a class="bottom_menu" href="?function=show_search_form&tablename=fp_bowlgames">&nbsp;&nbsp;Search&nbsp;&nbsp;</td>-->
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ </td>
+ <td style="width:100%">
+  </td>
+ 
+
+
+ 
+</tr>
+</table>
+
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td class="table_interface_container_td_content">
+<table  class="table_interface_container_table_content"><tr>
+<td class="td_left_menu"><div class="main-menu-container"><ul class="main-menu"><li><a href="index.php?function=show_static_page&id_static_page=1">Home</a></li><li class="has-sub-menu"><a href="#"><i class="menu-icon-collapsed pull-right fa fa-caret-right"></i><i class="menu-icon-open pull-right fa fa-caret-down"></i>Links</a><ul class="sub-menu"><li><a href="index.php?function=show_static_page&id_static_page=2">Turn Entry</a></li><li><a href="index.php?function=show_static_page&id_static_page=3">PBM Sports</a></li><li><a href="index.php?function=show_static_page&id_static_page=4">Football Forum</a></li><li><a href="index.php?function=show_static_page&id_static_page=5">Baseball Forum</a></li></ul></li><li><a href="index.php?function=search&tablename=a_files">Files</a></li><li class="has-sub-menu"><a href="#"><i class="menu-icon-collapsed pull-right fa fa-caret-right"></i><i class="menu-icon-open pull-right fa fa-caret-down"></i>Baseball</a><ul class="sub-menu"><li><a href="index.php?function=show_static_page&id_static_page=33">Leagues</a></li><li><a href="index.php?function=search&tablename=bb_series">World Series</a></li></ul></li><li class="has-sub-menu"><a href="#"><i class="menu-icon-collapsed pull-right fa fa-caret-right"></i><i class="menu-icon-open pull-right fa fa-caret-down"></i>College Football</a><ul class="sub-menu"><li><a href="index.php?function=search&tablename=v_m_cgames">Games</a></li><li><a href="index.php?function=show_static_page&id_static_page=24">Teams</a></li><li><a href="index.php?function=show_static_page&id_static_page=28">Conferences</a></li><li><a href="index.php?function=search&tablename=v_g_OffCollegeRecords">Offense</a></li><li><a href="index.php?function=search&tablename=v_g_DefCollegeRecords">Defense</a></li><li><a href="index.php?function=search&tablename=fc_ncgames">National Championship Games</a></li><li><a href="index.php?function=search&tablename=fc_rosegames">Rose Bowl Games</a></li><li><a href="index.php?function=search&tablename=fc_cottongames">Cotton Bowl Games</a></li><li><a href="index.php?function=search&tablename=fc_orangegames">Orange Bowl Games</a></li><li><a href="index.php?function=search&tablename=fc_hawaiigames">Hawaii Bowl Games</a></li><li><a href="index.php?function=search&tablename=fc_motorgames">Motor City Bowl Games</a></li><li><a href="index.php?function=show_static_page&id_static_page=11">Bowl Summaries</a></li><li><a href="index.php?function=show_static_page&id_static_page=8">National Championship Records</a></li><li><a href="index.php?function=show_static_page&id_static_page=12">Rose Bowl Records</a></li><li><a href="index.php?function=show_static_page&id_static_page=13">Cotton Bowl Records</a></li><li><a href="index.php?function=show_static_page&id_static_page=14">Orange Bowl Records</a></li><li><a href="index.php?function=show_static_page&id_static_page=15">Hawaii Bowl Records</a></li><li><a href="index.php?function=show_static_page&id_static_page=16">Motor City Bowl Records</a></li></ul></li><li class="has-sub-menu"><a href="#"><i class="menu-icon-collapsed pull-right fa fa-caret-right"></i><i class="menu-icon-open pull-right fa fa-caret-down"></i>Pro Football</a><ul class="sub-menu"><li><a href="index.php?function=search&tablename=v_m_pgames">Games</a></li><li><a href="index.php?function=show_static_page&id_static_page=23">Teams</a></li><li><a href="index.php?function=show_static_page&id_static_page=29">Divisions</a></li><li><a href="index.php?function=search&tablename=v_g_OffProRecords">Offense</a></li><li><a href="index.php?function=search&tablename=v_g_DefProRecords">Defense</a></li><li><a href="index.php?function=search&tablename=fp_bowlgames">Bowl Games</a></li><li><a href="index.php?function=show_static_page&id_static_page=7">Bowl Records</a></li></ul></li></ul></div></td><td class="td_content" valign="top">
+<h1>Welcome to gameplan.org.uk</h1><p><em>April 2020</em></p> 
+<h3>This should not have happened. The page you requested does not exist (anymore).</h3>
+<p><a href="https://gameplan.org.uk/index.php">Go to the Home page.</a></p>
+<br>
+<br><br></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+
+
+<br><br>
+<div class="powered_by_dadabik" align="right">Powered by: <a href="https://dadabik.com/low-code-platform-features">DaDaBIK Low-code Development Platform</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/></div>
+</td>
+</tr>
+</table>
+<div class="modal"></div>
+<div class="confirmation_message"><h1>Done!</h1></div>
+
+
+
+
+
+
+<script>
+
+$(document).ready(function() {
+
+
+
+
+});
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+

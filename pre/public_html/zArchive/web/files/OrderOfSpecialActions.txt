@@ -1,0 +1,13 @@
+Order of Special Actions:
+I've been asked to clarify the order in which special actions are processed, so here goes. 
+
+Note that it doesn't matter which action (1-5) you write them in, unless it's the same action (so an ACTIVATE action 1 is processed before ACTIVATE action 2):- 
+
+Before Games  
+ACTIVATE, PROMOTE, RELEASE (note that players waived are placed temporarily on a "waive squad"), changes to game parameters, PLATOON, PINCH, NEWPOS, lineups. 
+
+After Games  FANS, STADIUM, MERC, COACH, TRAINER, MINORS, REHAB, Form changes, Stadium changes, ACCEPTS, OFFERS, LISTs, Free Agent Bids, Free Agent Signings, Waivers (from the "Waive Squad"), Income and Wages, Form Updates. 
+
+Waive Squad  Note that one of the wrinkles of the waive squad is that in preseason (and only preseason) you can waive a player and still select him the same turn (because he's on the Waive squad when games are processed). It's a minor wrinkle, and I can't see it being much use, but it's an option that's there if you want it. Outside of preseason, it doesn't apply.
+
+Renaming   and   financial   actions   (in   processing   order:-   FANS,   STADIUM,   MERC,   COACH,   TRAINER, REHAB, RENAME, SWAP, SCOUT, STATS, SIZE, SURFACE and BUILDING) plus free agent bids (see section 8) are processed after games have been run but before income and wages for the turn are processed, so the losing points you have available for all financial actions are your LP balance at the end of the previous turn. 

@@ -1,0 +1,1195 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: asmilnes@gmail.com
+Received: by 10.14.186.13 with SMTP id v13csp16703eem;
+        Sat, 2 Mar 2013 08:31:22 -0800 (PST)
+X-Received: by 10.14.210.132 with SMTP id u4mr39637661eeo.19.1362241881653;
+        Sat, 02 Mar 2013 08:31:21 -0800 (PST)
+Return-Path: <SRS0=wDyj=MW=virginmedia.com=danny.mcconnell66@srs.kundenserver.de>
+Received: from moutng.kundenserver.de (moutng.kundenserver.de. [212.227.17.10])
+        by mx.google.com with ESMTPS id x44si9813159eey.234.2013.03.02.08.31.21
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Sat, 02 Mar 2013 08:31:21 -0800 (PST)
+Received-SPF: pass (google.com: domain of SRS0=wDyj=MW=virginmedia.com=danny.mcconnell66@srs.kundenserver.de designates 212.227.17.10 as permitted sender) client-ip=212.227.17.10;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of SRS0=wDyj=MW=virginmedia.com=danny.mcconnell66@srs.kundenserver.de designates 212.227.17.10 as permitted sender) smtp.mail=SRS0=wDyj=MW=virginmedia.com=danny.mcconnell66@srs.kundenserver.de
+Received-SPF: pass (mxeu0: domain of virginmedia.com designates 209.85.212.175 as permitted sender) client-ip=209.85.212.175; envelope-from=danny.mcconnell66@virginmedia.com; helo=mail-wi0-f175.google.com;
+Received: from mail-wi0-f175.google.com (mail-wi0-f175.google.com [209.85.212.175])
+	by mx.kundenserver.de (node=mxeu0) with ESMTP (Nemesis)
+	id 0LanFc-1UeWKP0O1A-00kWAS for alan@gameplan.org.uk; Sat, 02 Mar 2013 17:31:21 +0100
+Received: by mail-wi0-f175.google.com with SMTP id l13so550036wie.2
+        for <alan@gameplan.org.uk>; Sat, 02 Mar 2013 08:31:20 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=x-received:message-id:from:subject:to:content-type:date
+         :x-gm-message-state;
+        bh=SCeKMKurpH2wiDpJlbWtFKf+lpT3HDHo70B1+UE4iUc=;
+        b=NVsUpKu/AU/tPcl0zLIBoKmQixQ17bDhFCvoiMg+qaz1Kg7QJrgvS1T6wLSxaj+riM
+         fccSqq1zAjjsO7viEFgDcnqRMouauYVjSqI/ZFSK9Zw+TiQOFREVOks7fGZjZEsl7XXV
+         0n91aB23tJvDSN3YTw67W589hfSDHXGQDhS1kz+4Yf9FKSlBOjBOujMqxEj5mrklQjny
+         JsUAqYPy9yI/ElylVhQgkXrajLMOp0tXFs/04kXbv3AeLSKiCUaVI0JnXIjDH+1OMCrx
+         wr/oVMRlu6qdwfb58t3n7MTEKNTlqbYiKOe8+h/Ww12ewoNq5aA23DZLZiVFMVrtHeTM
+         KK+g==
+X-Received: by 10.194.83.33 with SMTP id n1mr23584630wjy.7.1362241880630;
+        Sat, 02 Mar 2013 08:31:20 -0800 (PST)
+Return-Path: <danny.mcconnell66@virginmedia.com>
+Received: from Gromit (know-mailgateway-3.server.virginmedia.net. [62.254.26.105])
+        by mx.google.com with ESMTPS id er3sm3949289wib.1.2013.03.02.08.31.19
+        (version=TLSv1.1 cipher=RC4-SHA bits=128/128);
+        Sat, 02 Mar 2013 08:31:19 -0800 (PST)
+Message-ID: <51322957.a363b40a.0b24.08d7@mx.google.com>
+From: Danny McConnell <danny.mcconnell66@virginmedia.com>
+Subject: MLB8-NY, Turn 17
+To: alan@gameplan.org.uk
+Content-Type: text/plain
+Date: Sat, 2 Mar 2013 16:31:46 +0000
+X-Gm-Message-State: ALoCoQmG2AWiCvnN6bdrun/j4gYVQn4sVYjpOLVdTgzY8owaL2QoYAuy1bLn8Kpcq64tKa7HrrMz
+X-UI-Loop: V01:tx03K0b7G7g=:lQgbjAcQSPO3kue30o5gcvms1kFAW7pKt1TLSqgjLa0=
+
+alan@gameplan.org.uk
+0
+MLB8-NY, Turn 17
+<STARTREP>
+<BK.Team Report><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8  Team Report  Season 11   Week 17   2/3/13<ST.28.88.105.110><L.48.1>
+New York Yankees (Alan Milnes)    <L.48.1>
+<C>Turn Credits =  30.6  (deducted 1.2, includes full reports)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Acc Con Qui Sta<T>Sqd<T>MxB MxH MxE FIn MnB<C><L.42.1>
+52  C.C. Sabathia<T>Pit L   9 ACC    4   7  10   0   2  17   0   55 LP   5 LP<T> Ex  Ex  Go  Go <T>Act<T><T> 26   3   6   1  21<L.33.1>
+62  Joba Chamberlain<T>Pit R  10 QUI    5  10  12   0  -3   8   0   59 LP   5 LP<T> Go  Go  Ex  Ex <T>Act<T><T> 27   3   4   1  21<L.33.1>
+65  Phil Hughes<T>Pit R   9 CON    3   9  10   0  -3  14   0   48 LP   4 LP<T> Go  Ex  Go  Go <T>Act<T><T> 24   3   6   1  21<L.33.1>
+17  Kyle Farnsworth<T>Pit R   9 QUI    7   5  10   1   1  14   0   62 LP   6 LP<T> Go  Go  Go  Go <T>Act<T><T> 24   3   6   1  21<L.33.1>
+14  Mike Mussina<T>Pit R   9 ACC   14   0   9   2   2  12   0   63 LP   6 LP<T> Go  Go  Go  Go <T>Act<T><T> 26   3   6   1  21<L.33.1>
+<L.6.1>
+64  Jaret Wright<T>Pit R   8 CON    7   8   9   0  -6   5   0   48 LP   4 LP<T> Go  Go  Go  Av <T>Act<T><T>  9   3   4   1   1<L.33.1>
+ 8  Edgmer Escalona<T>Pit L   8 STA    5   1   8   0  -1   7   0   31 LP   3 LP<T> Av  Av  Go  Go <T>Act<T><T>  9   3   6   1   1<L.33.1>
+10  Ian Kennedy<T>Pit R   6 STA    3  13   8   0   1   1   0   17 LP   1 LP<T> Fa  Av  Fa  Av <T>Act<T><T>  9   3   6   1   1<L.33.1>
+15  John Washington<T>Pit R   6 QUI    4   8   7   1  -6  -5   0   15 LP   1 LP<T> Av  Av  Av  Av <T>Act<T><T>  9   3   6   1   1<L.33.1>
+71  Dellin Betances<T>Pit R   5 ACC    R  17   8   0   1  18   0   11 LP   1 LP<T> Av  Fa  Fa  Av <T>Act<T><T>  9   2   6   1   1<L.33.1>
+ 6  Steve Lee<T>Pit L   4 ACC    1  13   6   0   2  10   0   10 LP   1 LP<T> Fa  Fa  Fa  Fa <T>Act<T><T>  9   2   6   1   1<L.33.1>
+<L.6.1>
+ 9  Dan Hudson<T>Pit R   7 QUI    3   7   8   1   1  11   0   25 LP   2 LP<T> Av  Go  Go  Fa <T>Act<T><T>  9   4   6   1   1<L.33.1>
+18  Bobby Bolin<T>Pit L   8 CON    7   4   8   1  -2  -5   0   42 LP   4 LP<T> Av  Go  Go  Go <T>Act<T><T>  9   3   6   1   1<L.33.1>
+<L.6.1>
+ 5  Andy Lee<T>Pit R   6 QUI    2  11   8   0   2  -2   0   17 LP   1 LP<T> Fa  Fa  Av  Av <T>Act<T><T>  9   3   6   1   1<L.33.1>
+<L.6.1>
+ 1  Yahon Pino<T>Pit R   6 CON    4  11   8   0   0  11<Z>   1<C>   19 LP   1 LP<T> Av  Av  Fa  Av <T>Res<T><T>  9   2   6   1   1<L.33.1>
+<L.6.1>
+<Z>Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Hit Pow Spd Fld<T>Sqd<T>Pos vRH Plt Pin<L.42.1>
+<C>21  Gary Sheffield<T>Bat R  10 HIT    9   4  10   5   0+ 25<Z>   9<C>   73 LP   7 LP<T> WC  Go  Ex  Av <T>Act<T> RF  LF        <L.33.1>
+11  David Dellucci<T>Bat L  10 POW   11   4  10   4   4  39   0   91 LP   9 LP<T> Ex  WC  Go  Go <T>Act<T> RF  CF        <L.33.1>
+36  Nick Johnson<T>Bat L  10 HIT   11   2  10   3  -3  19   0   92 LP   9 LP<T> Ex  Go  Ex  Ex <T>Act<T> SS  SS        <L.33.1>
+ 2  Derek Jeter<T>Bat R  11 HIT   14   5  12   2   4  41   0  132 LP  13 LP<T> Ex  Ex  Go  Ex <T>Act<T> 3B  3B        <L.33.1>
+24  Ruben Sierra<T>Bat L   9 POW   11   2   9   3  -6  16   0   60 LP   6 LP<T> Go  Ex  Go  Go <T>Act<T> 2B  2B        <L.33.1>
+83  Jesus Montero<T>Bat L   8 POW    1   7   9   0  -1   9   0   25 LP   2 LP<T> Go  Go  Av  Av <T>Act<T> RF  RF      CF<L.33.1>
+20  Jorge Posada<T>Cat R   8 HIT    6   5   9   3   3  27   0   49 LP   4 LP<T> Go  Go  Av  Go <T>Act<T>  C   C        <L.33.1>
+12  Joey Gathright<T>Bat S   8 HIT    4   6   9   0  -5   5   0   38 LP   3 LP<T> Ex  Go  Av  Av <T>Act<T> RF  DH  DH  DH<L.33.1>
+16  Paul Kelly<T>Cat L   7 HIT    7   4   7   0   4+ 20   0   25 LP   2 LP<T> Go  Av  Av  Av <T>Act<T>  C  1B        <L.33.1>
+<L.6.1>
+ 7  Tony Graffanino<T>Bat R   8 HIT   14   1   8   0   0  -6   0   36 LP   3 LP<T> Go  Av  Go  Go <T>Act<T> SS   -        <L.33.1>
+27  Raul Ibanez<T>Bat L   8 FLD    R  10  10   0   1   7   0   23 LP   2 LP<T> Go  Go  Fa  Go <T>Act<T> 1B   -        <L.33.1>
+<L.6.1>
+ 3  Scott Brown<T>Cat S   5 POW    R  15   8   0  -1  23   0   13 LP   1 LP<T> Fa  Av  Fa  Fa <T>Res<T>  C   -       C<L.33.1>
+ 4  Joseph Winker<T>Bat R   7 FLD    R   9   8   0   1   1   0   16 LP   1 LP<T> Fa  Go  Av  Go <T>Res<T> 3B   -        <L.33.1>
+13  Joe Washington<T>Bat L   6 SPD    1  13   8   0   0   0   0   16 LP   1 LP<T> Av  Av  Go  Fa <T>Res<T> RF   -      OF<L.33.1>
+<L.6.1>
+Key to Ratings: Po = Poor, Fa = Fair, Av = Average, Go = Good, Ex = Excellent, WC = World Class. Pos is Primary Field Position.<ST.20.64.86.98.120><L.48.1>
+<Z>Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  52  62  65  17  14<L.36.1>
+<Z>Shirt Number:<C><T>  20  16  24   2  36<Z>  21<C>  11  83  12<T><Z>Bullpen Depth Chart:<C><T>  64   8  10  15  71   6<L.36.1>
+<Z>Batting Order:<C><T>   7   9   5   4   3   1   2   6   8<T><Z>Setup Pitcher:<C><T>   9<T><Z>Closing Pitcher:<C><T>  18<ST.20.32.64.86.98.120><L.36.1>
+<Z>Platoon Hitter 1:<C><T>  25  1B<T><Z>Platoon Hitter 2:<C>  12  DH<T><Z>Opposite Hand: <C><T>  NO<T><Z>Starter Innings:<C><T>   3<T><L.36.1>
+<Z>Platoon Hitter 3:<C><T>  none<T><Z>Platoon Hitter 4:<C>  none<T><Z>Minimum Lead:<C><T>   1<T><Z>Maximum Lead:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 1:  <C><T>  12  DH<T><Z>Pinch Hitter 2:  <C>   3   C<T><Z>Long Relief Pitcher: <T><C>   5<T><Z>Long Innings:<C><T>   4<T><L.36.1>
+<Z>Pinch Hitter 3:  <C><T>  83  CF<T><Z>Pinch Hitter 4:  <C>  13  OF<T><Z>Blowout Innings:<C><T>   7<T><Z>Blowout Margin:<C><T>   8<T><L.36.1>
+<Z>Pinch Innings: <C><T>   8<Z><T>Pinch Deficit: <C>     5<ST.32.64.86.98.120><L.45.1>
+<Z>Stadium Size:        <C>Small<T><Z>Stadium Surface:  <C>Grass<T><Z>Stadium Building:       <C>Open<ST.22.32.42.52.64.88.98.108.118><L.36.1>
+<Z>Batting Training:<C><T>HIT 16<T>POW 35<T>SPD  0<T>FLD  0<Z><T>Pitching Training:<C><T>ACC  0<T>CON  0<T>QUI  0<T>STA  0<ST.20.32.49.64.86.98.120><L.45.1>
+<Z>Losing Points:<C><T>  20<T><Z>Base Income:<C><T>  78<T><Z>Fans Income:<C><T>  36<T><Z>Stadium Income:<C><T>  10<T><L.36.1>
+<Z>Merchandise Income:<C><T>   4<T><Z>Trade Income:<C><T>  13<T><Z>Trade Costs:<C><T>  36<T><Z>Overall Costs:<C><T>   2<T><L.36.1>
+<Z>Wages Paid:<C><T> 108<T><Z>Total Fans:<C><T>  36,216<T><Z>Stadium Level:<C><T>  10<T><Z>Merchandising:<C><T> 136<T><L.36.1>
+<Z>Current Wages:<C><T> 108<T><Z>Trainer Level:<C><T>  10<T><Z>Minor League System:<C><T>   2<T><Z>Full Reports:<C><T> Yes<L.36.1>
+<Z>Postal Reports:<C><T>  No<T><Z>Email Reports:<C><T>  Text<T><Z>Email Address: <C>alan@gameplan.org.uk<ST.22><L.45.1>
+<Z>Special Actions:<C><T>ADDFORM 21 for 2 weeks: OK, cost 2 LP<L.39.1>
+<T>ACTIVATE 8 for 1: OK, 8 activated to replace 1<L.39.1>
+<T>SCOUT 15: OK, Pit L 7. Pt 15, Ex R, Fm 0, TF 0, Val 20 LP. ACC Go CON Go QUI Av STA Fa<L.39.1>
+<T>SCOUT 16: OK, Pit L 7. Pt 15, Ex R, Fm 0, TF 0, Val 19 LP. ACC Fa CON Av QUI Go STA Fa<L.39.1>
+<T>SCOUT 17: OK, Pit L 8. Pt 9, Ex R, Fm 0, TF 0, Val 25 LP. ACC Av CON Go QUI Av STA Go<L.39.1>
+<L.3.1>
+<Z>Free Agent Bid:<C><T>126 for 36 LP to replace 25: OK, 7 Tony Graffanino (ex-BR) signed, net cost 23 LP (13 LP compensation)<L.42.1>
+<Z>Injuries/Holdouts:<C><T>1 Yahon Pino - Sore Shoulder, 1 game. 21 Gary Sheffield - Sprained Ankle, 9 games. <L.42.1>
+<ST.22.58.95><L.1.1>
+<Z>Forthcoming Series:<C><T>vs Rays. Out 52 <T>vs Indians. Out 9 1 <T>at Angels. Out 8 <L.42.1>
+<L.1.1>
+<D><E><P>
+<BK.Team Stats><ST.30.90.97.104><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL   MLB8  Regular Season 11 Totals   Week 17   2/3/13<L.48.1>
+New York Yankees  (Alan Milnes)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.25.90.98.103.111.118.124><L.48.1>
+Individual Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+ 6 Steve Lee<T> 13    0    0    7   17 2/3    14    7    5    1    8   14    2<T>  3-0<T>  1<T>  0-0<T>  4.08<T> .208<T>  2.55<L.36.1>
+ 9 Dan Hudson<T> 34    0    0    8   31 1/3    21   13   10    3    8   16    4<T>  1-2<T>  7<T>  0-0<T>  4.60<T> .182<T>  2.87<L.36.1>
+14 Mike Mussina<T> 29   29    0    0  151 1/3   159   68   61   12   47  133   11<T>  9-3<T>  0<T> 19-10<T>  5.47<T> .259<T>  3.63<L.36.1>
+62 Joba Chamberlain<T> 32   32    1    1  172 1/3   173   77   70   14   50  135   16<T> 12-9<T>  0<T> 18-14<T>  6.21<T> .250<T>  3.66<L.36.1>
+65 Phil Hughes<T> 32   32    1    1  165 1/3   163   75   70   17   49  128   18<T> 10-8<T>  0<T> 20-12<T>  5.88<T> .247<T>  3.81<L.36.1>
+17 Kyle Farnsworth<T> 31   31    1    1  165       145   76   70   14   52  103   11<T> 10-7<T>  0<T> 15-16<T>  5.95<T> .226<T>  3.82<L.36.1>
+52 C.C. Sabathia<T> 30   28    1    2  174 1/3   169   79   75   14   57  120   26<T> 11-8<T>  0<T> 14-14<T>  5.16<T> .244<T>  3.87<L.36.1>
+ 8 Edgmer Escalona<T> 52    1    0   23  107 1/3   111   54   48   19   34   69   11<T>  6-8<T>  5<T>  1-0<T>  3.35<T> .256<T>  4.02<L.36.1>
+ 1 Yahon Pino<T> 42    0    0   20   62 1/3    62   36   30   10   37   34    8<T>  7-7<T>  1<T>  0-0<T>  6.21<T> .248<T>  4.33<L.36.1>
+64 Jaret Wright<T> 53    0    0   27   67 2/3    75   42   35   11   23   45    8<T>  2-4<T> 21<T>  0-0<T>  2.13<T> .269<T>  4.66<L.36.1>
+10 Ian Kennedy<T> 46    0    0   17   62 1/3    67   39   34   12   32   36   11<T>  7-5<T>  3<T>  0-0<T>  6.93<T> .263<T>  4.91<L.36.1>
+71 Dellin Betances<T> 10    0    0    8   14        19   12    8    4    7    6    0<T>  0-1<T>  0<T>  0-0<T>  5.79<T> .311<T>  5.14<L.36.1>
+ 5 Andy Lee<T> 38    0    0   13   60 2/3    51   48   37   14   38   40   14<T>  1-1<T>  3<T>  0-0<T>  6.08<T> .218<T>  5.49<L.36.1>
+18 Bobby Bolin<T> 13    3    0    7   41 2/3    46   30   26    5   22   26    5<T>  1-2<T>  2<T>  2-1<T>  6.48<T> .269<T>  5.62<L.36.1>
+15 John Washington<T> 33    0    0   12   42        52   37   30   12   26   28    8<T>  5-1<T>  2<T>  0-0<T>  7.07<T> .292<T>  6.43<L.36.1>
+<L.9.1>
+<Z>Team Pitching<T>153  153    4  153 1359 2/3  1360  718  630  173  505  941  154<T> 87-66<T> 45<T> 87-66<T>  5.50<T> .250<T>  4.17<C><L.18.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>Individual Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+11 David Dellucci rf<T>150  614  105  200  382   64   8  34  122   44   8  31   90  24   4   1  251    6<T> .984<T> .325<T> .382<T> .622<L.36.1>
+21 Gary Sheffield rf<T>149  620  119  199  370   67  13  26  108   43  10  23   86  19   4   0  234   12<T> .984<T> .320<T> .380<T> .596<L.36.1>
+ 2 Derek Jeter 3b<T>135  559  115  176  363   53   7  40  112   46   4  19  104  47   4  26   79  309<T> .989<T> .314<T> .373<T> .649<L.36.1>
+83 Jesus Montero rf<T> 43  159   21   48   70   13   0   3   13   14   0   4   32   1   0   0   12    1<T>1.000<T> .301<T> .358<T> .440<L.36.1>
+36 Nick Johnson ss<T>129  526   85  151  268   45   3  22   76   59  10  29   97  35  20  73  303  304<T> .968<T> .287<T> .376<T> .509<L.36.1>
+20 Jorge Posada c<T>141  540   67  149  253   33   1  23   83   41   7   9   91  24   5  12  400   68<T> .989<T> .275<T> .339<T> .468<L.36.1>
+16 Paul Kelly c<T> 53  190   27   51   83   10   2   6   31   23   1   1   32   4   4  14  193   17<T> .981<T> .268<T> .352<T> .436<L.36.1>
+24 Ruben Sierra 2b<T>144  586  102  157  281   37   6  25   91   54   6  13   95  50  35 114  239  530<T> .956<T> .267<T> .339<T> .479<L.36.1>
+12 Joey Gathright rf<T>100  395   57   93  152   27   1  10   42   48   7   5   56  11   0   0   90    4<T>1.000<T> .235<T> .334<T> .384<L.36.1>
+ 7 Tony Graffanino ss<T> 79  318   30   65   96   17   4   2   13   20   1  15   57  28   2  31   94  169<T> .992<T> .204<T> .254<T> .301<L.36.1>
+13 Joe Washington rf<T> 55  184   17   35   42    7   0   0    7   12   0   2   33   0   1   0   23    1<T> .960<T> .190<T> .239<T> .228<L.36.1>
+27 Raul Ibanez 1b<T> 62  235   23   44   53    6   0   1   15   15   2   0   45   5  10  41  421   18<T> .977<T> .187<T> .244<T> .225<L.36.1>
+ 4 Joseph Winker 3b<T>  5   18    0    3    4    1   0   0    0    0   0   0    3   0   0   0    0    0<T> .000<T> .166<T> .166<T> .222<L.36.1>
+ 3 Scott Brown c<T>  2    2    0    0    0    0   0   0    0    0   0   0    1   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+<L.9.1>
+<Z>Team Batting<T>153 5456  831 1511 2656  417  46 212  798  468  60 145  931 260 110 130 3138 1472<T> .976<T> .276<T> .344<T> .486<ST.24.78.100><L.48.1>
+Selection Orders This Turn<L.48.1>
+Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  62  65  17  14  52<L.39.1>
+<Z>Shirt Number:<C><T>  20  16  24   2  36  21  11  83  12<T><Z>Bullpen Depth Chart:<C><T>  64   8  10  15  71   6<L.39.1>
+<Z>Batting Order:<C><T>   7   9   5   4   3   1   2   6   8<T><Z>Setup Pitcher:<C><T>   9<L.39.1>
+<T><T><Z>Closing Pitcher:<C><T>  18<L.39.1>
+<Z>Lineup Changes:<C><T>  none ordered<L.39.1>
+<Z>Pitching Changes:<C><T>  Shirt 62:  MxB  -   MxH  -   MxE  -   FIn  -   MnB 21   <L.39.1>
+<T>  Shirt 14:  MxB  -   MxH  -   MxE  -   FIn  -   MnB 21   <L.39.1>
+<T>  Shirt 18:  MxB  9   MxH  3   MxE  -   FIn  -   MnB  -   <L.39.1>
+<Z>Training & Practice:<C><T>  Series 1: Train Skill - HIT     Bonus Skill - HIT     Bonus Player - 20     Key Player - 26<L.39.1>
+<T>  Series 2: Train Skill - HIT     Bonus Skill - HIT     Bonus Player - 20     Key Player -  6<L.39.1>
+<T>  Series 3: Train Skill - POW     Bonus Skill - POW     Bonus Player - 20     Key Player - 55<L.39.1>
+<ST.24.78><L.9.1>
+<Z>Enforced Selection Changes This Turn<L.48.1>
+<C>All OK, no selection changes required<L.1.1>
+<D><E><DU>
+<BK.Series 1><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 1: New York Yankees (85-59) at Boston Red Sox (68-76)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NY  1st  <C><U>Smithberg<UC> on mound. Sheffield struck out. Dellucci ground out to 1B (SS). Johnson ground out to 1B (2B).<L.33.1>
+<Z>BR  1st  <C><U>Chamberlain<UC> on mound. Kotchman struck out. Ellsbury singled to P. Roberts doubled to CF, Ellsbury to 3rd. Baerga walked. <L.30.1>
+         Aybar struck out. Jones ground out to 1B (2B).<L.33.1>
+<Z>NY  2nd  <C>Jeter flied out to C. Sierra ground out to 1B (2B, field save). Montero ground out to 1B (SS).<L.33.1>
+<Z>BR  2nd  <C>Brown walked. Salt'macchia singled to CF, Brown to 2nd. Pedroia struck out. Kotchman struck out. Ellsbury homered to LF, <L.30.1>
+         Brown scored, Salt'macchia scored, <Z>BR 3-0<C>. Roberts singled to LF. Baerga walked, Roberts to 2nd. Aybar ground out to <L.30.1>
+         1B (3B).<L.33.1>
+<Z>NY  3rd  <C>Posada ground out to 1B (2B). Gathright flied out to C, field save. Teixeira ground out to 1B (2B).<L.33.1>
+<Z>BR  3rd  <C>Jones ground out to 1B (2B). Brown flied out to CF. Salt'macchia singled, error by 2B. Salt'macchia stole 2nd. Pedroia <L.30.1>
+         walked. Kotchman struck out.<L.33.1>
+<Z>NY  4th  <C>Sheffield struck out. Dellucci homered to CF, <Z>BR 3-1<C>. Johnson flied out to CF. Jeter doubled to CF. Sierra singled to <L.30.1>
+         LF, Jeter to 3rd. Montero ground out to 1B (SS).<L.33.1>
+<Z>BR  4th  <C>Ellsbury singled to RF. Roberts struck out. Baerga walked, Ellsbury to 2nd. Aybar struck out. Jones singled, error by SS, <L.30.1>
+         Ellsbury to 3rd, Baerga to 2nd. Brown ground out to 1B (3B).<L.33.1>
+<Z>NY  5th  <C>Posada doubled to LF. Gathright walked. Teixeira flied out to C. Sheffield walked, Posada to 3rd, Gathright to 2nd. <L.30.1>
+         Dellucci struck out. Johnson ground out to 1B (2B).<L.33.1>
+<Z>BR  5th  <C>Salt'macchia singled to LF. Salt'macchia forced out at 2B (SS), Pedroia ground into double play at 1B (2B). <U>Escalona<UC> <L.30.1>
+         took over on mound. Kotchman doubled to CF. Ellsbury homered to CF, Kotchman scored, <Z>BR 5-1<C>. Roberts tripled to CF. <L.30.1>
+         Baerga ground out to 1B (2B).<L.33.1>
+<Z>NY  6th  <C>Jeter flied out to CF. Sierra ground out to 1B (SS, field save). Montero ground out to 1B (3B).<L.33.1>
+<Z>BR  6th  <C><U>Washington<UC> took over on mound. Aybar doubled to LF. Jones struck out. Brown singled to CF, Aybar to 3rd. Salt'macchia <L.30.1>
+         reached 1st, Brown forced out at 2B (C). Pedroia ground out to 1B (SS).<L.33.1>
+<Z>NY  7th  <C>Posada flied out to RF, field save. Gathright flied out to C. Teixeira flied out to LF.<L.33.1>
+<Z>BR  7th  <C>Kotchman struck out. Ellsbury doubled to RF. Roberts homered to LF, Ellsbury scored, <Z>BR 7-1<C>. Baerga ground out to 1B <L.30.1>
+         (2B). Aybar homered to RF, <Z>BR 8-1<C>. Jones struck out.<L.33.1>
+<Z>NY  8th  <C><U>Washington<UC> pinch hitting at LF. Washington singled to RF. <U>Dinardo<UC> took over on mound. Dellucci singled to LF, Washington <L.30.1>
+         to 3rd. Dellucci stole 2nd. Johnson ground out to 1B (SS). Jeter struck out. Sierra ground out to 1B (3B).<L.33.1>
+<Z>BR  8th  <C><U>Betances<UC> took over on mound. Brown ground out to 1B (C). Salt'macchia flied out to CF. Pedroia struck out.<L.33.1>
+<Z>NY  9th  <C>Montero walked. Montero forced out at 2B (SS), Posada ground into double play at 1B (2B). Gathright flied out to SS.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,0) <Z> 0 <C>(1,2) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,1d)<T><Z>  1<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(2,1) <Z> 3 <C>(3,2) <Z> 0 <C>(0,1) <Z> 0 <C>(1,1) <Z> 2 <C>(4,0d)<Z> 0 <C>(2,0) <Z> 3 <C>(3,0) <Z> 0 <C>(0,0) <Z> x       <T>  8<C><ST.24.66.90><L.42.1>
+<Z>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+21 Gary Sheffield lf<T> 2  0  0  0  0  0  0  1  0  0  2  0  0<T>26 Casey Kotchman c <T> 5  1  1  1  0  0  0  0  0  0  4  0  0<L.30.1>
+11 David Dellucci cf<T> 4  1  2  0  0  1  1  0  0  1  1  0  0<T>46 Jason Ellsbury cf<T> 5  3  5  1  0  2  5  0  0  0  0  0  0<L.30.1>
+36 Nick Johnson ss<T> 4  0  0  0  0  0  0  0  0  0  0  1  1<T>31 Dave Roberts lf<T> 5  1  4  1  1  1  2  0  0  0  1  0  0<L.30.1>
+ 2 Derek Jeter 3b<T> 4  0  1  1  0  0  0  0  0  0  1  0  0<T> 9 Carlos Baerga 1b<T> 2  0  0  0  0  0  0  3  0  0  0  1  0<L.30.1>
+24 Ruben Sierra 2b<T> 4  0  1  0  0  0  0  0  0  0  0  1  1<T>35 Erick Aybar 3b<T> 5  1  2  1  0  1  1  0  0  0  2  0  0<L.30.1>
+83 Jesus Montero rf<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>14 Carl Jones ss<T> 5  0  0  0  0  0  0  0  0  0  2  1  0<L.30.1>
+20 Jorge Posada c <T> 4  0  1  1  0  0  0  0  0  0  0  0  0<T>50 Dusty Brown dh<T> 4  1  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+12 Joey Gathright dh<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>39 J.Salt'macchia rf<T> 5  1  2  0  0  0  0  0  0  1  0  0  0<L.30.1>
+25 Mark Teixeira 1b<T> 3  0  0  0  0  0  0  0  0  0  0  1  0<T>25 Dustin Pedroia 2b<T> 4  0  0  0  0  0  0  1  0  0  2  1  0<L.30.1>
+13 Joe Washington lf<T> 1  0  1  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>32  1  6  2  0  1  1  3  0  1  4  3  2<T>Totals<T>40  8 15  4  1  4  8  5  0  1 11  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+47 Roger Smithberg (w)<T> 7        5  1  1  1  2  3  4B    1<T>62 J.Chamberlain (l)<T> 4 2/3    7  3  3  1  5  7  3B    0<L.30.1>
+29 Lenny Dinardo<T> 2        1  0  0  0  1  1  1     0<T> 8 Edgmer Escalona<T>   1/3    3  2  2  1  0  0  1H    0<L.30.1>
+<T><T>15 John Washington<T> 2        5  3  3  2  0  3  2H    0<L.30.1>
+<T><T>71 Dellin Betances<T> 1        0  0  0  0  0  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 2: New York Yankees (85-60) at Boston Red Sox (69-76)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NY  1st  <C><U>Hansen<UC> on mound. Sheffield flied out to RF. Dellucci ground out to 1B (3B). Johnson flied out to LF.<L.33.1>
+<Z>BR  1st  <C><U>Hughes<UC> on mound. Kotchman flied out to C. Ellsbury singled to RF. Roberts struck out. Baerga ground out to 1B (2B).<L.33.1>
+<Z>NY  2nd  <C>Jeter doubled to RF. Sierra struck out. Montero singled to CF, Jeter scored, <Z>NY 1-0<C>. Posada struck out. Gathright <L.30.1>
+         flied out to LF.<L.33.1>
+<Z>BR  2nd  <C>Aybar flied out to CF, field save. Jones flied out to C. Brown flied out to LF.<L.33.1>
+<Z>NY  3rd  <C>Kelly singled to CF. Sheffield doubled to CF, Kelly to 3rd. Dellucci ground out to 1B (2B). Johnson ground out to 1B <L.30.1>
+         (3B). Jeter ground out to 1B (2B).<L.33.1>
+<Z>BR  3rd  <C>Salt'macchia singled to LF. Pedroia flied out to CF. Kotchman struck out. Ellsbury flied out to C.<L.33.1>
+<Z>NY  4th  <C>Sierra ground out to 1B (SS). Montero ground out to 1B (3B). Posada flied out to LF.<L.33.1>
+<Z>BR  4th  <C>Roberts flied out to SS. Baerga singled to P. Aybar sacrificed to LF, Baerga to 2nd. Jones struck out.<L.33.1>
+<Z>NY  5th  <C>Gathright flied out to 3B. Kelly flied out to C. Sheffield flied out to RF.<L.33.1>
+<Z>BR  5th  <C>Brown struck out. Salt'macchia ground out to 1B (3B). Pedroia ground out to 1B (RF).<L.33.1>
+<Z>NY  6th  <C>Dellucci ground out to 1B (SS, field save). Johnson walked. Jeter flied out to SS. Sierra flied out to CF.<L.33.1>
+<Z>BR  6th  <C>Kotchman singled to RF. Kotchman stole 2nd. Ellsbury flied out to C. Roberts tripled to CF, Kotchman scored, <Z>1-1<C>. <L.30.1>
+         Baerga singled to LF, Roberts scored, <Z>BR 2-1<C>. <U>Wright<UC> took over on mound. Aybar struck out. Jones singled to LF, Baerga <L.30.1>
+         to 2nd. Brown singled to LF, Baerga to 3rd, Jones to 2nd. Salt'macchia walked, Baerga scored, Jones to 3rd, Brown to 2nd, <L.30.1>
+         <Z>BR 3-1<C>. <U>Kennedy<UC> took over on mound. Pedroia struck out.<L.33.1>
+<Z>NY  7th  <C>Montero singled to 2B. Posada struck out. <U>Tazawa<UC> took over on mound. Montero forced out at 2B (SS), Gathright ground <L.30.1>
+         into double play at 1B (2B).<L.33.1>
+<Z>BR  7th  <C>Kotchman flied out to CF. Ellsbury flied out to LF. Roberts singled to RF. Baerga singled to RF, Roberts to 3rd. Baerga <L.30.1>
+         stole 2nd. Aybar ground out to 1B (SS).<L.33.1>
+<Z>NY  8th  <C>Kelly struck out. Sheffield ground out to 1B (3B). Dellucci struck out.<L.33.1>
+<Z>BR  8th  <C>Jones walked. Brown struck out. Jones forced out at 2B (SS), Salt'macchia ground into double play at 1B (2B).<L.33.1>
+<Z>NY  9th  <C>Johnson ground out to 1B (3B). Jeter flied out to SS. Sierra singled to CF. Montero struck out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <T><Z>  1<C><L.33.1>
+<Z>Red Sox<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 3 <C>(5,1) <Z> 0 <C>(2,0) <Z> 0 <C>(0,1d)<Z> x       <T>  3<C><ST.24.66.90><L.42.1>
+<Z>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+21 Gary Sheffield lf<T> 4  0  1  1  0  0  0  0  0  0  0  0  0<T>26 Casey Kotchman c <T> 4  1  1  0  0  0  0  0  0  1  1  0  0<L.30.1>
+11 David Dellucci cf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>46 Jason Ellsbury cf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+36 Nick Johnson ss<T> 3  0  0  0  0  0  0  1  0  0  0  1  0<T>31 Dave Roberts lf<T> 4  1  2  0  1  0  1  0  0  0  1  0  0<L.30.1>
+ 2 Derek Jeter 3b<T> 4  1  1  1  0  0  0  0  0  0  0  0  0<T> 9 Carlos Baerga 1b<T> 4  1  3  0  0  0  1  0  0  1  0  1  0<L.30.1>
+24 Ruben Sierra 2b<T> 4  0  1  0  0  0  0  0  0  0  1  1  0<T>35 Erick Aybar 3b<T> 3  0  0  0  0  0  0  0  1  0  1  0  0<L.30.1>
+83 Jesus Montero rf<T> 4  0  2  0  0  0  1  0  0  0  1  0  0<T>14 Carl Jones ss<T> 3  0  1  0  0  0  0  1  0  0  1  1  0<L.30.1>
+20 Jorge Posada c <T> 3  0  0  0  0  0  0  0  0  0  2  0  0<T>50 Dusty Brown dh<T> 4  0  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+12 Joey Gathright dh<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<T>39 J.Salt'macchia rf<T> 3  0  1  0  0  0  1  1  0  0  0  0  0<L.30.1>
+16 Paul Kelly 1b<T> 3  0  1  0  0  0  0  0  0  0  1  1  0<T>25 Dustin Pedroia 2b<T> 3  0  0  0  0  0  0  0  0  0  1  1  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>32  1  6  2  0  0  1  1  0  0  6  3  0<T>Totals<T>32  3 10  0  1  0  3  2  1  2  7  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+56 Craig Hansen (w)<T> 6 1/3    5  1  1  0  1  3  3B    1<T>65 Phil Hughes (l)<T> 5 1/3    6  3  3  0  0  4  3H    1<L.30.1>
+11 Junichi Tazawa (s)<T> 2 2/3    1  0  0  0  0  3  0     0<T>64 Jaret Wright<T>   1/3    2  0  0  0  1  1  1H    3<L.30.1>
+<T><T>10 Ian Kennedy<T> 2 1/3    2  0  0  0  1  2  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 3: New York Yankees (85-61) at Boston Red Sox (70-76)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NY  1st  <C><U>Vazquez<UC> on mound. Sheffield flied out to RF. Dellucci flied out to 3B, field save. Johnson flied out to LF.<L.33.1>
+<Z>BR  1st  <C><U>Farnsworth<UC> on mound. Kotchman walked. Ellsbury doubled to CF, Kotchman scored, <Z>BR 1-0<C>. Roberts homered to CF, Ellsbury <L.30.1>
+         scored, <Z>BR 3-0<C>. Baerga ground out to 1B (SS). Aybar flied out to CF. Jones ground out to 1B (3B).<L.33.1>
+<Z>NY  2nd  <C>Jeter singled to CF. Sierra singled to CF, Jeter to 2nd. Montero ground out to 1B (SS). Posada flied out to RF. Jeter <L.30.1>
+         stole 3rd. Gathright ground out to 1B (SS).<L.33.1>
+<Z>BR  2nd  <C>Brown struck out. Salt'macchia doubled to LF. Pedroia sacrificed to LF, Salt'macchia to 3rd. Kotchman ground out to 1B <L.30.1>
+         (3B).<L.33.1>
+<Z>NY  3rd  <C>Kelly flied out to CF. Sheffield flied out to C. Dellucci doubled to CF. Johnson doubled to RF, Dellucci scored, <L.30.1>
+         <Z>BR 3-1<C>. Jeter flied out to LF, field save.<L.33.1>
+<Z>BR  3rd  <C>Ellsbury ground out to 1B (2B). Roberts flied out to CF. Baerga flied out to LF.<L.33.1>
+<Z>NY  4th  <C>Sierra flied out to CF. Montero singled to 3B. Posada flied out to SS. Gathright doubled to RF, Montero to 3rd. Kelly <L.30.1>
+         singled to RF, Montero scored, Gathright to 3rd, <Z>BR 3-2<C>. Sheffield singled to CF, Gathright scored, Kelly to 2nd, <L.30.1>
+         <Z>3-3<C>. Dellucci flied out to LF, field save.<L.33.1>
+<Z>BR  4th  <C>Aybar ground out to 1B (2B). Jones ground out to 1B (2B). Brown flied out to CF.<L.33.1>
+<Z>NY  5th  <C><U>Tazawa<UC> took over on mound. Johnson struck out. Jeter struck out. Sierra flied out to 1B.<L.33.1>
+<Z>BR  5th  <C>Salt'macchia struck out. Pedroia flied out to CF. Kotchman walked. Ellsbury ground out to 1B (3B).<L.33.1>
+<Z>NY  6th  <C>Montero struck out. Posada struck out. Gathright ground out to 1B (2B).<L.33.1>
+<Z>BR  6th  <C>Roberts ground out to 1B (3B). Baerga doubled to CF. Aybar ground out to 1B (2B). Jones singled, error by LF, Baerga <L.30.1>
+         scored, <Z>BR 4-3<C>. <U>Escalona<UC> took over on mound. Jones stole 2nd. Brown struck out.<L.33.1>
+<Z>NY  7th  <C>Kelly homered to LF, <Z>4-4<C>. Sheffield struck out. Dellucci struck out. Johnson singled to RF. Jeter singled to RF, <L.30.1>
+         Johnson to 3rd. <U>Dinardo<UC> took over on mound. Sierra walked, Jeter to 2nd. Montero struck out.<L.33.1>
+<Z>BR  7th  <C>Salt'macchia ground out to 1B (2B). Pedroia flied out to SS. Kotchman walked. Kotchman stole 2nd. Ellsbury ground out to <L.30.1>
+         1B (2B).<L.33.1>
+<Z>NY  8th  <C>Posada flied out to 2B. Gathright struck out. Kelly flied out to C.<L.33.1>
+<Z>BR  8th  <C>Roberts flied out to SS. Baerga singled, error by SS. Aybar reached 1st, Baerga forced out at 2B (3B). Jones ground out <L.30.1>
+         to 1B (2B).<L.33.1>
+<Z>NY  9th  <C>Sheffield walked. Dellucci walked, Sheffield to 2nd. Johnson singled to CF, Sheffield to 3rd, Dellucci to 2nd. <U>Diamond<UC> <L.30.1>
+         took over on mound. Jeter sacrificed to CF, Sheffield scored, Dellucci to 3rd, Johnson to 2nd, <Z>NY 5-4<C>. Sierra ground <L.30.1>
+         out to 1B (3B). Montero ground out to 1B (2B, field save).<L.33.1>
+<Z>BR  9th  <C><U>Bolin<UC> took over on mound. Brown ground out to 1B (3B). Salt'macchia singled to CF. Pedroia walked, Salt'macchia to 2nd. <L.30.1>
+         Kotchman struck out. Ellsbury walked, Salt'macchia to 3rd, Pedroia to 2nd. <U>Betances<UC> took over on mound. Roberts singled <L.30.1>
+         to RF, Salt'macchia scored, Pedroia scored, Ellsbury to 2nd, <Z>BR 6-5<C>.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 1 <C>(2,0) <Z> 2 <C>(4,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,1) <Z> 0 <C>(0,0) <Z> 1 <C>(1,2) <T><Z>  5<C><L.33.1>
+<Z>Red Sox<C><T><Z> 3 <C>(2,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 1 <C>(1,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 2 <C>(2,2) <T><Z>  6<C><ST.24.66.90><L.42.1>
+<Z>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Red Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+21 Gary Sheffield lf<T> 4  1  1  0  0  0  1  1  0  0  1  0  1<T>26 Casey Kotchman c <T> 2  1  0  0  0  0  0  3  0  1  1  0  0<L.30.1>
+11 David Dellucci cf<T> 4  1  1  1  0  0  0  1  0  0  1  0  0<T>46 Jason Ellsbury cf<T> 4  1  1  1  0  0  1  1  0  0  0  0  0<L.30.1>
+36 Nick Johnson ss<T> 5  0  3  1  0  0  1  0  0  0  1  0  1<T>31 Dave Roberts lf<T> 5  1  2  0  0  1  4  0  0  0  0  0  0<L.30.1>
+ 2 Derek Jeter 3b<T> 4  0  2  0  0  0  1  0  1  1  1  0  0<T> 9 Carlos Baerga 1b<T> 4  1  1  1  0  0  0  0  0  0  0  0  0<L.30.1>
+24 Ruben Sierra 2b<T> 4  0  1  0  0  0  0  1  0  0  0  0  0<T>35 Erick Aybar 3b<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+83 Jesus Montero rf<T> 5  1  1  0  0  0  0  0  0  0  2  0  0<T>14 Carl Jones ss<T> 4  0  0  0  0  0  0  0  0  1  0  0  0<L.30.1>
+20 Jorge Posada c <T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>50 Dusty Brown dh<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+12 Joey Gathright dh<T> 4  1  1  1  0  0  0  0  0  0  1  0  0<T>39 J.Salt'macchia rf<T> 4  1  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+16 Paul Kelly 1b<T> 4  1  2  0  0  1  2  0  0  0  0  0  0<T>25 Dustin Pedroia 2b<T> 2  1  0  0  0  0  0  1  1  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>38  5 12  3  0  1  5  3  1  1  8  0  2<T>Totals<T>33  6  6  3  0  1  5  5  1  2  4  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Red Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 1 Javier Vazquez<T> 4        8  3  3  0  0  0  1H    0<T>17 Kyle Farnsworth<T> 5 2/3    4  4  3  1  2  2  4B    1<L.30.1>
+11 Junichi Tazawa<T> 2 2/3    3  1  1  1  0  6  2H    2<T> 8 Edgmer Escalona<T> 2 1/3    0  0  0  0  1  1  1C    0<L.30.1>
+29 Lenny Dinardo<T> 1 1/3    1  1  1  0  3  2  0H    3<T>18 Bobby Bolin (l)<T>   2/3    1  2  2  0  2  1  1H    3<L.30.1>
+32 Thomas Diamond (w)<T> 1        0  0  0  0  0  0  0     0<T>71 Dellin Betances<T> 0        1  0  0  0  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<BK.Series 2><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 1: New York Yankees (85-62) at Kansas City Royals (52-95)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NY  1st  <C><U>Zambrano<UC> on mound. Sheffield ground out to 1B (3B). Dellucci singled to 1B. Johnson flied out to CF. Jeter flied out to <L.30.1>
+         CF.<L.33.1>
+<Z>KC  1st  <C><U>Mussina<UC> on mound. Mitchell struck out. Ibanez flied out to 2B. Matos singled to CF. Matos stole 2nd. Garciaparra flied <L.30.1>
+         out to SS.<L.33.1>
+<Z>NY  2nd  <C>Sierra flied out to CF. Montero flied out to CF. Posada flied out to LF.<L.33.1>
+<Z>KC  2nd  <C>Green flied out to SS. Menechino flied out to 1B. Cabrera struck out.<L.33.1>
+<Z>NY  3rd  <C>Gathright struck out. Teixeira flied out to RF. Sheffield walked. Dellucci walked, Sheffield to 2nd. Johnson struck out.<L.33.1>
+<Z>KC  3rd  <C>Young ground out to 1B (SS). Washington flied out to 1B. Mitchell singled to 3B. Ibanez ground out to 1B (3B).<L.33.1>
+<Z>NY  4th  <C>Jeter flied out to C. Sierra ground out to 1B (SS). Montero flied out to C.<L.33.1>
+<Z>KC  4th  <C>Matos flied out to SS. Garciaparra struck out. Green singled to CF. Menechino struck out.<L.33.1>
+<Z>NY  5th  <C>Posada flied out to SS. Gathright singled to LF. Teixeira flied out to CF. Sheffield ground out to 1B (2B).<L.33.1>
+<Z>KC  5th  <C>Cabrera struck out. Young doubled to LF. Washington singled to CF, Young scored, <Z>KC 1-0<C>. Mitchell doubled to LF, <L.30.1>
+         Washington to 3rd. Ibanez ground out to 1B (SS). Matos ground out to 1B (3B).<L.33.1>
+<Z>NY  6th  <C>Dellucci flied out to C. Johnson flied out to CF. Jeter walked. Sierra flied out to C.<L.33.1>
+<Z>KC  6th  <C>Garciaparra ground out to 1B (2B). Green ground out to 1B (3B). Menechino singled to CF. Cabrera singled to LF, <L.30.1>
+         Menechino to 2nd. Young doubled to CF, Menechino scored, Cabrera scored, <Z>KC 3-0<C>. <U>Wright<UC> took over on mound. Washington <L.30.1>
+         flied out to CF.<L.33.1>
+<Z>NY  7th  <C>Montero flied out to LF. Posada flied out to LF. Gathright ground out to 1B (2B, field save).<L.33.1>
+<Z>KC  7th  <C>Mitchell flied out to SS. Ibanez flied out to C. Matos singled to CF. Garciaparra walked, Matos to 2nd. Green doubled to <L.30.1>
+         CF, Matos scored, Garciaparra to 3rd, <Z>KC 4-0<C>. <U>Kennedy<UC> took over on mound. Menechino ground out to 1B (C).<L.33.1>
+<Z>NY  8th  <C>Teixeira tripled to LF. Sheffield singled to CF, Teixeira scored, <Z>KC 4-1<C>. Dellucci flied out to C. Johnson struck out. <L.30.1>
+         Jeter flied out to CF.<L.33.1>
+<Z>KC  8th  <C>Cabrera singled to CF. Young singled to SS, Cabrera to 2nd. Washington walked, Cabrera to 3rd, Young to 2nd. <U>Washington<UC> <L.30.1>
+         took over on mound. Mitchell walked, Cabrera scored, Young to 3rd, Washington to 2nd, <Z>KC 5-1<C>. Ibanez walked, Young <L.30.1>
+         scored, Washington to 3rd, Mitchell to 2nd, <Z>KC 6-1<C>. Matos doubled to RF, Washington scored, Mitchell scored, Ibanez to <L.30.1>
+         3rd, <Z>KC 8-1<C>. Garciaparra doubled to RF, Ibanez scored, Matos scored, <Z>KC 10-1<C>. Green walked. Garciaparra stole 3rd. <L.30.1>
+         Menechino singled to CF, Garciaparra scored, Green to 2nd, <Z>KC 11-1<C>. Cabrera walked, Green to 3rd, Menechino to 2nd. <L.30.1>
+         Green forced out at home (3B), Menechino to 3rd, Cabrera to 2nd, Young ground into double play at 1B (C). Washington <L.30.1>
+         struck out.<L.33.1>
+<Z>NY  9th  <C>Sierra ground out to 1B (3B). <U>Washington<UC> pinch hitting at RF. Washington flied out to RF. <U>Brown<UC> pinch hitting at C. <L.30.1>
+         Brown flied out to RF, field save.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,2) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <T><Z>  1<C><L.33.1>
+<Z>Royals<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 1 <C>(3,0) <Z> 2 <C>(3,0) <Z> 1 <C>(2,1) <Z> 7 <C>(5,5d)<Z> x       <T> 11<C><ST.24.66.90><L.42.1>
+<Z>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Royals Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+21 Gary Sheffield lf<T> 3  0  1  0  0  0  1  1  0  0  0  0  0<T> 2 Jason Mitchell ss<T> 4  1  2  1  0  0  1  1  0  0  1  0  0<L.30.1>
+11 David Dellucci cf<T> 3  0  1  0  0  0  0  1  0  0  0  0  0<T> 6 Julio Ibanez c <T> 4  1  0  0  0  0  1  1  0  0  0  0  0<L.30.1>
+36 Nick Johnson ss<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T> 9 Julius Matos dh<T> 5  2  3  1  0  0  2  0  0  1  0  0  0<L.30.1>
+ 2 Derek Jeter 3b<T> 3  0  0  0  0  0  0  1  0  0  0  1  0<T>44 N.Garciaparra 1b<T> 4  1  1  1  0  0  2  1  0  1  1  0  0<L.30.1>
+24 Ruben Sierra 2b<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T> 7 Mark Green 2b<T> 4  0  2  1  0  0  1  1  0  0  0  0  0<L.30.1>
+83 Jesus Montero rf<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<T> 3 Frank Menechino lf<T> 5  1  2  0  0  0  1  0  0  0  1  0  0<L.30.1>
+20 Jorge Posada c <T> 3  0  0  0  0  0  0  0  0  0  0  1  0<T>88 Melky Cabrera 3b<T> 4  2  2  0  0  0  0  1  0  0  2  0  0<L.30.1>
+12 Joey Gathright dh<T> 3  0  1  0  0  0  0  0  0  0  1  0  0<T>19 Delwyn Young cf<T> 5  2  3  2  0  0  2  0  0  0  0  0  0<L.30.1>
+25 Mark Teixeira 1b<T> 3  1  1  0  1  0  0  0  0  0  0  1  0<T> 1 Tom Washington rf<T> 4  1  1  0  0  0  1  1  0  0  1  0  0<L.30.1>
+13 Joe Washington rf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+ 3 Scott Brown c <T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>31  1  4  0  1  0  1  3  0  0  3  3  0<T>Totals<T>39 11 16  6  0  0 11  6  0  2  6  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Royals Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+78 Carlos Zambrano (w)<T> 9        4  1  1  0  3  3  4     0<T>14 Mike Mussina (l)<T> 5 2/3    9  3  3  0  0  5  3H    1<L.30.1>
+<T><T>64 Jaret Wright<T> 1        2  1  1  0  1  0  1H    2<L.30.1>
+<T><T>10 Ian Kennedy<T>   1/3    2  3  3  0  1  0  1H    3<L.30.1>
+<T><T>15 John Washington<T> 1        3  4  4  0  4  1  2     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 2: New York Yankees (85-63) at Kansas City Royals (53-95)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NY  1st  <C><U>Miller<UC> on mound. Sheffield struck out. Dellucci flied out to CF. Johnson singled, error by 3B. Jeter walked, Johnson to <L.30.1>
+         2nd. Sierra flied out to LF.<L.33.1>
+<Z>KC  1st  <C><U>Sabathia<UC> on mound. Mitchell doubled to CF. Ibanez ground out to 1B (2B). Matos flied out to RF. Garciaparra ground out <L.30.1>
+         to 1B (SS).<L.33.1>
+<Z>NY  2nd  <C>Montero ground out to 1B (C). Posada ground out to 1B (3B). Gathright struck out.<L.33.1>
+<Z>KC  2nd  <C>Green singled, error by 2B. Menechino homered to RF, Green scored, <Z>KC 2-0<C>. Gonzalez struck out. Young flied out to 1B. <L.30.1>
+         Washington flied out to C.<L.33.1>
+<Z>NY  3rd  <C>Teixeira flied out to RF. Sheffield ground out to 1B (2B). Dellucci flied out to CF.<L.33.1>
+<Z>KC  3rd  <C>Mitchell singled to RF. Ibanez flied out to C. Matos doubled to CF, Mitchell to 3rd. Garciaparra sacrificed to CF, <L.30.1>
+         Mitchell scored, Matos to 3rd, <Z>KC 3-0<C>. Green ground out to 1B (2B).<L.33.1>
+<Z>NY  4th  <C>Johnson struck out. Jeter walked. Sierra flied out to C. Montero ground out to 1B (2B).<L.33.1>
+<Z>KC  4th  <C>Menechino struck out. Gonzalez singled to 2B. Young walked, Gonzalez to 2nd. Washington flied out to CF. Mitchell flied <L.30.1>
+         out to C.<L.33.1>
+<Z>NY  5th  <C>Posada ground out to 1B (SS). Gathright flied out to CF, field save. Teixeira doubled to CF. Sheffield flied out to CF.<L.33.1>
+<Z>KC  5th  <C>Ibanez flied out to LF. Matos ground out to 1B (SS). Garciaparra flied out to RF.<L.33.1>
+<Z>NY  6th  <C>Dellucci ground out to 1B (SS). Johnson ground out to 1B (SS). Jeter singled to RF. Sierra ground out to 1B (SS, field <L.30.1>
+         save).<L.33.1>
+<Z>KC  6th  <C>Green flied out to C. Menechino struck out. Gonzalez flied out to CF.<L.33.1>
+<Z>NY  7th  <C>Montero flied out to RF. Posada flied out to 1B. Gathright flied out to CF.<L.33.1>
+<Z>KC  7th  <C>Young singled to LF. <U>Escalona<UC> took over on mound. Washington flied out to CF. Mitchell flied out to CF. Ibanez singled <L.30.1>
+         to RF, Young to 2nd. Matos struck out.<L.33.1>
+<Z>NY  8th  <C>Teixeira flied out to 3B. Sheffield struck out. Dellucci flied out to C.<L.33.1>
+<Z>KC  8th  <C>Garciaparra flied out to LF. Green ground out to 1B (C). Menechino homered to LF, <Z>KC 4-0<C>. Gonzalez flied out to CF.<L.33.1>
+<Z>NY  9th  <C>Johnson singled to RF. Johnson stole 2nd. Jeter struck out. Johnson stole 3rd. Sierra ground out to 1B (2B). Montero <L.30.1>
+         walked. <U>Palmeiro<UC> took over on mound. Posada singled to LF, Johnson scored, Montero to 2nd, <Z>KC 4-1<C>. <U>Mazzaro<UC> took over <L.30.1>
+         on mound. Gathright ground out to 1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,1) <T><Z>  1<C><L.33.1>
+<Z>Royals<C><T><Z> 0 <C>(1,0) <Z> 2 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 1 <C>(1,0) <Z> x       <T>  4<C><ST.24.66.90><L.42.1>
+<Z>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Royals Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+21 Gary Sheffield lf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T> 2 Jason Mitchell ss<T> 4  1  2  1  0  0  0  0  0  0  0  0  0<L.30.1>
+11 David Dellucci cf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T> 6 Julio Ibanez c <T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+36 Nick Johnson ss<T> 4  1  1  0  0  0  0  0  0  2  1  0  0<T> 9 Julius Matos dh<T> 4  0  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+ 2 Derek Jeter 3b<T> 2  0  1  0  0  0  0  2  0  0  1  0  0<T>44 N.Garciaparra 1b<T> 3  0  0  0  0  0  1  0  1  0  0  0  0<L.30.1>
+24 Ruben Sierra 2b<T> 4  0  0  0  0  0  0  0  0  0  0  0  1<T> 7 Mark Green 2b<T> 4  1  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+83 Jesus Montero rf<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T> 3 Frank Menechino lf<T> 4  2  2  0  0  2  3  0  0  0  2  0  0<L.30.1>
+20 Jorge Posada c <T> 4  0  1  0  0  0  1  0  0  0  0  0  0<T>77 Carlos Gonzalez 3b<T> 4  0  1  0  0  0  0  0  0  0  1  0  1<L.30.1>
+12 Joey Gathright dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>19 Delwyn Young cf<T> 2  0  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+25 Mark Teixeira 1b<T> 3  0  1  1  0  0  0  0  0  0  0  0  0<T> 1 Tom Washington rf<T> 3  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>32  1  4  1  0  0  1  3  0  2  5  0  1<T>Totals<T>32  4  8  2  0  2  4  1  1  0  4  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Royals Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+76 Paul Miller (w)<T> 8 2/3    3  1  1  0  3  5  4B    2<T>52 C.C. Sabathia (l)<T> 6        6  3  2  1  1  3  3B    1<L.30.1>
+11 Ruben Palmeiro<T> 0        1  0  0  0  0  0  1C    2<T> 8 Edgmer Escalona<T> 2        2  1  1  1  0  1  0     0<L.30.1>
+32 Vin Mazzaro (s)<T>   1/3    0  0  0  0  0  0  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 3: New York Yankees (85-64) at Kansas City Royals (54-95)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NY  1st  <C><U>Matsuzaka<UC> on mound. Sheffield doubled to CF. Dellucci flied out to CF, Sheffield to 3rd. Johnson ground out to 1B (SS). <L.30.1>
+         Jeter ground out to 1B (3B).<L.33.1>
+<Z>KC  1st  <C><U>Chamberlain<UC> on mound. Mitchell flied out to C. Ibanez struck out. Matos ground out to 1B (2B).<L.33.1>
+<Z>NY  2nd  <C>Sierra flied out to SS. Montero doubled to CF. Posada singled to RF, Montero scored, <Z>NY 1-0<C>. Gathright flied out to CF. <L.30.1>
+         Teixeira flied out to LF.<L.33.1>
+<Z>KC  2nd  <C>Garciaparra ground out to 1B (3B). Green ground out to 1B (3B). Menechino struck out.<L.33.1>
+<Z>NY  3rd  <C>Sheffield flied out to 2B. Dellucci flied out to LF. Johnson struck out.<L.33.1>
+<Z>KC  3rd  <C>Cabrera ground out to 1B (3B). Young flied out to C. Washington flied out to LF.<L.33.1>
+<Z>NY  4th  <C>Jeter ground out to 1B (SS). Sierra singled to CF. Montero walked, Sierra to 2nd. Posada struck out. Gathright ground <L.30.1>
+         out to 1B (2B).<L.33.1>
+<Z>KC  4th  <C>Mitchell singled to RF. Ibanez singled to RF, Mitchell to 3rd. Ibanez forced out at 2B (SS), Matos ground into double <L.30.1>
+         play at 1B (2B). Garciaparra ground out to 1B (SS).<L.33.1>
+<Z>NY  5th  <C>Teixeira flied out to CF. Sheffield singled, error by 2B. Dellucci struck out. Johnson singled to LF, Sheffield to 2nd. <L.30.1>
+         Jeter flied out to LF.<L.33.1>
+<Z>KC  5th  <C>Green singled to CF. Menechino flied out to LF. Cabrera flied out to CF. Young singled to CF, Green to 2nd. Washington <L.30.1>
+         ground out to 1B (SS).<L.33.1>
+<Z>NY  6th  <C>Sierra ground out to 1B (3B). Montero flied out to RF, field save. Posada singled to RF. <U>Brown<UC> took over on mound. <L.30.1>
+         Gathright struck out.<L.33.1>
+<Z>KC  6th  <C>Mitchell struck out. Ibanez flied out to LF, field save. Matos singled to LF. Matos stole 2nd. Garciaparra tripled to RF, <L.30.1>
+         Matos scored, <Z>1-1<C>. Green singled to CF, Garciaparra scored, <Z>KC 2-1<C>. <U>Wright<UC> took over on mound. Menechino homered to <L.30.1>
+         CF, Green scored, <Z>KC 4-1<C>. Cabrera walked. Young flied out to 1B.<L.33.1>
+<Z>NY  7th  <C>Teixeira struck out. Sheffield singled to CF. Dellucci flied out to C. Johnson struck out.<L.33.1>
+<Z>KC  7th  <C>Washington flied out to CF. Mitchell flied out to SS. Ibanez doubled to LF. Matos flied out to LF, field save.<L.33.1>
+<Z>NY  8th  <C>Jeter ground out to 1B (SS). Sierra ground out to 1B (SS). Montero flied out to CF.<L.33.1>
+<Z>KC  8th  <C>Garciaparra singled to SS. Green struck out. <U>Escalona<UC> took over on mound. Garciaparra stole 2nd. Menechino homered to LF, <L.30.1>
+         Garciaparra scored, <Z>KC 6-1<C>. Cabrera singled to RF. Young flied out to LF. Washington flied out to C.<L.33.1>
+<Z>NY  9th  <C>Posada struck out. Gathright flied out to CF. Teixeira flied out to SS, field save.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  1<C><L.33.1>
+<Z>Royals<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0d)<Z> 0 <C>(2,0) <Z> 4 <C>(4,1) <Z> 0 <C>(1,0) <Z> 2 <C>(3,0) <Z> x       <T>  6<C><ST.24.66.90><L.42.1>
+<Z>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Royals Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+21 Gary Sheffield lf<T> 4  0  2  1  0  0  0  0  0  0  0  0  0<T> 2 Jason Mitchell ss<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+11 David Dellucci cf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T> 6 Julio Ibanez c <T> 4  0  2  1  0  0  0  0  0  0  1  0  0<L.30.1>
+36 Nick Johnson ss<T> 4  0  1  0  0  0  0  0  0  0  2  1  0<T> 9 Julius Matos dh<T> 4  1  1  0  0  0  0  0  0  1  0  0  0<L.30.1>
+ 2 Derek Jeter 3b<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>44 N.Garciaparra 1b<T> 4  2  2  0  1  0  1  0  0  1  0  0  0<L.30.1>
+24 Ruben Sierra 2b<T> 4  0  1  0  0  0  0  0  0  0  0  1  0<T> 7 Mark Green 2b<T> 4  1  2  0  0  0  1  0  0  0  1  0  1<L.30.1>
+83 Jesus Montero rf<T> 3  1  1  1  0  0  0  1  0  0  0  0  0<T> 3 Frank Menechino lf<T> 4  2  2  0  0  2  4  0  0  0  1  0  0<L.30.1>
+20 Jorge Posada c <T> 4  0  2  0  0  0  1  0  0  0  2  0  0<T>88 Melky Cabrera 3b<T> 3  0  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+12 Joey Gathright dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>19 Delwyn Young cf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+25 Mark Teixeira 1b<T> 4  0  0  0  0  0  0  0  0  0  1  1  0<T> 1 Tom Washington rf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>35  1  7  2  0  0  1  1  0  0  7  3  0<T>Totals<T>35  6 12  1  1  2  6  1  0  2  4  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Royals Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+74 D.Matsuzaka<T> 5 2/3    6  1  1  0  1  3  3B    1<T>62 J.Chamberlain (l)<T> 5 2/3    7  3  3  0  0  3  2H    1<L.30.1>
+20 Mark Brown (w)<T> 3 1/3    1  0  0  0  0  4  2     0<T>64 Jaret Wright<T> 1 2/3    3  2  2  1  1  1  1B    1<L.30.1>
+<T><T> 8 Edgmer Escalona<T>   2/3    2  1  1  1  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Series 3><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 1: Oakland Athletics (51-99) at New York Yankees (85-65)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+OA  1st  <C><U>Hughes<UC> on mound. Melhuse struck out. Ordonez struck out. Durazo ground out to 1B (SS).<L.33.1>
+<Z>NY  1st  <C><U>Street<UC> on mound. Sheffield singled to LF. Sheffield forced out at 2B (SS), Dellucci ground into double play at 1B (2B). <L.30.1>
+         Johnson ground out to 1B (SS).<L.33.1>
+<Z>OA  2nd  <C>Duchscherer singled to RF. Spillborghs struck out. Jackson struck out. Buck struck out.<L.33.1>
+<Z>NY  2nd  <C>Jeter homered to RF, <Z>NY 1-0<C>. Sierra singled, error by SS. Montero singled to CF, Sierra to 2nd. Posada flied out to 2B. <L.30.1>
+         Gathright flied out to 2B. Kelly flied out to C.<L.33.1>
+<Z>OA  3rd  <C>Ordonez singled to RF. Lahair struck out. Melhuse flied out to CF, Ordonez to 2nd. Ordonez singled to CF, Ordonez to 3rd. <L.30.1>
+         Durazo doubled to RF, Ordonez scored, Ordonez to 3rd, <Z>1-1<C>. Duchscherer singled to LF, Ordonez scored, Durazo scored, <L.30.1>
+         <Z>OA 3-1<C>. Spillborghs ground out to 1B (SS).<L.33.1>
+<Z>NY  3rd  <C>Sheffield ground out to 1B (3B). Dellucci struck out. Johnson walked. Jeter struck out.<L.33.1>
+<Z>OA  4th  <C><U>Lee<UC> took over on mound. Jackson flied out to 3B. Buck ground out to 1B (3B). Ordonez flied out to CF.<L.33.1>
+<Z>NY  4th  <C>Sierra tripled to RF. Montero singled to RF, Sierra scored, <Z>OA 3-2<C>. Montero forced out at 2B (SS), Posada ground into <L.30.1>
+         double play at 1B (2B). Gathright struck out.<L.33.1>
+<Z>OA  5th  <C>Lahair struck out. Melhuse singled to LF. Ordonez flied out to 3B. Durazo singled, error by 1B, Melhuse to 2nd. <L.30.1>
+         Duchscherer homered to CF, Melhuse scored, Durazo scored, <Z>OA 6-2<C>. Spillborghs struck out.<L.33.1>
+<Z>NY  5th  <C>Kelly flied out to RF. Sheffield singled to 3B. Dellucci flied out to RF. Johnson doubled to RF, Sheffield scored, <L.30.1>
+         <Z>OA 6-3<C>. Jeter ground out to 1B (3B).<L.33.1>
+<Z>OA  6th  <C><U>Kennedy<UC> took over on mound. Jackson ground out to 1B (2B). Buck ground out to 1B (C, field save). Ordonez struck out.<L.33.1>
+<Z>NY  6th  <C>Sierra singled to LF. Sierra forced out at 2B (1B), Montero ground into double play at 1B (2B). Posada doubled to RF. <L.30.1>
+         Gathright ground out to 1B (SS).<L.33.1>
+<Z>OA  7th  <C>Lahair ground out to 1B (3B). Melhuse flied out to SS. Ordonez singled to LF. Durazo homered to CF, Ordonez scored, <L.30.1>
+         <Z>OA 8-3<C>. Duchscherer walked. Spillborghs singled to RF, Duchscherer to 2nd. Jackson struck out.<L.33.1>
+<Z>NY  7th  <C><U>White<UC> took over on mound. Kelly walked. Sheffield homered to RF, Kelly scored, <Z>OA 8-5<C>. Dellucci flied out to LF. <L.30.1>
+         Johnson singled to RF. Jeter walked, Johnson to 2nd. <U>Lilly<UC> took over on mound. Sierra singled to RF, Johnson scored, <L.30.1>
+         Jeter to 2nd, <Z>OA 8-6<C>. Montero flied out to LF, Jeter to 3rd, Sierra to 2nd. Posada homered to CF, Jeter scored, Sierra <L.30.1>
+         scored, <Z>NY 9-8<C>. Gathright flied out to RF.<L.33.1>
+<Z>OA  8th  <C><U>Washington<UC> took over on mound. Buck struck out. Ordonez ground out to 1B (3B). <U>Hernandez<UC> pinch hitting at 3B. Hernandez <L.30.1>
+         struck out.<L.33.1>
+<Z>NY  8th  <C>Kelly singled to 3B. Kelly forced out at 2B (1B), Sheffield ground into double play at 1B (2B). Dellucci singled to CF. <L.30.1>
+         Johnson flied out to C.<L.33.1>
+<Z>OA  9th  <C>Melhuse struck out. Ordonez walked. Durazo singled to RF, Ordonez to 2nd. Duchscherer flied out to C, field save. <L.30.1>
+         Spillborghs struck out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 3 <C>(4,0) <Z> 0 <C>(0,0) <Z> 3 <C>(2,0) <Z> 0 <C>(0,0) <Z> 2 <C>(3,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <T><Z>  8<C><L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(1,0d)<Z> 1 <C>(2,0) <Z> 0 <C>(0,1) <Z> 1 <C>(2,0d)<Z> 1 <C>(2,0) <Z> 0 <C>(2,0d)<Z> 6 <C>(4,2) <Z> 0 <C>(2,0d)<Z> x       <T>  9<C><ST.24.66.90><L.42.1>
+<Z>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+17 Adam Melhuse cf<T> 5  1  1  0  0  0  0  0  0  0  2  0  0<T>21 Gary Sheffield lf<T> 5  2  3  0  0  1  2  0  0  0  0  0  0<L.30.1>
+12 Rafael Ordonez ss<T> 4  2  2  0  0  0  0  1  0  0  1  2  1<T>11 David Dellucci cf<T> 5  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+44 Erubiel Durazo 2b<T> 5  3  3  1  0  1  3  0  0  0  0  4  0<T>36 Nick Johnson ss<T> 4  1  2  1  0  0  1  1  0  0  0  0  0<L.30.1>
+58 J.Duchscherer c <T> 4  1  3  0  0  1  5  1  0  0  0  0  0<T> 2 Derek Jeter 3b<T> 3  2  1  0  0  1  1  1  0  0  1  0  0<L.30.1>
+10 Ryan Spillborghs rf<T> 5  0  1  0  0  0  0  0  0  0  3  0  0<T>24 Ruben Sierra 2b<T> 4  2  3  0  1  0  1  0  0  0  0  0  0<L.30.1>
+60 Connor Jackson 1b<T> 4  0  0  0  0  0  0  0  0  0  2  4  0<T>83 Jesus Montero rf<T> 4  0  2  0  0  0  1  0  0  0  0  0  0<L.30.1>
+16 Travis Buck dh<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>20 Jorge Posada c <T> 4  1  2  1  0  1  3  0  0  0  0  0  0<L.30.1>
+ 8 Adrian Ordonez lf<T> 4  1  1  0  0  0  0  0  0  0  1  0  0<T>12 Joey Gathright dh<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+13 Bryan Lahair 3b<T> 3  0  0  0  0  0  0  0  0  0  2  0  0<T>16 Paul Kelly 1b<T> 3  1  1  0  0  0  0  1  0  0  0  0  1<L.30.1>
+55 Ramon Hernandez 3b<T> 1  0  0  0  0  0  0  0  0  0  1  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>39  8 11  1  0  2  8  2  0  0 14 10  1<T>Totals<T>36  9 15  2  1  3  9  3  0  0  3  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+65 Phil Hughes<T> 3        5  3  3  0  0  6  1H    0<T>14 Huston Street<T> 6        9  3  3  1  1  3  3B    0<L.30.1>
+ 5 Andy Lee<T> 2        2  3  0  1  0  2  2B    0<T>21 Alan White<T>   1/3    2  4  4  1  2  0  1H    2<L.30.1>
+10 Ian Kennedy (w)<T> 2        3  2  2  1  1  2  2H    0<T>31 Ted Lilly (l)<T> 1 2/3    4  2  2  1  0  0  0     0<L.30.1>
+15 John Washington (s)<T> 2        1  0  0  0  1  4  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 2: Oakland Athletics (51-100) at New York Yankees (86-65)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+OA  1st  <C><U>Farnsworth<UC> on mound. Melhuse struck out. Ordonez flied out to SS. Durazo struck out.<L.33.1>
+<Z>NY  1st  <C><U>Sanders<UC> on mound. Sheffield walked. Sheffield forced out at 2B (1B), Dellucci ground into double play at 1B (2B). <L.30.1>
+         Johnson struck out.<L.33.1>
+<Z>OA  2nd  <C>Duchscherer ground out to 1B (SS). Spillborghs struck out. Jackson flied out to SS.<L.33.1>
+<Z>NY  2nd  <C>Jeter struck out. Sierra flied out to C. Montero singled to LF. Posada flied out to CF, field save.<L.33.1>
+<Z>OA  3rd  <C>Buck ground out to 1B (2B). Ordonez ground out to 1B (3B, field save). Lahair ground out to 1B (SS).<L.33.1>
+<Z>NY  3rd  <C>Gathright ground out to 1B (3B). Kelly singled to RF. Sheffield flied out to CF, Kelly to 2nd. Dellucci flied out to LF.<L.33.1>
+<Z>OA  4th  <C>Melhuse walked. Ordonez struck out. Durazo struck out. Duchscherer struck out.<L.33.1>
+<Z>NY  4th  <C>Johnson flied out to CF. Jeter struck out. Sierra flied out to 1B.<L.33.1>
+<Z>OA  5th  <C>Spillborghs ground out to 1B (2B). Jackson doubled to LF. Buck doubled to CF, Jackson scored, <Z>OA 1-0<C>. Ordonez flied <L.30.1>
+         out to SS. Lahair struck out.<L.33.1>
+<Z>NY  5th  <C>Montero flied out to RF. Posada singled, error by 1B. Posada forced out at 2B (SS), Gathright ground into double play at <L.30.1>
+         1B (2B).<L.33.1>
+<Z>OA  6th  <C>Melhuse ground out to 1B (SS). Ordonez singled to CF. Durazo flied out to LF. Duchscherer flied out to RF.<L.33.1>
+<Z>NY  6th  <C>Kelly flied out to CF. Sheffield ground out to 1B (3B). Dellucci ground out to 1B (2B).<L.33.1>
+<Z>OA  7th  <C>Spillborghs flied out to 2B. Jackson struck out. <U>Wright<UC> took over on mound. Buck flied out to 1B.<L.33.1>
+<Z>NY  7th  <C>Johnson ground out to 1B (3B). Jeter flied out to 3B. Sierra singled to RF. Montero singled to SS, Sierra to 2nd. Posada <L.30.1>
+         doubled to RF, Sierra scored, Montero to 3rd, <Z>1-1<C>. <U>Lilly<UC> took over on mound. Gathright struck out.<L.33.1>
+<Z>OA  8th  <C>Ordonez singled, error by 2B. Lahair walked, Ordonez to 2nd. Melhuse singled to RF, Ordonez to 3rd, Lahair to 2nd. <L.30.1>
+         Ordonez reached 1st, Ordonez forced out at home (SS), Lahair to 3rd, Melhuse to 2nd. Durazo singled to LF, Lahair scored, <L.30.1>
+         Melhuse scored, Ordonez to 3rd, <Z>OA 3-1<C>. <U>Escalona<UC> took over on mound. Durazo stole 2nd. Duchscherer ground out to 1B <L.30.1>
+         (2B). Spillborghs struck out.<L.33.1>
+<Z>NY  8th  <C>Kelly flied out to C. Sheffield homered to LF, <Z>OA 3-2<C>. Dellucci flied out to LF. Johnson walked. Jeter flied out to C.<L.33.1>
+<Z>OA  9th  <C>Jackson flied out to SS. Buck flied out to C. Ordonez singled to LF. Lahair flied out to CF, field save.<L.33.1>
+<Z>NY  9th  <C><U>Diaz<UC> took over on mound. Sierra ground out to 1B (3B). Montero singled to RF. Posada flied out to C. Gathright struck <L.30.1>
+         out.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 1 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 2 <C>(2,1) <Z> 0 <C>(1,0) <T><Z>  3<C><L.33.1>
+<Z>Yankees<C><T><Z> 0 <C>(0,1d)<Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0d)<Z> 0 <C>(0,0) <Z> 1 <C>(3,0) <Z> 1 <C>(1,1) <Z> 0 <C>(1,0) <T><Z>  2<C><ST.24.66.90><L.42.1>
+<Z>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+17 Adam Melhuse cf<T> 3  1  1  0  0  0  0  1  0  0  1  0  0<T>21 Gary Sheffield lf<T> 3  1  1  0  0  1  1  1  0  0  0  0  0<L.30.1>
+12 Rafael Ordonez ss<T> 4  0  1  0  0  0  0  0  0  0  1  1  0<T>11 David Dellucci cf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+44 Erubiel Durazo 2b<T> 4  0  1  0  0  0  2  0  0  1  2  2  0<T>36 Nick Johnson ss<T> 3  0  0  0  0  0  0  1  0  0  1  0  0<L.30.1>
+58 J.Duchscherer c <T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T> 2 Derek Jeter 3b<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+10 Ryan Spillborghs rf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>24 Ruben Sierra 2b<T> 4  1  1  0  0  0  0  0  0  0  0  0  1<L.30.1>
+60 Connor Jackson 1b<T> 4  1  1  1  0  0  0  0  0  0  1  2  1<T>83 Jesus Montero rf<T> 4  0  3  0  0  0  0  0  0  0  0  0  0<L.30.1>
+16 Travis Buck dh<T> 4  0  1  1  0  0  1  0  0  0  0  0  0<T>20 Jorge Posada c <T> 4  0  1  1  0  0  1  0  0  0  0  0  0<L.30.1>
+ 8 Adrian Ordonez lf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T>12 Joey Gathright dh<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+13 Bryan Lahair 3b<T> 3  1  0  0  0  0  0  1  0  0  1  0  0<T>16 Paul Kelly 1b<T> 3  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>34  3  6  2  0  0  3  2  0  1  9  5  1<T>Totals<T>33  2  7  1  0  1  2  2  0  0  5  0  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+17 Kyle Farnsworth<T> 6 2/3    3  1  1  0  1  8  2B    0<T>18 Tom Sanders<T> 6 2/3    5  1  1  0  1  3  3B    2<L.30.1>
+64 Jaret Wright (l)<T>   2/3    2  2  2  0  1  0  1H    2<T>31 Ted Lilly (w)<T> 1 1/3    1  1  1  1  1  1  1C    0<L.30.1>
+ 8 Edgmer Escalona<T> 1 2/3    1  0  0  0  0  1  1     0<T>22 Oscar Diaz (s)<T> 1        1  0  0  0  0  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Game 3: Oakland Athletics (52-100) at New York Yankees (86-66)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+OA  1st  <C><U>Mussina<UC> on mound. Melhuse ground out to 1B (3B). Ordonez singled to 2B. Durazo struck out. Duchscherer singled to RF, <L.30.1>
+         Ordonez to 2nd. Spillborghs ground out to 1B (2B).<L.33.1>
+<Z>NY  1st  <C><U>Kelly<UC> on mound. Sheffield doubled to LF. Dellucci singled to LF, Sheffield scored, <Z>NY 1-0<C>. Johnson walked, Dellucci to <L.30.1>
+         2nd. Jeter doubled to RF, Dellucci scored, Johnson to 3rd, <Z>NY 2-0<C>. Sierra ground out to 1B (2B). Montero struck out. <L.30.1>
+         Posada singled to P, Johnson scored, Jeter to 3rd, <Z>NY 3-0<C>. Gathright struck out.<L.33.1>
+<Z>OA  2nd  <C>Jackson flied out to C. Buck ground out to 1B (2B). Ordonez flied out to CF.<L.33.1>
+<Z>NY  2nd  <C>Kelly struck out. Sheffield ground out to 1B (SS). Dellucci singled to 1B. Johnson flied out to RF.<L.33.1>
+<Z>OA  3rd  <C>Lahair doubled to CF. Melhuse flied out to SS. Ordonez struck out. Durazo flied out to 1B.<L.33.1>
+<Z>NY  3rd  <C>Jeter walked. Sierra flied out to C. Montero struck out. Posada singled, error by SS, Jeter to 2nd. Gathright struck out.<L.33.1>
+<Z>OA  4th  <C>Duchscherer struck out. Spillborghs struck out. Jackson struck out.<L.33.1>
+<Z>NY  4th  <C>Kelly singled to CF. Sheffield flied out to C. Dellucci flied out to CF. Johnson singled to P, Kelly to 2nd. Jeter <L.30.1>
+         struck out.<L.33.1>
+<Z>OA  5th  <C>Buck ground out to 1B (2B). Ordonez flied out to SS. Lahair ground out to 1B (2B).<L.33.1>
+<Z>NY  5th  <C>Sierra flied out to SS. Montero ground out to 1B (3B). <U>White<UC> took over on mound. Posada singled to RF. Gathright flied <L.30.1>
+         out to LF.<L.33.1>
+<Z>OA  6th  <C>Melhuse struck out. Ordonez walked. Durazo struck out. Duchscherer struck out.<L.33.1>
+<Z>NY  6th  <C>Kelly singled to RF. Sheffield flied out to LF, Kelly to 2nd. Dellucci tripled to RF, Kelly scored, <Z>NY 4-0<C>. Johnson <L.30.1>
+         ground out to 1B (C). Jeter ground out to 1B (SS).<L.33.1>
+<Z>OA  7th  <C>Spillborghs ground out to 1B (2B). <U>Hernandez<UC> pinch hitting at 1B. Hernandez ground out to 1B (3B). Buck walked. Ordonez <L.30.1>
+         singled to RF, Buck to 2nd. <U>Washington<UC> took over on mound. Lahair ground out to 1B (2B).<L.33.1>
+<Z>NY  7th  <C>Sierra ground out to 1B (2B). Montero flied out to C. Posada ground out to 1B (2B, field save).<L.33.1>
+<Z>OA  8th  <C>Melhuse ground out to 1B (SS). Ordonez flied out to C. Durazo homered to LF, <Z>NY 4-1<C>. <U>Hudson<UC> took over on mound. <L.30.1>
+         Duchscherer ground out to 1B (SS).<L.33.1>
+<Z>NY  8th  <C>Gathright doubled to RF. Kelly walked. Sheffield flied out to RF. Dellucci flied out to C. Johnson flied out to SS.<L.33.1>
+<Z>OA  9th  <C><U>Bolin<UC> took over on mound. Spillborghs struck out. Hernandez ground out to 1B (SS, field save). Buck ground out to 1B <L.30.1>
+         (3B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(1,1) <Z> 1 <C>(1,0) <Z> 0 <C>(0,0) <T><Z>  1<C><L.33.1>
+<Z>Yankees<C><T><Z> 3 <C>(4,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 0 <C>(2,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> x       <T>  4<C><ST.24.66.90><L.42.1>
+<Z>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Yankees Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+17 Adam Melhuse cf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>21 Gary Sheffield lf<T> 5  1  1  1  0  0  0  0  0  0  0  0  0<L.30.1>
+12 Rafael Ordonez ss<T> 3  0  1  0  0  0  0  1  0  0  1  0  1<T>11 David Dellucci cf<T> 5  1  3  0  1  0  2  0  0  0  0  0  0<L.30.1>
+44 Erubiel Durazo 2b<T> 4  1  1  0  0  1  1  0  0  0  2  0  0<T>36 Nick Johnson ss<T> 4  1  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+58 J.Duchscherer c <T> 4  0  1  0  0  0  0  0  0  0  2  0  0<T> 2 Derek Jeter 3b<T> 3  0  1  1  0  0  1  1  0  0  1  0  0<L.30.1>
+10 Ryan Spillborghs rf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>24 Ruben Sierra 2b<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+60 Connor Jackson 1b<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<T>83 Jesus Montero rf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+16 Travis Buck dh<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<T>20 Jorge Posada c <T> 4  0  2  0  0  0  1  0  0  0  0  0  0<L.30.1>
+ 8 Adrian Ordonez lf<T> 3  0  1  0  0  0  0  0  0  0  0  0  0<T>12 Joey Gathright dh<T> 4  0  1  1  0  0  0  0  0  0  2  0  0<L.30.1>
+13 Bryan Lahair 3b<T> 3  0  1  1  0  0  0  0  0  0  0  0  0<T>16 Paul Kelly 1b<T> 3  1  2  0  0  0  0  1  0  0  1  0  0<L.30.1>
+55 Ramon Hernandez 1b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>32  1  5  1  0  1  1  2  0  0  9  0  1<T>Totals<T>36  4 11  3  1  0  4  3  0  0  6  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Yankees Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+14 Mike Mussina (w)<T> 6 2/3    4  0  0  0  2  8  2B    2<T>26 Matt Kelly (l)<T> 4 2/3    7  3  3  0  2  6  3B    0<L.30.1>
+15 John Washington<T> 1        1  1  1  1  0  0  1S    0<T>21 Alan White<T> 3 1/3    4  1  1  0  1  0  1     0<L.30.1>
+ 9 Dan Hudson<T>   1/3    0  0  0  0  0  0  1C    0<T><T><L.30.1>
+18 Bobby Bolin (s)<T> 1        0  0  0  0  0  1  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Results Summary><P.70><B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB8  Season 11  Week 17 Results   2/3/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<ST.27.63.90.126><L.1.1>
+<U>American League<UC><L.48.1>
+<C><Z>Yankees 1<C> (6h, 3bb)<T>47 Smithberg (7, 1r 5h 2bb)<T><Z>RED SOX 8<C> (15h, 5bb)<T>62 Chamberlain (4 2/3, 3r 7h 5bb)<L.36.1>
+<Z>Yankees 1<C> (6h, 1bb)<T>56 Hansen (6 1/3, 1r 5h 1bb)<T><Z>RED SOX 3<C> (10h, 2bb)<T>65 Hughes (5 1/3, 3r 6h 0bb)<L.36.1>
+<Z>Yankees 5<C> (12h, 3bb)<T> 1 Vazquez (4, 3r 8h 0bb)<T><Z>RED SOX 6<C> (6h, 5bb)<T>17 Farnsworth (5 2/3, 4r 4h 2bb)<L.36.1>
+<L.9.1>
+<Z>Blue Jays 3<C> (10h, 3bb)<T>96 Devine (5 2/3, 1r 6h 2bb)<T><Z>RAYS 7<C> (8h, 1bb)<T> 9 Mcguire (5 1/3, 6r 6h 1bb)<L.36.1>
+<Z>Blue Jays 3<C> (9h, 3bb)<T>38 Carter (5 2/3, 2r 5h 2bb)<T><Z>RAYS 6<C> (9h, 2bb)<T> 4 Downs (7 2/3, 5r 7h 2bb)<L.36.1>
+<Z>BLUE JAYS 9<C> (12h, 3bb)<T>99 Diaz (5 1/3, 6r 6h 2bb)<T><Z>Rays 8<C> (12h, 2bb)<T>54 Frazor (6, 1r 7h 0bb)<L.36.1>
+<L.9.1>
+<Z>INDIANS 3<C> (10h, 2bb)<T>24 Bonser (6, 2r 8h 2bb)<T><Z>Twins 0<C> (3h, 3bb)<T>18 Mendoza (6 2/3, 0r 3h 3bb)<L.36.1>
+<Z>Indians 0<C> (3h, 2bb)<T>44 Maddux (7 1/3, 0r 3h 2bb)<T><Z>TWINS 8<C> (12h, 2bb)<T>19 Pena (3, 6r 7h 0bb)<L.36.1>
+<Z>Indians 4<C> (10h, 1bb)<T> 8 Wimmers (3 2/3, 2r 5h 1bb)<T><Z>TWINS 14<C> (14h, 5bb)<T> 5 Lewis (4 2/3, 4r 6h 1bb)<L.36.1>
+<L.9.1>
+<Z>Royals 0<C> (2h, 3bb)<T>38 Latos (9, 0r 2h 3bb)<T><Z>WHITE SOX 1<C> (3h, 1bb)<T>74 Matsuzaka (8, 1r 3h 1bb)<L.36.1>
+<Z>Royals 3<C> (6h, 3bb)<T>41 Humber (9, 3r 6h 3bb)<T><Z>WHITE SOX 14<C> (17h, 5bb)<T>30 Hansen (3, 13r 12h 3bb)<L.36.1>
+<Z>ROYALS 7<C> (13h, 3bb)<T>44 Peavy (3 2/3, 5r 6h 1bb)<T><Z>White Sox 5<C> (9h, 4bb)<T>51 Bulhholz (5 2/3, 2r 5h 3bb)<L.36.1>
+<L.9.1>
+<Z>Angels 2<C> (8h, 2bb)<T>91 Kida (5 2/3, 2r 7h 2bb)<T><Z>MARINERS 7<C> (12h, 4bb)<T>74 Santana (4, 5r 8h 1bb)<L.36.1>
+<Z>Angels 0<C> (1h, 3bb)<T>70 Pineiro (9, 0r 1h 3bb)<T><Z>MARINERS 6<C> (8h, 4bb)<T>34 Resop (5 1/3, 4r 6h 3bb)<L.36.1>
+<Z>Angels 1<C> (6h, 4bb)<T>72 Loaiza (5 2/3, 1r 3h 3bb)<T><Z>MARINERS 2<C> (2h, 3bb)<T>48 Hurley (6 1/3, 2r 2h 3bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 2<C> (7h, 1bb)<T>15 Hudson (8, 2r 7h 1bb)<T><Z>RANGERS 10<C> (11h, 7bb)<T> 6 Williams (3, 6r 6h 3bb)<L.36.1>
+<Z>Athletics 8<C> (12h, 5bb)<T>10 Kiker (5 1/3, 2r 5h 2bb)<T><Z>RANGERS 10<C> (14h, 4bb)<T>14 Street (3, 5r 8h 1bb)<L.36.1>
+<Z>Athletics 2<C> (5h, 2bb)<T>25 Davis (9, 2r 5h 2bb)<T><Z>RANGERS 7<C> (8h, 1bb)<T>18 Sanders (6, 4r 6h 1bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Red Sox 3<C> (7h, 4bb)<T> 1 Washington (8 2/3, 3r 7h 4bb)<T><Z>WHITE SOX 5<C> (10h, 2bb)<T> 2 Jones (5 2/3, 5r 8h 2bb)<L.36.1>
+<Z>RED SOX 3<C> (7h, 1bb)<T>45 Jenks (9, 3r 7h 1bb)<T><Z>White Sox 0<C> (3h, 2bb)<T>74 Martinez (9, 0r 3h 2bb)<L.36.1>
+<Z>Red Sox 2<C> (8h, 1bb)<T>13 Rogers (8 2/3, 2r 7h 1bb)<T><Z>WHITE SOX 3<C> (7h, 4bb)<T>47 Smithberg (6, 1r 5h 3bb)<T>10 inn<L.36.1>
+<L.9.1>
+<Z>RAYS 9<C> (13h, 3bb)<T>62 Atchison (4 2/3, 5r 8h 1bb)<T><Z>Mariners 7<C> (12h, 2bb)<T>77 Robinson (3, 7r 9h 0bb)<L.36.1>
+<Z>RAYS 5<C> (11h, 7bb)<T>88 Atilano (3 2/3, 2r 2h 2bb)<T><Z>Mariners 1<C> (7h, 2bb)<T> 4 Pena (8 2/3, 1r 7h 2bb)<L.36.1>
+<Z>Rays 4<C> (8h, 4bb)<T>91 Kida (5, 4r 7h 3bb)<T><Z>MARINERS 7<C> (11h, 3bb)<T>96 Devine (3, 5r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Twins 9<C> (14h, 4bb)<T> 4 Danks (6, 4r 9h 2bb)<T><Z>RANGERS 10<C> (14h, 6bb)<T>31 Reed (5, 7r 9h 6bb)<L.36.1>
+<Z>TWINS 3<C> (5h, 1bb)<T>15 Hudson (5 2/3, 3r 5h 1bb)<T><Z>Rangers 2<C> (8h, 3bb)<T>52 Silva (6 2/3, 1r 6h 2bb)<L.36.1>
+<Z>Twins 6<C> (8h, 4bb)<T>10 Kiker (7, 2r 4h 3bb)<T><Z>RANGERS 7<C> (16h, 4bb)<T>24 Bonser (3, 2r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Yankees 1<C> (4h, 3bb)<T>78 Zambrano (9, 1r 4h 3bb)<T><Z>ROYALS 11<C> (16h, 6bb)<T>14 Mussina (5 2/3, 3r 9h 0bb)<L.36.1>
+<Z>Yankees 1<C> (4h, 3bb)<T>76 Miller (8 2/3, 1r 3h 3bb)<T><Z>ROYALS 4<C> (8h, 1bb)<T>52 Sabathia (6, 3r 6h 1bb)<L.36.1>
+<Z>Yankees 1<C> (7h, 1bb)<T>74 Matsuzaka (5 2/3, 1r 6h 1bb)<T><Z>ROYALS 6<C> (12h, 1bb)<T>62 Chamberlain (5 2/3, 3r 7h 0bb)<L.36.1>
+<L.9.1>
+<Z>Blue Jays 3<C> (6h, 2bb)<T>75 Saunders (7 2/3, 2r 4h 2bb)<T><Z>ANGELS 4<C> (11h, 3bb)<T>45 Banks (5 1/3, 1r 6h 2bb)<L.36.1>
+<Z>BLUE JAYS 2<C> (10h, 3bb)<T>58 Kohn (4, 2r 7h 2bb)<T><Z>Angels 0<C> (5h, 2bb)<T>58 Blackley (9, 0r 5h 2bb)<L.36.1>
+<Z>BLUE JAYS 9<C> (10h, 2bb)<T>74 Santana (4 2/3, 7r 7h 2bb)<T><Z>Angels 5<C> (13h, 4bb)<T> 9 Mcguire (3 2/3, 0r 3h 2bb)<L.36.1>
+<L.9.1>
+<Z>Indians 5<C> (5h, 5bb)<T>26 Kelly (6, 2r 2h 4bb)<T><Z>ATHLETICS 6<C> (11h, 5bb)<T> 4 Martinez (4, 1r 5h 3bb)<L.36.1>
+<Z>Indians 2<C> (8h, 3bb)<T>56 Blanton (5 2/3, 2r 7h 3bb)<T><Z>ATHLETICS 3<C> (8h, 1bb)<T> 8 Crain (4 1/3, 3r 6h 1bb)<L.36.1>
+<Z>Indians 1<C> (6h, 3bb)<T> 6 Williams (6 1/3, 1r 4h 3bb)<T><Z>ATHLETICS 2<C> (10h, 2bb)<T>18 Mendoza (5 2/3, 1r 7h 2bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>RANGERS 9<C> (12h, 2bb)<T>56 Hansen (5, 6r 9h 1bb)<T><Z>Red Sox 4<C> (8h, 4bb)<T>16 Young (3 2/3, 4r 6h 2bb)<L.36.1>
+<Z>Rangers 4<C> (11h, 3bb)<T> 1 Vazquez (5 1/3, 3r 7h 2bb)<T><Z>RED SOX 5<C> (10h, 3bb)<T>25 Davis (6 1/3, 4r 6h 3bb)<L.36.1>
+<Z>RANGERS 4<C> (9h, 5bb)<T> 2 Jones (6 1/3, 2r 6h 1bb)<T><Z>Red Sox 3<C> (9h, 3bb)<T> 4 Danks (3 1/3, 1r 5h 2bb)<L.36.1>
+<L.9.1>
+<Z>White Sox 0<C> (2h, 1bb)<T>38 Carter (9, 0r 2h 1bb)<T><Z>RAYS 12<C> (16h, 1bb)<T>38 Latos (5 2/3, 10r 11h 1bb)<L.36.1>
+<Z>White Sox 1<C> (3h, 5bb)<T>99 Diaz (9, 1r 3h 5bb)<T><Z>RAYS 5<C> (7h, 2bb)<T>41 Humber (8, 5r 7h 2bb)<L.36.1>
+<Z>White Sox 2<C> (6h, 7bb)<T>77 Robinson (7, 2r 6h 5bb)<T><Z>RAYS 8<C> (11h, 3bb)<T>44 Peavy (6, 6r 9h 3bb)<L.36.1>
+<L.9.1>
+<Z>MARINERS 2<C> (7h, 4bb)<T>44 Maddux (6 1/3, 2r 5h 3bb)<T><Z>Twins 1<C> (8h, 1bb)<T>70 Pineiro (6 1/3, 1r 7h 1bb)<L.36.1>
+<Z>MARINERS 6<C> (13h, 2bb)<T> 8 Wimmers (5 1/3, 1r 7h 1bb)<T><Z>Twins 1<C> (5h, 2bb)<T>72 Loaiza (7 1/3, 1r 3h 2bb)<L.36.1>
+<Z>Mariners 2<C> (9h, 2bb)<T>31 Reed (6 2/3, 2r 7h 2bb)<T><Z>TWINS 3<C> (6h, 3bb)<T>62 Atchison (5 1/3, 3r 5h 2bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 8<C> (11h, 2bb)<T>65 Hughes (3, 3r 5h 0bb)<T><Z>YANKEES 9<C> (15h, 3bb)<T>14 Street (6, 3r 9h 1bb)<L.36.1>
+<Z>ATHLETICS 3<C> (6h, 2bb)<T>17 Farnsworth (6 2/3, 1r 3h 1bb)<T><Z>Yankees 2<C> (7h, 2bb)<T>18 Sanders (6 2/3, 1r 5h 1bb)<L.36.1>
+<Z>Athletics 1<C> (5h, 2bb)<T>14 Mussina (6 2/3, 0r 4h 2bb)<T><Z>YANKEES 4<C> (11h, 3bb)<T>26 Kelly (4 2/3, 3r 7h 2bb)<L.36.1>
+<L.9.1>
+<Z>Royals 0<C> (4h, 2bb)<T> 4 Downs (9, 0r 4h 2bb)<T><Z>BLUE JAYS 8<C> (11h, 2bb)<T>30 Hansen (4 2/3, 8r 11h 2bb)<L.36.1>
+<Z>Royals 0<C> (3h, 0bb)<T>54 Frazor (9, 0r 3h 0bb)<T><Z>BLUE JAYS 6<C> (12h, 1bb)<T>51 Bulhholz (5 1/3, 4r 9h 1bb)<L.36.1>
+<Z>ROYALS 6<C> (16h, 3bb)<T>45 Banks (5 2/3, 0r 6h 1bb)<T><Z>Blue Jays 0<C> (6h, 0bb)<T>78 Zambrano (8, 0r 6h 0bb)<T>10 inn<L.36.1>
+<L.9.1>
+<Z>ANGELS 6<C> (14h, 1bb)<T>19 Pena (4 2/3, 4r 5h 0bb)<T><Z>Indians 2<C> (7h, 1bb)<T>34 Resop (6 1/3, 2r 6h 1bb)<L.36.1>
+<Z>Angels 0<C> (7h, 2bb)<T> 5 Lewis (5 1/3, 0r 4h 1bb)<T><Z>INDIANS 1<C> (6h, 1bb)<T>48 Hurley (8 1/3, 0r 2h 1bb)<T>15 inn<L.36.1>
+<Z>Angels 1<C> (7h, 1bb)<T> 4 Martinez (5 1/3, 1r 5h 0bb)<T><Z>INDIANS 3<C> (8h, 6bb)<T>75 Saunders (5 2/3, 1r 5h 5bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<L.1.1>
+<D><E><P>
+<B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB8  Season 11  Week 17 Results   2/3/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<U>National League<UC><L.48.1>
+<C><Z>NATIONALS 3<C> (7h, 3bb)<T> 6 Diaz (4, 2r 5h 2bb)<T><Z>Marlins 0<C> (8h, 3bb)<T>44 Hamels (6, 0r 5h 1bb)<L.36.1>
+<Z>NATIONALS 12<C> (13h, 4bb)<T>55 Johnson (6, 3r 7h 0bb)<T><Z>Marlins 5<C> (9h, 5bb)<T>19 Strasburg (6 1/3, 3r 5h 3bb)<L.36.1>
+<Z>NATIONALS 7<C> (14h, 4bb)<T>19 Gonzalez (4, 3r 7h 3bb)<T><Z>Marlins 3<C> (10h, 5bb)<T>23 Clippard (5 1/3, 3r 9h 1bb)<L.36.1>
+<L.6.1>
+<Z>Braves 3<C> (3h, 2bb)<T>17 Ibanez (9, 3r 3h 2bb)<T><Z>PHILLIES 7<C> (11h, 4bb)<T>12 Ketchner (5 2/3, 3r 6h 3bb)<L.36.1>
+<Z>Braves 4<C> (11h, 5bb)<T>25 Wilson (4 2/3, 3r 7h 2bb)<T><Z>PHILLIES 6<C> (8h, 5bb)<T>37 Beachy (5 2/3, 5r 7h 5bb)<L.36.1>
+<Z>Braves 3<C> (9h, 0bb)<T>79 De Fratus (3 2/3, 2r 5h 0bb)<T><Z>PHILLIES 6<C> (10h, 6bb)<T>22 Sierra (5, 5r 9h 3bb)<L.36.1>
+<L.6.1>
+<Z>Pirates 0<C> (4h, 3bb)<T> 6 Salas (9, 0r 4h 3bb)<T><Z>CARDINALS 5<C> (8h, 5bb)<T>22 Jansen (3, 4r 5h 1bb)<L.36.1>
+<Z>Pirates 3<C> (6h, 3bb)<T>13 Delgado (7 2/3, 2r 4h 3bb)<T><Z>CARDINALS 6<C> (8h, 5bb)<T>66 Reynolds (6, 2r 5h 4bb)<L.36.1>
+<Z>Pirates 3<C> (6h, 5bb)<T>22 Motte (5 1/3, 3r 5h 1bb)<T><Z>CARDINALS 6<C> (5h, 3bb)<T>19 Young (6 2/3, 6r 5h 2bb)<L.36.1>
+<L.6.1>
+<Z>Reds 0<C> (4h, 3bb)<T>60 Atkins (7 2/3, 0r 4h 1bb)<T><Z>CUBS 6<C> (13h, 2bb)<T>99 Browning (5, 6r 9h 2bb)<L.36.1>
+<Z>Reds 3<C> (7h, 5bb)<T>29 Samardzija (5 2/3, 0r 3h 3bb)<T><Z>CUBS 9<C> (10h, 4bb)<T>20 Crespo (5 1/3, 5r 5h 3bb)<L.36.1>
+<Z>Reds 0<C> (3h, 1bb)<T>66 Rincon (9, 0r 3h 1bb)<T><Z>CUBS 9<C> (10h, 5bb)<T>61 Arroyo (3 1/3, 5r 6h 0bb)<L.36.1>
+<L.6.1>
+<Z>Diamondbacks 1<C> (4h, 2bb)<T>28 Cook (9, 1r 4h 2bb)<T><Z>ROCKIES 3<C> (11h, 4bb)<T>34 Davis (4 1/3, 2r 6h 4bb)<L.36.1>
+<Z>DIAMONDBACKS 1<C> (5h, 4bb)<T>45 Chacin (5 1/3, 0r 1h 4bb)<T><Z>Rockies 0<C> (3h, 0bb)<T>58 Mantel (9, 0r 3h 0bb)<L.36.1>
+<Z>DIAMONDBACKS 5<C> (11h, 1bb)<T>46 Hammel (5, 5r 10h 1bb)<T><Z>Rockies 2<C> (2h, 2bb)<T>18 Julio (9, 2r 2h 2bb)<L.36.1>
+<L.6.1>
+<Z>Giants 4<C> (7h, 4bb)<T>70 Lindblom (5 1/3, 4r 6h 2bb)<T><Z>DODGERS 7<C> (11h, 4bb)<T>17 Rincon (3 2/3, 7r 8h 2bb)<L.36.1>
+<Z>Giants 0<C> (2h, 3bb)<T>58 Billingsley (9, 0r 2h 3bb)<T><Z>DODGERS 7<C> (11h, 3bb)<T> 1 Sanchez (4 2/3, 5r 8h 2bb)<L.36.1>
+<Z>Giants 4<C> (9h, 3bb)<T>63 Armas (5 1/3, 4r 6h 2bb)<T><Z>DODGERS 6<C> (11h, 5bb)<T>26 Lincecum (4 2/3, 5r 8h 4bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>Marlins 3<C> (7h, 2bb)<T>48 Colon (7 2/3, 3r 6h 2bb)<T><Z>CUBS 7<C> (13h, 2bb)<T>23 Brooks (5 2/3, 7r 11h 1bb)<L.36.1>
+<Z>MARLINS 4<C> (8h, 4bb)<T>58 Ascanio (4 2/3, 4r 7h 4bb)<T><Z>Cubs 0<C> (4h, 2bb)<T>12 Rincon (9, 0r 4h 2bb)<L.36.1>
+<Z>Marlins 2<C> (6h, 1bb)<T>60 Atkins (5 2/3, 2r 4h 0bb)<T><Z>CUBS 9<C> (14h, 5bb)<T> 6 Diaz (4 2/3, 4r 6h 3bb)<L.36.1>
+<L.6.1>
+<Z>Phillies 0<C> (6h, 2bb)<T>56 Morales (7 2/3, 0r 6h 2bb)<T><Z>ROCKIES 7<C> (10h, 6bb)<T>23 Ordonez (3, 2r 3h 4bb)<L.36.1>
+<Z>Phillies 4<C> (14h, 4bb)<T>28 Cook (4, 3r 9h 4bb)<T><Z>ROCKIES 6<C> (10h, 5bb)<T>58 Bastardo (6, 5r 8h 4bb)<L.36.1>
+<Z>PHILLIES 8<C> (14h, 1bb)<T>45 Chacin (4 1/3, 4r 8h 0bb)<T><Z>Rockies 4<C> (9h, 1bb)<T>55 Condrey (8 2/3, 3r 6h 1bb)<L.36.1>
+<L.6.1>
+<Z>Cardinals 0<C> (4h, 0bb)<T> 5 Lyman (9, 0r 4h 0bb)<T><Z>DODGERS 6<C> (11h, 0bb)<T>27 Wang (6, 2r 4h 0bb)<L.36.1>
+<Z>Cardinals 0<C> (6h, 1bb)<T>50 Orenduff (9, 0r 6h 1bb)<T><Z>DODGERS 10<C> (11h, 3bb)<T> 4 Johnson (2 2/3, 7r 7h 0bb)<L.36.1>
+<Z>Cardinals 2<C> (10h, 1bb)<T>70 Lindblom (8, 1r 7h 1bb)<T><Z>DODGERS 5<C> (12h, 4bb)<T> 6 Salas (5 1/3, 4r 10h 3bb)<L.36.1>
+<L.6.1>
+<Z>NATIONALS 2<C> (8h, 0bb)<T>21 Thompson (4, 1r 4h 0bb)<T><Z>Reds 1<C> (7h, 1bb)<T>51 Hart (6, 1r 5h 0bb)<L.36.1>
+<Z>NATIONALS 6<C> (7h, 6bb)<T>99 Browning (4, 4r 4h 3bb)<T><Z>Reds 3<C> (6h, 3bb)<T>44 Hamels (4, 2r 3h 2bb)<L.36.1>
+<Z>Nationals 3<C> (8h, 2bb)<T>20 Crespo (4 2/3, 2r 6h 0bb)<T><Z>REDS 5<C> (11h, 3bb)<T>19 Strasburg (5 2/3, 1r 5h 0bb)<L.36.1>
+<L.6.1>
+<Z>Braves 0<C> (7h, 1bb)<T>22 Aquino (9, 0r 7h 1bb)<T><Z>DIAMONDBACKS 5<C> (12h, 3bb)<T>34 O'Flaherty (4 2/3, 5r 9h 2bb)<L.36.1>
+<Z>BRAVES 7<C> (13h, 5bb)<T>29 Garr (5, 3r 6h 2bb)<T><Z>Diamondbacks 1<C> (3h, 2bb)<T>31 Mcbride (9, 1r 3h 2bb)<L.36.1>
+<Z>Braves 5<C> (11h, 6bb)<T>34 Davis (5 1/3, 2r 6h 3bb)<T><Z>DIAMONDBACKS 10<C> (15h, 5bb)<T>12 Ketchner (4 2/3, 9r 10h 3bb)<L.36.1>
+<L.6.1>
+<Z>Pirates 2<C> (10h, 0bb)<T>16 Nicasio (6 2/3, 2r 8h 0bb)<T><Z>GIANTS 9<C> (12h, 3bb)<T>28 Maholm (3, 4r 6h 2bb)<L.36.1>
+<Z>PIRATES 9<C> (12h, 7bb)<T>29 Bumgarner (5 2/3, 2r 5h 2bb)<T><Z>Giants 3<C> (7h, 7bb)<T>26 Feliz (5 2/3, 3r 6h 3bb)<L.36.1>
+<Z>Pirates 3<C> (8h, 3bb)<T>17 Rincon (6 1/3, 3r 7h 3bb)<T><Z>GIANTS 5<C> (10h, 2bb)<T>22 Jansen (5 2/3, 0r 5h 1bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>DODGERS 10<C> (10h, 4bb)<T>55 Johnson (4 2/3, 6r 6h 4bb)<T><Z>Marlins 7<C> (12h, 5bb)<T>58 Billingsley (5 1/3, 4r 8h 1bb)<L.36.1>
+<Z>DODGERS 8<C> (15h, 3bb)<T>19 Gonzalez (4 1/3, 4r 7h 2bb)<T><Z>Marlins 2<C> (5h, 2bb)<T>63 Armas (9, 2r 5h 2bb)<L.36.1>
+<Z>Dodgers 1<C> (7h, 1bb)<T>23 Brooks (9, 1r 6h 1bb)<T><Z>MARLINS 2<C> (10h, 2bb)<T>73 Masset (6, 1r 6h 1bb)<T>11 inn<L.36.1>
+<L.6.1>
+<Z>Cubs 0<C> (4h, 4bb)<T>17 Ibanez (9, 0r 4h 4bb)<T><Z>PHILLIES 4<C> (7h, 4bb)<T>29 Samardzija (5 2/3, 1r 5h 2bb)<L.36.1>
+<Z>CUBS 10<C> (13h, 2bb)<T>25 Wilson (3, 7r 9h 1bb)<T><Z>Phillies 5<C> (7h, 1bb)<T>66 Rincon (5 2/3, 4r 5h 1bb)<L.36.1>
+<Z>Cubs 7<C> (14h, 2bb)<T>79 De Fratus (6 2/3, 3r 7h 2bb)<T><Z>PHILLIES 8<C> (10h, 0bb)<T>48 Colon (7, 7r 7h 0bb)<L.36.1>
+<L.6.1>
+<Z>ROCKIES 9<C> (17h, 2bb)<T>13 Delgado (5 2/3, 6r 9h 2bb)<T><Z>Cardinals 3<C> (8h, 4bb)<T>46 Hammel (5 1/3, 2r 6h 0bb)<L.36.1>
+<Z>Rockies 2<C> (4h, 1bb)<T>22 Motte (8 2/3, 1r 2h 1bb)<T><Z>CARDINALS 3<C> (5h, 3bb)<T>56 Morales (8, 1r 1h 2bb)<T>13 inn<L.36.1>
+<Z>Rockies 4<C> (8h, 3bb)<T>27 Wang (5 1/3, 3r 4h 2bb)<T><Z>CARDINALS 10<C> (15h, 2bb)<T>48 Rogers (5, 8r 11h 1bb)<L.36.1>
+<L.6.1>
+<Z>Giants 0<C> (6h, 1bb)<T>23 Clippard (6 2/3, 0r 5h 0bb)<T><Z>NATIONALS 8<C> (11h, 6bb)<T> 1 Sanchez (3, 2r 6h 3bb)<L.36.1>
+<Z>GIANTS 5<C> (10h, 4bb)<T>51 Hart (5, 2r 4h 3bb)<T><Z>Nationals 3<C> (10h, 4bb)<T>26 Lincecum (6 1/3, 3r 8h 1bb)<L.36.1>
+<Z>GIANTS 2<C> (5h, 2bb)<T>44 Hamels (6 2/3, 1r 3h 1bb)<T><Z>Nationals 0<C> (9h, 1bb)<T>16 Nicasio (6 2/3, 0r 7h 1bb)<L.36.1>
+<L.6.1>
+<Z>Reds 1<C> (3h, 2bb)<T>37 Beachy (9, 1r 3h 2bb)<T><Z>BRAVES 4<C> (10h, 0bb)<T>61 Arroyo (5 1/3, 4r 7h 0bb)<L.36.1>
+<Z>REDS 7<C> (14h, 5bb)<T>22 Sierra (5 2/3, 3r 8h 2bb)<T><Z>Braves 4<C> (7h, 4bb)<T>21 Thompson (5, 1r 5h 0bb)<L.36.1>
+<Z>Reds 0<C> (3h, 2bb)<T>34 O'Flaherty (9, 0r 3h 2bb)<T><Z>BRAVES 8<C> (10h, 5bb)<T>99 Browning (3 2/3, 6r 4h 4bb)<L.36.1>
+<L.6.1>
+<Z>Diamondbacks 5<C> (12h, 2bb)<T>66 Reynolds (6 1/3, 1r 6h 1bb)<T><Z>PIRATES 6<C> (9h, 7bb)<T>58 Mantel (4 1/3, 3r 5h 3bb)<L.36.1>
+<Z>Diamondbacks 3<C> (6h, 4bb)<T>19 Young (7, 2r 5h 3bb)<T><Z>PIRATES 4<C> (11h, 3bb)<T>18 Julio (4, 2r 5h 2bb)<L.36.1>
+<Z>DIAMONDBACKS 9<C> (9h, 9bb)<T>28 Maholm (4 2/3, 4r 3h 7bb)<T><Z>Pirates 4<C> (8h, 2bb)<T>22 Aquino (4, 4r 6h 2bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<L.1.1>
+<D><E><DU>
+<BK.Standings><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8  Season 11  Week 17 Standings   2/3/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.44.75.95.102.107><L.48.1>
+<C><Z>American League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Tampa Bay Rays (Troy Dilworth)<T> 88  65  .575   -   7-2   W 3<T> 820   651   54-24<T>34-41<T> 46<T>36,385  15 142   5  109<L.33.1>
+New York Yankees (Alan Milnes)<T> 87  66  .568   1   2-7   W 1<T> 831   718   51-24<T>36-42<T> 20<T>36,216  10 136   2  108<L.33.1>
+Toronto Blue Jays (Gordon Milnes)<T> 79  74  .516   9   5-4   L 1<T> 652   667   39-36<T>40-38<T>119<T>34,848  15 179  12  106<L.33.1>
+Boston Red Sox (Jon Gick)<T> 73  80  .477  15   5-4   L 1<T> 629   605   39-39<T>34-41<T>228<T>33,846  15 182  11   95<L.33.1>
+<L.9.1>
+<Z>American League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Minnesota Twins (Dave Brown)<T> 99  54  .647   -   4-5   W 1<T> 829   562   55-23<T>44-31<T> 31<T>45,949  15 173  14  123<L.33.1>
+Chicago White Sox (Craig Sandry)<T> 61  92  .398  38   4-5   L 3<T> 617   830   35-43<T>26-49<T> 17<T>31,926   2  24   0   99<L.33.1>
+Cleveland Indians (Douglas Crawford)<T> 59  94  .385  40   3-6   W 2<T> 501   771   31-44<T>28-50<T> 49<T>31,608   8  16   3  108<L.33.1>
+Kansas City Royals (Michael Stewart)<T> 56  97  .366  43   5-4   W 1<T> 561   767   36-39<T>20-58<T> 41<T>31,156   9  78  10   95<L.33.1>
+<L.9.1>
+<Z>American League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Texas Rangers (Ian Gibson)<T> 96  57  .627   -   7-2   W 1<T> 909   704   51-27<T>45-30<T>  3<T>44,509   9  51   5  121<L.33.1>
+Los Angeles Angels (Paul Beaumont)<T> 90  63  .588   6   2-7   L 2<T> 803   632   51-24<T>39-39<T> 53<T>39,494  14 106   5  119<L.33.1>
+Seattle Mariners (Tony Eatough)<T> 73  80  .477  23   6-3   L 1<T> 688   695   39-39<T>34-41<T>145<T>40,602  11 191   2   89<L.33.1>
+Oakland Athletics (Marc Bradbrook)<T> 52 101  .339  44   4-5   L 1<T> 493   795   27-48<T>25-53<T>177<T>30,558  11  67   6  109<L.33.1>
+<L.9.1>
+<Z>National League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Philadelphia Phillies (M.Rob Crowther)<T> 92  61  .601   -   6-3   W 1<T> 755   614   49-29<T>43-32<T> 21<T>45,635  14 146  10  116<L.33.1>
+Miami Marlins (Stuart Guard-Ward)<T> 75  78  .490  17   2-7   W 1<T> 686   650   43-35<T>32-43<T> 93<T>37,662   8 138   5  102<L.33.1>
+Washington Nationals (Mark Cooper)<T> 59  94  .385  33   6-3   L 2<T> 496   709   33-42<T>26-52<T>144<T>31,612  12  86  10   97<L.33.1>
+Atlanta Braves (Mike Sim)<T> 53 100  .346  39   3-6   W 1<T> 517   790   31-44<T>22-56<T>160<T>36,888  10 187   9   84<L.33.1>
+<L.9.1>
+<Z>National League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Chicago Cubs (Marc Rivoira)<T>109  44  .712   -   6-3   L 1<T> 998   580   54-24<T>55-20<T> 96<T>48,000  14 191   8  108<L.33.1>
+St Louis Cardinals (Mark J Hall)<T> 83  70  .542  26   5-4   W 2<T> 728   666   49-29<T>34-41<T>235<T>42,670  14 193   9  108<L.33.1>
+Cincinnati Reds (Paul Denyer)<T> 54  99  .352  55   2-7   L 1<T> 546   779   29-46<T>25-53<T>389<T>30,857   9 189   9   93<L.33.1>
+Pittsburgh Pirates (Mark Blakemore)<T> 49 104  .320  60   3-6   L 1<T> 500   794   25-50<T>24-54<T>310<T>31,195  15 196  15   79<L.33.1>
+<L.9.1>
+<Z>National League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Min  Wag<L.36.1>
+<C>Los Angeles Dodgers (Patrick Lee)<T>108  45  .705   -   8-1   L 1<T> 852   527   60-18<T>48-27<T>  7<T>46,519  14 113  13  119<L.33.1>
+San Francisco Giants (Bo Mayfield)<T> 89  64  .581  19   4-5   W 2<T> 755   628   50-25<T>39-39<T>182<T>36,570  15 188  15   97<L.33.1>
+Arizona Diamondbacks (Richard Ogg)<T> 88  65  .575  20   5-4   W 1<T> 739   650   46-29<T>42-36<T> 70<T>36,393  14 190  11  105<L.33.1>
+Colorado Rockies (Mark Hall)<T> 64  89  .418  44   4-5   L 2<T> 564   685   38-40<T>26-49<T> 73<T>32,397  15  24   7  100<L.33.1>
+<L.9.1>
+<Z>GM: Danny McConnell    Version: 4.4 (2009 Rules)    Deadline: Saturday 16th March<L.39.1>
+Postal Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND.  Tel: 020 8325 2448.  Fax: 020 8249 1819.<L.39.1>
+Email Address: danny@pbmsports.com      Info Website: www.pbmsports.com      Active Website: www.softsim.co.uk<L.39.1>
+Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty. Cheques made payable to: Ab Initio Games<L.39.1>
+<U>Messages<UC><C><L.36.1>
+<L.6.1>
+<Z>Deadlines in 2013 <C> We've now moved deadlines to Fridays. My FA work is now at least full time, and it doesn't do me any good<L.31.1>
+to try and do a 12 hour day, and then run games. Much more sensible to simply set Friday deadlines (still 9am), as I may have days<L.31.1>
+when I can work from home on a Friday, safe in the knowledge I'll either run some turns Friday evening, or otherwise over<L.31.1>
+Saturday/Sunday. And therefore less thumb twiddling for you guys, as you'll have more of an idea when they'll run. Postal players<L.31.1>
+can expect results on a Tuesday (as they'll be posted over the weekend) and others should get them some time Saturday or Sunday,<L.31.1>
+or if you're lucky, Friday evening. Please don't email me asking if turns have been run, I'll post a note on the website<L.31.1>
+if there's a problem, but not until the end of Sunday. As such, going forwards, please assume deadlines are 9am on the Friday.<L.31.1>
+Comments are welcome, and I'll probably review this come Easter.<L.31.1>
+<L.12.1>
+<Z>Late Email Results <C> If you think results are late, please make sure you wait until the following morning before chasing up<L.31.1>
+results. First step is to check out the Latest News at www.pbmsports.com - if I am running late I'll post a notice there (be aware<L.31.1>
+you may need to refresh the page, in case you get an old copy from Cache memory). Please don't chase me up because you know your<L.31.1>
+mate got his half an hour ago, because whilst most emails are "instant", often they do get delayed for a few hours and it does<L.31.1>
+take a while to send them all out (I spread them out to avoid triggering firewalls).<L.31.1>
+<L.12.1>
+<Z>PDF Reports <C> Emailed game reports are available for all games here. The standard format is a PDF file - Adobe Reader is free<L.31.1>
+to download (see www.pbmsports.com for a link) and you can open your reports with one click of the mouse and you can either view<L.31.1>
+them on screen, or print them as you wish. You don't need to worry about formatting or printer drivers. The text format for<L.31.1>
+reports is available but I only expect people will want to do so if they use the text file for other purposes (such as exporting<L.31.1>
+the listings into software produced yourself). If you've not tried email reports before, try them out - it really is very easy. <L.31.1>
+<L.1.1>
+<P>
+<L>
+<L.1.1>
+<BK.Actions><B>GAMEPLAN BASEBALL  MLB8   Week 17 Actions Report   2/3/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.33.66.99><L.48.1>
+Next Week: Regular Season Week 18<L.36.1>
+<C>Red Sox at Blue Jays (7-8)<T>Rays at Yankees (9-6)<T>Twins at Royals (11-4)<T>White Sox at Indians (9-6)<T><L.33.1>
+Mariners at Athletics (8-7)<T>Rangers at Angels (9-6)<T>Marlins at Braves (11-4)<T>Phillies at Nationals (13-2)<T><L.33.1>
+Cardinals at Reds (8-7)<T>Cubs at Pirates (12-3)<T>Rockies at Giants (6-9)<T>Dodgers at Diamondbacks (8-7)<T><L.33.1>
+<L.6.1>
+Twins at Red Sox (7-2)<T>Rangers at Rays (5-4)<T>Mariners at White Sox (5-4)<T>Indians at Yankees (5-4)<T><L.33.1>
+Athletics at Blue Jays (3-6)<T>Angels at Royals (5-4)<T>Cardinals at Marlins (6-3)<T>Dodgers at Phillies (6-3)<T><L.33.1>
+Rockies at Cubs (1-8)<T>Pirates at Nationals (3-6)<T>Giants at Braves (6-3)<T>Diamondbacks at Reds (7-2)<T><L.33.1>
+<L.6.1>
+Red Sox at Mariners (3-6)<T>Rays at Twins (2-7)<T>White Sox at Rangers (3-6)<T>Yankees at Angels (5-4)<T><L.33.1>
+Blue Jays at Indians (6-3)<T>Royals at Athletics (2-7)<T>Marlins at Rockies (5-4)<T>Phillies at Cardinals (3-6)<T><L.33.1>
+Cubs at Dodgers (4-5)<T>Nationals at Diamondbacks (4-5)<T>Braves at Pirates (7-2)<T>Reds at Giants (1-8)<T><L.33.1>
+<L.6.1>
+<ST.33.66.99><L.3.1>
+<Z>Injuries and Holdouts<C><L.36.1>
+24 Jose Bautista (TO) 6 games<T>35 Erick Aybar (BR) 9 games<T>21 Gary Sheffield (NY) 9 games<T>52 Jon Switzer (TB) 12 games<L.33.1>
+15 Matt Holliday (CW) 14 games<T> 9 Scott Brown (CL) 10 games<T>50 Jose Mijares (MT) 6 games<T>30 Craig Hansen (KC) 6 games<L.33.1>
+ 8 Eric Owens (LG) 11 games<T>22 Oscar Diaz (OA) 14 games<T> 4 Greg Reynolds (SM) 24 games<T>37 Todd Zeile (TR) 6 games<L.33.1>
+ 2 T.Pastornicky (AB) 30 games<T>15 Eric Brooks (MM) 12 games<T>19 S.Strasburg (WN) 6 games<T>23 Pedro Ordonez (PH) 6 games<L.33.1>
+83 Scott Moore (CU) 6 games<T>25 Jose Macias (CI) 14 games<T>24 Delwyn Young (PI) 6 games<T> 6 Fernando Salas (SL) 10 games<L.33.1>
+46 Todd Walker (AD) 14 games<T>72 Bill Washington (CO) 15 games<T> 3 A.McCutcheon (LA) 15 games<T> 4 Tom Sanders (SF) 6 games<L.33.1>
+<ST.27.53.79.105><L.6.1>
+<ST.27.66.93><L.6.1>
+<Z>Trading List<C>  Trading not allowed after week 17<L.33.1>
+<L.12.1>
+<Z>Free Agent Signings<C><L.36.1>
+New York Yankees sign FA 126 (SS), 7 Tony Graffanino (ex-BR) for 36 LP to replace 25 Mark Teixeira, net cost 23 LP<L.33.1>
+Chicago White Sox sign FA 128 (1B), 10 Daric Barton (ex-WN) for 63 LP to replace 13 Kenny Rogers, net cost 41 LP<L.33.1>
+Minnesota Twins sign FA 122 (LF), 16 Doug Mientkiewicz (ex-SM) for 74 LP to replace 4 Aaron Hicks, net cost 63 LP<L.33.1>
+Texas Rangers sign FA 123, 28 Jose Valdepsina for 11 LP to replace 2 Randy Johnson, net cost -2 LP<L.33.1>
+Miami Marlins sign FA 104 (LF), 13 Jose Costanza (ex-AB) for 25 LP to replace 22 Jim Jackson, net cost 11 LP<L.33.1>
+Pittsburgh Pirates sign FA 139, 50 Joseph Wieland (ex-PI) for 27 LP to replace 55 Matt Capps, net cost 0 LP<L.33.1>
+<L.6.1>
+<Z>Free Agent Pool<C>  (*** note that free agents are no longer available ***)<ST.30.66.96><L.36.1>
+<Z>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<T>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<C><L.36.1>
+101  Omar Quintanilla (ex-KC)<T>Bat R  7 FLD  SS   3  6  8  18 LP<T>102  <T>Bat L  5 SPD  RF   2  7  6  17 LP<L.33.1>
+103  <T>Pit L  6 QUI       R 16  9  16 LP<T>104  Jim Jackson (ex-MM)<T>Bat L  7 HIT  CF   6  9  8  29 LP<L.33.1>
+105  <T>Bat L  6 FLD  IF   2  8  7  21 LP<T>106  <T>Bat R  7 POW  IF   R 13  9  18 LP<L.33.1>
+107  Matt Williams (ex-NY)<T>Bat R  8 HIT  CF   9  1  8  45 LP<T>108  Ivan Nova (ex-NY)<T>Pit L  7 ACC       2 12  9  24 LP<L.33.1>
+109  Julio Cordero (ex-KC)<T>Bat R  7 FLD  1B   5 11  9  21 LP<T>110  Scott Maine (ex-CU)<T>Pit R  6 ACC       2 12  8  18 LP<L.33.1>
+111  Tony Pena (ex-AD)<T>Pit L  7 STA       5  8  8  21 LP<T>112  Troy Tulowitski (ex-AD)<T>Bat R  7 POW  SS   8  1  7  19 LP<L.33.1>
+113  Ben Zobrist (ex-PI)<T>Bat L  7 HIT  RF   6  9  8  16 LP<T>114  <T>Bat L  4 FLD  2B   3 10  6  13 LP<L.33.1>
+115  Orlando Sierra (ex-KC)<T>Pit L  6 STA       2 12  8  19 LP<T>116  Jim Lee (ex-KC)<T>Pit R  9 ACC       8  2  9  43 LP<L.33.1>
+118  <T>Cat L  6 POW   C   7 10  8  25 LP<T>119  Jose Arrendondo (ex-TB)<T>Pit L  8 QUI       7  8  9  41 LP<L.33.1>
+120  Rafael Martinez (ex-KC)<T>Pit R  7 CON       3  9  8  19 LP<T>121  <T>Pit L  6 CON       4 13  8  22 LP<L.33.1>
+122  Aaron Hicks (ex-MT)<T>Bat L  8 POW  CF   1 10 10  23 LP<T>123  Randy Johnson (ex-TR)<T>Pit R  7 CON       2 13  9  26 LP<L.33.1>
+124  Dan Meyer (ex-BR)<T>Pit R  7 STA       6  6  8  25 LP<T>125  Sandy Martinez (ex-BR)<T>Bat R  8 HIT  RF   9  7  9  36 LP<L.33.1>
+126  Mark Teixeira (ex-NY)<T>Bat R  8 POW  2B   2 13 10  26 LP<T>127  Matt Belisle (ex-CO)<T>Pit R  7 CON       1 11  9  22 LP<L.33.1>
+128  Kenny Rogers (ex-CW)<T>Pit R  9 ACC      11  0  9  44 LP<T>129  Robert Erlin (ex-TR)<T>Pit R  7 ACC       3 12  9  23 LP<L.33.1>
+130  Neil Walker (ex-PI)<T>Bat R  8 POW  3B   8  7  9  39 LP<T>132  Mike Lansing (ex-BR)<T>Bat R  7 HIT  CF   7  2  7  29 LP<L.33.1>
+133  Yeliar Castro (ex-AB)<T>Pit L  6 QUI       3 12  8  14 LP<T>134  Alexi Amarista (ex-SF)<T>Bat R  6 SPD  CF   1 14  8  16 LP<L.33.1>
+136  Hank Conger (ex-AD)<T>Cat R  5 HIT   C   8 10  7  17 LP<T>139  Matt Capps (ex-PI)<T>Pit R  7 CON       3 11  9  28 LP<L.33.1>
+141  Luis Cruz (ex-SF)<T>Pit L  7 CON       1  9  8  18 LP<T>142  Rob Bowen (ex-CI)<T>Bat L  8 SPD  RF   9  1  8  36 LP<L.33.1>
+148  Pete White (ex-KC)<T>Pit R  6 CON       9  2  6  17 LP<T><L.1.1>
+<D><E><DU>
+<BK.Allstar Teams><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.48.1>
+Allstar Game - American League versus National League<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.18.1>
+<ST.25.90.98.103.111.118.124><L.48.1>
+American Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+Doug Davis (TR)<T> 32   32   10   10  238 1/3   203  100   85   17   69  185   15<T> 17-5<T>  0<T> 22-10<T>  5.97<T> .221<T>  3.21<L.33.1>
+Carlos Silva (MT)<T> 30   30    2    2  201 2/3   178   63   60    8   41  169   14<T> 17-4<T>  0<T> 21-9<T>  5.53<T> .227<T>  2.68<L.33.1>
+Lance Carter (TB)<T> 29   29    7    7  188 1/3   168   53   49    7   56  149    8<T> 13-6<T>  0<T> 20-9<T>  4.40<T> .229<T>  2.34<L.33.1>
+Jason Frazor (TO)<T> 29   28    0    0  160       142   49   43    3   55  126   13<T> 13-11<T>  0<T> 15-13<T>  3.09<T> .228<T>  2.42<L.33.1>
+Pete Jones (BR)<T> 29   29    1    1  182 1/3   162   71   66   17   57  130   11<T> 14-7<T>  0<T> 18-11<T>  4.79<T> .228<T>  3.26<L.33.1>
+Scott Brown (CL)<T> 44    0    0   32  144 2/3   136   58   47    8   41  130   15<T>  4-8<T>  9<T>  0-0<T>  3.05<T> .238<T>  2.92<L.33.1>
+Javier Lopez (SM)<T> 44    0    0   17  129       106   46   41   10   33   98   19<T>  8-5<T>  1<T>  0-0<T>  4.95<T> .215<T>  2.86<L.33.1>
+Pat Neshek (MT)<T> 63    0    0   56  144 1/3   128   46   43    6   36  135   15<T> 12-3<T> 14<T>  0-0<T>  4.49<T> .228<T>  2.68<L.33.1>
+Deck Mcguire (TO)<T> 44    3    0   34  117 2/3    83   30   28    5   39   91    8<T>  4-3<T> 19<T>  2-1<T>  3.75<T> .190<T>  2.14<L.33.1>
+Tom Sanders (OA)<T> 30   30    1    1  174 1/3   171   79   71   13   54  121   16<T>  9-15<T>  0<T> 10-20<T>  2.79<T> .246<T>  3.67<L.33.1>
+Rick Reed (MT)<T> 26   26    4    4  181 1/3   174   66   63   12   58  139   14<T> 12-9<T>  0<T> 16-10<T>  4.42<T> .242<T>  3.13<L.33.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>American Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+Julio Ibanez (KC)<T> 72  301   52   95  150   26   4   7   43   29   0   8   45   7   4   5  212   43<T> .984<T> .315<T> .375<T> .498<L.33.1>
+Carlos Baerga (BR)<T>134  531   78  160  325   62  11  27  128   51  11  21   95  17   4 105 1014   89<T> .996<T> .301<T> .381<T> .612<L.33.1>
+Paul Konerko (CW)<T>126  505   77  152  302   39   3  35  103   47   7  21   88  47  10 110  198  483<T> .985<T> .300<T> .373<T> .598<L.33.1>
+Derek Jeter (NY)<T>126  528  112  169  350   50   7  39  109   41   3  18   97  46   4  25   77  285<T> .989<T> .320<T> .374<T> .662<L.33.1>
+Jeff DaVanon (LG)<T>125  516  106  183  369   79  13  27  114   47  11  42   81  50  11  65  158  339<T> .978<T> .354<T> .428<T> .715<L.33.1>
+Dave Roberts (BR)<T>138  540  107  168  309   49  10  24   97   69   7  32   87  17   3   1  189    5<T> .984<T> .311<T> .400<T> .572<L.33.1>
+Jayson Werth (TO)<T>125  485   98  168  329   54   7  31   90   59   7  25   72  31   2   1  233   10<T> .991<T> .346<T> .430<T> .678<L.33.1>
+Michael Cuddyer (MT)<T>131  546  113  198  383   70   8  33  130   50   4  27   81  17   3   0  192    8<T> .985<T> .362<T> .422<T> .701<L.33.1>
+Jared Sandberg (TB)<T> 87  356   88  116  282   33   2  43  117   25   4  22   62  21   1   0  171    5<T> .994<T> .325<T> .380<T> .792<L.33.1>
+Julius Matos (KC)<T> 72  278   59   98  204   25   3  25   61   34   6  13   30  31  12  44   92  213<T> .962<T> .352<T> .442<T> .733<L.33.1>
+Eric Owens (LG)<T>138  546  102  176  313   56  12  19  101   58   8  26   85  18  13 107 1202   40<T> .989<T> .322<T> .400<T> .573<L.33.1>
+Bob Roberts (TR)<T>123  463   69  128  208   34   2  14   54   37   3  10   78  21   2  16  365   76<T> .995<T> .276<T> .336<T> .449<L.33.1>
+Todd Zeile (TR)<T>125  512  108  167  330   59   7  30  113   57   6  27   69  34   3   2  259   21<T> .989<T> .326<T> .404<T> .644<L.33.1>
+Danny Bautista (TR)<T>118  512  117  183  350   53   6  34   92   58   8  35   65  58  10  67  163  304<T> .979<T> .357<T> .436<T> .683<L.33.1>
+<ST.25.90.98.103.111.118.124><L.48.1>
+<Z>National Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+Matt Mantel (AD)<T> 29   29    5    5  187 1/3   168   68   64    4   52  167   16<T> 16-4<T>  0<T> 23-6<T>  6.01<T> .230<T>  3.07<L.33.1>
+Pedro Ordonez (PH)<T> 24   24   10   10  189 1/3   124   34   33    8   37  149   10<T> 14-7<T>  0<T> 14-10<T>  3.76<T> .179<T>  1.57<L.33.1>
+Tony Armas (LA)<T> 29   29    6    6  189       169   59   55   10   58  117   13<T> 15-6<T>  0<T> 21-8<T>  6.33<T> .229<T>  2.62<L.33.1>
+Chris Volstad (MM)<T> 51    0    0   39  134 2/3   116   46   36    6   49  101   18<T>  4-4<T> 13<T>  0-0<T>  4.48<T> .223<T>  2.41<L.33.1>
+Roman Colon (CU)<T> 21   21    5    5  147 2/3   133   52   47    7   41  120   16<T> 13-5<T>  0<T> 15-6<T>  5.67<T> .230<T>  2.86<L.33.1>
+Stephen Strasburg (WN)<T> 29   29    2    2  174       161   72   62   14   63  119   22<T>  7-14<T>  0<T>  9-20<T>  2.74<T> .235<T>  3.21<L.33.1>
+Fernando Crespo (CI)<T> 24   24    3    3  138       142   52   48    8   28  131   13<T>  9-7<T>  0<T> 12-12<T>  4.24<T> .255<T>  3.13<L.33.1>
+Fernando Rincon (SF)<T> 48    0    0   28  124        98   37   33    7   35  115   13<T>  7-1<T>  9<T>  0-0<T>  3.92<T> .208<T>  2.40<L.33.1>
+Al Leiter (PH)<T> 54    0    0   27  114        96   35   34    6   33   78   16<T> 11-3<T>  4<T>  0-0<T>  5.13<T> .219<T>  2.68<L.33.1>
+Fernando Salas (SL)<T> 29   29    6    6  206       170   75   68   18   67  142   13<T>  9-11<T>  0<T> 14-15<T>  3.98<T> .215<T>  2.97<L.33.1>
+Evan Meek (AB)<T> 19   19    2    2  132 1/3   135   52   46    7   26  110    6<T>  7-9<T>  0<T>  8-11<T>  3.33<T> .253<T>  3.13<L.33.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>National Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+Benito Santiago (SF)<T>136  585  109  186  343   63   5  28   89   46   6  31   98  22   6  13  395   75<T> .987<T> .317<T> .377<T> .586<L.33.1>
+Ronny Cedeno (CU)<T>126  504  118  174  369   47   5  46  132   45   8  27   77  20   7 117 1134   30<T> .994<T> .345<T> .413<T> .732<L.33.1>
+Luis Gonzalez (AD)<T>134  539   97  175  330   55  14  24  105   55   9  36   93  45   4  97  185  468<T> .993<T> .324<T> .402<T> .612<L.33.1>
+Craig Counsell (AD)<T>123  522  105  177  332   59   6  28  100   39   7  32   73  41   3  23   63  294<T> .991<T> .339<T> .397<T> .636<L.33.1>
+Omar Vizquel (SF)<T>141  575   86  182  320   61   4  23  111   45   8  21   89  70   8  87  196  404<T> .986<T> .316<T> .379<T> .556<L.33.1>
+Todd Helton (CO)<T>132  514  111  170  365   53  11  40  101   50   6  36   79  36   0   1  223    6<T>1.000<T> .330<T> .400<T> .710<L.33.1>
+A.McCutcheon (LA)<T>112  476   79  145  250   37   4  20   75   49   5  21   79  30   2   0  251    2<T> .992<T> .304<T> .379<T> .525<L.33.1>
+Tom Sanders (SF)<T>144  588  117  200  389   65  11  34  127   52  11  26   86  26   1   0  206    3<T> .995<T> .340<T> .410<T> .661<L.33.1>
+Dave Lewis (PH)<T>138  570   89  181  340   58   4  31  113   46   7  16   69  62  11 118  198  573<T> .985<T> .317<T> .379<T> .596<L.33.1>
+Abraham Nunez (SL)<T>103  426   67  128  246   35   4  25   92   33   5   8   95  35  12  69  139  352<T> .976<T> .300<T> .361<T> .577<L.33.1>
+Adam LaRoche (AB)<T>102  394   56  124  213   42   7  11   51   34   8  19   77  12  18  59  638   40<T> .974<T> .314<T> .387<T> .540<L.33.1>
+Jason LaRue (CU)<T>117  491   91  163  295   52   7  22   93   38   4  23   63  11  11   4  329   60<T> .972<T> .331<T> .387<T> .600<L.33.1>
+Alfonso Soriano (CU)<T>135  518  105  183  357   59   5  35  100   67   7  37   89  22   2   0  207    7<T> .990<T> .353<T> .439<T> .689<L.33.1>
+Garrett Jones (PI)<T>135  547   74  156  270   59   8  13   66   53  10  18  103   0   0   0    0    0<T> .000<T> .285<T> .365<T> .493<L.33.1>
+<L.1.1>
+<D><E><P>
+<BK.Allstar Game><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB8   Season 11   Week 17 of 18   2/3/13<L.54.1>
+Allstar Game - American League versus National League<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+NL  1st  <C><U>Davis<UC> on mound. Helton ground out to 1B (3B, field save). Gonzalez flied out to C. Counsell doubled to RF. Cedeno ground <L.30.1>
+         out to 1B (C, field save).<L.33.1>
+<Z>AL  1st  <C><U>Mantel<UC> on mound. Werth singled to RF. Jeter doubled to CF, Werth scored, <Z>AL 1-0<C>. DaVanon doubled to CF, Jeter scored, <L.30.1>
+         <Z>AL 2-0<C>. Sandberg doubled to RF, DaVanon scored, <Z>AL 3-0<C>. Cuddyer singled to CF, Sandberg scored, <Z>AL 4-0<C>. Konerko <L.30.1>
+         struck out. Baerga singled to RF, Cuddyer to 3rd. Ibanez struck out. Baerga stole 2nd. Roberts tripled to CF, Cuddyer <L.30.1>
+         scored, Baerga scored, <Z>AL 6-0<C>. Werth struck out.<L.33.1>
+<Z>NL  2nd  <C>Lewis singled to LF. Sanders doubled to CF, Lewis to 3rd. Vizquel ground out to 1B (2B). McCutcheon ground out to 1B <L.30.1>
+         (SS). Santiago ground out to 1B (SS, field save).<L.33.1>
+<Z>AL  2nd  <C>Jeter flied out to CF. DaVanon flied out to RF. Sandberg flied out to SS.<L.33.1>
+<Z>NL  3rd  <C>Helton ground out to 1B (SS, field save). Gonzalez flied out to CF, field save. Counsell flied out to C.<L.33.1>
+<Z>AL  3rd  <C>Cuddyer ground out to 1B (SS). Konerko singled to CF. Baerga flied out to LF, Konerko to 2nd. Ibanez struck out.<L.33.1>
+<Z>NL  4th  <C>Cedeno struck out. Lewis ground out to 1B (C). Sanders flied out to 2B, field save.<L.33.1>
+<Z>AL  4th  <C>Roberts singled to LF. <U>Ordonez<UC> took over on mound. Roberts stole 2nd. Werth flied out to RF. Roberts stole 3rd. Jeter <L.30.1>
+         ground out to 1B (3B). DaVanon tripled to CF, Roberts scored, <Z>AL 7-0<C>. Sandberg struck out.<L.33.1>
+<Z>NL  5th  <C>Vizquel flied out to 3B. McCutcheon flied out to RF. Santiago flied out to RF.<L.33.1>
+<Z>AL  5th  <C>Cuddyer singled to 1B. Konerko doubled to CF, Cuddyer scored, <Z>AL 8-0<C>. Baerga flied out to LF, Konerko to 3rd. Ibanez <L.30.1>
+         ground out to 1B (2B). Roberts ground out to 1B (2B).<L.33.1>
+<Z>NL  6th  <C><U>Silva<UC> took over on mound. <U>Soriano<UC> pinch hitting at LF. Soriano struck out. <U>Nunez<UC> pinch hitting at 2B. Nunez doubled to <L.30.1>
+         CF. Counsell singled to SS, Nunez to 3rd. <U>LaRoche<UC> pinch hitting at 1B. LaRoche singled to 3B, Nunez scored, Counsell <L.30.1>
+         to 2nd, <Z>AL 8-1<C>. <U>Carter<UC> took over on mound. Lewis singled to LF, Counsell to 3rd, LaRoche to 2nd. Counsell forced out <L.30.1>
+         at home (1B), Sanders ground into double play at 1B (C).<L.33.1>
+<Z>AL  6th  <C><U>Armas<UC> took over on mound. Werth flied out to C. Jeter flied out to SS, field save. DaVanon struck out.<L.33.1>
+<Z>NL  7th  <C>Vizquel flied out to 3B. McCutcheon tripled to CF. <U>LaRue<UC> pinch hitting at C. LaRue struck out. Soriano ground out to <L.30.1>
+         1B (3B).<L.33.1>
+<Z>AL  7th  <C>Sandberg singled to LF. Cuddyer doubled to RF, Sandberg scored, <Z>AL 9-1<C>. Konerko singled to 3B, Cuddyer to 3rd. Baerga <L.30.1>
+         singled to LF, Cuddyer scored, Konerko to 3rd, <Z>AL 10-1<C>. <U>Roberts<UC> pinch hitting at C. Roberts singled to RF, Konerko <L.30.1>
+         scored, Baerga to 3rd, <Z>AL 11-1<C>. Roberts sacrificed to RF, Baerga scored, Roberts to 2nd, <Z>AL 12-1<C>. Werth struck out. <L.30.1>
+         Jeter singled to CF, Roberts to 3rd. DaVanon doubled to LF, Roberts scored, Jeter to 3rd, <Z>AL 13-1<C>. Sandberg doubled <L.30.1>
+         to RF, Jeter scored, DaVanon scored, <Z>AL 15-1<C>. Sandberg stole 3rd. Cuddyer ground out to 1B (C).<L.33.1>
+<Z>NL  8th  <C>Nunez struck out. Counsell homered to LF, <Z>AL 15-2<C>. LaRoche struck out. <U>Lopez<UC> took over on mound. Lewis flied out to <L.30.1>
+         3B.<L.33.1>
+<Z>AL  8th  <C><U>Crespo<UC> took over on mound. Konerko singled to LF. Konerko stole 2nd. Baerga flied out to RF, field save. Roberts struck <L.30.1>
+         out. Roberts doubled to LF, Konerko scored, <Z>AL 16-2<C>. Werth flied out to 3B.<L.33.1>
+<Z>NL  9th  <C>Sanders singled to RF. Sanders stole 2nd. Vizquel tripled to LF, Sanders scored, <Z>AL 16-3<C>. McCutcheon sacrificed to CF, <L.30.1>
+         Vizquel scored, <Z>AL 16-4<C>. LaRue ground out to 1B (3B). Soriano flied out to C.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>National<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(4,0d)<Z> 0 <C>(1,0) <Z> 1 <C>(1,0) <Z> 2 <C>(2,0) <T><Z>  4<C><L.33.1>
+<Z>American<C><T><Z> 6 <C>(7,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 7 <C>(8,0) <Z> 1 <C>(2,0) <Z> x       <T> 16<C><ST.24.66.90><L.42.1>
+<Z>National Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>American Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+Todd Helton lf<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T>Jayson Werth cf<T> 6  1  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+Luis Gonzalez 2b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T>Derek Jeter 3b<T> 5  2  2  1  0  0  1  0  0  0  0  0  0<L.30.1>
+Craig Counsell 3b<T> 4  1  3  1  0  1  1  0  0  0  0  0  0<T>Jeff DaVanon ss<T> 5  2  3  2  1  0  3  0  0  0  1  0  0<L.30.1>
+Ronny Cedeno 1b<T> 2  0  0  0  0  0  0  0  0  0  1  0  0<T>Jared Sandberg dh<T> 5  2  3  2  0  0  3  0  0  1  1  0  0<L.30.1>
+Dave Lewis dh<T> 4  0  2  0  0  0  0  0  0  0  0  0  0<T>Michael Cuddyer rf<T> 5  3  3  1  0  0  2  0  0  0  0  0  0<L.30.1>
+Tom Sanders rf<T> 4  1  2  1  0  0  0  0  0  1  0  0  0<T>Paul Konerko 2b<T> 5  2  4  1  0  0  1  0  0  1  1  0  0<L.30.1>
+Omar Vizquel ss<T> 4  1  1  0  1  0  1  0  0  0  0  0  0<T>Carlos Baerga 1b<T> 5  2  2  0  0  0  1  0  0  1  0  1  0<L.30.1>
+A.McCutcheon cf<T> 3  0  1  0  1  0  1  0  1  0  0  0  0<T>Julio Ibanez c <T> 3  0  0  0  0  0  0  0  0  0  2  1  0<L.30.1>
+Benito Santiago c <T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T>Dave Roberts lf<T> 4  1  3  1  1  0  4  0  1  2  0  0  0<L.30.1>
+Alfonso Soriano lf<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<T>Bob Roberts c <T> 2  1  1  0  0  0  1  0  0  0  1  0  0<L.30.1>
+Abraham Nunez 2b<T> 2  1  1  1  0  0  0  0  0  0  1  0  0<T><L.30.1>
+Adam LaRoche 1b<T> 2  0  1  0  0  0  1  0  0  0  1  0  0<T><L.30.1>
+Jason LaRue c <T> 2  0  0  0  0  0  0  0  0  0  1  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>36  4 11  3  2  1  4  0  1  1  5  0  0<T>Totals<T>45 16 22  8  2  0 16  0  1  5  8  2  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+American Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>National Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+Doug Davis (w)<T> 5        3  0  0  0  0  1  2B    0<T>Matt Mantel (l)<T> 3        9  7  7  0  0  4  2B    1<L.30.1>
+Carlos Silva<T>   1/3    3  1  1  0  0  1  0H    2<T>Pedro Ordonez<T> 2        3  1  1  0  0  1  0B    0<L.30.1>
+Lance Carter<T> 2 1/3    3  1  1  1  0  3  0B    0<T>Tony Armas<T> 2        8  7  7  0  0  2  1H    0<L.30.1>
+Javier Lopez<T> 1 1/3    2  2  2  0  0  0  1     0<T>Fernando Crespo<T> 1        2  1  1  0  0  1  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<BK.Turnsheet><P.70><L>
+<B>GAMEPLAN BASEBALL   MLB8   Turnsheet    2/3/13<X>      MLB8-NY<L.48.1>
+<B>New York Yankees (Alan Milnes)   Week 18<C>      Deadline: Saturday 16th March<ST.24><L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<C><L.45.1>
+Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND. Fax: 020 8249 1819. Web Orders: www.softsim.co.uk<L.45.1>
+<Z>[I] Fielding Lineup    <C>Basic fielding selection for this week and batting order. Batting order should be position in batting<L.33.1>
+<Z>                       <C>order (1-9) NOT shirt number. Please only fill in CHANGES to selections.<L.45.1>
+Fielding Position:<T>    C          1B          2B          3B          SS          LF          CF          RF          DH       <L.45.1>
+Shirt Number:<T>[  20  ]    [  16  ]    [  24  ]    [   2  ]    [  36  ]    [  <Z>21<C>  ]    [  11  ]    [  83  ]    [  12  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.45.1>
+Batting Order (1-9):<T>[   7  ]    [   9  ]    [   5  ]    [   4  ]    [   3  ]    [   1  ]    [   2  ]    [   6  ]    [   8  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.54.1>
+<Z>[B] Lineup Changes    <C>Up to three changes in selection from basic order. Give shirt numbers of player to be picked, player<L.33.1>
+<Z>                       <C>to be replaced and game (2-9) from which change applies.<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+<L.9.1>
+<Z>[P] Pitching Changes    <C>Give shirt number of pitcher and changes to MAXBATS (MxB), MAXHITS (MxH), MAXEXTRA (MxE), FIRSTINN (FIn)<L.33.1>
+<Z>                        <C>and MINBATS (MnB). Please do not fill in parameters you are not changing.<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+<L.9.1>
+<Z>[S] Pitching Selections    <C>Pitching Selections for this week's games. A pitcher cannot be selected more than once. You must have<L.33.1>
+                           at least four pitchers in your starting rotation and four pitchers in your bullpen depth chart.<L.33.1>
+                           You do not have to select a setup and closing pitcher.<L.45.1>
+Starting Rotation: <T>[ 52 :      ]    [ 62 :      ]    [ 65 :      ]    [ 17 :      ]    [ 14 :      ]    [  0 :      ]    <L.45.1>
+Bullpen Depth Chart:<T>[ 64 :      ]    [  8 :      ]    [ 10 :      ]    [ 15 :      ]    [ 71 :      ]    [  6 :      ]    <L.45.1>
+Setup Pitcher: <T>[  9 :      ]    <L.45.1>
+Closer: <T>[ 18 :      ]    <L.54.1>
+<Z>[T] Training    <C>Training & Bonus Skills (HIT, POW, SPD, FLD, ACC, CON, QUI or STA), Bonus & Key Players for each series. <L.45.1>
+Series 1 vs TB    [  HIT :            ]   [  HIT :            ]   [  Bonus 20 :         ]   [  Key <Z>26<C> :         ]<L.45.1>
+Series 2 vs CL    [  HIT :            ]   [  HIT :            ]   [  Bonus 20 :         ]   [  Key <Z> 6<C> :         ]<L.45.1>
+Series 3 at LG    [  POW :            ]   [  POW :            ]   [  Bonus 20 :         ]   [  Key <Z>55<C> :         ]<L.45.1>
+<L.6.1>
+<Z>[X] Special Actions<L.48.1>
+<C>ACTION 1 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 2 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 3 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 4 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 5 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+<L.9.1>
+Codes are: ACCEPT, ACTIVATE, ADDFORM, ALBATTERS, ALLEADERS, ALPITCHERS, ALPLAYERS, BATTERS, BLOWINN, BLOWMARG, BUILDING, CANFULL,<L.33.1>
+CANOPP, COACH, FANS, LEADERS, LIST, LONGINN, LONGPIT, MAXLEAD, MERC, MINLEAD, MINORS, NEWPOS, NLBATTERS, NLLEADERS, NLPITCHERS, <L.33.1>
+NLPLAYERS, OFFER, PINCH1, PINCH2, PINCH3, PINCH4, PINCHDEF, PINCHINN, PITCHERS, PLATOON1, PLATOON2, PLATOON3, PLATOON4, PLAYERS, <L.33.1>
+PROMOTE, REHAB, RELEASE, RENAME, ROUNDUP, SCHEDULE, SCOUT, SETFULL, SETOPP, SIZE, STADIUM, STARTINN, STATS, SURFACE, SWAP, TRAINER<L.48.1>
+<Z>[C] Payments<C>    Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty.  MLB8-NY tc= 30.6<L.48.1>
+<Z><C>AMOUNT ENCLOSED [ #      .      ]   Cheques made payable to: Ab Initio Games<L.45.1>
+Indicate any change of address in the space below.<D><E><DU>

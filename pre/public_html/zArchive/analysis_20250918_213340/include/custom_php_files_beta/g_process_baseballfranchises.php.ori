@@ -1,0 +1,361 @@
+<?php
+// don't delete this line, this must be the first line of your code
+if(!defined('custom_page_from_inclusion')) { die(); }
+require_once 'bb_functions.php';
+require_once 'g_functions.php';
+require_once 'mydatabase.php';
+
+
+	$str="<p>Processing rosters.</p>";
+	output($str); 
+
+	$_cp_sql9="SELECT `tf_seq`, `tf_line` FROM `g_turnsfull` WHERE `up_id`=$_cp_turnid ORDER BY `tf_seq` ASC ";
+	#echo "<p>$_cp_sql9</p>";
+	$_cp_mytext=nz_pdo_array($_cp_sql9,$conn);	
+	$myarraysize = count($_cp_mytext); 
+	$str="Found $myarraysize rows to analyse&nbsp;&nbsp;&nbsp;&nbsp;";
+	output($str); 
+	$i=-1;
+	//TODO Automate this!!
+	$_cp_rownomax=1614;
+	foreach ($_cp_mytext as $row) {
+			$i++;
+			#if ($i>1169 AND $i<1189) {
+			#}
+			$_cp_rowid=$row['tf_seq'];
+			$_cp_rowtext=strtolower($row['tf_line']);
+			#echo "$i<br>";
+			#nz_debug($_cp_rowtext);		
+			if ('roundup'==substr($_cp_rowtext,35,7)) {
+				$_cp_rowno=$_cp_rowid;
+				echo "<p>Found start of rosters on line $_cp_rowid</p>";
+				#echo "<p>$_cp_rowid - $_cp_rowtext</p>";
+			} else if ('roundup'==substr($_cp_rowtext,36,7)) {
+				$_cp_rowno=$_cp_rowid;
+				echo "<p>Found start of rosters on line $_cp_rowid</p>";
+				#echo "<p>$_cp_rowid - $_cp_rowtext</p>";
+			} else if ('roundup'==substr($_cp_rowtext,4,7)) {
+				$_cp_rowno=$_cp_rowid;
+				echo "<p>Found start of rosters on line $_cp_rowid</p>";
+				#echo "<p>$_cp_rowid - $_cp_rowtext</p>";
+			}	
+			/*
+			if ('Turnsheet'==substr($_cp_rowtext,30,9)) {
+				$_cp_rownomax=$_cp_rowid;
+				echo "<p>Found end of rosters on Line $_cp_rowid</p>";
+				echo "<p>$_cp_rowid - $_cp_rowtext</p>";
+			}
+			if ('American League'==substr($_cp_rowtext,0,15)) {
+				if (0==$_cp_rownomax) {
+					$_cp_rownomax=$_cp_rowid-6;
+					echo "<p>Found end of rosters on line $_cp_rowid</p>";
+					echo "<p>$_cp_rowid - $_cp_rowtext</p>";
+				}
+			}
+			*/ 
+	}
+
+	//Check that we have found roundup ok
+	if (is_numeric($_cp_rowno) AND is_numeric($_cp_rownomax)) {
+
+	$str="<p>Roundup can be found between lines $_cp_rowno and $_cp_rownomax&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+	output($str); 
+
+	#Build franchise data into an array and insert it into DB
+
+	//Initilaise various variables
+	$_cp_franchisebase=asm_franchisebase($_cp_league);
+	//Stores the 24 teams individual numbers
+	$_cp_franchiseclub=0;
+	$_cp_franchisearray=array();
+	//Stores where the franchise information can be found
+	$_cp_franchiselines=array();
+	//Stores the franchise details for inserting into DB
+	$_cp_franchiseraw=array();
+
+	$_cp_sql="SELECT `abbr` FROM `bb_teams` WHERE 1=1";
+	$teamabbrs=nz_pdo_array($_cp_sql,$conn);
+	#TODO push into array to remove extraneous [abbr]
+	#$title="Printing team abbreviations:-";
+	#nz_debug($teamabbrs,$title);
+	
+	#$title="Printing text lines:-";
+	#nz_debug($_cp_mytext,$title);
+
+	for ($x = $_cp_rowno; $x <= $_cp_rownomax; $x++) {
+		$string=$_cp_mytext[$x]['tf_line'];
+		$substring="Stadium";
+		if (strpos($string, $substring) !== false) {
+			$_cp_datastart=$x-1;
+			#$title="Looking for franchise lines:-";
+			#nz_debug($_cp_mytext[$x-1],$title);
+			array_push($_cp_franchiselines,$_cp_datastart);
+		} else {
+			#echo "The string does not contain the substring.";
+		}
+#		if ('`ST.66`'==$_cp_etext[0]) {
+#			$_cp_datastart=$x+1;
+#			array_push($_cp_franchiselines,$_cp_datastart);
+#		}
+	}
+	#$title="Printing franchise lines:-";
+	#nz_debug($_cp_franchiselines,$title);
+
+	foreach ($_cp_franchiselines as $row) {
+		$_cp_text1 = preg_split("/[\s,]+/", $_cp_mytext[$row]['tf_line']);
+		#$title="Text1:-";
+		#nz_debug($_cp_text1,$title);
+		$_cp_text2 = preg_split("/[\s,]+/", $_cp_mytext[$row+1]['tf_line']);
+		$mylength=strlen($_cp_text1[6]);
+		$title="Text:-";
+		nz_debug($_cp_text1[6],$title);
+		$title="Printing team abbreviations:-";
+		nz_debug($teamabbrs[29],$title);
+		#if (in_array("TB", $teamabbrs['abbr'])) {
+		#	echo "<p>This should be TB - $_cp_text1[6], it has a length of $mylength.</p>";
+		#}
+/*
+	[0] => 
+    [1] => Tampa
+    [2] => Bay
+    [3] => Rays
+    [4] => Rob
+    [5] => Byrne
+    [6] => TB
+    [7] => Boston
+    [8] => Red
+    [9] => Sox
+    [10] => Alan
+    [11] => Clements
+    [12] => BR
+    [13] => 
+*/    
+		
+
+
+		//1st Team
+		if (in_array($_cp_text1[4], $teamabbrs)) {
+			$_cp_franchiseid=$_cp_franchisebase+$_cp_franchiseclub;
+			//Allocate ID
+			$_cp_franchiseraw[$_cp_franchiseid]['id']=$_cp_franchiseid;
+			//Allocate Abbreviation
+			$_cp_franchiseraw[$_cp_franchiseid]['abbr']=$_cp_text1[4];
+			array_push($_cp_franchisearray,$_cp_text1[4]);
+			//Allocate Division
+			$_cp_mydiv=whatsmydiv_asm($_cp_franchiseclub);
+			$_cp_franchiseraw[$_cp_franchiseid]['conf']=$_cp_mydiv[0];
+			$_cp_franchiseraw[$_cp_franchiseid]['div']=$_cp_mydiv[1];	
+			//Allocate Coach
+			$_cp_franchiseraw[$_cp_franchiseid]['coach']=$_cp_text1[2];
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=" ";
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=$_cp_text1[3];
+			//Allocate Stadium Details
+			$_cp_franchiseraw[$_cp_franchiseid]['ssize']=$_cp_text2[1];
+			$_cp_franchiseraw[$_cp_franchiseid]['ssurface']=$_cp_text2[2];
+			$_cp_franchiseraw[$_cp_franchiseid]['stype']=$_cp_text2[3];
+			$_cp_franchiseclub++;
+		} elseif (in_array($_cp_text1[5], $teamabbrs)) {
+			$_cp_franchiseid=$_cp_franchisebase+$_cp_franchiseclub;
+			//Allocate ID
+			$_cp_franchiseraw[$_cp_franchiseid]['id']=$_cp_franchiseid;
+			//Allocate Abbreviation
+			$_cp_franchiseraw[$_cp_franchiseid]['abbr']=$_cp_text1[5];
+			array_push($_cp_franchisearray,$_cp_text1[5]);
+			//Allocate Division
+			$_cp_mydiv=whatsmydiv_asm($_cp_franchiseclub);
+			$_cp_franchiseraw[$_cp_franchiseid]['conf']=$_cp_mydiv[0];
+			$_cp_franchiseraw[$_cp_franchiseid]['div']=$_cp_mydiv[1];	
+			//Allocate Coach
+			$_cp_franchiseraw[$_cp_franchiseid]['coach']=$_cp_text1[3];
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=" ";
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=$_cp_text1[4];
+			//Allocate Stadium Details
+			$_cp_franchiseraw[$_cp_franchiseid]['ssize']=$_cp_text2[1];
+			$_cp_franchiseraw[$_cp_franchiseid]['ssurface']=$_cp_text2[2];
+			$_cp_franchiseraw[$_cp_franchiseid]['stype']=$_cp_text2[3];
+			$_cp_franchiseclub++;
+		} elseif (in_array($_cp_text1['abbr'][6], $teamabbrs)) {
+			echo "<p>Here</p>";
+			$_cp_franchiseid=$_cp_franchisebase+$_cp_franchiseclub;
+			//Allocate ID
+			$_cp_franchiseraw[$_cp_franchiseid]['id']=$_cp_franchiseid;
+			//Allocate Abbreviation
+			$_cp_franchiseraw[$_cp_franchiseid]['abbr']=$_cp_text1[5];
+			array_push($_cp_franchisearray,$_cp_text1[5]);
+			//Allocate Division
+			$_cp_mydiv=whatsmydiv_asm($_cp_franchiseclub);
+			$_cp_franchiseraw[$_cp_franchiseid]['conf']=$_cp_mydiv[0];
+			$_cp_franchiseraw[$_cp_franchiseid]['div']=$_cp_mydiv[1];	
+			//Allocate Coach
+			$_cp_franchiseraw[$_cp_franchiseid]['coach']=$_cp_text1[3];
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=" ";
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=$_cp_text1[4];
+			//Allocate Stadium Details
+			$_cp_franchiseraw[$_cp_franchiseid]['ssize']=$_cp_text2[1];
+			$_cp_franchiseraw[$_cp_franchiseid]['ssurface']=$_cp_text2[2];
+			$_cp_franchiseraw[$_cp_franchiseid]['stype']=$_cp_text2[3];
+			$_cp_franchiseclub++;
+		} else {
+			//Nothing found
+			#$str="<p>Nothing found for Team 1</p>";
+			#output($str); 
+		}
+
+		//2nd Team
+		if (in_array($_cp_text1[9], $teamabbrs)) {
+			$_cp_franchiseid=$_cp_franchisebase+$_cp_franchiseclub;
+			//Allocate ID
+			$_cp_franchiseraw[$_cp_franchiseid]['id']=$_cp_franchiseid;
+			//Allocate Abbreviation
+			$_cp_franchiseraw[$_cp_franchiseid]['abbr']=$_cp_text1[9];
+			array_push($_cp_franchisearray,$_cp_text1[9]);
+			//Allocate Division
+			$_cp_mydiv=whatsmydiv_asm($_cp_franchiseclub);
+			$_cp_franchiseraw[$_cp_franchiseid]['conf']=$_cp_mydiv[0];
+			$_cp_franchiseraw[$_cp_franchiseid]['div']=$_cp_mydiv[1];	
+			//Allocate Coach
+			$_cp_franchiseraw[$_cp_franchiseid]['coach']=$_cp_text1[7];
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=" ";
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=$_cp_text1[8];
+			//Allocate Stadium Details
+			$_cp_franchiseraw[$_cp_franchiseid]['ssize']=$_cp_text2[5];
+			$_cp_franchiseraw[$_cp_franchiseid]['ssurface']=$_cp_text2[6];
+			$_cp_franchiseraw[$_cp_franchiseid]['stype']=$_cp_text2[7];
+			$_cp_franchiseclub++;
+		} elseif (in_array($_cp_text1[10], $teamabbrs)) {
+			$_cp_franchiseid=$_cp_franchisebase+$_cp_franchiseclub;
+			//Allocate ID
+			$_cp_franchiseraw[$_cp_franchiseid]['id']=$_cp_franchiseid;
+			//Allocate Abbreviation
+			$_cp_franchiseraw[$_cp_franchiseid]['abbr']=$_cp_text1[10];
+			array_push($_cp_franchisearray,$_cp_text1[10]);
+			//Allocate Division
+			$_cp_mydiv=whatsmydiv_asm($_cp_franchiseclub);
+			$_cp_franchiseraw[$_cp_franchiseid]['conf']=$_cp_mydiv[0];
+			$_cp_franchiseraw[$_cp_franchiseid]['div']=$_cp_mydiv[1];	
+			//Allocate Coach
+			$_cp_franchiseraw[$_cp_franchiseid]['coach']=$_cp_text1[8];
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=" ";
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=$_cp_text1[9];
+			//Allocate Stadium Details
+			$_cp_franchiseraw[$_cp_franchiseid]['ssize']=$_cp_text2[5];
+			$_cp_franchiseraw[$_cp_franchiseid]['ssurface']=$_cp_text2[6];
+			$_cp_franchiseraw[$_cp_franchiseid]['stype']=$_cp_text2[7];
+			$_cp_franchiseclub++;
+		} elseif (in_array($_cp_text1[11], $teamabbrs)) {
+			$_cp_franchiseid=$_cp_franchisebase+$_cp_franchiseclub;
+			//Allocate ID
+			$_cp_franchiseraw[$_cp_franchiseid]['id']=$_cp_franchiseid;
+			//Allocate Abbreviation
+			$_cp_franchiseraw[$_cp_franchiseid]['abbr']=$_cp_text1[11];
+			array_push($_cp_franchisearray,$_cp_text1[11]);
+			//Allocate Division
+			$_cp_mydiv=whatsmydiv_asm($_cp_franchiseclub);
+			$_cp_franchiseraw[$_cp_franchiseid]['conf']=$_cp_mydiv[0];
+			$_cp_franchiseraw[$_cp_franchiseid]['div']=$_cp_mydiv[1];	
+			//Allocate Coach
+			$_cp_franchiseraw[$_cp_franchiseid]['coach']=$_cp_text1[9];
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=" ";
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=$_cp_text1[10];
+			//Allocate Stadium Details
+			$_cp_franchiseraw[$_cp_franchiseid]['ssize']=$_cp_text2[5];
+			$_cp_franchiseraw[$_cp_franchiseid]['ssurface']=$_cp_text2[6];
+			$_cp_franchiseraw[$_cp_franchiseid]['stype']=$_cp_text2[7];
+			$_cp_franchiseclub++;
+		} elseif (in_array($_cp_text1[12], $teamabbrs)) {
+			$_cp_franchiseid=$_cp_franchisebase+$_cp_franchiseclub;
+			//Allocate ID
+			$_cp_franchiseraw[$_cp_franchiseid]['id']=$_cp_franchiseid;
+			//Allocate Abbreviation
+			$_cp_franchiseraw[$_cp_franchiseid]['abbr']=$_cp_text1[12];
+			array_push($_cp_franchisearray,$_cp_text1[12]);
+			//Allocate Division
+			$_cp_mydiv=whatsmydiv_asm($_cp_franchiseclub);
+			$_cp_franchiseraw[$_cp_franchiseid]['conf']=$_cp_mydiv[0];
+			$_cp_franchiseraw[$_cp_franchiseid]['div']=$_cp_mydiv[1];	
+			//Allocate Coach
+			$_cp_franchiseraw[$_cp_franchiseid]['coach']=$_cp_text1[10];
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=" ";
+			$_cp_franchiseraw[$_cp_franchiseid]['coach'].=$_cp_text1[11];
+			//Allocate Stadium Details
+			$_cp_franchiseraw[$_cp_franchiseid]['ssize']=$_cp_text2[5];
+			$_cp_franchiseraw[$_cp_franchiseid]['ssurface']=$_cp_text2[6];
+			$_cp_franchiseraw[$_cp_franchiseid]['stype']=$_cp_text2[7];
+			$_cp_franchiseclub++;
+		} else {
+			//Nothing found
+			#$str="<p>Nothing found for Team 2</p>";
+			#output($str); 
+		}
+
+
+	}
+	$title="Franchise Data:-";
+	nz_debug($_cp_franchiseraw,$title);
+
+	//Back up franchise table
+	$mytimestamp=idate("U");
+	$_cp_sql = "INSERT INTO `bb_franchises_backup` SELECT NULL,'$mytimestamp',`f_id`, `f_league`, `f_season`, `f_week`,`f_conference`, `f_division`, `f_ori_team`, `f_ori_city`, `f_ori_nickname`, `f_ori_coach`, `f_ori_size`, `f_ori_surface`, `f_ori_type`, `f_team`, `f_city`, `f_nickname`, `f_coach`, `f_size`, `f_surface`, `f_type`, `f_WinnerYears`, `f_ConferenceYears`, `f_DivisionYears`, `f_WildcardYears`, `f_Winner`, `f_Runnerup`, `f_ChampionshipW`, `f_ChampionshipL`, `f_DivisionW`, `f_Wildcard`, `f_MaxWins`, `f_MaxLosses`, `f_MaxScored`, `f_MaxConceded`, `f_Link`
+	FROM `bb_franchises` WHERE 1";
+	nz_pdo($_cp_sql,$conn);
+
+	$str="Backed up Franchise table</p>";
+	output($str); 
+
+	//TODO - Remove this!
+	#$_cp_sql = "TRUNCATE `bb_franchises`";
+	#nz_pdo($_cp_sql,$conn);
+
+	//Check if records exist
+	$_cp_sql = "SELECT `f_id` FROM `bb_franchises` WHERE `f_league`='$_cp_league'";
+	$myrows=nz_pdo_array($_cp_sql,$conn);
+	$myarraysize = count($myrows); 
+
+	if (24==$myarraysize) {
+		//TODO Update records
+		$str="<p>$myarraysize rows to be updated</p>";
+		output($str); 
+	} elseif (0==$myarraysize) {
+		$str="<h2>**Rosters array is empty**</h2>";
+		output($str); 
+	} else {
+		//Insert new records
+		$j=0;
+		$str="<p>$myarraysize rows to be inserted</p>";
+		output($str); 
+		nz_debug($_cp_franchiseraw);
+		foreach ($_cp_franchiseraw as $row) {
+				//TODO Get values for Team / City / Nickname here
+				$_cp_sql2="SELECT concat(`city`,' ', `nickname`)AS `team`, `city`, `nickname` FROM `bb_teams` WHERE `abbr`='$row[abbr]';";
+				$_cp_myteaminfo=nz_pdo_array($_cp_sql2,$conn);
+				foreach ($_cp_myteaminfo as $row2) {
+					$_cp_myteam=$row2['team'];	
+					$_cp_mycity=$row2['city'];	
+					$_cp_mynickname=$row2['nickname'];	
+				}
+							
+				$_cp_sql=  "INSERT INTO `bb_franchises` (`f_id`, `f_league`, `f_season`,`f_week`,`f_conference`, `f_division`, `f_ori_team`, `f_ori_city`, `f_ori_nickname`, `f_ori_coach`, `f_ori_size`, `f_ori_surface`, `f_ori_type`, `f_team`, `f_city`, `f_nickname`, `f_coach`, `f_size`, `f_surface`, `f_type`, `f_WinnerYears`, `f_ConferenceYears`, `f_DivisionYears`, `f_WildcardYears`, `f_Winner`, `f_Runnerup`, `f_ChampionshipW`, `f_ChampionshipL`, `f_DivisionW`, `f_Wildcard`, `f_MaxWins`, `f_MaxLosses`, `f_MaxScored`, `f_MaxConceded`, `f_Link`, `f_abbr`) 
+				VALUES ('$row[id]', '$_cp_league', '$_cp_season','$_cp_week','$row[conf]', '$row[div]', '$_cp_myteam', '$_cp_mycity', '$_cp_mynickname', '$row[coach]', '$row[ssize]', '$row[ssurface]', '$row[stype]', '$_cp_myteam', '$_cp_mycity', '$_cp_mynickname',  '$row[coach]', '$row[ssize]', '$row[ssurface]', '$row[stype]', '', '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '$row[abbr]');";
+				nz_pdo($_cp_sql,$conn);
+				$j++;
+		}		
+		$str="<h3>$j new records inserted to franchise table</h3>";
+		output($str); 
+		$_cp_sql = "UPDATE `g_turnsummary` SET `processed`= 2 WHERE `turn_id`=$_cp_turnid";
+		myDB::query("$_cp_sql");
+		#Build roster data into an array
+		#TODO check this line
+		require 'g_process_baseballrosters.php';
+	}
+
+
+
+
+
+	} else {
+		$str="<h3>**Error - Roundup not found!**</h3>";
+		output($str); 	
+	}		
+ 
+
+?>

@@ -1,0 +1,8 @@
+2026-03-17 20:26:51 [INFO] ===== Backup job start for GP at 2026-03-17_20-26-51 =====
+2026-03-17 20:26:51 [INFO] Dumping to: /home/sites/27a/8/826366cb9c//sql
+2026-03-17 20:26:51 [INFO] Dumping DB #1 (cricket-36399056) from shareddb-f.hosting.stackcp.net → /home/sites/27a/8/826366cb9c//sql/GP-1-cricket-36399056-2026-03-17_20-26-51.sql
+2026-03-17 20:26:51 [INFO] Dumped cricket-36399056 (DB #1); size=181346 bytes
+2026-03-17 20:26:51 [INFO] Dumping DB #2 (gplan8-35303737a645) from sdb-78.hosting.stackcp.net → /home/sites/27a/8/826366cb9c//sql/GP-2-gplan8-35303737a645-2026-03-17_20-26-51.sql
+2026-03-17 20:26:57 [INFO] Dumped gplan8-35303737a645 (DB #2); size=338061473 bytes
+2026-03-17 20:26:57 [INFO] ===== Backup job end for GP at 2026-03-17 20:26:57 =====
+2026-03-17 20:26:57 [INFO] Success email sent.

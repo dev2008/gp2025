@@ -1,0 +1,1250 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: asmilnes@gmail.com
+Received: by 10.14.186.13 with SMTP id v13csp7287eem;
+        Sat, 6 Apr 2013 05:42:44 -0700 (PDT)
+X-Received: by 10.14.1.130 with SMTP id 2mr29247341eed.15.1365252163969;
+        Sat, 06 Apr 2013 05:42:43 -0700 (PDT)
+Return-Path: <SRS0=hzSa=NZ=virginmedia.com=danny.mcconnell66@srs.kundenserver.de>
+Received: from moutng.kundenserver.de (moutng.kundenserver.de. [212.227.126.187])
+        by mx.google.com with ESMTPS id n8si21184319eeu.99.2013.04.06.05.42.43
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Sat, 06 Apr 2013 05:42:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of SRS0=hzSa=NZ=virginmedia.com=danny.mcconnell66@srs.kundenserver.de designates 212.227.126.187 as permitted sender) client-ip=212.227.126.187;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of SRS0=hzSa=NZ=virginmedia.com=danny.mcconnell66@srs.kundenserver.de designates 212.227.126.187 as permitted sender) smtp.mail=SRS0=hzSa=NZ=virginmedia.com=danny.mcconnell66@srs.kundenserver.de
+Received-SPF: pass (mxbap4: domain of virginmedia.com designates 209.85.212.181 as permitted sender) client-ip=209.85.212.181; envelope-from=danny.mcconnell66@virginmedia.com; helo=mail-wi0-f181.google.com;
+Received: from mail-wi0-f181.google.com (mail-wi0-f181.google.com [209.85.212.181])
+	by mx.kundenserver.de (node=mxbap4) with ESMTP (Nemesis)
+	id 0Lsj9t-1UZxwA1S6D-012i2J for ALAN@gameplan.org.uk; Sat, 06 Apr 2013 14:42:43 +0200
+Received: by mail-wi0-f181.google.com with SMTP id hj8so1339695wib.2
+        for <ALAN@gameplan.org.uk>; Sat, 06 Apr 2013 05:42:43 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=x-received:message-id:from:subject:to:content-type:date
+         :x-gm-message-state;
+        bh=sPixs31UuJ/iyt7LYQUk/IaYvkjtvWcG03GndmFCOyI=;
+        b=AmNXQqNy6E7npMCB+7ZDMpIrBX49n8ftUKwHUIqG8qESPmSqJR3oPTGsq7Rz9h2lI+
+         7rP0gE45/z0g+Xva9YXLtRfI2GKLQt4MtZSR7AahReC1C4x0BHvSEBqOAYuI5HEcq2Vk
+         8bLU9UeVGkWLDRjUpR8fQjdCLQ+upxWKIm59LnuoAhEu3poUAb5q8Wle4NdagACSR0tn
+         xJdKUpsMAuaOa2htgoQgmi9x4kCK4G+gHg9HnhBAgxC8WjjGeCJppTQfmjyqkUI6VEH/
+         +/H2igfj33vVSARrbk3E0et84wbsE0G9sDMgX4yRkgwwcYAome4xUuuuBZBsIqf4G4mh
+         5kPA==
+X-Received: by 10.194.176.165 with SMTP id cj5mr9401057wjc.37.1365252162928;
+        Sat, 06 Apr 2013 05:42:42 -0700 (PDT)
+Return-Path: <danny.mcconnell66@virginmedia.com>
+Received: from Gromit (know-mailgateway-1.server.virginmedia.net. [62.254.26.97])
+        by mx.google.com with ESMTPS id bq19sm9982855wib.7.2013.04.06.05.42.41
+        (version=TLSv1.1 cipher=RC4-SHA bits=128/128);
+        Sat, 06 Apr 2013 05:42:42 -0700 (PDT)
+Message-ID: <51601842.d359b40a.34cd.ffff93bd@mx.google.com>
+From: Danny McConnell <danny.mcconnell66@virginmedia.com>
+Subject: MLB7-CW, Turn 8
+To: ALAN@GAMEPLAN.ORG.UK
+Content-Type: text/plain
+Date: Sat, 6 Apr 2013 13:42:49 +0100
+X-Gm-Message-State: ALoCoQkx/+LZPC+DD7bAWD2P1zIrnliQ7uUNkdJXo+dJj7vNh24EH3EwtPW/xAm4l+NA2/H/R04p
+X-UI-Loop: V01:fQfMwtU3Se8=:THRiycNKBelFYRW30KuXrh6ko2kROgjrJbs24tupzr+M
+ h1cmu3TM4op/dA7xfoWL
+
+ALAN@GAMEPLAN.ORG.UK
+0
+MLB7-CW, Turn 8
+<STARTREP>
+<BK.Team Report><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7  Team Report  Season 21   Week 8   6/4/13<ST.28.88.105.110><L.48.1>
+Chicago White Sox (Alan Milnes)    <L.48.1>
+<C>Turn Credits =  6.2  (deducted 1.2, includes full reports)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Acc Con Qui Sta<T>Sqd<T>MxB MxH MxE FIn MnB<C><L.42.1>
+55  Brandon McCarthy<T>Pit R   8 ACC   12   2   8   0   5  12   0   59 LP   5 LP<T> Go  Go  Go  Av <T>Act<T><T> 24   4   6   1  21<L.33.1>
+ 4  Jose Cruz<T>Pit R   9 ACC    4   4   9   0   1   4   0   50 LP   5 LP<T> Go  Go  Go  Av <T>Act<T><T> 21   4   6   1  18<L.33.1>
+21  Pat Hentgen<T>Pit R   9 STA   13   0   9   1   0  10   0   53 LP   5 LP<T> Go  Go  Go  Ex <T>Act<T><T> 30   4   6   1  21<L.33.1>
+62  Ehren Wassermann<T>Pit R   9 CON    6   7  10   2   3   5   0   54 LP   5 LP<T> Go  Ex  Go  Go <T>Act<T><T> 27   3   6   1  21<L.33.1>
+ 5  Jose Ortiz<T>Pit L   9 QUI    5   8  10   2   0  -1   0   57 LP   5 LP<T> Go  Go  Ex  Av <T>Act<T><T> 21   4   6   1  18<L.33.1>
+<L.6.1>
+50  John Danks<T>Pit L   8 CON    3  17  11   1   2   6   0   36 LP   3 LP<T> Go  Go  Av  Av <T>Act<T><T>  9   3   6   1   1<L.33.1>
+ 6  Jon Garland<T>Pit R   8 CON   10   1   8   1   2   4   0   49 LP   4 LP<T> Go  Go  Go  Av <T>Act<T><T> 21   4   6   1   1<L.33.1>
+ 2  Tanyon Sturtze<T>Pit R   7 CON   10   0   7   0   3  12   0   32 LP   3 LP<T> Av  Go  Go  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+23  Orlando Benitez<T>Pit L   7 CON    5   6   8   0  -1  -7   0   29 LP   2 LP<T> Av  Go  Av  Fa <T>Act<T><T>  9   3   6   1   1<L.33.1>
+11  Danny Green<T>Pit L   6 QUI    2  13   8   0   2  -4   0   19 LP   1 LP<T> Av  Av  Av  Fa <T>Act<T><T>  9   4   6   1   1<L.33.1>
+ 3  Nick Blackburn<T>Pit R   6 QUI    2  13   8   0  -1   4   0   17 LP   1 LP<T> Fa  Av  Go  Fa <T>Act<T><T>  9   2   6   1   1<L.33.1>
+<L.6.1>
+ 9  Simon Wells<T>Pit R   9 CON   10   3   9   1   1   3   0   43 LP   4 LP<T> Av  WC  Av  Go <T>Act<T><T> 24   3   6   1  15<L.33.1>
+15  Rafael Delgado<T>Pit L   6 QUI    3  11   8   0   0   2   0   19 LP   1 LP<T> Fa  Fa  Go  Av <T>Act<T><T>  9   2   6   1   1<L.33.1>
+<L.6.1>
+13  Alan Roberts<T>Pit R   5 ACC    1   9   6   0   1   1   0    9 LP   1 LP<T> Fa  Fa  Fa  Fa <T>Res<T><T>  9   3   6   1   1<L.33.1>
+<L.6.1>
+<Z>Sh  Name<T>Type   Ability Exp Pot Trd Fat Frm Tot Inj   Value  Wages<T>Hit Pow Spd Fld<T>Sqd<T>Pos vRH Plt Pin<L.42.1>
+<C>81  Bob Milnes<T>Bat L   8 HIT    R   2   8   3   2+  5   0   22 LP   2 LP<T> Go  Go  Go  Av <T>Act<T> RF  DH        <L.33.1>
+30  Luis Terrero<T>Bat S  10 POW    7   7  11   1   6  18   0   73 LP   7 LP<T> Ex  Ex  Go  Go <T>Act<T> OF  CF        <L.33.1>
+17  Ramon Castro<T>Bat L   7 HIT    1  13   9   0   0   3   0   21 LP   2 LP<T> Go  Av  Fa  Av <T>Act<T> 1B  1B  1B CIF<L.33.1>
+24  Dayan Viciedo<T>Bat L   7 POW    1  10   9   0   0  11   0   20 LP   2 LP<T> Av  Go  Fa  Av <T>Act<T> 3B  3B        <L.33.1>
+ 8  Alex Cintron<T>Bat L  11 FLD    7  11  13   2   7  17   0   89 LP   8 LP<T> WC  Ex  Ex  WC <T>Act<T> SS  SS        <L.33.1>
+16  Justin Upton<T>Bat L   8 POW    8   3   8   0   3+  3   0   36 LP   3 LP<T> Go  Ex  Go  Fa <T>Act<T> RF  RF        <L.33.1>
+19  Fernando Cruz<T>Bat L   6 SPD    1  14   8   0   0   3   0   10 LP   1 LP<T> Fa  Av  Go  Av <T>Act<T> RF  LF        <L.33.1>
+22  Brent Morel<T>Bat L   8 FLD    1  12  10   1   0   8<Z>   6<C>   25 LP   2 LP<T> Fa  Av  Go  Go <T>Act<T> 2B  2B      2B<L.33.1>
+ 7  Alex Benitez<T>Cat R   9 FLD    5  12  11   1   5   9   0   52 LP   5 LP<T> Ex  Go  Go  Ex <T>Act<T>  C   C        <L.33.1>
+<L.6.1>
+14  Paul Konerko<T>Bat R  11 HIT    6  10  13   1   5  16   0   76 LP   7 LP<T> WC  Ex  Ex  Ex <T>Act<T> 1B   -        <L.33.1>
+ 1  Javier Pena<T>Bat R   9 HIT    7   7  10   2   4  28   0   56 LP   5 LP<T> Ex  Ex  Go  Av <T>Act<T> 3B   -        <L.33.1>
+10  Rob Mackowiak<T>Bat R   7 HIT    9   5   8   0  -3   2   0   38 LP   3 LP<T> Go  Go  Fa  Av <T>Act<T> RF   -  LF    <L.33.1>
+<L.6.1>
+27  Tyler Flowers<T>Cat R   7 FLD    2  17  10   0   3  -2   0   28 LP   2 LP<T> Go  Av  Fa  Ex <T>Res<T>  C   -  DH   C<L.33.1>
+28  Dewayne Wise<T>Cat S   6 HIT    R  14   8   0   4  16   0   17 LP   1 LP<T> Av  Av  Fa  Fa <T>Res<T>  C   -        <L.33.1>
+12  Brian Robinson<T>Bat S   6 POW    R   7   7   0   1  15   0   14 LP   1 LP<T> Fa  Av  Av  Fa <T>Res<T> CF   -        <L.33.1>
+<L.6.1>
+Key to Ratings: Po = Poor, Fa = Fair, Av = Average, Go = Good, Ex = Excellent, WC = World Class. Pos is Primary Field Position.<ST.20.64.86.98.120><L.48.1>
+<Z>Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  55   4  21  62   5<L.36.1>
+<Z>Shirt Number:<C><T>   7  17<Z>  22<C>  24   8  19  30  16  81<T><Z>Bullpen Depth Chart:<C><T>  50   6   2  23  11   3<L.36.1>
+<Z>Batting Order:<C><T>   9   3   8   4   5   7   2   6   1<T><Z>Setup Pitcher:<C><T>   9<T><Z>Closing Pitcher:<C><T>   9<ST.20.32.64.86.98.120><L.36.1>
+<Z>Platoon Hitter 1:<C><T>  10  LF<T><Z>Platoon Hitter 2:<C>  27  DH<T><Z>Opposite Hand: <C><T>  NO<T><Z>Starter Innings:<C><T>   3<T><L.36.1>
+<Z>Platoon Hitter 3:<C><T>  17  1B<T><Z>Platoon Hitter 4:<C>  none<T><Z>Minimum Lead:<C><T>   1<T><Z>Maximum Lead:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 1:  <C><T>  27   C<T><Z>Pinch Hitter 2:  <C>  22  2B<T><Z>Long Relief Pitcher: <T><C>  50<T><Z>Long Innings:<C><T>   3<T><L.36.1>
+<Z>Pinch Hitter 3:  <C><T>  17 CIF<T><Z>Pinch Hitter 4:  <C>  25  LF<T><Z>Blowout Innings:<C><T>   7<T><Z>Blowout Margin:<C><T>  10<T><L.36.1>
+<Z>Pinch Innings: <C><T>   8<Z><T>Pinch Deficit: <C>     6<ST.32.64.86.98.120><L.45.1>
+<Z>Stadium Size:        <C>Small<T><Z>Stadium Surface:  <C>Grass<T><Z>Stadium Building:       <C>Open<ST.22.32.42.52.64.88.98.108.118><L.36.1>
+<Z>Batting Training:<C><T>HIT 16<T>POW  8<T>SPD  0<T>FLD  0<Z><T>Pitching Training:<C><T>ACC  0<T>CON  0<T>QUI  0<T>STA  0<ST.20.32.49.64.86.98.120><L.45.1>
+<Z>Losing Points:<C><T>  16<T><Z>Base Income:<C><T>  54<T><Z>Fans Income:<C><T>  27<T><Z>Stadium Income:<C><T>   9<T><L.36.1>
+<Z>Merchandise Income:<C><T>  22<T><Z>Trade Income:<C><T>   0<T><Z>Trade Costs:<C><T>   0<T><Z>Overall Costs:<C><T>  62<T><L.36.1>
+<Z>Wages Paid:<C><T>  96<T><Z>Total Fans:<C><T>  27,557<T><Z>Stadium Level:<C><T>   9<T><Z>Merchandising:<C><T> 164<T><L.36.1>
+<Z>Current Wages:<C><T>  96<T><Z>Trainer Level:<C><T>  12<T><Z>Minor League System:<C><T>   1<T><Z>Full Reports:<C><T> Yes<L.36.1>
+<Z>Postal Reports:<C><T>  No<T><Z>Email Reports:<C><T>  Text<T><Z>Email Address: <C>ALAN@GAMEPLAN.ORG.UK<ST.22><L.45.1>
+<Z>Special Actions:<C><T>ADDFORM 16 for 3 weeks: OK, cost 3 LP<L.39.1>
+<T>MERC 59: OK, cost 59 LP<L.39.1>
+<T>ACTIVATE 24 for 27: OK, 24 activated to replace 27<L.39.1>
+<T>SCOUT 18 MT: OK, Bat (1B) R 12. Pt 6, Ex 10, Fm 8, TF 29, Ft 1, Val 114 LP. HIT WC POW WC SPD WC FLD WC<L.39.1>
+<T>SCOUT 55 MT: OK, Bat (RF) R 11. Pt 6, Ex 11, Fm 6, TF 12, Ft 1, Val 108 LP. HIT Ex POW WC SPD Ex FLD Ex<L.39.1>
+<L.3.1>
+<Z>Free Agent Bid:<C><T>none<L.42.1>
+<Z>Injuries/Holdouts:<C><T>22 Brent Morel - Strained Tricep, 6 games. <L.42.1>
+<ST.22.58.95><L.1.1>
+<Z>Forthcoming Series:<C><T>at Indians. Out 23 10 <T>at Red Sox. Out 27 <T>vs Rays. Out 10 <L.42.1>
+<L.1.1>
+<D><E><P>
+<BK.Team Stats><ST.30.90.97.104><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL   MLB7  Regular Season 21 Totals   Week 8   6/4/13<L.48.1>
+Chicago White Sox  (Alan Milnes)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.25.90.98.103.111.118.124><L.48.1>
+Individual Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T> WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+55 Brandon McCarthy<T>  8    8    0    0   48 1/3    37   14   13    7   12   32    1<T>  5-0<T>  0<T>  8-0<T>  6.14<T> .203<T>  2.42<L.36.1>
+50 John Danks<T> 31    1    0    5   54 1/3    46   21   20    4   16   31    9<T>  5-1<T>  0<T>  0-1<T>  9.94<T> .220<T>  3.31<L.36.1>
+21 Pat Hentgen<T> 14   14    1    1   79 2/3    75   37   33    7   24   67    5<T>  4-3<T>  0<T>  7-7<T>  5.76<T> .238<T>  3.73<L.36.1>
+62 Ehren Wassermann<T> 16   16    0    0   79        97   36   33    8   26   65    3<T>  5-5<T>  0<T> 10-6<T>  4.56<T> .290<T>  3.76<L.36.1>
+ 2 Tanyon Sturtze<T> 30    0    0    8   51        50   27   23    8   23   36    8<T>  7-0<T>  0<T>  0-0<T>  8.12<T> .246<T>  4.06<L.36.1>
+ 4 Jose Cruz<T> 14    9    0    1   47 2/3    48   26   23    8   15   31    5<T>  5-2<T>  1<T>  7-2<T>  6.99<T> .251<T>  4.34<L.36.1>
+ 5 Jose Ortiz<T> 14   14    0    0   61 2/3    68   36   36   10   26   33    9<T>  2-2<T>  0<T>  8-6<T>  6.28<T> .268<T>  5.25<L.36.1>
+23 Orlando Benitez<T> 28    0    0    9   41        42   27   25   10   17   30    8<T>  0-4<T>  0<T>  0-0<T>  7.68<T> .254<T>  5.49<L.36.1>
+ 6 Jon Garland<T> 23    0    0    7   35 2/3    41   23   23    9    7   23    5<T>  3-1<T>  0<T>  0-0<T>  5.05<T> .277<T>  5.80<L.36.1>
+11 Danny Green<T> 21    0    0   12   30        42   21   21    6   19   16    4<T>  3-4<T>  1<T>  0-0<T>  6.60<T> .318<T>  6.30<L.36.1>
+ 3 Nick Blackburn<T> 11    0    0    5   17        25   12   12    3    8    7    4<T>  2-0<T>  0<T>  0-0<T>  9.53<T> .328<T>  6.35<L.36.1>
+15 Rafael Delgado<T> 12    0    0    8   18 1/3    23   17   13    4    9   11    2<T>  0-1<T>  0<T>  0-0<T>  3.44<T> .294<T>  6.38<L.36.1>
+ 9 Simon Wells<T> 17    0    0   15   25 2/3    33   19   19    3   14   19    4<T>  0-3<T> 13<T>  0-0<T>  1.75<T> .300<T>  6.66<L.36.1>
+13 Alan Roberts<T>  2    0    0    1    2 2/3     3    2    2    0    1    2    1<T>  0-0<T>  0<T>  0-0<T>  0.00<T> .272<T>  6.75<L.36.1>
+<L.9.1>
+<Z>Team Pitching<T> 72   72    1   72  641       687  346  323   98  231  446   71<T> 44-28<T> 15<T> 44-28<T>  6.39<T> .263<T>  4.54<C><L.18.1>
+<ST.25.107.113.119.125><L.48.1>
+<Z>Individual Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+30 Luis Terrero of<T> 71  291   55  101  193   27   7  17   50   25   5  16   49  15   1   1  133    5<T> .992<T> .347<T> .414<T> .663<L.36.1>
+ 1 Javier Pena 3b<T> 69  282   58   95  188   19   1  24   75   28   3  14   44  21   6  10   36  170<T> .971<T> .336<T> .406<T> .666<L.36.1>
+ 8 Alex Cintron ss<T> 66  284   58   84  164   26   3  16   42   31   4  16   57  34   1  41   87  165<T> .996<T> .295<T> .377<T> .577<L.36.1>
+14 Paul Konerko 1b<T> 62  254   53   72  155   23   3  18   49   23   3  18   51   7   7  59  546   24<T> .987<T> .283<T> .353<T> .610<L.36.1>
+81 Bob Milnes rf<T> 59  226   28   63  108   18   0   9   36   23   3   4   45   0   0   0    0    0<T> .000<T> .278<T> .357<T> .477<L.36.1>
+16 Justin Upton rf<T> 36  151   20   42   85   10   0  11   24   10   1   4   24   2   1   0   13    0<T> .928<T> .278<T> .329<T> .562<L.36.1>
+ 7 Alex Benitez c<T> 66  245   46   67  133   18   3  14   43   23   6   7   30  11   1  11  190   46<T> .995<T> .273<T> .358<T> .542<L.36.1>
+19 F.Cruz rf<T> 14   55    5   14   29    3   0   4   15    6   1   0   17   0   1   0   18    0<T> .947<T> .254<T> .344<T> .527<L.36.1>
+22 Brent Morel 2b<T> 55  210   29   53   77   17   2   1   24   21   1   8   39  20   6  44   88  186<T> .978<T> .252<T> .324<T> .366<L.36.1>
+10 Rob Mackowiak rf<T> 71  258   46   61  115   12   0  14   39   24   4   0   65   6   1   2   93    7<T> .990<T> .236<T> .315<T> .445<L.36.1>
+24 Dayan Viciedo 3b<T>  1    5    0    1    1    0   0   0    1    0   0   0    1   0   0   0    0    2<T>1.000<T> .200<T> .200<T> .200<L.36.1>
+27 Tyler Flowers c<T> 20   71    6   13   15    2   0   0    2    5   1   0   12   2   1   1   19    7<T> .962<T> .183<T> .250<T> .211<L.36.1>
+17 Ramon Castro 1b<T> 11   37    3    6    9    0   0   1    5    3   3   0    7   1   0  11   90    5<T>1.000<T> .162<T> .300<T> .243<L.36.1>
+28 D.Wise c<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+12 Brian Robinson cf<T>  0    0    0    0    0    0   0   0    0    0   0   0    0   0   0   0    0    0<T> .000<T> .000<T> .000<T> .000<L.36.1>
+<L.9.1>
+<Z>Team Batting<T> 72 2587  455  736 1401  205  23 138  445  246  35  95  477 143  34  68 1477  707<T> .984<T> .284<T> .358<T> .541<ST.24.78.100><L.48.1>
+Selection Orders This Turn<L.48.1>
+Fielding Position:<C><T>   C  1B  2B  3B  SS  LF  CF  RF  DH<T><Z>Starting Rotation:<C><T>  55   4  21  62   5<L.39.1>
+<Z>Shirt Number:<C><T>   7  14  22   1   8  10  30  16  81<T><Z>Bullpen Depth Chart:<C><T>  50   6   2  23  11   3<L.39.1>
+<Z>Batting Order:<C><T>   9   3   8   4   5   7   2   6   7<T><Z>Setup Pitcher:<C><T>   9<L.39.1>
+<T><T><Z>Closing Pitcher:<C><T>   9<L.39.1>
+<Z>Lineup Changes:<C><T>  Pick 17, replacing 14 from game 9 onwards<L.39.1>
+<T>  Pick 24, replacing 1 from game 9 onwards<L.39.1>
+<T>  Pick 19, replacing 10 from game 9 onwards<L.39.1>
+<Z>Pitching Changes:<C><T>  Shirt 21:  MxB 30   MxH  -   MxE  -   FIn  -   MnB 21   <L.39.1>
+<T>  Shirt 55:  MxB  -   MxH  4   MxE  -   FIn  -   MnB 21   <L.39.1>
+<T>  Shirt 62:  MxB 27   MxH  -   MxE  -   FIn  -   MnB 21   <L.39.1>
+<Z>Training & Practice:<C><T>  Series 1: Train Skill - HIT     Bonus Skill - HIT     Bonus Player -  7     Key Player -  7<L.39.1>
+<T>  Series 2: Train Skill - HIT     Bonus Skill - HIT     Bonus Player -  7     Key Player -  6<L.39.1>
+<T>  Series 3: Train Skill - HIT     Bonus Skill - HIT     Bonus Player - 27     Key Player -  5<L.39.1>
+<ST.24.78><L.9.1>
+<Z>Enforced Selection Changes This Turn<L.48.1>
+Batting Order: <C><T>   7 replaced by 1: Invalid position in order<L.39.1>
+<Z>Bonus Player 3: <C><T>  27 replaced by 21: Not on active squad<L.39.1>
+<Z>Key Player 3: <C><T>   5 replaced by 30: Not on active squad<L.39.1>
+<L.1.1>
+<D><E><DU>
+<BK.Series 1><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 1: Detroit Tigers (24-39) at Chicago White Sox (36-27)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+DT  1st  <C><U>McCarthy<UC> on mound. Gonzalez walked. Mitchell flied out to 1B. Ibanez flied out to LF. Miller ground out to 1B (SS).<L.33.1>
+<Z>CW  1st  <C><U>Walker<UC> on mound. Milnes flied out to SS. Terrero flied out to CF. Castro struck out.<L.33.1>
+<Z>DT  2nd  <C>Clayton ground out to 1B (C). Nix flied out to C. Crespo ground out to 1B (2B).<L.33.1>
+<Z>CW  2nd  <C>Pena flied out to RF. Cintron flied out to C. Upton singled to RF. Mackowiak ground out to 1B (SS).<L.33.1>
+<Z>DT  3rd  <C>Jackson flied out to LF. Brooks ground out to 1B (2B). Gonzalez struck out.<L.33.1>
+<Z>CW  3rd  <C>Morel struck out. Benitez ground out to 1B (2B). Milnes singled to RF. Terrero struck out.<L.33.1>
+<Z>DT  4th  <C>Mitchell ground out to 1B (2B). Ibanez walked. Miller flied out to C. Clayton ground out to 1B (SS).<L.33.1>
+<Z>CW  4th  <C>Castro flied out to LF. Pena singled to P. Cintron flied out to CF. Upton homered to RF, Pena scored, <Z>CW 2-0<C>. <L.30.1>
+         Mackowiak flied out to LF.<L.33.1>
+<Z>DT  5th  <C>Nix flied out to C. Crespo flied out to C. Jackson singled to SS. Brooks walked, Jackson to 2nd. Gonzalez singled to CF, <L.30.1>
+         Jackson to 3rd, Brooks to 2nd. Mitchell ground out to 1B (3B).<L.33.1>
+<Z>CW  5th  <C>Morel flied out to CF. Benitez singled to CF. Milnes flied out to C. Terrero walked, Benitez to 2nd. Castro flied out to <L.30.1>
+         C.<L.33.1>
+<Z>DT  6th  <C>Ibanez ground out to 1B (SS, field save). Miller flied out to LF. Clayton ground out to 1B (SS).<L.33.1>
+<Z>CW  6th  <C><U>Lewis<UC> took over on mound. Pena struck out. Cintron singled to LF. Upton struck out. Mackowiak ground out to 1B (SS).<L.33.1>
+<Z>DT  7th  <C><U>Sanders<UC> pinch hitting at SS. Sanders ground out to 1B (3B). <U>Garland<UC> took over on mound. <U>Diaz<UC> pinch hitting at CF. Diaz <L.30.1>
+         singled to RF. Jackson flied out to CF. Brooks flied out to C.<L.33.1>
+<Z>CW  7th  <C>Morel flied out to 2B. Benitez doubled to RF. Milnes struck out. Terrero tripled to RF, Benitez scored, <Z>CW 3-0<C>. Castro <L.30.1>
+         ground out to 1B (SS).<L.33.1>
+<Z>DT  8th  <C><U>Wells<UC> took over on mound. Gonzalez ground out to 1B (2B). Mitchell ground out to 1B (2B). Ibanez struck out.<L.33.1>
+<Z>CW  8th  <C>Pena walked. Cintron reached 1st, Pena forced out at 2B (LF, field save). Upton flied out to C. Mackowiak singled to CF, <L.30.1>
+         Cintron to 2nd. Morel struck out.<L.33.1>
+<Z>DT  9th  <C>Miller doubled to CF. Clayton struck out. Sanders sacrificed to RF, Miller to 3rd. Diaz ground out to 1B (SS).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Tigers<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(2,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <T><Z>  0<C><L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 2 <C>(2,0) <Z> 0 <C>(1,1) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,1) <Z> x       <T>  3<C><ST.24.66.90><L.42.1>
+<Z>Tigers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Orlando Gonzalez lf<T> 3  0  1  0  0  0  0  1  0  0  1  0  0<T>81 Bob Milnes dh<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 8 Tom Mitchell dh<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>30 Luis Terrero cf<T> 3  0  1  0  1  0  1  1  0  0  1  0  0<L.30.1>
+ 9 Julio Ibanez c <T> 3  0  0  0  0  0  0  1  0  0  1  0  0<T>17 Ramon Castro 1b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+24 Keith Miller 2b<T> 4  0  1  1  0  0  0  0  0  0  0  0  0<T> 1 Javier Pena 3b<T> 3  1  1  0  0  0  0  1  0  0  1  0  0<L.30.1>
+ 1 Bud Clayton rf<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T> 8 Alex Cintron ss<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+13 Jayson Nix ss<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T>16 Justin Upton rf<T> 4  1  2  0  0  1  2  0  0  0  1  0  0<L.30.1>
+20 Javier Crespo cf<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T>10 Rob Mackowiak lf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+28 Danny Jackson 3b<T> 3  0  1  0  0  0  0  0  0  0  0  0  0<T>22 Brent Morel 2b<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+ 3 Joe Brooks 1b<T> 2  0  0  0  0  0  0  1  0  0  0  0  0<T> 7 Alex Benitez c <T> 3  1  2  1  0  0  0  0  0  0  0  0  0<L.30.1>
+23 Jason Sanders ss<T> 1  0  0  0  0  0  0  0  1  0  0  0  0<T><L.30.1>
+ 7 Orlando Diaz cf<T> 2  0  1  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>30  0  4  1  0  0  0  3  1  0  3  0  0<T>Totals<T>33  3  9  1  1  1  3  2  0  0  7  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Tigers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+55 B.McCarthy (w)<T> 6 1/3    2  0  0  0  3  1  3B    0<T>25 Jim Walker (l)<T> 5        5  2  2  1  1  3  3B    0<L.30.1>
+ 6 Jon Garland<T>   2/3    1  0  0  0  0  0  0C    0<T>17 Danny Lewis<T> 3        4  1  1  0  1  4  2     0<L.30.1>
+ 9 Simon Wells (s)<T> 2        1  0  0  0  0  2  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 2: Detroit Tigers (24-40) at Chicago White Sox (37-27)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+DT  1st  <C><U>Cruz<UC> on mound. Gonzalez homered to CF, <Z>DT 1-0<C>. Mitchell singled to RF. Ibanez flied out to C, field save. Miller flied <L.30.1>
+         out to 2B, field save. Mitchell stole 2nd. Clayton homered to LF, Mitchell scored, <Z>DT 3-0<C>. Nix flied out to RF.<L.33.1>
+<Z>CW  1st  <C><U>Cordero<UC> on mound. Milnes walked. Terrero flied out to CF. Castro flied out to LF. Pena struck out.<L.33.1>
+<Z>DT  2nd  <C>Crespo walked. Jackson flied out to RF. Crespo stole 2nd. Brooks ground out to 1B (3B). Gonzalez struck out.<L.33.1>
+<Z>CW  2nd  <C>Cintron flied out to CF. Upton singled to CF. Mackowiak flied out to LF. Morel walked, Upton to 2nd. Benitez ground out <L.30.1>
+         to 1B (SS).<L.33.1>
+<Z>DT  3rd  <C>Mitchell struck out. Ibanez flied out to C. Miller ground out to 1B (3B).<L.33.1>
+<Z>CW  3rd  <C>Milnes flied out to RF. Terrero ground out to 1B (CF). Castro struck out.<L.33.1>
+<Z>DT  4th  <C>Clayton doubled to RF. Nix singled, error by 3B, Clayton scored, <Z>DT 4-0<C>. Nix forced out at 2B (SS), Crespo ground into <L.30.1>
+         double play at 1B (2B). Jackson singled to CF. Brooks walked, Jackson to 2nd. Gonzalez flied out to RF.<L.33.1>
+<Z>CW  4th  <C>Pena walked. Cintron walked, Pena to 2nd. Upton homered to RF, Pena scored, Cintron scored, <Z>DT 4-3<C>. Mackowiak ground <L.30.1>
+         out to 1B (2B). Morel singled to CF. <U>Green<UC> took over on mound. Benitez walked, Morel to 2nd. Milnes doubled to LF, Morel <L.30.1>
+         scored, Benitez to 3rd, <Z>4-4<C>. Terrero sacrificed to CF, Benitez scored, Milnes to 3rd, <Z>CW 5-4<C>. Castro struck out.<L.33.1>
+<Z>DT  5th  <C>Mitchell singled to LF. Ibanez flied out to SS. <U>Danks<UC> took over on mound. Miller doubled to LF, Mitchell to 3rd. Clayton <L.30.1>
+         ground out to 1B (SS, field save). Nix singled to CF, Mitchell scored, Miller scored, <Z>DT 6-5<C>. Crespo ground out to 1B <L.30.1>
+         (2B).<L.33.1>
+<Z>CW  5th  <C>Pena flied out to CF. Cintron ground out to 1B (3B). Upton flied out to CF.<L.33.1>
+<Z>DT  6th  <C>Jackson flied out to C. Brooks ground out to 1B (2B). Gonzalez ground out to 1B (3B).<L.33.1>
+<Z>CW  6th  <C>Mackowiak singled to CF. Morel struck out. Benitez tripled to CF, Mackowiak scored, <Z>6-6<C>. Milnes ground out to 1B (SS). <L.30.1>
+         Terrero singled to LF, Benitez scored, <Z>CW 7-6<C>. Castro ground out to 1B (3B).<L.33.1>
+<Z>DT  7th  <C>Mitchell flied out to RF. Ibanez flied out to C. <U>Garland<UC> took over on mound. Miller flied out to C.<L.33.1>
+<Z>CW  7th  <C>Pena flied out to C. Cintron singled to LF. Cintron stole 2nd. Upton struck out. Mackowiak singled to RF, Cintron scored, <L.30.1>
+         <Z>CW 8-6<C>. Morel ground out to 1B (3B).<L.33.1>
+<Z>DT  8th  <C>Clayton doubled to LF. Nix struck out. <U>Diaz<UC> pinch hitting at CF. Diaz singled to SS, Clayton to 3rd. Jackson walked, <L.30.1>
+         Diaz to 2nd. <U>Sanders<UC> pinch hitting at 1B. Sanders doubled to CF, Clayton scored, Diaz scored, Jackson scored, <Z>DT 9-8<C>. <L>
+         <U>Sturtze<UC> took over on mound. Gonzalez struck out. Mitchell struck out.<L.33.1>
+<Z>CW  8th  <C>Benitez singled to RF. Milnes singled to LF, Benitez to 3rd. Milnes stole 2nd. Terrero ground out to 1B (C). Castro <L.30.1>
+         walked. Pena reached 1st, Benitez forced out at home (SS), Milnes to 3rd, Castro to 2nd. Cintron singled to CF, Milnes <L.30.1>
+         scored, Castro to 3rd, Pena to 2nd, <Z>9-9<C>. <U>Alvarez<UC> took over on mound. Upton walked, Castro scored, Pena to 3rd, Cintron <L.30.1>
+         to 2nd, <Z>CW 10-9<C>. Mackowiak struck out.<L.33.1>
+<Z>DT  9th  <C>Ibanez flied out to SS. Miller singled to RF. Miller stole 2nd. Clayton flied out to CF. Nix singled to LF, Miller <L.30.1>
+         scored, <Z>10-10<C>. Diaz walked, Nix to 2nd. Jackson flied out to 1B.<L.33.1>
+<Z>CW  9th  <C>Morel singled to CF. Benitez walked, Morel to 2nd. Milnes reached 1st, Morel forced out at 3B (SS), Benitez to 2nd. <L.30.1>
+         Terrero homered to CF, Benitez scored, Milnes scored, <Z>CW 13-10<C>.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Tigers<C><T><Z> 3 <C>(3,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 1 <C>(2,1d)<Z> 2 <C>(3,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 3 <C>(3,1) <Z> 1 <C>(2,1) <T><Z> 10<C><L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(0,1) <Z> 0 <C>(1,1) <Z> 0 <C>(0,0) <Z> 5 <C>(3,3) <Z> 0 <C>(0,0) <Z> 2 <C>(3,0) <Z> 1 <C>(2,0) <Z> 2 <C>(3,2) <Z> 3 <C>(2,1) <T><Z> 13<C><ST.24.66.90><L.42.1>
+<Z>Tigers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Orlando Gonzalez lf<T> 5  1  1  0  0  1  1  0  0  0  2  0  0<T>81 Bob Milnes dh<T> 5  2  2  1  0  0  1  1  0  1  0  0  0<L.30.1>
+ 8 Tom Mitchell dh<T> 5  2  2  0  0  0  0  0  0  1  2  0  0<T>30 Luis Terrero cf<T> 5  1  2  0  0  1  5  0  1  0  0  0  0<L.30.1>
+ 9 Julio Ibanez c <T> 5  0  0  0  0  0  0  0  0  0  0  0  0<T>17 Ramon Castro 1b<T> 4  1  0  0  0  0  0  1  0  0  2  1  0<L.30.1>
+24 Keith Miller 2b<T> 5  2  2  1  0  0  0  0  0  1  0  0  0<T> 1 Javier Pena 3b<T> 4  1  0  0  0  0  0  1  0  0  1  0  1<L.30.1>
+ 1 Bud Clayton rf<T> 5  3  3  2  0  1  2  0  0  0  0  0  0<T> 8 Alex Cintron ss<T> 4  2  2  0  0  0  1  1  0  1  0  1  0<L.30.1>
+13 Jayson Nix ss<T> 5  0  2  0  0  0  3  0  0  0  1  0  0<T>16 Justin Upton rf<T> 4  1  2  0  0  1  4  1  0  0  1  0  0<L.30.1>
+20 Javier Crespo cf<T> 2  0  0  0  0  0  0  1  0  1  0  0  0<T>10 Rob Mackowiak lf<T> 5  1  2  0  0  0  1  0  0  0  1  0  0<L.30.1>
+28 Danny Jackson 3b<T> 4  1  1  0  0  0  0  1  0  0  0  0  0<T>22 Brent Morel 2b<T> 4  1  2  0  0  0  0  1  0  0  1  1  0<L.30.1>
+ 3 Joe Brooks 1b<T> 2  0  0  0  0  0  0  1  0  0  0  0  0<T> 7 Alex Benitez c <T> 3  3  2  0  1  0  1  2  0  0  0  0  0<L.30.1>
+ 7 Orlando Diaz cf<T> 1  1  1  0  0  0  0  1  0  0  0  0  0<T><L.30.1>
+23 Jason Sanders 1b<T> 1  0  1  1  0  0  3  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>40 10 13  4  0  2  9  4  0  3  5  0  0<T>Totals<T>38 13 14  1  1  2 13  8  1  2  6  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Tigers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 4 Jose Cruz<T> 4 1/3    6  5  4  2  2  2  3B    1<T>10 Edgar Cordero<T> 3 1/3    3  4  4  1  4  2  1H    1<L.30.1>
+50 John Danks<T> 2 1/3    2  1  1  0  0  0  1B    0<T>16 Tom Green<T> 4 1/3    9  6  6  0  2  3  3H    3<L.30.1>
+ 6 Jon Garland<T>   2/3    3  3  3  0  1  1  1H    1<T> 4 Alberto Alvarez (l)<T>   2/3    2  3  3  1  2  1  0     0<L.30.1>
+ 2 Tanyon Sturtze (w)<T> 1 2/3    2  1  1  0  1  2  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 3: Detroit Tigers (24-41) at Chicago White Sox (38-27)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+DT  1st  <C><U>Wassermann<UC> on mound. Gonzalez ground out to 1B (2B). Roberts flied out to C. Ibanez singled to CF. Miller ground out to <L.30.1>
+         1B (SS).<L.33.1>
+<Z>CW  1st  <C><U>Delcarmen<UC> on mound. Milnes flied out to C. Terrero singled to CF. Castro reached 1st, Terrero forced out at 2B (3B). <L.30.1>
+         Pena singled to RF, Castro to 2nd. Cintron struck out.<L.33.1>
+<Z>DT  2nd  <C>Clayton singled to LF. Nix flied out to RF. Crespo flied out to SS. Jackson flied out to C.<L.33.1>
+<Z>CW  2nd  <C>Upton flied out to CF. Mackowiak walked. Morel singled, error by 3B, Mackowiak to 2nd. Benitez doubled to CF, Mackowiak <L.30.1>
+         scored, Morel to 3rd, <Z>CW 1-0<C>. Milnes ground out to 1B (2B, field save). Terrero ground out to 1B (SS).<L.33.1>
+<Z>DT  3rd  <C>Brooks walked. Gonzalez singled to CF, Brooks to 2nd. Roberts singled to 2B, Brooks to 3rd, Gonzalez to 2nd. Brooks <L.30.1>
+         forced out at home (SS, field save), Gonzalez to 3rd, Roberts to 2nd, Ibanez ground into double play at 1B (C, field <L.30.1>
+         save). Miller ground out to 1B (SS).<L.33.1>
+<Z>CW  3rd  <C>Castro walked. Pena flied out to CF, field save. Cintron tripled to RF, Castro scored, <Z>CW 2-0<C>. Upton sacrificed to LF, <L.30.1>
+         Cintron scored, <Z>CW 3-0<C>. Mackowiak homered to LF, <Z>CW 4-0<C>. Morel singled to CF. Morel stole 2nd. Benitez ground out to <L.30.1>
+         1B (2B).<L.33.1>
+<Z>DT  4th  <C>Clayton flied out to LF, field save. Nix flied out to SS. Crespo walked. Jackson struck out.<L.33.1>
+<Z>CW  4th  <C><U>Alvarez<UC> took over on mound. Milnes flied out to LF. Terrero homered to RF, <Z>CW 5-0<C>. Castro flied out to CF. Pena <L.30.1>
+         homered to RF, <Z>CW 6-0<C>. Cintron flied out to 1B.<L.33.1>
+<Z>DT  5th  <C>Brooks struck out. Gonzalez struck out. Roberts flied out to LF.<L.33.1>
+<Z>CW  5th  <C>Upton flied out to SS. Mackowiak struck out. Morel flied out to SS.<L.33.1>
+<Z>DT  6th  <C>Ibanez ground out to 1B (3B). Miller singled to CF. Clayton walked, Miller to 2nd. Nix struck out. Crespo walked, Miller <L.30.1>
+         to 3rd, Clayton to 2nd. <U>Benitez<UC> took over on mound. Jackson ground out to 1B (2B).<L.33.1>
+<Z>CW  6th  <C>Benitez doubled to RF. Milnes homered to CF, Benitez scored, <Z>CW 8-0<C>. Terrero struck out. Castro homered to CF, <L.30.1>
+         <Z>CW 9-0<C>. Pena flied out to C. Cintron flied out to SS.<L.33.1>
+<Z>DT  7th  <C><U>Sanders<UC> pinch hitting at 1B. Sanders flied out to C. Gonzalez flied out to C. Roberts struck out.<L.33.1>
+<Z>CW  7th  <C>Upton ground out to 1B (2B). Mackowiak struck out. Morel flied out to C.<L.33.1>
+<Z>DT  8th  <C>Ibanez singled to CF. Miller struck out. Ibanez forced out at 2B (SS), Clayton ground into double play at 1B (2B).<L.33.1>
+<Z>CW  8th  <C>Benitez homered to CF, <Z>CW 10-0<C>. Milnes singled to CF. Milnes stole 2nd. Terrero sacrificed to RF, Milnes to 3rd. <L.30.1>
+         Castro sacrificed to CF, Milnes scored, <Z>CW 11-0<C>. <U>Laase<UC> took over on mound. Pena doubled to RF. Cintron flied out to C.<L.33.1>
+<Z>DT  9th  <C>Nix ground out to 1B (LF). <U>Diaz<UC> pinch hitting at CF. Diaz ground out to 1B (C). <U>Blackburn<UC> took over on mound. Jackson <L.30.1>
+         homered to RF, <Z>CW 11-1<C>. Sanders flied out to C, field save.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Tigers<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(2,1d)<Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,2) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0d)<Z> 1 <C>(1,0) <T><Z>  1<C><L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(2,0) <Z> 1 <C>(1,1) <Z> 3 <C>(3,1) <Z> 2 <C>(2,0) <Z> 0 <C>(0,0) <Z> 3 <C>(3,0) <Z> 0 <C>(0,0) <Z> 2 <C>(3,0) <Z> x       <T> 11<C><ST.24.66.90><L.42.1>
+<Z>Tigers Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+ 6 Orlando Gonzalez lf<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>81 Bob Milnes dh<T> 5  2  2  0  0  1  2  0  0  1  0  0  0<L.30.1>
+30 Pete Roberts dh<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T>30 Luis Terrero cf<T> 4  1  2  0  0  1  1  0  1  0  1  0  0<L.30.1>
+ 9 Julio Ibanez c <T> 4  0  2  0  0  0  0  0  0  0  0  0  0<T>17 Ramon Castro 1b<T> 3  2  1  0  0  1  2  1  1  0  0  2  0<L.30.1>
+24 Keith Miller 2b<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<T> 1 Javier Pena 3b<T> 5  1  3  1  0  1  1  0  0  0  0  0  0<L.30.1>
+ 1 Bud Clayton rf<T> 3  0  1  0  0  0  0  1  0  0  0  0  0<T> 8 Alex Cintron ss<T> 5  1  1  0  1  0  1  0  0  0  1  2  0<L.30.1>
+13 Jayson Nix ss<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>16 Justin Upton rf<T> 3  0  0  0  0  0  1  0  1  0  0  0  0<L.30.1>
+20 Javier Crespo cf<T> 1  0  0  0  0  0  0  2  0  0  0  0  0<T>10 Rob Mackowiak lf<T> 3  2  1  0  0  1  1  1  0  0  2  0  0<L.30.1>
+28 Danny Jackson 3b<T> 4  1  1  0  0  1  1  0  0  0  1  0  1<T>22 Brent Morel 2b<T> 4  0  1  0  0  0  0  0  0  1  0  1  0<L.30.1>
+ 3 Joe Brooks 1b<T> 1  0  0  0  0  0  0  1  0  0  1  0  0<T> 7 Alex Benitez c <T> 4  2  3  2  0  1  2  0  0  0  0  1  0<L.30.1>
+23 Jason Sanders 1b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+ 7 Orlando Diaz cf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>32  1  7  0  0  1  1  4  0  0  6  0  1<T>Totals<T>36 11 14  3  1  6 11  2  3  2  4  6  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Tigers Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+62 E.Wassermann (w)<T> 5 2/3    5  0  0  0  4  4  2H    3<T>21 Manny Delcarmen (l)<T> 3        6  4  4  1  2  1  2H    0<L.30.1>
+23 Orlando Benitez<T> 3        1  0  0  0  0  2  1B    0<T> 4 Alberto Alvarez<T> 4 2/3    7  7  7  5  0  3  3B    0<L.30.1>
+ 3 Nick Blackburn<T>   1/3    1  1  1  1  0  0  0     0<T>29 Sammy Laase<T>   1/3    1  0  0  0  0  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<BK.Series 2><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 1: Chicago White Sox (39-27) at Oakland Athletics (28-38)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+CW  1st  <C><U>Hernandez<UC> on mound. Milnes singled to LF. Terrero struck out. Konerko flied out to C. Pena ground out to 1B (3B).<L.33.1>
+<Z>OA  1st  <C><U>Ortiz<UC> on mound. Bourjos singled to CF. Bourjos stole 2nd. Jackson ground out to 1B (SS). Mendoza singled to LF, Bourjos <L.30.1>
+         to 3rd. Sierra struck out. Chavez ground out to 1B (C).<L.33.1>
+<Z>CW  2nd  <C>Cintron ground out to 1B (2B, field save). Upton flied out to C. Mackowiak struck out.<L.33.1>
+<Z>OA  2nd  <C>Jones flied out to LF. Davis flied out to CF. Sierra singled, error by 2B. Diaz struck out.<L.33.1>
+<Z>CW  3rd  <C>Morel flied out to C. Benitez struck out. Milnes struck out.<L.33.1>
+<Z>OA  3rd  <C>Bourjos struck out. Jackson struck out. Mendoza struck out.<L.33.1>
+<Z>CW  4th  <C>Terrero struck out. Konerko flied out to RF. Pena homered to CF, <Z>CW 1-0<C>. Cintron doubled to LF. Upton flied out to C.<L.33.1>
+<Z>OA  4th  <C>Sierra struck out. Chavez singled to RF. Jones flied out to SS. Davis flied out to 2B.<L.33.1>
+<Z>CW  5th  <C>Mackowiak flied out to CF. Morel flied out to CF. Benitez walked. Milnes flied out to CF.<L.33.1>
+<Z>OA  5th  <C>Sierra flied out to C. Diaz ground out to 1B (2B). Bourjos singled to CF. Jackson ground out to 1B (2B).<L.33.1>
+<Z>CW  6th  <C>Terrero flied out to 3B. Konerko flied out to C. Pena ground out to 1B (2B).<L.33.1>
+<Z>OA  6th  <C>Mendoza singled to LF. <U>Danks<UC> took over on mound. Sierra flied out to LF. Chavez reached 1st, Mendoza forced out at 2B <L.30.1>
+         (1B). Jones singled to 2B, Chavez to 2nd. Davis flied out to LF.<L.33.1>
+<Z>CW  7th  <C>Cintron struck out. Upton doubled to CF. Mackowiak ground out to 1B (SS). Morel flied out to SS.<L.33.1>
+<Z>OA  7th  <C>Sierra homered to CF, <Z>1-1<C>. Diaz flied out to SS. Bourjos struck out. Jackson ground out to 1B (SS).<L.33.1>
+<Z>CW  8th  <C>Benitez singled to 3B. Milnes walked, Benitez to 2nd. Terrero singled to CF, Benitez scored, Milnes to 3rd, <Z>CW 2-1<C>. <L>
+         <U>Lieber<UC> took over on mound. Terrero stole 2nd. Konerko ground out to 1B (3B). Pena singled to CF, Milnes scored, Terrero <L.30.1>
+         to 3rd, <Z>CW 3-1<C>. Pena stole 2nd. Cintron singled to CF, Terrero scored, Pena scored, <Z>CW 5-1<C>. Cintron forced out at 2B <L.30.1>
+         (RF), Upton ground into double play at 1B (2B).<L.33.1>
+<Z>OA  8th  <C>Mendoza flied out to SS. <U>Garland<UC> took over on mound. <U>Kotsay<UC> pinch hitting at CF. Kotsay ground out to 1B (2B). Chavez <L.30.1>
+         flied out to 1B, field save.<L.33.1>
+<Z>CW  9th  <C>Mackowiak struck out. Morel singled to RF. Benitez struck out. Milnes struck out.<L.33.1>
+<Z>OA  9th  <C>Jones ground out to 1B (3B). <U>James<UC> pinch hitting at 2B. James flied out to C. Sierra flied out to 1B.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,0) <Z> 0 <C>(0,1) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 4 <C>(4,1d)<Z> 0 <C>(1,0) <T><Z>  5<C><L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0) <Z> 0 <C>(2,0) <Z> 1 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <T><Z>  1<C><ST.24.66.90><L.42.1>
+<Z>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+81 Bob Milnes dh<T> 4  1  1  0  0  0  0  1  0  0  2  0  0<T>18 Peter Bourjos lf<T> 4  0  2  0  0  0  0  0  0  1  2  0  0<L.30.1>
+30 Luis Terrero cf<T> 4  1  1  0  0  0  1  0  0  1  2  0  0<T> 9 Jim Jackson ss<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+14 Paul Konerko 1b<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>23 Fernando Mendoza rf<T> 4  0  2  0  0  0  0  0  0  0  1  1  0<L.30.1>
+ 1 Javier Pena 3b<T> 4  2  2  0  0  1  2  0  0  1  0  0  0<T>21 Pedro Sierra cf<T> 3  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+ 8 Alex Cintron ss<T> 4  0  2  1  0  0  2  0  0  0  1  0  0<T>28 Eric Chavez 1b<T> 4  0  1  0  0  0  0  0  0  0  0  1  0<L.30.1>
+16 Justin Upton rf<T> 4  0  1  1  0  0  0  0  0  0  0  0  0<T> 6 Eric Jones c <T> 4  0  1  0  0  0  0  0  0  0  0  0  0<L.30.1>
+10 Rob Mackowiak lf<T> 4  0  0  0  0  0  0  0  0  0  2  0  0<T>15 Tony Davis 2b<T> 3  0  0  0  0  0  0  0  0  0  0  1  0<L.30.1>
+22 Brent Morel 2b<T> 4  0  1  0  0  0  0  0  0  0  0  0  1<T>20 Ricardo Sierra dh<T> 4  1  1  0  0  1  1  0  0  0  0  0  0<L.30.1>
+ 7 Alex Benitez c <T> 3  1  1  0  0  0  0  1  0  0  2  0  0<T> 4 Alex Diaz 3b<T> 3  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+<T><T>43 Mark Kotsay cf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<T><T>13 Joshua James 2b<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>35  5  9  2  0  1  5  2  0  2  9  0  1<T>Totals<T>35  1  7  0  0  1  1  0  0  1  7  3  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 2 Angel Hernandez (l)<T> 7        6  4  4  1  2  6  4B    2<T> 5 Jose Ortiz<T> 5        5  0  0  0  0  6  2B    1<L.30.1>
+ 7 Jon Lieber<T> 2        3  1  1  0  0  3  1     0<T>50 John Danks (w)<T> 2 1/3    2  1  1  1  0  1  1B    0<L.30.1>
+<T><T> 6 Jon Garland<T> 1 2/3    0  0  0  0  0  0  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 2: Chicago White Sox (40-27) at Oakland Athletics (28-39)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+CW  1st  <C><U>White<UC> on mound. Milnes walked. Terrero singled to CF, Milnes to 2nd. Castro sacrificed to CF, Milnes to 3rd, Terrero to <L.30.1>
+         2nd. Pena walked. Milnes forced out at home (2B), Cintron ground into double play at 1B (C).<L.33.1>
+<Z>OA  1st  <C><U>McCarthy<UC> on mound. Bourjos flied out to CF. Cunningham ground out to 1B (3B). Mendoza walked. Sierra ground out to 1B <L.30.1>
+         (3B).<L.33.1>
+<Z>CW  2nd  <C>Upton flied out to SS. Mackowiak flied out to 1B. Morel ground out to 1B (2B).<L.33.1>
+<Z>OA  2nd  <C>Chavez struck out. Jones flied out to SS. Davis homered to RF, <Z>OA 1-0<C>. Sierra singled to RF. Diaz flied out to 1B.<L.33.1>
+<Z>CW  3rd  <C>Benitez flied out to C. Milnes flied out to LF. Terrero doubled to RF. Castro flied out to CF.<L.33.1>
+<Z>OA  3rd  <C>Bourjos singled to RF. Cunningham reached 1st, Bourjos forced out at 2B (3B). Mendoza singled to RF, Cunningham to 3rd. <L.30.1>
+         Sierra singled to CF, Cunningham scored, Mendoza to 2nd, <Z>OA 2-0<C>. Chavez singled to LF, Mendoza to 3rd, Sierra to 2nd. <L.30.1>
+         Jones reached 1st, Mendoza forced out at home (SS), Sierra to 3rd, Chavez to 2nd. Davis ground out to 1B (3B).<L.33.1>
+<Z>CW  4th  <C>Pena ground out to 1B (2B). Cintron singled to CF. Cintron forced out at 2B (SS), Upton ground into double play at 1B <L.30.1>
+         (2B).<L.33.1>
+<Z>OA  4th  <C>Sierra struck out. Diaz struck out. Bourjos flied out to SS, field save.<L.33.1>
+<Z>CW  5th  <C>Mackowiak flied out to C. Morel ground out to 1B (C). Benitez doubled to LF. Milnes doubled to LF, Benitez scored, <L.30.1>
+         <Z>OA 2-1<C>. Terrero homered to CF, Milnes scored, <Z>CW 3-2<C>. <U>Zito<UC> took over on mound. Castro flied out to CF.<L.33.1>
+<Z>OA  5th  <C>Cunningham singled to RF. Mendoza singled to RF, Cunningham to 3rd. Sierra reached 1st, Mendoza forced out at 2B (C, <L.30.1>
+         field save). Chavez struck out. Jones struck out.<L.33.1>
+<Z>CW  6th  <C>Pena singled to LF. Cintron reached 1st, Pena forced out at 2B (C). Upton singled to RF, Cintron to 3rd. Upton forced <L.30.1>
+         out at 2B (C, field save), Mackowiak ground into double play at 1B (2B, field save).<L.33.1>
+<Z>OA  6th  <C><U>Sturtze<UC> took over on mound. Davis flied out to RF. Sierra ground out to 1B (2B). Diaz singled to CF. Bourjos ground out <L.30.1>
+         to 1B (SS).<L.33.1>
+<Z>CW  7th  <C>Morel struck out. Benitez flied out to LF. Milnes walked. Terrero flied out to 1B.<L.33.1>
+<Z>OA  7th  <C>Cunningham flied out to 1B, field save. Mendoza struck out. Sierra ground out to 1B (2B).<L.33.1>
+<Z>CW  8th  <C>Castro flied out to RF. Pena struck out. Cintron doubled to RF. Upton ground out to 1B (2B).<L.33.1>
+<Z>OA  8th  <C><U>Wells<UC> took over on mound. Chavez walked. Jones flied out to SS. Davis singled to LF, Chavez to 2nd. Sierra walked, <L.30.1>
+         Chavez to 3rd, Davis to 2nd. Diaz struck out. Bourjos ground out to 1B (3B).<L.33.1>
+<Z>CW  9th  <C>Mackowiak ground out to 1B (SS). Morel ground out to 1B (2B). Benitez singled, error by LF. Milnes flied out to C.<L.33.1>
+<Z>OA  9th  <C>Cunningham doubled to LF. Mendoza struck out. Sierra ground out to 1B (C). Chavez ground out to 1B (SS).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(1,2d)<Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 0 <C>(1,0d)<Z> 3 <C>(3,0) <Z> 0 <C>(2,0d)<Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <T><Z>  3<C><L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(0,1) <Z> 1 <C>(2,0) <Z> 1 <C>(4,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(1,2) <Z> 0 <C>(1,0) <T><Z>  2<C><ST.24.66.90><L.42.1>
+<Z>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+81 Bob Milnes dh<T> 3  1  1  1  0  0  1  2  0  0  0  0  0<T>18 Peter Bourjos lf<T> 5  0  1  0  0  0  0  0  0  0  0  0  1<L.30.1>
+30 Luis Terrero cf<T> 4  1  3  1  0  1  2  0  0  0  0  0  0<T>57 Aaron Cunningham ss<T> 5  1  2  1  0  0  0  0  0  0  0  1  0<L.30.1>
+17 Ramon Castro 1b<T> 3  0  0  0  0  0  0  0  1  0  0  0  0<T>23 Fernando Mendoza rf<T> 4  0  2  0  0  0  0  1  0  0  2  0  0<L.30.1>
+ 1 Javier Pena 3b<T> 3  0  1  0  0  0  0  1  0  0  1  0  0<T>21 Pedro Sierra cf<T> 5  0  1  0  0  0  1  0  0  0  0  0  0<L.30.1>
+ 8 Alex Cintron ss<T> 4  0  2  1  0  0  0  0  0  0  0  0  0<T>28 Eric Chavez 1b<T> 4  0  1  0  0  0  0  1  0  0  2  3  0<L.30.1>
+16 Justin Upton rf<T> 4  0  1  0  0  0  0  0  0  0  0  0  0<T> 6 Eric Jones c <T> 4  0  0  0  0  0  0  0  0  0  1  2  0<L.30.1>
+10 Rob Mackowiak lf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<T>15 Tony Davis 2b<T> 4  1  2  0  0  1  1  0  0  0  0  3  0<L.30.1>
+22 Brent Morel 2b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<T>20 Ricardo Sierra dh<T> 3  0  1  0  0  0  0  1  0  0  1  0  0<L.30.1>
+ 7 Alex Benitez c <T> 4  1  1  1  0  0  0  0  0  0  0  0  0<T> 4 Alex Diaz 3b<T> 4  0  1  0  0  0  0  0  0  0  2  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>33  3  9  4  0  1  3  3  1  0  2  0  0<T>Totals<T>38  2 11  1  0  1  2  3  0  0  8  9  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 3 Carl White (l)<T> 4 2/3    6  3  3  1  2  0  2B    0<T>55 B.McCarthy (w)<T> 5        8  2  2  1  1  5  3B    0<L.30.1>
+31 Barry Zito<T> 4 1/3    3  0  0  0  1  2  3     0<T> 2 Tanyon Sturtze<T> 2        1  0  0  0  0  1  1C    0<L.30.1>
+<T><T> 9 Simon Wells (s)<T> 2        2  0  0  0  2  2  1     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 3: Chicago White Sox (41-27) at Oakland Athletics (28-40)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+CW  1st  <C><U>Burnett<UC> on mound. Milnes flied out to LF. Terrero doubled to CF. Castro sacrificed to CF, Terrero to 3rd. Pena ground <L.30.1>
+         out to 1B (3B).<L.33.1>
+<Z>OA  1st  <C><U>Cruz<UC> on mound. Bourjos struck out. Cunningham ground out to 1B (SS). Mendoza flied out to CF.<L.33.1>
+<Z>CW  2nd  <C>Cintron homered to LF, <Z>CW 1-0<C>. Upton flied out to RF, field save. Mackowiak flied out to RF, field save. Morel singled <L.30.1>
+         to LF. Benitez flied out to LF.<L.33.1>
+<Z>OA  2nd  <C>Sierra flied out to SS, field save. Chavez walked. Jones singled to 1B, Chavez to 2nd. Ordonez flied out to CF. Sierra <L.30.1>
+         flied out to CF.<L.33.1>
+<Z>CW  3rd  <C>Milnes walked. Terrero reached 1st, Milnes forced out at 2B (3B). Castro flied out to CF. Pena singled to RF, Terrero to <L.30.1>
+         2nd. Cintron flied out to CF.<L.33.1>
+<Z>OA  3rd  <C>Diaz flied out to C. Bourjos singled to LF. Cunningham walked, Bourjos to 2nd. Mendoza singled to 2B, Bourjos to 3rd, <L.30.1>
+         Cunningham to 2nd. Sierra reached 1st, Bourjos forced out at home (2B), Cunningham to 3rd, Mendoza to 2nd. Chavez ground <L.30.1>
+         out to 1B (SS).<L.33.1>
+<Z>CW  4th  <C>Upton struck out. Mackowiak ground out to 1B (2B). Morel singled to CF. Benitez doubled to LF, Morel scored, <Z>CW 2-0<C>. <L.30.1>
+         Milnes flied out to 2B.<L.33.1>
+<Z>OA  4th  <C>Jones struck out. Ordonez struck out. Sierra flied out to C.<L.33.1>
+<Z>CW  5th  <C>Terrero singled to LF. Castro struck out. Pena flied out to LF, field save. Cintron singled to RF, Terrero to 3rd. Upton <L.30.1>
+         ground out to 1B (3B).<L.33.1>
+<Z>OA  5th  <C>Diaz walked. Bourjos flied out to CF, Diaz to 2nd. Cunningham ground out to 1B (3B, field save). Mendoza flied out to RF.<L.33.1>
+<Z>CW  6th  <C>Mackowiak ground out to 1B (3B). Morel ground out to 1B (2B). <U>Lieber<UC> took over on mound. Benitez flied out to RF.<L.33.1>
+<Z>OA  6th  <C><U>Danks<UC> took over on mound. Sierra doubled to CF. Chavez sacrificed to SS, Sierra to 3rd. Jones ground out to 1B (2B). <L.30.1>
+         Ordonez ground out to 1B (C).<L.33.1>
+<Z>CW  7th  <C>Milnes flied out to CF. Terrero flied out to LF. Castro singled to 3B. Pena singled to CF, Castro to 2nd. Cintron struck <L.30.1>
+         out.<L.33.1>
+<Z>OA  7th  <C>Sierra flied out to 3B. <U>James<UC> pinch hitting at 3B. James flied out to LF. Bourjos walked. Cunningham ground out to 1B <L.30.1>
+         (C).<L.33.1>
+<Z>CW  8th  <C>Upton doubled to RF. Mackowiak singled to RF, Upton scored, <Z>CW 3-0<C>. Morel walked, Mackowiak to 2nd. Benitez flied out <L.30.1>
+         to RF, Mackowiak to 3rd, Morel to 2nd. Milnes struck out. Terrero singled to SS, Mackowiak scored, Morel to 3rd, <L.30.1>
+         <Z>CW 4-0<C>. Castro ground out to 1B (2B).<L.33.1>
+<Z>OA  8th  <C>Mendoza struck out. <U>Garland<UC> took over on mound. Sierra singled to CF. Sierra stole 2nd. Chavez singled to 1B, Sierra to <L.30.1>
+         3rd. Chavez forced out at 2B (1B), Jones ground into double play at 1B (2B).<L.33.1>
+<Z>CW  9th  <C>Pena singled to LF. Cintron singled to LF, Pena to 2nd. Upton reached 1st, Pena forced out at 3B (SS), Cintron to 2nd. <L.30.1>
+         Mackowiak flied out to C. Morel struck out.<L.33.1>
+<Z>OA  9th  <C>Ordonez flied out to LF. Sierra flied out to 1B. James ground out to 1B (SS).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 0 <C>(1,1) <Z> 1 <C>(2,0) <Z> 0 <C>(2,0) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <Z> 2 <C>(3,1) <Z> 0 <C>(2,0) <T><Z>  4<C><L.33.1>
+<Z>Athletics<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,1) <Z> 0 <C>(2,1) <Z> 0 <C>(0,0) <Z> 0 <C>(0,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,1) <Z> 0 <C>(2,0d)<Z> 0 <C>(0,0) <T><Z>  0<C><ST.24.66.90><L.42.1>
+<Z>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>Athletics Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+81 Bob Milnes dh<T> 4  0  0  0  0  0  0  1  0  0  1  0  0<T>18 Peter Bourjos lf<T> 3  0  1  0  0  0  0  1  0  0  1  0  0<L.30.1>
+30 Luis Terrero cf<T> 5  0  3  1  0  0  1  0  0  0  0  0  0<T>57 Aaron Cunningham ss<T> 3  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+17 Ramon Castro 1b<T> 4  0  1  0  0  0  0  0  1  0  1  1  0<T>23 Fernando Mendoza rf<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+ 1 Javier Pena 3b<T> 5  0  3  0  0  0  0  0  0  0  0  0  0<T>21 Pedro Sierra cf<T> 4  0  2  1  0  0  0  0  0  1  0  0  0<L.30.1>
+ 8 Alex Cintron ss<T> 5  1  3  0  0  1  1  0  0  0  1  0  0<T>28 Eric Chavez 1b<T> 2  0  1  0  0  0  0  1  1  0  0  0  0<L.30.1>
+16 Justin Upton rf<T> 5  1  1  1  0  0  0  0  0  0  1  0  0<T> 6 Eric Jones c <T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+10 Rob Mackowiak lf<T> 5  1  1  0  0  0  1  0  0  0  0  0  0<T>26 Orlando Ordonez 2b<T> 4  0  0  0  0  0  0  0  0  0  1  0  0<L.30.1>
+22 Brent Morel 2b<T> 4  1  2  0  0  0  0  1  0  0  1  1  0<T>20 Ricardo Sierra dh<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+ 7 Alex Benitez c <T> 4  0  1  1  0  0  1  0  0  0  0  0  0<T> 4 Alex Diaz 3b<T> 1  0  0  0  0  0  0  1  0  0  0  0  0<L.30.1>
+<T><T>13 Joshua James 3b<T> 2  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>41  4 15  3  0  1  4  2  1  0  5  2  0<T>Totals<T>31  0  6  1  0  0  0  4  1  1  4  0  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+Athletics Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 1 Sean Burnett (l)<T> 5 2/3    8  2  2  1  1  2  3B    0<T> 4 Jose Cruz (w)<T> 5        3  0  0  0  3  3  2B    0<L.30.1>
+ 7 Jon Lieber<T> 3 1/3    7  2  2  0  1  3  3     0<T>50 John Danks<T> 2 1/3    1  0  0  0  1  1  2B    0<L.30.1>
+<T><T> 6 Jon Garland<T> 1 2/3    2  0  0  0  0  0  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Series 3><P.70><L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 1: Seattle Mariners (21-48) at Chicago White Sox (42-27)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+SM  1st  <C><U>Hentgen<UC> on mound. Ugueto singled to CF. Miller walked, Ugueto to 2nd. Young struck out. Ramirez singled to RF, Ugueto <L.30.1>
+         scored, Miller to 3rd, <Z>SM 1-0<C>. Ramirez forced out at 2B (SS), Jones ground into double play at 1B (2B).<L.33.1>
+<Z>CW  1st  <C><U>Rodriguez<UC> on mound. Milnes flied out to C. Terrero singled, error by SS. Konerko walked, Terrero to 2nd. Pena singled to <L.30.1>
+         CF, Terrero scored, Konerko to 3rd, <Z>1-1<C>. Cintron struck out. Upton ground out to 1B (3B).<L.33.1>
+<Z>SM  2nd  <C>Viciedo flied out to SS. Bloomquist ground out to 1B (2B). Lee walked. Guzman walked, Lee to 2nd. Ugueto flied out to <L.30.1>
+         RF, field save.<L.33.1>
+<Z>CW  2nd  <C>Mackowiak ground out to 1B (SS). Morel struck out. Benitez singled to RF. Milnes flied out to RF.<L.33.1>
+<Z>SM  3rd  <C>Miller ground out to 1B (SS). Young struck out. Ramirez singled to CF. Jones flied out to CF.<L.33.1>
+<Z>CW  3rd  <C>Terrero flied out to SS. Konerko flied out to SS, field save. Pena struck out.<L.33.1>
+<Z>SM  4th  <C>Viciedo flied out to CF. Bloomquist ground out to 1B (2B). Lee struck out.<L.33.1>
+<Z>CW  4th  <C>Cintron homered to CF, <Z>CW 2-1<C>. Upton singled to LF. Mackowiak flied out to C. Morel singled to P, Upton to 2nd. Upton <L.30.1>
+         forced out at 3B (2B), Benitez ground into double play at 1B (3B).<L.33.1>
+<Z>SM  5th  <C>Guzman struck out. Ugueto ground out to 1B (2B). Miller struck out.<L.33.1>
+<Z>CW  5th  <C>Milnes struck out. Terrero singled to CF. Terrero stole 2nd. Konerko homered to RF, Terrero scored, <Z>CW 4-1<C>. Pena <L.30.1>
+         walked. Pena forced out at 2B (1B), Cintron ground into double play at 1B (2B).<L.33.1>
+<Z>SM  6th  <C>Young ground out to 1B (2B). Ramirez singled to CF. Jones singled to CF, Ramirez to 3rd. Viciedo doubled to CF, Ramirez <L.30.1>
+         scored, Jones scored, <Z>CW 4-3<C>. Bloomquist singled to RF, Viciedo to 3rd. <U>Garland<UC> took over on mound. Bloomquist stole <L.30.1>
+         2nd. Lee ground out to 1B (3B). Guzman struck out.<L.33.1>
+<Z>CW  6th  <C><U>Davis<UC> took over on mound. Upton singled to LF. Mackowiak reached 1st, Upton forced out at 2B (3B). Morel flied out to RF. <L.30.1>
+         Benitez walked, Mackowiak to 2nd. Milnes struck out.<L.33.1>
+<Z>SM  7th  <C>Ugueto flied out to LF. <U>Guerrero<UC> pinch hitting at CF. Guerrero flied out to RF, field save. <U>Rivera<UC> pinch hitting at RF. <L.30.1>
+         Rivera homered to RF, <Z>4-4<C>. Ramirez ground out to 1B (SS, field save).<L.33.1>
+<Z>CW  7th  <C>Terrero flied out to C. Konerko walked. Pena doubled to CF, Konerko scored, <Z>CW 5-4<C>. Cintron sacrificed to 3B, Pena to <L.30.1>
+         3rd. Upton ground out to 1B (3B).<L.33.1>
+<Z>SM  8th  <C><U>Wells<UC> took over on mound. Jones flied out to CF. Viciedo singled to RF. Viciedo forced out at 2B (3B), Bloomquist ground <L.30.1>
+         into double play at 1B (2B).<L.33.1>
+<Z>CW  8th  <C>Mackowiak ground out to 1B (2B). Morel singled to CF. Morel stole 2nd. Benitez flied out to CF, Morel to 3rd. Milnes <L.30.1>
+         ground out to 1B (3B).<L.33.1>
+<Z>SM  9th  <C>Lee ground out to 1B (2B). Guzman flied out to C. Ugueto ground out to 1B (3B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Mariners<C><T><Z> 1 <C>(2,1d)<Z> 0 <C>(0,2) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 2 <C>(4,0) <Z> 1 <C>(1,0) <Z> 0 <C>(1,0d)<Z> 0 <C>(0,0) <T><Z>  4<C><L.33.1>
+<Z>White Sox<C><T><Z> 1 <C>(1,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 1 <C>(3,0d)<Z> 2 <C>(2,1d)<Z> 0 <C>(1,1) <Z> 1 <C>(1,1) <Z> 0 <C>(1,0) <Z> x       <T>  5<C><ST.24.66.90><L.42.1>
+<Z>Mariners Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+24 Luis Ugueto lf<T> 5  1  1  0  0  0  0  0  0  0  0  0  0<T>81 Bob Milnes dh<T> 5  0  0  0  0  0  0  0  0  0  2  0  0<L.30.1>
+29 Danny Miller cf<T> 2  0  0  0  0  0  0  1  0  0  1  0  0<T>30 Luis Terrero cf<T> 4  2  1  0  0  0  0  0  0  1  0  0  0<L.30.1>
+ 6 Mike Young rf<T> 3  0  0  0  0  0  0  0  0  0  2  0  0<T>14 Paul Konerko 1b<T> 2  2  1  0  0  1  2  2  0  0  0  2  0<L.30.1>
+ 8 Adrian Ramirez 1b<T> 4  1  3  0  0  0  1  0  0  0  0  2  0<T> 1 Javier Pena 3b<T> 3  0  2  1  0  0  2  1  0  0  1  1  0<L.30.1>
+12 Pete Jones ss<T> 4  1  1  0  0  0  0  0  0  0  0  0  1<T> 8 Alex Cintron ss<T> 3  1  1  0  0  1  1  0  1  0  1  1  0<L.30.1>
+19 Dayan Viciedo dh<T> 4  0  2  1  0  0  2  0  0  0  0  0  0<T>16 Justin Upton rf<T> 4  0  2  0  0  0  0  0  0  0  0  0  0<L.30.1>
+17 W.Bloomquist 2b<T> 4  0  1  0  0  0  0  0  0  1  0  2  0<T>10 Rob Mackowiak lf<T> 4  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+30 Todd Lee 3b<T> 3  0  0  0  0  0  0  1  0  0  1  1  0<T>22 Brent Morel 2b<T> 4  0  2  0  0  0  0  0  0  1  1  2  0<L.30.1>
+ 7 Juan Guzman c <T> 3  0  0  0  0  0  0  1  0  0  2  0  0<T> 7 Alex Benitez c <T> 3  0  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+13 Luis Guerrero cf<T> 1  0  0  0  0  0  0  0  0  0  0  0  0<T><L.30.1>
+10 Roberto Rivera rf<T> 1  1  1  0  0  1  1  0  0  0  0  0  0<T><L.30.1>
+<L.6.1>
+<Z>Totals<T>34  4  9  1  0  1  4  3  0  1  6  5  1<T>Totals<T>32  5 10  1  0  2  5  4  1  2  5  6  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Mariners Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+21 Pat Hentgen<T> 5 1/3    7  3  3  0  3  5  3H    2<T> 1 Oscar Rodriguez<T> 5        7  4  3  2  2  4  2B    0<L.30.1>
+ 6 Jon Garland (w)<T> 1 2/3    1  1  1  1  0  1  1C    0<T>16 Jack Davis (l)<T> 3        3  1  1  0  2  1  2     0<L.30.1>
+ 9 Simon Wells (s)<T> 2        1  0  0  0  0  0  0     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><L.1.1>
+<P>
+<L.1.1>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 2: Seattle Mariners (21-49) at Chicago White Sox (43-27)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+SM  1st  <C><U>Wassermann<UC> on mound. Ugueto homered to LF, <Z>SM 1-0<C>. Miller struck out. Young struck out. Ramirez struck out.<L.33.1>
+<Z>CW  1st  <C><U>Morales<UC> on mound. Milnes struck out. Terrero flied out to C. Konerko ground out to 1B (2B).<L.33.1>
+<Z>SM  2nd  <C>Jones walked. Viciedo struck out. Bloomquist flied out to 2B. Lee singled to CF, Jones to 3rd. Guzman ground out to 1B <L.30.1>
+         (SS).<L.33.1>
+<Z>CW  2nd  <C>Pena flied out to 1B. Cintron doubled to RF. Upton flied out to C. Mackowiak ground out to 1B (SS).<L.33.1>
+<Z>SM  3rd  <C>Ugueto flied out to RF. Miller tripled to RF. Young doubled to CF, Miller scored, <Z>SM 2-0<C>. Ramirez singled to RF, Young <L.30.1>
+         scored, <Z>SM 3-0<C>. Jones flied out to RF. Viciedo ground out to 1B (3B).<L.33.1>
+<Z>CW  3rd  <C>Morel singled, error by 2B. Benitez reached 1st, Morel forced out at 2B (1B). Milnes walked, Benitez to 2nd. Terrero <L.30.1>
+         flied out to CF. Konerko homered to CF, Benitez scored, Milnes scored, <Z>3-3<C>. Pena ground out to 1B (2B).<L.33.1>
+<Z>SM  4th  <C>Bloomquist struck out. Lee ground out to 1B (3B). Guzman tripled to LF. Ugueto ground out to 1B (3B).<L.33.1>
+<Z>CW  4th  <C>Cintron homered to CF, <Z>CW 4-3<C>. Upton flied out to CF. Mackowiak singled, error by SS. Morel walked, Mackowiak to 2nd. <L.30.1>
+         Benitez flied out to SS. Milnes singled to CF, Mackowiak to 3rd, Morel to 2nd. Terrero ground out to 1B (2B).<L.33.1>
+<Z>SM  5th  <C>Miller doubled to CF. Young struck out. Ramirez flied out to LF. Jones doubled to CF, Miller scored, <Z>4-4<C>. Viciedo <L.30.1>
+         flied out to SS.<L.33.1>
+<Z>CW  5th  <C>Konerko singled to LF. <U>Webster<UC> took over on mound. Pena sacrificed to LF, Konerko to 2nd. Cintron struck out. Upton <L.30.1>
+         flied out to C.<L.33.1>
+<Z>SM  6th  <C>Bloomquist singled to CF. Lee flied out to SS. Guzman singled to LF, Bloomquist to 3rd. <U>Sturtze<UC> took over on mound. <L.30.1>
+         Ugueto singled to CF, Bloomquist scored, Guzman to 3rd, <Z>SM 5-4<C>. Miller walked, Ugueto to 2nd. Guzman forced out at <L.30.1>
+         home (3B), Young ground into double play at 1B (C).<L.33.1>
+<Z>CW  6th  <C>Mackowiak struck out. Morel ground out to 1B (2B). Benitez struck out.<L.33.1>
+<Z>SM  7th  <C>Ramirez doubled to RF. Jones singled to CF, Ramirez scored, <Z>SM 6-4<C>. Jones forced out at 2B (SS), Viciedo ground into <L.30.1>
+         double play at 1B (2B). Bloomquist doubled to LF. <U>Benitez<UC> took over on mound. Lee struck out.<L.33.1>
+<Z>CW  7th  <C>Milnes singled, error by 3B. Terrero struck out. Konerko homered to RF, Milnes scored, <Z>6-6<C>. Pena struck out. Cintron <L.30.1>
+         flied out to RF.<L.33.1>
+<Z>SM  8th  <C>Guzman walked. Ugueto doubled to RF, Guzman to 3rd. Miller ground out to 1B (3B). Young singled to CF, Guzman scored, <L.30.1>
+         Ugueto to 3rd, <Z>SM 7-6<C>. <U>Green<UC> took over on mound. Ramirez singled to CF, Ugueto scored, Young to 3rd, <Z>SM 8-6<C>. Ramirez <L.30.1>
+         forced out at 2B (C), Jones ground into double play at 1B (2B).<L.33.1>
+<Z>CW  8th  <C>Upton homered to RF, <Z>SM 8-7<C>. Mackowiak singled to CF. Mackowiak forced out at 2B (SS), Morel ground into double play <L.30.1>
+         at 1B (2B). Benitez homered to LF, <Z>8-8<C>. Milnes struck out.<L.33.1>
+<Z>SM  9th  <C>Viciedo ground out to 1B (2B, field save). Bloomquist flied out to CF. Lee flied out to C.<L.33.1>
+<Z>CW  9th  <C>Terrero doubled to CF. Konerko struck out. Pena singled to CF, Terrero to 3rd. Cintron singled to LF, Terrero scored, <L.30.1>
+         Pena to 3rd, <Z>CW 9-8<C>.<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Mariners<C><T><Z> 1 <C>(1,0) <Z> 0 <C>(1,1) <Z> 2 <C>(3,0) <Z> 0 <C>(1,0) <Z> 1 <C>(2,0) <Z> 1 <C>(3,1d)<Z> 1 <C>(3,0d)<Z> 2 <C>(3,1d)<Z> 0 <C>(0,0) <T><Z>  8<C><L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(1,0) <Z> 3 <C>(1,1) <Z> 1 <C>(2,1) <Z> 0 <C>(1,0) <Z> 0 <C>(0,0) <Z> 2 <C>(1,0) <Z> 2 <C>(3,0d)<Z> 1 <C>(3,0) <T><Z>  9<C><ST.24.66.90><L.42.1>
+<Z>Mariners Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+24 Luis Ugueto lf<T> 5  2  3  1  0  1  2  0  0  0  0  0  0<T>81 Bob Milnes dh<T> 4  2  1  0  0  0  0  1  0  0  2  0  0<L.30.1>
+29 Danny Miller cf<T> 4  2  2  1  1  0  0  1  0  0  1  0  0<T>30 Luis Terrero cf<T> 5  1  1  1  0  0  0  0  0  0  1  0  0<L.30.1>
+ 6 Mike Young rf<T> 5  1  2  1  0  0  2  0  0  0  2  0  0<T>14 Paul Konerko 1b<T> 5  2  3  0  0  2  5  0  0  0  1  3  0<L.30.1>
+ 8 Adrian Ramirez 1b<T> 5  1  3  1  0  0  2  0  0  0  1  1  0<T> 1 Javier Pena 3b<T> 4  0  1  0  0  0  0  0  1  0  1  1  0<L.30.1>
+12 Pete Jones ss<T> 4  0  2  1  0  0  2  1  0  0  0  1  1<T> 8 Alex Cintron ss<T> 5  1  3  1  0  1  2  0  0  0  1  1  0<L.30.1>
+19 Dayan Viciedo dh<T> 5  0  0  0  0  0  0  0  0  0  1  0  0<T>16 Justin Upton rf<T> 4  1  1  0  0  1  1  0  0  0  0  0  0<L.30.1>
+17 W.Bloomquist 2b<T> 5  1  2  1  0  0  0  0  0  0  1  1  1<T>10 Rob Mackowiak lf<T> 4  0  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+30 Todd Lee 3b<T> 5  0  1  0  0  0  0  0  0  0  1  0  1<T>22 Brent Morel 2b<T> 3  0  0  0  0  0  0  1  0  0  0  2  0<L.30.1>
+ 7 Juan Guzman c <T> 3  1  2  0  1  0  0  1  0  0  0  0  0<T> 7 Alex Benitez c <T> 4  2  1  0  0  1  1  0  0  0  1  2  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>41  8 17  6  2  1  8  3  0  0  7  3  3<T>Totals<T>38  9 12  2  0  5  9  2  1  0  8  9  0<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Mariners Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+62 E.Wassermann<T> 5 1/3   10  5  5  1  1  6  3B    2<T> 4 F.Morales<T> 4        5  4  1  2  2  1  3B    1<L.30.1>
+ 2 Tanyon Sturtze<T> 1 1/3    4  1  1  0  1  0  1H    1<T>11 Tony Webster (l)<T> 4 1/3    7  5  4  3  0  7  2     0<L.30.1>
+23 Orlando Benitez<T>   2/3    2  2  2  0  1  1  1H    2<T><T><L.30.1>
+11 Danny Green (w)<T> 1 2/3    1  0  0  0  0  0  1     0<T><T><L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7   Season 21   Week 8 of 18   6/4/13<L.54.1>
+Game 3: Seattle Mariners (21-50) at Chicago White Sox (44-27)<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.9.1>
+<L.33.1>
+SM  1st  <C><U>Ortiz<UC> on mound. Ugueto flied out to CF, field save. Miller singled, error by RF. Young flied out to C. Ramirez flied out <L.30.1>
+         to CF.<L.33.1>
+<Z>CW  1st  <C><U>Fritz<UC> on mound. Milnes flied out to 3B. Terrero flied out to RF. Castro ground out to 1B (2B).<L.33.1>
+<Z>SM  2nd  <C>Jones singled to RF. Jones stole 2nd. Viciedo singled to 3B, Jones to 3rd. Bloomquist homered to RF, Jones scored, <L.30.1>
+         Viciedo scored, <Z>SM 3-0<C>. Lee ground out to 1B (3B). Guzman walked. Ugueto singled to 1B, Guzman to 2nd. Miller flied <L.30.1>
+         out to CF. Young flied out to RF.<L.33.1>
+<Z>CW  2nd  <C>Viciedo flied out to CF, field save. Cintron flied out to C, field save. Upton flied out to C.<L.33.1>
+<Z>SM  3rd  <C>Ramirez homered to LF, <Z>SM 4-0<C>. Jones flied out to LF. Viciedo singled to RF. Bloomquist sacrificed to RF, Viciedo to <L.30.1>
+         2nd. Lee struck out.<L.33.1>
+<Z>CW  3rd  <C>Mackowiak singled to LF. Morel flied out to RF, Mackowiak to 2nd. Benitez walked. Milnes flied out to 1B. Terrero walked, <L.30.1>
+         Mackowiak to 3rd, Benitez to 2nd. Castro singled to LF, Mackowiak scored, Benitez to 3rd, Terrero to 2nd, <Z>SM 4-1<C>. <L.30.1>
+         Viciedo singled to RF, Benitez scored, Terrero to 3rd, Castro to 2nd, <Z>SM 4-2<C>. Cintron singled to LF, Terrero scored, <L.30.1>
+         Castro to 3rd, Viciedo to 2nd, <Z>SM 4-3<C>. Upton ground out to 1B (SS, field save).<L.33.1>
+<Z>SM  4th  <C>Guzman ground out to 1B (2B). Ugueto flied out to CF. Miller flied out to RF.<L.33.1>
+<Z>CW  4th  <C><U>Lewis<UC> took over on mound. Mackowiak struck out. Morel walked. Morel forced out at 2B (LF), Benitez ground into double <L.30.1>
+         play at 1B (2B).<L.33.1>
+<Z>SM  5th  <C>Young ground out to 1B (SS). <U>Danks<UC> took over on mound. Ramirez ground out to 1B (CF). Jones walked. Viciedo singled to <L.30.1>
+         RF, Jones to 2nd. Bloomquist singled to LF, Jones scored, Viciedo to 3rd, <Z>SM 5-3<C>. Bloomquist stole 2nd. Lee ground out <L.30.1>
+         to 1B (3B).<L.33.1>
+<Z>CW  5th  <C>Milnes flied out to 1B. Terrero walked. Terrero forced out at 2B (SS, field save), Castro ground into double play at 1B <L.30.1>
+         (2B, field save).<L.33.1>
+<Z>SM  6th  <C><U>Garland<UC> took over on mound. Guzman walked. Guzman forced out at 2B (SS, field save), Ugueto ground into double play at <L.30.1>
+         1B (2B, field save). Miller ground out to 1B (SS).<L.33.1>
+<Z>CW  6th  <C>Viciedo flied out to 2B. Cintron singled to RF. Upton homered to CF, Cintron scored, <Z>5-5<C>. Mackowiak flied out to C. <L.30.1>
+         Morel walked. Benitez singled to RF, Morel to 3rd. <U>Ibanez<UC> took over on mound. Milnes ground out to 1B (2B).<L.33.1>
+<Z>SM  7th  <C>Young flied out to CF. Ramirez ground out to 1B (2B). Jones flied out to CF.<L.33.1>
+<Z>CW  7th  <C>Terrero singled to LF. Castro walked, Terrero to 2nd. Viciedo flied out to C. Cintron singled to LF, Terrero scored, <L.30.1>
+         Castro to 2nd, <Z>CW 6-5<C>. Upton flied out to SS. Mackowiak flied out to SS.<L.33.1>
+<Z>SM  8th  <C><U>Wells<UC> took over on mound. Viciedo struck out. Bloomquist singled to LF. Bloomquist stole 2nd. Lee singled to CF, <L.30.1>
+         Bloomquist to 3rd. Guzman singled to CF, Bloomquist scored, Lee to 2nd, <Z>6-6<C>. Ugueto struck out. Miller doubled to CF, <L.30.1>
+         Lee scored, Guzman scored, <Z>SM 8-6<C>. Young flied out to C.<L.33.1>
+<Z>CW  8th  <C>Morel ground out to 1B (3B, field save). Benitez ground out to 1B (SS). Milnes flied out to LF.<L.33.1>
+<Z>SM  9th  <C>Ramirez flied out to SS. Jones struck out. Viciedo singled to CF. Bloomquist struck out.<L.33.1>
+<Z>CW  9th  <C><U>Jackson<UC> took over on mound. Terrero singled to LF. Castro singled to CF, Terrero to 2nd. Viciedo struck out. Terrero <L.30.1>
+         stole 3rd. Cintron struck out. Upton ground out to 1B (2B).<L.12.1>
+<ST.14.125><L.3.1>
+<L.33.1>
+<Z>Mariners<C><T><Z> 0 <C>(0,0) <Z> 3 <C>(4,1) <Z> 1 <C>(2,0) <Z> 0 <C>(0,0) <Z> 1 <C>(2,1) <Z> 0 <C>(0,1d)<Z> 0 <C>(0,0) <Z> 3 <C>(4,0) <Z> 0 <C>(1,0) <T><Z>  8<C><L.33.1>
+<Z>White Sox<C><T><Z> 0 <C>(0,0) <Z> 0 <C>(0,0) <Z> 3 <C>(4,2) <Z> 0 <C>(0,1d)<Z> 0 <C>(0,1d)<Z> 2 <C>(3,1) <Z> 1 <C>(2,1) <Z> 0 <C>(0,0) <Z> 0 <C>(2,0) <T><Z>  6<C><ST.24.66.90><L.42.1>
+<Z>Mariners Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<T>White Sox Batting<T>AB  R  H 2B 3B HR BI BB SA SB SO DP Er<C><L.33.1>
+24 Luis Ugueto lf<T> 5  0  1  0  0  0  0  0  0  0  1  1  0<T>81 Bob Milnes dh<T> 5  0  0  0  0  0  0  0  0  0  0  0  0<L.30.1>
+29 Danny Miller cf<T> 5  0  1  1  0  0  2  0  0  0  0  0  0<T>30 Luis Terrero cf<T> 3  2  2  0  0  0  0  2  0  1  0  0  0<L.30.1>
+ 6 Mike Young rf<T> 5  0  0  0  0  0  0  0  0  0  0  0  0<T>17 Ramon Castro 1b<T> 4  0  2  0  0  0  1  1  0  0  0  1  0<L.30.1>
+ 8 Adrian Ramirez 1b<T> 5  1  1  0  0  1  1  0  0  0  0  2  0<T>24 Dayan Viciedo 3b<T> 5  0  1  0  0  0  1  0  0  0  1  0  0<L.30.1>
+12 Pete Jones ss<T> 4  2  1  0  0  0  0  1  0  1  1  1  0<T> 8 Alex Cintron ss<T> 5  1  3  0  0  0  2  0  0  0  1  1  0<L.30.1>
+19 Dayan Viciedo dh<T> 5  1  4  0  0  0  0  0  0  0  1  0  0<T>16 Justin Upton rf<T> 5  1  1  0  0  1  2  0  0  0  0  0  1<L.30.1>
+17 W.Bloomquist 2b<T> 4  2  3  0  0  1  4  0  1  2  1  2  0<T>10 Rob Mackowiak lf<T> 4  1  1  0  0  0  0  0  0  0  1  0  0<L.30.1>
+30 Todd Lee 3b<T> 4  1  1  0  0  0  0  0  0  0  1  0  0<T>22 Brent Morel 2b<T> 2  0  0  0  0  0  0  2  0  0  0  1  0<L.30.1>
+ 7 Juan Guzman c <T> 2  1  1  0  0  0  1  2  0  0  0  0  0<T> 7 Alex Benitez c <T> 3  1  1  0  0  0  0  1  0  0  0  0  0<L.30.1>
+<L.6.1>
+<Z>Totals<T>39  8 13  1  0  2  8  3  1  3  5  6  0<T>Totals<T>36  6 11  0  0  1  6  6  0  1  3  3  1<T><ST.66><L.6.1>
+______________________________________________________________<T>______________________________________________________________<ST.24.66.90><L.36.1>
+White Sox Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<T>Mariners Pitching<T>IP        H  R ER HR BB SO  Ft  LOB<C><L.33.1>
+ 5 Jose Ortiz<T> 4 1/3    6  4  4  2  1  1  2B    0<T> 3 Benjamin Fritz<T> 3        4  3  3  0  2  0  2H    0<L.30.1>
+50 John Danks<T>   2/3    2  1  1  0  1  0  1H    0<T> 2 Carl Lewis<T> 2 2/3    3  2  2  1  3  1  2H    2<L.30.1>
+ 6 Jon Garland<T> 2        0  0  0  0  1  0  1C    0<T>18 Ricardo Ibanez (w)<T> 2 1/3    2  1  1  0  1  0  1C    0<L.30.1>
+ 9 Simon Wells (l)<T> 2        5  3  3  0  0  4  1     0<T>27 Bob Jackson (s)<T> 1        2  0  0  0  0  2  0     0<L.30.1>
+<T><T><T><T><T><T><T><T><T><L.6.1>
+<D><E><DU>
+<BK.Results Summary><P.70><B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB7  Season 21  Week 8 Results   6/4/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<ST.27.63.90.126><L.1.1>
+<U>American League<UC><L.48.1>
+<C><Z>Blue Jays 2<C> (6h, 0bb)<T>62 Zink (6, 2r 5h 0bb)<T><Z>RED SOX 4<C> (9h, 7bb)<T>32 Halladay (4 2/3, 4r 6h 1bb)<L.36.1>
+<Z>Blue Jays 2<C> (5h, 5bb)<T>63 Masterson (5, 2r 3h 3bb)<T><Z>RED SOX 3<C> (7h, 4bb)<T>19 Sanchez (4 2/3, 3r 5h 3bb)<L.36.1>
+<Z>Blue Jays 4<C> (8h, 2bb)<T>15 Rincon (6 2/3, 2r 5h 1bb)<T><Z>RED SOX 11<C> (16h, 1bb)<T>99 Romero (3 1/3, 9r 10h 0bb)<L.36.1>
+<L.9.1>
+<Z>YANKEES 4<C> (13h, 3bb)<T>25 Kelly (4 2/3, 3r 6h 3bb)<T><Z>Rays 2<C> (10h, 3bb)<T>67 Roberts (7 2/3, 2r 8h 2bb)<L.36.1>
+<Z>YANKEES 19<C> (25h, 3bb)<T> 6 Brown (4 1/3, 4r 9h 1bb)<T><Z>Rays 3<C> (7h, 5bb)<T>50 Mcbride (5 2/3, 3r 6h 3bb)<L.36.1>
+<Z>YANKEES 27<C> (26h, 8bb)<T>10 Guerrero (4, 26r 20h 8bb)<T><Z>Rays 3<C> (10h, 3bb)<T>23 Pineda (4 2/3, 3r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Indians 6<C> (9h, 2bb)<T>78 Van Mil (2, 1r 3h 2bb)<T><Z>TWINS 12<C> (16h, 5bb)<T>30 Lee (3 1/3, 5r 6h 3bb)<L.36.1>
+<Z>Indians 2<C> (4h, 5bb)<T> 5 Hernandez (7 1/3, 2r 4h 3bb)<T><Z>TWINS 8<C> (12h, 1bb)<T> 9 Guzman (4 2/3, 5r 7h 0bb)<L.36.1>
+<Z>Indians 0<C> (3h, 1bb)<T>74 Mijares (9, 0r 3h 1bb)<T><Z>TWINS 18<C> (18h, 4bb)<T> 4 Rivera (3 1/3, 10r 10h 3bb)<L.36.1>
+<L.9.1>
+<Z>Tigers 0<C> (4h, 3bb)<T>55 McCarthy (6 1/3, 0r 2h 3bb)<T><Z>WHITE SOX 3<C> (9h, 2bb)<T>25 Walker (5, 2r 5h 1bb)<L.36.1>
+<Z>Tigers 10<C> (13h, 4bb)<T> 4 Cruz (4 1/3, 5r 6h 2bb)<T><Z>WHITE SOX 13<C> (14h, 8bb)<T>10 Cordero (3 1/3, 4r 3h 4bb)<L.36.1>
+<Z>Tigers 1<C> (7h, 4bb)<T>62 Wassermann (5 2/3, 0r 5h 4bb)<T><Z>WHITE SOX 11<C> (14h, 2bb)<T>21 Delcarmen (3, 4r 6h 2bb)<L.36.1>
+<L.9.1>
+<Z>Athletics 1<C> (6h, 1bb)<T>11 Hughes (6 2/3, 1r 5h 1bb)<T><Z>ANGELS 5<C> (10h, 2bb)<T> 1 Burnett (4 2/3, 5r 8h 2bb)<L.36.1>
+<Z>Athletics 1<C> (6h, 2bb)<T> 3 Weaver (9, 1r 6h 2bb)<T><Z>ANGELS 2<C> (8h, 2bb)<T>10 Ramos (6, 0r 5h 1bb)<L.36.1>
+<Z>Athletics 2<C> (3h, 5bb)<T>10 Beckett (6 1/3, 2r 2h 3bb)<T><Z>ANGELS 4<C> (12h, 6bb)<T>25 Green (4 1/3, 1r 7h 3bb)<L.36.1>
+<L.9.1>
+<Z>MARINERS 7<C> (15h, 5bb)<T>10 McNair (3, 5r 9h 2bb)<T><Z>Rangers 4<C> (10h, 2bb)<T>25 Pena (4 2/3, 3r 6h 0bb)<L.36.1>
+<Z>Mariners 2<C> (7h, 3bb)<T>58 Shields (9, 2r 7h 2bb)<T><Z>RANGERS 3<C> (8h, 6bb)<T> 1 Rodriguez (5, 2r 3h 4bb)<T>10 inn<L.36.1>
+<Z>Mariners 0<C> (3h, 4bb)<T> 4 Wilson (9, 0r 3h 4bb)<T><Z>RANGERS 1<C> (1h, 7bb)<T> 4 Morales (5 2/3, 0r 0h 4bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Blue Jays 1<C> (6h, 0bb)<T>51 Swarzak (8 2/3, 1r 6h 0bb)<T><Z>TWINS 5<C> (7h, 5bb)<T>18 Ordonez (5 1/3, 3r 5h 3bb)<L.36.1>
+<Z>Blue Jays 2<C> (6h, 2bb)<T>33 Baker (6 1/3, 2r 6h 1bb)<T><Z>TWINS 5<C> (10h, 2bb)<T>32 Halladay (5 2/3, 1r 4h 1bb)<L.36.1>
+<Z>Blue Jays 4<C> (8h, 4bb)<T>78 Van Mil (2, 3r 4h 2bb)<T><Z>TWINS 10<C> (12h, 7bb)<T>19 Sanchez (3, 3r 5h 4bb)<L.36.1>
+<L.9.1>
+<Z>Yankees 4<C> (14h, 1bb)<T>12 Palmeiro (6, 4r 9h 1bb)<T><Z>RANGERS 7<C> (10h, 5bb)<T>45 Byrd (2, 5r 5h 3bb)<L.36.1>
+<Z>Yankees 5<C> (9h, 2bb)<T>54 Mitchell (3, 4r 6h 2bb)<T><Z>RANGERS 15<C> (18h, 5bb)<T>40 Kelly (5 2/3, 8r 11h 2bb)<L.36.1>
+<Z>YANKEES 3<C> (6h, 3bb)<T>10 McNair (9, 3r 6h 3bb)<T><Z>Rangers 2<C> (9h, 0bb)<T>67 Roberts (6 2/3, 2r 7h 0bb)<L.36.1>
+<L.9.1>
+<Z>Tigers 0<C> (4h, 0bb)<T> 6 Hernandez (9, 0r 4h 0bb)<T><Z>ANGELS 15<C> (20h, 3bb)<T>12 Lopez (3, 6r 8h 2bb)<L.36.1>
+<Z>TIGERS 3<C> (11h, 5bb)<T>24 Ramirez (6, 0r 6h 3bb)<T><Z>Angels 2<C> (5h, 1bb)<T>11 Alou (5, 2r 4h 1bb)<L.36.1>
+<Z>Tigers 0<C> (6h, 1bb)<T>11 Hughes (6 2/3, 0r 5h 1bb)<T><Z>ANGELS 5<C> (12h, 4bb)<T>25 Walker (4 1/3, 2r 5h 2bb)<L.36.1>
+<L.9.1>
+<Z>RED SOX 11<C> (20h, 4bb)<T>26 Lopez (4 1/3, 3r 7h 2bb)<T><Z>Indians 6<C> (12h, 3bb)<T> 5 Ordonez (5 1/3, 2r 7h 1bb)<L.36.1>
+<Z>RED SOX 3<C> (7h, 2bb)<T>25 Johnson (6, 3r 5h 2bb)<T><Z>Indians 1<C> (4h, 0bb)<T> 8 Lester (8, 1r 4h 0bb)<L.36.1>
+<Z>RED SOX 10<C> (18h, 4bb)<T>30 Lee (3, 6r 9h 3bb)<T><Z>Indians 2<C> (8h, 3bb)<T>62 Zink (6 1/3, 0r 5h 0bb)<L.36.1>
+<L.9.1>
+<Z>Rays 2<C> (5h, 5bb)<T> 3 Fritz (5 2/3, 2r 4h 3bb)<T><Z>MARINERS 7<C> (5h, 3bb)<T>22 Walters (5, 5r 4h 2bb)<L.36.1>
+<Z>RAYS 7<C> (11h, 4bb)<T>26 Harris (3 2/3, 6r 7h 4bb)<T><Z>Mariners 6<C> (9h, 3bb)<T>32 Santana (5 1/3, 5r 7h 1bb)<L.36.1>
+<Z>Rays 3<C> (8h, 2bb)<T>25 Pena (5, 1r 4h 1bb)<T><Z>MARINERS 4<C> (11h, 1bb)<T>25 Kelly (5, 2r 7h 0bb)<L.36.1>
+<L.9.1>
+<Z>WHITE SOX 5<C> (9h, 2bb)<T> 2 Hernandez (7, 4r 6h 2bb)<T><Z>Athletics 1<C> (7h, 0bb)<T> 5 Ortiz (5, 0r 5h 0bb)<L.36.1>
+<Z>WHITE SOX 3<C> (9h, 3bb)<T> 3 White (4 2/3, 3r 6h 2bb)<T><Z>Athletics 2<C> (11h, 3bb)<T>55 McCarthy (5, 2r 8h 1bb)<L.36.1>
+<Z>WHITE SOX 4<C> (15h, 2bb)<T> 1 Burnett (5 2/3, 2r 8h 1bb)<T><Z>Athletics 0<C> (6h, 4bb)<T> 4 Cruz (5, 0r 3h 3bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<Z>Athletics 0<C> (7h, 4bb)<T>63 Masterson (4, 0r 6h 2bb)<T><Z>RED SOX 5<C> (8h, 6bb)<T>10 Ramos (5 1/3, 2r 6h 3bb)<L.36.1>
+<Z>ATHLETICS 4<C> (12h, 5bb)<T>15 Rincon (6, 0r 6h 3bb)<T><Z>Red Sox 3<C> (10h, 4bb)<T>25 Green (5, 1r 5h 2bb)<L.36.1>
+<Z>Athletics 0<C> (1h, 1bb)<T> 5 Ordonez (9, 0r 1h 1bb)<T><Z>RED SOX 5<C> (8h, 3bb)<T> 2 Hernandez (5 2/3, 5r 8h 3bb)<L.36.1>
+<L.9.1>
+<Z>INDIANS 3<C> (11h, 3bb)<T> 6 Brown (5 1/3, 3r 7h 3bb)<T><Z>Rays 2<C> (8h, 2bb)<T> 9 Guzman (5, 1r 5h 2bb)<L.36.1>
+<Z>INDIANS 4<C> (10h, 4bb)<T>10 Guerrero (4, 3r 4h 3bb)<T><Z>Rays 2<C> (7h, 2bb)<T> 4 Rivera (6, 1r 6h 1bb)<L.36.1>
+<Z>INDIANS 10<C> (15h, 5bb)<T>22 Walters (4, 8r 9h 2bb)<T><Z>Rays 2<C> (7h, 5bb)<T>26 Lopez (3 2/3, 1r 5h 3bb)<L.36.1>
+<L.9.1>
+<Z>Mariners 4<C> (9h, 3bb)<T>21 Hentgen (5 1/3, 3r 7h 3bb)<T><Z>WHITE SOX 5<C> (10h, 4bb)<T> 1 Rodriguez (5, 4r 7h 2bb)<L.36.1>
+<Z>Mariners 8<C> (17h, 3bb)<T>62 Wassermann (5 1/3, 5r 10h 1bb)<T><Z>WHITE SOX 9<C> (12h, 2bb)<T> 4 Morales (4, 4r 5h 2bb)<L.36.1>
+<Z>MARINERS 8<C> (13h, 3bb)<T> 5 Ortiz (4 1/3, 4r 6h 1bb)<T><Z>White Sox 6<C> (11h, 6bb)<T> 3 Fritz (3, 3r 4h 2bb)<L.36.1>
+<L.9.1>
+<Z>ANGELS 2<C> (11h, 3bb)<T>99 Romero (4 1/3, 2r 6h 3bb)<T><Z>Blue Jays 0<C> (5h, 0bb)<T> 3 Weaver (9, 0r 5h 0bb)<L.36.1>
+<Z>ANGELS 10<C> (11h, 6bb)<T>18 Ordonez (3 2/3, 6r 6h 4bb)<T><Z>Blue Jays 2<C> (4h, 1bb)<T>10 Beckett (6, 2r 4h 1bb)<L.36.1>
+<Z>Angels 3<C> (8h, 1bb)<T>32 Halladay (5, 3r 7h 1bb)<T><Z>BLUE JAYS 5<C> (14h, 3bb)<T> 6 Hernandez (4 2/3, 4r 9h 2bb)<L.36.1>
+<L.9.1>
+<Z>Twins 7<C> (13h, 4bb)<T>50 Mcbride (5 2/3, 2r 8h 2bb)<T><Z>YANKEES 10<C> (11h, 2bb)<T> 5 Hernandez (5 2/3, 6r 6h 1bb)<L.36.1>
+<Z>Twins 1<C> (8h, 0bb)<T>23 Pineda (7, 1r 6h 0bb)<T><Z>YANKEES 4<C> (8h, 4bb)<T>74 Mijares (2, 3r 5h 1bb)<L.36.1>
+<Z>Twins 5<C> (10h, 2bb)<T>45 Byrd (6 1/3, 3r 7h 0bb)<T><Z>YANKEES 11<C> (14h, 4bb)<T>51 Swarzak (5 2/3, 4r 7h 1bb)<L.36.1>
+<L.9.1>
+<Z>RANGERS 8<C> (13h, 2bb)<T>10 Cordero (4 2/3, 3r 7h 0bb)<T><Z>Tigers 2<C> (8h, 1bb)<T>58 Shields (6 2/3, 2r 6h 1bb)<L.36.1>
+<Z>RANGERS 6<C> (8h, 3bb)<T>21 Delcarmen (3 1/3, 2r 5h 1bb)<T><Z>Tigers 2<C> (8h, 1bb)<T> 4 Wilson (7 1/3, 2r 8h 1bb)<L.36.1>
+<Z>RANGERS 6<C> (9h, 1bb)<T>12 Lopez (6 2/3, 3r 4h 1bb)<T><Z>Tigers 5<C> (9h, 1bb)<T>12 Palmeiro (7 2/3, 4r 7h 0bb)<L.36.1>
+<L.9.1>
+<L.12.1>
+<L.1.1>
+<D><E><P>
+<B><L.1.1>
+<L>
+GAMEPLAN BASEBALL  MLB7  Season 21  Week 8 Results   6/4/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<U>National League<UC><L.48.1>
+<C><Z>Mets 1<C> (5h, 3bb)<T>23 Garcia (6 2/3, 1r 3h 1bb)<T><Z>NATIONALS 2<C> (10h, 4bb)<T> 4 Hamilton (6 1/3, 1r 5h 1bb)<T>12 inn<L.36.1>
+<Z>Mets 3<C> (10h, 7bb)<T>14 Trachsel (4 1/3, 3r 6h 4bb)<T><Z>NATIONALS 4<C> (5h, 8bb)<T>16 Pena (5, 1r 4h 3bb)<T>10 inn<L.36.1>
+<Z>METS 6<C> (9h, 3bb)<T>21 Thatcher (5 2/3, 2r 4h 1bb)<T><Z>Nationals 1<C> (5h, 3bb)<T> 6 Anderson (6, 1r 2h 1bb)<L.36.1>
+<L.6.1>
+<Z>Marlins 0<C> (6h, 3bb)<T> 4 Jones (9, 0r 6h 3bb)<T><Z>BRAVES 2<C> (8h, 0bb)<T>33 Walker (8, 2r 8h 0bb)<L.36.1>
+<Z>MARLINS 5<C> (11h, 5bb)<T>73 Castillo (5 2/3, 3r 8h 3bb)<T><Z>Braves 1<C> (8h, 3bb)<T> 1 Wells (8 1/3, 1r 8h 3bb)<L.36.1>
+<Z>MARLINS 4<C> (8h, 3bb)<T>92 Wang (5 1/3, 4r 8h 1bb)<T><Z>Braves 3<C> (12h, 1bb)<T>19 Vazquez (6 2/3, 3r 11h 1bb)<L.36.1>
+<L.6.1>
+<Z>Reds 2<C> (9h, 1bb)<T>32 Patel (6, 1r 6h 1bb)<T><Z>CUBS 3<C> (3h, 3bb)<T>21 Ortiz (7 2/3, 3r 3h 3bb)<L.36.1>
+<Z>Reds 4<C> (9h, 2bb)<T>85 Jones (6, 1r 3h 0bb)<T><Z>CUBS 10<C> (14h, 9bb)<T>30 Thompson (3 2/3, 5r 6h 2bb)<L.36.1>
+<Z>Reds 1<C> (6h, 2bb)<T> 2 Rehman (6, 1r 3h 2bb)<T><Z>CUBS 3<C> (11h, 1bb)<T>18 Johnson (5 2/3, 2r 8h 1bb)<L.36.1>
+<L.6.1>
+<Z>CARDINALS 11<C> (16h, 2bb)<T>60 Gorzelanny (7, 4r 9h 1bb)<T><Z>Pirates 4<C> (14h, 4bb)<T> 6 Walker (3, 2r 7h 2bb)<L.36.1>
+<Z>Cardinals 3<C> (9h, 2bb)<T>99 Lincoln (6 2/3, 2r 7h 2bb)<T><Z>PIRATES 4<C> (13h, 3bb)<T>19 Castillo (3 1/3, 4r 8h 1bb)<L.36.1>
+<Z>Cardinals 5<C> (8h, 5bb)<T>49 Sues (5 1/3, 4r 6h 3bb)<T><Z>PIRATES 8<C> (13h, 4bb)<T>54 Garcia (3, 6r 8h 2bb)<L.36.1>
+<L.6.1>
+<Z>Diamondbacks 0<C> (5h, 3bb)<T>77 Escobar (9, 0r 5h 3bb)<T><Z>PADRES 10<C> (12h, 2bb)<T>57 Estes (4 2/3, 5r 6h 1bb)<L.36.1>
+<Z>DIAMONDBACKS 4<C> (13h, 0bb)<T>99 Rodriguez (7 1/3, 3r 9h 0bb)<T><Z>Padres 3<C> (10h, 2bb)<T>38 Lyon (6, 2r 6h 2bb)<T>10 inn<L.36.1>
+<Z>Diamondbacks 3<C> (13h, 2bb)<T>55 Martinez (5 1/3, 3r 10h 1bb)<T><Z>PADRES 4<C> (7h, 3bb)<T> 7 Shappi (4 1/3, 3r 3h 2bb)<L.36.1>
+<L.6.1>
+<Z>Rockies 0<C> (3h, 4bb)<T> 2 Thomas (7, 0r 2h 2bb)<T><Z>DODGERS 8<C> (10h, 7bb)<T>13 Hernandez (5, 1r 2h 4bb)<L.36.1>
+<Z>ROCKIES 12<C> (18h, 4bb)<T>19 Furber (3, 5r 8h 1bb)<T><Z>Dodgers 1<C> (7h, 5bb)<T>15 Wilson (5 1/3, 1r 7h 2bb)<L.36.1>
+<Z>Rockies 6<C> (15h, 6bb)<T> 9 Sanders (5 2/3, 1r 4h 3bb)<T><Z>DODGERS 8<C> (12h, 7bb)<T>14 Brooks (3, 4r 4h 4bb)<T>10 inn<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>Mets 0<C> (2h, 3bb)<T>94 Guerrero (6, 0r 2h 3bb)<T><Z>CUBS 9<C> (15h, 2bb)<T>29 Cotts (5, 3r 7h 2bb)<L.36.1>
+<Z>METS 3<C> (6h, 1bb)<T>30 Patak (6, 3r 5h 1bb)<T><Z>Cubs 2<C> (7h, 3bb)<T> 2 Green (5, 2r 4h 3bb)<L.36.1>
+<Z>Mets 4<C> (7h, 6bb)<T>32 Patel (6, 4r 6h 5bb)<T><Z>CUBS 5<C> (8h, 4bb)<T> 4 Hamilton (5, 4r 4h 1bb)<L.36.1>
+<L.6.1>
+<Z>MARLINS 17<C> (16h, 10bb)<T>23 Kelly (3 2/3, 6r 5h 4bb)<T><Z>Dodgers 0<C> (5h, 2bb)<T>12 Washburn (9, 0r 5h 2bb)<L.36.1>
+<Z>MARLINS 18<C> (22h, 5bb)<T> 4 Benitez (3, 10r 10h 3bb)<T><Z>Dodgers 0<C> (5h, 1bb)<T> 9 Hamilton (9, 0r 5h 1bb)<L.36.1>
+<Z>Marlins 1<C> (4h, 1bb)<T> 2 Thomas (6 1/3, 1r 4h 0bb)<T><Z>DODGERS 2<C> (3h, 1bb)<T>33 Walker (8, 2r 3h 1bb)<L.36.1>
+<L.6.1>
+<Z>Cardinals 0<C> (3h, 2bb)<T>79 Papelbon (9, 0r 3h 2bb)<T><Z>PADRES 4<C> (10h, 3bb)<T> 3 Harris (3 1/3, 3r 3h 1bb)<L.36.1>
+<Z>CARDINALS 7<C> (13h, 4bb)<T>33 Carpenter (3, 3r 5h 1bb)<T><Z>Padres 1<C> (6h, 3bb)<T>18 Garcia (8 2/3, 1r 6h 3bb)<L.36.1>
+<Z>CARDINALS 9<C> (14h, 3bb)<T>77 Escobar (3 2/3, 8r 12h 2bb)<T><Z>Padres 0<C> (6h, 2bb)<T>14 Garza (6 2/3, 0r 4h 2bb)<L.36.1>
+<L.6.1>
+<Z>NATIONALS 6<C> (11h, 2bb)<T>17 Jackson (3 2/3, 6r 6h 1bb)<T><Z>Reds 4<C> (6h, 3bb)<T>24 Castillo (7 2/3, 1r 4h 1bb)<L.36.1>
+<Z>Nationals 0<C> (5h, 2bb)<T>24 Harris (6 2/3, 0r 4h 1bb)<T><Z>REDS 11<C> (11h, 7bb)<T>32 Roberts (3, 7r 6h 3bb)<L.36.1>
+<Z>Nationals 0<C> (2h, 2bb)<T>21 Ortiz (9, 0r 2h 2bb)<T><Z>REDS 1<C> (7h, 3bb)<T>23 Garcia (5 1/3, 1r 5h 2bb)<L.36.1>
+<L.6.1>
+<Z>BRAVES 9<C> (12h, 5bb)<T>65 Morillo (4 2/3, 4r 8h 1bb)<T><Z>Rockies 4<C> (7h, 11bb)<T>86 Cordier (3 2/3, 2r 4h 4bb)<T>12 inn<L.36.1>
+<Z>Braves 1<C> (7h, 3bb)<T> 5 Harris (6 1/3, 1r 6h 3bb)<T><Z>ROCKIES 5<C> (8h, 2bb)<T>12 Perez (8, 5r 8h 2bb)<L.36.1>
+<Z>BRAVES 11<C> (17h, 1bb)<T>13 Hernandez (3, 2r 5h 1bb)<T><Z>Rockies 9<C> (13h, 7bb)<T>75 Marino (4 2/3, 3r 6h 3bb)<L.36.1>
+<L.6.1>
+<Z>Pirates 0<C> (5h, 2bb)<T> 4 Benitez (6 2/3, 0r 3h 1bb)<T><Z>DIAMONDBACKS 1<C> (2h, 1bb)<T>82 Miller (8, 1r 2h 1bb)<L.36.1>
+<Z>PIRATES 2<C> (5h, 7bb)<T>18 Alou (5 1/3, 0r 2h 3bb)<T><Z>Diamondbacks 0<C> (5h, 3bb)<T>72 Lodge (5 1/3, 0r 3h 3bb)<L.36.1>
+<Z>Pirates 3<C> (9h, 6bb)<T>57 Estes (6 1/3, 2r 6h 3bb)<T><Z>DIAMONDBACKS 7<C> (9h, 6bb)<T>60 Gorzelanny (6 1/3, 3r 6h 3bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<Z>Diamondbacks 5<C> (10h, 5bb)<T>14 Trachsel (3 2/3, 3r 7h 3bb)<T><Z>NATIONALS 6<C> (11h, 2bb)<T>38 Lyon (6 2/3, 0r 4h 2bb)<L.36.1>
+<Z>DIAMONDBACKS 11<C> (15h, 1bb)<T>21 Thatcher (3 1/3, 5r 7h 0bb)<T><Z>Nationals 1<C> (6h, 1bb)<T> 7 Shappi (5, 1r 5h 1bb)<L.36.1>
+<Z>DIAMONDBACKS 9<C> (11h, 7bb)<T>24 Castillo (4 1/3, 7r 7h 4bb)<T><Z>Nationals 6<C> (8h, 7bb)<T> 4 Benitez (5 1/3, 1r 3h 4bb)<L.36.1>
+<L.6.1>
+<Z>Reds 5<C> (11h, 1bb)<T> 4 Jones (7 2/3, 5r 11h 1bb)<T><Z>BRAVES 6<C> (9h, 6bb)<T>30 Thompson (4 2/3, 1r 2h 4bb)<L.36.1>
+<Z>Reds 3<C> (9h, 2bb)<T>73 Castillo (8 1/3, 3r 9h 2bb)<T><Z>BRAVES 15<C> (16h, 7bb)<T>18 Johnson (3, 13r 11h 4bb)<L.36.1>
+<Z>REDS 5<C> (11h, 4bb)<T>92 Wang (6, 4r 6h 4bb)<T><Z>Braves 4<C> (8h, 3bb)<T>17 Jackson (6, 2r 5h 2bb)<L.36.1>
+<L.6.1>
+<Z>Rockies 1<C> (8h, 3bb)<T>99 Lincoln (5 2/3, 1r 7h 1bb)<T><Z>PIRATES 5<C> (9h, 2bb)<T>15 Wilson (5 2/3, 3r 6h 1bb)<L.36.1>
+<Z>Rockies 0<C> (6h, 5bb)<T>49 Sues (5 1/3, 0r 5h 5bb)<T><Z>PIRATES 5<C> (11h, 3bb)<T>14 Brooks (5, 0r 4h 1bb)<L.36.1>
+<Z>Rockies 4<C> (9h, 3bb)<T>82 Miller (5 1/3, 4r 7h 3bb)<T><Z>PIRATES 13<C> (19h, 6bb)<T>65 Morillo (3, 9r 12h 2bb)<L.36.1>
+<L.6.1>
+<Z>PADRES 8<C> (15h, 3bb)<T>16 Pena (5, 6r 10h 0bb)<T><Z>Mets 1<C> (3h, 4bb)<T>99 Rodriguez (9, 1r 3h 4bb)<L.36.1>
+<Z>Padres 5<C> (11h, 6bb)<T> 6 Anderson (5, 3r 5h 3bb)<T><Z>METS 8<C> (12h, 3bb)<T>55 Martinez (5 2/3, 5r 10h 1bb)<L.36.1>
+<Z>PADRES 5<C> (9h, 3bb)<T>29 Cotts (5 2/3, 1r 3h 1bb)<T><Z>Mets 2<C> (12h, 4bb)<T>79 Papelbon (5 1/3, 2r 8h 1bb)<T>10 inn<L.36.1>
+<L.6.1>
+<Z>Cubs 3<C> (10h, 3bb)<T> 1 Wells (8 2/3, 3r 10h 2bb)<T><Z>MARLINS 10<C> (12h, 3bb)<T>85 Jones (6, 9r 11h 3bb)<L.36.1>
+<Z>Cubs 4<C> (9h, 1bb)<T>19 Vazquez (8 2/3, 4r 8h 1bb)<T><Z>MARLINS 7<C> (10h, 4bb)<T> 2 Rehman (6, 3r 7h 2bb)<L.36.1>
+<Z>Cubs 5<C> (11h, 3bb)<T>12 Washburn (8 2/3, 5r 10h 3bb)<T><Z>MARLINS 7<C> (9h, 3bb)<T>94 Guerrero (6, 5r 7h 1bb)<L.36.1>
+<L.6.1>
+<Z>Dodgers 2<C> (7h, 4bb)<T> 6 Walker (7, 1r 5h 1bb)<T><Z>CARDINALS 9<C> (12h, 3bb)<T>19 Furber (3, 6r 7h 2bb)<L.36.1>
+<Z>Dodgers 0<C> (3h, 1bb)<T>19 Castillo (9, 0r 3h 1bb)<T><Z>CARDINALS 7<C> (12h, 2bb)<T> 9 Sanders (5 1/3, 4r 5h 2bb)<L.36.1>
+<Z>Dodgers 1<C> (3h, 1bb)<T>54 Garcia (8 2/3, 1r 2h 1bb)<T><Z>CARDINALS 10<C> (14h, 2bb)<T>23 Kelly (3, 5r 7h 0bb)<L.36.1>
+<L.6.1>
+<L.12.1>
+<L.1.1>
+<D><E><DU>
+<BK.Standings><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7  Season 21  Week 8 Standings   6/4/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.44.75.95.102.107><L.48.1>
+<C><Z>American League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>New York Yankees (Mark Blakemore)<T> 53  19  .736   -   7-2   W 4<T> 533   271   29-7<T>24-12<T> 67<T>28,582  15 190  17  107<L.33.1>
+Boston Red Sox (David Trice)<T> 39  33  .541  14   8-1   W 1<T> 349   324   24-15<T>15-18<T>103<T>26,191   7 188  11  105<L.33.1>
+Tampa Bay Rays (Stuart Arthur)<T> 28  44  .388  25   1-8   L 4<T> 307   401   13-26<T>15-18<T>  6<T>24,836   4  84   7  113<L.33.1>
+Toronto Blue Jays (Eric Van Genderen)<T> 24  48  .333  29   1-8   W 1<T> 274   425   16-20<T> 8-28<T> 84<T>24,357   4 106  10  102<L.33.1>
+<L.9.1>
+<Z>American League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Minnesota Twins (Paul Beaumont)<T> 49  23  .680   -   6-3   L 3<T> 472   309   29-10<T>20-13<T>107<T>32,999  15 156   6  115<L.33.1>
+Chicago White Sox (Alan Milnes)<T> 44  28  .611   5   8-1   L 1<T> 455   346   23-16<T>21-12<T> 16<T>27,557   9 164  12   96<L.33.1>
+Cleveland Indians (Paul Macguire)<T> 25  47  .347  24   3-6   W 3<T> 282   436   15-21<T>10-26<T>474<T>24,483  11 196  12   97<L.33.1>
+Detroit Tigers (Brian Tatam)<T> 25  47  .347  24   1-8   L 4<T> 269   451   15-21<T>10-26<T>110<T>24,477   4 165  11   93<L.33.1>
+<L.9.1>
+<Z>American League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Texas Rangers (Carl Wright)<T> 50  22  .694   -   7-2   W 3<T> 428   267   26-13<T>24-9<T> 70<T>27,628  14 162  10  103<L.33.1>
+Los Angeles Angels (Alan Gorrie)<T> 45  27  .625   5   7-2   L 1<T> 391   264   28-11<T>17-16<T> 95<T>27,633  10 126   7  108<L.33.1>
+Oakland Athletics (Graham Beadle)<T> 29  43  .402  21   1-8   L 1<T> 283   340   20-16<T> 9-27<T> 94<T>24,962   6 199  11  101<L.33.1>
+Seattle Mariners (Chris Dexter)<T> 22  50  .305  28   4-5   W 1<T> 236   455   14-22<T> 8-28<T>256<T>24,124  10 194  12   98<L.33.1>
+<L.9.1>
+<Z>National League East<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>Miami Marlins (Mark J Hall)<T> 55  17  .763   -   7-2   W 3<T> 428   232   28-5<T>27-12<T> 32<T>28,300  11 171  11  106<L.33.1>
+Atlanta Braves (Marc Rivoira)<T> 50  22  .694   5   5-4   L 1<T> 475   267   24-12<T>26-10<T> 91<T>33,155  15 193  10  111<L.33.1>
+Washington Nationals (David Stothard)<T> 28  44  .388  27   4-5   L 2<T> 261   392   16-20<T>12-24<T>477<T>24,838   8 194  12   89<L.33.1>
+New York Mets (Barry Andrews)<T> 27  45  .375  28   3-6   L 1<T> 256   392   17-16<T>10-29<T>553<T>24,717  12 196  12   87<L.33.1>
+<L.9.1>
+<Z>National League Central<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>St Louis Cardinals (Rob Crowther)<T> 48  24  .666   -   6-3   W 5<T> 404   272   24-9<T>24-15<T> 38<T>33,657   8  98   8  108<L.33.1>
+Pittsburgh Pirates (Patrick Lee)<T> 44  28  .611   4   6-3   W 3<T> 380   236   26-10<T>18-18<T>  7<T>32,210   6  94   9  112<L.33.1>
+Chicago Cubs (Andrew Gessey)<T> 31  41  .430  17   5-4   L 3<T> 318   383   16-20<T>15-21<T> 19<T>25,564   7  56   8   93<L.33.1>
+Cincinnati Reds (Dave Tyrrell)<T> 29  43  .402  19   3-6   W 1<T> 338   427   15-18<T>14-25<T>  7<T>24,961   4  88  10  103<L.33.1>
+<L.9.1>
+<Z>National League West<T>Won Lst   Pct  GB  Lst 9  Str<T>RFor  RAgn    Home<T> Road<T>LPs<T> Fans  Std Mrc Trn  Wag<L.36.1>
+<C>San Diego Padres (Troy Dilworth)<T> 45  27  .625   -   5-4   W 1<T> 449   303   22-14<T>23-13<T> 39<T>26,974  15 184  11  100<L.33.1>
+Arizona Diamondbacks (Mike Sim)<T> 33  39  .458  12   5-4   W 2<T> 308   352   19-14<T>14-25<T>195<T>25,453   7 193  11   95<L.33.1>
+Los Angeles Dodgers (Bo Mayfield)<T> 21  51  .291  24   3-6   L 3<T> 196   446   13-23<T> 8-28<T>-65<T>23,997   3  44   5  144<L.33.1>
+Colorado Rockies (Rob Byrne)<T> 20  52  .277  25   2-7   L 4<T> 296   397   12-21<T> 8-31<T>633<T>23,891  13 197  12   90<L.33.1>
+<L.9.1>
+<Z>GM: Danny McConnell    Version: 4.4 (2009 Rules)    Deadline: Friday 19th April<L.39.1>
+Postal Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND.  Tel: 020 8325 2448.  Fax: 020 8249 1819.<L.39.1>
+Email Address: danny@pbmsports.com      Info Website: www.pbmsports.com      Active Website: www.softsim.co.uk<L.39.1>
+Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty. Cheques made payable to: Ab Initio Games<L.39.1>
+<U>Messages<UC><C><L.36.1>
+<L.6.1>
+<Z>Deadlines in 2013 <C> We've now moved deadlines to Fridays. My FA work is now at least full time, and it doesn't do me any good<L.31.1>
+to try and do a 12 hour day, and then run games. Much more sensible to simply set Friday deadlines (still 9am), as I may have days<L.31.1>
+when I can work from home on a Friday, safe in the knowledge I'll either run some turns Friday evening, or otherwise over<L.31.1>
+Saturday/Sunday. And therefore less thumb twiddling for you guys, as you'll have more of an idea when they'll run. Postal players<L.31.1>
+can expect results on a Tuesday (as they'll be posted over the weekend) and others should get them some time Saturday or Sunday,<L.31.1>
+or if you're lucky, Friday evening. Please don't email me asking if turns have been run, I'll post a note on the website<L.31.1>
+if there's a problem, but not until the end of Sunday. As such, going forwards, please assume deadlines are 9am on the Friday.<L.31.1>
+Comments are welcome, and I'll probably review this come Easter.<L.31.1>
+<L.12.1>
+<Z>Late Email Results <C> If you think results are late, please make sure you wait until the following morning before chasing up<L.31.1>
+results. First step is to check out the Latest News at www.pbmsports.com - if I am running late I'll post a notice there (be aware<L.31.1>
+you may need to refresh the page, in case you get an old copy from Cache memory). Please don't chase me up because you know your<L.31.1>
+mate got his half an hour ago, because whilst most emails are "instant", often they do get delayed for a few hours and it does<L.31.1>
+take a while to send them all out (I spread them out to avoid triggering firewalls).<L.31.1>
+<L.12.1>
+<Z>PDF Reports <C> Emailed game reports are available for all games here. The standard format is a PDF file - Adobe Reader is free<L.31.1>
+to download (see www.pbmsports.com for a link) and you can open your reports with one click of the mouse and you can either view<L.31.1>
+them on screen, or print them as you wish. You don't need to worry about formatting or printer drivers. The text format for<L.31.1>
+reports is available but I only expect people will want to do so if they use the text file for other purposes (such as exporting<L.31.1>
+the listings into software produced yourself). If you've not tried email reports before, try them out - it really is very easy.   <L.31.1>
+<L.1.1>
+<P>
+<L>
+<L.1.1>
+<BK.Actions><B>GAMEPLAN BASEBALL  MLB7   Week 8 Actions Report   6/4/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<ST.33.66.99><L.48.1>
+Next Week: Regular Season Week 9<L.36.1>
+<C>Rays at Blue Jays (4-2)<T>Red Sox at Yankees (0-6)<T>White Sox at Indians (3-3)<T>Twins at Tigers (4-2)<T><L.33.1>
+Rangers at Athletics (5-1)<T>Angels at Mariners (5-1)<T>Braves at Mets (5-1)<T>Nationals at Marlins (0-6)<T><L.33.1>
+Pirates at Reds (2-4)<T>Cubs at Cardinals (1-5)<T>Dodgers at Diamondbacks (0-6)<T>Padres at Rockies (5-1)<T><L.33.1>
+<L.6.1>
+Tigers at Blue Jays (1-2)<T>Athletics at Yankees (0-3)<T>Mariners at Indians (0-3)<T>White Sox at Red Sox (3-0)<T><L.33.1>
+Angels at Rays (2-1)<T>Rangers at Twins (2-1)<T>Cardinals at Mets (3-0)<T>Diamondbacks at Marlins (0-3)<T><L.33.1>
+Rockies at Reds (1-2)<T>Pirates at Nationals (1-2)<T>Padres at Braves (1-2)<T>Dodgers at Cubs (3-0)<T><L.33.1>
+<L.6.1>
+Blue Jays at Mariners (1-2)<T>Yankees at Tigers (1-2)<T>Indians at Athletics (1-2)<T>Red Sox at Rangers (0-3)<T><L.33.1>
+Rays at White Sox (2-1)<T>Twins at Angels (1-2)<T>Mets at Rockies (2-1)<T>Marlins at Cardinals (2-1)<T><L.33.1>
+Reds at Diamondbacks (1-2)<T>Nationals at Dodgers (1-2)<T>Braves at Pirates (2-1)<T>Cubs at Padres (1-2)<T><L.33.1>
+<L.6.1>
+<ST.33.66.99><L.3.1>
+<Z>Injuries and Holdouts<C><L.36.1>
+27 Ivan Sanchez (BR) 13 games<T>10 Mario Guerrero (TB) 15 games<T> 6 Jose Reyes (TO) 6 games<T>55 Russell Martin (NY) 13 games<L.33.1>
+22 Brent Morel (CW) 6 games<T>23 Matthew Garner (CL) 22 games<T>76 Deolis Guerra (MT) 8 games<T> 7 Orlando Diaz (DT) 14 games<L.33.1>
+27 Jeff Davanon (LG) 9 games<T>20 Ricardo Sierra (OA) 7 games<T>30 Todd Lee (SM) 11 games<T>34 Andres Blanco (TR) 6 games<L.33.1>
+48 Paul Abbott (AB) 9 games<T> 3 Carl Thompson (WN) 14 games<T> 6 David Bell (MM) 6 games<T>10 B.Washington (NM) 12 games<L.33.1>
+ 1 Zac Brown (CU) 6 games<T>18 Steve Johnson (CI) 8 games<T> 6 Scott Walker (SL) 6 games<T>88 N.Stillwagon (PI) 13 games<L.33.1>
+78 Devern Hansack (SD) 6 games<T> 2 Chris Thomas (LA) holdout<T>28 Angel Cruz (LA) 6 games<T>22 Ron Cey (LA) holdout<L.33.1>
+20 Steve Mitchell (AD) 6 games<T>64 Jeff Salazar (CO) 6 games<T><L.36.1>
+<ST.27.53.79.105><L.6.1>
+<ST.27.66.93><L.6.1>
+<Z>Trading List<C>    no players listed for trade this turn<L.36.1>
+<L.12.1>
+<Z>Free Agent Signings<C><L.36.1>
+Boston Red Sox sign FA 108 (SS), 19 Todd Anderson (ex-SL) for 30 LP to replace 6 Joe Nelson, net cost 14 LP<L.33.1>
+New York Yankees sign FA 101, 29 Francisco Liriano (ex-MT) for 68 LP to replace 45 Paul Byrd, net cost 43 LP<L.33.1>
+Texas Rangers sign FA 123, 11 Paul Maholm (ex-MM) for 52 LP to replace 10 Tim McNair, net cost 20 LP<L.33.1>
+Miami Marlins sign FA 148 (LF), 40 Estarlin De Los Santo (ex-MT) for 31 LP to replace 14 Jose Guerrero, net cost 0 LP<L.33.1>
+Pittsburgh Pirates sign FA 129, 58 Zach Duke (ex-PI) for 72 LP to replace 12 Freddy Sanchez, net cost 0 LP<L.33.1>
+<L.6.1>
+<Z>Free Agent Pool<C>  (+ indicates player will be deleted after next turn's bids have been processed)<ST.30.66.96><L.36.1>
+<Z>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<T>Num  Name<T>Type  Ability Pos Ex Pt Tr  Value<C><L.36.1>
+101  Paul Byrd (ex-NY)<T>Pit R  9 ACC      17  1  9  50 LP<T>102  <T>Pit R  4 STA       5  6  5  15 LP<L.33.1>
+103  Brian Anderson (ex-CW)<T>Bat L 12 HIT  CF  12  5 13 173 LP<T>104  <T>Pit L  5 ACC       2 15  8  19 LP<L.33.1>
+105  Frank Brooks (ex-PI)<T>Pit R  9 ACC      11  6 10  51 LP<T>106  Luis Mendoza (ex-AB)<T>Pit R  8 CON       5  8  9  33 LP<L.33.1>
+107  A.Hernandez (ex-SD)<T>Bat R  7 POW  CF   9  4  7  29 LP<T>108  Joe Nelson (ex-BR)<T>Bat S  8 POW  RF   2  3  8  32 LP<L.33.1>
+109  <T>Pit R  7 ACC       3  9  8  35 LP<T>110  Martin Miller (ex-AB)<T>Pit R  8 ACC      11  1  8  36 LP<L.33.1>
+111  Ruben Guerrero (ex-SL)<T>Cat L  5 POW   C   R 11  7  14 LP<T>112  Adrian Diaz (ex-LG)<T>Pit L  6 QUI       3 14  8  19 LP<L.33.1>
+113  <T>Bat R  6 SPD  RF   1 15  9  18 LP<T>114  <T>Bat R  5 FLD  1B   1 16  8  13 LP<L.33.1>
+115  Tony Cordero (ex-MM)<T>Bat R  7 FLD  SS   2  9  8  22 LP<T>116  <T>Pit L  5 STA       4  7  6  19 LP<L.33.1>
+117  Tadahito Iguchi (ex-CW)<T>Bat R  8 POW  2B  11  0  8  33 LP<T>118  Angel Guerrero (ex-WN)<T>Bat S  8 HIT  2B   6  5  9  36 LP<L.33.1>
+119  <T>Pit R  8 QUI       5  4  8  25 LP<T>120  <T>Pit R  6 ACC       R 15  9  14 LP<L.33.1>
+121+ <T>Bat L  6 SPD  CF   2  9  7  15 LP<T>122  Joba Chamberlain (ex-NY)<T>Pit R  9 CON       5  6 10  45 LP<L.33.1>
+123  Tim McNair (ex-TR)<T>Pit L  9 ACC      13  0  9  65 LP<T>124  Scott Thomas (ex-LG)<T>Pit R  6 QUI       1 12  8   9 LP<L.33.1>
+125  <T>Bat L  6 HIT  SS   4  9  7  23 LP<T>126  <T>Bat R  7 SPD  2B   2 10  9  25 LP<L.33.1>
+127+ John Stacey (ex-SD)<T>Pit R  7 STA      10  1  7  30 LP<T>128  <T>Bat L  6 POW  3B   4 12  8  27 LP<L.33.1>
+129  Freddy Sanchez (ex-PI)<T>Bat L  9 HIT  2B  11  1  9  73 LP<T>130  <T>Bat R  8 HIT  2B   7  3  8  29 LP<L.33.1>
+131  Robert Davis (ex-CW)<T>Pit R 10 ACC      11  2 10  73 LP<T>132  Mark Grace (ex-SM)<T>Bat R  8 POW  1B   7  4  8  25 LP<L.33.1>
+133  Eric Hamilton (ex-DT)<T>Bat R  7 HIT  RF   8  3  7  23 LP<T>134  David Kelly (ex-MM)<T>Pit L  8 CON       8  7  9  38 LP<L.33.1>
+135+ Eric Hurley (ex-TR)<T>Bat S  8 SPD  3B   2  1  8  32 LP<T>136+ Micah Owings (ex-AD)<T>Pit R  8 QUI      10  4  8  37 LP<L.33.1>
+137  <T>Cat S  6 FLD   C   3 12  8  33 LP<T>138  <T>Pit R  5 CON       1 13  7  17 LP<L.33.1>
+139  Mike Thompson (ex-SD)<T>Pit L  7 STA       4 11  9  29 LP<T>140  <T>Pit R  5 ACC       2 13  7  16 LP<L.33.1>
+141  <T>Bat R  5 SPD  3B   1 13  7  12 LP<T>142  Javier Crespo (ex-SD)<T>Pit L  8 CON       4  8  9  29 LP<L.33.1>
+143+ <T>Bat R  5 POW  RF   5  7  6  15 LP<T>144  John Tracy (ex-SL)<T>Pit R  7 ACC      12  2  7  22 LP<L.33.1>
+145  Brooks Pounders (ex-TR)<T>Pit R  7 CON       6 10  9  25 LP<T>146  <T>Bat R  8 POW  2B   8  7  9  31 LP<L.33.1>
+147  Greg Brooks (ex-TB)<T>Bat S  6 HIT  RF   2 11  8  15 LP<T>148  Jose Guerrero (ex-MM)<T>Bat R  9 SPD  CF  10  5 10  63 LP<L.33.1>
+<L.1.1>
+<D><E><DU>
+<BK.League Stats><P.70><L>
+<L.1.1>
+<B>GAMEPLAN BASEBALL  MLB7  Regular Season 21 Team Stats   Week 8   6/4/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<B>American League<ST.25.90.98.102.110.116><L.48.1>
+<Z>Team Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+New York Yankees<T> 72   72   14   72  642 2/3   618  271  243   55  151  525   58<T> 53-19<T> 14<T>  7.46<T> .242<T>  3.40<L.33.1>
+Los Angeles Angels<T> 72   72   11   72  636 1/3   593  264  241   47  194  473   55<T> 45-27<T> 15<T>  5.53<T> .237<T>  3.41<L.33.1>
+Texas Rangers<T> 72   72   11   72  644 1/3   622  267  247   54  204  492   64<T> 50-22<T> 16<T>  5.98<T> .243<T>  3.45<L.33.1>
+Minnesota Twins<T> 72   72    4   72  637 1/3   658  309  271   54  202  492   75<T> 49-23<T> 19<T>  6.67<T> .256<T>  3.83<L.33.1>
+<L.6.1>
+Boston Red Sox<T> 72   72    4   72  633 1/3   634  324  284   66  232  472   65<T> 39-33<T> 17<T>  4.96<T> .250<T>  4.04<L.33.1>
+Oakland Athletics<T> 72   72    1   72  626 1/3   671  340  308   99  213  459   64<T> 29-43<T> 12<T>  4.07<T> .263<T>  4.43<L.33.1>
+Chicago White Sox<T> 72   72    1   72  641       687  346  323   98  231  446   71<T> 44-28<T> 15<T>  6.39<T> .263<T>  4.54<L.33.1>
+Tampa Bay Rays<T> 72   72    1   72  631 2/3   734  401  350   71  256  458   95<T> 28-44<T> 20<T>  4.37<T> .279<T>  4.99<L.33.1>
+<L.6.1>
+Cleveland Indians<T> 72   72    0   72  633 1/3   766  436  374  112  263  432   73<T> 25-47<T> 16<T>  4.01<T> .287<T>  5.31<L.33.1>
+Toronto Blue Jays<T> 72   72    0   72  625 1/3   709  425  375  114  262  421   98<T> 24-48<T> 16<T>  3.94<T> .274<T>  5.40<L.33.1>
+Seattle Mariners<T> 72   72    0   72  622 2/3   747  455  389  105  271  458   73<T> 22-50<T> 15<T>  3.41<T> .285<T>  5.62<L.33.1>
+Detroit Tigers<T> 72   72    1   72  625 1/3   760  451  405  100  248  431   71<T> 25-47<T> 13<T>  3.87<T> .288<T>  5.83<L.33.1>
+<L.6.1>
+<L.6.1>
+American League Average<T> 72   72    4   72  633       683  357  317   81  227  463   71<T> 36-35<T> 15<T>  5.06<T> .264<T>  4.51<ST.25.107.113.119.125><L.48.1>
+<Z>Team Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+New York Yankees<T> 72 2700  533  861 1518  228  24 127  512  239  34  90  409 107  33  58 1403  648<T> .984<T> .318<T> .385<T> .562<L.33.1>
+Minnesota Twins<T> 72 2618  472  773 1388  211  25 118  447  245  20 100  471 127  39  67 1420  695<T> .981<T> .295<T> .362<T> .530<L.33.1>
+Texas Rangers<T> 72 2573  428  746 1266  196  21  94  410  262  40  89  460 132  31  65 1441  645<T> .985<T> .289<T> .369<T> .492<L.33.1>
+Los Angeles Angels<T> 72 2577  391  735 1245  229  22  79  376  219  36  74  434 139  29  59 1436  646<T> .986<T> .285<T> .354<T> .483<L.33.1>
+<L.6.1>
+Chicago White Sox<T> 72 2587  455  736 1401  205  23 138  445  246  35  95  477 143  34  68 1477  707<T> .984<T> .284<T> .358<T> .541<L.33.1>
+Boston Red Sox<T> 72 2520  349  693 1134  188  17  73  332  227  27  78  444 107  55  44 1428  682<T> .974<T> .275<T> .344<T> .450<L.33.1>
+Tampa Bay Rays<T> 72 2505  307  660 1078  189  17  65  297  219  28  72  497 114  59  54 1437  632<T> .972<T> .263<T> .332<T> .430<L.33.1>
+Detroit Tigers<T> 72 2498  269  630  966  175  13  45  249  211  22  67  461 123  61  45 1445  675<T> .972<T> .252<T> .318<T> .386<L.33.1>
+<L.6.1>
+Oakland Athletics<T> 72 2500  283  627 1009  169  15  61  276  229  18  61  444 101  42  67 1420  679<T> .980<T> .250<T> .320<T> .403<L.33.1>
+Cleveland Indians<T> 72 2495  282  622  978  148  11  62  268  215  33  57  475 116  65  54 1468  685<T> .970<T> .249<T> .321<T> .391<L.33.1>
+Toronto Blue Jays<T> 72 2492  274  592  972  141  16  69  260  217  24  46  493 116  53  59 1455  701<T> .976<T> .237<T> .307<T> .390<L.33.1>
+Seattle Mariners<T> 72 2412  236  554  850  131  15  45  228  230  30  55  456 116  62  61 1410  676<T> .971<T> .229<T> .308<T> .352<L.33.1>
+<L.6.1>
+<L.6.1>
+American League Average<T> 72 2539  356  685 1148  184  18  81  341  229  28  73  460 120  46  58 1436  672<T> .978<T> .269<T> .340<T> .452<L.48.1>
+<B>National League<ST.25.90.98.102.110.116><L.48.1>
+<Z>Team Pitching<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T> Sv<T>  RunS<T> HAvg<T>  ERA<C><L.42.1>
+Miami Marlins<T> 72   72   10   72  644 1/3   630  232  216   48  163  474   47<T> 55-17<T> 22<T>  5.98<T> .245<T>  3.02<L.33.1>
+Pittsburgh Pirates<T> 72   72   13   72  636 1/3   589  236  223   33  224  493   56<T> 44-28<T> 19<T>  5.37<T> .235<T>  3.15<L.33.1>
+Atlanta Braves<T> 72   72   21   72  642       615  267  243   51  213  469   69<T> 50-22<T> 13<T>  6.66<T> .242<T>  3.41<L.33.1>
+St Louis Cardinals<T> 72   72   13   72  641 1/3   648  272  263   55  198  450   62<T> 48-24<T> 14<T>  5.67<T> .251<T>  3.69<L.33.1>
+<L.6.1>
+San Diego Padres<T> 72   72   17   72  645 2/3   664  303  271   61  215  448   59<T> 45-27<T> 10<T>  6.26<T> .255<T>  3.78<L.33.1>
+Arizona Diamondbacks<T> 72   72    4   72  632 1/3   685  352  318   84  235  455   69<T> 33-39<T> 17<T>  4.38<T> .265<T>  4.53<L.33.1>
+Washington Nationals<T> 72   72    0   72  631 1/3   711  392  339   62  256  421   63<T> 28-44<T> 14<T>  3.72<T> .272<T>  4.83<L.33.1>
+Colorado Rockies<T> 72   72    1   72  629       740  397  338   84  267  397   81<T> 20-52<T> 10<T>  4.24<T> .281<T>  4.84<L.33.1>
+<L.6.1>
+New York Mets<T> 72   72    0   72  636       735  392  343   83  259  448   84<T> 27-45<T> 21<T>  3.62<T> .278<T>  4.85<L.33.1>
+Chicago Cubs<T> 72   72    0   72  633       676  383  345   80  271  411   78<T> 31-41<T> 19<T>  4.52<T> .262<T>  4.91<L.33.1>
+Cincinnati Reds<T> 72   72    2   72  633       737  427  366   88  267  424   73<T> 29-43<T> 16<T>  4.81<T> .279<T>  5.20<L.33.1>
+Los Angeles Dodgers<T> 72   72    0   72  622 1/3   761  446  388   92  303  385   97<T> 21-51<T> 12<T>  2.83<T> .289<T>  5.61<L.33.1>
+<L.6.1>
+<L.6.1>
+National League Average<T> 72   72    6   72  635 1/3   682  341  304   68  239  439   69<T> 35-36<T> 15<T>  4.84<T> .263<T>  4.31<ST.25.107.113.119.125><L.48.1>
+<Z>Team Batting<T>  G   AB    R    H   TB   2B  3B  HR  RBI   BB  SA  SB   SO  FS  Er  DP   PO   As<T> FldP<T> BAvg<T> OnBs<T> SlgP<C><L.42.1>
+Atlanta Braves<T> 72 2624  475  787 1443  233  30 121  461  236  36 122  434 137  42  74 1457  737<T> .981<T> .299<T> .370<T> .549<L.33.1>
+San Diego Padres<T> 72 2640  449  761 1353  205  21 115  432  243  31  68  379 126  42  73 1489  733<T> .981<T> .288<T> .359<T> .512<L.33.1>
+Miami Marlins<T> 72 2562  428  737 1282  216  19  97  417  238  43  90  450 127  27  75 1459  692<T> .987<T> .287<T> .363<T> .500<L.33.1>
+Pittsburgh Pirates<T> 72 2581  380  733 1193  229  15  67  364  250  30  97  414 132  26  75 1416  693<T> .987<T> .283<T> .357<T> .462<L.33.1>
+<L.6.1>
+St Louis Cardinals<T> 72 2571  404  727 1252  237  30  76  399  233  32  85  419 148  20  71 1474  712<T> .990<T> .282<T> .353<T> .486<L.33.1>
+Chicago Cubs<T> 72 2533  318  678 1066  195  17  53  306  237  25  75  430 143  49  57 1488  716<T> .978<T> .267<T> .339<T> .420<L.33.1>
+Colorado Rockies<T> 72 2554  296  682 1056  187  17  51  277  244  37  62  477  98  60  52 1490  721<T> .973<T> .267<T> .344<T> .413<L.33.1>
+Cincinnati Reds<T> 72 2551  338  672 1105  187  12  74  322  257  21  65  464 116  66  58 1475  666<T> .970<T> .263<T> .338<T> .433<L.33.1>
+<L.6.1>
+Arizona Diamondbacks<T> 72 2530  308  645 1021  175  15  57  293  235  26  36  467  90  46  73 1442  685<T> .978<T> .254<T> .327<T> .403<L.33.1>
+Washington Nationals<T> 72 2465  261  597  911  168  10  42  251  229  33  42  488 116  56  59 1473  726<T> .975<T> .242<T> .318<T> .369<L.33.1>
+New York Mets<T> 72 2481  256  596  927  170  19  41  246  216  25  26  459  99  54  60 1460  724<T> .975<T> .240<T> .310<T> .373<L.33.1>
+Los Angeles Dodgers<T> 72 2413  196  546  803  151  14  26  174  221  23  48  432 101  54  55 1482  719<T> .976<T> .226<T> .299<T> .332<L.33.1>
+<L.6.1>
+<L.6.1>
+National League Average<T> 72 2542  342  680 1116  196  18  68  328  236  30  68  442 119  45  65 1467  710<T> .979<T> .267<T> .340<T> .439<L.1.1>
+<D><E><P>
+<BK.Pitching Leaders><P.70><ST.28.92.100.105.111.118.124><L.1.1>
+<L>
+<B>GAMEPLAN BASEBALL  MLB7  Season 21 Pitching Leaders  Week 8  6/4/13<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+American League Leaders<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T>Sv<T>WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.39.1>
+ 3 Jered Weaver (LG)<T> 15   15   <Z>10<C>   10  <Z>128<C>        87   22   18    0   18  <Z>112<C>    6<T> <Z>12<C>-3<T> 0<T><Z>12<C>-3<T>  5.70<T> .184<T>  1.27<L.33.1>
+10 Josh Beckett (LG)<T> 18    6    0    7   66 2/3    48   14   12    1   14   60    6<T>  5-1<T> 1<T> 5-1<T>  4.86<T> .193<T>  1.62<L.33.1>
+17 Ryan Bradley (TR)<T> 32    0    0   21   55 1/3    40   11   11    0   16   37   10<T>  5-0<T> 7<T> 0-0<T>  5.04<T> .194<T>  1.79<L.33.1>
+25 Joe Kelly (TB)<T> 16   16    0    0   81        78   27   21    2   32   62   <Z>17<C><T>  5-4<T> 0<T> 9-7<T>  5.33<T> .242<T>  2.33<L.33.1>
+55 Brandon McCarthy (CW)<T>  8    8    0    0   48 1/3    37   14   13    7   12   32    1<T>  5-0<T> 0<T> 8-0<T>  6.14<T> .203<T>  2.42<L.33.1>
+63 Justin Masterson (BR)<T> 15   15    3    3   96 1/3    76   28   26    5   23   79    7<T> 10-3<T> 0<T><Z>12<C>-3<T>  6.17<T> .208<T>  2.43<L.33.1>
+<L.6.1>
+30 Chris Lewis (MT)<T> <Z>38<C>    0    0   17   88        72   25   24    3   21   75   14<T>  9-1<T> 5<T> 0-0<T>  5.93<T> .214<T>  2.45<L.33.1>
+32 Roy Halladay (TO)<T> 17   <Z>17<C>    0    0   92 1/3    89   31   26    6   13   85   13<T>  7-5<T> 0<T> 7-<Z>10<C><T>  4.58<T> .243<T>  2.53<L.33.1>
+33 Scott Baker (MT)<T> 15   15    1    1   81        79   32   23    2   18   73   14<T>  4-4<T> 0<T> 9-6<T>  4.67<T> .245<T>  2.56<L.33.1>
+11 Phil Hughes (LG)<T> 10   10    0    0   56 1/3    52   16   16    5   11   43    5<T>  6-1<T> 0<T> 9-1<T>  7.51<T> .235<T>  2.56<L.33.1>
+58 Scot Shields (TR)<T> 12   12    2    2   85        79   29   25    7   23   67   10<T>  9-1<T> 0<T>11-1<T>  7.84<T> .236<T>  2.65<L.33.1>
+30 David Robertson (NY)<T> 29    0    0    9   64 1/3    72   27   21    4   22   47    5<T>  3-0<T> 1<T> 0-0<T>  7.13<T> .271<T>  2.94<L.33.1>
+<L.6.1>
+67 Scott Roberts (NY)<T> 16   16    4    4  116       <Z>104<C>   44   38    6   22   94    2<T>  9-4<T> 0<T><Z>12<C>-4<T>  6.36<T> .230<T>  2.95<L.33.1>
+ 6 Mark Brown (TB)<T> 19   14    1    4   91 1/3    91   34   30    8   23   74    7<T>  6-7<T> 0<T> 6-8<T>  5.32<T> .249<T>  2.96<L.33.1>
+ 4 Edgar Wilson (TR)<T> 15   15    2    2   99 2/3    93   33   33    2   33   79    6<T>  8-4<T> 0<T>11-4<T>  4.88<T> .237<T>  2.98<L.33.1>
+74 Jose Mijares (MT)<T> 23    8    2    8   72        72   25   24    9   22   50    3<T>  6-2<T> 1<T> 4-4<T>  6.12<T> .250<T>  3.00<L.33.1>
+50 John Danks (CW)<T> 31    1    0    5   54 1/3    46   21   20    4   16   31    9<T>  5-1<T> 0<T> 0-1<T>  9.94<T> .220<T>  3.31<L.33.1>
+62 Charlie Zink (BR)<T> 16   11    0    5   80 2/3    76   40   30    4   23   64    5<T>  6-5<T> 0<T> 6-5<T>  5.58<T> .238<T>  3.35<L.33.1>
+<L.6.1>
+ 7 Jon Lieber (OA)<T> 28    0    0   <Z>23<C>   79        79   41   30    4   22   73   13<T>  5-5<T> 4<T> 0-0<T>  5.35<T> .250<T>  3.42<L.33.1>
+23 Michael Pineda (NY)<T> 14   14    2    2   94 1/3    81   40   36    8   21   63   15<T>  8-2<T> 0<T>11-3<T>  9.45<T> .222<T>  3.43<L.33.1>
+16 Jason Sanders (OA)<T> 19    0    0   14   62 2/3    63   25   24    6   28   39    8<T>  1-3<T> 4<T> 0-0<T>  2.30<T> .250<T>  3.45<L.33.1>
+40 Mike Kelly (NY)<T> 14   14    7    7  106 1/3   <Z>104<C>   41   41    7   11  <Z>112<C>    4<T>  9-3<T> 0<T>10-4<T>  7.03<T> .245<T>  3.47<L.33.1>
+25 Alan Green (OA)<T> 18    8    0    9   61        68   25   24    4   17   41    9<T>  2-2<T> 3<T> 3-5<T>  3.98<T> .270<T>  3.54<L.33.1>
+44 Glen Perkins (MT)<T> 33    0    0   17   63 1/3    59   33   25    8   19   52    5<T>  8-2<T> 6<T> 0-0<T>  8.81<T> .236<T>  3.55<L.33.1>
+<L.6.1>
+12 Luis Palmeiro (TR)<T> 13   13    3    3   90 2/3    78   40   36   11   30   81    7<T> 10-1<T> 0<T><Z>12<C>-1<T>  7.15<T> .222<T>  3.57<L.33.1>
+ 1 Sean Burnett (OA)<T> 13   12    1    2   80        84   37   32   11   21   56    7<T>  5-5<T> 0<T> 6-6<T>  3.26<T> .259<T>  3.60<L.33.1>
+51 Anthony Swarzak (MT)<T> 15   15    0    0   70        77   30   28    7   21   64    7<T>  4-2<T> 0<T>10-5<T>  8.23<T> .268<T>  3.60<L.33.1>
+15 Alex Rincon (BR)<T> 17    8    0    9   74 2/3    78   35   30    7   27   56    9<T>  6-4<T> 0<T> 4-4<T>  4.34<T> .258<T>  3.62<L.33.1>
+24 Eric Ramirez (LG)<T> 12   12    0    0   72        71   36   29    9   33   42    9<T>  4-2<T> 0<T> 8-4<T>  5.62<T> .247<T>  3.62<L.33.1>
+ 5 Manny Ordonez (BR)<T> 17    9    1    4   66        70   29   27    4   26   47    6<T>  4-5<T> 1<T> 4-5<T>  4.36<T> .261<T>  3.68<L.33.1>
+<L.6.1>
+<L.18.1>
+<Z>National League Leaders<T>  G   GS   CG   GF   IP         H    R   ER   HR   BB   SO   SB<T>  W-L<T>Sv<T>WS-LS<T>  RunS<T> HAvg<T>  ERA<C><L.39.1>
+ 1 Kip Wells (MM)<T> 10   10    2    2   71 1/3    55   15   13    3   11   49    2<T>  <Z>9<C>-0<T> 0<T>10-0<T>  8.83<T> .204<T>  1.64<L.33.1>
+19 Dan Haren (AD)<T> 14    8    3    5   70 2/3    53   15   15    3   21   50    5<T>  5-3<T> 1<T> 5-3<T>  4.08<T> .200<T>  1.91<L.33.1>
+11 Matt Capps (PI)<T> 33    0    0   15   74        65   18   16    1   19   70    9<T>  6-3<T> 6<T> 0-0<T>  4.14<T> .226<T>  1.95<L.33.1>
+ 4 Chuck Jones (AB)<T> 13   13    <Z>8<C>    8  <Z>105<C><Z> 2/3<C>    95   28   25    4   27   <Z>97<C>    7<T>  6-5<T> 0<T> 8-5<T>  4.17<T> .230<T>  2.13<L.33.1>
+19 Javier Vazquez (MM)<T> 10   10    1    1   63 2/3    59   19   16    5    9   52    5<T>  5-2<T> 0<T> 6-4<T>  4.95<T> .236<T>  2.26<L.33.1>
+<L.6.1>
+49 Jeff Sues (PI)<T> 14   14    0    0   87 1/3    81   22   22    4   37   63    4<T>  7-1<T> 0<T> 9-5<T>  5.98<T> .236<T>  2.27<L.33.1>
+99 Brad Lincoln (PI)<T> 15   15    3    3  102 2/3    83   32   27    4   35   82   13<T>  6-6<T> 0<T> 8-7<T>  4.38<T> .212<T>  2.37<L.33.1>
+ 6 Scott Walker (SL)<T> 12   12    0    0   65 1/3    61   20   18    3   25   36    9<T>  6-2<T> 0<T> 9-3<T>  5.10<T> .237<T>  2.48<L.33.1>
+66 Jair Jurrens (SD)<T> 20    0    0   12   64        82   24   18    4   19   39    9<T>  3-2<T> 4<T> 0-0<T>  4.64<T> .299<T>  2.53<L.33.1>
+ 7 Darren Young (MM)<T> 28    0    0   15   64        58   18   18    6   17   38    5<T>  5-1<T> 5<T> 0-0<T>  4.92<T> .232<T>  2.53<L.33.1>
+<L.6.1>
+18 Mario Garcia (SL)<T> 12   12    4    4   91 1/3    84   27   26    5   20   69    7<T>  7-2<T> 0<T> 9-3<T>  5.12<T> .234<T>  2.56<L.33.1>
+ 4 Michael Bowden (MM)<T> 26    0    0   11   55 1/3    50   17   16    2   13   43    4<T>  4-2<T> 5<T> 0-0<T>  5.53<T> .231<T>  2.60<L.33.1>
+99 F.Rodriguez (SD)<T> 15   15    4    4   96       102   37   29    3   21   88    7<T>  7-3<T> 0<T> 9-6<T>  6.66<T> .261<T>  2.72<L.33.1>
+ 2 Ubaldo Jimenez (SL)<T> 29    0    0   19   63 2/3    57   20   20    3   16   49    7<T>  <Z>9<C>-1<T> 2<T> 0-0<T>  7.63<T> .229<T>  2.83<L.33.1>
+97 Angel Rincon (CU)<T> 33    0    0   17   74 2/3    56   27   24    7   26   46    4<T>  1-3<T> 3<T> 0-0<T>  3.98<T> .200<T>  2.89<L.33.1>
+<L.6.1>
+86 Erik Cordier (AB)<T> 10   10    0    0   51 2/3    52   19   17    4   23   26    4<T>  4-1<T> 0<T> 8-2<T> 10.80<T> .251<T>  2.96<L.33.1>
+14 Ken Brooks (CO)<T> 17   12    0    4   57 2/3    57   27   19    7   35   47    9<T>  0-4<T> 0<T> 2-10<T>  3.75<T> .247<T>  2.97<L.33.1>
+57 Shawn Estes (AD)<T> 16   16    1    1   96 2/3    95   40   32    9   26   72   15<T>  6-5<T> 0<T> 9-7<T>  4.00<T> .246<T>  2.98<L.33.1>
+88 Tony Guillen (SD)<T>  9    7    2    4   48 1/3    39   17   16    3   13   39    5<T>  5-1<T> 0<T> 5-2<T>  5.77<T> .211<T>  2.98<L.33.1>
+20 Eddie Morales (SL)<T> 17    0    0    7   50 2/3    55   18   17    7   11   35   12<T>  3-3<T> 1<T> 0-0<T>  6.04<T> .265<T>  3.02<L.33.1>
+<L.6.1>
+33 John Walker (MM)<T> 10   10    3    3   62        52   21   21    4   17   51    5<T>  6-2<T> 0<T> 7-3<T>  4.94<T> .218<T>  3.05<L.33.1>
+21 Miguel Ortiz (CI)<T> 19   14    2    3   97 1/3    91   46   33    8   34   74    8<T>  7-6<T> 0<T> 6-8<T>  5.09<T> .237<T>  3.05<L.33.1>
+ 9 Dave Hamilton (MM)<T> 13   13    1    1   64 2/3    62   23   22    6   18   45    5<T>  4-1<T> 0<T><Z>12<C>-1<T>  6.96<T> .242<T>  3.06<L.33.1>
+ 4 Tony Hamilton (NM)<T>  9    9    0    0   52 2/3    45   18   18    4   20   46    6<T>  4-3<T> 0<T> 4-5<T>  4.10<T> .221<T>  3.08<L.33.1>
+85 Mike Jones (CU)<T> 14   14    0    0   85 2/3    76   34   30    4   23   65   12<T>  8-4<T> 0<T> 9-5<T>  4.83<T> .228<T>  3.15<L.33.1>
+<L.6.1>
+ 6 Randy Anderson (NM)<T> 15   10    0    3   70 2/3    56   29   25    4   26   57    7<T>  4-2<T> 0<T> 5-5<T>  4.08<T> .208<T>  3.18<L.33.1>
+89 Royce Ring (AB)<T> 27    0    0   <Z>22<C>   58 1/3    54   22   21    2   15   42    7<T>  3-0<T> 6<T> 0-0<T>  5.09<T> .235<T>  3.24<L.33.1>
+23 Javier Garcia (WN)<T> 17   <Z>17<C>    0    0   92        88   36   34    6   26   74    4<T>  6-8<T> 0<T> 7-10<T>  4.30<T> .241<T>  3.33<L.33.1>
+ 2 Chris Thomas (LA)<T> 15    7    0    8   53        52   25   20    6   17   46    4<T>  2-5<T> 4<T> 2-5<T>  2.89<T> .246<T>  3.40<L.33.1>
+14 Steve Trachsel (WN)<T> 19   14    0    3   80        87   37   31    6   27   59    3<T>  5-5<T> 0<T> 7-7<T>  4.16<T> .266<T>  3.49<L.33.1>
+<L.6.1>
+<L.9.1>
+<Z>Qualification: 48 Innings Pitched.<L.1.1>
+<D><E><DU>
+<BK.Turnsheet><P.70><L>
+<B>GAMEPLAN BASEBALL   MLB7   Turnsheet    6/4/13<X>      MLB7-CW<L.48.1>
+<B>Chicago White Sox (Alan Milnes)   Week 9<C>      Deadline: Friday 19th April<ST.24><L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<C><L.45.1>
+Address: Ab Initio Games, 49 Westpoint, Shortlands Grove, Bromley, Kent, BR2 0ND. Fax: 020 8249 1819. Web Orders: www.softsim.co.uk<L.45.1>
+<Z>[I] Fielding Lineup    <C>Basic fielding selection for this week and batting order. Batting order should be position in batting<L.33.1>
+<Z>                       <C>order (1-9) NOT shirt number. Please only fill in CHANGES to selections.<L.45.1>
+Fielding Position:<T>    C          1B          2B          3B          SS          LF          CF          RF          DH       <L.45.1>
+Shirt Number:<T>[   7  ]    [  17  ]    [  <Z>22<C>  ]    [  24  ]    [   8  ]    [  19  ]    [  30  ]    [  16  ]    [  81  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.45.1>
+Batting Order (1-9):<T>[   9  ]    [   3  ]    [   8  ]    [   4  ]    [   5  ]    [   7  ]    [   2  ]    [   6  ]    [   1  ]    <L.33.1>
+<T>[      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    [      ]    <L.54.1>
+<Z>[B] Lineup Changes    <C>Up to three changes in selection from basic order. Give shirt numbers of player to be picked, player<L.33.1>
+<Z>                       <C>to be replaced and game (2-9) from which change applies.<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+Pick  [        ]     Drop  [        ]     Game  [        ]<L.45.1>
+<L.9.1>
+<Z>[P] Pitching Changes    <C>Give shirt number of pitcher and changes to MAXBATS (MxB), MAXHITS (MxH), MAXEXTRA (MxE), FIRSTINN (FIn)<L.33.1>
+<Z>                        <C>and MINBATS (MnB). Please do not fill in parameters you are not changing.<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+Shirt  [        ]     MxB  [        ]      MxH  [        ]     MxE  [        ]     FIn  [        ]     MnB  [        ]<L.45.1>
+<L.9.1>
+<Z>[S] Pitching Selections    <C>Pitching Selections for this week's games. A pitcher cannot be selected more than once. You must have<L.33.1>
+                           at least four pitchers in your starting rotation and four pitchers in your bullpen depth chart.<L.33.1>
+                           You do not have to select a setup and closing pitcher.<L.45.1>
+Starting Rotation: <T>[ 55 :      ]    [  4 :      ]    [ 21 :      ]    [ 62 :      ]    [  5 :      ]    [  0 :      ]    <L.45.1>
+Bullpen Depth Chart:<T>[ 50 :      ]    [  6 :      ]    [  2 :      ]    [ 23 :      ]    [ 11 :      ]    [  3 :      ]    <L.45.1>
+Setup Pitcher: <T>[  9 :      ]    <L.45.1>
+Closer: <T>[  9 :      ]    <L.54.1>
+<Z>[T] Training    <C>Training & Bonus Skills (HIT, POW, SPD, FLD, ACC, CON, QUI or STA), Bonus & Key Players for each series. <L.45.1>
+Series 1 at CL    [  HIT :            ]   [  HIT :            ]   [  Bonus  7 :         ]   [  Key <Z> 7<C> :         ]<L.45.1>
+Series 2 at BR    [  HIT :            ]   [  HIT :            ]   [  Bonus  7 :         ]   [  Key <Z> 6<C> :         ]<L.45.1>
+Series 3 vs TB    [  HIT :            ]   [  HIT :            ]   [  Bonus 21 :         ]   [  Key <Z>30<C> :         ]<L.45.1>
+<L.6.1>
+<Z>[X] Special Actions<L.48.1>
+<C>ACTION 1 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 2 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 3 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 4 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+ACTION 5 [                     ]   NUM [          ]   VALUE [          ]   NAME [                                           ]<L.45.1>
+<L.9.1>
+Codes are: ACCEPT, ACTIVATE, ADDFORM, ALBATTERS, ALLEADERS, ALPITCHERS, ALPLAYERS, BATTERS, BLOWINN, BLOWMARG, BUILDING, CANFULL,<L.33.1>
+CANOPP, COACH, FANS, LEADERS, LIST, LONGINN, LONGPIT, MAXLEAD, MERC, MINLEAD, MINORS, NEWPOS, NLBATTERS, NLLEADERS, NLPITCHERS, <L.33.1>
+NLPLAYERS, OFFER, PINCH1, PINCH2, PINCH3, PINCH4, PINCHDEF, PINCHINN, PITCHERS, PLATOON1, PLATOON2, PLATOON3, PLATOON4, PLAYERS, <L.33.1>
+PROMOTE, REHAB, RELEASE, RENAME, ROUNDUP, SCHEDULE, SCOUT, SETFULL, SETOPP, SIZE, STADIUM, STARTINN, STATS, SURFACE, SWAP, TRAINER<L.48.1>
+<Z>[Z] Free Agent Bid    <C>Give free agent number, shirt number of player to be replaced, amount bid for free agent and new shirt<L.33.1>
+<Z>                      <C>number and name for player signed. Bids are processed after special actions.<L.45.1>
+NUM [        ]   WAIVE [        ]   AMOUNT [        ]   SHIRT [        ]   NAME [                                          ]<L.54.1>
+<Z>[C] Payments<C>    Turnfees: #3 for one, #12 for four, #27 for ten, or #48 for twenty.  MLB7-CW tc= 6.2<L.48.1>
+<Z><C>AMOUNT ENCLOSED [ #      .      ]   Cheques made payable to: Ab Initio Games<L.45.1>
+Indicate any change of address in the space below.<D><E><DU>

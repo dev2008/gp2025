@@ -1,0 +1,366 @@
+                                                                                                                                                                                                                                                               
+X-Gmail-Received: 498e825fef88b6d0d8e3b87797e2a8bd13911807
+Delivered-To: alan.milnes@gmail.com
+Received: by 10.70.78.4 with SMTP id a4cs5417wxb;
+        Thu, 16 Mar 2006 09:46:53 -0800 (PST)
+Received: by 10.48.208.15 with SMTP id f15mr120897nfg;
+        Thu, 16 Mar 2006 09:46:52 -0800 (PST)
+Return-Path: <peter.calcraft@btconnect.com>
+Received: from moutng.kundenserver.de (moutng.kundenserver.de [212.227.126.177])
+        by mx.gmail.com with ESMTP id d2si695484nfe.2006.03.16.09.46.52;
+        Thu, 16 Mar 2006 09:46:52 -0800 (PST)
+Received-SPF: neutral (gmail.com: 212.227.126.177 is neither permitted nor denied by best guess record for domain of peter.calcraft@btconnect.com)
+Received-SPF: none (mxeu15: 194.73.73.209 is neither permitted nor denied by domain of btconnect.com) client-ip=194.73.73.209; envelope-from=peter.calcraft@btconnect.com; helo=c2bthomr01.btconnect.com;
+Received: from [194.73.73.209] (helo=c2bthomr01.btconnect.com)
+	by mx.kundenserver.de (node=mxeu15) with ESMTP (Nemesis),
+	id 0MKx9w-1FJwYi0lC6-0006pN for TURNS@GAMEPLAN.ORG.UK; Thu, 16 Mar 2006 18:46:48 +0100
+Received: from user-d353006593 (host86-142-245-146.range86-142.btcentralplus.com [86.142.245.146])
+	by c2bthomr01.btconnect.com (MOS 3.5.9-GR)
+	with ESMTP id EOL46851;
+	Thu, 16 Mar 2006 17:46:10 GMT
+Message-Id: <200603161746.EOL46851@c2bthomr01.btconnect.com>
+From: "Peter Calcraft" <peter.calcraft@btconnect.com>
+Subject: SC73-KLI, Turn 37
+To: TURNS@GAMEPLAN.ORG.UK
+Content-Type: text/plain
+Date: Thu, 16 Mar 2006 17:44:43 +0000
+
+TURNS@GAMEPLAN.ORG.UK
+0
+SC73-KLI, Turn 37
+<STARTREP>
+<P.70><L>
+<B>STAR CHASE    Game: SC73    Turn: 37    Player Report    16/3/06<L.54.1>
+Klingon Empire (Alan Milnes)      turn credits = 10.9<C>    Bonus: 4 for 10<L.18.1>
+<Z>__________________________________________________________________________________________________________________________________<L.48.1>
+<C><L.18.1>
+<ST.25.89><L.18.1>
+<B>Systems Owned<C>   (with their planets & asteroids)<L.45.1>
+Number Name<T>System Type  Owner Crs Ftr Col Pop Ind Lim Def Sup Inc  DefMode<T> Adjacent Systems<L.45.1>
+<Z>133    Sto-Vo-Kor<T>Red Dwarf   <C>  KLI   -   2   -   2   2    2  11   0   6  Ret 356<T> 386 412 356                <L.36.1>
+<Z>156    Qo'Inir<T>Red Giant   <C>  KLI   1   -   -   1   1    1   9   0   3  Ret 425<T> 445 425                    <L.36.1>
+<Z>168    Grethor<T>Yellow Dwarf<C>  KLI   3   -   -   5   5    5  15   0  15  Ret 386<T> 283 386 243 440            <L.36.1>
+<BX>L--<BC>283 Grethor Prime<T>o Planet      KLI   -   -   -  44* 44   50  91   0  95  Ret 168<T> 168                        <L.36.1>
+<Z>176    D'th Stnd<T>White Dwarf <C>  KLI   1   5   -   3   3    3  16   0   9  Ret 395<T>         384     412        <L.36.1>
+<Z>205    Ty'Gokor<T>Red Giant   <C>  KLI   1   -   -   1   1    1   9   0   3  Amb 115<T> 444 115 438                <L.36.1>
+<Z>224    Forcas<T>Super Giant <C>  KLI   -   5   -   6   6    6  18   0  18  Ret 219<T> 221 235 236 412 219 384 463<L.36.1>
+<BX>L--<BC>221 Forcas Belt<T>* Asteroids   KLI   -   -   -   9   9    9   9   0  24  Ret 224<T> 224                        <L.36.1>
+<BX>L--<BC>235 Forcas Ring<T>* Asteroids   KLI   -   -   -   9   9    9   9   0  24  Ret 224<T> 224                        <L.36.1>
+<BX>L--<BC>236 Forcas Prime<T>o Planet      KLI   -   -   -  46* 46   50  95   0  99  Ret 224<T> 224                        <L.36.1>
+<Z>243    Chin'Tuka<T>Red Dwarf   <C>  KLI   -   -   1   2   2    2  14   0   6  Ret 168<T> 168 445 495                <L.36.1>
+<Z>356    Qi'tomer<T>Red Giant   <C>  KLI   -   1   -   1   1    1   9   0   3  Ret 133<T> 133                        <L.36.1>
+<Z>386    Klingon<T>Yellow Dwarf<C>  KLI   -   -   -   5   5    5   5   0  15  Ret 133<T> 140 308 133 168            <L.36.1>
+<BX>L--<BC>140 Qo'nos<T>o Planet      KLI  28   2   -  48+ 50   50 136  36 103  --- ---<T> 386                        <L.36.1>
+<BX>L--<BC>308 Praxis<T>* Asteroids   KLI   -   -   -   9   9    9   9   0  24  Ret 386<T> 386                        <L.36.1>
+<Z>395    New Frontier<T>White Dwarf <C>  KLI   1   2   1   3   3    3  18   0   9  Ret 429<T> 464                        <L.36.1>
+<Z>412    Narenda<T>Yellow Dwarf<C>  KLI   -   -   -   5   5    5   5   0  15  Ret 224<T> 440 224 133 176            <L.36.1>
+<Z>425    No'mat<T>Yellow Dwarf<C>  KLI   1   -   -   5   5    5  13   0  15  Ret 445<T> 156 445 444                <L.36.1>
+<Z>438    Sol<T>Yellow Dwarf<C>  KLI   -   3   1   5   5    5  20   0  15  Amb 182<T> 182 205 464                <L.36.1>
+<Z>440    Korvat<T>Red Dwarf   <C>  KLI   -   -   -   2   2    2   2   0   6  Ret 412<T> 412 168                    <L.36.1>
+<Z>444    Grovar<T>Red Giant   <C>  KLI   1   -   -   1   1    1   9   0   3  Ret 445<T> 205 445 425                <L.36.1>
+<Z>445    Klirg'l<T>Super Giant <C>  KLI   -   6   3   6   6    6  34   9  18  Ret 243<T> 156 243 444 425            <L.36.1>
+<Z>463    Tirklurd<T>Black Dwarf <C>  KLI   1   -   -   3   3    -  11   0   6  --- ---<T> 224                        <L.36.1>
+<Z>464    New Qo'nos<T>Black Dwarf <C>  KLI   4   -   -   3   3    -  14   0   6  --- ---<T> 395 438                    <L.36.1>
+<Z>495    Black Swamp<T>Black Dwarf <C>  KLI   1   -   -   3   3    -  11   0   6  --- ---<T> 243                        <L.36.1>
+<L.12.1>
+* indicates systems with room for expansion of population or industry.  <L>
++ indicates system gained population via growth Level.  - indicates system is or was overpopulated.  <L.54.1>
+<B>Scouting & Probes<L.54.1>
+<C>Number Name<T>System Type  Owner Crs Ftr Col Pop Ind Lim Def Sup Inc  DefMode<T> Adjacent Systems<L.45.1>
+<Z>115    ---------------<T>Red Giant   <C>  CEN   -   3   1   1   0    1   -   -   -  --- ---<T> 134 305 205 120            <L.36.1>
+<Z>182    ---------------<T>White Dwarf <C>  CEN   -   2   1   3   3    3   -   -   -  --- ---<T> 233 134 351 438            <L.36.1>
+<Z>203    ---------------<T>Black Dwarf <C>  SON 205   -   1   0   0    -   -   -   -  --- ---<T> 370 364                    <L.36.1>
+<Z>384    MAE KLI Passage<T>White Dwarf <C>  SON   1   -   1   3   3    3   -   -   -  --- ---<T> 388 176 224                <L.36.1>
+<L.18.1>
+Base System (builds cruisers): 464,  Home System (builds fighters): none<L.48.1>
+<Z><U>Tech Levels<UC>       <C>Agri Tech    : 7  Birth Labs   : 5  Bomb Tech    : 4  IncomeBP Tech: 9  Culture Level: 27 Defence Tech : 3  <L.36.1>
+Expo Tech    : 8  Fighter Tech : 2  Growth Level : 6  Hyper Tech   : 9  Industry Tech: 6  Jump Tech    : 6  Life Support : 3  <L.36.1>
+Marines Cap  : 3  Probe Tech   : 3  Recovery Tech: 5  Reserve Tech : 4  Supply Tech  : 11 Treasury Tech: 5  Weapons Tech : 7  <L.45.1>
+<Z>Income: 555 BPs   Supply: 45 BPs   Total Ships: 75   Reserve Cruisers: 50   Reserve Fighters: 45   Bombs Used: 4<L.45.1>
+<U>Build Points: 510<UC>   <U>Treasury: 90 BPs<UC>   Systems: 25   Industry: 229  (9 percent)   Victory Points: 950 (7 percent) +256<C><L.54.1>
+<P>
+<L>
+<B>STAR CHASE   Game: SC73   Turn: 37   Klingon Empire (Alan Milnes)<C><L.54.1>
+No Renaming Actions This Week<L.36.1>
+<L.18.1>
+<B>Tech & Trades:<C><L.54.1>
+Tech  : Defence Tech 3, cost 9 BPs: OK<L.36.1>
+Trade : Hyper Tech 9 to Sontaran Rutan Alliance: OK<L.36.1>
+Take  : Jump Tech 7 from Maelstrom: Failed, No Such Trade Action<L.36.1>
+<L.18.1>
+<B>Actions:<C><L.54.1>
+<Z>Build Points Available = 517<C><L.48.1>
+KLI 1:  GROW num 5 in 283 Grethor Prime, cost 39 BPs: OK<L.45.1>
+KLI 2:  GROW num 5 in 236 Forcas Prime, cost 41 BPs: OK<L.45.1>
+KLI 3:  BUILD 5 in 283 Grethor Prime, cost 25 BPs: OK<L.45.1>
+KLI 4:  BUILD 5 in 236 Forcas Prime, cost 25 BPs: OK<L.45.1>
+KLI 5:  LAYUPF 5 Fighters in 386 Klingon, cost 10 BPs: OK<L.45.1>
+KLI 6:  DEEPCOL num 3 from 386 Klingon to 445 Klirg'l, cost 24 BPs: OK<L.45.1>
+KLI 7:  BUILD 3 in 140 Qo'nos, cost 15 BPs: OK<L.45.1>
+KLI 8:  LAYUP 3 Cruisers in 464 New Qo'nos, cost 6 BPs: OK<L.45.1>
+KLI 9:  NEWCRS 28 cruisers in 140 Qo'nos, cost 280 BPs: OK<L.45.1>
+KLI 10: LAYUP 28 Cruisers in 140 Qo'nos: Failed, Not Enough Build Points<L.45.1>
+KLI 11: TAX 2 BPs: OK<L.45.1>
+KLI 12: TAX 2 BPs: OK<L.45.1>
+KLI 13: TAX 2 BPs: OK<L.45.1>
+KLI 14: TAX 2 BPs: OK<L.45.1>
+KLI 15: TAX 2 BPs: OK<L.45.1>
+KLI 16: TAX 2 BPs: OK<L.45.1>
+<B>Probe Actions:<C><L.48.1>
+0: Probe in/to 144 : Failed, Must Own System to Build New Probe<L.36.1>
+1: Probe in/to 130 : Failed, Must Own System to Build New Probe<L.36.1>
+<Z><L.18.1>
+Leftover Build Points:- <C><L.48.1>
+30 BPs spent to build 3 cruisers in "base" system 464.<L>
+33 BPs spent to stash 11 BPs in treasury. <L>
+1 BP added to BPs spent on ORDER actions this turn. <L>
+<Z><L.18.1>
+Research<C> (free tech level): BP 9<L.48.1>
+<L.18.1>
+<E><P>
+<P.70><B><L>
+STAR CHASE    Game: SC73    Turn: 37    Roundup    16/3/06<L.18.1>
+__________________________________________________________________________<C><L.18.1>
+<L.36.1>
+<Z>Address:  Software Simulations Ltd, P.O.Box 2758, YEOVIL, BA20 2XH.  Tel: 01935-475657. Fax: 01935-475659.<L.36.1>
+Turnfees: #2.50 for one, #10 for four, #20 for ten, or #36 for twenty.    Cheques made payable to: Software Simulations Ltd<L.36.1>
+<ST.44.78.96><L.18.1>
+GM: Peter Calcraft    Rules & Software Version: 2.0<L.54.1>
+<C>Players shown in order of play next turn:<T>Top Tech Levels<T>Phone<T> Email<L.54.1>
+<Z><U>Sontaran Rutan Alliance<UC> (M.Williams) SON<C><T>BP 47, TR 14, HT 9,  Total 160<T><T> martyn@willyams.fsnet.co.uk<L.45.1>
+<Z><U>Maelstrom<UC> (Danny Slavin) MAE<C><T>MC 18, CL 12, IT 10, Total 150<T><T> danny_slavin_uk@yahoo.co.uk<L.45.1>
+<Z><U>Centari<UC> (Roy Ashdown) CEN<C><T>BP 24, CL 16, AT 15, Total 172<T><T> ROYASHDOWN06@TISCALI.CO.UK<L.45.1>
+<Z><U>Klingon Empire<UC> (Alan Milnes) KLI<C><T>CL 27, ST 11, BP 9,  Total 133<T><T> TURNS@GAMEPLAN.ORG.UK<L.45.1>
+<Z><U>Peacekeepers<UC> (Arnie Kitching) PEA<C><T>CL 25, ET 11, BP 10, Total 145<T><T> ArnieKitching@supanet.com<L.45.1>
+<Z><U>Defbladers<UC> (Jon Martin) DEF<C><T>IT 9,  ST 9,  WT 9,  Total 136<T><T> pbm@bloater.plus.com<L.45.1>
+<Z><U>The Hive<UC> (Chris Whittaker) HIV<C><T>BP 50, TR 34, AT 18, Total 252<T><T><L.45.1>
+<Z><U>Chameleons<UC> (Tony Stewart) CHA<C><T>BP 25, TR 19, WT 13, Total 192<T><T><L.45.1>
+<L.36.1>
+Current leader has a victory points total of 3510 VPs<L.18.1>
+<B>__________________________________________________________________________<L.54.1>
+Deadline: Thursday 30th March<L.36.1>
+<E><P>
+<P.70><B><L>
+STAR CHASE    Messages    Game: SC73    Turn: 37    16/3/06<L.18.1>
+<ST.66><L.36.1>
+<Z>This turn was a census turn.<L.54.1>
+<C><B>Messages<C><L.54.1>
+none<L>
+<L>
+<Z>ROYAL SNAIL <C> The snail has been performing especially badly the last couple of weeks - everything is slow and some stuff<L.31.1>
+is very slow (one player last week posted correctly addressed orders 1st class Monday, and they only arrived the Monday after).<L.31.1>
+It really is better to input your orders online if you can. It's quicker, cheaper and more reliable.<L.31.1>
+<L.12.1>
+<Z>WEBSITES <C> The sidetracks.co.uk website has waiting lists, progress reports, rules updates, downloads and information about<L.31.1>
+using the email system. Our main "static" info & stuff is at pbmsports.co.uk, while the softsim.co.uk website has credit cards<L.31.1>
+and online turnsheets. Anyone can see the first two, but for softsim you need to ask for a user name before you can get into it.<L.31.1>
+<L.12.1>
+************************************************************************************************************************<L.31.1>
+<L.12.1>
+<Z>CHANGES <C> Some changes to be introduced shortly, that are fairly simple and work nicely in Spaceplan but didn't get<L.31.1>
+included in the Star Chase revival:<L.31.1>
+1. Any attack through deep space is treated as being ambushed (the defender gets first shot).<L.31.1>
+2. In a battle where the defender has fighters and no cruisers the defender fires first (ie. it's treated as a ambush battle).<L.31.1>
+3. The effect of weapons tech is limited to the number of ships used (so 1 CRS + 10 WT = 2).<L.31.1>
+4. The effect of marines tech is limited to the number of ships used.<L.31.1>
+5. The effect of defence tech is limited to the number of population present.<L.31.1>
+These should reduce the indiscrimate use of deep space movement and encourage attackers to get on with it and fight proper<L.31.1>
+battles instead of fiddling about with attrition attacks.<L.31.1>
+<L.12.1>
+<Z>SHORT OF BPS? <C> It's quite common to have your "BPs Available" fall (even as low as zero) in the early stages of the game<L.31.1>
+even though your income looks reasonable. Especially if you discover lots of ships as you explore. The solutions are<L.31.1>
+(1) place your colony ships in systems that don't contain other ships and keep your cruisers dispersed one to a system,<L.31.1>
+(2) reduce your supply costs by increasing your population,<L.31.1>
+(3) reduce your supply costs by increasing your Supply Tech, and<L.31.1>
+(4) stop building new ships until you can afford the supply cost.<L.31.1>
+In the meantime you can get by with TAX actions, and don't miss the opportunity to gain treasury BPs by trading tech levels<L.31.1>
+Trading also means you get to buy two tech levels in the turn instead of only one.<L.31.1>
+<L.12.1>
+<Z>HOME & BASE <C> If you don't want to use unspent BPs to build fighters in your "home" system or cruisers in your "base"<L.31.1>
+system then you can stop this by making an empty HOME or BASE action (ie. with nothing or zero in the "where" column). If you<L.31.1>
+want to build fewer, rather than none, then shift your base or home to somewhere with less industry.<L.31.1>
+<L.12.1>
+<Z>FIGHTERS <C> LAYUPF is the same as LAYUP except it puts fighters into reserve instead of cruisers. RESERVEF is the same as<L.31.1>
+RESERVE only brings fighters out of reserve instead of cruisers. You can't do a RESERVEF the same turn as a LAYUPF (same as<L.31.1>
+LAYUP and RESERVE) but you can layup one sort of ship while reserving the other.<L.31.1>
+<L.12.1>
+<Z>RECOVERY TECH <C> I have changed the two-letter code for Recovery Tech to be RC (it was previously RT). This is more<L.31.1>
+consistent with Reserve Tech being RS and with Spaceplan (where RT is Robot Tech).<L.31.1>
+<L.12.1>
+<Z>DEEPCOL <C> The DEEPCOL action moves colony ships (with attendant fighters, if present) through deep space. The cost is twice<L.31.1>
+the the number of colony ships (multiples are allowed) times the square of the jump distance (ie. same as DEEP and MOVECOL<L.31.1>
+multiplied together). They can still only move to stars, and only to ones you already own.<L.31.1>
+<L.12.1>
+<Z>PROBES <C> If you want to deactivate a probe, just activate another one that's a long way off (if you try to activate one in<L.31.1>
+a location the active probe can reach, then the active one moves instead). Sometimes you need to waste a box activating a<L.31.1>
+distant probe before going back to activate the one you want (if it's too close to the one that was previously active). The<L.31.1>
+point of the current system is that it gets the most action for the given number of boxes: most of the time you can order one<L.31.1>
+action per box - otherwise each action normally needs two or three or four boxes all to itself.<L.31.1>
+<L.12.1>
+<Z>TECH LEVELS <C> In Star Chase the capabilities of different empires can be very different, because the tech levels they own<L.31.1>
+are different. Don't assume that other people have similar tech levels to you. Other people can do stuff that you can't.<L.31.1>
+<L.12.1>
+<Z>GROWTH LEVEL <C> This tech level (code is GL) adds population at the end of every every turn, one per system, in a number of<L.31.1>
+systems equal to the growth level (ie. if GL is two, you get one pop in each of two systems). There's no cost in BPs and the<L.31.1>
+systems are selected at random.<L.31.1>
+<L.12.1>
+<Z>VP PENALTIES <C> I've changed the VP penalty for losing systems to be equal to one plus the number of industry, population,<L.31.1>
+and colony ships lost (that's rule 8.2 second paragraph). There is also a VP penalty for losing population and industry in<L.31.1>
+planetary bomardments (equal to the number of population and industry lost). This is to make the end game more relevant, as in<L.31.1>
+our other games, so that it's possible to make a decent fight of it and bring someone's VP total down.<L.31.1>
+<L.12.1>
+<Z>MAXBUILD <C> This is a "smart action" that builds the most industry you can afford as quickly and efficiently as it can (as<L.31.1>
+distinct from the INCREASE action which builds the most cost effective/profitable). Don't do it too soon in the turn...<L.31.1>
+<L.12.1>
+<Z>ASSAULTS <C> There's an error in rule 4.3 (assault actions). There are no extra losses for the different in weapons tech<L.31.1>
+levels, which count as part of the attack and defence strenths as normal. The last line of the first paragraph should not be<L.31.1>
+there and will be deleted in future rulebooks.<L.31.1>
+<L.12.1>
+<Z>RESERVES <C> There's an error in the version 2.0 and 2.1 rulebooks, will be fixed in future issues. The RESERVE action is<L.31.1>
+sticky. It would be a good idea to make a note of the correction in your rulebook (in rule 4.10).<L.31.1>
+<L.12.1>
+<Z>INCOME FOUND <C> I've made a small change so that where you discover BPs during exploration they get added to your BPs for<L.31.1>
+the next turn instead of the current one. Which means you get to decide how to spend them on something useful.<L.31.1>
+<L.12.1>
+<Z>STASH ACTION <C> The website can't handle the special rule for STASH on action 16 (where you can STASH "ALL" even though you<L.31.1>
+can't on earlier actions). The rule isn't needed any more, since unspent BPs already get stashed automatically at the end of the<L.31.1>
+turn (without wasting an action) so this rule is being deleted. It does mean you may want to switch off your HOME and BASE<L.31.1>
+options if you want the BPs stashed rather than spent on ships (other people do want their spare BPs spent on ships).<L.31.1>
+<L.12.1>
+<Z>COLONY SHIPS <C> There's an error in the version 2.0 rulebook. The MOVECOL action can move more than one colony ship, so you<L.31.1>
+should enter the number of ships to move in the NUMBER box. The cost is 2 BPs for each ship. The "ALL" and "ALL BUT" formats<L.31.1>
+work, and if the box is blank it'll be taken as ALL.<L.31.1>
+<L>
+<E><P>
+<P.70><B><L>
+STAR CHASE    Game SC73    TURN 37    PLAYER MAP    16/3/06<L.18.1>
+__________________________________________________________________________<L>
+<L>
+<U>Klingon Empire<UC> (Alan Milnes)<L.54.1>
+<C><L.18.1>
+247S                                                        <L.18.1>
+<L.6.1>
+                                                            <L.6.1>
+                                                            <L.21.1>
+                                                            <L.27.1>
+            453B              322G                          <L.18.1>
+<L.6.1>
+             |               /                              <L.6.1>
+<L.21.1>
+             |              /                               <L.27.1>
+      481B  219S        388G              332R              <L.18.1>
+<L.6.1>
+             |           |                                  <L.6.1>
+<L.21.1>
+             |           |                                  <L.27.1>
+<Z><U>463B<UC>--------<U>224S<UC>--------<C>384W                                <L.18.1>
+<L.6.1>
+              o             \                               <L.6.1>
+            **                                              <L.21.1>
+             |               \                              <L.27.1>
+      <Z><U>440R<UC>--<U>412Y<UC>--------------<U>176W<UC>  <C>435Y              260R  <L.18.1>
+<L.6.1>
+     /       |                      o o                     <L.6.1>
+                                     *                      <L.21.1>
+    /        |                       |                      <L.27.1>
+<Z><U>168Y<UC>--<U>386Y<UC>--<U>133R<UC>        <U>395W<UC>        <C>429Y--390B              <L.18.1>
+<L.6.1>
+ o     o        \        |           |                      <L.6.1>
+        *                                  *                <L.21.1>
+ |               \       |           |     |                <L.27.1>
+<Z><U>243R<UC>--<U>495B<UC>        <U>356G<UC>  <C> |          364Y--352Y              <L.18.1>
+<L.6.1>
+    \                    |           |  \                   <L.6.1>
+<L.21.1>
+     \                   |           |   \                  <L.27.1>
+<Z><U>156G<UC>--<U>445S<UC>              <U>464B<UC>        <C>370S--203B              <L.18.1>
+<L.6.1>
+ |   /    \              |                                  <L.6.1>
+<L.21.1>
+ |  /      \             |                                  <L.27.1>
+<Z><U>425Y<UC>--------<U>444G<UC>        <C> |          487B                    <L.18.1>
+<L.6.1>
+             |           |                                  <L.6.1>
+<L.21.1>
+             |           |                                  <L.27.1>
+490B        <Z><U>205G<UC>--------<U>438Y<UC>        <C>174G--129W--101G        <L.18.1>
+<L.6.1>
+           /           /                 /                  <L.6.1>
+                                           *                <L.21.1>
+          /           /                 /                   <L.27.1>
+      115G--134R--182W              482B                    <L.18.1>
+<L.6.1>
+     / |     |  \  |  \              |                      <L.6.1>
+                                                            <L.21.1>
+    /  |     |   \ |   \             |                      <L.27.1>
+120S--305S   |    233Y--351Y--------136B                    <L.18.1>
+<L.6.1>
+          \  |   / o   / o                                  <L.6.1>
+                          *                                 <L.21.1>
+           \ |  /  |  /  |                                  <L.27.1>
+            359W--157G  286R                                <L.18.1>
+<L.6.1>
+             o                                              <L.6.1>
+<L.21.1>
+                                                            <L.27.1>
+Active Probe: 203,  Inactive Probes: 182 --- --- <L.48.1>
+Key:-  o planet, * asteroids, B black dwarf, G red giant, R red dwarf, S super giant, W white dwarf, Y yellow dwarf.<L.33.1>
+       bold = systems owned, bold underlined = populated systems owned.<L.42.1>
+Note:- Planets & asteroids are linked only to their own star systems (no other systems, and not each other).<L.33.1>
+<E><DU>
+<P.70><ST.50.99><B><L>
+STAR CHASE   Game: SC73   16/3/06   Turn: 38   TURNSHEET   <X>SC73-KLI<C><L.54.1>
+<B>Klingon Empire (Alan Milnes)    <C>    Deadline: Thursday 30th March<B><L.18.1>
+__________________________________________________________________________<E><L.54.1>
+<C>Address:  Software Simulations Ltd, P.O.Box 2758, YEOVIL, BA20 2XH.  Tel: 01935-475657. Fax: 01935-475659.<L.54.1>
+<B>[R] System Name Changes<C>    Maximum length of name is 15 characters, including spaces.<E><L.45.1>
+ SYSTEM     NEW SYSTEM NAME<L.45.1>
+[      ]  [                 ]<L.45.1>
+[      ]  [                 ]<L>
+<L>
+<B>[T] Tech & Trades<E><L.45.1>
+       WHICH TECH   WITH WHO     LEVEL<L.45.1>
+TECH   [        ]              [        ]<L.45.1>
+TRADE  [        ]  [        ]  [        ]<L.45.1>
+TAKE   [        ]  [        ]<L.45.1>
+<C>Codes for tech levels are:  AT=Agri Tech, BL=Birth Labs, BP=BP Income Tech, BT=Bomb Tech, CL=Culture Level, <L.33.1>
+DT=Defence Tech, ET=Expo Tech, FT=Fighter Tech, HT=Hyper Tech, IT=Industry Tech, JT=Jump Tech, LS=Life Support, <L.33.1>
+MC=Marines Cap, PT=Probe Tech, RC=Recovery Tech, RS=Reserve Tech, ST=Supply Tech, TR=Treasury Tech, WT=Weapons Tech.<L>
+<L>
+<B>[E] Actions<C>    <E><L.45.1>
+ACTION    NAME OF    WHERE FROM   WHERE TO    NUMBER   <L.36.1>
+NUMBER    ACTION      OR WHERE   OR TO WHOM  OR AMOUNT<L.45.1>
+   1    [         ]  [        ]  [        ]  [        ]<L.45.1>
+   2    [         ]  [        ]  [        ]  [        ]<L.45.1>
+   3    [         ]  [        ]  [        ]  [        ]<L.45.1>
+   4    [         ]  [        ]  [        ]  [        ]<L.45.1>
+   5    [         ]  [        ]  [        ]  [        ]<L.45.1>
+   6    [         ]  [        ]  [        ]  [        ]<L.45.1>
+   7    [         ]  [        ]  [        ]  [        ]<L.45.1>
+   8    [         ]  [        ]  [        ]  [        ]<L.18.1>
+         _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <L.9.1>
+<L.45.1>
+   9    [         ]  [        ]  [        ]  [        ]<L.45.1>
+  10    [         ]  [        ]  [        ]  [        ]<L.45.1>
+  11    [         ]  [        ]  [        ]  [        ]<L.45.1>
+  12    [         ]  [        ]  [        ]  [        ]<L.45.1>
+  13    [         ]  [        ]  [        ]  [        ]<L.45.1>
+  14    [         ]  [        ]  [        ]  [        ]<L.45.1>
+  15    [         ]  [        ]  [        ]  [        ]<L.45.1>
+  16    [         ]  [        ]  [        ]  [        ]<L.45.1>
+<C>Correct action names are:  AMBUSH, ASSAULT, BASE, BOMBARD, BUILD, BUSTER, CASH, COLONISE, DEEP, DEEPCOL, DEFEND, DISTSQ, FIND, <L.33.1>
+GIFT, GROW, HOME, KILL, LAYUP, LAYUPF, LINK, MOVE, MOVECOL, NEWCOL, NEWCRS, NEWFTR, ORDER, RESERVE, RESERVEF, RETREAT, <L.33.1>
+SCOUT, SCRAPC, SCRAPF, SEND, STASH, TAX.<L.33.1>
+Smart action names are:  BORDER, CRUISERS, EXPLORE, FIGHTERS, GATHER, INCREASE, LIFT, MAXBUILD, POP, SCREEN, SETTLE.<L>
+<L>
+<B>[P] Probe Actions<E><L.45.1>
+[      ]  [      ]  [      ]  <L>
+<L>
+<B>[M] Player Message<C>    Maximum message length is 70 characters, including spaces.<E><L.45.1>
+TO [       ]  MESSAGE [                                                                 ]<L>
+<L>
+<B>[C] Payments<C>    Indicate any money sent for credits with this turn.  Cheques payable to Software Simulations Ltd.<E><L.45.1>
+AMOUNT ENCLOSED [ #  .   ]  <C>Turnfees: #2.50 for one, #10 for four, #20 for ten, or #36 for twenty.   SC73-KLI tc=10.9 b=4<L.45.1>
+Indicate any change of address in the space below and indicate if change is termtime, temporary or permanent. <L>
+<E><DU>
+
