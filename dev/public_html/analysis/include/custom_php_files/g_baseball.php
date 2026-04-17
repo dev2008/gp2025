@@ -17,7 +17,7 @@ output($str);
 
 
 #Start the table
-echo "<table class='w3-table w3-striped w3-bordered w3-mobile'>\n";
+echo "<br><table class='w3-table w3-striped w3-bordered w3-mobile'>\n";
 echo "<tr><th class='$mycolour4'>League</th><th class='$mycolour4'>Season</th><th class='$mycolour4'>Week</th><th class='$mycolour4'>Players</th><th class='$mycolour16'>Draftees</th><th class='$mycolour16'>Scouted</th><th class='$mycolour17' >Batting Stats</th><th class='$mycolour17' >Pitching Stats</th></tr>";
 echo "<tr><th class='$mycolour4'>&nbsp;</th><th class='$mycolour4'>&nbsp;</th><th class='$mycolour4'>&nbsp;</th><th class='$mycolour4'><em>(all time)</em></th><th class='$mycolour16'><em>(this Season)</em><th class='$mycolour16'><em>(this Season)</em></th><th class='$mycolour17'><em>(this Season)</em></th><th class='$mycolour17'><em>(this Season)</em></th></tr>";
 #First establish what Leagues we have
@@ -83,7 +83,7 @@ foreach ($myleaguearray as $myleagues){
 $j++;
 }
 #End the table
-echo "</table>";
+echo "</table><br>";
 
 
 /*
