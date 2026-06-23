@@ -10,26 +10,30 @@ $str.="<div class='w3-container $mycolour6'>";
 $str.="<div class='w3-pale-green'>";
 $str.="<h1>Gameplan Football Update College records</h1>";
 $str.="</div>";
-#$str.="</header>";
 output($str);
 $str= "<div class='w3-panel $mycolour4 nz-card w3-round-xxlarge'>";
 output($str);
-
 $str="<h2>Started update process</h2>\n";
-//Write mid section
 output($str);
 
-//Check if manual adjustment is required
-$_cp_sql = "SELECT COUNT(`gametype`) 
-FROM `f_games` 
-WHERE `league`='NCAA5' AND `season`=2029 AND `week`=13 AND `gametype`=10;";
+$_cp_sql = "SELECT league, season, gametype, COUNT(*) as cnt
+    FROM f_games
+    WHERE gametype IN (8,9,10,11,12,13) AND win=1
+    GROUP BY league, season, gametype
+    HAVING cnt > 1";
 $res = execute_db($_cp_sql, $conn);
-$mycount=$res->fetchColumn();
+$_cp_dupes = $res->fetchAll(PDO::FETCH_ASSOC);
 
-if ($mycount>2){
-	$str.="<h2 class='w3-red'>Error - manual allocation of Bowl Games not completed!!</h2>\n";
-	$str.="</div>\n";
-	output($str);
+if (count($_cp_dupes) > 0) {
+    $str = "<h2 class='w3-red'>Error - duplicate bowl game winners detected - manual correction required!</h2>\n";
+    $str .= "<table class='w3-table w3-striped w3-bordered'>";
+    $str .= "<tr><th>League</th><th>Season</th><th>Gametype</th><th>Count</th></tr>";
+    foreach ($_cp_dupes as $row) {
+        $str .= "<tr><td>{$row['league']}</td><td>{$row['season']}</td><td>{$row['gametype']}</td><td>{$row['cnt']}</td></tr>";
+    }
+    $str .= "</table>";
+    $str .= "</div>\n";
+    output($str);
 } else {
 //Bowl games sorted so proceed
 $str="<div class='w3-container w3-teal'>\n";

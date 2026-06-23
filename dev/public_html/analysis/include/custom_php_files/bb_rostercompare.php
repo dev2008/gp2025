@@ -15,9 +15,14 @@ $skill_ranking = [
 
 // Retrieve available turns
 $query_turns = "
-    SELECT DISTINCT g.`uploadID`, g.`turn_id`, g.`game`, g.`league`, g.`season`, g.`week`, b.`m_team`
-    FROM `g_turnsummary` g
-    JOIN `bb_myteam` b ON g.`uploadID` = b.`m_turnid`;
+	SELECT DISTINCT g.`uploadID`, g.`turn_id`, g.`game`, g.`league`, g.`season`, g.`week`, b.`m_team`
+	FROM `g_turnsummary` g
+	JOIN `bb_myteam` b ON g.`uploadID` = b.`m_turnid`
+	JOIN (
+		SELECT `league`, MAX(`season`) as `max_season`
+		FROM `g_turnsummary`
+		GROUP BY `league`
+	) latest ON g.`league` = latest.`league` AND g.`season` = latest.`max_season`;
 ";
 
 $stmt_turns = $conn->query($query_turns);
@@ -53,6 +58,12 @@ if (!$turn1_id || !$turn2_id) {
           </form>';
     die();
 }
+
+if ($turn1_id === $turn2_id) {
+    echo '<div class="w3-panel w3-red">Please select two different turns for comparison.</div>';
+    die();
+}
+
 
 // Find details of the selected turns
 $turn1_details = null;
@@ -98,7 +109,7 @@ $sql = "SELECT
         ON `bb_myteam`.`m_team` = `bb_franchises`.`f_id`  -- Joining based on team ID
         WHERE `bb_myteam`.`m_turnid` = :turnid 
         ORDER BY `bb_myteam`.`m_sh` ASC";
-		print_r($sql);
+		#print_r($sql);
 
 // Fetch data for Turn 1
 $stmt1 = $conn->prepare($sql);
